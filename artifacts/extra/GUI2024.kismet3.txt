@@ -1,0 +1,80 @@
+==== ExecuteUbergraph_GUI2024 size 72
+    0: EX_ComputedJump()
+    1: None = None
+    2: None = None
+    3: jump 69
+    4: jump 10
+    5: return nothing
+    6: end
+
+==== PreConstruct size 36
+    0: None = None
+    1: ExecuteUbergraph_GUI2024(64)
+    2: return nothing
+    3: end
+
+==== Get Flight Time size 368
+    0: EX_StructMemberContext() = 'FlightTime'
+    1: EX_StructMemberContext() = 2
+    2: EX_StructMemberContext() = EX_TextConst()
+    3: EX_StructMemberContext() = 0
+    4: EX_StructMemberContext() = ctx[var:FlightTime].{'$type': 'UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI', 'New': {'$type': 'UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI', 'Path': ['FlightTime'], 'ResolvedOwner': -7}}
+    5: EX_StructMemberContext() = 0
+    6: EX_SetArray()
+    7: var:CallFunc_Format_ReturnValue = callmath:Format(EX_TextConst(), var:K2Node_MakeArray_Array)
+    8: EX_LocalOutVariable() = var:CallFunc_Format_ReturnValue
+    9: return EX_LocalOutVariable()
+   10: end
+
+==== Get Score size 360
+    0: EX_StructMemberContext() = 'Score'
+    1: EX_StructMemberContext() = 0
+    2: EX_StructMemberContext() = EX_TextConst()
+    3: EX_StructMemberContext() = ctx[var:Score].{'$type': 'UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI', 'New': {'$type': 'UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI', 'Path': ['Score'], 'ResolvedOwner': -7}}
+    4: EX_StructMemberContext() = +0
+    5: EX_StructMemberContext() = 0
+    6: EX_SetArray()
+    7: var:CallFunc_Format_ReturnValue = callmath:Format(EX_TextConst(), var:K2Node_MakeArray_Array)
+    8: EX_LocalOutVariable() = var:CallFunc_Format_ReturnValue
+    9: return EX_LocalOutVariable()
+   10: end
+
+==== GetOverTime size 365
+    0: EX_StructMemberContext() = 'OutTime'
+    1: EX_StructMemberContext() = 2
+    2: EX_StructMemberContext() = EX_TextConst()
+    3: EX_StructMemberContext() = 0
+    4: EX_StructMemberContext() = ctx[var:OutTime].{'$type': 'UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI', 'New': {'$type': 'UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI', 'Path': ['OutTime'], 'ResolvedOwner': -7}}
+    5: EX_StructMemberContext() = 0
+    6: EX_SetArray()
+    7: var:CallFunc_Format_ReturnValue = callmath:Format(EX_TextConst(), var:K2Node_MakeArray_Array)
+    8: EX_LocalOutVariable() = var:CallFunc_Format_ReturnValue
+    9: return EX_LocalOutVariable()
+   10: end
+
+==== GetGameState size 407
+    0: var:CallFunc_Conv_StringToText_ReturnValue = callmath:Conv_StringToText(ctx[var:GameState].{'$type': 'UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI', 'New': {'$type': 'UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI', 'Path': ['GameState'], 'ResolvedOwner': -7}})
+    1: EX_StructMemberContext() = 'GameState'
+    2: EX_StructMemberContext() = 4
+    3: EX_StructMemberContext() = var:CallFunc_Conv_StringToText_ReturnValue
+    4: EX_StructMemberContext() = 0
+    5: EX_StructMemberContext() = +0
+    6: EX_StructMemberContext() = 0
+    7: EX_SetArray()
+    8: var:CallFunc_Format_ReturnValue = callmath:Format(EX_TextConst(), var:K2Node_MakeArray_Array)
+    9: EX_LocalOutVariable() = var:CallFunc_Format_ReturnValue
+   10: return EX_LocalOutVariable()
+   11: end
+
+==== GetStateTime size 371
+    0: EX_StructMemberContext() = 'StateTime'
+    1: EX_StructMemberContext() = 2
+    2: EX_StructMemberContext() = EX_TextConst()
+    3: EX_StructMemberContext() = 0
+    4: EX_StructMemberContext() = ctx[var:CurStateTime].{'$type': 'UAssetAPI.Kismet.Bytecode.KismetPropertyPointer, UAssetAPI', 'New': {'$type': 'UAssetAPI.UnrealTypes.FFieldPath, UAssetAPI', 'Path': ['CurStateTime'], 'ResolvedOwner': -7}}
+    5: EX_StructMemberContext() = 0
+    6: EX_SetArray()
+    7: var:CallFunc_Format_ReturnValue = callmath:Format(EX_TextConst(), var:K2Node_MakeArray_Array)
+    8: EX_LocalOutVariable() = var:CallFunc_Format_ReturnValue
+    9: return EX_LocalOutVariable()
+   10: end

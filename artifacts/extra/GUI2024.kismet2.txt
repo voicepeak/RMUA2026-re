@@ -1,0 +1,80 @@
+==== ExecuteUbergraph_GUI2024 size 72
+    0: EX_ComputedJump()
+    1: var:CallFunc_GetActorOfClass_ReturnValue = callmath:GetActorOfClass(self, obj:GameConfig2024_1)
+    2: var:GameConfig = var:CallFunc_GetActorOfClass_ReturnValue
+    3: jump 69
+    4: jump 10
+    5: return nothing
+    6: end
+
+==== PreConstruct size 36
+    0: EX_LetValueOnPersistentFrame()
+    1: ExecuteUbergraph_GUI2024(64)
+    2: return nothing
+    3: end
+
+==== Get Flight Time size 368
+    0: None = None
+    1: None = None
+    2: None = None
+    3: None = None
+    4: None = None
+    5: None = None
+    6: EX_SetArray()
+    7: None = None
+    8: None = None
+    9: return EX_LocalOutVariable()
+   10: end
+
+==== Get Score size 360
+    0: None = None
+    1: None = None
+    2: None = None
+    3: None = None
+    4: None = None
+    5: None = None
+    6: EX_SetArray()
+    7: None = None
+    8: None = None
+    9: return EX_LocalOutVariable()
+   10: end
+
+==== GetOverTime size 365
+    0: None = None
+    1: None = None
+    2: None = None
+    3: None = None
+    4: None = None
+    5: None = None
+    6: EX_SetArray()
+    7: None = None
+    8: None = None
+    9: return EX_LocalOutVariable()
+   10: end
+
+==== GetGameState size 407
+    0: None = None
+    1: None = None
+    2: None = None
+    3: None = None
+    4: None = None
+    5: None = None
+    6: None = None
+    7: EX_SetArray()
+    8: None = None
+    9: None = None
+   10: return EX_LocalOutVariable()
+   11: end
+
+==== GetStateTime size 371
+    0: None = None
+    1: None = None
+    2: None = None
+    3: None = None
+    4: None = None
+    5: None = None
+    6: EX_SetArray()
+    7: None = None
+    8: None = None
+    9: return EX_LocalOutVariable()
+   10: end
