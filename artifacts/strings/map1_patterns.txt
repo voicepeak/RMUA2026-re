@@ -1,0 +1,78 @@
+==== RouteGate
+1147:RouteGate
+1148:RouteGateConfig
+1149:RouteGateConfigs
+1150:RouteGateIndex
+==== RouteSpline
+1152:RouteSpline
+==== RoutePort
+==== RouteJunction
+==== RouteSegment
+==== GameState
+==== GameConfig
+8:/Game/Blueprints/BP_GameConfig2024
+263:BP_GameConfig2024
+264:BP_GameConfig2024_1_C
+909:Default__BP_GameConfig2024_1_C
+==== Gate
+9:/Game/Blueprints/BP_Gate
+64:1_1_Gate
+72:1_2_Gate
+81:2_1_Gate
+89:2_2_Gate
+99:3_1_Gate
+107:3_2_Gate
+115:4_1_Gate
+123:4_2_Gate
+133:5_1_Gate
+142:5_2_Gate
+152:6_1_Gate
+160:6_2_Gate
+265:BP_Gate_C
+910:Default__BP_Gate_C
+1009:KAggregateGeom
+1048:MulticastInlineDelegateProperty
+1147:RouteGate
+1148:RouteGateConfig
+1149:RouteGateConfigs
+==== Factory
+21:/Game/Resources/Buildings/Brutalism/Building_Factory/BP_Building_Factory
+22:/Game/Resources/Buildings/Brutalism/Building_Factory/BP_Building_Factory_Pillar
+63:1_1_Factory
+71:1_2_Factory
+80:2_1_Factory
+88:2_2_Factory
+98:3_1_Factory
+106:3_2_Factory
+114:4_1_Factory
+122:4_2_Factory
+131:5_1_Factory
+141:5_2_Factory
+151:6_1_Factory
+159:6_2_Factory
+231:BP_Building_Factory_1_C
+232:BP_Building_Factory_Pillar
+233:BP_Building_Factory_Pillar10
+234:BP_Building_Factory_Pillar11
+235:BP_Building_Factory_Pillar12
+236:BP_Building_Factory_Pillar13
+==== Start
+927:Default__PlayerStart
+1087:PlayerStart
+1088:PlayerStart_GEN_VARIABLE
+1219:StartPos
+1220:StartTangent
+1178:/Game/StarterContent/Maps/Minimal_Default
+==== End
+724:CacheMeshExtendedBounds
+962:EndPos
+1128:RenderComponent
+24:7END/D
+==== Goal
+==== Seed
+998:InstancingRandomSeed
+==== Timeout
+==== PlayerStart
+927:Default__PlayerStart
+1087:PlayerStart
+1088:PlayerStart_GEN_VARIABLE

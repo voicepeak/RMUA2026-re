@@ -1,0 +1,1425 @@
+==== 2fb7000-2fb7300
+
+/mnt/d/RMUA2026-re/sim/simulator_12.0.0.5/Build/LinuxNoEditor/RMUA/Binaries/Linux/RMUA-Linux-Shipping:     file format elf64-x86-64
+
+
+Disassembly of section .text:
+
+0000000002fb7000 <SampleVectorField@@Base+0x266590>:
+ 2fb7000:	0f 10 5b 14          	movups xmm3,XMMWORD PTR [rbx+0x14]
+ 2fb7004:	0f 14 d3             	unpcklps xmm2,xmm3
+ 2fb7007:	0f 5c ca             	subps  xmm1,xmm2
+ 2fb700a:	f3 0f 59 c0          	mulss  xmm0,xmm0
+ 2fb700e:	0f 59 c9             	mulps  xmm1,xmm1
+ 2fb7011:	f3 0f 58 c1          	addss  xmm0,xmm1
+ 2fb7015:	f3 0f 16 c9          	movshdup xmm1,xmm1
+ 2fb7019:	f3 0f 58 c8          	addss  xmm1,xmm0
+ 2fb701d:	0f 57 c0             	xorps  xmm0,xmm0
+ 2fb7020:	f3 0f 51 c1          	sqrtss xmm0,xmm1
+ 2fb7024:	f3 0f 5e 05 08 ab 70 	divss  xmm0,DWORD PTR [rip+0xfffffffffd70ab08]        # 6c1b34 <_IO_stdin_used@@Base+0xb90>
+ 2fb702b:	fd 
+ 2fb702c:	f3 0f 10 8b d0 01 00 	movss  xmm1,DWORD PTR [rbx+0x1d0]
+ 2fb7033:	00 
+ 2fb7034:	f3 0f 58 c8          	addss  xmm1,xmm0
+ 2fb7038:	f3 0f 11 8b d0 01 00 	movss  DWORD PTR [rbx+0x1d0],xmm1
+ 2fb703f:	00 
+ 2fb7040:	f3 41 0f 5e 46 2c    	divss  xmm0,DWORD PTR [r14+0x2c]
+ 2fb7046:	0f 2e 83 cc 01 00 00 	ucomiss xmm0,DWORD PTR [rbx+0x1cc]
+ 2fb704d:	76 08                	jbe    2fb7057 <SampleVectorField@@Base+0x2665e7>
+ 2fb704f:	f3 0f 11 83 cc 01 00 	movss  DWORD PTR [rbx+0x1cc],xmm0
+ 2fb7056:	00 
+ 2fb7057:	48 89 df             	mov    rdi,rbx
+ 2fb705a:	e8 d1 37 00 00       	call   2fba830 <SampleVectorField@@Base+0x269dc0>
+ 2fb705f:	f3 0f 5a c0          	cvtss2sd xmm0,xmm0
+ 2fb7063:	0f 57 c9             	xorps  xmm1,xmm1
+ 2fb7066:	66 0f 2e 05 3a b1 70 	ucomisd xmm0,QWORD PTR [rip+0xfffffffffd70b13a]        # 6c21a8 <_IO_stdin_used@@Base+0x1204>
+ 2fb706d:	fd 
+ 2fb706e:	76 20                	jbe    2fb7090 <SampleVectorField@@Base+0x266620>
+ 2fb7070:	f3 0f 10 83 d0 01 00 	movss  xmm0,DWORD PTR [rbx+0x1d0]
+ 2fb7077:	00 
+ 2fb7078:	f3 0f 11 44 24 04    	movss  DWORD PTR [rsp+0x4],xmm0
+ 2fb707e:	48 89 df             	mov    rdi,rbx
+ 2fb7081:	e8 aa 37 00 00       	call   2fba830 <SampleVectorField@@Base+0x269dc0>
+ 2fb7086:	f3 0f 10 4c 24 04    	movss  xmm1,DWORD PTR [rsp+0x4]
+ 2fb708c:	f3 0f 5e c8          	divss  xmm1,xmm0
+ 2fb7090:	f3 0f 11 8b d8 01 00 	movss  DWORD PTR [rbx+0x1d8],xmm1
+ 2fb7097:	00 
+ 2fb7098:	41 8b 46 10          	mov    eax,DWORD PTR [r14+0x10]
+ 2fb709c:	41 8b 4e 14          	mov    ecx,DWORD PTR [r14+0x14]
+ 2fb70a0:	41 8b 56 18          	mov    edx,DWORD PTR [r14+0x18]
+ 2fb70a4:	89 43 0c             	mov    DWORD PTR [rbx+0xc],eax
+ 2fb70a7:	89 4b 10             	mov    DWORD PTR [rbx+0x10],ecx
+ 2fb70aa:	89 53 14             	mov    DWORD PTR [rbx+0x14],edx
+ 2fb70ad:	41 0f 10 46 1c       	movups xmm0,XMMWORD PTR [r14+0x1c]
+ 2fb70b2:	0f 29 43 20          	movaps XMMWORD PTR [rbx+0x20],xmm0
+ 2fb70b6:	48 83 c4 08          	add    rsp,0x8
+ 2fb70ba:	5b                   	pop    rbx
+ 2fb70bb:	41 5e                	pop    r14
+ 2fb70bd:	c3                   	ret
+ 2fb70be:	cc                   	int3
+ 2fb70bf:	cc                   	int3
+ 2fb70c0:	53                   	push   rbx
+ 2fb70c1:	e8 5a 51 01 00       	call   2fcc220 <SampleVectorField@@Base+0x27b7b0>
+ 2fb70c6:	48 89 c7             	mov    rdi,rax
+ 2fb70c9:	be ff ff ff ff       	mov    esi,0xffffffff
+ 2fb70ce:	e8 4d 7c 01 00       	call   2fced20 <SampleVectorField@@Base+0x27e2b0>
+ 2fb70d3:	bf 20 00 00 00       	mov    edi,0x20
+ 2fb70d8:	e8 03 d5 01 00       	call   2fd45e0 <_Znwm@@Base>
+ 2fb70dd:	48 89 c3             	mov    rbx,rax
+ 2fb70e0:	48 c7 00 f8 ff bb 00 	mov    QWORD PTR [rax],0xbbfff8
+ 2fb70e7:	c7 40 18 00 00 00 00 	mov    DWORD PTR [rax+0x18],0x0
+ 2fb70ee:	0f 28 05 ab e5 71 fd 	movaps xmm0,XMMWORD PTR [rip+0xfffffffffd71e5ab]        # 6d56a0 <_IO_stdin_used@@Base+0x146fc>
+ 2fb70f5:	0f 11 40 08          	movups XMMWORD PTR [rax+0x8],xmm0
+ 2fb70f9:	e8 22 51 01 00       	call   2fcc220 <SampleVectorField@@Base+0x27b7b0>
+ 2fb70fe:	48 89 c7             	mov    rdi,rax
+ 2fb7101:	48 89 de             	mov    rsi,rbx
+ 2fb7104:	5b                   	pop    rbx
+ 2fb7105:	e9 16 54 01 00       	jmp    2fcc520 <SampleVectorField@@Base+0x27bab0>
+ 2fb710a:	cc                   	int3
+ 2fb710b:	cc                   	int3
+ 2fb710c:	cc                   	int3
+ 2fb710d:	cc                   	int3
+ 2fb710e:	cc                   	int3
+ 2fb710f:	cc                   	int3
+ 2fb7110:	53                   	push   rbx
+ 2fb7111:	8b 87 d0 00 00 00    	mov    eax,DWORD PTR [rdi+0xd0]
+ 2fb7117:	83 f8 0b             	cmp    eax,0xb
+ 2fb711a:	77 1b                	ja     2fb7137 <SampleVectorField@@Base+0x2666c7>
+ 2fb711c:	b9 aa 0a 00 00       	mov    ecx,0xaaa
+ 2fb7121:	0f a3 c1             	bt     ecx,eax
+ 2fb7124:	73 11                	jae    2fb7137 <SampleVectorField@@Base+0x2666c7>
+ 2fb7126:	48 89 fb             	mov    rbx,rdi
+ 2fb7129:	e8 52 dd ff ff       	call   2fb4e80 <SampleVectorField@@Base+0x264410>
+ 2fb712e:	80 b8 d3 02 00 00 00 	cmp    BYTE PTR [rax+0x2d3],0x0
+ 2fb7135:	74 02                	je     2fb7139 <SampleVectorField@@Base+0x2666c9>
+ 2fb7137:	5b                   	pop    rbx
+ 2fb7138:	c3                   	ret
+ 2fb7139:	48 89 df             	mov    rdi,rbx
+ 2fb713c:	be 0c 00 00 00       	mov    esi,0xc
+ 2fb7141:	31 d2                	xor    edx,edx
+ 2fb7143:	5b                   	pop    rbx
+ 2fb7144:	e9 17 28 00 00       	jmp    2fb9960 <SampleVectorField@@Base+0x268ef0>
+ 2fb7149:	cc                   	int3
+ 2fb714a:	cc                   	int3
+ 2fb714b:	cc                   	int3
+ 2fb714c:	cc                   	int3
+ 2fb714d:	cc                   	int3
+ 2fb714e:	cc                   	int3
+ 2fb714f:	cc                   	int3
+ 2fb7150:	53                   	push   rbx
+ 2fb7151:	48 89 fb             	mov    rbx,rdi
+ 2fb7154:	83 7e 10 01          	cmp    DWORD PTR [rsi+0x10],0x1
+ 2fb7158:	75 12                	jne    2fb716c <SampleVectorField@@Base+0x2666fc>
+ 2fb715a:	e8 c1 50 01 00       	call   2fcc220 <SampleVectorField@@Base+0x27b7b0>
+ 2fb715f:	48 89 c7             	mov    rdi,rax
+ 2fb7162:	be ff ff ff ff       	mov    esi,0xffffffff
+ 2fb7167:	e8 b4 7b 01 00       	call   2fced20 <SampleVectorField@@Base+0x27e2b0>
+ 2fb716c:	48 89 df             	mov    rdi,rbx
+ 2fb716f:	5b                   	pop    rbx
+ 2fb7170:	e9 fb 37 00 00       	jmp    2fba970 <SampleVectorField@@Base+0x269f00>
+ 2fb7175:	cc                   	int3
+ 2fb7176:	cc                   	int3
+ 2fb7177:	cc                   	int3
+ 2fb7178:	cc                   	int3
+ 2fb7179:	cc                   	int3
+ 2fb717a:	cc                   	int3
+ 2fb717b:	cc                   	int3
+ 2fb717c:	cc                   	int3
+ 2fb717d:	cc                   	int3
+ 2fb717e:	cc                   	int3
+ 2fb717f:	cc                   	int3
+ 2fb7180:	55                   	push   rbp
+ 2fb7181:	41 57                	push   r15
+ 2fb7183:	41 56                	push   r14
+ 2fb7185:	41 55                	push   r13
+ 2fb7187:	41 54                	push   r12
+ 2fb7189:	53                   	push   rbx
+ 2fb718a:	48 81 ec 98 00 00 00 	sub    rsp,0x98
+ 2fb7191:	48 85 f6             	test   rsi,rsi
+ 2fb7194:	0f 84 c8 04 00 00    	je     2fb7662 <SampleVectorField@@Base+0x266bf2>
+ 2fb719a:	49 89 f4             	mov    r12,rsi
+ 2fb719d:	49 89 fe             	mov    r14,rdi
+ 2fb71a0:	bf 50 00 00 00       	mov    edi,0x50
+ 2fb71a5:	e8 36 d4 01 00       	call   2fd45e0 <_Znwm@@Base>
+ 2fb71aa:	48 89 c3             	mov    rbx,rax
+ 2fb71ad:	0f 57 c0             	xorps  xmm0,xmm0
+ 2fb71b0:	0f 11 40 20          	movups XMMWORD PTR [rax+0x20],xmm0
+ 2fb71b4:	0f 11 40 30          	movups XMMWORD PTR [rax+0x30],xmm0
+ 2fb71b8:	0f 11 40 40          	movups XMMWORD PTR [rax+0x40],xmm0
+ 2fb71bc:	0f 11 00             	movups XMMWORD PTR [rax],xmm0
+ 2fb71bf:	0f 11 40 10          	movups XMMWORD PTR [rax+0x10],xmm0
+ 2fb71c3:	c7 40 2c 80 00 00 00 	mov    DWORD PTR [rax+0x2c],0x80
+ 2fb71ca:	b8 ff ff ff ff       	mov    eax,0xffffffff
+ 2fb71cf:	48 89 43 30          	mov    QWORD PTR [rbx+0x30],rax
+ 2fb71d3:	48 c7 43 40 00 00 00 	mov    QWORD PTR [rbx+0x40],0x0
+ 2fb71da:	00 
+ 2fb71db:	c7 43 48 00 00 00 00 	mov    DWORD PTR [rbx+0x48],0x0
+ 2fb71e2:	bf 18 00 00 00       	mov    edi,0x18
+ 2fb71e7:	e8 f4 d3 01 00       	call   2fd45e0 <_Znwm@@Base>
+ 2fb71ec:	49 bd 01 00 00 00 01 	movabs r13,0x100000001
+ 2fb71f3:	00 00 00 
+ 2fb71f6:	4c 89 68 08          	mov    QWORD PTR [rax+0x8],r13
+ 2fb71fa:	48 c7 00 e8 f4 bb 00 	mov    QWORD PTR [rax],0xbbf4e8
+ 2fb7201:	48 89 58 10          	mov    QWORD PTR [rax+0x10],rbx
+ 2fb7205:	48 89 9c 24 80 00 00 	mov    QWORD PTR [rsp+0x80],rbx
+ 2fb720c:	00 
+ 2fb720d:	48 89 84 24 88 00 00 	mov    QWORD PTR [rsp+0x88],rax
+ 2fb7214:	00 
+ 2fb7215:	bf 88 00 00 00       	mov    edi,0x88
+ 2fb721a:	e8 c1 d3 01 00       	call   2fd45e0 <_Znwm@@Base>
+ 2fb721f:	48 89 c3             	mov    rbx,rax
+ 2fb7222:	49 8d 74 24 18       	lea    rsi,[r12+0x18]
+ 2fb7227:	48 89 c7             	mov    rdi,rax
+ 2fb722a:	e8 11 d9 73 ff       	call   26f4b40 <_start@@Base+0x1181c0>
+ 2fb722f:	bf 18 00 00 00       	mov    edi,0x18
+ 2fb7234:	e8 a7 d3 01 00       	call   2fd45e0 <_Znwm@@Base>
+ 2fb7239:	49 89 c7             	mov    r15,rax
+ 2fb723c:	48 c7 00 10 f5 bb 00 	mov    QWORD PTR [rax],0xbbf510
+ 2fb7243:	48 89 58 10          	mov    QWORD PTR [rax+0x10],rbx
+ 2fb7247:	4c 89 68 08          	mov    QWORD PTR [rax+0x8],r13
+ 2fb724b:	48 8d b4 24 80 00 00 	lea    rsi,[rsp+0x80]
+ 2fb7252:	00 
+ 2fb7253:	48 89 df             	mov    rdi,rbx
+ 2fb7256:	31 d2                	xor    edx,edx
+ 2fb7258:	e8 33 e0 73 ff       	call   26f5290 <_start@@Base+0x118910>
+ 2fb725d:	84 c0                	test   al,al
+ 2fb725f:	0f 84 b4 03 00 00    	je     2fb7619 <SampleVectorField@@Base+0x266ba9>
+ 2fb7265:	48 8b 9c 24 80 00 00 	mov    rbx,QWORD PTR [rsp+0x80]
+ 2fb726c:	00 
+ 2fb726d:	48 85 db             	test   rbx,rbx
+ 2fb7270:	0f 84 0c 04 00 00    	je     2fb7682 <SampleVectorField@@Base+0x266c12>
+ 2fb7276:	0f 57 c0             	xorps  xmm0,xmm0
+ 2fb7279:	0f 29 44 24 10       	movaps XMMWORD PTR [rsp+0x10],xmm0
+ 2fb727e:	48 8d 7c 24 10       	lea    rdi,[rsp+0x10]
+ 2fb7283:	be 08 00 00 00       	mov    esi,0x8
+ 2fb7288:	e8 f3 3a 63 ff       	call   25ead80 <_start@@Base+0xe400>
+ 2fb728d:	8b 74 24 18          	mov    esi,DWORD PTR [rsp+0x18]
+ 2fb7291:	8d 46 08             	lea    eax,[rsi+0x8]
+ 2fb7294:	89 44 24 18          	mov    DWORD PTR [rsp+0x18],eax
+ 2fb7298:	3b 44 24 1c          	cmp    eax,DWORD PTR [rsp+0x1c]
+ 2fb729c:	7e 0a                	jle    2fb72a8 <SampleVectorField@@Base+0x266838>
+ 2fb729e:	48 8d 7c 24 10       	lea    rdi,[rsp+0x10]
+ 2fb72a3:	e8 38 3b 63 ff       	call   25eade0 <_start@@Base+0xe460>
+ 2fb72a8:	48 8b 44 24 10       	mov    rax,QWORD PTR [rsp+0x10]
+ 2fb72ad:	0f 28 05 5c 60 71 fd 	movaps xmm0,XMMWORD PTR [rip+0xfffffffffd71605c]        # 6cd310 <_IO_stdin_used@@Base+0xc36c>
+ 2fb72b4:	0f 11 00             	movups XMMWORD PTR [rax],xmm0
+ 2fb72b7:	48 8d 7c 24 70       	lea    rdi,[rsp+0x70]
+ 2fb72bc:	48 8d 54 24 10       	lea    rdx,[rsp+0x10]
+ 2fb72c1:	48 89 de             	mov    rsi,rbx
+ 2fb72c4:	e8 a7 6c 22 00       	call   31ddf70 <LZ4_saveDictHC@@Base+0x1e39e0>
+ 2fb72c9:	48 8b 7c 24 10       	mov    rdi,QWORD PTR [rsp+0x10]
+ 2fb72ce:	48 85 ff             	test   rdi,rdi
+ 2fb72d1:	74 05                	je     2fb72d8 <SampleVectorField@@Base+0x266868>
+ 2fb72d3:	e8 c8 ab 0b 00       	call   3071ea0 <LZ4_saveDictHC@@Base+0x77910>
+ 2fb72d8:	0f 57 c0             	xorps  xmm0,xmm0
+ 2fb72db:	0f 29 44 24 10       	movaps XMMWORD PTR [rsp+0x10],xmm0
+ 2fb72e0:	48 8d 7c 24 10       	lea    rdi,[rsp+0x10]
+ 2fb72e5:	be 06 00 00 00       	mov    esi,0x6
+ 2fb72ea:	e8 91 3a 63 ff       	call   25ead80 <_start@@Base+0xe400>
+ 2fb72ef:	8b 74 24 18          	mov    esi,DWORD PTR [rsp+0x18]
+ 2fb72f3:	8d 46 06             	lea    eax,[rsi+0x6]
+ 2fb72f6:	89 44 24 18          	mov    DWORD PTR [rsp+0x18],eax
+ 2fb72fa:	3b 44 24 1c          	cmp    eax,DWORD PTR [rsp+0x1c]
+ 2fb72fe:	7e 0a                	jle    2fb730a <SampleVectorField@@Base+0x26689a>
+==== 2fb9100-2fb9600
+
+/mnt/d/RMUA2026-re/sim/simulator_12.0.0.5/Build/LinuxNoEditor/RMUA/Binaries/Linux/RMUA-Linux-Shipping:     file format elf64-x86-64
+
+
+Disassembly of section .text:
+
+0000000002fb9100 <SampleVectorField@@Base+0x268690>:
+ 2fb9100:	00 74 2f 48          	add    BYTE PTR [rdi+rbp*1+0x48],dh
+ 2fb9104:	8b 7c 24 20          	mov    edi,DWORD PTR [rsp+0x20]
+ 2fb9108:	48 85 ff             	test   rdi,rdi
+ 2fb910b:	74 25                	je     2fb9132 <SampleVectorField@@Base+0x2686c2>
+ 2fb910d:	48 8b 07             	mov    rax,QWORD PTR [rdi]
+ 2fb9110:	ff 10                	call   QWORD PTR [rax]
+ 2fb9112:	48 8b 7c 24 20       	mov    rdi,QWORD PTR [rsp+0x20]
+ 2fb9117:	48 85 ff             	test   rdi,rdi
+ 2fb911a:	74 0e                	je     2fb912a <SampleVectorField@@Base+0x2686ba>
+ 2fb911c:	31 f6                	xor    esi,esi
+ 2fb911e:	31 d2                	xor    edx,edx
+ 2fb9120:	e8 ab 8d 0b 00       	call   3071ed0 <LZ4_saveDictHC@@Base+0x77940>
+ 2fb9125:	48 89 44 24 20       	mov    QWORD PTR [rsp+0x20],rax
+ 2fb912a:	c7 44 24 28 00 00 00 	mov    DWORD PTR [rsp+0x28],0x0
+ 2fb9131:	00 
+ 2fb9132:	48 8d 7c 24 20       	lea    rdi,[rsp+0x20]
+ 2fb9137:	e8 54 59 68 ff       	call   263ea90 <_start@@Base+0x62110>
+ 2fb913c:	83 7c 24 10 00       	cmp    DWORD PTR [rsp+0x10],0x0
+ 2fb9141:	74 2f                	je     2fb9172 <SampleVectorField@@Base+0x268702>
+ 2fb9143:	48 8b 7c 24 08       	mov    rdi,QWORD PTR [rsp+0x8]
+ 2fb9148:	48 85 ff             	test   rdi,rdi
+ 2fb914b:	74 25                	je     2fb9172 <SampleVectorField@@Base+0x268702>
+ 2fb914d:	48 8b 07             	mov    rax,QWORD PTR [rdi]
+ 2fb9150:	ff 10                	call   QWORD PTR [rax]
+ 2fb9152:	48 8b 7c 24 08       	mov    rdi,QWORD PTR [rsp+0x8]
+ 2fb9157:	48 85 ff             	test   rdi,rdi
+ 2fb915a:	74 0e                	je     2fb916a <SampleVectorField@@Base+0x2686fa>
+ 2fb915c:	31 f6                	xor    esi,esi
+ 2fb915e:	31 d2                	xor    edx,edx
+ 2fb9160:	e8 6b 8d 0b 00       	call   3071ed0 <LZ4_saveDictHC@@Base+0x77940>
+ 2fb9165:	48 89 44 24 08       	mov    QWORD PTR [rsp+0x8],rax
+ 2fb916a:	c7 44 24 10 00 00 00 	mov    DWORD PTR [rsp+0x10],0x0
+ 2fb9171:	00 
+ 2fb9172:	48 8d 7c 24 08       	lea    rdi,[rsp+0x8]
+ 2fb9177:	e8 14 59 68 ff       	call   263ea90 <_start@@Base+0x62110>
+ 2fb917c:	4c 89 f7             	mov    rdi,r14
+ 2fb917f:	e8 ac 06 00 00       	call   2fb9830 <SampleVectorField@@Base+0x268dc0>
+ 2fb9184:	41 38 86 80 01 00 00 	cmp    BYTE PTR [r14+0x180],al
+ 2fb918b:	74 54                	je     2fb91e1 <SampleVectorField@@Base+0x268771>
+ 2fb918d:	e8 ee bc ff ff       	call   2fb4e80 <SampleVectorField@@Base+0x264410>
+ 2fb9192:	40 b5 01             	mov    bpl,0x1
+ 2fb9195:	80 b8 d0 02 00 00 00 	cmp    BYTE PTR [rax+0x2d0],0x0
+ 2fb919c:	75 0c                	jne    2fb91aa <SampleVectorField@@Base+0x26873a>
+ 2fb919e:	41 80 be 80 01 00 00 	cmp    BYTE PTR [r14+0x180],0x0
+ 2fb91a5:	00 
+ 2fb91a6:	40 0f 94 c5          	sete   bpl
+ 2fb91aa:	41 88 ae 80 01 00 00 	mov    BYTE PTR [r14+0x180],bpl
+ 2fb91b1:	bf 18 00 00 00       	mov    edi,0x18
+ 2fb91b6:	e8 25 b4 01 00       	call   2fd45e0 <_Znwm@@Base>
+ 2fb91bb:	48 89 c3             	mov    rbx,rax
+ 2fb91be:	48 c7 40 08 1e 00 00 	mov    QWORD PTR [rax+0x8],0x1e
+ 2fb91c5:	00 
+ 2fb91c6:	48 c7 00 a0 58 cd 00 	mov    QWORD PTR [rax],0xcd58a0
+ 2fb91cd:	40 88 68 10          	mov    BYTE PTR [rax+0x10],bpl
+ 2fb91d1:	e8 4a 30 01 00       	call   2fcc220 <SampleVectorField@@Base+0x27b7b0>
+ 2fb91d6:	48 89 c7             	mov    rdi,rax
+ 2fb91d9:	48 89 de             	mov    rsi,rbx
+ 2fb91dc:	e8 3f 33 01 00       	call   2fcc520 <SampleVectorField@@Base+0x27bab0>
+ 2fb91e1:	4d 63 66 68          	movsxd r12,DWORD PTR [r14+0x68]
+ 2fb91e5:	4d 85 e4             	test   r12,r12
+ 2fb91e8:	74 2c                	je     2fb9216 <SampleVectorField@@Base+0x2687a6>
+ 2fb91ea:	4d 8b 7e 60          	mov    r15,QWORD PTR [r14+0x60]
+ 2fb91ee:	49 c1 e4 03          	shl    r12,0x3
+ 2fb91f2:	31 db                	xor    ebx,ebx
+ 2fb91f4:	66 2e 0f 1f 84 00 00 	cs nop WORD PTR [rax+rax*1+0x0]
+ 2fb91fb:	00 00 00 
+ 2fb91fe:	66 90                	xchg   ax,ax
+ 2fb9200:	49 8b 3c 1f          	mov    rdi,QWORD PTR [r15+rbx*1]
+ 2fb9204:	e8 67 7c 00 00       	call   2fc0e70 <SampleVectorField@@Base+0x270400>
+ 2fb9209:	84 c0                	test   al,al
+ 2fb920b:	75 0d                	jne    2fb921a <SampleVectorField@@Base+0x2687aa>
+ 2fb920d:	48 83 c3 08          	add    rbx,0x8
+ 2fb9211:	49 39 dc             	cmp    r12,rbx
+ 2fb9214:	75 ea                	jne    2fb9200 <SampleVectorField@@Base+0x268790>
+ 2fb9216:	31 c0                	xor    eax,eax
+ 2fb9218:	eb 02                	jmp    2fb921c <SampleVectorField@@Base+0x2687ac>
+ 2fb921a:	b0 01                	mov    al,0x1
+ 2fb921c:	41 8a 9e 81 01 00 00 	mov    bl,BYTE PTR [r14+0x181]
+ 2fb9223:	38 c3                	cmp    bl,al
+ 2fb9225:	74 39                	je     2fb9260 <SampleVectorField@@Base+0x2687f0>
+ 2fb9227:	80 f3 01             	xor    bl,0x1
+ 2fb922a:	41 88 9e 81 01 00 00 	mov    BYTE PTR [r14+0x181],bl
+ 2fb9231:	bf 18 00 00 00       	mov    edi,0x18
+ 2fb9236:	e8 a5 b3 01 00       	call   2fd45e0 <_Znwm@@Base>
+ 2fb923b:	48 89 c5             	mov    rbp,rax
+ 2fb923e:	48 c7 40 08 1f 00 00 	mov    QWORD PTR [rax+0x8],0x1f
+ 2fb9245:	00 
+ 2fb9246:	48 c7 00 c8 58 cd 00 	mov    QWORD PTR [rax],0xcd58c8
+ 2fb924d:	88 58 10             	mov    BYTE PTR [rax+0x10],bl
+ 2fb9250:	e8 cb 2f 01 00       	call   2fcc220 <SampleVectorField@@Base+0x27b7b0>
+ 2fb9255:	48 89 c7             	mov    rdi,rax
+ 2fb9258:	48 89 ee             	mov    rsi,rbp
+ 2fb925b:	e8 c0 32 01 00       	call   2fcc520 <SampleVectorField@@Base+0x27bab0>
+ 2fb9260:	41 8b 86 d0 00 00 00 	mov    eax,DWORD PTR [r14+0xd0]
+ 2fb9267:	83 f8 0b             	cmp    eax,0xb
+ 2fb926a:	0f 87 ab 00 00 00    	ja     2fb931b <SampleVectorField@@Base+0x2688ab>
+ 2fb9270:	b9 55 05 00 00       	mov    ecx,0x555
+ 2fb9275:	0f a3 c1             	bt     ecx,eax
+ 2fb9278:	73 7a                	jae    2fb92f4 <SampleVectorField@@Base+0x268884>
+ 2fb927a:	f3 41 0f 10 86 a8 01 	movss  xmm0,DWORD PTR [r14+0x1a8]
+ 2fb9281:	00 00 
+ 2fb9283:	f3 0f 58 44 24 04    	addss  xmm0,DWORD PTR [rsp+0x4]
+ 2fb9289:	f3 0f 11 04 24       	movss  DWORD PTR [rsp],xmm0
+ 2fb928e:	f3 41 0f 11 86 a8 01 	movss  DWORD PTR [r14+0x1a8],xmm0
+ 2fb9295:	00 00 
+ 2fb9297:	e8 e4 bb ff ff       	call   2fb4e80 <SampleVectorField@@Base+0x264410>
+ 2fb929c:	f3 0f 10 04 24       	movss  xmm0,DWORD PTR [rsp]
+ 2fb92a1:	f3 0f 11 80 18 03 00 	movss  DWORD PTR [rax+0x318],xmm0
+ 2fb92a8:	00 
+ 2fb92a9:	f3 41 0f 10 86 a8 01 	movss  xmm0,DWORD PTR [r14+0x1a8]
+ 2fb92b0:	00 00 
+ 2fb92b2:	f3 0f 11 04 24       	movss  DWORD PTR [rsp],xmm0
+ 2fb92b7:	e8 c4 bb ff ff       	call   2fb4e80 <SampleVectorField@@Base+0x264410>
+ 2fb92bc:	f3 0f 10 04 24       	movss  xmm0,DWORD PTR [rsp]
+ 2fb92c1:	0f 2e 80 c8 02 00 00 	ucomiss xmm0,DWORD PTR [rax+0x2c8]
+ 2fb92c8:	0f 86 f0 01 00 00    	jbe    2fb94be <SampleVectorField@@Base+0x268a4e>
+ 2fb92ce:	e8 ad bb ff ff       	call   2fb4e80 <SampleVectorField@@Base+0x264410>
+ 2fb92d3:	80 b8 d4 02 00 00 00 	cmp    BYTE PTR [rax+0x2d4],0x0
+ 2fb92da:	0f 85 de 01 00 00    	jne    2fb94be <SampleVectorField@@Base+0x268a4e>
+ 2fb92e0:	4c 89 f7             	mov    rdi,r14
+ 2fb92e3:	be 0c 00 00 00       	mov    esi,0xc
+ 2fb92e8:	31 d2                	xor    edx,edx
+ 2fb92ea:	e8 71 06 00 00       	call   2fb9960 <SampleVectorField@@Base+0x268ef0>
+ 2fb92ef:	e9 ca 01 00 00       	jmp    2fb94be <SampleVectorField@@Base+0x268a4e>
+ 2fb92f4:	41 c7 86 a8 01 00 00 	mov    DWORD PTR [r14+0x1a8],0x0
+ 2fb92fb:	00 00 00 00 
+ 2fb92ff:	83 c0 ff             	add    eax,0xffffffff
+ 2fb9302:	83 f8 0a             	cmp    eax,0xa
+ 2fb9305:	77 07                	ja     2fb930e <SampleVectorField@@Base+0x26889e>
+ 2fb9307:	ff 24 c5 60 56 cd 00 	jmp    QWORD PTR [rax*8+0xcd5660]
+ 2fb930e:	e8 6d bb ff ff       	call   2fb4e80 <SampleVectorField@@Base+0x264410>
+ 2fb9313:	48 05 b0 02 00 00    	add    rax,0x2b0
+ 2fb9319:	eb 5e                	jmp    2fb9379 <SampleVectorField@@Base+0x268909>
+ 2fb931b:	e8 60 bb ff ff       	call   2fb4e80 <SampleVectorField@@Base+0x264410>
+ 2fb9320:	c7 80 18 03 00 00 00 	mov    DWORD PTR [rax+0x318],0x0
+ 2fb9327:	00 00 00 
+ 2fb932a:	41 c7 86 a8 01 00 00 	mov    DWORD PTR [r14+0x1a8],0x0
+ 2fb9331:	00 00 00 00 
+ 2fb9335:	e9 84 01 00 00       	jmp    2fb94be <SampleVectorField@@Base+0x268a4e>
+ 2fb933a:	e8 41 bb ff ff       	call   2fb4e80 <SampleVectorField@@Base+0x264410>
+ 2fb933f:	48 05 b8 02 00 00    	add    rax,0x2b8
+ 2fb9345:	eb 32                	jmp    2fb9379 <SampleVectorField@@Base+0x268909>
+ 2fb9347:	e8 34 bb ff ff       	call   2fb4e80 <SampleVectorField@@Base+0x264410>
+ 2fb934c:	48 05 c4 02 00 00    	add    rax,0x2c4
+ 2fb9352:	eb 25                	jmp    2fb9379 <SampleVectorField@@Base+0x268909>
+ 2fb9354:	e8 27 bb ff ff       	call   2fb4e80 <SampleVectorField@@Base+0x264410>
+ 2fb9359:	48 05 b4 02 00 00    	add    rax,0x2b4
+ 2fb935f:	eb 18                	jmp    2fb9379 <SampleVectorField@@Base+0x268909>
+ 2fb9361:	e8 1a bb ff ff       	call   2fb4e80 <SampleVectorField@@Base+0x264410>
+ 2fb9366:	48 05 bc 02 00 00    	add    rax,0x2bc
+ 2fb936c:	eb 0b                	jmp    2fb9379 <SampleVectorField@@Base+0x268909>
+ 2fb936e:	e8 0d bb ff ff       	call   2fb4e80 <SampleVectorField@@Base+0x264410>
+ 2fb9373:	48 05 c0 02 00 00    	add    rax,0x2c0
+ 2fb9379:	f3 0f 10 00          	movss  xmm0,DWORD PTR [rax]
+ 2fb937d:	f3 0f 11 44 24 1c    	movss  DWORD PTR [rsp+0x1c],xmm0
+ 2fb9383:	41 8b 9e d0 00 00 00 	mov    ebx,DWORD PTR [r14+0xd0]
+ 2fb938a:	0f 57 c0             	xorps  xmm0,xmm0
+ 2fb938d:	f3 0f 11 04 24       	movss  DWORD PTR [rsp],xmm0
+ 2fb9392:	e8 59 86 f8 03       	call   6f419f0 <_ZNSt3__16chrono12steady_clock3nowEv@@Base>
+ 2fb9397:	83 c3 ff             	add    ebx,0xffffffff
+ 2fb939a:	83 fb 0a             	cmp    ebx,0xa
+ 2fb939d:	77 53                	ja     2fb93f2 <SampleVectorField@@Base+0x268982>
+ 2fb939f:	ff 24 dd b8 56 cd 00 	jmp    QWORD PTR [rbx*8+0xcd56b8]
+ 2fb93a6:	49 8d 8e 40 01 00 00 	lea    rcx,[r14+0x140]
+ 2fb93ad:	eb 2b                	jmp    2fb93da <SampleVectorField@@Base+0x26896a>
+ 2fb93af:	49 8d 8e 50 01 00 00 	lea    rcx,[r14+0x150]
+ 2fb93b6:	eb 22                	jmp    2fb93da <SampleVectorField@@Base+0x26896a>
+ 2fb93b8:	49 8d 8e 68 01 00 00 	lea    rcx,[r14+0x168]
+ 2fb93bf:	eb 19                	jmp    2fb93da <SampleVectorField@@Base+0x26896a>
+ 2fb93c1:	49 8d 8e 48 01 00 00 	lea    rcx,[r14+0x148]
+ 2fb93c8:	eb 10                	jmp    2fb93da <SampleVectorField@@Base+0x26896a>
+ 2fb93ca:	49 8d 8e 58 01 00 00 	lea    rcx,[r14+0x158]
+ 2fb93d1:	eb 07                	jmp    2fb93da <SampleVectorField@@Base+0x26896a>
+ 2fb93d3:	49 8d 8e 60 01 00 00 	lea    rcx,[r14+0x160]
+ 2fb93da:	48 2b 01             	sub    rax,QWORD PTR [rcx]
+ 2fb93dd:	0f 57 c0             	xorps  xmm0,xmm0
+ 2fb93e0:	f3 48 0f 2a c0       	cvtsi2ss xmm0,rax
+ 2fb93e5:	f3 0f 5e 05 4b 7e 70 	divss  xmm0,DWORD PTR [rip+0xfffffffffd707e4b]        # 6c1238 <_IO_stdin_used@@Base+0x294>
+ 2fb93ec:	fd 
+ 2fb93ed:	f3 0f 11 04 24       	movss  DWORD PTR [rsp],xmm0
+ 2fb93f2:	e8 89 ba ff ff       	call   2fb4e80 <SampleVectorField@@Base+0x264410>
+ 2fb93f7:	f3 0f 10 04 24       	movss  xmm0,DWORD PTR [rsp]
+ 2fb93fc:	f3 0f 11 80 18 03 00 	movss  DWORD PTR [rax+0x318],xmm0
+ 2fb9403:	00 
+ 2fb9404:	0f 2e 44 24 1c       	ucomiss xmm0,DWORD PTR [rsp+0x1c]
+ 2fb9409:	76 1d                	jbe    2fb9428 <SampleVectorField@@Base+0x2689b8>
+ 2fb940b:	e8 70 ba ff ff       	call   2fb4e80 <SampleVectorField@@Base+0x264410>
+ 2fb9410:	80 b8 d4 02 00 00 00 	cmp    BYTE PTR [rax+0x2d4],0x0
+ 2fb9417:	75 0f                	jne    2fb9428 <SampleVectorField@@Base+0x2689b8>
+ 2fb9419:	4c 89 f7             	mov    rdi,r14
+ 2fb941c:	be 0c 00 00 00       	mov    esi,0xc
+ 2fb9421:	31 d2                	xor    edx,edx
+ 2fb9423:	e8 38 05 00 00       	call   2fb9960 <SampleVectorField@@Base+0x268ef0>
+ 2fb9428:	bf 20 00 00 00       	mov    edi,0x20
+ 2fb942d:	e8 ae b1 01 00       	call   2fd45e0 <_Znwm@@Base>
+ 2fb9432:	48 89 c3             	mov    rbx,rax
+ 2fb9435:	48 c7 40 08 23 00 00 	mov    QWORD PTR [rax+0x8],0x23
+ 2fb943c:	00 
+ 2fb943d:	48 c7 00 f0 58 cd 00 	mov    QWORD PTR [rax],0xcd58f0
+ 2fb9444:	4c 8d 78 14          	lea    r15,[rax+0x14]
+ 2fb9448:	48 8b 05 11 14 24 04 	mov    rax,QWORD PTR [rip+0x4241411]        # 71fa860 <__bss_start@@Base+0xa10a0>
+ 2fb944f:	48 89 43 14          	mov    QWORD PTR [rbx+0x14],rax
+ 2fb9453:	8b 05 0f 14 24 04    	mov    eax,DWORD PTR [rip+0x424140f]        # 71fa868 <__bss_start@@Base+0xa10a8>
+ 2fb9459:	89 43 1c             	mov    DWORD PTR [rbx+0x1c],eax
+ 2fb945c:	41 8a 86 81 01 00 00 	mov    al,BYTE PTR [r14+0x181]
+ 2fb9463:	88 43 10             	mov    BYTE PTR [rbx+0x10],al
+ 2fb9466:	41 8b 86 d0 00 00 00 	mov    eax,DWORD PTR [r14+0xd0]
+ 2fb946d:	83 f8 0b             	cmp    eax,0xb
+ 2fb9470:	77 28                	ja     2fb949a <SampleVectorField@@Base+0x268a2a>
+ 2fb9472:	b9 80 0a 00 00       	mov    ecx,0xa80
+ 2fb9477:	0f a3 c1             	bt     ecx,eax
+ 2fb947a:	73 1e                	jae    2fb949a <SampleVectorField@@Base+0x268a2a>
+ 2fb947c:	f3 0f 10 04 24       	movss  xmm0,DWORD PTR [rsp]
+ 2fb9481:	0f 2e 44 24 1c       	ucomiss xmm0,DWORD PTR [rsp+0x1c]
+ 2fb9486:	77 12                	ja     2fb949a <SampleVectorField@@Base+0x268a2a>
+ 2fb9488:	e8 f3 b9 ff ff       	call   2fb4e80 <SampleVectorField@@Base+0x264410>
+ 2fb948d:	80 b8 d5 02 00 00 00 	cmp    BYTE PTR [rax+0x2d5],0x0
+ 2fb9494:	0f 84 c2 00 00 00    	je     2fb955c <SampleVectorField@@Base+0x268aec>
+ 2fb949a:	8b 05 c8 13 24 04    	mov    eax,DWORD PTR [rip+0x42413c8]        # 71fa868 <__bss_start@@Base+0xa10a8>
+ 2fb94a0:	41 89 47 08          	mov    DWORD PTR [r15+0x8],eax
+ 2fb94a4:	48 8b 05 b5 13 24 04 	mov    rax,QWORD PTR [rip+0x42413b5]        # 71fa860 <__bss_start@@Base+0xa10a0>
+ 2fb94ab:	49 89 07             	mov    QWORD PTR [r15],rax
+ 2fb94ae:	e8 6d 2d 01 00       	call   2fcc220 <SampleVectorField@@Base+0x27b7b0>
+ 2fb94b3:	48 89 c7             	mov    rdi,rax
+ 2fb94b6:	48 89 de             	mov    rsi,rbx
+ 2fb94b9:	e8 62 30 01 00       	call   2fcc520 <SampleVectorField@@Base+0x27bab0>
+ 2fb94be:	41 80 be 80 01 00 00 	cmp    BYTE PTR [r14+0x180],0x0
+ 2fb94c5:	00 
+ 2fb94c6:	75 4f                	jne    2fb9517 <SampleVectorField@@Base+0x268aa7>
+ 2fb94c8:	f3 0f 10 44 24 04    	movss  xmm0,DWORD PTR [rsp+0x4]
+ 2fb94ce:	f3 41 0f 58 86 ac 01 	addss  xmm0,DWORD PTR [r14+0x1ac]
+ 2fb94d5:	00 00 
+ 2fb94d7:	f3 0f 11 44 24 04    	movss  DWORD PTR [rsp+0x4],xmm0
+ 2fb94dd:	f3 41 0f 11 86 ac 01 	movss  DWORD PTR [r14+0x1ac],xmm0
+ 2fb94e4:	00 00 
+ 2fb94e6:	e8 95 b9 ff ff       	call   2fb4e80 <SampleVectorField@@Base+0x264410>
+ 2fb94eb:	f3 0f 10 44 24 04    	movss  xmm0,DWORD PTR [rsp+0x4]
+ 2fb94f1:	0f 2e 80 cc 02 00 00 	ucomiss xmm0,DWORD PTR [rax+0x2cc]
+ 2fb94f8:	76 1d                	jbe    2fb9517 <SampleVectorField@@Base+0x268aa7>
+ 2fb94fa:	e8 81 b9 ff ff       	call   2fb4e80 <SampleVectorField@@Base+0x264410>
+ 2fb94ff:	80 b8 d4 02 00 00 00 	cmp    BYTE PTR [rax+0x2d4],0x0
+ 2fb9506:	75 0f                	jne    2fb9517 <SampleVectorField@@Base+0x268aa7>
+ 2fb9508:	4c 89 f7             	mov    rdi,r14
+ 2fb950b:	be 0c 00 00 00       	mov    esi,0xc
+ 2fb9510:	31 d2                	xor    edx,edx
+ 2fb9512:	e8 49 04 00 00       	call   2fb9960 <SampleVectorField@@Base+0x268ef0>
+ 2fb9517:	4c 89 f7             	mov    rdi,r14
+ 2fb951a:	e8 11 13 00 00       	call   2fba830 <SampleVectorField@@Base+0x269dc0>
+ 2fb951f:	f3 0f 11 44 24 04    	movss  DWORD PTR [rsp+0x4],xmm0
+ 2fb9525:	e8 56 b9 ff ff       	call   2fb4e80 <SampleVectorField@@Base+0x264410>
+ 2fb952a:	f3 0f 10 44 24 04    	movss  xmm0,DWORD PTR [rsp+0x4]
+ 2fb9530:	f3 0f 11 80 f8 02 00 	movss  DWORD PTR [rax+0x2f8],xmm0
+ 2fb9537:	00 
+ 2fb9538:	41 8b 9e ac 01 00 00 	mov    ebx,DWORD PTR [r14+0x1ac]
+ 2fb953f:	e8 3c b9 ff ff       	call   2fb4e80 <SampleVectorField@@Base+0x264410>
+ 2fb9544:	89 98 00 03 00 00    	mov    DWORD PTR [rax+0x300],ebx
+ 2fb954a:	48 81 c4 88 00 00 00 	add    rsp,0x88
+ 2fb9551:	5b                   	pop    rbx
+ 2fb9552:	41 5c                	pop    r12
+ 2fb9554:	41 5d                	pop    r13
+ 2fb9556:	41 5e                	pop    r14
+ 2fb9558:	41 5f                	pop    r15
+ 2fb955a:	5d                   	pop    rbp
+ 2fb955b:	c3                   	ret
+ 2fb955c:	4d 8d be 00 02 00 00 	lea    r15,[r14+0x200]
+ 2fb9563:	4c 89 ff             	mov    rdi,r15
+ 2fb9566:	f3 0f 10 04 24       	movss  xmm0,DWORD PTR [rsp]
+ 2fb956b:	e8 e0 8a ff ff       	call   2fb2050 <SampleVectorField@@Base+0x2615e0>
+ 2fb9570:	4c 89 ff             	mov    rdi,r15
+ 2fb9573:	f3 0f 10 04 24       	movss  xmm0,DWORD PTR [rsp]
+ 2fb9578:	e8 b3 8b ff ff       	call   2fb2130 <SampleVectorField@@Base+0x2616c0>
+ 2fb957d:	0f 13 43 14          	movlps QWORD PTR [rbx+0x14],xmm0
+ 2fb9581:	f3 0f 11 4b 1c       	movss  DWORD PTR [rbx+0x1c],xmm1
+ 2fb9586:	e9 23 ff ff ff       	jmp    2fb94ae <SampleVectorField@@Base+0x268a3e>
+ 2fb958b:	48 89 c3             	mov    rbx,rax
+ 2fb958e:	48 8d 7c 24 08       	lea    rdi,[rsp+0x8]
+ 2fb9593:	eb 08                	jmp    2fb959d <SampleVectorField@@Base+0x268b2d>
+ 2fb9595:	48 89 c3             	mov    rbx,rax
+ 2fb9598:	48 8d 7c 24 20       	lea    rdi,[rsp+0x20]
+ 2fb959d:	e8 ee 54 68 ff       	call   263ea90 <_start@@Base+0x62110>
+ 2fb95a2:	48 89 df             	mov    rdi,rbx
+ 2fb95a5:	e8 96 5f 65 ff       	call   260f540 <_start@@Base+0x32bc0>
+ 2fb95aa:	48 89 c3             	mov    rbx,rax
+ 2fb95ad:	e9 98 00 00 00       	jmp    2fb964a <SampleVectorField@@Base+0x268bda>
+ 2fb95b2:	48 89 c7             	mov    rdi,rax
+ 2fb95b5:	e8 86 5f 65 ff       	call   260f540 <_start@@Base+0x32bc0>
+ 2fb95ba:	48 89 c3             	mov    rbx,rax
+ 2fb95bd:	48 83 7c 24 40 00    	cmp    QWORD PTR [rsp+0x40],0x0
+ 2fb95c3:	74 17                	je     2fb95dc <SampleVectorField@@Base+0x268b6c>
+ 2fb95c5:	48 8b 44 24 50       	mov    rax,QWORD PTR [rsp+0x50]
+ 2fb95ca:	48 85 c0             	test   rax,rax
+ 2fb95cd:	48 8d 7c 24 60       	lea    rdi,[rsp+0x60]
+ 2fb95d2:	48 0f 45 f8          	cmovne rdi,rax
+ 2fb95d6:	48 8b 07             	mov    rax,QWORD PTR [rdi]
+ 2fb95d9:	ff 50 10             	call   QWORD PTR [rax+0x10]
+ 2fb95dc:	83 7c 24 28 00       	cmp    DWORD PTR [rsp+0x28],0x0
+ 2fb95e1:	74 67                	je     2fb964a <SampleVectorField@@Base+0x268bda>
+ 2fb95e3:	48 8b 7c 24 20       	mov    rdi,QWORD PTR [rsp+0x20]
+ 2fb95e8:	48 85 ff             	test   rdi,rdi
+ 2fb95eb:	74 5d                	je     2fb964a <SampleVectorField@@Base+0x268bda>
+ 2fb95ed:	48 8b 07             	mov    rax,QWORD PTR [rdi]
+ 2fb95f0:	ff 10                	call   QWORD PTR [rax]
+ 2fb95f2:	48 8b 7c 24 20       	mov    rdi,QWORD PTR [rsp+0x20]
+ 2fb95f7:	48 85 ff             	test   rdi,rdi
+ 2fb95fa:	74 46                	je     2fb9642 <SampleVectorField@@Base+0x268bd2>
+ 2fb95fc:	31 f6                	xor    esi,esi
+ 2fb95fe:	31 d2                	xor    edx,edx
+==== 2fbfef0-2fc0200
+
+/mnt/d/RMUA2026-re/sim/simulator_12.0.0.5/Build/LinuxNoEditor/RMUA/Binaries/Linux/RMUA-Linux-Shipping:     file format elf64-x86-64
+
+
+Disassembly of section .text:
+
+0000000002fbfef0 <SampleVectorField@@Base+0x26f480>:
+ 2fbfef0:	48 89 c1             	mov    rcx,rax
+ 2fbfef3:	41 b8 01 00 00 00    	mov    r8d,0x1
+ 2fbfef9:	45 31 c9             	xor    r9d,r9d
+ 2fbfefc:	e8 9f 59 37 00       	call   33358a0 <LZ4_saveDictHC@@Base+0x33b310>
+ 2fbff01:	49 8d 9f 20 02 00 00 	lea    rbx,[r15+0x220]
+ 2fbff08:	48 89 df             	mov    rdi,rbx
+ 2fbff0b:	48 89 c6             	mov    rsi,rax
+ 2fbff0e:	e8 dd 4b 42 00       	call   33e4af0 <LZ4_saveDictHC@@Base+0x3ea560>
+ 2fbff13:	48 89 df             	mov    rdi,rbx
+ 2fbff16:	e8 65 4f 42 00       	call   33e4e80 <LZ4_saveDictHC@@Base+0x3ea8f0>
+ 2fbff1b:	48 89 c7             	mov    rdi,rax
+ 2fbff1e:	be 01 00 00 00       	mov    esi,0x1
+ 2fbff23:	e8 28 d0 32 02       	call   52ecf50 <src_float_to_int_array@@Base+0x491050>
+ 2fbff28:	48 89 df             	mov    rdi,rbx
+ 2fbff2b:	e8 50 4f 42 00       	call   33e4e80 <LZ4_saveDictHC@@Base+0x3ea8f0>
+ 2fbff30:	ba f8 d1 41 07       	mov    edx,0x741d1f8
+ 2fbff35:	48 89 c7             	mov    rdi,rax
+ 2fbff38:	4c 89 f6             	mov    rsi,r14
+ 2fbff3b:	31 c9                	xor    ecx,ecx
+ 2fbff3d:	e8 1e 20 2f 02       	call   52b1f60 <src_float_to_int_array@@Base+0x456060>
+ 2fbff42:	48 83 c4 20          	add    rsp,0x20
+ 2fbff46:	5b                   	pop    rbx
+ 2fbff47:	41 5e                	pop    r14
+ 2fbff49:	41 5f                	pop    r15
+ 2fbff4b:	c3                   	ret
+ 2fbff4c:	48 89 c3             	mov    rbx,rax
+ 2fbff4f:	4c 89 ff             	mov    rdi,r15
+ 2fbff52:	e8 49 ab 67 ff       	call   263aaa0 <_start@@Base+0x5e120>
+ 2fbff57:	48 89 df             	mov    rdi,rbx
+ 2fbff5a:	e8 c1 93 0e 04       	call   70a9320 <_Unwind_Resume@plt>
+ 2fbff5f:	cc                   	int3
+ 2fbff60:	41 57                	push   r15
+ 2fbff62:	41 56                	push   r14
+ 2fbff64:	41 55                	push   r13
+ 2fbff66:	41 54                	push   r12
+ 2fbff68:	53                   	push   rbx
+ 2fbff69:	48 83 ec 10          	sub    rsp,0x10
+ 2fbff6d:	49 89 f6             	mov    r14,rsi
+ 2fbff70:	49 89 ff             	mov    r15,rdi
+ 2fbff73:	c6 87 30 02 00 00 01 	mov    BYTE PTR [rdi+0x230],0x1
+ 2fbff7a:	c7 87 34 02 00 00 00 	mov    DWORD PTR [rdi+0x234],0x0
+ 2fbff81:	00 00 00 
+ 2fbff84:	f3 0f 11 87 38 02 00 	movss  DWORD PTR [rdi+0x238],xmm0
+ 2fbff8b:	00 
+ 2fbff8c:	49 81 c7 20 02 00 00 	add    r15,0x220
+ 2fbff93:	4c 89 ff             	mov    rdi,r15
+ 2fbff96:	e8 e5 4e 42 00       	call   33e4e80 <LZ4_saveDictHC@@Base+0x3ea8f0>
+ 2fbff9b:	48 89 c7             	mov    rdi,rax
+ 2fbff9e:	be 01 00 00 00       	mov    esi,0x1
+ 2fbffa3:	e8 a8 cf 32 02       	call   52ecf50 <src_float_to_int_array@@Base+0x491050>
+ 2fbffa8:	49 63 46 08          	movsxd rax,DWORD PTR [r14+0x8]
+ 2fbffac:	48 85 c0             	test   rax,rax
+ 2fbffaf:	74 57                	je     2fc0008 <SampleVectorField@@Base+0x26f598>
+ 2fbffb1:	4d 8b 2e             	mov    r13,QWORD PTR [r14]
+ 2fbffb4:	48 c1 e0 02          	shl    rax,0x2
+ 2fbffb8:	4c 8d 24 40          	lea    r12,[rax+rax*2]
+ 2fbffbc:	31 db                	xor    ebx,ebx
+ 2fbffbe:	49 89 e6             	mov    r14,rsp
+ 2fbffc1:	66 2e 0f 1f 84 00 00 	cs nop WORD PTR [rax+rax*1+0x0]
+ 2fbffc8:	00 00 00 
+ 2fbffcb:	0f 1f 44 00 00       	nop    DWORD PTR [rax+rax*1+0x0]
+ 2fbffd0:	41 8b 44 1d 08       	mov    eax,DWORD PTR [r13+rbx*1+0x8]
+ 2fbffd5:	89 44 24 08          	mov    DWORD PTR [rsp+0x8],eax
+ 2fbffd9:	49 8b 44 1d 00       	mov    rax,QWORD PTR [r13+rbx*1+0x0]
+ 2fbffde:	48 89 04 24          	mov    QWORD PTR [rsp],rax
+ 2fbffe2:	4c 89 ff             	mov    rdi,r15
+ 2fbffe5:	e8 96 4e 42 00       	call   33e4e80 <LZ4_saveDictHC@@Base+0x3ea8f0>
+ 2fbffea:	48 89 c7             	mov    rdi,rax
+ 2fbffed:	4c 89 f6             	mov    rsi,r14
+ 2fbfff0:	ba 01 00 00 00       	mov    edx,0x1
+ 2fbfff5:	b9 01 00 00 00       	mov    ecx,0x1
+ 2fbfffa:	e8 81 d5 32 02       	call   52ed580 <src_float_to_int_array@@Base+0x491680>
+ 2fbffff:	48 83 c3 0c          	add    rbx,0xc
+ 2fc0003:	49 39 dc             	cmp    r12,rbx
+ 2fc0006:	75 c8                	jne    2fbffd0 <SampleVectorField@@Base+0x26f560>
+ 2fc0008:	48 83 c4 10          	add    rsp,0x10
+ 2fc000c:	5b                   	pop    rbx
+ 2fc000d:	41 5c                	pop    r12
+ 2fc000f:	41 5d                	pop    r13
+ 2fc0011:	41 5e                	pop    r14
+ 2fc0013:	41 5f                	pop    r15
+ 2fc0015:	c3                   	ret
+ 2fc0016:	cc                   	int3
+ 2fc0017:	cc                   	int3
+ 2fc0018:	cc                   	int3
+ 2fc0019:	cc                   	int3
+ 2fc001a:	cc                   	int3
+ 2fc001b:	cc                   	int3
+ 2fc001c:	cc                   	int3
+ 2fc001d:	cc                   	int3
+ 2fc001e:	cc                   	int3
+ 2fc001f:	cc                   	int3
+ 2fc0020:	41 57                	push   r15
+ 2fc0022:	41 56                	push   r14
+ 2fc0024:	41 55                	push   r13
+ 2fc0026:	41 54                	push   r12
+ 2fc0028:	53                   	push   rbx
+ 2fc0029:	48 83 ec 20          	sub    rsp,0x20
+ 2fc002d:	49 89 fe             	mov    r14,rdi
+ 2fc0030:	e8 4b c0 0e 02       	call   50ac080 <src_float_to_int_array@@Base+0x250180>
+ 2fc0035:	e8 46 4e ff ff       	call   2fb4e80 <SampleVectorField@@Base+0x264410>
+ 2fc003a:	80 b8 d1 02 00 00 00 	cmp    BYTE PTR [rax+0x2d1],0x0
+ 2fc0041:	0f 84 e7 00 00 00    	je     2fc012e <SampleVectorField@@Base+0x26f6be>
+ 2fc0047:	0f 57 c0             	xorps  xmm0,xmm0
+ 2fc004a:	0f 29 04 24          	movaps XMMWORD PTR [rsp],xmm0
+ 2fc004e:	e8 fd c2 bd 02       	call   5b9c350 <src_float_to_int_array@@Base+0xd40450>
+ 2fc0053:	49 89 c7             	mov    r15,rax
+ 2fc0056:	c7 44 24 08 00 00 00 	mov    DWORD PTR [rsp+0x8],0x0
+ 2fc005d:	00 
+ 2fc005e:	48 85 c0             	test   rax,rax
+ 2fc0061:	74 18                	je     2fc007b <SampleVectorField@@Base+0x26f60b>
+ 2fc0063:	e8 18 5e a1 02       	call   59d5e80 <src_float_to_int_array@@Base+0xb79f80>
+ 2fc0068:	48 85 c0             	test   rax,rax
+ 2fc006b:	74 0e                	je     2fc007b <SampleVectorField@@Base+0x26f60b>
+ 2fc006d:	48 63 48 38          	movsxd rcx,DWORD PTR [rax+0x38]
+ 2fc0071:	41 3b 4f 38          	cmp    ecx,DWORD PTR [r15+0x38]
+ 2fc0075:	0f 8e c1 00 00 00    	jle    2fc013c <SampleVectorField@@Base+0x26f6cc>
+ 2fc007b:	31 db                	xor    ebx,ebx
+ 2fc007d:	e8 fe 5d a1 02       	call   59d5e80 <src_float_to_int_array@@Base+0xb79f80>
+ 2fc0082:	48 39 c3             	cmp    rbx,rax
+ 2fc0085:	74 10                	je     2fc0097 <SampleVectorField@@Base+0x26f627>
+ 2fc0087:	48 89 e2             	mov    rdx,rsp
+ 2fc008a:	4c 89 f7             	mov    rdi,r14
+ 2fc008d:	4c 89 fe             	mov    rsi,r15
+ 2fc0090:	e8 2b 35 dd ff       	call   2d935c0 <SampleVectorField@@Base+0x42b50>
+ 2fc0095:	eb 0e                	jmp    2fc00a5 <SampleVectorField@@Base+0x26f635>
+ 2fc0097:	48 89 e2             	mov    rdx,rsp
+ 2fc009a:	4c 89 f7             	mov    rdi,r14
+ 2fc009d:	4c 89 fe             	mov    rsi,r15
+ 2fc00a0:	e8 4b 30 dd ff       	call   2d930f0 <SampleVectorField@@Base+0x42680>
+ 2fc00a5:	4c 8b 3c 24          	mov    r15,QWORD PTR [rsp]
+ 2fc00a9:	4c 63 64 24 08       	movsxd r12,DWORD PTR [rsp+0x8]
+ 2fc00ae:	4d 85 e4             	test   r12,r12
+ 2fc00b1:	74 6e                	je     2fc0121 <SampleVectorField@@Base+0x26f6b1>
+ 2fc00b3:	49 c1 e4 03          	shl    r12,0x3
+ 2fc00b7:	31 db                	xor    ebx,ebx
+ 2fc00b9:	4c 8d 74 24 18       	lea    r14,[rsp+0x18]
+ 2fc00be:	eb 09                	jmp    2fc00c9 <SampleVectorField@@Base+0x26f659>
+ 2fc00c0:	48 83 c3 08          	add    rbx,0x8
+ 2fc00c4:	49 39 dc             	cmp    r12,rbx
+ 2fc00c7:	74 54                	je     2fc011d <SampleVectorField@@Base+0x26f6ad>
+ 2fc00c9:	4d 8b 2c 1f          	mov    r13,QWORD PTR [r15+rbx*1]
+ 2fc00cd:	4d 85 ed             	test   r13,r13
+ 2fc00d0:	74 ee                	je     2fc00c0 <SampleVectorField@@Base+0x26f650>
+ 2fc00d2:	e8 79 c2 bd 02       	call   5b9c350 <src_float_to_int_array@@Base+0xd40450>
+ 2fc00d7:	49 8b 4d 10          	mov    rcx,QWORD PTR [r13+0x10]
+ 2fc00db:	48 63 50 38          	movsxd rdx,DWORD PTR [rax+0x38]
+ 2fc00df:	3b 51 38             	cmp    edx,DWORD PTR [rcx+0x38]
+ 2fc00e2:	7f dc                	jg     2fc00c0 <SampleVectorField@@Base+0x26f650>
+ 2fc00e4:	48 83 c0 30          	add    rax,0x30
+ 2fc00e8:	48 8b 49 30          	mov    rcx,QWORD PTR [rcx+0x30]
+ 2fc00ec:	48 39 04 d1          	cmp    QWORD PTR [rcx+rdx*8],rax
+ 2fc00f0:	75 ce                	jne    2fc00c0 <SampleVectorField@@Base+0x26f650>
+ 2fc00f2:	be 7c 0f 82 00       	mov    esi,0x820f7c
+ 2fc00f7:	4c 89 f7             	mov    rdi,r14
+ 2fc00fa:	ba 01 00 00 00       	mov    edx,0x1
+ 2fc00ff:	e8 fc 5b 21 00       	call   31d5d00 <LZ4_saveDictHC@@Base+0x1db770>
+ 2fc0104:	48 8b 74 24 18       	mov    rsi,QWORD PTR [rsp+0x18]
+ 2fc0109:	49 8b 45 00          	mov    rax,QWORD PTR [r13+0x0]
+ 2fc010d:	4c 89 ef             	mov    rdi,r13
+ 2fc0110:	ba 01 00 00 00       	mov    edx,0x1
+ 2fc0115:	ff 90 68 06 00 00    	call   QWORD PTR [rax+0x668]
+ 2fc011b:	eb a3                	jmp    2fc00c0 <SampleVectorField@@Base+0x26f650>
+ 2fc011d:	4c 8b 3c 24          	mov    r15,QWORD PTR [rsp]
+ 2fc0121:	4d 85 ff             	test   r15,r15
+ 2fc0124:	74 08                	je     2fc012e <SampleVectorField@@Base+0x26f6be>
+ 2fc0126:	4c 89 ff             	mov    rdi,r15
+ 2fc0129:	e8 72 1d 0b 00       	call   3071ea0 <LZ4_saveDictHC@@Base+0x77910>
+ 2fc012e:	48 83 c4 20          	add    rsp,0x20
+ 2fc0132:	5b                   	pop    rbx
+ 2fc0133:	41 5c                	pop    r12
+ 2fc0135:	41 5d                	pop    r13
+ 2fc0137:	41 5e                	pop    r14
+ 2fc0139:	41 5f                	pop    r15
+ 2fc013b:	c3                   	ret
+ 2fc013c:	48 83 c0 30          	add    rax,0x30
+ 2fc0140:	49 8b 57 30          	mov    rdx,QWORD PTR [r15+0x30]
+ 2fc0144:	31 db                	xor    ebx,ebx
+ 2fc0146:	48 39 04 ca          	cmp    QWORD PTR [rdx+rcx*8],rax
+ 2fc014a:	49 0f 44 df          	cmove  rbx,r15
+ 2fc014e:	e9 2a ff ff ff       	jmp    2fc007d <SampleVectorField@@Base+0x26f60d>
+ 2fc0153:	48 89 c7             	mov    rdi,rax
+ 2fc0156:	e8 e5 f3 64 ff       	call   260f540 <_start@@Base+0x32bc0>
+ 2fc015b:	eb 00                	jmp    2fc015d <SampleVectorField@@Base+0x26f6ed>
+ 2fc015d:	48 89 c3             	mov    rbx,rax
+ 2fc0160:	48 8b 3c 24          	mov    rdi,QWORD PTR [rsp]
+ 2fc0164:	48 85 ff             	test   rdi,rdi
+ 2fc0167:	74 05                	je     2fc016e <SampleVectorField@@Base+0x26f6fe>
+ 2fc0169:	e8 32 1d 0b 00       	call   3071ea0 <LZ4_saveDictHC@@Base+0x77910>
+ 2fc016e:	48 89 df             	mov    rdi,rbx
+ 2fc0171:	e8 aa 91 0e 04       	call   70a9320 <_Unwind_Resume@plt>
+ 2fc0176:	48 89 c7             	mov    rdi,rax
+ 2fc0179:	e8 c2 f3 64 ff       	call   260f540 <_start@@Base+0x32bc0>
+ 2fc017e:	cc                   	int3
+ 2fc017f:	cc                   	int3
+ 2fc0180:	41 56                	push   r14
+ 2fc0182:	53                   	push   rbx
+ 2fc0183:	48 83 ec 38          	sub    rsp,0x38
+ 2fc0187:	48 89 fb             	mov    rbx,rdi
+ 2fc018a:	f3 0f 11 44 24 0c    	movss  DWORD PTR [rsp+0xc],xmm0
+ 2fc0190:	e8 5b a9 0d 02       	call   509aaf0 <src_float_to_int_array@@Base+0x23ebf0>
+ 2fc0195:	80 bb 30 02 00 00 00 	cmp    BYTE PTR [rbx+0x230],0x0
+ 2fc019c:	0f 84 ce 00 00 00    	je     2fc0270 <SampleVectorField@@Base+0x26f800>
+ 2fc01a2:	f3 0f 10 83 34 02 00 	movss  xmm0,DWORD PTR [rbx+0x234]
+ 2fc01a9:	00 
+ 2fc01aa:	f3 0f 11 44 24 10    	movss  DWORD PTR [rsp+0x10],xmm0
+ 2fc01b0:	4c 8d b3 20 02 00 00 	lea    r14,[rbx+0x220]
+ 2fc01b7:	4c 89 f7             	mov    rdi,r14
+ 2fc01ba:	e8 c1 4c 42 00       	call   33e4e80 <LZ4_saveDictHC@@Base+0x3ea8f0>
+ 2fc01bf:	48 89 c7             	mov    rdi,rax
+ 2fc01c2:	e8 d9 fd 32 02       	call   52effa0 <src_float_to_int_array@@Base+0x4940a0>
+ 2fc01c7:	0f 2e 44 24 10       	ucomiss xmm0,DWORD PTR [rsp+0x10]
+ 2fc01cc:	0f 86 9e 00 00 00    	jbe    2fc0270 <SampleVectorField@@Base+0x26f800>
+ 2fc01d2:	4c 89 f7             	mov    rdi,r14
+ 2fc01d5:	e8 a6 4c 42 00       	call   33e4e80 <LZ4_saveDictHC@@Base+0x3ea8f0>
+ 2fc01da:	f3 0f 10 83 34 02 00 	movss  xmm0,DWORD PTR [rbx+0x234]
+ 2fc01e1:	00 
+ 2fc01e2:	48 89 c7             	mov    rdi,rax
+ 2fc01e5:	be 01 00 00 00       	mov    esi,0x1
+ 2fc01ea:	e8 b1 ff 32 02       	call   52f01a0 <src_float_to_int_array@@Base+0x4942a0>
+ 2fc01ef:	0f 29 44 24 10       	movaps XMMWORD PTR [rsp+0x10],xmm0
+ 2fc01f4:	f3 0f 11 4c 24 08    	movss  DWORD PTR [rsp+0x8],xmm1
+ 2fc01fa:	4c 89 f7             	mov    rdi,r14
+ 2fc01fd:	e8                   	.byte 0xe8
+ 2fc01fe:	7e 4c                	jle    2fc024c <SampleVectorField@@Base+0x26f7dc>
+==== 2fb8500-2fb8a00
+
+/mnt/d/RMUA2026-re/sim/simulator_12.0.0.5/Build/LinuxNoEditor/RMUA/Binaries/Linux/RMUA-Linux-Shipping:     file format elf64-x86-64
+
+
+Disassembly of section .text:
+
+0000000002fb8500 <SampleVectorField@@Base+0x267a90>:
+ 2fb8500:	cc                   	int3
+ 2fb8501:	e9 f8 fe ff ff       	jmp    2fb83fe <SampleVectorField@@Base+0x26798e>
+ 2fb8506:	48 8d 44 24 0c       	lea    rax,[rsp+0xc]
+ 2fb850b:	48 89 44 24 10       	mov    QWORD PTR [rsp+0x10],rax
+ 2fb8510:	4c 89 7c 24 18       	mov    QWORD PTR [rsp+0x18],r15
+ 2fb8515:	48 8d 7c 24 10       	lea    rdi,[rsp+0x10]
+ 2fb851a:	e8 51 49 fd 03       	call   6f8ce70 <_fini@@Base+0x500>
+ 2fb851f:	cc                   	int3
+ 2fb8520:	e9 6b ff ff ff       	jmp    2fb8490 <SampleVectorField@@Base+0x267a20>
+ 2fb8525:	cc                   	int3
+ 2fb8526:	cc                   	int3
+ 2fb8527:	cc                   	int3
+ 2fb8528:	cc                   	int3
+ 2fb8529:	cc                   	int3
+ 2fb852a:	cc                   	int3
+ 2fb852b:	cc                   	int3
+ 2fb852c:	cc                   	int3
+ 2fb852d:	cc                   	int3
+ 2fb852e:	cc                   	int3
+ 2fb852f:	cc                   	int3
+ 2fb8530:	41 56                	push   r14
+ 2fb8532:	53                   	push   rbx
+ 2fb8533:	48 83 ec 18          	sub    rsp,0x18
+ 2fb8537:	49 89 fe             	mov    r14,rdi
+ 2fb853a:	48 8d 5c 24 08       	lea    rbx,[rsp+0x8]
+ 2fb853f:	48 89 df             	mov    rdi,rbx
+ 2fb8542:	e8 19 71 00 00       	call   2fbf660 <SampleVectorField@@Base+0x26ebf0>
+ 2fb8547:	4c 39 f3             	cmp    rbx,r14
+ 2fb854a:	74 4c                	je     2fb8598 <SampleVectorField@@Base+0x267b28>
+ 2fb854c:	83 7c 24 10 00       	cmp    DWORD PTR [rsp+0x10],0x0
+ 2fb8551:	74 15                	je     2fb8568 <SampleVectorField@@Base+0x267af8>
+ 2fb8553:	48 8b 7c 24 08       	mov    rdi,QWORD PTR [rsp+0x8]
+ 2fb8558:	48 85 ff             	test   rdi,rdi
+ 2fb855b:	74 0b                	je     2fb8568 <SampleVectorField@@Base+0x267af8>
+ 2fb855d:	48 8b 07             	mov    rax,QWORD PTR [rdi]
+ 2fb8560:	4c 89 f6             	mov    rsi,r14
+ 2fb8563:	ff 50 48             	call   QWORD PTR [rax+0x48]
+ 2fb8566:	eb 30                	jmp    2fb8598 <SampleVectorField@@Base+0x267b28>
+ 2fb8568:	41 83 7e 08 00       	cmp    DWORD PTR [r14+0x8],0x0
+ 2fb856d:	74 29                	je     2fb8598 <SampleVectorField@@Base+0x267b28>
+ 2fb856f:	49 8b 3e             	mov    rdi,QWORD PTR [r14]
+ 2fb8572:	48 85 ff             	test   rdi,rdi
+ 2fb8575:	74 21                	je     2fb8598 <SampleVectorField@@Base+0x267b28>
+ 2fb8577:	48 8b 07             	mov    rax,QWORD PTR [rdi]
+ 2fb857a:	ff 10                	call   QWORD PTR [rax]
+ 2fb857c:	49 8b 3e             	mov    rdi,QWORD PTR [r14]
+ 2fb857f:	48 85 ff             	test   rdi,rdi
+ 2fb8582:	74 0c                	je     2fb8590 <SampleVectorField@@Base+0x267b20>
+ 2fb8584:	31 f6                	xor    esi,esi
+ 2fb8586:	31 d2                	xor    edx,edx
+ 2fb8588:	e8 43 99 0b 00       	call   3071ed0 <LZ4_saveDictHC@@Base+0x77940>
+ 2fb858d:	49 89 06             	mov    QWORD PTR [r14],rax
+ 2fb8590:	41 c7 46 08 00 00 00 	mov    DWORD PTR [r14+0x8],0x0
+ 2fb8597:	00 
+ 2fb8598:	83 7c 24 10 00       	cmp    DWORD PTR [rsp+0x10],0x0
+ 2fb859d:	74 2f                	je     2fb85ce <SampleVectorField@@Base+0x267b5e>
+ 2fb859f:	48 8b 7c 24 08       	mov    rdi,QWORD PTR [rsp+0x8]
+ 2fb85a4:	48 85 ff             	test   rdi,rdi
+ 2fb85a7:	74 25                	je     2fb85ce <SampleVectorField@@Base+0x267b5e>
+ 2fb85a9:	48 8b 07             	mov    rax,QWORD PTR [rdi]
+ 2fb85ac:	ff 10                	call   QWORD PTR [rax]
+ 2fb85ae:	48 8b 7c 24 08       	mov    rdi,QWORD PTR [rsp+0x8]
+ 2fb85b3:	48 85 ff             	test   rdi,rdi
+ 2fb85b6:	74 0e                	je     2fb85c6 <SampleVectorField@@Base+0x267b56>
+ 2fb85b8:	31 f6                	xor    esi,esi
+ 2fb85ba:	31 d2                	xor    edx,edx
+ 2fb85bc:	e8 0f 99 0b 00       	call   3071ed0 <LZ4_saveDictHC@@Base+0x77940>
+ 2fb85c1:	48 89 44 24 08       	mov    QWORD PTR [rsp+0x8],rax
+ 2fb85c6:	c7 44 24 10 00 00 00 	mov    DWORD PTR [rsp+0x10],0x0
+ 2fb85cd:	00 
+ 2fb85ce:	48 8d 7c 24 08       	lea    rdi,[rsp+0x8]
+ 2fb85d3:	e8 b8 64 68 ff       	call   263ea90 <_start@@Base+0x62110>
+ 2fb85d8:	48 83 c4 18          	add    rsp,0x18
+ 2fb85dc:	5b                   	pop    rbx
+ 2fb85dd:	41 5e                	pop    r14
+ 2fb85df:	c3                   	ret
+ 2fb85e0:	48 89 c3             	mov    rbx,rax
+ 2fb85e3:	48 8d 7c 24 08       	lea    rdi,[rsp+0x8]
+ 2fb85e8:	e8 a3 64 68 ff       	call   263ea90 <_start@@Base+0x62110>
+ 2fb85ed:	48 89 df             	mov    rdi,rbx
+ 2fb85f0:	e8 4b 6f 65 ff       	call   260f540 <_start@@Base+0x32bc0>
+ 2fb85f5:	48 89 c3             	mov    rbx,rax
+ 2fb85f8:	83 7c 24 10 00       	cmp    DWORD PTR [rsp+0x10],0x0
+ 2fb85fd:	74 2f                	je     2fb862e <SampleVectorField@@Base+0x267bbe>
+ 2fb85ff:	48 8b 7c 24 08       	mov    rdi,QWORD PTR [rsp+0x8]
+ 2fb8604:	48 85 ff             	test   rdi,rdi
+ 2fb8607:	74 25                	je     2fb862e <SampleVectorField@@Base+0x267bbe>
+ 2fb8609:	48 8b 07             	mov    rax,QWORD PTR [rdi]
+ 2fb860c:	ff 10                	call   QWORD PTR [rax]
+ 2fb860e:	48 8b 7c 24 08       	mov    rdi,QWORD PTR [rsp+0x8]
+ 2fb8613:	48 85 ff             	test   rdi,rdi
+ 2fb8616:	74 0e                	je     2fb8626 <SampleVectorField@@Base+0x267bb6>
+ 2fb8618:	31 f6                	xor    esi,esi
+ 2fb861a:	31 d2                	xor    edx,edx
+ 2fb861c:	e8 af 98 0b 00       	call   3071ed0 <LZ4_saveDictHC@@Base+0x77940>
+ 2fb8621:	48 89 44 24 08       	mov    QWORD PTR [rsp+0x8],rax
+ 2fb8626:	c7 44 24 10 00 00 00 	mov    DWORD PTR [rsp+0x10],0x0
+ 2fb862d:	00 
+ 2fb862e:	48 8d 7c 24 08       	lea    rdi,[rsp+0x8]
+ 2fb8633:	e8 58 64 68 ff       	call   263ea90 <_start@@Base+0x62110>
+ 2fb8638:	48 89 df             	mov    rdi,rbx
+ 2fb863b:	e8 e0 0c 0f 04       	call   70a9320 <_Unwind_Resume@plt>
+ 2fb8640:	eb 9e                	jmp    2fb85e0 <SampleVectorField@@Base+0x267b70>
+ 2fb8642:	cc                   	int3
+ 2fb8643:	cc                   	int3
+ 2fb8644:	cc                   	int3
+ 2fb8645:	cc                   	int3
+ 2fb8646:	cc                   	int3
+ 2fb8647:	cc                   	int3
+ 2fb8648:	cc                   	int3
+ 2fb8649:	cc                   	int3
+ 2fb864a:	cc                   	int3
+ 2fb864b:	cc                   	int3
+ 2fb864c:	cc                   	int3
+ 2fb864d:	cc                   	int3
+ 2fb864e:	cc                   	int3
+ 2fb864f:	cc                   	int3
+ 2fb8650:	55                   	push   rbp
+ 2fb8651:	41 57                	push   r15
+ 2fb8653:	41 56                	push   r14
+ 2fb8655:	41 54                	push   r12
+ 2fb8657:	53                   	push   rbx
+ 2fb8658:	48 83 ec 20          	sub    rsp,0x20
+ 2fb865c:	41 89 d6             	mov    r14d,edx
+ 2fb865f:	89 f5                	mov    ebp,esi
+ 2fb8661:	48 89 fb             	mov    rbx,rdi
+ 2fb8664:	89 74 24 0c          	mov    DWORD PTR [rsp+0xc],esi
+ 2fb8668:	8b 87 d0 00 00 00    	mov    eax,DWORD PTR [rdi+0xd0]
+ 2fb866e:	85 c0                	test   eax,eax
+ 2fb8670:	0f 84 8b 00 00 00    	je     2fb8701 <SampleVectorField@@Base+0x267c91>
+ 2fb8676:	83 f8 09             	cmp    eax,0x9
+ 2fb8679:	0f 87 db 01 00 00    	ja     2fb885a <SampleVectorField@@Base+0x267dea>
+ 2fb867f:	b9 aa 02 00 00       	mov    ecx,0x2aa
+ 2fb8684:	0f a3 c1             	bt     ecx,eax
+ 2fb8687:	0f 83 cd 01 00 00    	jae    2fb885a <SampleVectorField@@Base+0x267dea>
+ 2fb868d:	80 3d f8 ed 26 04 05 	cmp    BYTE PTR [rip+0x426edf8],0x5        # 722748c <__bss_start@@Base+0xcdccc>
+ 2fb8694:	72 11                	jb     2fb86a7 <SampleVectorField@@Base+0x267c37>
+ 2fb8696:	48 8d b3 e8 00 00 00 	lea    rsi,[rbx+0xe8]
+ 2fb869d:	48 8d 7c 24 0c       	lea    rdi,[rsp+0xc]
+ 2fb86a2:	e8 e9 40 00 00       	call   2fbc790 <SampleVectorField@@Base+0x26bd20>
+ 2fb86a7:	39 ab e8 00 00 00    	cmp    DWORD PTR [rbx+0xe8],ebp
+ 2fb86ad:	0f 85 a7 01 00 00    	jne    2fb885a <SampleVectorField@@Base+0x267dea>
+ 2fb86b3:	45 84 f6             	test   r14b,r14b
+ 2fb86b6:	0f 84 9e 01 00 00    	je     2fb885a <SampleVectorField@@Base+0x267dea>
+ 2fb86bc:	80 bb d8 00 00 00 00 	cmp    BYTE PTR [rbx+0xd8],0x0
+ 2fb86c3:	74 12                	je     2fb86d7 <SampleVectorField@@Base+0x267c67>
+ 2fb86c5:	80 bb d9 00 00 00 00 	cmp    BYTE PTR [rbx+0xd9],0x0
+ 2fb86cc:	74 09                	je     2fb86d7 <SampleVectorField@@Base+0x267c67>
+ 2fb86ce:	80 bb e0 00 00 00 00 	cmp    BYTE PTR [rbx+0xe0],0x0
+ 2fb86d5:	75 12                	jne    2fb86e9 <SampleVectorField@@Base+0x267c79>
+ 2fb86d7:	e8 a4 c7 ff ff       	call   2fb4e80 <SampleVectorField@@Base+0x264410>
+ 2fb86dc:	80 b8 d6 02 00 00 00 	cmp    BYTE PTR [rax+0x2d6],0x0
+ 2fb86e3:	0f 84 71 01 00 00    	je     2fb885a <SampleVectorField@@Base+0x267dea>
+ 2fb86e9:	8b b3 d0 00 00 00    	mov    esi,DWORD PTR [rbx+0xd0]
+ 2fb86ef:	83 c6 01             	add    esi,0x1
+ 2fb86f2:	48 89 df             	mov    rdi,rbx
+ 2fb86f5:	31 d2                	xor    edx,edx
+ 2fb86f7:	e8 64 12 00 00       	call   2fb9960 <SampleVectorField@@Base+0x268ef0>
+ 2fb86fc:	e9 59 01 00 00       	jmp    2fb885a <SampleVectorField@@Base+0x267dea>
+ 2fb8701:	39 ab e4 00 00 00    	cmp    DWORD PTR [rbx+0xe4],ebp
+ 2fb8707:	0f 85 4d 01 00 00    	jne    2fb885a <SampleVectorField@@Base+0x267dea>
+ 2fb870d:	45 84 f6             	test   r14b,r14b
+ 2fb8710:	0f 85 44 01 00 00    	jne    2fb885a <SampleVectorField@@Base+0x267dea>
+ 2fb8716:	e8 65 c7 ff ff       	call   2fb4e80 <SampleVectorField@@Base+0x264410>
+ 2fb871b:	83 b8 e0 02 00 00 00 	cmp    DWORD PTR [rax+0x2e0],0x0
+ 2fb8722:	bf 72 cf 9d 00       	mov    edi,0x9dcf72
+ 2fb8727:	74 07                	je     2fb8730 <SampleVectorField@@Base+0x267cc0>
+ 2fb8729:	48 8b b8 d8 02 00 00 	mov    rdi,QWORD PTR [rax+0x2d8]
+ 2fb8730:	be 83 2b b5 00       	mov    esi,0xb52b83
+ 2fb8735:	e8 a6 91 07 00       	call   30318e0 <LZ4_saveDictHC@@Base+0x37350>
+ 2fb873a:	85 c0                	test   eax,eax
+ 2fb873c:	0f 84 e5 00 00 00    	je     2fb8827 <SampleVectorField@@Base+0x267db7>
+ 2fb8742:	0f 57 c0             	xorps  xmm0,xmm0
+ 2fb8745:	0f 29 44 24 10       	movaps XMMWORD PTR [rsp+0x10],xmm0
+ 2fb874a:	4c 8d 7c 24 10       	lea    r15,[rsp+0x10]
+ 2fb874f:	4c 89 ff             	mov    rdi,r15
+ 2fb8752:	be 07 00 00 00       	mov    esi,0x7
+ 2fb8757:	e8 24 26 63 ff       	call   25ead80 <_start@@Base+0xe400>
+ 2fb875c:	8b 74 24 18          	mov    esi,DWORD PTR [rsp+0x18]
+ 2fb8760:	8d 46 07             	lea    eax,[rsi+0x7]
+ 2fb8763:	89 44 24 18          	mov    DWORD PTR [rsp+0x18],eax
+ 2fb8767:	3b 44 24 1c          	cmp    eax,DWORD PTR [rsp+0x1c]
+ 2fb876b:	7e 0a                	jle    2fb8777 <SampleVectorField@@Base+0x267d07>
+ 2fb876d:	48 8d 7c 24 10       	lea    rdi,[rsp+0x10]
+ 2fb8772:	e8 69 26 63 ff       	call   25eade0 <_start@@Base+0xe460>
+ 2fb8777:	48 8b 44 24 10       	mov    rax,QWORD PTR [rsp+0x10]
+ 2fb877c:	48 b9 6e 00 6f 00 72 	movabs rcx,0x6d0072006f006e
+ 2fb8783:	00 6d 00 
+ 2fb8786:	48 89 08             	mov    QWORD PTR [rax],rcx
+ 2fb8789:	c7 40 08 61 00 6c 00 	mov    DWORD PTR [rax+0x8],0x6c0061
+ 2fb8790:	66 c7 40 0c 00 00    	mov    WORD PTR [rax+0xc],0x0
+ 2fb8796:	e8 e5 c6 ff ff       	call   2fb4e80 <SampleVectorField@@Base+0x264410>
+ 2fb879b:	49 89 c4             	mov    r12,rax
+ 2fb879e:	48 05 d8 02 00 00    	add    rax,0x2d8
+ 2fb87a4:	4c 39 f8             	cmp    rax,r15
+ 2fb87a7:	74 4b                	je     2fb87f4 <SampleVectorField@@Base+0x267d84>
+ 2fb87a9:	49 8b bc 24 d8 02 00 	mov    rdi,QWORD PTR [r12+0x2d8]
+ 2fb87b0:	00 
+ 2fb87b1:	48 85 ff             	test   rdi,rdi
+ 2fb87b4:	74 05                	je     2fb87bb <SampleVectorField@@Base+0x267d4b>
+ 2fb87b6:	e8 e5 96 0b 00       	call   3071ea0 <LZ4_saveDictHC@@Base+0x77910>
+ 2fb87bb:	48 8b 44 24 10       	mov    rax,QWORD PTR [rsp+0x10]
+ 2fb87c0:	49 89 84 24 d8 02 00 	mov    QWORD PTR [r12+0x2d8],rax
+ 2fb87c7:	00 
+ 2fb87c8:	48 c7 44 24 10 00 00 	mov    QWORD PTR [rsp+0x10],0x0
+ 2fb87cf:	00 00 
+ 2fb87d1:	8b 44 24 18          	mov    eax,DWORD PTR [rsp+0x18]
+ 2fb87d5:	41 89 84 24 e0 02 00 	mov    DWORD PTR [r12+0x2e0],eax
+ 2fb87dc:	00 
+ 2fb87dd:	8b 44 24 1c          	mov    eax,DWORD PTR [rsp+0x1c]
+ 2fb87e1:	41 89 84 24 e4 02 00 	mov    DWORD PTR [r12+0x2e4],eax
+ 2fb87e8:	00 
+ 2fb87e9:	48 c7 44 24 18 00 00 	mov    QWORD PTR [rsp+0x18],0x0
+ 2fb87f0:	00 00 
+ 2fb87f2:	eb 0f                	jmp    2fb8803 <SampleVectorField@@Base+0x267d93>
+ 2fb87f4:	48 8b 7c 24 10       	mov    rdi,QWORD PTR [rsp+0x10]
+ 2fb87f9:	48 85 ff             	test   rdi,rdi
+ 2fb87fc:	74 05                	je     2fb8803 <SampleVectorField@@Base+0x267d93>
+ 2fb87fe:	e8 9d 96 0b 00       	call   3071ea0 <LZ4_saveDictHC@@Base+0x77910>
+ 2fb8803:	e8 78 c6 ff ff       	call   2fb4e80 <SampleVectorField@@Base+0x264410>
+ 2fb8808:	49 89 c7             	mov    r15,rax
+ 2fb880b:	48 8b b8 e8 02 00 00 	mov    rdi,QWORD PTR [rax+0x2e8]
+ 2fb8812:	48 85 ff             	test   rdi,rdi
+ 2fb8815:	74 05                	je     2fb881c <SampleVectorField@@Base+0x267dac>
+ 2fb8817:	e8 84 96 0b 00       	call   3071ea0 <LZ4_saveDictHC@@Base+0x77910>
+ 2fb881c:	0f 57 c0             	xorps  xmm0,xmm0
+ 2fb881f:	41 0f 11 87 e8 02 00 	movups XMMWORD PTR [r15+0x2e8],xmm0
+ 2fb8826:	00 
+ 2fb8827:	48 c7 83 cc 01 00 00 	mov    QWORD PTR [rbx+0x1cc],0x0
+ 2fb882e:	00 00 00 00 
+ 2fb8832:	c7 83 d8 01 00 00 00 	mov    DWORD PTR [rbx+0x1d8],0x0
+ 2fb8839:	00 00 00 
+ 2fb883c:	48 89 df             	mov    rdi,rbx
+ 2fb883f:	be 01 00 00 00       	mov    esi,0x1
+ 2fb8844:	31 d2                	xor    edx,edx
+ 2fb8846:	e8 15 11 00 00       	call   2fb9960 <SampleVectorField@@Base+0x268ef0>
+ 2fb884b:	8b 83 d0 00 00 00    	mov    eax,DWORD PTR [rbx+0xd0]
+ 2fb8851:	83 f8 09             	cmp    eax,0x9
+ 2fb8854:	0f 86 25 fe ff ff    	jbe    2fb867f <SampleVectorField@@Base+0x267c0f>
+ 2fb885a:	8b 83 d0 00 00 00    	mov    eax,DWORD PTR [rbx+0xd0]
+ 2fb8860:	83 f8 0a             	cmp    eax,0xa
+ 2fb8863:	77 4a                	ja     2fb88af <SampleVectorField@@Base+0x267e3f>
+ 2fb8865:	b9 54 05 00 00       	mov    ecx,0x554
+ 2fb886a:	0f a3 c1             	bt     ecx,eax
+ 2fb886d:	73 40                	jae    2fb88af <SampleVectorField@@Base+0x267e3f>
+ 2fb886f:	80 3d 16 ec 26 04 05 	cmp    BYTE PTR [rip+0x426ec16],0x5        # 722748c <__bss_start@@Base+0xcdccc>
+ 2fb8876:	72 11                	jb     2fb8889 <SampleVectorField@@Base+0x267e19>
+ 2fb8878:	48 8d b3 e8 00 00 00 	lea    rsi,[rbx+0xe8]
+ 2fb887f:	48 8d 7c 24 0c       	lea    rdi,[rsp+0xc]
+ 2fb8884:	e8 37 3f 00 00       	call   2fbc7c0 <SampleVectorField@@Base+0x26bd50>
+ 2fb8889:	39 ab e4 00 00 00    	cmp    DWORD PTR [rbx+0xe4],ebp
+ 2fb888f:	75 18                	jne    2fb88a9 <SampleVectorField@@Base+0x267e39>
+ 2fb8891:	45 84 f6             	test   r14b,r14b
+ 2fb8894:	75 13                	jne    2fb88a9 <SampleVectorField@@Base+0x267e39>
+ 2fb8896:	8b b3 d0 00 00 00    	mov    esi,DWORD PTR [rbx+0xd0]
+ 2fb889c:	83 c6 01             	add    esi,0x1
+ 2fb889f:	48 89 df             	mov    rdi,rbx
+ 2fb88a2:	31 d2                	xor    edx,edx
+ 2fb88a4:	e8 b7 10 00 00       	call   2fb9960 <SampleVectorField@@Base+0x268ef0>
+ 2fb88a9:	8b 83 d0 00 00 00    	mov    eax,DWORD PTR [rbx+0xd0]
+ 2fb88af:	83 f8 0b             	cmp    eax,0xb
+ 2fb88b2:	75 62                	jne    2fb8916 <SampleVectorField@@Base+0x267ea6>
+ 2fb88b4:	80 3d d1 eb 26 04 05 	cmp    BYTE PTR [rip+0x426ebd1],0x5        # 722748c <__bss_start@@Base+0xcdccc>
+ 2fb88bb:	72 11                	jb     2fb88ce <SampleVectorField@@Base+0x267e5e>
+ 2fb88bd:	48 8d b3 e8 00 00 00 	lea    rsi,[rbx+0xe8]
+ 2fb88c4:	48 8d 7c 24 0c       	lea    rdi,[rsp+0xc]
+ 2fb88c9:	e8 c2 3e 00 00       	call   2fbc790 <SampleVectorField@@Base+0x26bd20>
+ 2fb88ce:	39 ab e8 00 00 00    	cmp    DWORD PTR [rbx+0xe8],ebp
+ 2fb88d4:	75 40                	jne    2fb8916 <SampleVectorField@@Base+0x267ea6>
+ 2fb88d6:	45 84 f6             	test   r14b,r14b
+ 2fb88d9:	74 3b                	je     2fb8916 <SampleVectorField@@Base+0x267ea6>
+ 2fb88db:	80 bb d8 00 00 00 00 	cmp    BYTE PTR [rbx+0xd8],0x0
+ 2fb88e2:	74 12                	je     2fb88f6 <SampleVectorField@@Base+0x267e86>
+ 2fb88e4:	80 bb d9 00 00 00 00 	cmp    BYTE PTR [rbx+0xd9],0x0
+ 2fb88eb:	74 09                	je     2fb88f6 <SampleVectorField@@Base+0x267e86>
+ 2fb88ed:	80 bb e0 00 00 00 00 	cmp    BYTE PTR [rbx+0xe0],0x0
+ 2fb88f4:	75 0e                	jne    2fb8904 <SampleVectorField@@Base+0x267e94>
+ 2fb88f6:	e8 85 c5 ff ff       	call   2fb4e80 <SampleVectorField@@Base+0x264410>
+ 2fb88fb:	80 b8 d6 02 00 00 00 	cmp    BYTE PTR [rax+0x2d6],0x0
+ 2fb8902:	74 12                	je     2fb8916 <SampleVectorField@@Base+0x267ea6>
+ 2fb8904:	48 89 df             	mov    rdi,rbx
+ 2fb8907:	be 0c 00 00 00       	mov    esi,0xc
+ 2fb890c:	ba 01 00 00 00       	mov    edx,0x1
+ 2fb8911:	e8 4a 10 00 00       	call   2fb9960 <SampleVectorField@@Base+0x268ef0>
+ 2fb8916:	48 83 c4 20          	add    rsp,0x20
+ 2fb891a:	5b                   	pop    rbx
+ 2fb891b:	41 5c                	pop    r12
+ 2fb891d:	41 5e                	pop    r14
+ 2fb891f:	41 5f                	pop    r15
+ 2fb8921:	5d                   	pop    rbp
+ 2fb8922:	c3                   	ret
+ 2fb8923:	48 89 c7             	mov    rdi,rax
+ 2fb8926:	e8 15 6c 65 ff       	call   260f540 <_start@@Base+0x32bc0>
+ 2fb892b:	48 89 c3             	mov    rbx,rax
+ 2fb892e:	48 8b 7c 24 10       	mov    rdi,QWORD PTR [rsp+0x10]
+ 2fb8933:	48 85 ff             	test   rdi,rdi
+ 2fb8936:	74 2e                	je     2fb8966 <SampleVectorField@@Base+0x267ef6>
+ 2fb8938:	e8 63 95 0b 00       	call   3071ea0 <LZ4_saveDictHC@@Base+0x77910>
+ 2fb893d:	eb 27                	jmp    2fb8966 <SampleVectorField@@Base+0x267ef6>
+ 2fb893f:	48 89 c7             	mov    rdi,rax
+ 2fb8942:	e8 f9 6b 65 ff       	call   260f540 <_start@@Base+0x32bc0>
+ 2fb8947:	48 89 c3             	mov    rbx,rax
+ 2fb894a:	48 8b 7c 24 10       	mov    rdi,QWORD PTR [rsp+0x10]
+ 2fb894f:	48 85 ff             	test   rdi,rdi
+ 2fb8952:	74 12                	je     2fb8966 <SampleVectorField@@Base+0x267ef6>
+ 2fb8954:	e8 47 95 0b 00       	call   3071ea0 <LZ4_saveDictHC@@Base+0x77910>
+ 2fb8959:	eb 0b                	jmp    2fb8966 <SampleVectorField@@Base+0x267ef6>
+ 2fb895b:	48 89 c7             	mov    rdi,rax
+ 2fb895e:	e8 dd 6b 65 ff       	call   260f540 <_start@@Base+0x32bc0>
+ 2fb8963:	48 89 c3             	mov    rbx,rax
+ 2fb8966:	48 89 df             	mov    rdi,rbx
+ 2fb8969:	e8 b2 09 0f 04       	call   70a9320 <_Unwind_Resume@plt>
+ 2fb896e:	cc                   	int3
+ 2fb896f:	cc                   	int3
+ 2fb8970:	55                   	push   rbp
+ 2fb8971:	41 57                	push   r15
+ 2fb8973:	41 56                	push   r14
+ 2fb8975:	53                   	push   rbx
+ 2fb8976:	48 83 ec 18          	sub    rsp,0x18
+ 2fb897a:	48 85 ff             	test   rdi,rdi
+ 2fb897d:	0f 84 93 00 00 00    	je     2fb8a16 <SampleVectorField@@Base+0x267fa6>
+ 2fb8983:	89 f5                	mov    ebp,esi
+ 2fb8985:	48 89 fb             	mov    rbx,rdi
+ 2fb8988:	e8 23 7a 3f 00       	call   33b03b0 <LZ4_saveDictHC@@Base+0x3b5e20>
+ 2fb898d:	84 c0                	test   al,al
+ 2fb898f:	0f 84 81 00 00 00    	je     2fb8a16 <SampleVectorField@@Base+0x267fa6>
+ 2fb8995:	89 e8                	mov    eax,ebp
+ 2fb8997:	34 01                	xor    al,0x1
+ 2fb8999:	48 8b 0b             	mov    rcx,QWORD PTR [rbx]
+ 2fb899c:	0f b6 f0             	movzx  esi,al
+ 2fb899f:	48 89 df             	mov    rdi,rbx
+ 2fb89a2:	ff 91 10 03 00 00    	call   QWORD PTR [rcx+0x310]
+ 2fb89a8:	44 0f b6 f5          	movzx  r14d,bpl
+ 2fb89ac:	48 89 df             	mov    rdi,rbx
+ 2fb89af:	44 89 f6             	mov    esi,r14d
+ 2fb89b2:	e8 29 4b 0e 02       	call   509d4e0 <src_float_to_int_array@@Base+0x2415e0>
+ 2fb89b7:	48 89 df             	mov    rdi,rbx
+ 2fb89ba:	44 89 f6             	mov    esi,r14d
+ 2fb89bd:	e8 ee 1a 0e 02       	call   509a4b0 <src_float_to_int_array@@Base+0x23e5b0>
+ 2fb89c2:	0f 57 c0             	xorps  xmm0,xmm0
+ 2fb89c5:	0f 29 04 24          	movaps XMMWORD PTR [rsp],xmm0
+ 2fb89c9:	48 89 e6             	mov    rsi,rsp
+ 2fb89cc:	48 89 df             	mov    rdi,rbx
+ 2fb89cf:	ba 01 00 00 00       	mov    edx,0x1
+ 2fb89d4:	e8 57 86 0e 02       	call   50a1030 <src_float_to_int_array@@Base+0x245130>
+ 2fb89d9:	4c 8b 3c 24          	mov    r15,QWORD PTR [rsp]
+ 2fb89dd:	48 63 6c 24 08       	movsxd rbp,DWORD PTR [rsp+0x8]
+ 2fb89e2:	48 85 ed             	test   rbp,rbp
+ 2fb89e5:	74 22                	je     2fb8a09 <SampleVectorField@@Base+0x267f99>
+ 2fb89e7:	48 c1 e5 03          	shl    rbp,0x3
+ 2fb89eb:	31 db                	xor    ebx,ebx
+ 2fb89ed:	0f 1f 00             	nop    DWORD PTR [rax]
+ 2fb89f0:	49 8b 3c 1f          	mov    rdi,QWORD PTR [r15+rbx*1]
+ 2fb89f4:	44 89 f6             	mov    esi,r14d
+ 2fb89f7:	e8 74 ff ff ff       	call   2fb8970 <SampleVectorField@@Base+0x267f00>
+ 2fb89fc:	48 83 c3 08          	add    rbx,0x8
+==== 2fb7f80-2fb8350
+
+/mnt/d/RMUA2026-re/sim/simulator_12.0.0.5/Build/LinuxNoEditor/RMUA/Binaries/Linux/RMUA-Linux-Shipping:     file format elf64-x86-64
+
+
+Disassembly of section .text:
+
+0000000002fb7f80 <SampleVectorField@@Base+0x267510>:
+ 2fb7f80:	89 c6                	mov    esi,eax
+ 2fb7f82:	e9 c9 06 00 00       	jmp    2fb8650 <SampleVectorField@@Base+0x267be0>
+ 2fb7f87:	cc                   	int3
+ 2fb7f88:	cc                   	int3
+ 2fb7f89:	cc                   	int3
+ 2fb7f8a:	cc                   	int3
+ 2fb7f8b:	cc                   	int3
+ 2fb7f8c:	cc                   	int3
+ 2fb7f8d:	cc                   	int3
+ 2fb7f8e:	cc                   	int3
+ 2fb7f8f:	cc                   	int3
+ 2fb7f90:	55                   	push   rbp
+ 2fb7f91:	41 57                	push   r15
+ 2fb7f93:	41 56                	push   r14
+ 2fb7f95:	53                   	push   rbx
+ 2fb7f96:	48 83 ec 18          	sub    rsp,0x18
+ 2fb7f9a:	8b 46 10             	mov    eax,DWORD PTR [rsi+0x10]
+ 2fb7f9d:	83 f8 03             	cmp    eax,0x3
+ 2fb7fa0:	77 0b                	ja     2fb7fad <SampleVectorField@@Base+0x26753d>
+ 2fb7fa2:	48 89 f3             	mov    rbx,rsi
+ 2fb7fa5:	8b 76 14             	mov    esi,DWORD PTR [rsi+0x14]
+ 2fb7fa8:	83 fe 32             	cmp    esi,0x32
+ 2fb7fab:	76 0b                	jbe    2fb7fb8 <SampleVectorField@@Base+0x267548>
+ 2fb7fad:	48 83 c4 18          	add    rsp,0x18
+ 2fb7fb1:	5b                   	pop    rbx
+ 2fb7fb2:	41 5e                	pop    r14
+ 2fb7fb4:	41 5f                	pop    r15
+ 2fb7fb6:	5d                   	pop    rbp
+ 2fb7fb7:	c3                   	ret
+ 2fb7fb8:	83 f8 03             	cmp    eax,0x3
+ 2fb7fbb:	77 f0                	ja     2fb7fad <SampleVectorField@@Base+0x26753d>
+ 2fb7fbd:	49 89 fe             	mov    r14,rdi
+ 2fb7fc0:	48 83 c3 14          	add    rbx,0x14
+ 2fb7fc4:	89 c0                	mov    eax,eax
+ 2fb7fc6:	ff 24 c5 20 56 cd 00 	jmp    QWORD PTR [rax*8+0xcd5620]
+ 2fb7fcd:	49 8b be a0 00 00 00 	mov    rdi,QWORD PTR [r14+0xa0]
+ 2fb7fd4:	48 85 ff             	test   rdi,rdi
+ 2fb7fd7:	74 d4                	je     2fb7fad <SampleVectorField@@Base+0x26753d>
+ 2fb7fd9:	e8 a2 8e 00 00       	call   2fc0e80 <SampleVectorField@@Base+0x270410>
+ 2fb7fde:	84 c0                	test   al,al
+ 2fb7fe0:	75 14                	jne    2fb7ff6 <SampleVectorField@@Base+0x267586>
+ 2fb7fe2:	48 8b 05 57 75 1e 04 	mov    rax,QWORD PTR [rip+0x41e7557]        # 719f540 <__bss_start@@Base+0x45d80>
+ 2fb7fe9:	80 b8 d2 02 00 00 00 	cmp    BYTE PTR [rax+0x2d2],0x0
+ 2fb7ff0:	0f 84 ac 01 00 00    	je     2fb81a2 <SampleVectorField@@Base+0x267732>
+ 2fb7ff6:	41 c6 86 d8 00 00 00 	mov    BYTE PTR [r14+0xd8],0x1
+ 2fb7ffd:	01 
+ 2fb7ffe:	80 3d 87 f4 26 04 05 	cmp    BYTE PTR [rip+0x426f487],0x5        # 722748c <__bss_start@@Base+0xcdccc>
+ 2fb8005:	72 05                	jb     2fb800c <SampleVectorField@@Base+0x26759c>
+ 2fb8007:	e8 24 71 00 00       	call   2fbf130 <SampleVectorField@@Base+0x26e6c0>
+ 2fb800c:	41 8b ae dc 00 00 00 	mov    ebp,DWORD PTR [r14+0xdc]
+ 2fb8013:	89 2c 24             	mov    DWORD PTR [rsp],ebp
+ 2fb8016:	41 80 be da 00 00 00 	cmp    BYTE PTR [r14+0xda],0x0
+ 2fb801d:	00 
+ 2fb801e:	74 43                	je     2fb8063 <SampleVectorField@@Base+0x2675f3>
+ 2fb8020:	80 3d 65 f4 26 04 05 	cmp    BYTE PTR [rip+0x426f465],0x5        # 722748c <__bss_start@@Base+0xcdccc>
+ 2fb8027:	72 08                	jb     2fb8031 <SampleVectorField@@Base+0x2675c1>
+ 2fb8029:	48 89 e7             	mov    rdi,rsp
+ 2fb802c:	e8 2f 71 00 00       	call   2fbf160 <SampleVectorField@@Base+0x26e6f0>
+ 2fb8031:	4c 63 fd             	movsxd r15,ebp
+ 2fb8034:	49 8d 5e 70          	lea    rbx,[r14+0x70]
+ 2fb8038:	89 6c 24 04          	mov    DWORD PTR [rsp+0x4],ebp
+ 2fb803c:	89 e8                	mov    eax,ebp
+ 2fb803e:	c1 e8 1f             	shr    eax,0x1f
+ 2fb8041:	31 c9                	xor    ecx,ecx
+ 2fb8043:	41 39 6e 78          	cmp    DWORD PTR [r14+0x78],ebp
+ 2fb8047:	f7 d0                	not    eax
+ 2fb8049:	0f 9f c1             	setg   cl
+ 2fb804c:	21 c1                	and    ecx,eax
+ 2fb804e:	83 f9 01             	cmp    ecx,0x1
+ 2fb8051:	0f 85 b2 01 00 00    	jne    2fb8209 <SampleVectorField@@Base+0x267799>
+ 2fb8057:	48 8b 03             	mov    rax,QWORD PTR [rbx]
+ 2fb805a:	4a 8b 3c f8          	mov    rdi,QWORD PTR [rax+r15*8]
+ 2fb805e:	e8 7d fc 00 00       	call   2fc7ce0 <SampleVectorField@@Base+0x277270>
+ 2fb8063:	41 c6 86 da 00 00 00 	mov    BYTE PTR [r14+0xda],0x0
+ 2fb806a:	00 
+ 2fb806b:	e9 3d ff ff ff       	jmp    2fb7fad <SampleVectorField@@Base+0x26753d>
+ 2fb8070:	49 8b be a8 00 00 00 	mov    rdi,QWORD PTR [r14+0xa8]
+ 2fb8077:	48 85 ff             	test   rdi,rdi
+ 2fb807a:	0f 84 2d ff ff ff    	je     2fb7fad <SampleVectorField@@Base+0x26753d>
+ 2fb8080:	e8 fb 8d 00 00       	call   2fc0e80 <SampleVectorField@@Base+0x270410>
+ 2fb8085:	84 c0                	test   al,al
+ 2fb8087:	75 14                	jne    2fb809d <SampleVectorField@@Base+0x26762d>
+ 2fb8089:	48 8b 05 b0 74 1e 04 	mov    rax,QWORD PTR [rip+0x41e74b0]        # 719f540 <__bss_start@@Base+0x45d80>
+ 2fb8090:	80 b8 d2 02 00 00 00 	cmp    BYTE PTR [rax+0x2d2],0x0
+ 2fb8097:	0f 84 32 01 00 00    	je     2fb81cf <SampleVectorField@@Base+0x26775f>
+ 2fb809d:	80 3d e8 f3 26 04 05 	cmp    BYTE PTR [rip+0x426f3e8],0x5        # 722748c <__bss_start@@Base+0xcdccc>
+ 2fb80a4:	72 05                	jb     2fb80ab <SampleVectorField@@Base+0x26763b>
+ 2fb80a6:	e8 15 71 00 00       	call   2fbf1c0 <SampleVectorField@@Base+0x26e750>
+ 2fb80ab:	41 c6 86 d9 00 00 00 	mov    BYTE PTR [r14+0xd9],0x1
+ 2fb80b2:	01 
+ 2fb80b3:	49 63 9e dc 00 00 00 	movsxd rbx,DWORD PTR [r14+0xdc]
+ 2fb80ba:	8d 6b fe             	lea    ebp,[rbx-0x2]
+ 2fb80bd:	89 2c 24             	mov    DWORD PTR [rsp],ebp
+ 2fb80c0:	41 80 be db 00 00 00 	cmp    BYTE PTR [r14+0xdb],0x0
+ 2fb80c7:	00 
+ 2fb80c8:	74 41                	je     2fb810b <SampleVectorField@@Base+0x26769b>
+ 2fb80ca:	80 3d bb f3 26 04 05 	cmp    BYTE PTR [rip+0x426f3bb],0x5        # 722748c <__bss_start@@Base+0xcdccc>
+ 2fb80d1:	72 08                	jb     2fb80db <SampleVectorField@@Base+0x26766b>
+ 2fb80d3:	48 89 e7             	mov    rdi,rsp
+ 2fb80d6:	e8 15 71 00 00       	call   2fbf1f0 <SampleVectorField@@Base+0x26e780>
+ 2fb80db:	4d 8d 7e 70          	lea    r15,[r14+0x70]
+ 2fb80df:	89 6c 24 04          	mov    DWORD PTR [rsp+0x4],ebp
+ 2fb80e3:	89 e8                	mov    eax,ebp
+ 2fb80e5:	c1 e8 1f             	shr    eax,0x1f
+ 2fb80e8:	31 c9                	xor    ecx,ecx
+ 2fb80ea:	41 39 6e 78          	cmp    DWORD PTR [r14+0x78],ebp
+ 2fb80ee:	f7 d0                	not    eax
+ 2fb80f0:	0f 9f c1             	setg   cl
+ 2fb80f3:	21 c1                	and    ecx,eax
+ 2fb80f5:	83 f9 01             	cmp    ecx,0x1
+ 2fb80f8:	0f 85 2a 01 00 00    	jne    2fb8228 <SampleVectorField@@Base+0x2677b8>
+ 2fb80fe:	49 8b 07             	mov    rax,QWORD PTR [r15]
+ 2fb8101:	48 8b 7c d8 f0       	mov    rdi,QWORD PTR [rax+rbx*8-0x10]
+ 2fb8106:	e8 d5 fb 00 00       	call   2fc7ce0 <SampleVectorField@@Base+0x277270>
+ 2fb810b:	41 c6 86 db 00 00 00 	mov    BYTE PTR [r14+0xdb],0x0
+ 2fb8112:	00 
+ 2fb8113:	e9 95 fe ff ff       	jmp    2fb7fad <SampleVectorField@@Base+0x26753d>
+ 2fb8118:	80 3d 6d f3 26 04 05 	cmp    BYTE PTR [rip+0x426f36d],0x5        # 722748c <__bss_start@@Base+0xcdccc>
+ 2fb811f:	72 08                	jb     2fb8129 <SampleVectorField@@Base+0x2676b9>
+ 2fb8121:	48 89 df             	mov    rdi,rbx
+ 2fb8124:	e8 27 71 00 00       	call   2fbf250 <SampleVectorField@@Base+0x26e7e0>
+ 2fb8129:	e8 52 cd ff ff       	call   2fb4e80 <SampleVectorField@@Base+0x264410>
+ 2fb812e:	80 b8 d6 02 00 00 00 	cmp    BYTE PTR [rax+0x2d6],0x0
+ 2fb8135:	0f 84 72 fe ff ff    	je     2fb7fad <SampleVectorField@@Base+0x26753d>
+ 2fb813b:	80 3d 4a f3 26 04 05 	cmp    BYTE PTR [rip+0x426f34a],0x5        # 722748c <__bss_start@@Base+0xcdccc>
+ 2fb8142:	72 08                	jb     2fb814c <SampleVectorField@@Base+0x2676dc>
+ 2fb8144:	48 89 df             	mov    rdi,rbx
+ 2fb8147:	e8 34 71 00 00       	call   2fbf280 <SampleVectorField@@Base+0x26e810>
+ 2fb814c:	8b 33                	mov    esi,DWORD PTR [rbx]
+ 2fb814e:	4c 89 f7             	mov    rdi,r14
+ 2fb8151:	ba 01 00 00 00       	mov    edx,0x1
+ 2fb8156:	eb 3b                	jmp    2fb8193 <SampleVectorField@@Base+0x267723>
+ 2fb8158:	80 3d 2d f3 26 04 05 	cmp    BYTE PTR [rip+0x426f32d],0x5        # 722748c <__bss_start@@Base+0xcdccc>
+ 2fb815f:	72 08                	jb     2fb8169 <SampleVectorField@@Base+0x2676f9>
+ 2fb8161:	48 89 df             	mov    rdi,rbx
+ 2fb8164:	e8 47 71 00 00       	call   2fbf2b0 <SampleVectorField@@Base+0x26e840>
+ 2fb8169:	e8 12 cd ff ff       	call   2fb4e80 <SampleVectorField@@Base+0x264410>
+ 2fb816e:	80 b8 d6 02 00 00 00 	cmp    BYTE PTR [rax+0x2d6],0x0
+ 2fb8175:	0f 84 32 fe ff ff    	je     2fb7fad <SampleVectorField@@Base+0x26753d>
+ 2fb817b:	80 3d 0a f3 26 04 05 	cmp    BYTE PTR [rip+0x426f30a],0x5        # 722748c <__bss_start@@Base+0xcdccc>
+ 2fb8182:	72 08                	jb     2fb818c <SampleVectorField@@Base+0x26771c>
+ 2fb8184:	48 89 df             	mov    rdi,rbx
+ 2fb8187:	e8 54 71 00 00       	call   2fbf2e0 <SampleVectorField@@Base+0x26e870>
+ 2fb818c:	8b 33                	mov    esi,DWORD PTR [rbx]
+ 2fb818e:	4c 89 f7             	mov    rdi,r14
+ 2fb8191:	31 d2                	xor    edx,edx
+ 2fb8193:	48 83 c4 18          	add    rsp,0x18
+ 2fb8197:	5b                   	pop    rbx
+ 2fb8198:	41 5e                	pop    r14
+ 2fb819a:	41 5f                	pop    r15
+ 2fb819c:	5d                   	pop    rbp
+ 2fb819d:	e9 ae 04 00 00       	jmp    2fb8650 <SampleVectorField@@Base+0x267be0>
+ 2fb81a2:	80 3d e3 f2 26 04 05 	cmp    BYTE PTR [rip+0x426f2e3],0x5        # 722748c <__bss_start@@Base+0xcdccc>
+ 2fb81a9:	72 05                	jb     2fb81b0 <SampleVectorField@@Base+0x267740>
+ 2fb81ab:	e8 e0 6f 00 00       	call   2fbf190 <SampleVectorField@@Base+0x26e720>
+ 2fb81b0:	41 8b 86 d0 00 00 00 	mov    eax,DWORD PTR [r14+0xd0]
+ 2fb81b7:	83 f8 0b             	cmp    eax,0xb
+ 2fb81ba:	0f 87 ed fd ff ff    	ja     2fb7fad <SampleVectorField@@Base+0x26753d>
+ 2fb81c0:	b9 80 0a 00 00       	mov    ecx,0xa80
+ 2fb81c5:	0f a3 c1             	bt     ecx,eax
+ 2fb81c8:	72 26                	jb     2fb81f0 <SampleVectorField@@Base+0x267780>
+ 2fb81ca:	e9 de fd ff ff       	jmp    2fb7fad <SampleVectorField@@Base+0x26753d>
+ 2fb81cf:	80 3d b6 f2 26 04 05 	cmp    BYTE PTR [rip+0x426f2b6],0x5        # 722748c <__bss_start@@Base+0xcdccc>
+ 2fb81d6:	72 05                	jb     2fb81dd <SampleVectorField@@Base+0x26776d>
+ 2fb81d8:	e8 43 70 00 00       	call   2fbf220 <SampleVectorField@@Base+0x26e7b0>
+ 2fb81dd:	41 8b 86 d0 00 00 00 	mov    eax,DWORD PTR [r14+0xd0]
+ 2fb81e4:	83 c8 02             	or     eax,0x2
+ 2fb81e7:	83 f8 0b             	cmp    eax,0xb
+ 2fb81ea:	0f 85 bd fd ff ff    	jne    2fb7fad <SampleVectorField@@Base+0x26753d>
+ 2fb81f0:	4c 89 f7             	mov    rdi,r14
+ 2fb81f3:	be 0c 00 00 00       	mov    esi,0xc
+ 2fb81f8:	31 d2                	xor    edx,edx
+ 2fb81fa:	48 83 c4 18          	add    rsp,0x18
+ 2fb81fe:	5b                   	pop    rbx
+ 2fb81ff:	41 5e                	pop    r14
+ 2fb8201:	41 5f                	pop    r15
+ 2fb8203:	5d                   	pop    rbp
+ 2fb8204:	e9 57 17 00 00       	jmp    2fb9960 <SampleVectorField@@Base+0x268ef0>
+ 2fb8209:	48 8d 44 24 04       	lea    rax,[rsp+0x4]
+ 2fb820e:	48 89 44 24 08       	mov    QWORD PTR [rsp+0x8],rax
+ 2fb8213:	48 89 5c 24 10       	mov    QWORD PTR [rsp+0x10],rbx
+ 2fb8218:	48 8d 7c 24 08       	lea    rdi,[rsp+0x8]
+ 2fb821d:	e8 4e 4c fd 03       	call   6f8ce70 <_fini@@Base+0x500>
+ 2fb8222:	cc                   	int3
+ 2fb8223:	e9 2f fe ff ff       	jmp    2fb8057 <SampleVectorField@@Base+0x2675e7>
+ 2fb8228:	48 8d 44 24 04       	lea    rax,[rsp+0x4]
+ 2fb822d:	48 89 44 24 08       	mov    QWORD PTR [rsp+0x8],rax
+ 2fb8232:	4c 89 7c 24 10       	mov    QWORD PTR [rsp+0x10],r15
+ 2fb8237:	48 8d 7c 24 08       	lea    rdi,[rsp+0x8]
+ 2fb823c:	e8 2f 4c fd 03       	call   6f8ce70 <_fini@@Base+0x500>
+ 2fb8241:	cc                   	int3
+ 2fb8242:	e9 b7 fe ff ff       	jmp    2fb80fe <SampleVectorField@@Base+0x26768e>
+ 2fb8247:	cc                   	int3
+ 2fb8248:	cc                   	int3
+ 2fb8249:	cc                   	int3
+ 2fb824a:	cc                   	int3
+ 2fb824b:	cc                   	int3
+ 2fb824c:	cc                   	int3
+ 2fb824d:	cc                   	int3
+ 2fb824e:	cc                   	int3
+ 2fb824f:	cc                   	int3
+ 2fb8250:	48 8b 05 e9 72 1e 04 	mov    rax,QWORD PTR [rip+0x41e72e9]        # 719f540 <__bss_start@@Base+0x45d80>
+ 2fb8257:	c6 80 d2 02 00 00 01 	mov    BYTE PTR [rax+0x2d2],0x1
+ 2fb825e:	c3                   	ret
+ 2fb825f:	cc                   	int3
+ 2fb8260:	41 56                	push   r14
+ 2fb8262:	53                   	push   rbx
+ 2fb8263:	48 83 ec 18          	sub    rsp,0x18
+ 2fb8267:	49 89 fe             	mov    r14,rdi
+ 2fb826a:	48 8d 5c 24 08       	lea    rbx,[rsp+0x8]
+ 2fb826f:	48 89 df             	mov    rdi,rbx
+ 2fb8272:	e8 29 72 00 00       	call   2fbf4a0 <SampleVectorField@@Base+0x26ea30>
+ 2fb8277:	4c 39 f3             	cmp    rbx,r14
+ 2fb827a:	74 4c                	je     2fb82c8 <SampleVectorField@@Base+0x267858>
+ 2fb827c:	83 7c 24 10 00       	cmp    DWORD PTR [rsp+0x10],0x0
+ 2fb8281:	74 15                	je     2fb8298 <SampleVectorField@@Base+0x267828>
+ 2fb8283:	48 8b 7c 24 08       	mov    rdi,QWORD PTR [rsp+0x8]
+ 2fb8288:	48 85 ff             	test   rdi,rdi
+ 2fb828b:	74 0b                	je     2fb8298 <SampleVectorField@@Base+0x267828>
+ 2fb828d:	48 8b 07             	mov    rax,QWORD PTR [rdi]
+ 2fb8290:	4c 89 f6             	mov    rsi,r14
+ 2fb8293:	ff 50 48             	call   QWORD PTR [rax+0x48]
+ 2fb8296:	eb 30                	jmp    2fb82c8 <SampleVectorField@@Base+0x267858>
+ 2fb8298:	41 83 7e 08 00       	cmp    DWORD PTR [r14+0x8],0x0
+ 2fb829d:	74 29                	je     2fb82c8 <SampleVectorField@@Base+0x267858>
+ 2fb829f:	49 8b 3e             	mov    rdi,QWORD PTR [r14]
+ 2fb82a2:	48 85 ff             	test   rdi,rdi
+ 2fb82a5:	74 21                	je     2fb82c8 <SampleVectorField@@Base+0x267858>
+ 2fb82a7:	48 8b 07             	mov    rax,QWORD PTR [rdi]
+ 2fb82aa:	ff 10                	call   QWORD PTR [rax]
+ 2fb82ac:	49 8b 3e             	mov    rdi,QWORD PTR [r14]
+ 2fb82af:	48 85 ff             	test   rdi,rdi
+ 2fb82b2:	74 0c                	je     2fb82c0 <SampleVectorField@@Base+0x267850>
+ 2fb82b4:	31 f6                	xor    esi,esi
+ 2fb82b6:	31 d2                	xor    edx,edx
+ 2fb82b8:	e8 13 9c 0b 00       	call   3071ed0 <LZ4_saveDictHC@@Base+0x77940>
+ 2fb82bd:	49 89 06             	mov    QWORD PTR [r14],rax
+ 2fb82c0:	41 c7 46 08 00 00 00 	mov    DWORD PTR [r14+0x8],0x0
+ 2fb82c7:	00 
+ 2fb82c8:	83 7c 24 10 00       	cmp    DWORD PTR [rsp+0x10],0x0
+ 2fb82cd:	74 2f                	je     2fb82fe <SampleVectorField@@Base+0x26788e>
+ 2fb82cf:	48 8b 7c 24 08       	mov    rdi,QWORD PTR [rsp+0x8]
+ 2fb82d4:	48 85 ff             	test   rdi,rdi
+ 2fb82d7:	74 25                	je     2fb82fe <SampleVectorField@@Base+0x26788e>
+ 2fb82d9:	48 8b 07             	mov    rax,QWORD PTR [rdi]
+ 2fb82dc:	ff 10                	call   QWORD PTR [rax]
+ 2fb82de:	48 8b 7c 24 08       	mov    rdi,QWORD PTR [rsp+0x8]
+ 2fb82e3:	48 85 ff             	test   rdi,rdi
+ 2fb82e6:	74 0e                	je     2fb82f6 <SampleVectorField@@Base+0x267886>
+ 2fb82e8:	31 f6                	xor    esi,esi
+ 2fb82ea:	31 d2                	xor    edx,edx
+ 2fb82ec:	e8 df 9b 0b 00       	call   3071ed0 <LZ4_saveDictHC@@Base+0x77940>
+ 2fb82f1:	48 89 44 24 08       	mov    QWORD PTR [rsp+0x8],rax
+ 2fb82f6:	c7 44 24 10 00 00 00 	mov    DWORD PTR [rsp+0x10],0x0
+ 2fb82fd:	00 
+ 2fb82fe:	48 8d 7c 24 08       	lea    rdi,[rsp+0x8]
+ 2fb8303:	e8 88 67 68 ff       	call   263ea90 <_start@@Base+0x62110>
+ 2fb8308:	48 83 c4 18          	add    rsp,0x18
+ 2fb830c:	5b                   	pop    rbx
+ 2fb830d:	41 5e                	pop    r14
+ 2fb830f:	c3                   	ret
+ 2fb8310:	48 89 c3             	mov    rbx,rax
+ 2fb8313:	48 8d 7c 24 08       	lea    rdi,[rsp+0x8]
+ 2fb8318:	e8 73 67 68 ff       	call   263ea90 <_start@@Base+0x62110>
+ 2fb831d:	48 89 df             	mov    rdi,rbx
+ 2fb8320:	e8 1b 72 65 ff       	call   260f540 <_start@@Base+0x32bc0>
+ 2fb8325:	48 89 c3             	mov    rbx,rax
+ 2fb8328:	83 7c 24 10 00       	cmp    DWORD PTR [rsp+0x10],0x0
+ 2fb832d:	74 2f                	je     2fb835e <SampleVectorField@@Base+0x2678ee>
+ 2fb832f:	48 8b 7c 24 08       	mov    rdi,QWORD PTR [rsp+0x8]
+ 2fb8334:	48 85 ff             	test   rdi,rdi
+ 2fb8337:	74 25                	je     2fb835e <SampleVectorField@@Base+0x2678ee>
+ 2fb8339:	48 8b 07             	mov    rax,QWORD PTR [rdi]
+ 2fb833c:	ff 10                	call   QWORD PTR [rax]
+ 2fb833e:	48 8b 7c 24 08       	mov    rdi,QWORD PTR [rsp+0x8]
+ 2fb8343:	48 85 ff             	test   rdi,rdi
+ 2fb8346:	74 0e                	je     2fb8356 <SampleVectorField@@Base+0x2678e6>
+ 2fb8348:	31 f6                	xor    esi,esi
+ 2fb834a:	31 d2                	xor    edx,edx
+ 2fb834c:	e8                   	.byte 0xe8
+ 2fb834d:	7f 9b                	jg     2fb82ea <SampleVectorField@@Base+0x26787a>
+ 2fb834f:	0b                   	.byte 0xb

@@ -1,0 +1,10 @@
+export PATH=/opt/node22/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+export JAVA_HOME=/usr/lib/jvm/java-21-openjdk-amd64
+export GHIDRA_INSTALL_DIR=/opt/ghidra_12.1.4_PUBLIC
+export GHIDRA_HEADLESS_MAXMEM=8G
+export GHIDRA_MAXMEM=8G
+export REA_GHIDRA_STARTUP_TIMEOUT_MS=3600000
+export REA_PWNTOOLS_PYTHON=/usr/bin/python3
+export SIM=/mnt/d/RMUA2026-re/sim/simulator_12.0.0.5/Build/LinuxNoEditor
+export MAIN=$SIM/RMUA/Binaries/Linux/RMUA-Linux-Shipping
+export LIB=$SIM/RMUA/Plugins/AirSimROS/Binaries/Linux/libairsimros.so

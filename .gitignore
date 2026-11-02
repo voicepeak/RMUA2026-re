@@ -1,0 +1,22 @@
+# Large / reproducible data
+sim/
+extracted/
+maps_json/
+tools/
+wsl/
+*.zip
+*.pak
+*.umap
+*.uexp
+*.uasset
+*.so
+*.exe
+*.dll
+
+# Local REA/session state
+mcp/queue/
+mcp/results/
+mcp/tools.json
+providers.json
+*.snapshot
+anchors_pseudo.c

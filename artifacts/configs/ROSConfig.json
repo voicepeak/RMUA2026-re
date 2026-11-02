@@ -1,0 +1,31 @@
+{
+  "ROSBagRecorder": {
+    "ROSPath": "/opt/ros/noetic",
+    "BagPath": "/%Y-%m-%d_%H:%M:%S.bag",
+    "TopicList": [
+      "/airsim_node/drone_1/front_left/Scene",
+      "/airsim_node/drone_1/front_left/Scene/camera_info",
+      "/airsim_node/drone_1/front_right/Scene",
+      "/airsim_node/drone_1/front_right/Scene/camera_info",
+      "/airsim_node/drone_1/back_left/Scene",
+      "/airsim_node/drone_1/back_left/Scene/camera_info",
+      "/airsim_node/drone_1/back_right/Scene",
+      "/airsim_node/drone_1/back_right/Scene/camera_info",
+      "/airsim_node/drone_1/rotor_pwm",
+      "/airsim_node/drone_1/imu/imu",
+      "/airsim_node/drone_1/gps",
+      "/airsim_node/drone_1/pose_gt",
+      "/airsim_node/custom_msgs",
+      "/airsim_node/drone_1/rotor_pwm_cmd",
+      "/airsim_node/drone_1/lidar",
+      "/airsim_node/drone_1/debug/wind"
+    ]
+  },
+  "VideoRecorder": {
+    "VideoPath": "/%Y-%m-%d_%H:%M:%S.mp4"
+  },
+  "ROS": {
+    "EnableDebug": true,
+    "FrameTimeTolerance": 125
+  }
+}
