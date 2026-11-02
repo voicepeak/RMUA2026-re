@@ -22,6 +22,8 @@
 | [docs/07_reproduction.md](docs/07_reproduction.md) | 从零下载、解包、解析、反编译和重生成数据 |
 | [docs/08_open_questions.md](docs/08_open_questions.md) | 静态分析无法确定的点（尤其官方裁判端计分） |
 | [docs/09_evidence_index.md](docs/09_evidence_index.md) | 每个结论对应的文件/函数地址/证据 |
+| [docs/10_drl_training_notes.md](docs/10_drl_training_notes.md) | 面向 DRL 的训练信号、reward、并行建议 |
+| [docs/11_artifact_manifest.md](docs/11_artifact_manifest.md) | 已入库/未入库资料清单与大文件重生成方式 |
 
 ## 核心结论（TL;DR）
 
