@@ -1,0 +1,5 @@
+[0m[INFO] [1793702005.238740495]: Subscribing to /airsim_node/drone_1/debug/pose_gt[0m
+[0m[INFO] [1793702005.240656262]: Subscribing to /airsim_node/drone_1/debug/rotor_pwm[0m
+[0m[INFO] [1793702005.242058949]: Subscribing to /airsim_node/drone_1/debug/wind[0m
+[0m[INFO] [1793702005.243240099]: Subscribing to /airsim_node/drone_1/imu/imu[0m
+[0m[INFO] [1793702005.244730440]: Recording to '/analysis/experiments/seed_audit_20261103/null_pwm/truth.bag'.[0m

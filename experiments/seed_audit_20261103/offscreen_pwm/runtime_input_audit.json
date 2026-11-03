@@ -1,0 +1,14 @@
+{
+  "node": "/rmua_next_pwm_identification_3010_1793702070011",
+  "topics": [
+    "/airsim_node/drone_1/gps",
+    "/airsim_node/drone_1/imu/imu",
+    "/airsim_node/initial_pose"
+  ],
+  "debug_inputs": false,
+  "expected_control_connections": 1,
+  "control_connections": 1,
+  "backend_subscriber_nodes": [
+    "/airsim_node"
+  ]
+}
