@@ -1,0 +1,30 @@
+{
+  "binary_sha256": "5231addfa25ddaa9e4473ea9ac40c9c0bc685174e69cd14bb49159f443b97800",
+  "settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+  "image_id": "sha256:cd46a48cd28c2a9c6345f60227fd1bd50e78c67ef1e98dcddc0e65893771da57",
+  "gdb_script_sha256": "ed32f1cc5239f100a98bd2e547928a4ebcba532f6d4b8c35ebd8602fbadecb01",
+  "mode": "nullrhi",
+  "map": "default Lobby -> OL1",
+  "seeds": [
+    123
+  ],
+  "repeats": 1,
+  "stage_coverage": "initial stationary only; no flight and no forced state changes",
+  "runs": [
+    {
+      "seed": 123,
+      "repeat": 1,
+      "port": 11621,
+      "container": "rmua-trace-48e2d78f006b",
+      "start_wall": 1793730408.6372094,
+      "status": "reset_failed",
+      "id": "b773abed60d646bc73aa5ee7a8fc18219db6981ce3bd581e8ae45a71485a3043",
+      "ready_wall": 1793730419.236194,
+      "before_reset_exit_code": 124,
+      "reset_exit_code": 0,
+      "reset_response_success": false,
+      "after_reset_exit_code": 124,
+      "end_wall": 1793730428.270079
+    }
+  ]
+}

@@ -1,0 +1,241 @@
+
+/home/tianbot/RUMA-by-helinjun/main/simulator/simulator_12.0.0.5/Build/LinuxNoEditor/RMUA/Plugins/AirSimROS/Binaries/Linux/libairsimros.so：     文件格式 elf64-x86-64
+
+
+Disassembly of section .text:
+
+00000000001851b0 <airsim_ros::commands_impl::RESET_Callback(airsim_ros::ResetRequest_<std::allocator<void> >&, airsim_ros::ResetResponse_<std::allocator<void> >&)>:
+  1851b0:	f3 0f 1e fa          	endbr64 
+  1851b4:	55                   	push   %rbp
+  1851b5:	48 89 e5             	mov    %rsp,%rbp
+  1851b8:	41 54                	push   %r12
+  1851ba:	53                   	push   %rbx
+  1851bb:	48 83 c4 80          	add    $0xffffffffffffff80,%rsp
+  1851bf:	48 89 bd 78 ff ff ff 	mov    %rdi,-0x88(%rbp)
+  1851c6:	48 89 b5 70 ff ff ff 	mov    %rsi,-0x90(%rbp)
+  1851cd:	64 48 8b 04 25 28 00 	mov    %fs:0x28,%rax
+  1851d4:	00 00 
+  1851d6:	48 89 45 e8          	mov    %rax,-0x18(%rbp)
+  1851da:	31 c0                	xor    %eax,%eax
+  1851dc:	48 8d 45 b0          	lea    -0x50(%rbp),%rax
+  1851e0:	48 89 c7             	mov    %rax,%rdi
+  1851e3:	e8 b8 d0 ff ff       	call   1822a0 <std::allocator<char>::allocator()@plt>
+  1851e8:	48 8d 55 b0          	lea    -0x50(%rbp),%rdx
+  1851ec:	48 8d 45 c0          	lea    -0x40(%rbp),%rax
+  1851f0:	48 8d 35 9b 72 08 00 	lea    0x8729b(%rip),%rsi        # 20c492 <airsim_ros::config::NODE_STAT_MAX_FREQ+0x13e>
+  1851f7:	48 89 c7             	mov    %rax,%rdi
+  1851fa:	e8 a1 80 ff ff       	call   17d2a0 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(char const*, std::allocator<char> const&)@plt>
+  1851ff:	48 8d 45 c0          	lea    -0x40(%rbp),%rax
+  185203:	f3 0f 10 05 9d f8 08 	movss  0x8f89d(%rip),%xmm0        # 214aa8 <airsim_ros::commands_impl::(anonymous namespace)::DT+0x85e8>
+  18520a:	00 
+  18520b:	48 89 c7             	mov    %rax,%rdi
+  18520e:	e8 5d 15 ff ff       	call   176770 <airsim_ros::ue_log(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, float)@plt>
+  185213:	48 8d 45 c0          	lea    -0x40(%rbp),%rax
+  185217:	48 89 c7             	mov    %rax,%rdi
+  18521a:	e8 c1 8a fe ff       	call   16dce0 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::~basic_string()@plt>
+  18521f:	48 8d 45 b0          	lea    -0x50(%rbp),%rax
+  185223:	48 89 c7             	mov    %rax,%rdi
+  185226:	e8 05 4c ff ff       	call   179e30 <std::allocator<char>::~allocator()@plt>
+  18522b:	48 8b 05 2e 5b 0e 00 	mov    0xe5b2e(%rip),%rax        # 26ad60 <airsim_ros::node_instance>
+  185232:	0f b6 80 54 29 00 00 	movzbl 0x2954(%rax),%eax
+  185239:	83 f0 01             	xor    $0x1,%eax
+  18523c:	84 c0                	test   %al,%al
+  18523e:	74 14                	je     185254 <airsim_ros::commands_impl::RESET_Callback(airsim_ros::ResetRequest_<std::allocator<void> >&, airsim_ros::ResetResponse_<std::allocator<void> >&)+0xa4>
+  185240:	48 8b 85 70 ff ff ff 	mov    -0x90(%rbp),%rax
+  185247:	c6 00 00             	movb   $0x0,(%rax)
+  18524a:	bb 01 00 00 00       	mov    $0x1,%ebx
+  18524f:	e9 c3 02 00 00       	jmp    185517 <airsim_ros::commands_impl::RESET_Callback(airsim_ros::ResetRequest_<std::allocator<void> >&, airsim_ros::ResetResponse_<std::allocator<void> >&)+0x367>
+  185254:	48 c7 45 b0 00 00 00 	movq   $0x0,-0x50(%rbp)
+  18525b:	00 
+  18525c:	48 8d 45 90          	lea    -0x70(%rbp),%rax
+  185260:	48 8d 55 b0          	lea    -0x50(%rbp),%rdx
+  185264:	48 8d 35 8d 64 0d 00 	lea    0xd648d(%rip),%rsi        # 25b6f8 <airsim_ros::CMD_RESET>
+  18526b:	48 89 c7             	mov    %rax,%rdi
+  18526e:	e8 9d 2b ff ff       	call   177e10 <std::shared_ptr<airsim_ros::Command> std::make_shared<airsim_ros::Command, char const* const&, decltype(nullptr)>(char const* const&, decltype(nullptr)&&)@plt>
+  185273:	48 8b 05 e6 5a 0e 00 	mov    0xe5ae6(%rip),%rax        # 26ad60 <airsim_ros::node_instance>
+  18527a:	48 8b 98 40 29 00 00 	mov    0x2940(%rax),%rbx
+  185281:	48 8d 45 90          	lea    -0x70(%rbp),%rax
+  185285:	48 89 c7             	mov    %rax,%rdi
+  185288:	e8 c3 4b ff ff       	call   179e50 <std::__shared_ptr<airsim_ros::Command, (__gnu_cxx::_Lock_policy)2>::get() const@plt>
+  18528d:	be 00 00 00 00       	mov    $0x0,%esi
+  185292:	48 89 c7             	mov    %rax,%rdi
+  185295:	ff d3                	call   *%rbx
+  185297:	48 8b 05 c2 5a 0e 00 	mov    0xe5ac2(%rip),%rax        # 26ad60 <airsim_ros::node_instance>
+  18529e:	48 05 c0 01 00 00    	add    $0x1c0,%rax
+  1852a4:	48 89 c7             	mov    %rax,%rdi
+  1852a7:	e8 24 e1 fe ff       	call   1733d0 <AirSimROSData::Reset()@plt>
+  1852ac:	c7 45 a0 01 00 00 00 	movl   $0x1,-0x60(%rbp)
+  1852b3:	48 8d 55 a0          	lea    -0x60(%rbp),%rdx
+  1852b7:	48 8d 45 b0          	lea    -0x50(%rbp),%rax
+  1852bb:	48 89 d6             	mov    %rdx,%rsi
+  1852be:	48 89 c7             	mov    %rax,%rdi
+  1852c1:	e8 7a b5 ff ff       	call   180840 <std::chrono::duration<long, std::ratio<1l, 1l> >::duration<int, void>(int const&)@plt>
+  1852c6:	48 8d 45 b0          	lea    -0x50(%rbp),%rax
+  1852ca:	48 89 c7             	mov    %rax,%rdi
+  1852cd:	e8 7e 2c ff ff       	call   177f50 <void std::this_thread::sleep_for<long, std::ratio<1l, 1l> >(std::chrono::duration<long, std::ratio<1l, 1l> > const&)@plt>
+  1852d2:	48 c7 45 b0 00 00 00 	movq   $0x0,-0x50(%rbp)
+  1852d9:	00 
+  1852da:	48 8d 45 a0          	lea    -0x60(%rbp),%rax
+  1852de:	48 8d 55 b0          	lea    -0x50(%rbp),%rdx
+  1852e2:	48 8d 35 9f 63 0d 00 	lea    0xd639f(%rip),%rsi        # 25b688 <airsim_ros::CMD_GETPOSE_UE>
+  1852e9:	48 89 c7             	mov    %rax,%rdi
+  1852ec:	e8 1f 2b ff ff       	call   177e10 <std::shared_ptr<airsim_ros::Command> std::make_shared<airsim_ros::Command, char const* const&, decltype(nullptr)>(char const* const&, decltype(nullptr)&&)@plt>
+  1852f1:	48 8d 45 b0          	lea    -0x50(%rbp),%rax
+  1852f5:	48 89 c7             	mov    %rax,%rdi
+  1852f8:	e8 93 cf fe ff       	call   172290 <std::shared_ptr<airsim_ros::GetPoseUE_Result> std::make_shared<airsim_ros::GetPoseUE_Result>()@plt>
+  1852fd:	48 8b 05 5c 5a 0e 00 	mov    0xe5a5c(%rip),%rax        # 26ad60 <airsim_ros::node_instance>
+  185304:	48 8b 98 40 29 00 00 	mov    0x2940(%rax),%rbx
+  18530b:	48 8d 45 b0          	lea    -0x50(%rbp),%rax
+  18530f:	48 89 c7             	mov    %rax,%rdi
+  185312:	e8 09 d9 ff ff       	call   182c20 <std::__shared_ptr<airsim_ros::GetPoseUE_Result, (__gnu_cxx::_Lock_policy)2>::get() const@plt>
+  185317:	49 89 c4             	mov    %rax,%r12
+  18531a:	48 8d 45 a0          	lea    -0x60(%rbp),%rax
+  18531e:	48 89 c7             	mov    %rax,%rdi
+  185321:	e8 2a 4b ff ff       	call   179e50 <std::__shared_ptr<airsim_ros::Command, (__gnu_cxx::_Lock_policy)2>::get() const@plt>
+  185326:	4c 89 e6             	mov    %r12,%rsi
+  185329:	48 89 c7             	mov    %rax,%rdi
+  18532c:	ff d3                	call   *%rbx
+  18532e:	c6 45 8f 01          	movb   $0x1,-0x71(%rbp)
+  185332:	48 8d 45 b0          	lea    -0x50(%rbp),%rax
+  185336:	48 89 c7             	mov    %rax,%rdi
+  185339:	e8 f2 9c ff ff       	call   17f030 <std::__shared_ptr_access<airsim_ros::GetPoseUE_Result, (__gnu_cxx::_Lock_policy)2, false, false>::operator->() const@plt>
+  18533e:	8b 40 10             	mov    0x10(%rax),%eax
+  185341:	66 0f 6e c0          	movd   %eax,%xmm0
+  185345:	e8 26 1b ff ff       	call   176e70 <std::abs(float)@plt>
+  18534a:	f3 0f 5a c8          	cvtss2sd %xmm0,%xmm1
+  18534e:	f2 0f 10 05 5a f7 08 	movsd  0x8f75a(%rip),%xmm0        # 214ab0 <airsim_ros::commands_impl::(anonymous namespace)::DT+0x85f0>
+  185355:	00 
+  185356:	66 0f 2f c1          	comisd %xmm1,%xmm0
+  18535a:	0f 97 c0             	seta   %al
+  18535d:	0f b6 55 8f          	movzbl -0x71(%rbp),%edx
+  185361:	0f b6 c0             	movzbl %al,%eax
+  185364:	21 d0                	and    %edx,%eax
+  185366:	85 c0                	test   %eax,%eax
+  185368:	0f 95 c0             	setne  %al
+  18536b:	88 45 8f             	mov    %al,-0x71(%rbp)
+  18536e:	48 8d 45 b0          	lea    -0x50(%rbp),%rax
+  185372:	48 89 c7             	mov    %rax,%rdi
+  185375:	e8 b6 9c ff ff       	call   17f030 <std::__shared_ptr_access<airsim_ros::GetPoseUE_Result, (__gnu_cxx::_Lock_policy)2, false, false>::operator->() const@plt>
+  18537a:	8b 40 14             	mov    0x14(%rax),%eax
+  18537d:	66 0f 6e c0          	movd   %eax,%xmm0
+  185381:	e8 ea 1a ff ff       	call   176e70 <std::abs(float)@plt>
+  185386:	f3 0f 5a c8          	cvtss2sd %xmm0,%xmm1
+  18538a:	f2 0f 10 05 1e f7 08 	movsd  0x8f71e(%rip),%xmm0        # 214ab0 <airsim_ros::commands_impl::(anonymous namespace)::DT+0x85f0>
+  185391:	00 
+  185392:	66 0f 2f c1          	comisd %xmm1,%xmm0
+  185396:	0f 97 c0             	seta   %al
+  185399:	0f b6 55 8f          	movzbl -0x71(%rbp),%edx
+  18539d:	0f b6 c0             	movzbl %al,%eax
+  1853a0:	21 d0                	and    %edx,%eax
+  1853a2:	85 c0                	test   %eax,%eax
+  1853a4:	0f 95 c0             	setne  %al
+  1853a7:	88 45 8f             	mov    %al,-0x71(%rbp)
+  1853aa:	48 8d 45 b0          	lea    -0x50(%rbp),%rax
+  1853ae:	48 89 c7             	mov    %rax,%rdi
+  1853b1:	e8 7a 9c ff ff       	call   17f030 <std::__shared_ptr_access<airsim_ros::GetPoseUE_Result, (__gnu_cxx::_Lock_policy)2, false, false>::operator->() const@plt>
+  1853b6:	8b 40 18             	mov    0x18(%rax),%eax
+  1853b9:	66 0f 6e c0          	movd   %eax,%xmm0
+  1853bd:	e8 ae 1a ff ff       	call   176e70 <std::abs(float)@plt>
+  1853c2:	f3 0f 5a c8          	cvtss2sd %xmm0,%xmm1
+  1853c6:	f2 0f 10 05 e2 f6 08 	movsd  0x8f6e2(%rip),%xmm0        # 214ab0 <airsim_ros::commands_impl::(anonymous namespace)::DT+0x85f0>
+  1853cd:	00 
+  1853ce:	66 0f 2f c1          	comisd %xmm1,%xmm0
+  1853d2:	0f 97 c0             	seta   %al
+  1853d5:	0f b6 55 8f          	movzbl -0x71(%rbp),%edx
+  1853d9:	0f b6 c0             	movzbl %al,%eax
+  1853dc:	21 d0                	and    %edx,%eax
+  1853de:	85 c0                	test   %eax,%eax
+  1853e0:	0f 95 c0             	setne  %al
+  1853e3:	88 45 8f             	mov    %al,-0x71(%rbp)
+  1853e6:	48 8d 45 b0          	lea    -0x50(%rbp),%rax
+  1853ea:	48 89 c7             	mov    %rax,%rdi
+  1853ed:	e8 3e 9c ff ff       	call   17f030 <std::__shared_ptr_access<airsim_ros::GetPoseUE_Result, (__gnu_cxx::_Lock_policy)2, false, false>::operator->() const@plt>
+  1853f2:	8b 00                	mov    (%rax),%eax
+  1853f4:	66 0f 6e c0          	movd   %eax,%xmm0
+  1853f8:	e8 73 1a ff ff       	call   176e70 <std::abs(float)@plt>
+  1853fd:	f3 0f 5a c8          	cvtss2sd %xmm0,%xmm1
+  185401:	f2 0f 10 05 a7 f6 08 	movsd  0x8f6a7(%rip),%xmm0        # 214ab0 <airsim_ros::commands_impl::(anonymous namespace)::DT+0x85f0>
+  185408:	00 
+  185409:	66 0f 2f c1          	comisd %xmm1,%xmm0
+  18540d:	0f 97 c0             	seta   %al
+  185410:	0f b6 55 8f          	movzbl -0x71(%rbp),%edx
+  185414:	0f b6 c0             	movzbl %al,%eax
+  185417:	21 d0                	and    %edx,%eax
+  185419:	85 c0                	test   %eax,%eax
+  18541b:	0f 95 c0             	setne  %al
+  18541e:	88 45 8f             	mov    %al,-0x71(%rbp)
+  185421:	48 8d 45 b0          	lea    -0x50(%rbp),%rax
+  185425:	48 89 c7             	mov    %rax,%rdi
+  185428:	e8 03 9c ff ff       	call   17f030 <std::__shared_ptr_access<airsim_ros::GetPoseUE_Result, (__gnu_cxx::_Lock_policy)2, false, false>::operator->() const@plt>
+  18542d:	8b 40 04             	mov    0x4(%rax),%eax
+  185430:	66 0f 6e c0          	movd   %eax,%xmm0
+  185434:	e8 37 1a ff ff       	call   176e70 <std::abs(float)@plt>
+  185439:	f3 0f 5a c8          	cvtss2sd %xmm0,%xmm1
+  18543d:	f2 0f 10 05 6b f6 08 	movsd  0x8f66b(%rip),%xmm0        # 214ab0 <airsim_ros::commands_impl::(anonymous namespace)::DT+0x85f0>
+  185444:	00 
+  185445:	66 0f 2f c1          	comisd %xmm1,%xmm0
+  185449:	0f 97 c0             	seta   %al
+  18544c:	0f b6 55 8f          	movzbl -0x71(%rbp),%edx
+  185450:	0f b6 c0             	movzbl %al,%eax
+  185453:	21 d0                	and    %edx,%eax
+  185455:	85 c0                	test   %eax,%eax
+  185457:	0f 95 c0             	setne  %al
+  18545a:	88 45 8f             	mov    %al,-0x71(%rbp)
+  18545d:	48 8d 45 b0          	lea    -0x50(%rbp),%rax
+  185461:	48 89 c7             	mov    %rax,%rdi
+  185464:	e8 c7 9b ff ff       	call   17f030 <std::__shared_ptr_access<airsim_ros::GetPoseUE_Result, (__gnu_cxx::_Lock_policy)2, false, false>::operator->() const@plt>
+  185469:	8b 40 08             	mov    0x8(%rax),%eax
+  18546c:	66 0f 6e c0          	movd   %eax,%xmm0
+  185470:	e8 fb 19 ff ff       	call   176e70 <std::abs(float)@plt>
+  185475:	f3 0f 5a c8          	cvtss2sd %xmm0,%xmm1
+  185479:	f2 0f 10 05 2f f6 08 	movsd  0x8f62f(%rip),%xmm0        # 214ab0 <airsim_ros::commands_impl::(anonymous namespace)::DT+0x85f0>
+  185480:	00 
+  185481:	66 0f 2f c1          	comisd %xmm1,%xmm0
+  185485:	0f 97 c0             	seta   %al
+  185488:	0f b6 55 8f          	movzbl -0x71(%rbp),%edx
+  18548c:	0f b6 c0             	movzbl %al,%eax
+  18548f:	21 d0                	and    %edx,%eax
+  185491:	85 c0                	test   %eax,%eax
+  185493:	0f 95 c0             	setne  %al
+  185496:	88 45 8f             	mov    %al,-0x71(%rbp)
+  185499:	48 8d 45 b0          	lea    -0x50(%rbp),%rax
+  18549d:	48 89 c7             	mov    %rax,%rdi
+  1854a0:	e8 8b 9b ff ff       	call   17f030 <std::__shared_ptr_access<airsim_ros::GetPoseUE_Result, (__gnu_cxx::_Lock_policy)2, false, false>::operator->() const@plt>
+  1854a5:	8b 40 0c             	mov    0xc(%rax),%eax
+  1854a8:	66 0f 6e c0          	movd   %eax,%xmm0
+  1854ac:	e8 bf 19 ff ff       	call   176e70 <std::abs(float)@plt>
+  1854b1:	f3 0f 10 0d ff f5 08 	movss  0x8f5ff(%rip),%xmm1        # 214ab8 <airsim_ros::commands_impl::(anonymous namespace)::DT+0x85f8>
+  1854b8:	00 
+  1854b9:	f3 0f 5c c1          	subss  %xmm1,%xmm0
+  1854bd:	f3 0f 5a c8          	cvtss2sd %xmm0,%xmm1
+  1854c1:	f2 0f 10 05 e7 f5 08 	movsd  0x8f5e7(%rip),%xmm0        # 214ab0 <airsim_ros::commands_impl::(anonymous namespace)::DT+0x85f0>
+  1854c8:	00 
+  1854c9:	66 0f 2f c1          	comisd %xmm1,%xmm0
+  1854cd:	0f 97 c0             	seta   %al
+  1854d0:	0f b6 55 8f          	movzbl -0x71(%rbp),%edx
+  1854d4:	0f b6 c0             	movzbl %al,%eax
+  1854d7:	21 d0                	and    %edx,%eax
+  1854d9:	85 c0                	test   %eax,%eax
+  1854db:	0f 95 c0             	setne  %al
+  1854de:	88 45 8f             	mov    %al,-0x71(%rbp)
+  1854e1:	0f b6 55 8f          	movzbl -0x71(%rbp),%edx
+  1854e5:	48 8b 85 70 ff ff ff 	mov    -0x90(%rbp),%rax
+  1854ec:	88 10                	mov    %dl,(%rax)
+  1854ee:	bb 01 00 00 00       	mov    $0x1,%ebx
+  1854f3:	48 8d 45 b0          	lea    -0x50(%rbp),%rax
+  1854f7:	48 89 c7             	mov    %rax,%rdi
+  1854fa:	e8 41 cc ff ff       	call   182140 <std::shared_ptr<airsim_ros::GetPoseUE_Result>::~shared_ptr()@plt>
+  1854ff:	48 8d 45 a0          	lea    -0x60(%rbp),%rax
+  185503:	48 89 c7             	mov    %rax,%rdi
+  185506:	e8 05 a4 ff ff       	call   17f910 <std::shared_ptr<airsim_ros::Command>::~shared_ptr()@plt>
+  18550b:	48 8d 45 90          	lea    -0x70(%rbp),%rax
+  18550f:	48 89 c7             	mov    %rax,%rdi
+  185512:	e8 f9 a3 ff ff       	call   17f910 <std::shared_ptr<airsim_ros::Command>::~shared_ptr()@plt>
+  185517:	89 d8                	mov    %ebx,%eax
+  185519:	48 8b 4d e8          	mov    -0x18(%rbp),%rcx
+  18551d:	64                   	fs
+  18551e:	48                   	rex.W
+  18551f:	33                   	.byte 0x33
+  185520:	0c 25                	or     $0x25,%al
+  185522:	28 00                	sub    %al,(%rax)
+	...

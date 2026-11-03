@@ -1,0 +1,107 @@
+53146-  18521f:	48 8d 45 b0          	lea    -0x50(%rbp),%rax
+53147-  185223:	48 89 c7             	mov    %rax,%rdi
+53148-  185226:	e8 05 4c ff ff       	call   179e30 <std::allocator<char>::~allocator()@plt>
+53149-  18522b:	48 8b 05 2e 5b 0e 00 	mov    0xe5b2e(%rip),%rax        # 26ad60 <airsim_ros::node_instance>
+53150:  185232:	0f b6 80 54 29 00 00 	movzbl 0x2954(%rax),%eax
+53151-  185239:	83 f0 01             	xor    $0x1,%eax
+53152-  18523c:	84 c0                	test   %al,%al
+53153-  18523e:	74 14                	je     185254 <airsim_ros::commands_impl::RESET_Callback(airsim_ros::ResetRequest_<std::allocator<void> >&, airsim_ros::ResetResponse_<std::allocator<void> >&)+0xa4>
+53154-  185240:	48 8b 85 70 ff ff ff 	mov    -0x90(%rbp),%rax
+--
+57676-  189ac3:	48 8d 45 c0          	lea    -0x40(%rbp),%rax
+57677-  189ac7:	48 89 c7             	mov    %rax,%rdi
+57678-  189aca:	e8 11 42 fe ff       	call   16dce0 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::~basic_string()@plt>
+57679-  189acf:	48 8b 85 78 ff ff ff 	mov    -0x88(%rbp),%rax
+57680:  189ad6:	0f b6 80 54 29 00 00 	movzbl 0x2954(%rax),%eax
+57681-  189add:	84 c0                	test   %al,%al
+57682-  189adf:	75 16                	jne    189af7 <airsim_ros::BindPublishers_Game2023_1(airsim_ros::AirSimROSNode*)+0x372>
+57683-  189ae1:	48 8b 85 78 ff ff ff 	mov    -0x88(%rbp),%rax
+57684-  189ae8:	0f b6 80 55 29 00 00 	movzbl 0x2955(%rax),%eax
+--
+58594-  18a954:	48 8d 45 c0          	lea    -0x40(%rbp),%rax
+58595-  18a958:	48 89 c7             	mov    %rax,%rdi
+58596-  18a95b:	e8 80 33 fe ff       	call   16dce0 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::~basic_string()@plt>
+58597-  18a960:	48 8b 85 78 ff ff ff 	mov    -0x88(%rbp),%rax
+58598:  18a967:	0f b6 80 54 29 00 00 	movzbl 0x2954(%rax),%eax
+58599-  18a96e:	84 c0                	test   %al,%al
+58600-  18a970:	75 16                	jne    18a988 <airsim_ros::BindPublishers_Game2024_1(airsim_ros::AirSimROSNode*)+0x504>
+58601-  18a972:	48 8b 85 78 ff ff ff 	mov    -0x88(%rbp),%rax
+58602-  18a979:	0f b6 80 55 29 00 00 	movzbl 0x2955(%rax),%eax
+--
+60842-  18d05a:	00 00 
+60843-  18d05c:	48 89 45 e8          	mov    %rax,-0x18(%rbp)
+60844-  18d060:	31 c0                	xor    %eax,%eax
+60845-  18d062:	48 8b 05 f7 dc 0d 00 	mov    0xddcf7(%rip),%rax        # 26ad60 <airsim_ros::node_instance>
+60846:  18d069:	0f b6 80 54 29 00 00 	movzbl 0x2954(%rax),%eax
+60847-  18d070:	83 f0 01             	xor    $0x1,%eax
+60848-  18d073:	84 c0                	test   %al,%al
+60849-  18d075:	74 19                	je     18d090 <airsim_ros::PublishTreePoses(ros::TimerEvent const&)+0x56>
+60850-  18d077:	48 8b 05 e2 dc 0d 00 	mov    0xddce2(%rip),%rax        # 26ad60 <airsim_ros::node_instance>
+--
+62165-  18e664:	48 8d 45 c0          	lea    -0x40(%rbp),%rax
+62166-  18e668:	48 89 c7             	mov    %rax,%rdi
+62167-  18e66b:	e8 70 f6 fd ff       	call   16dce0 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::~basic_string()@plt>
+62168-  18e670:	48 8b 85 78 ff ff ff 	mov    -0x88(%rbp),%rax
+62169:  18e677:	0f b6 80 54 29 00 00 	movzbl 0x2954(%rax),%eax
+62170-  18e67e:	84 c0                	test   %al,%al
+62171-  18e680:	74 12                	je     18e694 <airsim_ros::BindServices(airsim_ros::AirSimROSNode*)+0x510>
+62172-  18e682:	48 8b 85 78 ff ff ff 	mov    -0x88(%rbp),%rax
+62173-  18e689:	0f b6 80 55 29 00 00 	movzbl 0x2955(%rax),%eax
+62174-  18e690:	84 c0                	test   %al,%al
+62175-  18e692:	75 19                	jne    18e6ad <airsim_ros::BindServices(airsim_ros::AirSimROSNode*)+0x529>
+62176-  18e694:	48 8b 85 78 ff ff ff 	mov    -0x88(%rbp),%rax
+62177:  18e69b:	0f b6 80 54 29 00 00 	movzbl 0x2954(%rax),%eax
+62178-  18e6a2:	83 f0 01             	xor    $0x1,%eax
+62179-  18e6a5:	84 c0                	test   %al,%al
+62180-  18e6a7:	0f 84 19 03 00 00    	je     18e9c6 <airsim_ros::BindServices(airsim_ros::AirSimROSNode*)+0x842>
+62181-  18e6ad:	48 8b 85 78 ff ff ff 	mov    -0x88(%rbp),%rax
+--
+64409-  190cd0:	48 8b 05 89 a0 0d 00 	mov    0xda089(%rip),%rax        # 26ad60 <airsim_ros::node_instance>
+64410-  190cd7:	48 89 98 48 29 00 00 	mov    %rbx,0x2948(%rax)
+64411-  190cde:	48 8b 05 7b a0 0d 00 	mov    0xda07b(%rip),%rax        # 26ad60 <airsim_ros::node_instance>
+64412-  190ce5:	0f b6 55 88          	movzbl -0x78(%rbp),%edx
+64413:  190ce9:	88 90 54 29 00 00    	mov    %dl,0x2954(%rax)
+64414-  190cef:	48 8b 05 6a a0 0d 00 	mov    0xda06a(%rip),%rax        # 26ad60 <airsim_ros::node_instance>
+64415-  190cf6:	0f b6 95 74 ff ff ff 	movzbl -0x8c(%rbp),%edx
+64416-  190cfd:	88 90 55 29 00 00    	mov    %dl,0x2955(%rax)
+64417-  190d03:	48 8b 05 56 a0 0d 00 	mov    0xda056(%rip),%rax        # 26ad60 <airsim_ros::node_instance>
+--
+65987-  1929f8:	0f 85 21 01 00 00    	jne    192b1f <airsim_ros::AirSimROSNotifyGameStatus(airsim_ros::AirSimROSGameStatusNotify)+0x174>
+65988-  1929fe:	48 8b 05 5b 83 0d 00 	mov    0xd835b(%rip),%rax        # 26ad60 <airsim_ros::node_instance>
+65989-  192a05:	c6 80 38 29 00 00 01 	movb   $0x1,0x2938(%rax)
+65990-  192a0c:	48 8b 05 4d 83 0d 00 	mov    0xd834d(%rip),%rax        # 26ad60 <airsim_ros::node_instance>
+65991:  192a13:	0f b6 80 54 29 00 00 	movzbl 0x2954(%rax),%eax
+65992-  192a1a:	83 f0 01             	xor    $0x1,%eax
+65993-  192a1d:	84 c0                	test   %al,%al
+65994-  192a1f:	0f 84 f0 00 00 00    	je     192b15 <airsim_ros::AirSimROSNotifyGameStatus(airsim_ros::AirSimROSGameStatusNotify)+0x16a>
+65995-  192a25:	48 8b 05 34 83 0d 00 	mov    0xd8334(%rip),%rax        # 26ad60 <airsim_ros::node_instance>
+--
+66007-  192a66:	e8 65 09 fe ff       	call   1733d0 <AirSimROSData::Reset()@plt>
+66008-  192a6b:	48 8b 05 ee 82 0d 00 	mov    0xd82ee(%rip),%rax        # 26ad60 <airsim_ros::node_instance>
+66009-  192a72:	c6 80 38 29 00 00 00 	movb   $0x0,0x2938(%rax)
+66010-  192a79:	48 8b 05 e0 82 0d 00 	mov    0xd82e0(%rip),%rax        # 26ad60 <airsim_ros::node_instance>
+66011:  192a80:	0f b6 80 54 29 00 00 	movzbl 0x2954(%rax),%eax
+66012-  192a87:	83 f0 01             	xor    $0x1,%eax
+66013-  192a8a:	84 c0                	test   %al,%al
+66014-  192a8c:	0f 84 86 00 00 00    	je     192b18 <airsim_ros::AirSimROSNotifyGameStatus(airsim_ros::AirSimROSGameStatusNotify)+0x16d>
+66015-  192a92:	48 8b 05 c7 82 0d 00 	mov    0xd82c7(%rip),%rax        # 26ad60 <airsim_ros::node_instance>
+--
+66019-  192aa8:	eb 6e                	jmp    192b18 <airsim_ros::AirSimROSNotifyGameStatus(airsim_ros::AirSimROSGameStatusNotify)+0x16d>
+66020-  192aaa:	48 8b 05 af 82 0d 00 	mov    0xd82af(%rip),%rax        # 26ad60 <airsim_ros::node_instance>
+66021-  192ab1:	c6 80 38 29 00 00 00 	movb   $0x0,0x2938(%rax)
+66022-  192ab8:	48 8b 05 a1 82 0d 00 	mov    0xd82a1(%rip),%rax        # 26ad60 <airsim_ros::node_instance>
+66023:  192abf:	0f b6 80 54 29 00 00 	movzbl 0x2954(%rax),%eax
+66024-  192ac6:	83 f0 01             	xor    $0x1,%eax
+66025-  192ac9:	84 c0                	test   %al,%al
+66026-  192acb:	74 4e                	je     192b1b <airsim_ros::AirSimROSNotifyGameStatus(airsim_ros::AirSimROSGameStatusNotify)+0x170>
+66027-  192acd:	48 8b 05 8c 82 0d 00 	mov    0xd828c(%rip),%rax        # 26ad60 <airsim_ros::node_instance>
+--
+66029-  192adb:	48 89 c7             	mov    %rax,%rdi
+66030-  192ade:	e8 5d 39 fe ff       	call   176440 <airsim_ros::ROSBagRecorder::Stop()@plt>
+66031-  192ae3:	eb 36                	jmp    192b1b <airsim_ros::AirSimROSNotifyGameStatus(airsim_ros::AirSimROSGameStatusNotify)+0x170>
+66032-  192ae5:	48 8b 05 74 82 0d 00 	mov    0xd8274(%rip),%rax        # 26ad60 <airsim_ros::node_instance>
+66033:  192aec:	0f b6 80 54 29 00 00 	movzbl 0x2954(%rax),%eax
+66034-  192af3:	83 f0 01             	xor    $0x1,%eax
+66035-  192af6:	84 c0                	test   %al,%al
+66036-  192af8:	74 24                	je     192b1e <airsim_ros::AirSimROSNotifyGameStatus(airsim_ros::AirSimROSGameStatusNotify)+0x173>
+66037-  192afa:	48 8b 05 5f 82 0d 00 	mov    0xd825f(%rip),%rax        # 26ad60 <airsim_ros::node_instance>

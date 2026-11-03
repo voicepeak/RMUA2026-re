@@ -1,0 +1,64 @@
+
+/home/tianbot/RUMA-by-helinjun/main/simulator/simulator_12.0.0.5/Build/LinuxNoEditor/RMUA/Binaries/Linux/RMUA-Linux-Shipping：     文件格式 elf64-x86-64
+
+
+Disassembly of section .text:
+
+00000000026b61f0 <_start@@Base+0xd9870>:
+ 26b61f0:	41 57                	push   %r15
+ 26b61f2:	41 56                	push   %r14
+ 26b61f4:	41 55                	push   %r13
+ 26b61f6:	41 54                	push   %r12
+ 26b61f8:	53                   	push   %rbx
+ 26b61f9:	8b 47 08             	mov    0x8(%rdi),%eax
+ 26b61fc:	85 c0                	test   %eax,%eax
+ 26b61fe:	7e 45                	jle    26b6245 <_start@@Base+0xd98c5>
+ 26b6200:	49 89 f6             	mov    %rsi,%r14
+ 26b6203:	49 89 ff             	mov    %rdi,%r15
+ 26b6206:	45 31 ed             	xor    %r13d,%r13d
+ 26b6209:	31 db                	xor    %ebx,%ebx
+ 26b620b:	eb 13                	jmp    26b6220 <_start@@Base+0xd98a0>
+ 26b620d:	0f 1f 00             	nopl   (%rax)
+ 26b6210:	48 83 c3 01          	add    $0x1,%rbx
+ 26b6214:	48 63 c8             	movslq %eax,%rcx
+ 26b6217:	49 83 c5 10          	add    $0x10,%r13
+ 26b621b:	48 39 cb             	cmp    %rcx,%rbx
+ 26b621e:	7d 25                	jge    26b6245 <_start@@Base+0xd98c5>
+ 26b6220:	4d 8b 27             	mov    (%r15),%r12
+ 26b6223:	43 83 7c 2c 08 00    	cmpl   $0x0,0x8(%r12,%r13,1)
+ 26b6229:	74 e5                	je     26b6210 <_start@@Base+0xd9890>
+ 26b622b:	4b 8b 3c 2c          	mov    (%r12,%r13,1),%rdi
+ 26b622f:	48 85 ff             	test   %rdi,%rdi
+ 26b6232:	74 dc                	je     26b6210 <_start@@Base+0xd9890>
+ 26b6234:	48 8b 07             	mov    (%rdi),%rax
+ 26b6237:	ff 50 40             	call   *0x40(%rax)
+ 26b623a:	4c 39 f0             	cmp    %r14,%rax
+ 26b623d:	74 12                	je     26b6251 <_start@@Base+0xd98d1>
+ 26b623f:	41 8b 47 08          	mov    0x8(%r15),%eax
+ 26b6243:	eb cb                	jmp    26b6210 <_start@@Base+0xd9890>
+ 26b6245:	31 c0                	xor    %eax,%eax
+ 26b6247:	5b                   	pop    %rbx
+ 26b6248:	41 5c                	pop    %r12
+ 26b624a:	41 5d                	pop    %r13
+ 26b624c:	41 5e                	pop    %r14
+ 26b624e:	41 5f                	pop    %r15
+ 26b6250:	c3                   	ret    
+ 26b6251:	43 83 7c 2c 08 00    	cmpl   $0x0,0x8(%r12,%r13,1)
+ 26b6257:	74 2d                	je     26b6286 <_start@@Base+0xd9906>
+ 26b6259:	4b 8b 3c 2c          	mov    (%r12,%r13,1),%rdi
+ 26b625d:	48 85 ff             	test   %rdi,%rdi
+ 26b6260:	74 24                	je     26b6286 <_start@@Base+0xd9906>
+ 26b6262:	48 8b 07             	mov    (%rdi),%rax
+ 26b6265:	ff 10                	call   *(%rax)
+ 26b6267:	4b 8b 3c 2c          	mov    (%r12,%r13,1),%rdi
+ 26b626b:	48 85 ff             	test   %rdi,%rdi
+ 26b626e:	74 0d                	je     26b627d <_start@@Base+0xd98fd>
+ 26b6270:	31 f6                	xor    %esi,%esi
+ 26b6272:	31 d2                	xor    %edx,%edx
+ 26b6274:	e8 57 bc 9b 00       	call   3071ed0 <LZ4_saveDictHC@@Base+0x77940>
+ 26b6279:	4b 89 04 2c          	mov    %rax,(%r12,%r13,1)
+ 26b627d:	43 c7 44 2c 08 00 00 	movl   $0x0,0x8(%r12,%r13,1)
+ 26b6284:	00 00 
+ 26b6286:	4c 89 ff             	mov    %r15,%rdi
+ 26b6289:	31 f6                	xor    %esi,%esi
+ 26b628b:	e8 80 69 f3 ff       	call   25ecc10 <_start@@Base+0x10290>

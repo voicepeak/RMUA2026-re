@@ -1,0 +1,15 @@
+{
+  "manifest": "/home/tianbot/\u684c\u9762/RMUA2026-re/experiments/concurrency_followup_20261104/single_seed42/pool.json",
+  "instances": [
+    {
+      "seed": 42,
+      "port": 11720,
+      "container": "rmua-re-55c1ee9e1f71-0",
+      "id": "337ff153d45cc84f0eec10076316ccd1a699e981194dfed3b0528909e9019ecf",
+      "docker_start_wall": 1793730155.0235052,
+      "docker_created_wall": 1793730155.4780853,
+      "imu_ready_observed_wall": 1793730163.1804347,
+      "startup_observed_s": 8.15692949295044
+    }
+  ]
+}

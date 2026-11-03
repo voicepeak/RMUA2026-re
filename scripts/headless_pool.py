@@ -35,6 +35,12 @@ trap 'kill "$sim_pid" "$ros_pid" 2>/dev/null || true' EXIT TERM INT
 wait "$sim_pid"
 '''
 
+# The debugger is a parent of the unmodified executable. Its timing differs
+# from the normal pool and its process exit code is not the simulator's status.
+GDB_LAUNCH = LAUNCH.replace(
+    './RMUA/Binaries/Linux/RMUA-Linux-Shipping RMUA seed',
+    'gdb -nx -batch -x /analysis/scripts/crash_capture.gdb --args ./RMUA/Binaries/Linux/RMUA-Linux-Shipping RMUA seed')
+
 def call(args, **kwargs):
     return subprocess.run(args, text=True, check=True, **kwargs)
 
@@ -86,9 +92,12 @@ def start(args):
     image_id=call(['docker','image','inspect',args.image,'--format','{{.Id}}'],capture_output=True).stdout.strip()
     data={'schema':'rmua-headless-pool-v1','pool_id':pool_id,'simulator':str(sim),
           'binary_sha256':sha256(binary),'settings':str(settings),'settings_sha256':sha256(settings),
-          'image':args.image,'image_id':image_id,'mode':'nullrhi','instances':[],'ready':False,
+          'image':args.image,'image_id':image_id,'mode':'nullrhi+gdb' if args.gdb_crash else 'nullrhi','instances':[],'ready':False,
           'limitations':['No lockstep or reset guarantee','Camera images are empty in NullRHI',
                          'Diagnostics only; dynamic equivalence not established']}
+    if args.gdb_crash:
+        data['gdb_script_sha256']=sha256(Path(__file__).resolve().parent/'crash_capture.gdb')
+        data['limitations'].append('GDB changes timing; GDB exit status is not the inferior exit status')
     def save(): manifest.write_text(json.dumps(data,indent=2)+'\n')
     save()
     try:
@@ -102,7 +111,11 @@ def start(args):
                  '-e','ROS_MASTER_URI=http://127.0.0.1:'+str(port),
                  '-e','RMUA_PORT='+str(port),'-e','RMUA_SEED='+str(seed),
                  '-v',str(sim)+':/sim:ro','-v',str(settings)+':/configs/settings.json:ro',
-                 '-v','/tmp/.X11-unix:/tmp/.X11-unix', '--entrypoint','bash',args.image,'-c',LAUNCH]
+                 '-v','/tmp/.X11-unix:/tmp/.X11-unix']
+            if args.gdb_crash:
+                cmd.extend(['--cap-add','SYS_PTRACE','--security-opt','seccomp=unconfined',
+                            '-v',str(Path(__file__).resolve().parent.parent)+':/analysis:ro'])
+            cmd.extend(['--entrypoint','bash',args.image,'-c',GDB_LAUNCH if args.gdb_crash else LAUNCH])
             before=time.time()
             container_id=call(cmd,capture_output=True).stdout.strip()
             data['instances'].append({'seed':seed,'port':port,'container':name,'id':container_id,
@@ -146,6 +159,7 @@ def main():
     p.add_argument('--display',default=':1')
     p.add_argument('--image',default=IMAGE)
     p.add_argument('--timeout',type=float,default=75.)
+    p.add_argument('--gdb-crash',action='store_true',help='debug build image required; stop and log SIGSEGV with GDB')
     p=sub.add_parser('stop')
     p.add_argument('manifest',type=Path)
     args=parser.parse_args()

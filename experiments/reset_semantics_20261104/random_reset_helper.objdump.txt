@@ -1,0 +1,18 @@
+
+/home/tianbot/RUMA-by-helinjun/main/simulator/simulator_12.0.0.5/Build/LinuxNoEditor/RMUA/Binaries/Linux/RMUA-Linux-Shipping：     文件格式 elf64-x86-64
+
+
+Disassembly of section .text:
+
+0000000002fced20 <SampleVectorField@@Base+0x27e2b0>:
+ 2fced20:	83 fe ff             	cmp    $0xffffffff,%esi
+ 2fced23:	74 08                	je     2fced2d <SampleVectorField@@Base+0x27e2bd>
+ 2fced25:	89 b7 98 01 00 00    	mov    %esi,0x198(%rdi)
+ 2fced2b:	eb 06                	jmp    2fced33 <SampleVectorField@@Base+0x27e2c3>
+ 2fced2d:	8b b7 98 01 00 00    	mov    0x198(%rdi),%esi
+ 2fced33:	89 f0                	mov    %esi,%eax
+ 2fced35:	48 89 c1             	mov    %rax,%rcx
+ 2fced38:	48 c1 e1 20          	shl    $0x20,%rcx
+ 2fced3c:	48 09 c1             	or     %rax,%rcx
+ 2fced3f:	48 89 8f 9c 01 00 00 	mov    %rcx,0x19c(%rdi)
+ 2fced46:	c3                   	ret    

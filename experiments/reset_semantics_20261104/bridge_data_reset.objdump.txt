@@ -1,0 +1,36 @@
+
+/home/tianbot/RUMA-by-helinjun/main/simulator/simulator_12.0.0.5/Build/LinuxNoEditor/RMUA/Plugins/AirSimROS/Binaries/Linux/libairsimros.so：     文件格式 elf64-x86-64
+
+
+Disassembly of section .text:
+
+00000000001986a6 <AirSimROSData::Reset()>:
+  1986a6:	f3 0f 1e fa          	endbr64 
+  1986aa:	55                   	push   %rbp
+  1986ab:	48 89 e5             	mov    %rsp,%rbp
+  1986ae:	48 83 ec 10          	sub    $0x10,%rsp
+  1986b2:	48 89 7d f8          	mov    %rdi,-0x8(%rbp)
+  1986b6:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+  1986ba:	48 05 18 27 00 00    	add    $0x2718,%rax
+  1986c0:	48 89 c7             	mov    %rax,%rdi
+  1986c3:	e8 08 84 fe ff       	call   180ad0 <std::vector<airsim_ros::Circle_<std::allocator<void> >, std::allocator<airsim_ros::Circle_<std::allocator<void> > > >::clear()@plt>
+  1986c8:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+  1986cc:	48 05 30 27 00 00    	add    $0x2730,%rax
+  1986d2:	48 89 c7             	mov    %rax,%rdi
+  1986d5:	e8 f6 83 fe ff       	call   180ad0 <std::vector<airsim_ros::Circle_<std::allocator<void> >, std::allocator<airsim_ros::Circle_<std::allocator<void> > > >::clear()@plt>
+  1986da:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+  1986de:	48 05 58 27 00 00    	add    $0x2758,%rax
+  1986e4:	48 89 c7             	mov    %rax,%rdi
+  1986e7:	e8 94 a4 fd ff       	call   172b80 <std::vector<geometry_msgs::Vector3_<std::allocator<void> >, std::allocator<geometry_msgs::Vector3_<std::allocator<void> > > >::clear()@plt>
+  1986ec:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+  1986f0:	66 0f ef c0          	pxor   %xmm0,%xmm0
+  1986f4:	f3 0f 11 80 70 27 00 	movss  %xmm0,0x2770(%rax)
+  1986fb:	00 
+  1986fc:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+  198700:	c7 80 74 27 00 00 00 	movl   $0x0,0x2774(%rax)
+  198707:	00 00 00 
+  19870a:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+  19870e:	c6 80 78 27 00 00 00 	movb   $0x0,0x2778(%rax)
+  198715:	90                   	nop
+  198716:	c9                   	leave  
+  198717:	c3                   	ret    
