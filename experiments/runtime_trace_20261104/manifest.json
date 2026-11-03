@@ -1,0 +1,75 @@
+{
+  "binary_sha256": "5231addfa25ddaa9e4473ea9ac40c9c0bc685174e69cd14bb49159f443b97800",
+  "settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+  "image_id": "sha256:cd46a48cd28c2a9c6345f60227fd1bd50e78c67ef1e98dcddc0e65893771da57",
+  "gdb_script_sha256": "ed32f1cc5239f100a98bd2e547928a4ebcba532f6d4b8c35ebd8602fbadecb01",
+  "mode": "nullrhi",
+  "map": "default Lobby -> OL1",
+  "seeds": [
+    123,
+    456,
+    2026
+  ],
+  "repeats": 2,
+  "stage_coverage": "initial stationary only; no flight and no forced state changes",
+  "runs": [
+    {
+      "seed": 123,
+      "repeat": 1,
+      "container": "rmua-trace-0ad65b6d980b",
+      "start_wall": 1793727319.658113,
+      "status": "observed",
+      "id": "c5d45eba6cf795c808eec7c795a5fe05aa4fd15feb25b8eb8b1c1d29365fa801",
+      "ready_wall": 1793727330.0487006,
+      "before_reset_exit_code": 124,
+      "reset_exit_code": 2,
+      "after_reset_exit_code": 124,
+      "end_wall": 1793727342.9972022
+    },
+    {
+      "seed": 123,
+      "repeat": 2,
+      "container": "rmua-trace-e4a826741c91",
+      "start_wall": 1793727342.997511,
+      "status": "failed",
+      "error": "[Errno 98] Address already in use",
+      "end_wall": 1793727343.0176904
+    },
+    {
+      "seed": 456,
+      "repeat": 1,
+      "container": "rmua-trace-13f0e2b9947d",
+      "start_wall": 1793727343.0180275,
+      "status": "failed",
+      "error": "[Errno 98] Address already in use",
+      "end_wall": 1793727343.0380845
+    },
+    {
+      "seed": 456,
+      "repeat": 2,
+      "container": "rmua-trace-9522469acf8a",
+      "start_wall": 1793727343.0384374,
+      "status": "failed",
+      "error": "[Errno 98] Address already in use",
+      "end_wall": 1793727343.057752
+    },
+    {
+      "seed": 2026,
+      "repeat": 1,
+      "container": "rmua-trace-2934a42fe12b",
+      "start_wall": 1793727343.0581443,
+      "status": "failed",
+      "error": "[Errno 98] Address already in use",
+      "end_wall": 1793727343.077743
+    },
+    {
+      "seed": 2026,
+      "repeat": 2,
+      "container": "rmua-trace-31e9d9069ddc",
+      "start_wall": 1793727343.0780306,
+      "status": "failed",
+      "error": "[Errno 98] Address already in use",
+      "end_wall": 1793727343.0980804
+    }
+  ]
+}

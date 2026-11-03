@@ -1,0 +1,162 @@
+{
+  "rmua-re-a36cdb2d365d-0": {
+    "imu": {
+      "count": 1501,
+      "observed_hz": 100.00017673361383,
+      "sim_seconds_per_wall_second": 0.9976230450738757,
+      "arrival_interval_median_s": 0.010001335500419373,
+      "arrival_interval_p99_s": 0.010155115996894892,
+      "arrival_interval_max_s": 0.011185397997905966,
+      "stamp_regressions": 0,
+      "sequence_gap_sum": 0,
+      "sequence_regressions": 0,
+      "note": "seq gaps are observer-side missing sequence numbers, not localized packet loss"
+    },
+    "lidar": {
+      "count": 151,
+      "observed_hz": 10.05525145627023,
+      "sim_seconds_per_wall_second": 0.9977033471149614,
+      "arrival_interval_median_s": 0.09901958000045852,
+      "arrival_interval_p99_s": 0.10488480299682124,
+      "arrival_interval_max_s": 0.10841207200428471,
+      "stamp_regressions": 0,
+      "sequence_gap_sum": 0,
+      "sequence_regressions": 0,
+      "note": "seq gaps are observer-side missing sequence numbers, not localized packet loss"
+    },
+    "process_missing_samples": 0,
+    "cpu_percent_one_core": 110.4025934418564,
+    "rss_peak_mib": 762.99609375
+  },
+  "rmua-re-a36cdb2d365d-1": {
+    "imu": {
+      "count": 1501,
+      "observed_hz": 100.0000916667696,
+      "sim_seconds_per_wall_second": 0.9984222186517488,
+      "arrival_interval_median_s": 0.01000020600258722,
+      "arrival_interval_p99_s": 0.010138988000107929,
+      "arrival_interval_max_s": 0.010909393000474665,
+      "stamp_regressions": 1,
+      "sequence_gap_sum": 0,
+      "sequence_regressions": 0,
+      "note": "seq gaps are observer-side missing sequence numbers, not localized packet loss"
+    },
+    "lidar": {
+      "count": 151,
+      "observed_hz": 10.075932103417909,
+      "sim_seconds_per_wall_second": 0.9985461723888068,
+      "arrival_interval_median_s": 0.09901131950391573,
+      "arrival_interval_p99_s": 0.1054974900034722,
+      "arrival_interval_max_s": 0.10706490200391272,
+      "stamp_regressions": 0,
+      "sequence_gap_sum": 0,
+      "sequence_regressions": 0,
+      "note": "seq gaps are observer-side missing sequence numbers, not localized packet loss"
+    },
+    "process_missing_samples": 0,
+    "cpu_percent_one_core": 109.97467641301199,
+    "rss_peak_mib": 764.125
+  },
+  "rmua-re-a36cdb2d365d-2": {
+    "error": "observer exited 137",
+    "stderr": "",
+    "process_missing_samples": 14
+  },
+  "rmua-re-a36cdb2d365d-3": {
+    "imu": {
+      "count": 1501,
+      "observed_hz": 100.0001692069492,
+      "sim_seconds_per_wall_second": 0.9982229910922821,
+      "arrival_interval_median_s": 0.01000007949915016,
+      "arrival_interval_p99_s": 0.010152609000215307,
+      "arrival_interval_max_s": 0.010865162999834865,
+      "stamp_regressions": 2,
+      "sequence_gap_sum": 0,
+      "sequence_regressions": 0,
+      "note": "seq gaps are observer-side missing sequence numbers, not localized packet loss"
+    },
+    "lidar": {
+      "count": 151,
+      "observed_hz": 10.079682536707573,
+      "sim_seconds_per_wall_second": 0.9983130470533552,
+      "arrival_interval_median_s": 0.0990096884961531,
+      "arrival_interval_p99_s": 0.10466649499721825,
+      "arrival_interval_max_s": 0.11084058399865171,
+      "stamp_regressions": 0,
+      "sequence_gap_sum": 0,
+      "sequence_regressions": 0,
+      "note": "seq gaps are observer-side missing sequence numbers, not localized packet loss"
+    },
+    "process_missing_samples": 0,
+    "cpu_percent_one_core": 110.1886349274342,
+    "rss_peak_mib": 763.328125
+  },
+  "rmua-re-a36cdb2d365d-4": {
+    "error": "observer exited 137",
+    "stderr": "",
+    "process_missing_samples": 14
+  },
+  "rmua-re-a36cdb2d365d-5": {
+    "error": "observer exited 137",
+    "stderr": "",
+    "process_missing_samples": 14
+  },
+  "rmua-re-a36cdb2d365d-6": {
+    "imu": {
+      "count": 1501,
+      "observed_hz": 99.99938639708469,
+      "sim_seconds_per_wall_second": 0.998815177431984,
+      "arrival_interval_median_s": 0.010000139998737723,
+      "arrival_interval_p99_s": 0.010157658995012753,
+      "arrival_interval_max_s": 0.0110881810032879,
+      "stamp_regressions": 1,
+      "sequence_gap_sum": 0,
+      "sequence_regressions": 0,
+      "note": "seq gaps are observer-side missing sequence numbers, not localized packet loss"
+    },
+    "lidar": {
+      "count": 151,
+      "observed_hz": 10.080434418564748,
+      "sim_seconds_per_wall_second": 0.9987907512395963,
+      "arrival_interval_median_s": 0.09900976350036217,
+      "arrival_interval_p99_s": 0.10439582400431391,
+      "arrival_interval_max_s": 0.1074865220070933,
+      "stamp_regressions": 0,
+      "sequence_gap_sum": 0,
+      "sequence_regressions": 0,
+      "note": "seq gaps are observer-side missing sequence numbers, not localized packet loss"
+    },
+    "process_missing_samples": 0,
+    "cpu_percent_one_core": 109.54675938416759,
+    "rss_peak_mib": 763.79296875
+  },
+  "rmua-re-a36cdb2d365d-7": {
+    "imu": {
+      "count": 1502,
+      "observed_hz": 99.99996851434408,
+      "sim_seconds_per_wall_second": 0.9965565940998931,
+      "arrival_interval_median_s": 0.009999690999393351,
+      "arrival_interval_p99_s": 0.010204281999904197,
+      "arrival_interval_max_s": 0.011009838999598287,
+      "stamp_regressions": 1,
+      "sequence_gap_sum": 0,
+      "sequence_regressions": 0,
+      "note": "seq gaps are observer-side missing sequence numbers, not localized packet loss"
+    },
+    "lidar": {
+      "count": 150,
+      "observed_hz": 10.053352832433202,
+      "sim_seconds_per_wall_second": 0.9967201013523005,
+      "arrival_interval_median_s": 0.09901093100052094,
+      "arrival_interval_p99_s": 0.10817292000137968,
+      "arrival_interval_max_s": 0.11534574400138808,
+      "stamp_regressions": 0,
+      "sequence_gap_sum": 0,
+      "sequence_regressions": 0,
+      "note": "seq gaps are observer-side missing sequence numbers, not localized packet loss"
+    },
+    "process_missing_samples": 0,
+    "cpu_percent_one_core": 110.4739129466638,
+    "rss_peak_mib": 763.1953125
+  }
+}

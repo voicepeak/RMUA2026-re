@@ -1,0 +1,230 @@
+{
+  "commands": 141,
+  "fault": "POSITION_LIMIT",
+  "startup_diagnostics": {
+    "first_imu_callback_wall_monotonic": 63812.59152679,
+    "initial_pose_callback_wall_monotonic": 63812.611646583,
+    "initial_pose_accepted_wall_monotonic": 63812.612029076,
+    "invalid_initial_pose_count": 0,
+    "initial_pose_stamp": 0.0,
+    "initial_pose_frame_id": "",
+    "initial_position": [
+      -7.797241474690959e-05,
+      -1.0070796533909049e-05,
+      0.0
+    ],
+    "initial_orientation_wxyz": [
+      0.9999999999999996,
+      0.0,
+      0.0,
+      -2.98023259404094e-08
+    ],
+    "imu_skipped_before_initial": 2,
+    "first_initialized_imu_stamp": 1793727666.7404974,
+    "first_initialized_imu_callback_wall_monotonic": 63812.611945857
+  },
+  "startup_velocity": {
+    "imu_delta": [
+      -0.013415509036102051,
+      0.04378608033916385,
+      0.0021265074806411824
+    ],
+    "gps_delta": [
+      -0.01953528212858987,
+      0.005103561492855235,
+      0.14495223645113076
+    ],
+    "bootstrap_delta": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "gps_updates": 4,
+    "imu_updates": 36,
+    "sealed": true,
+    "velocity_at_seal": [
+      -0.03295079116469192,
+      0.048889641832019076,
+      0.14707874393177195
+    ],
+    "stamp_at_seal": 1793727667.0855048,
+    "gps_events": [
+      {
+        "gps_stamp": 1793727666.7914984,
+        "state_stamp": 1793727666.7914984,
+        "gps_position": [
+          -0.0030613607451105817,
+          -0.0050376484164083085,
+          0.30593842933286736
+        ],
+        "predicted_position": [
+          -4.435219415298938e-05,
+          9.680771903759592e-06,
+          1.4577834812129783e-05
+        ],
+        "position_innovation": [
+          -0.0030170085509575923,
+          -0.005047329188312068,
+          0.30592385149805523
+        ],
+        "position_velocity_variance_before": [
+          0.10260285461372409,
+          0.10260285462027949,
+          0.10260182471251143,
+          1.0036599351342512,
+          1.0036599337731824,
+          1.0011735366154226
+        ],
+        "velocity_delta": [
+          0.006524577699609208,
+          -0.0012519286107838309,
+          0.13862684677707923
+        ]
+      },
+      {
+        "gps_stamp": 1793727666.8875005,
+        "state_stamp": 1793727666.8875005,
+        "gps_position": [
+          -0.004712932783036101,
+          0.011510138516849766,
+          0.30282048857493366
+        ],
+        "predicted_position": [
+          -0.001328943389153239,
+          -0.004737754330327759,
+          0.29217807457697764
+        ],
+        "position_innovation": [
+          -0.0033839893938828617,
+          0.016247892847177526,
+          0.010642413997956013
+        ],
+        "position_velocity_variance_before": [
+          0.019065632819465248,
+          0.019065642591232872,
+          0.019002366207223037,
+          0.9969152628426878,
+          0.9969191521761109,
+          0.9804034803343831
+        ],
+        "velocity_delta": [
+          -0.051844674476391864,
+          0.06937114630179797,
+          0.03564120938461687
+        ]
+      },
+      {
+        "gps_stamp": 1793727666.9865026,
+        "state_stamp": 1793727666.9865026,
+        "gps_position": [
+          -0.009091924093288161,
+          -0.06699296745450029,
+          0.3298435499997613
+        ],
+        "predicted_position": [
+          -0.008469084557672967,
+          0.01379908058611614,
+          0.3165931585819934
+        ],
+        "position_innovation": [
+          -0.0006228395356151946,
+          -0.08079204804061643,
+          0.013250391417767904
+        ],
+        "position_velocity_variance_before": [
+          0.01984550349876047,
+          0.019845563257071524,
+          0.019614947832685616,
+          0.6777476708483731,
+          0.6777567075350943,
+          0.6482187787749434
+        ],
+        "velocity_delta": [
+          0.008053700593060688,
+          -0.248138985311961,
+          0.043971510721499824
+        ]
+      },
+      {
+        "gps_stamp": 1793727667.0855048,
+        "state_stamp": 1793727667.0855048,
+        "gps_position": [
+          -0.00811947023262994,
+          0.013279257537694256,
+          0.3175040945771822
+        ],
+        "predicted_position": [
+          -0.012900989603881788,
+          -0.053780791768237475,
+          0.34721818237289714
+        ],
+        "position_innovation": [
+          0.004781519371251848,
+          0.06706004930593173,
+          -0.02971408779571494
+        ],
+        "position_velocity_variance_before": [
+          0.016723370388715575,
+          0.016723421787281346,
+          0.016358814501010652,
+          0.36089027266712165,
+          0.3608902495335051,
+          0.32643989466652423
+        ],
+        "velocity_delta": [
+          0.0177311140551321,
+          0.18512332911380208,
+          -0.07328733043206517
+        ]
+      }
+    ],
+    "gps_events_dropped": 0
+  },
+  "pending_gps_diagnostics": {
+    "future_seen": 18,
+    "queued": 18,
+    "superseded": 0,
+    "invalid": 0,
+    "reordered": 0,
+    "applied": 18,
+    "rejected": 0,
+    "pending_at_snapshot": false
+  },
+  "levels": [
+    0.1,
+    0.2,
+    0.3
+  ],
+  "control_end_wall_monotonic": 63814.804153454,
+  "motor_pulses": true,
+  "hover_seconds": 0.0,
+  "control_hz": 80,
+  "control_stall": null,
+  "step": false,
+  "reference_clock": "IMU",
+  "gps_rejections": {},
+  "injection": null,
+  "graph_monitor": {
+    "successful_checks": 18,
+    "fault": null,
+    "max_rpc_wall_s": 0.002850020995538216,
+    "stale_after_wall_s": 0.3
+  },
+  "gps_bridge_enabled": false,
+  "recovery_transitions": [],
+  "yaw_motion": false,
+  "braking": false,
+  "angular_recovery_enabled": false,
+  "angular_recovery_phase": "NORMAL",
+  "angular_recovery_profile": "standard",
+  "angular_recovery_transitions": [],
+  "angular_pulse_sent": false,
+  "angular_pulse_moment_Nm": null,
+  "reference_worker": null,
+  "reference_hold_transitions": [],
+  "collective_excitation": null,
+  "pulse_seconds": 0.3,
+  "stage": "LOCAL_OPEN_LOOP_IDENTIFICATION",
+  "official_result": "UNKNOWN",
+  "host_scene_stop_required": true
+}

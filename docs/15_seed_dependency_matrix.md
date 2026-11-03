@@ -48,3 +48,7 @@
 - `artifacts/rea/hover_route.c`、`hover_callers.c`：车辆 seed 分支和路线推进。
 - `artifacts/rea/line_callers.c`、`line_native.c`：线障生成/碰撞相关入口。
 - `artifacts/maps/obstacle_collision_meshes.json`：粗线/细线/车辆凸碰撞网格。
+
+## 2026-11-04 运行时补充
+
+OL1 对 seed 123/456/2026 各重复两次，12 门 BeginPlay 的位置、四元数姿态、组件缩放逐门一致；只覆盖该图和三个 seed，缩放不等于门洞真实尺寸。六次都观测到 `0x2fb2040` 的 seed 参数与输入一致。所有运行停留起点，风话题为零，尚未命中 `0x2fb23b0` / `0x2fc77b0` / `0x2fc8900`，因此风、车辆和线障仍需要实际 stage 4/5/6 核验。服务 reset 返回 `success: False`，不能推断随机数重放。逐门数据、方法和限制见 `docs/17_runtime_validation_20261104.md` 及 `experiments/runtime_trace_20261104_v2/`。

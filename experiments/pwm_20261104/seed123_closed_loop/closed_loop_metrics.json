@@ -1,0 +1,35 @@
+{
+  "matched_commands": 969,
+  "commands": 969,
+  "match_fraction": 1.0,
+  "settled_after_wall_s": 4.0,
+  "settled_samples": 693,
+  "command_timing_measurement": "after_publish",
+  "official_result": "UNKNOWN",
+  "truth_use": "offline_evaluation_only",
+  "command_wall_interval_p50_p95_p99_s": [
+    0.012621849000424845,
+    0.021161253299578672,
+    0.023654364878239
+  ],
+  "minimum_command_wall_interval_s": 0.01055790299869841,
+  "state_position_rmse_m": [
+    0.021445736829605662,
+    0.021016587931421436,
+    0.013675881292744328
+  ],
+  "state_attitude_rmse_rad": 0.011508045807554936,
+  "truth_tracking_rmse_m": [
+    0.3217143829949993,
+    0.04972324159937681,
+    0.028444258941331273
+  ],
+  "truth_tracking_max_norm_m": 0.7739297205947296,
+  "truth_yaw_tracking_rmse_rad": 0.008794457330386722,
+  "truth_yaw_tracking_max_abs_rad": 0.023407674651282573,
+  "imu_orientation_unit_valid_fraction": 1.0,
+  "imu_orientation_truth_rmse_rad": 6.262599146042628e-06,
+  "imu_orientation_fused_in_estimator": false,
+  "evaluation_valid": true,
+  "control_mode": "PWM"
+}

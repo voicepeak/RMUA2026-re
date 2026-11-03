@@ -1,0 +1,18 @@
+{
+  "matched_commands": 141,
+  "commands": 141,
+  "match_fraction": 1.0,
+  "settled_after_wall_s": 4.0,
+  "settled_samples": 0,
+  "command_timing_measurement": "after_publish",
+  "official_result": "UNKNOWN",
+  "truth_use": "offline_evaluation_only",
+  "command_wall_interval_p50_p95_p99_s": [
+    0.01251415799924871,
+    0.016374471649760372,
+    0.022810679818285273
+  ],
+  "minimum_command_wall_interval_s": 0.010709862996009178,
+  "evaluation_valid": false,
+  "control_mode": "PWM"
+}

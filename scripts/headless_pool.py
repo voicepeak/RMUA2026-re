@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Launch isolated official NullRHI scenes for diagnostics, not a lockstep RL API."""
 import argparse
+from concurrent.futures import ThreadPoolExecutor, as_completed
 import hashlib
 import json
 import os
@@ -102,21 +103,30 @@ def start(args):
                  '-e','RMUA_PORT='+str(port),'-e','RMUA_SEED='+str(seed),
                  '-v',str(sim)+':/sim:ro','-v',str(settings)+':/configs/settings.json:ro',
                  '-v','/tmp/.X11-unix:/tmp/.X11-unix', '--entrypoint','bash',args.image,'-c',LAUNCH]
+            before=time.time()
             container_id=call(cmd,capture_output=True).stdout.strip()
-            data['instances'].append({'seed':seed,'port':port,'container':name,'id':container_id})
+            data['instances'].append({'seed':seed,'port':port,'container':name,'id':container_id,
+                                      'docker_start_wall':before,'docker_created_wall':time.time()})
             save()
         deadline=time.monotonic()+args.timeout
-        pending=set(x['container'] for x in data['instances'])
-        while pending and time.monotonic()<deadline:
-            for name in list(pending):
+        def wait_ready(item):
+            name=item['container']
+            while time.monotonic()<deadline:
                 info=inspect(name)
                 if not info or not info['State']['Running']: raise RuntimeError(name+' exited before readiness')
                 cmd=['docker','exec','-e','ROS_HOME=/tmp/ros-health',name,'bash','-c',
                      'source /opt/ros/noetic/setup.bash; timeout 4 rostopic echo -n 1 /airsim_node/drone_1/imu/imu >/dev/null']
                 if subprocess.run(cmd,stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL).returncode==0:
-                    pending.remove(name)
-            if pending: time.sleep(.5)
-        if pending: raise TimeoutError('topic readiness timed out: '+', '.join(sorted(pending)))
+                    return time.time()
+                time.sleep(.5)
+            raise TimeoutError('topic readiness timed out: '+name)
+        with ThreadPoolExecutor(max_workers=len(data['instances'])) as executor:
+            jobs={executor.submit(wait_ready,item):item for item in data['instances']}
+            for job in as_completed(jobs):
+                item=jobs[job]
+                item['imu_ready_observed_wall']=job.result()
+                item['startup_observed_s']=item['imu_ready_observed_wall']-item['docker_start_wall']
+                save()
         data['ready']=True
         save()
         print(json.dumps({'manifest':str(manifest),'instances':data['instances']},indent=2),flush=True)

@@ -1,0 +1,25 @@
+{
+  "sender_commands": 141,
+  "wire_records": 141,
+  "matched_commands": 141,
+  "wire_match_fraction": 1.0,
+  "missing_sequences": [],
+  "mismatched_sequences": [],
+  "unexpected_sequences": [],
+  "invalid_records": 0,
+  "duplicate_sequences": 0,
+  "actuator_consumption_verified": false,
+  "debug_pwm_is_verified_actual_motor_output": false,
+  "official_result": "UNKNOWN",
+  "ros_header_sequence_offset": 1,
+  "wire_trace_valid": true,
+  "debug_message_stamp_interval_median_s": 0.009000301361083984,
+  "observed_debug_value_change_interval_p10_p50_p90_s": [
+    0.6576140880584717,
+    0.9840209484100342,
+    1.0512223720550538
+  ],
+  "experiment_pulses": [],
+  "analysis_code_sha256": "c81e6d5b496c477259e1bb5fd5260d79b45bbc31651c78ae345e84a86749ce56",
+  "analysis_matches_run_source_snapshot": true
+}

@@ -1,0 +1,31 @@
+{
+  "position": [
+    -0.01804818772564509,
+    0.003222534286667135,
+    0.30543627948200547
+  ],
+  "gyro_bias": [
+    0.00010756127085187472,
+    8.157533312232072e-05,
+    2.5787207127118214e-05
+  ],
+  "imu_samples": 104,
+  "gps_samples": 11,
+  "span_s": 1.008021593093872,
+  "imu_window_start_stamp": 1793727627.1353686,
+  "imu_window_end_stamp": 1793727628.1433902,
+  "gps_window_start_stamp": 1793727627.1353686,
+  "gps_window_end_stamp": 1793727628.1043894,
+  "gps_position_std_m": [
+    0.04166473700768775,
+    0.02780902764502609,
+    0.05360625336723577
+  ],
+  "acceleration_std_m_s2": [
+    0.05036100735250482,
+    0.039942778010938915,
+    0.041697899148297767
+  ],
+  "assumption": "fresh ground-start scene, before any control publisher",
+  "imu_orientation_use": "resting alignment check only; initial_pose supplies attitude"
+}

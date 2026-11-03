@@ -1,0 +1,83 @@
+{
+  "schema": "rmua-headless-pool-v1",
+  "pool_id": "468e5276264a",
+  "simulator": "/home/tianbot/RUMA-by-helinjun/main/simulator/simulator_12.0.0.5",
+  "binary_sha256": "5231addfa25ddaa9e4473ea9ac40c9c0bc685174e69cd14bb49159f443b97800",
+  "settings": "/home/tianbot/RUMA-by-helinjun/main/configs/simulator_settings.json",
+  "settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+  "image": "rmua/noetic-xal:driver-recovery-20261012",
+  "image_id": "sha256:a1bfe1df3d0f0b57c406fc7873803c07a812f291e42c1a7eba13d2f9328fc106",
+  "mode": "nullrhi",
+  "instances": [
+    {
+      "seed": 123,
+      "port": 11441,
+      "container": "rmua-re-468e5276264a-0",
+      "id": "4a4f85c47563dc5327ae5000522410fb111c01df42127ed20d41fd5b27153901",
+      "docker_start_wall": 1793727598.6146734,
+      "docker_created_wall": 1793727599.0805812
+    },
+    {
+      "seed": 456,
+      "port": 11442,
+      "container": "rmua-re-468e5276264a-1",
+      "id": "1e54f5ded5f9e992446605dd4c046d2bc7158670b729af6b8144fd77bbba2629",
+      "docker_start_wall": 1793727599.080738,
+      "docker_created_wall": 1793727599.4927745
+    },
+    {
+      "seed": 2026,
+      "port": 11443,
+      "container": "rmua-re-468e5276264a-2",
+      "id": "b141a766f2e1c151efc2cb8156e77b09c53bd20b2c59e91a8f7bce6afe2958f5",
+      "docker_start_wall": 1793727599.4929435,
+      "docker_created_wall": 1793727599.9034286
+    },
+    {
+      "seed": 789,
+      "port": 11444,
+      "container": "rmua-re-468e5276264a-3",
+      "id": "76350a97d5b658bb765b5788d04523e1a1e68de2eab5846b1df9436f70526dd2",
+      "docker_start_wall": 1793727599.903612,
+      "docker_created_wall": 1793727600.3095858
+    },
+    {
+      "seed": 42,
+      "port": 11445,
+      "container": "rmua-re-468e5276264a-4",
+      "id": "b6b45f92239c857430f1c82737e3b7fa638363c2f38fdc9eac108cdf54b27aed",
+      "docker_start_wall": 1793727600.309831,
+      "docker_created_wall": 1793727600.720148
+    },
+    {
+      "seed": 1005,
+      "port": 11446,
+      "container": "rmua-re-468e5276264a-5",
+      "id": "58e1da04e24775ecee04aa8ec4b801b77135cd92c8491e60b987c5e57f624ff2",
+      "docker_start_wall": 1793727600.7204168,
+      "docker_created_wall": 1793727601.1609561
+    },
+    {
+      "seed": 1007,
+      "port": 11447,
+      "container": "rmua-re-468e5276264a-6",
+      "id": "4dd328e776412a9a56912a221076e218a88600d225caac00d0f04b04558bd438",
+      "docker_start_wall": 1793727601.1612685,
+      "docker_created_wall": 1793727601.5885046
+    },
+    {
+      "seed": 2024,
+      "port": 11448,
+      "container": "rmua-re-468e5276264a-7",
+      "id": "63aa5eb58f305f71790b5b4ab6e8e8d05ee8d146a8b14dc3714f52d0599d9dd4",
+      "docker_start_wall": 1793727601.5887523,
+      "docker_created_wall": 1793727602.0163975
+    }
+  ],
+  "ready": false,
+  "limitations": [
+    "No lockstep or reset guarantee",
+    "Camera images are empty in NullRHI",
+    "Diagnostics only; dynamic equivalence not established"
+  ]
+}

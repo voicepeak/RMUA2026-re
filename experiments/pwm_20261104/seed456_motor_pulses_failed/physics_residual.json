@@ -1,0 +1,152 @@
+{
+  "matched_intervals": 177,
+  "candidate_intervals": 177,
+  "evaluation_only": true,
+  "cause_identified": false,
+  "motor_model_status": "official_parameters_with_provisional_rps_units_supported_by_local_response",
+  "actuation_latency_verified": false,
+  "actuator_consumption_verified": false,
+  "debug_pwm_temporal_fidelity_verified": false,
+  "official_result": "UNKNOWN",
+  "angular_residual_p50_p95_p99_max_Nm": [
+    0.0026890057699047796,
+    0.006768808473406766,
+    0.012801610757434224,
+    0.017532520769916602
+  ],
+  "largest_angular_discrepancies": [
+    {
+      "stamp": 1793727667.1065052,
+      "interval_s": 0.003000020980834961,
+      "angular_residual_Nm": [
+        -0.011945724699476917,
+        0.006385868647218413,
+        -0.011131470144250354
+      ],
+      "angular_norm_Nm": 0.017532520769916602,
+      "specific_force_residual_m_s2": [
+        -0.010102309286594391,
+        -0.0277646672911942,
+        1.3428803105560831
+      ],
+      "mean_recorded_pwm_model_wrench": [
+        10.030086334294786,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "omega_body_rad_s": [
+        -0.00478560384362936,
+        -0.000516143802087754,
+        -0.0021545488853007555
+      ]
+    },
+    {
+      "stamp": 1793727668.216529,
+      "interval_s": 0.003000020980834961,
+      "angular_residual_Nm": [
+        0.003617726069916828,
+        -0.004805667315089888,
+        -0.013492282835936202
+      ],
+      "angular_norm_Nm": 0.014772409295209015,
+      "specific_force_residual_m_s2": [
+        -0.011252905358560383,
+        -0.013608765788376331,
+        0.2741502349653775
+      ],
+      "mean_recorded_pwm_model_wrench": [
+        8.826475974179411,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "omega_body_rad_s": [
+        0.002746285405009985,
+        -0.004370908718556166,
+        -0.001640650094486773
+      ]
+    },
+    {
+      "stamp": 1793727667.5265143,
+      "interval_s": 0.0030002593994140625,
+      "angular_residual_Nm": [
+        -0.0005711994388701982,
+        -0.004649213334944364,
+        -0.011242453384755548
+      ],
+      "angular_norm_Nm": 0.01217925332445268,
+      "specific_force_residual_m_s2": [
+        0.06966988928616047,
+        -0.04077742528170347,
+        0.22423893406072182
+      ],
+      "mean_recorded_pwm_model_wrench": [
+        10.030086334294786,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "omega_body_rad_s": [
+        -0.00033607130171731114,
+        -0.0013596216449514031,
+        -0.0008378970087505877
+      ]
+    },
+    {
+      "stamp": 1793727667.3765109,
+      "interval_s": 0.009000062942504883,
+      "angular_residual_Nm": [
+        -0.00026563450662278257,
+        -0.0028576756192172778,
+        0.00877838871749926
+      ],
+      "angular_norm_Nm": 0.009235636421562722,
+      "specific_force_residual_m_s2": [
+        -0.04011296236421913,
+        -0.005685953423380852,
+        0.15206009342351479
+      ],
+      "mean_recorded_pwm_model_wrench": [
+        10.030086334294786,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "omega_body_rad_s": [
+        0.0004156639624852687,
+        -0.0030332289170473814,
+        0.003562377067282796
+      ]
+    },
+    {
+      "stamp": 1793727667.6795175,
+      "interval_s": 0.003000020980834961,
+      "angular_residual_Nm": [
+        0.00296009270304157,
+        0.0021379291343965523,
+        0.008469105685606196
+      ],
+      "angular_norm_Nm": 0.009222724158743378,
+      "specific_force_residual_m_s2": [
+        -0.025638394057750702,
+        0.05752079049125314,
+        0.17300802662053627
+      ],
+      "mean_recorded_pwm_model_wrench": [
+        10.030086334294786,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "omega_body_rad_s": [
+        0.0011122014839202166,
+        0.002608628710731864,
+        0.0011046385625377297
+      ]
+    }
+  ],
+  "pwm_source": "independent_ros_command_recorder",
+  "model_provenance": "controller_emitted_snapshot",
+  "imu_source": "independent_full_rate_recorder"
+}
