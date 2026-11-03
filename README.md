@@ -29,7 +29,7 @@
 
 - 模拟器是 **UE4.27 + AirSim/ROS**；Linux Shipping 主程序 116,748,832 字节，pak 1,927,609,305 字节，pak 使用 Oodle Kraken/Zlib。
 - 官方包内含 **12 张地图** `RMUA2024OL1..12`；每张图有 **12 条 RouteConfig、12 个 Gate、12 个 Factory、12 个 CheckPort、24 条 SideTrack/Arrow**。OL1 的路线顺序与 OL2–OL12 不同。
-- 命令行 `seed` 由 `"seed"` 字段解析，默认 **1**；seed 初始化 `FRandomStream`，用于航段随机量（风等）。**seed 不负责选择地图**。
+- 命令行 `seed` 由 `"seed"` 字段解析，默认 **1**；seed 初始化 `FRandomStream`，已追踪到一条与 `RandomTree` 生成相关的随机位置路径。尚未证明该路径生成风，也未完全厘清 seed 是否影响门、车辆、线障或风。**seed 不负责选择地图**。
 - Lobby 默认打开 `/Game/Maps/RMUA2024OL/RMUA2024OL1`；要跑 OL2–OL12 需要改地图 URL/启动参数，而不是只换 seed。
 - `Configs/GameConfig.json` 实际读取 **7 个布尔字段**：
   `ChargeGlobally`、`IgnoreHoverCollision`、`AllowAllReports`、`IgnoreAllHitCollision`、`IgnoreOverTime`、`IgnoreWind`、`AllowChangeState`。

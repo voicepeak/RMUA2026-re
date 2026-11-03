@@ -1,0 +1,42 @@
+{
+  "pak": "/home/tianbot/RUMA-by-helinjun/main/simulator/simulator_12.0.0.5/Build/LinuxNoEditor/RMUA/Content/Paks/RMUA-LinuxNoEditor.pak",
+  "pak_sha256": "2407662b224ed28c64412402af044da85aced07d78ce6fc0948e6be11ea2a0c2",
+  "files": [
+    {
+      "pak_path": "RMUA/Content/Resources/Hover/BP_Hover_1.uasset",
+      "output": "extracted/obstacle_blueprints/BP_Hover_1.uasset",
+      "bytes": 3914,
+      "sha256": "15e5ad1e3b18a584e9a5f059e2892bd7eb88637cb467182cd814726c2e45ad23"
+    },
+    {
+      "pak_path": "RMUA/Content/Resources/Hover/BP_Hover_1.uexp",
+      "output": "extracted/obstacle_blueprints/BP_Hover_1.uexp",
+      "bytes": 1102,
+      "sha256": "c0d3792819f66fd81333621bef9e26bbfcfe662d1a175d20aa8e561267096c11"
+    },
+    {
+      "pak_path": "RMUA/Content/Resources/Line/BP_ThickLine.uasset",
+      "output": "extracted/obstacle_blueprints/BP_ThickLine.uasset",
+      "bytes": 2984,
+      "sha256": "0dc8701e8ed3bcda1aba32b9066ecf4307ab54e593a1df69009120905ed166ea"
+    },
+    {
+      "pak_path": "RMUA/Content/Resources/Line/BP_ThickLine.uexp",
+      "output": "extracted/obstacle_blueprints/BP_ThickLine.uexp",
+      "bytes": 1357,
+      "sha256": "30dbf392cd4877de532ec937ff313a408a968e69ceac8db57503549023de2a99"
+    },
+    {
+      "pak_path": "RMUA/Content/Resources/Line/BP_ThinLine.uasset",
+      "output": "extracted/obstacle_blueprints/BP_ThinLine.uasset",
+      "bytes": 2569,
+      "sha256": "1ef32bc99504674c782df23bdf2d6f207470c337b9db403406d3d6a439b88df5"
+    },
+    {
+      "pak_path": "RMUA/Content/Resources/Line/BP_ThinLine.uexp",
+      "output": "extracted/obstacle_blueprints/BP_ThinLine.uexp",
+      "bytes": 688,
+      "sha256": "d2fb0a42349cd38fa2c7a14541b934e0cc4b6789f2afed6746f3cd4c5ac8081d"
+    }
+  ]
+}

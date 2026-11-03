@@ -33,7 +33,7 @@
 
 - 本机 `RUMA-by-helinjun/main/simulator/simulator_12.0.0.5` 主程序 SHA-256 为 `5231addfa25ddaa9e4473ea9ac40c9c0bc685174e69cd14bb49159f443b97800`，与本仓库分析版本一致。
 - 地图资源有 12 个 `RouteGate` actor 的静态变换，但尚未证明它们就是比赛中沿途所有需要穿过的门，也未证明运行时没有额外生成或修改门。不能由静态表推断所有 seed 的比赛门固定。
-- 用户观察到车辆和细条障碍物随 seed 改变，本次未独立核验其位置或运动规律。`FRandomStream` 被 seed 初始化，`REA_2fa3dd0` 计算随机位置并调用生成相关函数；生成物的类型及全部调用链仍需确认，不能简单认定这就是风或门。
+- 用户观察到车辆和细条障碍物随 seed 改变，本次未独立核验其位置或运动规律。`FRandomStream` 被 seed 初始化，`REA_2fa3dd0` 的一条随机位置路径与 `RandomTree` 类相关；见 `docs/13_seed_randomtree_trace.md`，不能简单认定这就是风或门。
 - 历史 `alpha/alpha/ITERATIONS.md` 的 Iter 09：seed 123/456 起点各一次，首帧 0.25m 点云端点体素 IoU 0.99927，仅为局部对照。
 - Iter 13/14 的两 seed 侦察均到参考点 60/126 后停滞，部分共同覆盖区域的 0.25m 端点体素 IoU 0.716924；见 `alpha/alpha/runs/scout_extended_comparison.json`。动态物体、遮挡、采样及位姿配准均可能造成差异；未分割和匹配门，无法判断门是否移动。记录使用 VEL 和 debug 真值，仅作开发侦察。
 - `main/docs/evidence/p1_full_rate_imu_wind.json` 的 seed 2024 起点悬停记录风均为零；不能推广到其他位置或种子。`main/docs/official_rules_review.md` 记录到达 8 后室外有持续风，未在本次重新验证原始规则或运行时数据。

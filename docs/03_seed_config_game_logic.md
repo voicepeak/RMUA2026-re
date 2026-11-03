@@ -2,6 +2,8 @@
 
 ## 1. 命令行 seed
 
+2026-11-03 补充：`REA_2fcc5a0` 还会把命令行 seed 初始化到 `0x2fcc220` 所返回单例的 `+0x19c/+0x1a0`；后者在路线触发时被 LCG 更新，参与是否调用车辆初始化路径的分支。静态证据和限制见 `docs/14_obstacle_asset_and_vehicle_trace.md`。以下不同对象的偏移不能混同为同一个随机流。
+
 相关函数（Ghidra 地址）：
 
 - `REA_2fa0e80`：GameState/GameConfig 初始化入口，函数体 `0x2fa0e80..0x2fa1335`。
@@ -16,7 +18,7 @@
   - `REA_2fa3190`：初始化路线/段
   - `REA_2fa3dd0`：用 `FRandomStream` 生成随机量
 
-`REA_2fa3dd0` 内含 UE4 `FRandomStream` 的 LCG（乘数/增量常量可在伪代码中看到）。它基于路线点生成随机值；因此 **同一张图、不同 seed 得到不同的随机配置**，主要与航段风等随机量相关。
+`REA_2fa3dd0` 内含 UE4 `FRandomStream` 的 LCG（乘数/增量常量可在伪代码中看到），并计算随机位置。2026-11-03 的进一步静态追踪将这条路径关联到 `RandomTree` 类；参见 `docs/13_seed_randomtree_trace.md`。此前将该路径归因于风的表述证据不足，已撤回；不同 seed 对风、门、车辆和线障的具体影响仍需分别验证。
 
 结论：
 

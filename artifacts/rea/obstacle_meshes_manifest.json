@@ -1,0 +1,42 @@
+{
+  "pak": "/home/tianbot/RUMA-by-helinjun/main/simulator/simulator_12.0.0.5/Build/LinuxNoEditor/RMUA/Content/Paks/RMUA-LinuxNoEditor.pak",
+  "pak_sha256": "2407662b224ed28c64412402af044da85aced07d78ce6fc0948e6be11ea2a0c2",
+  "files": [
+    {
+      "pak_path": "RMUA/Content/Resources/HoverTruck/HoverTruck.uasset",
+      "output": "extracted/obstacle_meshes/HoverTruck.uasset",
+      "bytes": 2694,
+      "sha256": "678bee91ed01f207de894222d8236182a92994cecc08f92efa027436ded69afe"
+    },
+    {
+      "pak_path": "RMUA/Content/Resources/HoverTruck/HoverTruck.uexp",
+      "output": "extracted/obstacle_meshes/HoverTruck.uexp",
+      "bytes": 89807,
+      "sha256": "b486becb00fdbba80a5c2299a2ae08d1a418e4d1d956b09e9931718c8abe0754"
+    },
+    {
+      "pak_path": "RMUA/Content/Resources/Line/thickline.uasset",
+      "output": "extracted/obstacle_meshes/thickline.uasset",
+      "bytes": 2460,
+      "sha256": "98547304d46a510d4d25b6a6d14ea6821d55b4925edfd6a1eb4e603c5aafebc9"
+    },
+    {
+      "pak_path": "RMUA/Content/Resources/Line/thickline.uexp",
+      "output": "extracted/obstacle_meshes/thickline.uexp",
+      "bytes": 19909,
+      "sha256": "3c855dc26aba9dee7e064b8c1eae49c2220a1320e3896ace010181ecc9e5f63d"
+    },
+    {
+      "pak_path": "RMUA/Content/Resources/Line/thinline.uasset",
+      "output": "extracted/obstacle_meshes/thinline.uasset",
+      "bytes": 2458,
+      "sha256": "bdeff54ea5d719a1144efcd6dddcf1cc277de518f992067a53f6c6160c9687bf"
+    },
+    {
+      "pak_path": "RMUA/Content/Resources/Line/thinline.uexp",
+      "output": "extracted/obstacle_meshes/thinline.uexp",
+      "bytes": 19909,
+      "sha256": "c4b1f1f0b233fe18acd6042348ae33c4b8abdfb293e7c23ef81ebbe3ae5f9fa1"
+    }
+  ]
+}

@@ -38,7 +38,7 @@
 ## 6. seed→随机量的精确分布
 
 - 已确认 `seed` 从命令行解析、存入 GameState、调用 `FRandomStream`。
-- 尚未逐行还原 `REA_2fa3dd0` 的随机值到风/航段的映射、取值范围、是否影响门位置。
+- `REA_2fa3dd0` 的一条随机位置路径与 `RandomTree` 类相关，见 `docs/13_seed_randomtree_trace.md`；此前将其直接关联到风缺乏证据。风、门及其他障碍物各自的随机来源仍未确认。
 - 建议固定地图、扫 seed 1..N，记录 `/airsim_node/drone_1/debug/wind` 和 `pose_gt`，做相关性分析。
 
 ## 7. 地图切换

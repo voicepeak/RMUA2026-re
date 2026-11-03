@@ -1,0 +1,27 @@
+{
+  "schema": "rmua-headless-pool-v1",
+  "pool_id": "81417e6a0393",
+  "simulator": "/home/tianbot/RUMA-by-helinjun/main/simulator/simulator_12.0.0.5",
+  "settings": "/home/tianbot/RUMA-by-helinjun/main/configs/simulator_settings.json",
+  "mode": "nullrhi",
+  "instances": [
+    {
+      "seed": 123,
+      "port": 11411,
+      "container": "rmua-re-81417e6a0393-0",
+      "id": "63fed42ac8f5617e23c875860664784c963d3a444295af4ad0f54e47a467c567"
+    },
+    {
+      "seed": 456,
+      "port": 11412,
+      "container": "rmua-re-81417e6a0393-1",
+      "id": "f2db52fdb0f6d8c52257eaa5c0411cfd8c467e5c8f4484517d3eae31dcb2ed98"
+    }
+  ],
+  "ready": true,
+  "limitations": [
+    "No lockstep or reset guarantee",
+    "Camera images are empty in NullRHI",
+    "Diagnostics only; dynamic equivalence not established"
+  ]
+}

@@ -20,3 +20,4 @@ mcp/tools.json
 providers.json
 *.snapshot
 anchors_pseudo.c
+__pycache__/

@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/workspace/alpha/alpha/collect.py", line 489, in <module>
+    sys.exit(scout_worker(sys.argv[2]))
+  File "/workspace/alpha/alpha/collect.py", line 352, in scout_worker
+    time.sleep(.1)
+KeyboardInterrupt

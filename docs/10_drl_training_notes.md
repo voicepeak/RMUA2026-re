@@ -36,7 +36,7 @@ r = w_gate * gate_passed
 
 ## 3. 域随机化
 
-- 同图换 `seed`：改变 `FRandomStream` 随机量（风等）；扫 seed 1..N。
+- 同图换 `seed`：改变已确认的随机流输入；具体影响哪些对象和风场仍须逐项验证，不能假定换 seed 一定改变风。
 - 换图：OL2–OL12 需要地图切换（见 `docs/02`），不要只换 seed。
 - 传感器噪声：`settings_Game2024_1.json` 已开启图像噪声；训练时可按需保留/关闭。
 - 风：`IgnoreWind` 只用于消融/调试；训练应保留。
