@@ -1,0 +1,17 @@
+{
+  "note": "Supplementary observation; raw manifest retained. LiDAR was subscribed but not consumed during this run.",
+  "observed_wall_unix": 1793730374.0051541,
+  "game_config_sha256": "4173ab7ae90fa031fb32a9e77d2810376c6f325b8274f4f8fd07be3c9adb6d39",
+  "game_config_disable_collision_and_timeout": {
+    "IgnoreAllHitCollision": false,
+    "IgnoreOverTime": false
+  },
+  "image_id": "sha256:cd46a48cd28c2a9c6345f60227fd1bd50e78c67ef1e98dcddc0e65893771da57",
+  "actual_inputs": [
+    "GPS position",
+    "IMU angular velocity and orientation",
+    "17 stereo-derived waypoint coordinates"
+  ],
+  "ground_truth_control": "No live debug pose subscription in this run; historical waypoint provenance possibly debug-truth-derived, unresolved.",
+  "historical_waypoint_provenance_warning": "beta gate_yolo subscribes to debug/pose_gt; historical stereo world-coordinate mapping may have used debug truth. The run was interrupted proactively and is not accepted as truth-free navigation."
+}

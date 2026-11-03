@@ -1,0 +1,30 @@
+{
+  "mode": "scout-only",
+  "control": "VEL",
+  "position": "GPS PoseStamped; orientation from IMU; no debug truth",
+  "route_source": "/analysis/experiments/stage_probe_20261104/static_spline_candidates.json",
+  "route_sha256": "575a6b3bf9c32f8bae4f4f5628c31ca72036a0a16aa0ca81a13e31695502eec9",
+  "coverage_scope": "static spline 1 only; no hub connector or verified outdoor route",
+  "route_count": 69,
+  "waypoints_reached": 21,
+  "fault": null,
+  "coverage_complete": false,
+  "detour": {
+    "target_offsets_ned_xy_m": {},
+    "speed_limit_m_s": 1.0,
+    "later_speed_limit_m_s": 1.0,
+    "min_lidar_clearance_m": 1.15,
+    "horizon_m": 2.0,
+    "forward_ray_min": 10,
+    "note": "scout only; cone support is partial observation, not certified free space"
+  },
+  "limits": {
+    "xy_m_s": 2.0,
+    "z_m_s": 0.6,
+    "rate_rad_s": 1.0,
+    "tilt_rad": 0.35,
+    "stale_s": 0.5,
+    "max_leg_m": 45.0
+  },
+  "debug": true
+}

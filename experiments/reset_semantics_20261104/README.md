@@ -22,3 +22,11 @@ python3 scripts/run_reset_diagnostic.py --simulator /home/tianbot/RUMA-by-helinj
 `1793730423.723` 在 `CMD_GETPOSE_UE` 的回调返回后（ROS 回调内部，距请求入口约 1.304 墙钟秒），按偏移 `00,04,08,0c,10,14,18` 读取的七个 float 是 `0,0,0,0,0,0,-37.9084167`。REA 代码检查 `abs(offset+0x18)<0.2`，该次检查失败，所以 `success: False` 有具体观测原因。不把该内存字段未经进一步确认地命名成某个坐标或赋单位；结果仅适用于本版本、本场配置，不能解释所有历史失败。`reset.log` 保存服务响应；rostopic timeout 退出码 124 表示采样时间结束，非复位成功。
 
 本次 ROS reset 过程中没有第二次命中 `0x2fb2040`（对应的初始化包装调用），只在进程初始化命中一次；不能排除 libc `srand` 通过其他入口调用，也未跟踪 rand 内部状态。单次 FRandomStream 初值复位不代表场景完全重放：调用顺序、wind/libc、动态障碍物均未比较。`manifest.json` 的 `reset_failed` 指 ROS 响应 false，不意味着 helper 没有运行。
+
+## 直接 libc srand 运行时补充
+
+`run_seed456_libc/` 使用 seed 456 在独立起点进程内再次调用官方 reset。针对镜像中的 `/lib/x86_64-linux-gnu/libc-2.31.so`，探针以 `/proc/<pid>/maps` 的文件零偏移映射基址和已核对的 SHA-256 `53b909551f8e581120ddc2d24cfb5df76c52e3c2e2a5dac0d202b25638b3e902`，在 glibc 的 `srand` / `srandom` 共享入口 ELF 相对地址 `0x475c0` 设置只读断点。`libc_srand_installed` 证明安装成功；探针在回调入口时安装，从安装到采样结束期间没有产生 `libc_srand` 命中。没有观察启动阶段的 libc srand（断点当时未安装），此前独立的 `RMUA_SRAND` 记录证明了对应包装入口在启动期间命中。此结论限定这一场、这一段时间和此 libc 入口；它不能排除 `srandom_r` 等其他途径修改随机状态，也不能证明后续 rand 序列复现或不复现。
+
+该场 `0x2fced20` 的配置/初始/当前值为 `456 / 456 / 1410508404`，随后 `RMUA_GAME_RESET` 入口为 `456 / 456`，与 helper 指令的恢复语义一致。`CMD_GETPOSE_UE` 返回 `offset +0x18=-37.9077873`，大于 0.2 阈值，响应再次为 `success: False`。这是两个 seed 的两次起点观察，依旧不能断言任意场景或 stage 的完整同 seed 重放。探针墙钟与 monotonic 时刻、ROS 消息时间戳分别保留；仿真时间尚未对齐。
+
+第一场使用的原始探针源码快照保存在 `run_seed123/reset_probe_v1.py`，其哈希与同场 `reset_probe_metadata.json` 一致。第二场哈希见 `run_seed456_libc/reset_probe_metadata.json`，对应目前的 `scripts/reset_probe.py`。

@@ -1,0 +1,181 @@
+{
+  "scope": "read-only GDB and ROS observer; diagnostic not competition-equivalent",
+  "seed": 123,
+  "run_status": "scout_exited",
+  "scout_exit_code": 130,
+  "clock_domains": {
+    "wall_unix": "host Unix epoch seconds",
+    "monotonic": "host monotonic seconds",
+    "ros_header_stamp": "ROS message header source stamp; mapping to simulation time is not yet calibrated",
+    "trajectory.wall": "host monotonic seconds (legacy field name)",
+    "timer_1ac": "GameState field accumulates a game update delta per static code; calibration pending"
+  },
+  "gps_records": 2176,
+  "wind_records": 11210,
+  "event_counts": {
+    "RMUA_RANDOM_INIT": 1,
+    "RMUA_SRAND": 1,
+    "RMUA_STAGE_INIT": 1,
+    "RMUA_STATE_ENTER": 3
+  },
+  "gdb_events": [
+    {
+      "tag": "RMUA_RANDOM_INIT",
+      "clock": {
+        "wall_unix": 1793730434.9127982,
+        "monotonic": 66580.557757024
+      },
+      "line": "RMUA_RANDOM_INIT singleton=0x7fffe5487b00 configured=123 initial=123 current=123"
+    },
+    {
+      "tag": "RMUA_SRAND",
+      "clock": {
+        "wall_unix": 1793730440.537609,
+        "monotonic": 66586.182568026
+      },
+      "line": "RMUA_SRAND context=0x7ffdef184980 seed=123"
+    },
+    {
+      "tag": "RMUA_STAGE_INIT",
+      "clock": {
+        "wall_unix": 1793730440.5532372,
+        "monotonic": 66586.198195765
+      },
+      "line": "RMUA_STAGE_INIT object=0x7ffdef184780 arg1=1 arg2=3 stage=1 timer_1a8=0.000000 timer_1ac=0.000000"
+    },
+    {
+      "tag": "RMUA_STATE_ENTER",
+      "clock": {
+        "wall_unix": 1793730440.5594637,
+        "monotonic": 66586.204422132
+      },
+      "line": "RMUA_STATE_ENTER object=0x7ffdef184780 old_state=0 requested_state=0 flag=0 timer_1a8=0.000000 timer_1ac=0.000000"
+    },
+    {
+      "tag": "RMUA_STATE_ENTER",
+      "clock": {
+        "wall_unix": 1793730452.2854497,
+        "monotonic": 66597.930408674
+      },
+      "line": "RMUA_STATE_ENTER object=0x7ffdef184780 old_state=0 requested_state=1 flag=0 timer_1a8=12.191401 timer_1ac=0.000000"
+    },
+    {
+      "tag": "RMUA_STATE_ENTER",
+      "clock": {
+        "wall_unix": 1793730632.3381562,
+        "monotonic": 66777.983115227
+      },
+      "line": "RMUA_STATE_ENTER object=0x7ffdef184780 old_state=1 requested_state=12 flag=0 timer_1a8=0.000000 timer_1ac=0.000000"
+    }
+  ],
+  "wind_distinct_vectors": [
+    [
+      0.0,
+      0.0,
+      0.0
+    ]
+  ],
+  "first_trajectory": {
+    "wall": 66589.517341541,
+    "ros_gps_stamp": 1793730443.7275045,
+    "wall_unix": 1793730443.8737423,
+    "position": [
+      0.005778490894830026,
+      -0.036388159244639215,
+      0.30756216522790547
+    ],
+    "target": [
+      0.005778490894830026,
+      -0.036388159244639215,
+      -1.1924378347720945
+    ],
+    "waypoint": 0,
+    "velocity_body": [
+      0.0,
+      0.0,
+      0.5249999999999999
+    ],
+    "angular_rate": 0.0024723756914337403,
+    "lidar_clearance_m": null,
+    "lidar_clearance_required_m": null,
+    "lidar_forward_support": null
+  },
+  "last_trajectory": {
+    "wall": 66811.177182456,
+    "ros_gps_stamp": 1793730665.2192295,
+    "wall_unix": 1793730665.5337596,
+    "position": [
+      206.20541705039267,
+      0.5323457787603467,
+      -12.757180386531235
+    ],
+    "target": [
+      214.01698304585975,
+      -1.131994807454039,
+      -13.037385357613166
+    ],
+    "waypoint": 22,
+    "velocity_body": [
+      0.9780181398184232,
+      -0.20851982684174444,
+      0.09807173987867576
+    ],
+    "angular_rate": 0.004478120294548427,
+    "lidar_clearance_m": 3.95306686204994,
+    "lidar_clearance_required_m": 1.3023871560057159,
+    "lidar_forward_support": 737
+  },
+  "max_waypoint_index": 22,
+  "wind_first": {
+    "wall_unix": 1793730442.4037232,
+    "monotonic": 66588.048682004,
+    "ros_header_stamp": 1793730442.308474,
+    "seq": 93,
+    "wind": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "wind_last": {
+    "wall_unix": 1793730666.5834894,
+    "monotonic": 66812.228448326,
+    "ros_header_stamp": 1793730666.2692518,
+    "seq": 11302,
+    "wind": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "scout_result": {
+    "mode": "scout-only",
+    "control": "VEL",
+    "position": "GPS PoseStamped; orientation from IMU; no debug truth",
+    "route_source": "/analysis/experiments/stage_probe_20261104/static_spline_candidates.json",
+    "route_sha256": "575a6b3bf9c32f8bae4f4f5628c31ca72036a0a16aa0ca81a13e31695502eec9",
+    "coverage_scope": "static spline 1 only; no hub connector or verified outdoor route",
+    "route_count": 69,
+    "waypoints_reached": 21,
+    "fault": null,
+    "coverage_complete": false,
+    "detour": {
+      "target_offsets_ned_xy_m": {},
+      "speed_limit_m_s": 1.0,
+      "later_speed_limit_m_s": 1.0,
+      "min_lidar_clearance_m": 1.15,
+      "horizon_m": 2.0,
+      "forward_ray_min": 10,
+      "note": "scout only; cone support is partial observation, not certified free space"
+    },
+    "limits": {
+      "xy_m_s": 2.0,
+      "z_m_s": 0.6,
+      "rate_rad_s": 1.0,
+      "tilt_rad": 0.35,
+      "stale_s": 0.5,
+      "max_leg_m": 45.0
+    },
+    "debug": true
+  }
+}

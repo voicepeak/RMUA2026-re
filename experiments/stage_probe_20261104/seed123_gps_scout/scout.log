@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/analysis/scripts/stage_sensor_scout.py", line 201, in <module>
+    sys.exit(scout_worker(sys.argv[1]))
+  File "/analysis/scripts/stage_sensor_scout.py", line 181, in scout_worker
+    time.sleep(.1)
+KeyboardInterrupt

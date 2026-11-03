@@ -1,0 +1,8 @@
+{
+  "gdb_scripts_sha256": {
+    "reset_probe.py": "0e7fcbe793543db73de112e46d44f28f8f56681eb118e3b206964bb05ff4c65e",
+    "reset_probe.gdb": "8f9219c1854b490ae7abba59544a9dccf128d38231ecc778deb756e8221e8189",
+    "runtime_trace.gdb": "ed32f1cc5239f100a98bd2e547928a4ebcba532f6d4b8c35ebd8602fbadecb01"
+  },
+  "note": "manifest gdb_script_sha256 names the original base script; the reset probe scripts above were also sourced"
+}

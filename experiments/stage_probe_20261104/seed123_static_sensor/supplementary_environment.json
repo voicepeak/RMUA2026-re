@@ -1,0 +1,18 @@
+{
+  "note": "Supplementary observation captured after simulator startup; original manifest unmodified.",
+  "observed_wall_unix": 1793730487.7238877,
+  "game_config_sha256": "4173ab7ae90fa031fb32a9e77d2810376c6f325b8274f4f8fd07be3c9adb6d39",
+  "game_config_disable_collision_and_timeout": {
+    "IgnoreAllHitCollision": false,
+    "IgnoreOverTime": false
+  },
+  "image_id": "sha256:cd46a48cd28c2a9c6345f60227fd1bd50e78c67ef1e98dcddc0e65893771da57",
+  "actual_inputs": [
+    "GPS position",
+    "IMU angular velocity and orientation",
+    "cooked map spline 1 coordinates",
+    "LiDAR clearance for waypoint index >=2"
+  ],
+  "ground_truth_control": false,
+  "candidate_route": "yaw-only static transform; no hub connector; not verified collision-free"
+}

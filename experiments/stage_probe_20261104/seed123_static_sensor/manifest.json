@@ -1,0 +1,24 @@
+{
+  "seed": 123,
+  "port": 11641,
+  "binary_sha256": "5231addfa25ddaa9e4473ea9ac40c9c0bc685174e69cd14bb49159f443b97800",
+  "settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+  "scout_sha256": "af786a81f7aff46207e29fc8503506290b491f8e41b3a6dd65c77164c8b4148f",
+  "gdb_sha256": "5b3de77cdad8fa2f5c1a337d8bc486cc24712e2f4db49a729e3882dcb06ccf91",
+  "map": "default OL1",
+  "mode": "VEL diagnostic",
+  "control_inputs": [
+    "GPS PoseStamped",
+    "IMU",
+    "static cooked-map spline 1",
+    "LiDAR clearance for waypoint index >=2"
+  ],
+  "debug_truth_control": false,
+  "official_result": "unknown",
+  "start_wall_unix": 1793730432.4756014,
+  "status": "scout_exited",
+  "container_id": "0b0b8ac3ed3439d926ed13b76a18485773f239aaa2d2c5f5f77a822835093098",
+  "ready_wall_unix": 1793730441.90313,
+  "scout_exit_code": 130,
+  "end_wall_unix": 1793730666.6799893
+}
