@@ -24,12 +24,17 @@
 | [docs/09_evidence_index.md](docs/09_evidence_index.md) | 每个结论对应的文件/函数地址/证据 |
 | [docs/10_drl_training_notes.md](docs/10_drl_training_notes.md) | 面向 DRL 的训练信号、reward、并行建议 |
 | [docs/11_artifact_manifest.md](docs/11_artifact_manifest.md) | 已入库/未入库资料清单与大文件重生成方式 |
+| [docs/12_local_seed_and_training_assessment.md](docs/12_local_seed_and_training_assessment.md) | 本机 seed/NullRHI/并发实测与边界 |
+| [docs/13_seed_randomtree_trace.md](docs/13_seed_randomtree_trace.md) | RandomTree 随机位置路径的静态追踪 |
+| [docs/14_obstacle_asset_and_vehicle_trace.md](docs/14_obstacle_asset_and_vehicle_trace.md) | 车辆/线障资源、碰撞网格、生成入口 |
+| [docs/15_seed_dependency_matrix.md](docs/15_seed_dependency_matrix.md) | 门/树/车辆/线障/风是否受 seed 影响的总表（2026-11-04） |
+| [docs/16_headless_requirements.md](docs/16_headless_requirements.md) | 官方 NullRHI 实测边界与高并发训练环境要求 |
 
 ## 核心结论（TL;DR）
 
 - 模拟器是 **UE4.27 + AirSim/ROS**；Linux Shipping 主程序 116,748,832 字节，pak 1,927,609,305 字节，pak 使用 Oodle Kraken/Zlib。
 - 官方包内含 **12 张地图** `RMUA2024OL1..12`；每张图有 **12 条 RouteConfig、12 个 Gate、12 个 Factory、12 个 CheckPort、24 条 SideTrack/Arrow**。OL1 的路线顺序与 OL2–OL12 不同。
-- 命令行 `seed` 由 `"seed"` 字段解析，默认 **1**；seed 初始化 `FRandomStream`，已追踪到一条与 `RandomTree` 生成相关的随机位置路径。尚未证明该路径生成风，也未完全厘清 seed 是否影响门、车辆、线障或风。**seed 不负责选择地图**。
+- 命令行 `seed` 由 `"seed"` 字段解析，默认 **1**；seed 初始化 `FRandomStream`，并影响**随机树、车辆、线障和室外风**。门是地图静态数据，不由 seed 改位置；**seed 不负责选择地图**。逐项证据和边界见 `docs/15_seed_dependency_matrix.md`。
 - Lobby 默认打开 `/Game/Maps/RMUA2024OL/RMUA2024OL1`；要跑 OL2–OL12 需要改地图 URL/启动参数，而不是只换 seed。
 - `Configs/GameConfig.json` 实际读取 **7 个布尔字段**：
   `ChargeGlobally`、`IgnoreHoverCollision`、`AllowAllReports`、`IgnoreAllHitCollision`、`IgnoreOverTime`、`IgnoreWind`、`AllowChangeState`。

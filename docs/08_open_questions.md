@@ -38,7 +38,8 @@
 ## 6. seed→随机量的精确分布
 
 - 已确认 `seed` 从命令行解析、存入 GameState、调用 `FRandomStream`。
-- `REA_2fa3dd0` 的一条随机位置路径与 `RandomTree` 类相关，见 `docs/13_seed_randomtree_trace.md`；此前将其直接关联到风缺乏证据。风、门及其他障碍物各自的随机来源仍未确认。
+- `REA_2fa3dd0` 的一条随机位置路径与 `RandomTree` 类相关，见 `docs/13_seed_randomtree_trace.md`；此前将其直接关联到风缺乏证据。
+- 2026-11-04：风已定位到 `0x2fb8f40`→`0x2fb2040`（`srand(seed)`）→`0x2fb23b0`（`rand()`），stage 4/5/6 触发；线障生成入口 `0x2fc77b0` 也使用 seed LCG。门仍是地图静态。精确风速分布、线障参数语义和逐 seed 运行时验证仍列为未完成。详见 `docs/15_seed_dependency_matrix.md`。
 - 建议固定地图、扫 seed 1..N，记录 `/airsim_node/drone_1/debug/wind` 和 `pose_gt`，做相关性分析。
 
 ## 7. 地图切换

@@ -18,7 +18,9 @@
   - `REA_2fa3190`：初始化路线/段
   - `REA_2fa3dd0`：用 `FRandomStream` 生成随机量
 
-`REA_2fa3dd0` 内含 UE4 `FRandomStream` 的 LCG（乘数/增量常量可在伪代码中看到），并计算随机位置。2026-11-03 的进一步静态追踪将这条路径关联到 `RandomTree` 类；参见 `docs/13_seed_randomtree_trace.md`。此前将该路径归因于风的表述证据不足，已撤回；不同 seed 对风、门、车辆和线障的具体影响仍需分别验证。
+`REA_2fa3dd0` 内含 UE4 `FRandomStream` 的 LCG（乘数/增量常量可在伪代码中看到），并计算随机位置。2026-11-03 的进一步静态追踪将这条路径关联到 `RandomTree` 类；参见 `docs/13_seed_randomtree_trace.md`。此前将该路径归因于风的表述证据不足，已撤回。
+
+2026-11-04 补充：seed 对各类对象的影响已拆开验证。门是地图静态；随机树、车辆、线障和室外风各有独立路径；风由 `0x2fb8f40` 调 `0x2fb2040`（`srand(seed)`）后交给 `0x2fb23b0` 的 `rand()` 序列生成。总表和证据见 `docs/15_seed_dependency_matrix.md`。
 
 结论：
 

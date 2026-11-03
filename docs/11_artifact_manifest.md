@@ -47,3 +47,9 @@ Get-FileHash D:\RMUA2026-re\simulator_12.0.0.5.zip -Algorithm SHA256
 Get-FileHash D:\RMUA2026-re\sim\simulator_12.0.0.5\Build\LinuxNoEditor\RMUA\Binaries\Linux\RMUA-Linux-Shipping -Algorithm SHA256
 # 5231addfa25ddaa9e4473ea9ac40c9c0bc685174e69cd14bb49159f443b97800
 ```
+
+## 2026-11-04 追加
+
+- `docs/12..16`：本机 seed/NullRHI 实测、RandomTree、车辆/线障、seed 总表、无头需求。
+- `artifacts/rea/followup_native.c`、`followup_callers.c`、`followup_state.c`：门、RandomTree、风初始化、室外段、线障生成、状态切换的定点反编译。
+- `scripts/read_elf_floats.py`：按 ELF 虚拟地址读取风/线障常量（含 SHA-256）。

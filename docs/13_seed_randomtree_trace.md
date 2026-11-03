@@ -23,7 +23,9 @@
 
 ## 风的证据边界
 
-这条 `RandomTree` 路径本身**不能证明**风随 seed 变化，亦不能证明门、车辆和细条的行为。此前 README 等将此函数的随机量描述为“风等”，证据不足，已更正。风可能另有生成路径，仍需独立追踪和风区实测。
+这条 `RandomTree` 路径本身**不能证明**风随 seed 变化，亦不能证明门、车辆和细条的行为。此前 README 等将此函数的随机量描述为“风等”，证据不足，已更正。
+
+2026-11-04 补充：风另有独立路径，现已定位。`GameState2024_1` 的 `0x2fb8f40` 在初始化时读取单例 `0x2fcc220` 的 `+0x1a0`（命令行 seed），调用 `0x2fb2040`；后者就是 `srand(seed)`。风序列生成器 `0x2fb23b0` 使用 `rand()`，室外段 stage 4/5/6 的 `0x2fbac30` 会以 GameConfig 的时段和 350/660/1800 等常量调用它。因此 **seed 确实影响室外风**；但这仍不能证明其他阶段/位置的风或本 `RandomTree` 路径与风有直接关系。详见 `docs/15_seed_dependency_matrix.md` 与 `artifacts/rea/wind_generation_trace.c`。
 
 REA 6.8.0 + Ghidra 12.1.2 对 ROS 桥函数 `AirSimROSTransformWind` 的独立反编译保存在 `artifacts/rea/wind_transform.json`，Evidence ID `ev_a20b44a5cd63a1581f5920ac9ac5672891fcf8a1343d9807033bff957f211bc3`，目标库 SHA-256 为 `69d5ea3302bdd5f20b842ec3d3e84bafcb50ef3649ada42c4d346c9bcd389885`。它显示该桥对输入风向量做 tf2 变换并写回；具体坐标系与风源并未由这一函数单独证明。
 

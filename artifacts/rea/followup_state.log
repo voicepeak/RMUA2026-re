@@ -1,0 +1,102 @@
+openjdk version "21.0.13" 2026-10-20 LTS
+OpenJDK Runtime Environment Temurin-21.0.13+9 (build 21.0.13+9-LTS)
+OpenJDK 64-Bit Server VM Temurin-21.0.13+9 (build 21.0.13+9-LTS, mixed mode)
+INFO  Using log config file: jar:file:/home/tianbot/.local/share/rmua-re-tools/ghidra_12.1.2_PUBLIC/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml (LoggingInitialization)  
+INFO  Using log file: /home/tianbot/.config/ghidra/ghidra_12.1.2_PUBLIC/application.log (LoggingInitialization)  
+INFO  Loading user preferences: /home/tianbot/.config/ghidra/ghidra_12.1.2_PUBLIC/preferences (Preferences)  
+INFO  Searching for classes... (ClassSearcher)  
+INFO  Class search complete (608 ms) (ClassSearcher)  
+INFO  Initializing SSL Context (DefaultSSLContextInitializer)  
+INFO  Initializing Random Number Generator... (SecureRandomFactory)  
+INFO  Random Number Generator initialization complete: NativePRNGNonBlocking (SecureRandomFactory)  
+INFO  Trust manager disabled, cacerts have not been set (DefaultTrustManagerFactory)  
+INFO  Headless startup complete (1299 ms) (AnalyzeHeadless)  
+INFO  Class searcher loaded 59 extension points (20 false positives) (ClassSearcher)  
+INFO  HEADLESS Script Paths:
+    /home/tianbot/.local/share/rmua-re-tools/ghidra_12.1.2_PUBLIC/Ghidra/Processors/PIC/ghidra_scripts
+    /home/tianbot/.local/share/rmua-re-tools/ghidra_12.1.2_PUBLIC/Ghidra/Debug/Debugger/ghidra_scripts
+    /home/tianbot/.local/share/rmua-re-tools/ghidra_12.1.2_PUBLIC/Ghidra/Processors/Atmel/ghidra_scripts
+    /home/tianbot/.local/share/rmua-re-tools/ghidra_12.1.2_PUBLIC/Ghidra/Features/BSim/ghidra_scripts
+    /home/tianbot/.local/share/rmua-re-tools/ghidra_12.1.2_PUBLIC/Ghidra/Features/FileFormats/ghidra_scripts
+    /home/tianbot/.local/share/rmua-re-tools/ghidra_12.1.2_PUBLIC/Ghidra/Features/MicrosoftCodeAnalyzer/ghidra_scripts
+    /home/tianbot/.local/share/rmua-re-tools/ghidra_12.1.2_PUBLIC/Ghidra/Features/BytePatterns/ghidra_scripts
+    /home/tianbot/.local/share/rmua-re-tools/ghidra_12.1.2_PUBLIC/Ghidra/Features/SystemEmulation/ghidra_scripts
+    /home/tianbot/.local/share/rmua-re-tools/ghidra_12.1.2_PUBLIC/Ghidra/Features/PDB/ghidra_scripts
+    /home/tianbot/.local/share/rmua-re-tools/ghidra_12.1.2_PUBLIC/Ghidra/Processors/8051/ghidra_scripts
+    /home/tianbot/.local/share/rmua-re-tools/ghidra_12.1.2_PUBLIC/Ghidra/Features/Base/ghidra_scripts
+    /home/tianbot/.local/share/rmua-re-tools/ghidra_12.1.2_PUBLIC/Ghidra/Features/FunctionID/ghidra_scripts
+    /home/tianbot/.local/share/rmua-re-tools/ghidra_12.1.2_PUBLIC/Ghidra/Features/PyGhidra/ghidra_scripts
+    /home/tianbot/.local/share/rmua-re-tools/ghidra_12.1.2_PUBLIC/Ghidra/Processors/DATA/ghidra_scripts
+    /home/tianbot/.local/share/rmua-re-tools/ghidra_12.1.2_PUBLIC/Ghidra/Features/Decompiler/ghidra_scripts
+    /home/tianbot/.local/share/rmua-re-tools/ghidra_12.1.2_PUBLIC/Ghidra/Features/SwiftDemangler/ghidra_scripts
+    /home/tianbot/.local/share/rmua-re-tools/ghidra_12.1.2_PUBLIC/Ghidra/Features/DecompilerDependent/ghidra_scripts
+    /home/tianbot/.local/share/rmua-re-tools/ghidra_12.1.2_PUBLIC/Ghidra/Features/GnuDemangler/ghidra_scripts
+    /home/tianbot/.local/share/rmua-re-tools/ghidra_12.1.2_PUBLIC/Ghidra/Features/VersionTracking/ghidra_scripts
+    /home/tianbot/.local/share/rmua-re-tools/ghidra_12.1.2_PUBLIC/Ghidra/Features/WildcardAssembler/ghidra_scripts
+    /home/tianbot/.local/share/rmua-re-tools/ghidra_12.1.2_PUBLIC/Ghidra/Debug/Debugger-rmi-trace/ghidra_scripts
+    /home/tianbot/.local/share/rmua-re-tools/ghidra_12.1.2_PUBLIC/Ghidra/Processors/JVM/ghidra_scripts
+    /home/tianbot/桌面/RMUA2026-re/scripts (HeadlessAnalyzer)  
+INFO  HEADLESS: execution starts (HeadlessAnalyzer)  
+INFO  Creating project: /tmp/rmua_followup3_proj/RMUA (HeadlessAnalyzer)  
+INFO  Creating project: /tmp/rmua_followup3_proj/RMUA (DefaultProject)  
+INFO  REPORT: Processing input files:  (HeadlessAnalyzer)  
+INFO       project: /tmp/rmua_followup3_proj/RMUA (HeadlessAnalyzer)  
+INFO  IMPORTING: file:///home/tianbot/RUMA-by-helinjun/main/simulator/simulator_12.0.0.5/Build/LinuxNoEditor/RMUA/Binaries/Linux/RMUA-Linux-Shipping (HeadlessAnalyzer)  
+INFO  Using Loader: Executable and Linking Format (ELF) (ProgramLoader)  
+INFO  Using Language/Compiler: x86:LE:64:default:gcc (ProgramLoader)  
+INFO  Using Library Search Path: [., /bin, /lib, /lib64, /lib/x86_64-linux-gnu, /lib/aarch64-linux-gnu, /usr/bin, /usr/lib, /usr/X11R6/bin, /usr/X11R6/lib, /usr/java/packages/lib, /usr/lib64] (ProgramLoader)  
+INFO  Additional info:
+Loading file:///home/tianbot/RUMA-by-helinjun/main/simulator/simulator_12.0.0.5/Build/LinuxNoEditor/RMUA/Binaries/Linux/RMUA-Linux-Shipping?MD5=3278d7344aa3afcbd190cebed7c0da69...
+Skipping section [.tm_clone_table] with invalid size 0x0
+ELF Relocation Failure: R_X86_64_COPY (5, 0x5) at 07141d60 (Symbol = _ZTVSt12out_of_range) - Runtime copy not supported (40-bytes)
+ELF Relocation Failure: R_X86_64_COPY (5, 0x5) at 07141dc0 (Symbol = _ZTVN10__cxxabiv117__class_type_infoE) - Runtime copy not supported (88-bytes)
+ELF Relocation Failure: R_X86_64_COPY (5, 0x5) at 074b46c8 (Symbol = stdin) - Runtime copy not supported (8-bytes)
+ELF Relocation Failure: R_X86_64_COPY (5, 0x5) at 074b46d8 (Symbol = environ) - Runtime copy not supported (8-bytes)
+ELF Relocation Failure: R_X86_64_COPY (5, 0x5) at 074b46c0 (Symbol = stdout) - Runtime copy not supported (8-bytes)
+ELF Relocation Failure: R_X86_64_COPY (5, 0x5) at 074b46d0 (Symbol = stderr) - Runtime copy not supported (8-bytes)
+ELF Relocation Failure: R_X86_64_COPY (5, 0x5) at 07141ef0 (Symbol = in6addr_loopback) - Runtime copy not supported (16-bytes)
+ELF Relocation Failure: R_X86_64_COPY (5, 0x5) at 07141f00 (Symbol = _ZTVN10__cxxabiv121__vmi_class_type_infoE) - Runtime copy not supported (88-bytes)
+ELF Relocation Failure: R_X86_64_COPY (5, 0x5) at 07141e20 (Symbol = _ZTVN10__cxxabiv120__si_class_type_infoE) - Runtime copy not supported (88-bytes)
+ELF Relocation Failure: R_X86_64_COPY (5, 0x5) at 07141d30 (Symbol = _ZTVSt16invalid_argument) - Runtime copy not supported (40-bytes)
+ELF Relocation Failure: R_X86_64_COPY (5, 0x5) at 07141e80 (Symbol = _ZTVN10__cxxabiv119__pointer_type_infoE) - Runtime copy not supported (72-bytes)
+ELF Relocation Failure: R_X86_64_COPY (5, 0x5) at 07141d00 (Symbol = _ZTVSt12length_error) - Runtime copy not supported (40-bytes)
+ELF Relocation Failure: R_X86_64_COPY (5, 0x5) at 07141ee0 (Symbol = in6addr_any) - Runtime copy not supported (16-bytes)
+ELF Relocation Failure: R_X86_64_COPY (5, 0x5) at 07141f58 (Symbol = _ZSt7nothrow) - Runtime copy not supported (1-bytes)
+ELF Relocation Failure: R_X86_64_COPY (5, 0x5) at 07141d90 (Symbol = _ZTVSt12domain_error) - Runtime copy not supported (40-bytes)
+Converted 184 .plt section symbols to external thunks
+Setting block .tdata to read-only
+Setting block .ctors to read-only
+Setting block .dtors to read-only
+Setting block .jcr to read-only
+Setting block .init_array to read-only
+Setting block .data.rel.ro to read-only
+Setting block .dynamic to read-only
+Setting block .bss.rel.ro to read-only
+------------------------------------------------
+
+Linking the External Programs of 'RMUA-Linux-Shipping' to imported libraries...
+  [libpthread.so.0] -> not found in project
+  [libdl.so.2] -> not found in project
+  [libstdc++.so.6] -> not found in project
+  [librt.so.1] -> not found in project
+  [libApexFramework.so] -> not found in project
+  [libNvParameterized.so] -> not found in project
+  [libairsimros.so] -> not found in project
+  [libavcodec.so.58] -> not found in project
+  [libavformat.so.58] -> not found in project
+  [libswscale.so.5] -> not found in project
+  [libavutil.so.56] -> not found in project
+  [libm.so.6] -> not found in project
+  [libc.so.6] -> not found in project
+  [ld-linux-x86-64.so.2] -> not found in project
+  [libgcc_s.so.1] -> not found in project
+------------------------------------------------
+
+Resolving External Symbols of [/RMUA-Linux-Shipping] - 479 unresolved symbols, no external libraries configured - skipping
+ (ProgramLoader)  
+INFO  IMPORTING: Loaded 0 additional files (HeadlessAnalyzer)  
+INFO  REPORT: Execute script: DecompileAddresses.java '/home/tianbot/桌面/RMUA2026-re/artifacts/rea/followup_state.c' '0x2fc6cc0' '0x2fc13d0' '0x2fb9960' '0x2fba970'  (HeadlessAnalyzer)  
+INFO  SCRIPT: /home/tianbot/桌面/RMUA2026-re/scripts/DecompileAddresses.java (HeadlessAnalyzer)  
+INFO  /RMUA-Linux-Shipping: file created (tianbot) (LocalFileSystem)  
+INFO  REPORT: Save succeeded for: /RMUA-Linux-Shipping (RMUA:/RMUA-Linux-Shipping) (HeadlessAnalyzer)  
+INFO  REPORT: Import succeeded (HeadlessAnalyzer)  
