@@ -1,0 +1,2103 @@
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/usr/lib/x86_64-linux-gnu/libthread_db.so.1".
+Looking for binary: ../../../RMUA/Config/BinaryConfig.ini
+[Detaching after vfork from child process 188]
+sh: 1: xdg-user-dir: not found
+4.27.2-0+++UE4+Release-4.27 522 0
+Disabling core dumps.
+LogConsoleResponse: Display: Failed to find resolution value strings in scalability ini. Falling back to default.
+LogConsoleResponse: Display: Failed to find resolution value strings in scalability ini. Falling back to default.
+LogPakFile: Display: Found Pak file ../../../RMUA/Content/Paks/RMUA-LinuxNoEditor.pak attempting to mount.
+LogPakFile: Display: Mounting pak file ../../../RMUA/Content/Paks/RMUA-LinuxNoEditor.pak.
+LogPakFile: PakFile PrimaryIndexSize=122598
+LogPakFile: PakFile PathHashIndexSize=60199
+LogPakFile: PakFile FullDirectoryIndexSize=94561
+LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile '../../../RMUA/Content/Paks/RMUA-LinuxNoEditor.pak' (chunk index -1, root '../../../') mounted
+LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:../../../ File:../../../RMUA/Content/Paks/RMUA-LinuxNoEditor.pak)
+LogPakFile: OnPakFileMounted2Time == 0.000005
+LogPlatformFile: Using cached read wrapper
+LogTaskGraph: Started task graph with 4 named threads and 16 total threads with 3 sets of task threads.
+LogICUInternationalization: ICU TimeZone Detection - Raw Offset: +0:00, Platform Override: ''
+LogInit: Display: Loading text-based GConfig....
+LogPluginManager: Mounting plugin AirSim
+LogPluginManager: Mounting plugin PhysXVehicles
+LogPluginManager: Mounting plugin AirSimROS
+LogPluginManager: Mounting plugin Paper2D
+LogPluginManager: Mounting plugin AISupport
+LogPluginManager: Mounting plugin EnvironmentQueryEditor
+LogPluginManager: Mounting plugin LightPropagationVolume
+LogPluginManager: Mounting plugin CameraShakePreviewer
+LogPluginManager: Mounting plugin GameplayCameras
+LogPluginManager: Mounting plugin TemplateSequence
+LogPluginManager: Mounting plugin LevelSequenceEditor
+LogPluginManager: Mounting plugin OodleData
+LogPluginManager: Mounting plugin OodleNetwork
+LogPluginManager: Mounting plugin AnimationSharing
+LogPluginManager: Mounting plugin SignificanceManager
+LogPluginManager: Mounting plugin PluginUtils
+LogPluginManager: Mounting plugin PropertyAccessEditor
+LogPluginManager: Mounting plugin UObjectPlugin
+LogPluginManager: Mounting plugin AssetManagerEditor
+LogPluginManager: Mounting plugin FacialAnimation
+LogPluginManager: Mounting plugin GeometryMode
+LogPluginManager: Mounting plugin SpeedTreeImporter
+LogPluginManager: Mounting plugin DatasmithContent
+LogPluginManager: Mounting plugin VariantManagerContent
+LogPluginManager: Mounting plugin AlembicImporter
+LogPluginManager: Mounting plugin GeometryCache
+LogPluginManager: Mounting plugin AutomationUtils
+LogPluginManager: Mounting plugin ScreenshotTools
+LogPluginManager: Mounting plugin BackChannel
+LogPluginManager: Mounting plugin ChaosCloth
+LogPluginManager: Mounting plugin ChaosClothEditor
+LogPluginManager: Mounting plugin ChaosEditor
+LogPluginManager: Mounting plugin PlanarCut
+LogPluginManager: Mounting plugin GeometryProcessing
+LogPluginManager: Mounting plugin EditableMesh
+LogPluginManager: Mounting plugin GeometryCollectionPlugin
+LogPluginManager: Mounting plugin ProceduralMeshComponent
+LogPluginManager: Mounting plugin ChaosSolverPlugin
+LogPluginManager: Mounting plugin ChaosNiagara
+LogPluginManager: Mounting plugin Niagara
+LogPluginManager: Mounting plugin PythonScriptPlugin
+LogPluginManager: Mounting plugin CharacterAI
+LogPluginManager: Mounting plugin MotoSynth
+LogPluginManager: Mounting plugin PlatformCrypto
+LogPluginManager: Mounting plugin AvfMedia
+LogPluginManager: Mounting plugin ImgMedia
+LogPluginManager: Mounting plugin MediaCompositing
+LogPluginManager: Mounting plugin WmfMedia
+LogPluginManager: Mounting plugin MeshPainting
+LogPluginManager: Mounting plugin TcpMessaging
+LogPluginManager: Mounting plugin UdpMessaging
+LogPluginManager: Mounting plugin ActorSequence
+LogPluginManager: Mounting plugin MatineeToLevelSequence
+LogPluginManager: Mounting plugin OnlineSubsystem
+LogPluginManager: Mounting plugin OnlineSubsystemNull
+LogPluginManager: Mounting plugin OnlineSubsystemUtils
+LogPluginManager: Mounting plugin LauncherChunkInstaller
+LogPluginManager: Mounting plugin ActorLayerUtilities
+LogPluginManager: Mounting plugin AndroidPermission
+LogPluginManager: Mounting plugin AppleImageUtils
+LogPluginManager: Mounting plugin ArchVisCharacter
+LogPluginManager: Mounting plugin AssetTags
+LogPluginManager: Mounting plugin AudioCapture
+LogPluginManager: Mounting plugin CableComponent
+LogPluginManager: Mounting plugin ChunkDownloader
+LogPluginManager: Mounting plugin CustomMeshComponent
+LogPluginManager: Mounting plugin ExampleDeviceProfileSelector
+LogPluginManager: Mounting plugin GooglePAD
+LogPluginManager: Mounting plugin LinuxDeviceProfileSelector
+LogPluginManager: Mounting plugin LocationServicesBPLibrary
+LogPluginManager: Mounting plugin MobilePatchingUtils
+LogPluginManager: Mounting plugin RuntimePhysXCooking
+LogPluginManager: Mounting plugin SoundFields
+LogPluginManager: Mounting plugin Synthesis
+LogPluginManager: Mounting plugin AudioSynesthesia
+LogPluginManager: Mounting plugin WebMMoviePlayer
+LogPluginManager: Mounting plugin WebMMedia
+LogInit: Using libcurl 7.65.3-DEV
+LogInit:  - built for x86_64-unknown-linux-gnu
+LogInit:  - supports SSL with OpenSSL/1.1.1c
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_TLSAUTH_SRP
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - MaxHostConnections = 16  - Libcurl will limit the number of connections to a host
+LogInit:  - LocalHostAddr = Default
+LogInit:  - BufferSize = 65536
+LogOnline: OSS: Creating online subsystem instance for: NULL
+LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
+LogInit: Build: ++UE4+Release-4.27-CL-0
+LogInit: Engine Version: 4.27.2-0+++UE4+Release-4.27
+LogInit: Compatible Engine Version: 4.27.0-0+++UE4+Release-4.27
+LogInit: Net CL: 0
+LogInit: OS: GenericOSVersionLabel (GenericOSSubVersionLabel), CPU: 12th Gen Intel(R) Core(TM) i7-12700H, GPU: GenericGPUBrand
+LogInit: Compiled (64-bit): Jan 28 2026 12:56:35
+LogInit: Compiled with Clang: 11.0.1 
+LogInit: Build Configuration: Shipping
+LogInit: Branch Name: ++UE4+Release-4.27
+LogInit: Command Line:  seed 2024 -nullrhi -settings=/configs/settings.json
+LogInit: Base Directory: /sim/Build/LinuxNoEditor/RMUA/Binaries/Linux/
+LogInit: Allocator: binned2
+LogInit: Installed Engine Build: 1
+LogInit: Presizing for max 2097152 objects, including 1 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Engine.ini]
+LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+LogStreaming: Display: Async Loading initialized: Event Driven Loader: true, Async Loading Thread: false, Async Post Load: true
+LogInit: Object subsystem initialized
+LogConfig: Setting CVar [[r.setres:1280x720]]
+LogConfig: Setting CVar [[fx.NiagaraAllowRuntimeScalabilityChanges:1]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[r.setres:1280x720]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[fx.NiagaraAllowRuntimeScalabilityChanges:1]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Engine.ini]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Engine.ini]
+[2026.11.03-18.31.42:472][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Engine.ini]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Engine.ini]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:25165824]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[gc.MultithreadedDestructionEnabled:1]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Engine.ini]
+[2026.11.03-18.31.42:472][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2026.11.03-18.31.42:472][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.AnisotropicMaterials:1]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountMaxPerSlice:4]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:128.0]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:128.0]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.SkyLight.RealTimeReflectionCapture:1]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[fx.Niagara.QualityLevel:3]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.IntegrationType:2]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:4]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.HairStrands.Visibility.MSAA.SamplePerPixel:4]]
+[2026.11.03-18.31.42:473][  0]LogLinux: Selected Device Profile: [LinuxNoEditor]
+[2026.11.03-18.31.42:473][  0]LogInit: Applying CVar settings loaded from the selected device profile: [LinuxNoEditor]
+[2026.11.03-18.31.42:473][  0]LogHAL: Display: Platform has ~ 4 GB [41855913984 / 4294967296 / 39], which maps to Smallest [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
+[2026.11.03-18.31.42:473][  0]LogInit: Going up to parent DeviceProfile [Linux]
+[2026.11.03-18.31.42:473][  0]LogInit: Going up to parent DeviceProfile []
+[2026.11.03-18.31.42:473][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.AnisotropicMaterials:1]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountMaxPerSlice:4]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:128.0]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:128.0]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2026.11.03-18.31.42:473][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2026.11.03-18.31.42:474][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2026.11.03-18.31.42:474][  0]LogConfig: Setting CVar [[r.SkyLight.RealTimeReflectionCapture:1]]
+[2026.11.03-18.31.42:474][  0]LogConfig: Setting CVar [[fx.Niagara.QualityLevel:3]]
+[2026.11.03-18.31.42:474][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.03-18.31.42:474][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2026.11.03-18.31.42:474][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2026.11.03-18.31.42:474][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.03-18.31.42:474][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.IntegrationType:2]]
+[2026.11.03-18.31.42:474][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:4]]
+[2026.11.03-18.31.42:474][  0]LogConfig: Setting CVar [[r.HairStrands.Visibility.MSAA.SamplePerPixel:4]]
+[2026.11.03-18.31.42:474][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Engine.ini]
+[2026.11.03-18.31.42:474][  0]LogConfig: Setting CVar [[g.TimeoutForBlockOnRenderFence:60000]]
+[2026.11.03-18.31.42:474][  0]LogInit: Unix hardware info:
+[2026.11.03-18.31.42:474][  0]LogInit:  - we are the first instance of this executable
+[2026.11.03-18.31.42:474][  0]LogInit:  - this process' id (pid) is 110, parent process' id (ppid) is 108
+[2026.11.03-18.31.42:474][  0]LogInit:  - we are not running under debugger
+[2026.11.03-18.31.42:474][  0]LogInit:  - machine network name is 'tianbot'
+[2026.11.03-18.31.42:474][  0]LogInit:  - user name is 'euid1000' (euid1000)
+[2026.11.03-18.31.42:474][  0]LogInit:  - we're logged in locally
+[2026.11.03-18.31.42:474][  0]LogInit:  - we're running without rendering
+[2026.11.03-18.31.42:474][  0]LogInit:  - CPU: GenuineIntel '12th Gen Intel(R) Core(TM) i7-12700H' (signature: 0x906A3)
+[2026.11.03-18.31.42:474][  0]LogInit:  - Number of physical cores available for the process: 14
+[2026.11.03-18.31.42:474][  0]LogInit:  - Number of logical cores available for the process: 20
+[2026.11.03-18.31.42:474][  0]LogInit:  - Cache line size: 64
+[2026.11.03-18.31.42:474][  0]LogInit:  - Memory allocator used: binned2
+[2026.11.03-18.31.42:474][  0]LogInit:  - This binary is optimized with LTO: no, PGO: no, instrumented for PGO data collection: no
+[2026.11.03-18.31.42:474][  0]LogInit:  - This is an internal build.
+[2026.11.03-18.31.42:474][  0]LogCore: Benchmarking clocks:
+[2026.11.03-18.31.42:474][  0]LogCore:  - CLOCK_MONOTONIC (id=1) can sustain 68833632 (68834K, 69M) calls per second without zero deltas.
+[2026.11.03-18.31.42:474][  0]LogCore:  - CLOCK_MONOTONIC_RAW (id=4) can sustain 69118554 (69119K, 69M) calls per second without zero deltas.
+[2026.11.03-18.31.42:474][  0]LogCore:  - CLOCK_MONOTONIC_COARSE (id=6) can sustain 183912670 (183913K, 184M) calls per second with 99.999451% zero deltas.
+[2026.11.03-18.31.42:474][  0]LogCore: Selected clock_id 4 (CLOCK_MONOTONIC_RAW) since it is the fastest support clock without zero deltas.
+[2026.11.03-18.31.42:474][  0]LogInit: Unix-specific commandline switches:
+[2026.11.03-18.31.42:474][  0]LogInit:  -ansimalloc - use malloc()/free() from libc (useful for tools like valgrind and electric fence)
+[2026.11.03-18.31.42:474][  0]LogInit:  -jemalloc - use jemalloc for all memory allocation
+[2026.11.03-18.31.42:474][  0]LogInit:  -binnedmalloc - use binned malloc  for all memory allocation
+[2026.11.03-18.31.42:474][  0]LogInit:  -filemapcachesize=NUMBER - set the size for case-sensitive file mapping cache
+[2026.11.03-18.31.42:474][  0]LogInit:  -useksm - uses kernel same-page mapping (KSM) for mapped memory (OFF)
+[2026.11.03-18.31.42:474][  0]LogInit:  -ksmmergeall - marks all mmap'd memory pages suitable for KSM (OFF)
+[2026.11.03-18.31.42:474][  0]LogInit:  -preloadmodulesymbols - Loads the main module symbols file into memory (OFF)
+[2026.11.03-18.31.42:474][  0]LogInit:  -sigdfl=SIGNAL - Allows a specific signal to be set to its default handler rather then ignoring the signal
+[2026.11.03-18.31.42:474][  0]LogInit:  -httpproxy=ADDRESS:PORT - redirects HTTP requests to a proxy (only supported if compiled with libcurl)
+[2026.11.03-18.31.42:474][  0]LogInit:  -reuseconn - allow libcurl to reuse HTTP connections (only matters if compiled with libcurl)
+[2026.11.03-18.31.42:474][  0]LogInit:  -virtmemkb=NUMBER - sets process virtual memory (address space) limit (overrides VirtualMemoryLimitInKB value from .ini)
+[2026.11.03-18.31.42:474][  0]LogInit:  - Physical RAM available (not considering process quota): 39 GB (39916 MB, 40874916 KB, 41855913984 bytes)
+[2026.11.03-18.31.42:474][  0]LogInit:  - VirtualMemoryAllocator pools will grow at scale 1.4
+[2026.11.03-18.31.42:474][  0]LogInit:  - MemoryRangeDecommit() will be a no-op (re-run with -vmapoolevict to change)
+[2026.11.03-18.31.42:536][  0]LogInit: Physics initialised using underlying interface: PhysX
+[2026.11.03-18.31.42:536][  0]LogInit: Using OS detected language (en-US-POSIX).
+[2026.11.03-18.31.42:536][  0]LogInit: Using OS detected locale (en-US-POSIX).
+[2026.11.03-18.31.42:536][  0]LogTextLocalizationManager: No specific localization for 'en-US-POSIX' exists, so the 'en' localization will be used.
+[2026.11.03-18.31.42:551][  0]LogInit: Not creating cursor resources due to headless application.
+[2026.11.03-18.31.42:552][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2026.11.03-18.31.42:552][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2026.11.03-18.31.42:553][  0]LogRendererCore: Ray tracing is disabled. Reason: r.RayTracing=0.
+[2026.11.03-18.31.42:554][  0]LogSlate: Using FreeType 2.10.0
+[2026.11.03-18.31.42:554][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2026.11.03-18.31.42:556][  0]LogInit: Using OS detected language (en-US-POSIX).
+[2026.11.03-18.31.42:556][  0]LogInit: Using OS detected locale (en-US-POSIX).
+[2026.11.03-18.31.42:556][  0]LogTextLocalizationManager: No localization for 'en-US-POSIX' exists, so 'en' will be used for the language.
+[2026.11.03-18.31.42:556][  0]LogTextLocalizationManager: No localization for 'en-US-POSIX' exists, so 'en' will be used for the locale.
+[2026.11.03-18.31.42:556][  0]LogSlate: Warning: FontCache flush requested. Reason: Culture for localization was changed
+[2026.11.03-18.31.42:556][  0]LogAssetRegistry: FAssetRegistry took 0.0002 seconds to start up
+[2026.11.03-18.31.42:589][  0]LogTextLocalizationManager: Compacting localization data took   1.14ms
+[2026.11.03-18.31.42:589][  0]LogStreaming: Display: FlushAsyncLoading: 1 QueuedPackages, 0 AsyncPackages
+[2026.11.03-18.31.42:589][  0]LogPackageLocalizationCache: Processed 20 localized package path(s) for 1 prioritized culture(s) in 0.000026 seconds
+[2026.11.03-18.31.42:589][  0]LogPakFile: New pak file ../../../RMUA/Content/Paks/RMUA-LinuxNoEditor.pak added to pak precacher.
+[2026.11.03-18.31.42:593][  0]LogSerialization: Display: AllowBulkDataInIoStore: 'true'
+[2026.11.03-18.31.42:593][  0]LogLinux: Selected Device Profile: [LinuxNoEditor]
+[2026.11.03-18.31.42:594][  0]LogInit: Active device profile: [0x7fea2bb691c0][0x7fea2af39250 49] LinuxNoEditor
+[2026.11.03-18.31.42:594][  0]LogInit: Profiles: [0x7fea2bb68ec0][0x7fea33180010 49] Linux, [0x7fea2bb691c0][0x7fea2af39250 49] LinuxNoEditor, 
+[2026.11.03-18.31.42:596][  0]LogNetVersion: RMUA 1.0.0, NetCL: 0, EngineNetVer: 17, GameNetVer: 0 (Checksum: 41731042)
+[2026.11.03-18.31.42:627][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2026.11.03-18.31.42:627][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2026.11.03-18.31.42:627][  0]LogTemp: Circle 构造函数调用
+[2026.11.03-18.31.42:627][  0]LogTemp: Circle 构造函数调用
+[2026.11.03-18.31.42:627][  0]LogTemp: Circle 构造函数调用
+[2026.11.03-18.31.42:635][  0]LogTemp: StartupModule: AirSim plugin
+[2026.11.03-18.31.42:659][  0]LogTemp: AirSimROS Loaded.
+[2026.11.03-18.31.42:659][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2026.11.03-18.31.42:662][  0]LogUObjectArray: 15078 objects as part of root set at end of initial load.
+[2026.11.03-18.31.42:662][  0]LogUObjectArray: 2 objects are not in the root set, but can never be destroyed because they are in the DisregardForGC set.
+[2026.11.03-18.31.42:662][  0]LogUObjectAllocator: 3117992 out of 0 bytes used by permanent object pool.
+[2026.11.03-18.31.42:662][  0]LogUObjectArray: CloseDisregardForGC: 15078/15078 objects in disregard for GC pool
+[2026.11.03-18.31.42:663][  0]LogEngine: Initializing Engine...
+ALSA lib confmisc.c:767:(parse_card) cannot find card '0'
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_card_driver returned error: No such file or directory
+ALSA lib confmisc.c:392:(snd_func_concat) error evaluating strings
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_concat returned error: No such file or directory
+ALSA lib confmisc.c:1246:(snd_func_refer) error evaluating name
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5220:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2642:(snd_pcm_open_noupdate) Unknown PCM default
+ALSA lib confmisc.c:767:(parse_card) cannot find card '0'
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_card_driver returned error: No such file or directory
+ALSA lib confmisc.c:392:(snd_func_concat) error evaluating strings
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_concat returned error: No such file or directory
+ALSA lib confmisc.c:1246:(snd_func_refer) error evaluating name
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5220:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2642:(snd_pcm_open_noupdate) Unknown PCM default
+[2026.11.03-18.31.42:664][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.000 s
+[2026.11.03-18.31.42:709][  0]LogInit: Initializing FReadOnlyCVARCache
+[2026.11.03-18.31.42:709][  0]LogAudio: Display: Initializing Audio Device Manager...
+[2026.11.03-18.31.42:709][  0]LogAudio: Display: Loading Default Audio Settings Objects...
+[2026.11.03-18.31.42:709][  0]LogAudio: Display: No default SoundConcurrencyObject specified (or failed to load).
+[2026.11.03-18.31.42:709][  0]LogAudio: Display: Audio Device Manager Initialized
+[2026.11.03-18.31.42:709][  0]LogAudio: Display: Creating Audio Device:                 Id: 1, Scope: Shared, Realtime: True
+[2026.11.03-18.31.42:709][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2026.11.03-18.31.42:709][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2026.11.03-18.31.42:709][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2026.11.03-18.31.42:709][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2026.11.03-18.31.42:709][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2026.11.03-18.31.42:709][  0]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2026.11.03-18.31.42:709][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2026.11.03-18.31.42:709][  0]LogAudio: Display: AudioDevice MaxSources: 32
+[2026.11.03-18.31.42:709][  0]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2026.11.03-18.31.42:709][  0]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2026.11.03-18.31.42:709][  0]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2026.11.03-18.31.42:709][  0]LogAudioMixer: Display: Initializing audio mixer.
+[2026.11.03-18.31.42:731][  0]LogAudioMixerSDL: Display: Initialized SDL using alsa platform API backend.
+[2026.11.03-18.31.42:731][  0]LogAudioMixerSDL: Error: ALSA: Couldn't open audio device: No such file or directory
+[2026.11.03-18.31.42:731][  0]LogAudioMixerSDL: Opening default audio device (device index -1)
+[2026.11.03-18.31.42:732][  0]LogAudioMixerSDL: Error: ALSA: Couldn't open audio device: No such file or directory
+[2026.11.03-18.31.42:732][  0]LogAudio: Warning: Could not initialize hardware. Tearing down anything that was set up during initialization
+[2026.11.03-18.31.42:835][  0]LogAudio: Warning: FAudioDevice::Init Failed!
+[2026.11.03-18.31.42:835][  0]LogAudio: Display: Destroying Audio Device 1: could not be initialized. Check AudioDeviceModuleName and AudioMixerModuleName in [Platform]Engine.ini.
+[2026.11.03-18.31.42:835][  0]LogAudio: Display: Main audio device could not be initialized. Please check the value for AudioDeviceModuleName and AudioMixerModuleName in [Platform]Engine.ini.
+[2026.11.03-18.31.42:835][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2026.11.03-18.31.42:835][  0]LogInit: Texture streaming: Disabled
+[2026.11.03-18.31.42:842][  0]LogTemp: Warning: Air Sim Set Event System Success
+[2026.11.03-18.31.42:842][  0]LogTemp: Warning: Air Sim ROS Set Event System Success
+[2026.11.03-18.31.42:842][  0]LogTemp: 当前比赛模式为 2！
+[2026.11.03-18.31.42:842][  0]LogTemp: 当前版本号为 12.0.0.5！
+[2026.11.03-18.31.42:842][  0]LogTemp: Warning: App Init End !!! 2026-11-03 18:31:42 127.0.0.2
+[2026.11.03-18.31.42:842][  0]LogAudio: Display: Creating Audio Device:                 Id: 2, Scope: Shared, Realtime: True
+[2026.11.03-18.31.42:842][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2026.11.03-18.31.42:842][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2026.11.03-18.31.42:842][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2026.11.03-18.31.42:842][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2026.11.03-18.31.42:842][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2026.11.03-18.31.42:842][  0]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2026.11.03-18.31.42:842][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2026.11.03-18.31.42:842][  0]LogAudio: Display: AudioDevice MaxSources: 32
+ALSA lib confmisc.c:767:(parse_card) cannot find card '0'
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_card_driver returned error: No such file or directory
+ALSA lib confmisc.c:392:(snd_func_concat) error evaluating strings
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_concat returned error: No such file or directory
+ALSA lib confmisc.c:1246:(snd_func_refer) error evaluating name
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5220:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2642:(snd_pcm_open_noupdate) Unknown PCM default
+ALSA lib confmisc.c:767:(parse_card) cannot find card '0'
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_card_driver returned error: No such file or directory
+ALSA lib confmisc.c:392:(snd_func_concat) error evaluating strings
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_concat returned error: No such file or directory
+ALSA lib confmisc.c:1246:(snd_func_refer) error evaluating name
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5220:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2642:(snd_pcm_open_noupdate) Unknown PCM default
+Resizing viewport due to setres change, 1280 x 720
+[2026.11.03-18.31.42:842][  0]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2026.11.03-18.31.42:842][  0]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2026.11.03-18.31.42:842][  0]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2026.11.03-18.31.42:842][  0]LogAudioMixer: Display: Initializing audio mixer.
+[2026.11.03-18.31.42:851][  0]LogAudioMixerSDL: Display: Initialized SDL using alsa platform API backend.
+[2026.11.03-18.31.42:852][  0]LogAudioMixerSDL: Error: ALSA: Couldn't open audio device: No such file or directory
+[2026.11.03-18.31.42:852][  0]LogAudioMixerSDL: Opening default audio device (device index -1)
+[2026.11.03-18.31.42:852][  0]LogAudioMixerSDL: Error: ALSA: Couldn't open audio device: No such file or directory
+[2026.11.03-18.31.42:852][  0]LogAudio: Warning: Could not initialize hardware. Tearing down anything that was set up during initialization
+[2026.11.03-18.31.42:953][  0]LogAudio: Warning: FAudioDevice::Init Failed!
+[2026.11.03-18.31.42:953][  0]LogAudio: Display: Destroying Audio Device 2: could not be initialized. Check AudioDeviceModuleName and AudioMixerModuleName in [Platform]Engine.ini.
+[2026.11.03-18.31.42:953][  0]LogEngine: GameWindow did not exist.  Was created
+[2026.11.03-18.31.42:954][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2026.11.03-18.31.42:954][  0]LogInit: Display: Game Engine Initialized.
+[2026.11.03-18.31.42:954][  0]LogInit: Display: Starting Game.
+[2026.11.03-18.31.42:954][  0]LogNet: Browse: /Game/Maps/RMUA2024OL/RMUA2024Lobby?Name=Player
+[2026.11.03-18.31.42:954][  0]LogLoad: LoadMap: /Game/Maps/RMUA2024OL/RMUA2024Lobby?Name=Player
+[2026.11.03-18.31.42:954][  0]LogWorld: BeginTearingDown for /Temp/Untitled_0
+[2026.11.03-18.31.42:954][  0]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2026.11.03-18.31.42:954][  0]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.11.03-18.31.42:955][  0]LogUObjectHash: Compacting FUObjectHashTables data took   0.27ms
+[2026.11.03-18.31.42:960][  0]LogAIModule: Creating AISystem for world RMUA2024Lobby
+[2026.11.03-18.31.42:960][  0]LogLoad: Game class is 'GameModeBase'
+[2026.11.03-18.31.42:960][  0]LogWorld: Bringing World /Game/Maps/RMUA2024OL/RMUA2024Lobby.RMUA2024Lobby up for play (max tick rate 0) at 2026.11.03-18.31.42
+[2026.11.03-18.31.42:960][  0]LogWorld: Bringing up level for play took: 0.000123
+[2026.11.03-18.31.42:960][  0]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2026.11.03-18.31.42:961][  0]r.SetRes = "1280x720 w"
+[2026.11.03-18.31.42:961][  0]LogViewport: Display: Viewport HideCursorDuringCapture Changed, False -> True
+[2026.11.03-18.31.42:961][  0]LogViewport: Display: Viewport MouseCaptureMode Changed, NoCapture -> CaptureDuringMouseDown
+[2026.11.03-18.31.42:961][  0]LogLoad: Took 0.006933 seconds to LoadMap(/Game/Maps/RMUA2024OL/RMUA2024Lobby)
+[2026.11.03-18.31.42:974][  0]LogInit: Display: Engine is initialized. Leaving FEngineLoop::Init()
+[2026.11.03-18.31.42:974][  0]LogLoad: (Engine Initialization) Total time: 0.59 seconds
+[2026.11.03-18.31.47:974][453]LogNet: Browse: /Game/Maps/RMUA2024OL/RMUA2024OL1
+[2026.11.03-18.31.47:974][453]LogLoad: LoadMap: /Game/Maps/RMUA2024OL/RMUA2024OL1
+[2026.11.03-18.31.47:974][453]LogWorld: BeginTearingDown for /Game/Maps/RMUA2024OL/RMUA2024Lobby
+[2026.11.03-18.31.47:974][453]LogWorld: UWorld::CleanupWorld for RMUA2024Lobby, bSessionEnded=true, bCleanupResources=true
+[2026.11.03-18.31.47:974][453]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.11.03-18.31.47:975][453]LogUObjectHash: Compacting FUObjectHashTables data took   0.34ms
+[2026.11.03-18.31.47:975][453]LogStreaming: Display: FlushAsyncLoading: 1 QueuedPackages, 0 AsyncPackages
+[2026.11.03-18.31.48:423][453]LogPakFile: Precache HighWater 16MB
+
+[2026.11.03-18.31.48:423][453]LogAIModule: Creating AISystem for world RMUA2024OL1
+[2026.11.03-18.31.48:423][453]LogLoad: Game class is 'AirSimGameMode'
+[2026.11.03-18.31.48:455][453]LogWorld: Bringing World /Game/Maps/RMUA2024OL/RMUA2024OL1.RMUA2024OL1 up for play (max tick rate 0) at 2026.11.03-18.31.48
+[2026.11.03-18.31.48:456][453]LogWorld: Bringing up level for play took: 0.032252
+[2026.11.03-18.31.48:477][453]LogPackageName: SearchForPackageOnDisk took   0.019s, but failed to resolve .
+[2026.11.03-18.31.48:477][453]r.CustomDepth = "3"
+[2026.11.03-18.31.48:479][453]LogActor: Warning: BP_CameraDirector_C /Game/Maps/RMUA2024OL/RMUA2024OL1.RMUA2024OL1:PersistentLevel.CameraDirector has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2026.11.03-18.31.48:497][453]LogScript: Warning: Script Msg: Attempted to access index 0 from array 'CallFunc_GetAllActorsOfClass_OutActors' of length 0 in '/AirSim/Weather/WeatherFX/WeatherActor.WeatherActor_C:ExecuteUbergraph_WeatherActor'!
+[2026.11.03-18.31.48:498][453]LogTemp: Warning: No Drone API
+[2026.11.03-18.31.48:498][453]LogTemp: drone_1
+drone_1
+Resizing viewport due to setres change, 1280 x 720
+[Detaching after vfork from child process 421]
+
+Thread 134 "RMUA-Linux-Ship" received signal SIGSEGV, Segmentation fault.
+[Switching to Thread 0x7fe89a7fc700 (LWP 308)]
+0x0000000003053eaf in ?? ()
+
+RMUA_GDB_STOP: signal or process exit; inspect reason above
+	Using the running image of child Thread 0x7fe89a7fc700 (LWP 308).
+Program stopped at 0x3053eaf.
+It stopped with signal SIGSEGV, Segmentation fault.
+rax            0x1e3100200         8104444416
+rbx            0x35cd4d20          902647072
+rcx            0x7fea240ffa1b      140643604101659
+rdx            0x3c                60
+rsi            0x7fea3e670080      140644046012544
+rdi            0x7fea3e670080      140644046012544
+rbp            0x200               0x200
+rsp            0x7fe89a7fb070      0x7fe89a7fb070
+r8             0x0                 0
+r9             0x0                 0
+r10            0x0                 0
+r11            0x282               642
+r12            0x1e3100200         8104444416
+r13            0x7fea2de281e0      140643768893920
+r14            0x10                16
+r15            0x35cd4ec8          902647496
+rip            0x3053eaf           0x3053eaf
+eflags         0x10206             [ PF IF RF ]
+cs             0x33                51
+ss             0x2b                43
+ds             0x0                 0
+es             0x0                 0
+fs             0x0                 0
+gs             0x0                 0
+   0x3053ea3:	mov    %r12,%rax
+   0x3053ea6:	mov    0x10(%rbx),%cl
+   0x3053ea9:	mov    %r12,%rdx
+   0x3053eac:	shr    %cl,%rdx
+=> 0x3053eaf:	mov    (%r12),%r12
+   0x3053eb3:	mov    0x8(%rbx),%cl
+   0x3053eb6:	mov    0x20(%rbx),%esi
+   0x3053eb9:	add    $0xffffffff,%esi
+#0  0x0000000003053eaf in  ()
+#1  0x0000000003053d9d in  ()
+#2  0x0000000002fd4666 in operator delete(void*) ()
+#3  0x00007fea3d9ce2b4 in __gnu_cxx::new_allocator<unsigned long>::deallocate(unsigned long*, unsigned long) () at /sim/Build/LinuxNoEditor/RMUA/Binaries/Linux/../../Plugins/AirSimROS/Binaries/Linux/libairsimros.so
+#4  0x00007fea3d9c5003 in std::allocator_traits<std::allocator<unsigned long> >::deallocate(std::allocator<unsigned long>&, unsigned long*, unsigned long) () at /sim/Build/LinuxNoEditor/RMUA/Binaries/Linux/../../Plugins/AirSimROS/Binaries/Linux/libairsimros.so
+#5  0x00007fea3d9b9c10 in std::_Deque_base<unsigned long, std::allocator<unsigned long> >::_M_deallocate_node(unsigned long*) () at /sim/Build/LinuxNoEditor/RMUA/Binaries/Linux/../../Plugins/AirSimROS/Binaries/Linux/libairsimros.so
+#6  0x00007fea3d9ae705 in std::deque<unsigned long, std::allocator<unsigned long> >::_M_pop_front_aux() () at /sim/Build/LinuxNoEditor/RMUA/Binaries/Linux/../../Plugins/AirSimROS/Binaries/Linux/libairsimros.so
+#7  0x00007fea3d99dc30 in std::deque<unsigned long, std::allocator<unsigned long> >::pop_front() () at /sim/Build/LinuxNoEditor/RMUA/Binaries/Linux/../../Plugins/AirSimROS/Binaries/Linux/libairsimros.so
+#8  0x00007fea3d984cc9 in airsim_ros::record_frequency_data(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) () at /sim/Build/LinuxNoEditor/RMUA/Binaries/Linux/../../Plugins/AirSimROS/Binaries/Linux/libairsimros.so
+#9  0x00007fea3d98f678 in airsim_ros::AirSimROSFrame() () at /sim/Build/LinuxNoEditor/RMUA/Binaries/Linux/../../Plugins/AirSimROS/Binaries/Linux/libairsimros.so
+#10 0x00000000026ece6b in _start ()
+  Id   Target Id                                         Frame 
+  1    Thread 0x7fea339bc0c0 (LWP 110) "RMUA-Linux-Ship" 0x00007fea3beb023f in __GI___clock_nanosleep (clock_id=clock_id@entry=0, flags=flags@entry=0, req=req@entry=0x7ffe54ef2d30, rem=rem@entry=0x0) at ../sysdeps/unix/sysv/linux/clock_nanosleep.c:78
+  2    Thread 0x7fea3290f700 (LWP 169) "TaskGraphNP 0"   futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea329bae74) at ../sysdeps/nptl/futex-internal.h:183
+  3    Thread 0x7fea3289f700 (LWP 170) "TaskGraphNP 1"   futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea329bad74) at ../sysdeps/nptl/futex-internal.h:183
+  4    Thread 0x7fea302cc700 (LWP 171) "TaskGraphNP 2"   futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea329bac70) at ../sysdeps/nptl/futex-internal.h:183
+  5    Thread 0x7fea3026b700 (LWP 172) "TaskGraphNP 3"   futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea329bab74) at ../sysdeps/nptl/futex-internal.h:183
+  6    Thread 0x7fea3020a700 (LWP 173) "TaskGraphHP 4"   futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea329bcb70) at ../sysdeps/nptl/futex-internal.h:183
+  7    Thread 0x7fea3019f700 (LWP 174) "TaskGraphHP 5"   futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea329bca74) at ../sysdeps/nptl/futex-internal.h:183
+  8    Thread 0x7fea3012f700 (LWP 175) "TaskGraphHP 6"   futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea329bc970) at ../sysdeps/nptl/futex-internal.h:183
+  9    Thread 0x7fea300bf700 (LWP 176) "TaskGraphHP 7"   futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea329bc874) at ../sysdeps/nptl/futex-internal.h:183
+  10   Thread 0x7fea3004f700 (LWP 177) "TaskGraphBP 8"   futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea329bc770) at ../sysdeps/nptl/futex-internal.h:183
+  11   Thread 0x7fea2ffee700 (LWP 178) "TaskGraphBP 9"   futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea329bc670) at ../sysdeps/nptl/futex-internal.h:183
+  12   Thread 0x7fea2ff8d700 (LWP 179) "TaskGraphBP 10"  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea329bc570) at ../sysdeps/nptl/futex-internal.h:183
+  13   Thread 0x7fea2ff2c700 (LWP 180) "TaskGraphBP 11"  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea329bc470) at ../sysdeps/nptl/futex-internal.h:183
+  14   Thread 0x7fea2f41f700 (LWP 181) "PoolThread 0"    futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea329bd3f0) at ../sysdeps/nptl/futex-internal.h:183
+  15   Thread 0x7fea2f3fe700 (LWP 182) "PoolThread 1"    futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea329bd470) at ../sysdeps/nptl/futex-internal.h:183
+  16   Thread 0x7fea2f3dd700 (LWP 183) "PoolThread 2"    futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea329bd4f0) at ../sysdeps/nptl/futex-internal.h:183
+  17   Thread 0x7fea2f3bc700 (LWP 184) "PoolThread 3"    futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea329bd574) at ../sysdeps/nptl/futex-internal.h:183
+  18   Thread 0x7fea2f39b700 (LWP 185) "PoolThread 4"    futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea329bd5f0) at ../sysdeps/nptl/futex-internal.h:183
+  19   Thread 0x7fea2f37a700 (LWP 186) "PoolThread 5"    futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea329bd670) at ../sysdeps/nptl/futex-internal.h:183
+  20   Thread 0x7fea2dd49700 (LWP 187) "FAsyncW-er_RMUA" 0x00007fea3beb023f in __GI___clock_nanosleep (clock_id=clock_id@entry=0, flags=flags@entry=0, req=req@entry=0x7fea2dd484e0, rem=rem@entry=0x0) at ../sysdeps/unix/sysv/linux/clock_nanosleep.c:78
+  21   Thread 0x7fea2dd87700 (LWP 190) "HttpManager"     0x00007fea3beb023f in __GI___clock_nanosleep (clock_id=clock_id@entry=0, flags=flags@entry=0, req=req@entry=0x7fea2dd86470, rem=rem@entry=0x0) at ../sysdeps/unix/sysv/linux/clock_nanosleep.c:78
+  22   Thread 0x7fea2ca47700 (LWP 191) "OnlineA-ance(1)" futex_abstimed_wait_cancelable (private=<optimized out>, abstime=0x7fea2ca464d8, clockid=<optimized out>, expected=0, futex_word=0x7fea33267670) at ../sysdeps/nptl/futex-internal.h:320
+  23   Thread 0x7fea2bf25700 (LWP 192) "PoolThread 6"    futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea3326a070) at ../sysdeps/nptl/futex-internal.h:183
+  24   Thread 0x7fea2bf04700 (LWP 193) "PoolThread 7"    futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea33269ff0) at ../sysdeps/nptl/futex-internal.h:183
+  25   Thread 0x7fea2bee3700 (LWP 194) "PoolThread 8"    futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea33269f74) at ../sysdeps/nptl/futex-internal.h:183
+  26   Thread 0x7fea2bec2700 (LWP 195) "PoolThread 9"    futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea33269ef4) at ../sysdeps/nptl/futex-internal.h:183
+  27   Thread 0x7fea23195700 (LWP 197) "FMediaTicker"    futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea329bebf0) at ../sysdeps/nptl/futex-internal.h:183
+  30   Thread 0x7fea2df0f700 (LWP 201) "PoolThread 10"   futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2be37570) at ../sysdeps/nptl/futex-internal.h:183
+  31   Thread 0x7fea2deee700 (LWP 202) "PoolThread 11"   futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2be374f0) at ../sysdeps/nptl/futex-internal.h:183
+  32   Thread 0x7fea2decd700 (LWP 203) "PoolThread 12"   futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2be37470) at ../sysdeps/nptl/futex-internal.h:183
+  33   Thread 0x7fea2deac700 (LWP 204) "PoolThread 13"   futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2be394f0) at ../sysdeps/nptl/futex-internal.h:183
+  34   Thread 0x7fea2de8b700 (LWP 205) "PoolThread 14"   futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2be39470) at ../sysdeps/nptl/futex-internal.h:183
+  35   Thread 0x7fea2de6a700 (LWP 206) "PoolThread 15"   futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2be393f0) at ../sysdeps/nptl/futex-internal.h:183
+  36   Thread 0x7fea2de1f700 (LWP 207) "PoolThread 16"   futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2be39370) at ../sysdeps/nptl/futex-internal.h:183
+  37   Thread 0x7fea2ddfe700 (LWP 208) "PoolThread 17"   futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2be392f0) at ../sysdeps/nptl/futex-internal.h:183
+  38   Thread 0x7fea2dddd700 (LWP 209) "PoolThread 18"   futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2be39270) at ../sysdeps/nptl/futex-internal.h:183
+  39   Thread 0x7fea2ddbc700 (LWP 210) "PoolThread 19"   futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2be391f0) at ../sysdeps/nptl/futex-internal.h:183
+  40   Thread 0x7fea2aef0700 (LWP 211) "PoolThread 20"   futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2be39170) at ../sysdeps/nptl/futex-internal.h:183
+  41   Thread 0x7fea2a1ff700 (LWP 212) "PoolThread 21"   futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2be390f0) at ../sysdeps/nptl/futex-internal.h:183
+  42   Thread 0x7fea2a1de700 (LWP 213) "PoolThread 22"   futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2be39070) at ../sysdeps/nptl/futex-internal.h:183
+  43   Thread 0x7fea2a1bd700 (LWP 214) "PoolThread 23"   futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2be38ff0) at ../sysdeps/nptl/futex-internal.h:183
+  46   Thread 0x7fea1f2a8700 (LWP 220) "FAsyncPurge"     futex_abstimed_wait_cancelable (private=<optimized out>, abstime=0x7fea1f2a74d8, clockid=<optimized out>, expected=0, futex_word=0x7fea2be38af4) at ../sysdeps/nptl/futex-internal.h:320
+  47   Thread 0x7fea1e096700 (LWP 221) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+  48   Thread 0x7fea1d895700 (LWP 222) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+  49   Thread 0x7fea1d094700 (LWP 223) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+  50   Thread 0x7fea1c893700 (LWP 224) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+  51   Thread 0x7fea19f3f700 (LWP 225) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+  52   Thread 0x7fea1973e700 (LWP 226) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+  53   Thread 0x7fea18f3d700 (LWP 227) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+  54   Thread 0x7fe9fbfff700 (LWP 228) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+  55   Thread 0x7fe9f3fff700 (LWP 229) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+  56   Thread 0x7fe9fb7fe700 (LWP 230) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+  57   Thread 0x7fe9faffd700 (LWP 231) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+  58   Thread 0x7fe9fa7fc700 (LWP 232) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+  59   Thread 0x7fe9f9ffb700 (LWP 233) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+  60   Thread 0x7fe9f97fa700 (LWP 234) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+  61   Thread 0x7fe9f8ff9700 (LWP 235) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+  62   Thread 0x7fe9f37fe700 (LWP 236) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+  63   Thread 0x7fe9f2ffd700 (LWP 237) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+  64   Thread 0x7fe9f27fc700 (LWP 238) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+  65   Thread 0x7fe9f1ffb700 (LWP 239) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+  66   Thread 0x7fe9f17fa700 (LWP 240) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+  67   Thread 0x7fe9f0ff9700 (LWP 241) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+  68   Thread 0x7fe9bbfff700 (LWP 242) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+  69   Thread 0x7fe9bb7fe700 (LWP 243) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+  70   Thread 0x7fe9baffd700 (LWP 244) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+  71   Thread 0x7fe9ba7fc700 (LWP 245) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+  72   Thread 0x7fe9b9ffb700 (LWP 246) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+  73   Thread 0x7fe9b97fa700 (LWP 247) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+  74   Thread 0x7fe9b8ff9700 (LWP 248) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+  75   Thread 0x7fe9a3fff700 (LWP 249) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+  76   Thread 0x7fe9a37fe700 (LWP 250) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+  77   Thread 0x7fe9a2ffd700 (LWP 251) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+  78   Thread 0x7fe9a27fc700 (LWP 252) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+  79   Thread 0x7fe9a1ffb700 (LWP 253) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+  80   Thread 0x7fe9a17fa700 (LWP 254) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+  81   Thread 0x7fe9a0ff9700 (LWP 255) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+  82   Thread 0x7fe977fff700 (LWP 256) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+  83   Thread 0x7fe9777fe700 (LWP 257) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+  84   Thread 0x7fe96edff700 (LWP 258) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+  85   Thread 0x7fe976ffd700 (LWP 259) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+  86   Thread 0x7fe9767fc700 (LWP 260) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+  87   Thread 0x7fe975ffb700 (LWP 261) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+  88   Thread 0x7fe9757fa700 (LWP 262) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+  89   Thread 0x7fe974ff9700 (LWP 263) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+  90   Thread 0x7fe96ffff700 (LWP 264) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+  91   Thread 0x7fe96f7fe700 (LWP 265) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+  92   Thread 0x7fe96e5fe700 (LWP 266) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+  93   Thread 0x7fe96ddfd700 (LWP 267) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+  94   Thread 0x7fe96d5fc700 (LWP 268) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+  95   Thread 0x7fe96cdfb700 (LWP 269) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+  96   Thread 0x7fe93ffff700 (LWP 270) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+  97   Thread 0x7fe93f7fe700 (LWP 271) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+  98   Thread 0x7fe93effd700 (LWP 272) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+  99   Thread 0x7fe93e7fc700 (LWP 273) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+  100  Thread 0x7fe93dffb700 (LWP 274) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+  101  Thread 0x7fe93d7fa700 (LWP 275) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+  102  Thread 0x7fe93cff9700 (LWP 276) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+  103  Thread 0x7fe91bfff700 (LWP 277) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+  104  Thread 0x7fe9135ff700 (LWP 278) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+  105  Thread 0x7fe91b7fe700 (LWP 279) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+  106  Thread 0x7fe91affd700 (LWP 280) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+  107  Thread 0x7fe91a7fc700 (LWP 281) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+  108  Thread 0x7fe919ffb700 (LWP 282) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+  109  Thread 0x7fe9197fa700 (LWP 283) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+  110  Thread 0x7fe918ff9700 (LWP 284) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+  111  Thread 0x7fe913fff700 (LWP 285) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+  112  Thread 0x7fe912dfe700 (LWP 286) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+  113  Thread 0x7fe9125fd700 (LWP 287) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+  114  Thread 0x7fe911dfc700 (LWP 288) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+  115  Thread 0x7fe9115fb700 (LWP 289) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+  116  Thread 0x7fe910dfa700 (LWP 290) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+  117  Thread 0x7fe8dbfff700 (LWP 291) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+  118  Thread 0x7fe8db7fe700 (LWP 292) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+  119  Thread 0x7fe8daffd700 (LWP 293) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+  120  Thread 0x7fe8da7fc700 (LWP 294) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+  121  Thread 0x7fe8d9ffb700 (LWP 295) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+  122  Thread 0x7fe8d97fa700 (LWP 296) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+  123  Thread 0x7fe8d8ff9700 (LWP 297) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+  124  Thread 0x7fe8bbfff700 (LWP 298) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+  125  Thread 0x7fe8bb7fe700 (LWP 299) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+  126  Thread 0x7fe8baffd700 (LWP 300) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+  127  Thread 0x7fe8ba7fc700 (LWP 301) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+  128  Thread 0x7fe8b9ffb700 (LWP 302) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+  129  Thread 0x7fe8b97fa700 (LWP 303) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+  130  Thread 0x7fe8b8ff9700 (LWP 304) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+  131  Thread 0x7fe89bfff700 (LWP 305) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+  132  Thread 0x7fe89b7fe700 (LWP 306) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+  133  Thread 0x7fe89affd700 (LWP 307) "RMUA-Linux-Ship" __lll_lock_wait (futex=futex@entry=0x35cd62d0, private=0) at lowlevellock.c:52
+* 134  Thread 0x7fe89a7fc700 (LWP 308) "RMUA-Linux-Ship" 0x0000000003053eaf in ?? ()
+  135  Thread 0x7fe899ffb700 (LWP 309) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be4) at ../sysdeps/nptl/futex-internal.h:183
+  136  Thread 0x7fe8997fa700 (LWP 310) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be4) at ../sysdeps/nptl/futex-internal.h:183
+  137  Thread 0x7fe898ff9700 (LWP 311) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be4) at ../sysdeps/nptl/futex-internal.h:183
+  138  Thread 0x7fe87bfff700 (LWP 312) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be4) at ../sysdeps/nptl/futex-internal.h:183
+  139  Thread 0x7fe87b7fe700 (LWP 313) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be4) at ../sysdeps/nptl/futex-internal.h:183
+  140  Thread 0x7fe87affd700 (LWP 314) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be4) at ../sysdeps/nptl/futex-internal.h:183
+  141  Thread 0x7fe87a7fc700 (LWP 315) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be4) at ../sysdeps/nptl/futex-internal.h:183
+  142  Thread 0x7fe879ffb700 (LWP 316) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be4) at ../sysdeps/nptl/futex-internal.h:183
+  143  Thread 0x7fe8797fa700 (LWP 317) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be4) at ../sysdeps/nptl/futex-internal.h:183
+  144  Thread 0x7fe878ff9700 (LWP 318) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be4) at ../sysdeps/nptl/futex-internal.h:183
+  145  Thread 0x7fe85bfff700 (LWP 319) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be4) at ../sysdeps/nptl/futex-internal.h:183
+  146  Thread 0x7fe85b7fe700 (LWP 320) "RMUA-Linux-Ship" futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be4) at ../sysdeps/nptl/futex-internal.h:183
+  147  Thread 0x7fea22994700 (LWP 321) "RenderThread 1"  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea329baff0) at ../sysdeps/nptl/futex-internal.h:183
+  148  Thread 0x7fea2e17f700 (LWP 322) "RTHeartBeat 1"   0x00007fea3beb023f in __GI___clock_nanosleep (clock_id=clock_id@entry=0, flags=flags@entry=0, req=req@entry=0x7fea2e17e470, rem=rem@entry=0x0) at ../sysdeps/unix/sysv/linux/clock_nanosleep.c:78
+  149  Thread 0x7fe848f2c700 (LWP 414) "RMUA-Linux-Ship" __lll_lock_wait (futex=futex@entry=0x35cd62d0, private=0) at lowlevellock.c:52
+  150  Thread 0x7fe84872b700 (LWP 415) "AirSimROSNode"   futex_abstimed_wait_cancelable (private=<optimized out>, abstime=0x7fe848729ba0, clockid=<optimized out>, expected=0, futex_word=0x7fea23950358) at ../sysdeps/nptl/futex-internal.h:320
+  151  Thread 0x7fe8402ae700 (LWP 417) "AirSimROSNode"   0x00007fea3bef268e in epoll_wait (epfd=10, events=0x7fe8402ad210, maxevents=4, timeout=100) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+  152  Thread 0x7fe833e5e700 (LWP 418) "AirSimROSNode"   0x00007fea3bee5bbf in __GI___poll (fds=0x7fea32940090, nfds=1, timeout=100) at ../sysdeps/unix/sysv/linux/poll.c:29
+  153  Thread 0x7fe83365d700 (LWP 419) "AirSimROSNode"   futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fe84a17b038) at ../sysdeps/nptl/futex-internal.h:183
+  154  Thread 0x7fe832e5c700 (LWP 420) "AirSimROSNode"   futex_abstimed_wait_cancelable (private=<optimized out>, abstime=0x7fe832e5b420, clockid=<optimized out>, expected=0, futex_word=0x7fea23f655d8) at ../sysdeps/nptl/futex-internal.h:320
+  155  Thread 0x7fe83265b700 (LWP 423) "AirSimROSNode"   __lll_lock_wait (futex=futex@entry=0x35cd62d0, private=0) at lowlevellock.c:52
+  156  Thread 0x7fe831e5a700 (LWP 424) "AirSimROSNode"   futex_abstimed_wait_cancelable (private=<optimized out>, abstime=0x7fe831e59430, clockid=<optimized out>, expected=0, futex_word=0x7fe84872a348) at ../sysdeps/nptl/futex-internal.h:320
+  157  Thread 0x7fe831659700 (LWP 425) "AirSimROSNode"   futex_abstimed_wait_cancelable (private=<optimized out>, abstime=0x7fe831658430, clockid=<optimized out>, expected=0, futex_word=0x7fe84872a49c) at ../sysdeps/nptl/futex-internal.h:320
+
+Thread 157 (Thread 0x7fe831659700 (LWP 425)):
+#0  futex_abstimed_wait_cancelable (private=<optimized out>, abstime=0x7fe831658430, clockid=<optimized out>, expected=0, futex_word=0x7fe84872a49c) at ../sysdeps/nptl/futex-internal.h:320
+#1  __pthread_cond_wait_common (abstime=0x7fe831658430, clockid=<optimized out>, mutex=0x7fe84872a448, cond=0x7fe84872a470) at pthread_cond_wait.c:520
+#2  __pthread_cond_timedwait (cond=0x7fe84872a470, mutex=0x7fe84872a448, abstime=0x7fe831658430) at pthread_cond_wait.c:665
+#3  0x00007fea3b55709f in ros::CallbackQueue::callAvailable(ros::WallDuration) () at /opt/ros/noetic/lib/libroscpp.so
+#4  0x00007fea3b5a978e in ros::AsyncSpinnerImpl::threadFunc() () at /opt/ros/noetic/lib/libroscpp.so
+#5  0x00007fea36fef43b in  () at /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
+#6  0x00007fea3e635609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#7  0x00007fea3bef2353 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 156 (Thread 0x7fe831e5a700 (LWP 424)):
+#0  futex_abstimed_wait_cancelable (private=<optimized out>, abstime=0x7fe831e59430, clockid=<optimized out>, expected=0, futex_word=0x7fe84872a348) at ../sysdeps/nptl/futex-internal.h:320
+#1  __pthread_cond_wait_common (abstime=0x7fe831e59430, clockid=<optimized out>, mutex=0x7fe84872a2f8, cond=0x7fe84872a320) at pthread_cond_wait.c:520
+#2  __pthread_cond_timedwait (cond=0x7fe84872a320, mutex=0x7fe84872a2f8, abstime=0x7fe831e59430) at pthread_cond_wait.c:665
+#3  0x00007fea3b55709f in ros::CallbackQueue::callAvailable(ros::WallDuration) () at /opt/ros/noetic/lib/libroscpp.so
+#4  0x00007fea3b5a978e in ros::AsyncSpinnerImpl::threadFunc() () at /opt/ros/noetic/lib/libroscpp.so
+#5  0x00007fea36fef43b in  () at /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
+#6  0x00007fea3e635609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#7  0x00007fea3bef2353 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 155 (Thread 0x7fe83265b700 (LWP 423)):
+#0  __lll_lock_wait (futex=futex@entry=0x35cd62d0, private=0) at lowlevellock.c:52
+#1  0x00007fea3e638131 in __GI___pthread_mutex_lock (mutex=0x35cd62d0) at ../nptl/pthread_mutex_lock.c:115
+#2  0x00000000030530db in  ()
+#3  0x00007fea3b530b4f in boost::detail::sp_if_not_array<ros::TimerManager<ros::Time, ros::Duration, ros::TimerEvent>::TimerQueueCallback>::type boost::make_shared<ros::TimerManager<ros::Time, ros::Duration, ros::TimerEvent>::TimerQueueCallback, ros::TimerManager<ros::Time, ros::Duration, ros::TimerEvent>*, boost::shared_ptr<ros::TimerManager<ros::Time, ros::Duration, ros::TimerEvent>::TimerInfo>&, ros::Time&, ros::Time&, ros::Time&, ros::Time&, ros::Time&>(ros::TimerManager<ros::Time, ros::Duration, ros::TimerEvent>*&&, boost::shared_ptr<ros::TimerManager<ros::Time, ros::Duration, ros::TimerEvent>::TimerInfo>&, ros::Time&, ros::Time&, ros::Time&, ros::Time&, ros::Time&) () at /opt/ros/noetic/lib/libroscpp.so
+#4  0x00007fea3b531238 in ros::TimerManager<ros::Time, ros::Duration, ros::TimerEvent>::threadFunc() () at /opt/ros/noetic/lib/libroscpp.so
+#5  0x00007fea36fef43b in  () at /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
+#6  0x00007fea3e635609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#7  0x00007fea3bef2353 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 154 (Thread 0x7fe832e5c700 (LWP 420)):
+#0  futex_abstimed_wait_cancelable (private=<optimized out>, abstime=0x7fe832e5b420, clockid=<optimized out>, expected=0, futex_word=0x7fea23f655d8) at ../sysdeps/nptl/futex-internal.h:320
+#1  __pthread_cond_wait_common (abstime=0x7fe832e5b420, clockid=<optimized out>, mutex=0x7fea23f65588, cond=0x7fea23f655b0) at pthread_cond_wait.c:520
+#2  __pthread_cond_timedwait (cond=0x7fea23f655b0, mutex=0x7fea23f65588, abstime=0x7fe832e5b420) at pthread_cond_wait.c:665
+#3  0x00007fea3b55709f in ros::CallbackQueue::callAvailable(ros::WallDuration) () at /opt/ros/noetic/lib/libroscpp.so
+#4  0x00007fea3b5923af in ros::internalCallbackQueueThreadFunc() () at /opt/ros/noetic/lib/libroscpp.so
+#5  0x00007fea36fef43b in  () at /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
+#6  0x00007fea3e635609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#7  0x00007fea3bef2353 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 153 (Thread 0x7fe83365d700 (LWP 419)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fe84a17b038) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fe84a17afe8, cond=0x7fe84a17b010) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fe84a17b010, mutex=0x7fe84a17afe8) at pthread_cond_wait.c:647
+#3  0x00007fea3b58fb87 in ros::ROSOutAppender::logThread() () at /opt/ros/noetic/lib/libroscpp.so
+#4  0x00007fea36fef43b in  () at /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
+#5  0x00007fea3e635609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#6  0x00007fea3bef2353 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 152 (Thread 0x7fe833e5e700 (LWP 418)):
+#0  0x00007fea3bee5bbf in __GI___poll (fds=0x7fea32940090, nfds=1, timeout=100) at ../sysdeps/unix/sysv/linux/poll.c:29
+#1  0x00007fea370194dd in XmlRpc::XmlRpcDispatch::work(double) () at /sim/Build/LinuxNoEditor/RMUA/Binaries/Linux/../../Plugins/AirSimROS/Binaries/Linux/libxmlrpcpp.so
+#2  0x00007fea3b5281aa in ros::XMLRPCManager::serverThreadFunc() () at /opt/ros/noetic/lib/libroscpp.so
+#3  0x00007fea36fef43b in  () at /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
+#4  0x00007fea3e635609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#5  0x00007fea3bef2353 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 151 (Thread 0x7fe8402ae700 (LWP 417)):
+#0  0x00007fea3bef268e in epoll_wait (epfd=10, events=0x7fe8402ad210, maxevents=4, timeout=100) at ../sysdeps/unix/sysv/linux/epoll_wait.c:30
+#1  0x00007fea3b5348d8 in ros::poll_sockets(int, pollfd*, unsigned long, int) () at /opt/ros/noetic/lib/libroscpp.so
+#2  0x00007fea3b5b025c in ros::PollSet::update(int) () at /opt/ros/noetic/lib/libroscpp.so
+#3  0x00007fea3b54205d in ros::PollManager::threadFunc() () at /opt/ros/noetic/lib/libroscpp.so
+#4  0x00007fea36fef43b in  () at /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
+#5  0x00007fea3e635609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#6  0x00007fea3bef2353 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 150 (Thread 0x7fe84872b700 (LWP 415)):
+#0  futex_abstimed_wait_cancelable (private=<optimized out>, abstime=0x7fe848729ba0, clockid=<optimized out>, expected=0, futex_word=0x7fea23950358) at ../sysdeps/nptl/futex-internal.h:320
+#1  __pthread_cond_wait_common (abstime=0x7fe848729ba0, clockid=<optimized out>, mutex=0x7fea23950308, cond=0x7fea23950330) at pthread_cond_wait.c:520
+#2  __pthread_cond_timedwait (cond=0x7fea23950330, mutex=0x7fea23950308, abstime=0x7fe848729ba0) at pthread_cond_wait.c:665
+#3  0x00007fea3b55709f in ros::CallbackQueue::callAvailable(ros::WallDuration) () at /opt/ros/noetic/lib/libroscpp.so
+#4  0x00007fea3b5aa43f in ros::SingleThreadedSpinner::spin(ros::CallbackQueue*) () at /opt/ros/noetic/lib/libroscpp.so
+#5  0x00007fea3b59260f in ros::spin() () at /opt/ros/noetic/lib/libroscpp.so
+#6  0x00007fea3d9920a7 in airsim_ros::AirSimROSMainLoop() () at /sim/Build/LinuxNoEditor/RMUA/Binaries/Linux/../../Plugins/AirSimROS/Binaries/Linux/libairsimros.so
+#7  0x00000000026f233c in _start ()
+
+Thread 149 (Thread 0x7fe848f2c700 (LWP 414)):
+#0  __lll_lock_wait (futex=futex@entry=0x35cd62d0, private=0) at lowlevellock.c:52
+#1  0x00007fea3e638131 in __GI___pthread_mutex_lock (mutex=0x35cd62d0) at ../nptl/pthread_mutex_lock.c:115
+#2  0x00000000030530db in  ()
+#3  0x00000000025ee1b6 in _start ()
+
+Thread 148 (Thread 0x7fea2e17f700 (LWP 322)):
+#0  0x00007fea3beb023f in __GI___clock_nanosleep (clock_id=clock_id@entry=0, flags=flags@entry=0, req=req@entry=0x7fea2e17e470, rem=rem@entry=0x0) at ../sysdeps/unix/sysv/linux/clock_nanosleep.c:78
+#1  0x00007fea3beb5ec7 in __GI___nanosleep (requested_time=requested_time@entry=0x7fea2e17e470, remaining=remaining@entry=0x0) at nanosleep.c:27
+#2  0x00007fea3bee8a7f in usleep (useconds=<optimized out>) at ../sysdeps/posix/usleep.c:32
+#3  0x0000000003030b54 in  ()
+#4  0x00000000049ed54c in  ()
+#5  0x0000000003065b77 in  ()
+#6  0x000000000304410c in  ()
+#7  0x00007fea3e635609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#8  0x00007fea3bef2353 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 147 (Thread 0x7fea22994700 (LWP 321)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea329baff0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea329bafa0, cond=0x7fea329bafc8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea329bafc8, mutex=0x7fea329bafa0) at pthread_cond_wait.c:647
+#3  0x0000000003030fcb in  ()
+#4  0x000000000300d803 in  ()
+#5  0x000000000300d33e in  ()
+#6  0x00000000049e10c2 in  ()
+#7  0x00000000049ebdd2 in  ()
+#8  0x0000000003065b77 in  ()
+#9  0x000000000304410c in  ()
+#10 0x00007fea3e635609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#11 0x00007fea3bef2353 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 146 (Thread 0x7fe85b7fe700 (LWP 320)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be4) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 145 (Thread 0x7fe85bfff700 (LWP 319)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be4) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 144 (Thread 0x7fe878ff9700 (LWP 318)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be4) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 143 (Thread 0x7fe8797fa700 (LWP 317)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be4) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 142 (Thread 0x7fe879ffb700 (LWP 316)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be4) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 141 (Thread 0x7fe87a7fc700 (LWP 315)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be4) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 140 (Thread 0x7fe87affd700 (LWP 314)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be4) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 139 (Thread 0x7fe87b7fe700 (LWP 313)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be4) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 138 (Thread 0x7fe87bfff700 (LWP 312)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be4) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 137 (Thread 0x7fe898ff9700 (LWP 311)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be4) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 136 (Thread 0x7fe8997fa700 (LWP 310)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be4) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 135 (Thread 0x7fe899ffb700 (LWP 309)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be4) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 134 (Thread 0x7fe89a7fc700 (LWP 308)):
+#0  0x0000000003053eaf in  ()
+#1  0x0000000003053d9d in  ()
+#2  0x0000000002fd4666 in operator delete(void*) ()
+#3  0x00007fea3d9ce2b4 in __gnu_cxx::new_allocator<unsigned long>::deallocate(unsigned long*, unsigned long) () at /sim/Build/LinuxNoEditor/RMUA/Binaries/Linux/../../Plugins/AirSimROS/Binaries/Linux/libairsimros.so
+#4  0x00007fea3d9c5003 in std::allocator_traits<std::allocator<unsigned long> >::deallocate(std::allocator<unsigned long>&, unsigned long*, unsigned long) () at /sim/Build/LinuxNoEditor/RMUA/Binaries/Linux/../../Plugins/AirSimROS/Binaries/Linux/libairsimros.so
+#5  0x00007fea3d9b9c10 in std::_Deque_base<unsigned long, std::allocator<unsigned long> >::_M_deallocate_node(unsigned long*) () at /sim/Build/LinuxNoEditor/RMUA/Binaries/Linux/../../Plugins/AirSimROS/Binaries/Linux/libairsimros.so
+#6  0x00007fea3d9ae705 in std::deque<unsigned long, std::allocator<unsigned long> >::_M_pop_front_aux() () at /sim/Build/LinuxNoEditor/RMUA/Binaries/Linux/../../Plugins/AirSimROS/Binaries/Linux/libairsimros.so
+#7  0x00007fea3d99dc30 in std::deque<unsigned long, std::allocator<unsigned long> >::pop_front() () at /sim/Build/LinuxNoEditor/RMUA/Binaries/Linux/../../Plugins/AirSimROS/Binaries/Linux/libairsimros.so
+#8  0x00007fea3d984cc9 in airsim_ros::record_frequency_data(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) () at /sim/Build/LinuxNoEditor/RMUA/Binaries/Linux/../../Plugins/AirSimROS/Binaries/Linux/libairsimros.so
+#9  0x00007fea3d98f678 in airsim_ros::AirSimROSFrame() () at /sim/Build/LinuxNoEditor/RMUA/Binaries/Linux/../../Plugins/AirSimROS/Binaries/Linux/libairsimros.so
+#10 0x00000000026ece6b in _start ()
+
+Thread 133 (Thread 0x7fe89affd700 (LWP 307)):
+#0  __lll_lock_wait (futex=futex@entry=0x35cd62d0, private=0) at lowlevellock.c:52
+#1  0x00007fea3e638131 in __GI___pthread_mutex_lock (mutex=0x35cd62d0) at ../nptl/pthread_mutex_lock.c:115
+#2  0x0000000003053d8b in  ()
+#3  0x0000000002fd4666 in operator delete(void*) ()
+#4  0x00000000026ece78 in _start ()
+
+Thread 132 (Thread 0x7fe89b7fe700 (LWP 306)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 131 (Thread 0x7fe89bfff700 (LWP 305)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 130 (Thread 0x7fe8b8ff9700 (LWP 304)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 129 (Thread 0x7fe8b97fa700 (LWP 303)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 128 (Thread 0x7fe8b9ffb700 (LWP 302)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 127 (Thread 0x7fe8ba7fc700 (LWP 301)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 126 (Thread 0x7fe8baffd700 (LWP 300)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 125 (Thread 0x7fe8bb7fe700 (LWP 299)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 124 (Thread 0x7fe8bbfff700 (LWP 298)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 123 (Thread 0x7fe8d8ff9700 (LWP 297)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 122 (Thread 0x7fe8d97fa700 (LWP 296)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 121 (Thread 0x7fe8d9ffb700 (LWP 295)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 120 (Thread 0x7fe8da7fc700 (LWP 294)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 119 (Thread 0x7fe8daffd700 (LWP 293)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 118 (Thread 0x7fe8db7fe700 (LWP 292)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 117 (Thread 0x7fe8dbfff700 (LWP 291)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 116 (Thread 0x7fe910dfa700 (LWP 290)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 115 (Thread 0x7fe9115fb700 (LWP 289)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 114 (Thread 0x7fe911dfc700 (LWP 288)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 113 (Thread 0x7fe9125fd700 (LWP 287)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 112 (Thread 0x7fe912dfe700 (LWP 286)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 111 (Thread 0x7fe913fff700 (LWP 285)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 110 (Thread 0x7fe918ff9700 (LWP 284)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 109 (Thread 0x7fe9197fa700 (LWP 283)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 108 (Thread 0x7fe919ffb700 (LWP 282)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 107 (Thread 0x7fe91a7fc700 (LWP 281)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 106 (Thread 0x7fe91affd700 (LWP 280)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 105 (Thread 0x7fe91b7fe700 (LWP 279)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 104 (Thread 0x7fe9135ff700 (LWP 278)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 103 (Thread 0x7fe91bfff700 (LWP 277)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 102 (Thread 0x7fe93cff9700 (LWP 276)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 101 (Thread 0x7fe93d7fa700 (LWP 275)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 100 (Thread 0x7fe93dffb700 (LWP 274)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 99 (Thread 0x7fe93e7fc700 (LWP 273)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 98 (Thread 0x7fe93effd700 (LWP 272)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 97 (Thread 0x7fe93f7fe700 (LWP 271)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 96 (Thread 0x7fe93ffff700 (LWP 270)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 95 (Thread 0x7fe96cdfb700 (LWP 269)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 94 (Thread 0x7fe96d5fc700 (LWP 268)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 93 (Thread 0x7fe96ddfd700 (LWP 267)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 92 (Thread 0x7fe96e5fe700 (LWP 266)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 91 (Thread 0x7fe96f7fe700 (LWP 265)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 90 (Thread 0x7fe96ffff700 (LWP 264)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 89 (Thread 0x7fe974ff9700 (LWP 263)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 88 (Thread 0x7fe9757fa700 (LWP 262)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 87 (Thread 0x7fe975ffb700 (LWP 261)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 86 (Thread 0x7fe9767fc700 (LWP 260)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 85 (Thread 0x7fe976ffd700 (LWP 259)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 84 (Thread 0x7fe96edff700 (LWP 258)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 83 (Thread 0x7fe9777fe700 (LWP 257)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 82 (Thread 0x7fe977fff700 (LWP 256)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 81 (Thread 0x7fe9a0ff9700 (LWP 255)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 80 (Thread 0x7fe9a17fa700 (LWP 254)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 79 (Thread 0x7fe9a1ffb700 (LWP 253)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 78 (Thread 0x7fe9a27fc700 (LWP 252)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 77 (Thread 0x7fe9a2ffd700 (LWP 251)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 76 (Thread 0x7fe9a37fe700 (LWP 250)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 75 (Thread 0x7fe9a3fff700 (LWP 249)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 74 (Thread 0x7fe9b8ff9700 (LWP 248)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 73 (Thread 0x7fe9b97fa700 (LWP 247)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 72 (Thread 0x7fe9b9ffb700 (LWP 246)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 71 (Thread 0x7fe9ba7fc700 (LWP 245)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 70 (Thread 0x7fe9baffd700 (LWP 244)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 69 (Thread 0x7fe9bb7fe700 (LWP 243)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 68 (Thread 0x7fe9bbfff700 (LWP 242)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 67 (Thread 0x7fe9f0ff9700 (LWP 241)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 66 (Thread 0x7fe9f17fa700 (LWP 240)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 65 (Thread 0x7fe9f1ffb700 (LWP 239)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 64 (Thread 0x7fe9f27fc700 (LWP 238)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 63 (Thread 0x7fe9f2ffd700 (LWP 237)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 62 (Thread 0x7fe9f37fe700 (LWP 236)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 61 (Thread 0x7fe9f8ff9700 (LWP 235)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 60 (Thread 0x7fe9f97fa700 (LWP 234)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 59 (Thread 0x7fe9f9ffb700 (LWP 233)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 58 (Thread 0x7fe9fa7fc700 (LWP 232)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 57 (Thread 0x7fe9faffd700 (LWP 231)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 56 (Thread 0x7fe9fb7fe700 (LWP 230)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 55 (Thread 0x7fe9f3fff700 (LWP 229)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 54 (Thread 0x7fe9fbfff700 (LWP 228)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 53 (Thread 0x7fea18f3d700 (LWP 227)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 52 (Thread 0x7fea1973e700 (LWP 226)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 51 (Thread 0x7fea19f3f700 (LWP 225)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 50 (Thread 0x7fea1c893700 (LWP 224)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 49 (Thread 0x7fea1d094700 (LWP 223)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 48 (Thread 0x7fea1d895700 (LWP 222)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 47 (Thread 0x7fea1e096700 (LWP 221)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2bb26be0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2bb26b90, cond=0x7fea2bb26bb8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2bb26bb8, mutex=0x7fea2bb26b90) at pthread_cond_wait.c:647
+#3  0x0000000006f41a6f in std::__1::condition_variable::wait(std::__1::unique_lock<std::__1::mutex>&) ()
+#4  0x00000000026f4553 in _start ()
+
+Thread 46 (Thread 0x7fea1f2a8700 (LWP 220)):
+#0  futex_abstimed_wait_cancelable (private=<optimized out>, abstime=0x7fea1f2a74d8, clockid=<optimized out>, expected=0, futex_word=0x7fea2be38af4) at ../sysdeps/nptl/futex-internal.h:320
+#1  __pthread_cond_wait_common (abstime=0x7fea1f2a74d8, clockid=<optimized out>, mutex=0x7fea2be38aa0, cond=0x7fea2be38ac8) at pthread_cond_wait.c:520
+#2  __pthread_cond_timedwait (cond=0x7fea2be38ac8, mutex=0x7fea2be38aa0, abstime=0x7fea1f2a74d8) at pthread_cond_wait.c:665
+#3  0x0000000003030ecc in  ()
+#4  0x000000000330567b in  ()
+#5  0x0000000003065b77 in  ()
+#6  0x000000000304410c in  ()
+#7  0x00007fea3e635609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#8  0x00007fea3bef2353 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 43 (Thread 0x7fea2a1bd700 (LWP 214)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2be38ff0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2be38fa0, cond=0x7fea2be38fc8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2be38fc8, mutex=0x7fea2be38fa0) at pthread_cond_wait.c:647
+#3  0x0000000003030fcb in  ()
+#4  0x000000000307133f in  ()
+#5  0x0000000003065b77 in  ()
+#6  0x000000000304410c in  ()
+#7  0x00007fea3e635609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#8  0x00007fea3bef2353 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 42 (Thread 0x7fea2a1de700 (LWP 213)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2be39070) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2be39020, cond=0x7fea2be39048) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2be39048, mutex=0x7fea2be39020) at pthread_cond_wait.c:647
+#3  0x0000000003030fcb in  ()
+#4  0x000000000307133f in  ()
+#5  0x0000000003065b77 in  ()
+#6  0x000000000304410c in  ()
+#7  0x00007fea3e635609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#8  0x00007fea3bef2353 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 41 (Thread 0x7fea2a1ff700 (LWP 212)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2be390f0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2be390a0, cond=0x7fea2be390c8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2be390c8, mutex=0x7fea2be390a0) at pthread_cond_wait.c:647
+#3  0x0000000003030fcb in  ()
+#4  0x000000000307133f in  ()
+#5  0x0000000003065b77 in  ()
+#6  0x000000000304410c in  ()
+#7  0x00007fea3e635609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#8  0x00007fea3bef2353 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 40 (Thread 0x7fea2aef0700 (LWP 211)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2be39170) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2be39120, cond=0x7fea2be39148) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2be39148, mutex=0x7fea2be39120) at pthread_cond_wait.c:647
+#3  0x0000000003030fcb in  ()
+#4  0x000000000307133f in  ()
+#5  0x0000000003065b77 in  ()
+#6  0x000000000304410c in  ()
+#7  0x00007fea3e635609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#8  0x00007fea3bef2353 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 39 (Thread 0x7fea2ddbc700 (LWP 210)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2be391f0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2be391a0, cond=0x7fea2be391c8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2be391c8, mutex=0x7fea2be391a0) at pthread_cond_wait.c:647
+#3  0x0000000003030fcb in  ()
+#4  0x000000000307133f in  ()
+#5  0x0000000003065b77 in  ()
+#6  0x000000000304410c in  ()
+#7  0x00007fea3e635609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#8  0x00007fea3bef2353 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 38 (Thread 0x7fea2dddd700 (LWP 209)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2be39270) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2be39220, cond=0x7fea2be39248) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2be39248, mutex=0x7fea2be39220) at pthread_cond_wait.c:647
+#3  0x0000000003030fcb in  ()
+#4  0x000000000307133f in  ()
+#5  0x0000000003065b77 in  ()
+#6  0x000000000304410c in  ()
+#7  0x00007fea3e635609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#8  0x00007fea3bef2353 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 37 (Thread 0x7fea2ddfe700 (LWP 208)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2be392f0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2be392a0, cond=0x7fea2be392c8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2be392c8, mutex=0x7fea2be392a0) at pthread_cond_wait.c:647
+#3  0x0000000003030fcb in  ()
+#4  0x000000000307133f in  ()
+#5  0x0000000003065b77 in  ()
+#6  0x000000000304410c in  ()
+#7  0x00007fea3e635609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#8  0x00007fea3bef2353 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 36 (Thread 0x7fea2de1f700 (LWP 207)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2be39370) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2be39320, cond=0x7fea2be39348) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2be39348, mutex=0x7fea2be39320) at pthread_cond_wait.c:647
+#3  0x0000000003030fcb in  ()
+#4  0x000000000307133f in  ()
+#5  0x0000000003065b77 in  ()
+#6  0x000000000304410c in  ()
+#7  0x00007fea3e635609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#8  0x00007fea3bef2353 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 35 (Thread 0x7fea2de6a700 (LWP 206)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2be393f0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2be393a0, cond=0x7fea2be393c8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2be393c8, mutex=0x7fea2be393a0) at pthread_cond_wait.c:647
+#3  0x0000000003030fcb in  ()
+#4  0x000000000307133f in  ()
+#5  0x0000000003065b77 in  ()
+#6  0x000000000304410c in  ()
+#7  0x00007fea3e635609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#8  0x00007fea3bef2353 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 34 (Thread 0x7fea2de8b700 (LWP 205)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2be39470) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2be39420, cond=0x7fea2be39448) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2be39448, mutex=0x7fea2be39420) at pthread_cond_wait.c:647
+#3  0x0000000003030fcb in  ()
+#4  0x000000000307133f in  ()
+#5  0x0000000003065b77 in  ()
+#6  0x000000000304410c in  ()
+#7  0x00007fea3e635609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#8  0x00007fea3bef2353 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 33 (Thread 0x7fea2deac700 (LWP 204)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2be394f0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2be394a0, cond=0x7fea2be394c8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2be394c8, mutex=0x7fea2be394a0) at pthread_cond_wait.c:647
+#3  0x0000000003030fcb in  ()
+#4  0x000000000307133f in  ()
+#5  0x0000000003065b77 in  ()
+#6  0x000000000304410c in  ()
+#7  0x00007fea3e635609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#8  0x00007fea3bef2353 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 32 (Thread 0x7fea2decd700 (LWP 203)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2be37470) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2be37420, cond=0x7fea2be37448) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2be37448, mutex=0x7fea2be37420) at pthread_cond_wait.c:647
+#3  0x0000000003030fcb in  ()
+#4  0x000000000307133f in  ()
+#5  0x0000000003065b77 in  ()
+#6  0x000000000304410c in  ()
+#7  0x00007fea3e635609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#8  0x00007fea3bef2353 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 31 (Thread 0x7fea2deee700 (LWP 202)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2be374f0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2be374a0, cond=0x7fea2be374c8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2be374c8, mutex=0x7fea2be374a0) at pthread_cond_wait.c:647
+#3  0x0000000003030fcb in  ()
+#4  0x000000000307133f in  ()
+#5  0x0000000003065b77 in  ()
+#6  0x000000000304410c in  ()
+#7  0x00007fea3e635609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#8  0x00007fea3bef2353 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 30 (Thread 0x7fea2df0f700 (LWP 201)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea2be37570) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea2be37520, cond=0x7fea2be37548) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea2be37548, mutex=0x7fea2be37520) at pthread_cond_wait.c:647
+#3  0x0000000003030fcb in  ()
+#4  0x000000000307133f in  ()
+#5  0x0000000003065b77 in  ()
+#6  0x000000000304410c in  ()
+#7  0x00007fea3e635609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#8  0x00007fea3bef2353 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 27 (Thread 0x7fea23195700 (LWP 197)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea329bebf0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea329beba0, cond=0x7fea329bebc8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea329bebc8, mutex=0x7fea329beba0) at pthread_cond_wait.c:647
+#3  0x0000000003030fcb in  ()
+#4  0x0000000004ff2949 in  ()
+#5  0x0000000003065b77 in  ()
+#6  0x000000000304410c in  ()
+#7  0x00007fea3e635609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#8  0x00007fea3bef2353 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 26 (Thread 0x7fea2bec2700 (LWP 195)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea33269ef4) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea33269ea0, cond=0x7fea33269ec8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea33269ec8, mutex=0x7fea33269ea0) at pthread_cond_wait.c:647
+#3  0x0000000003030fcb in  ()
+#4  0x000000000307133f in  ()
+#5  0x0000000003065b77 in  ()
+#6  0x000000000304410c in  ()
+#7  0x00007fea3e635609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#8  0x00007fea3bef2353 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 25 (Thread 0x7fea2bee3700 (LWP 194)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea33269f74) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea33269f20, cond=0x7fea33269f48) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea33269f48, mutex=0x7fea33269f20) at pthread_cond_wait.c:647
+#3  0x0000000003030fcb in  ()
+#4  0x000000000307133f in  ()
+#5  0x0000000003065b77 in  ()
+#6  0x000000000304410c in  ()
+#7  0x00007fea3e635609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#8  0x00007fea3bef2353 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 24 (Thread 0x7fea2bf04700 (LWP 193)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea33269ff0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea33269fa0, cond=0x7fea33269fc8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea33269fc8, mutex=0x7fea33269fa0) at pthread_cond_wait.c:647
+#3  0x0000000003030fcb in  ()
+#4  0x000000000307133f in  ()
+#5  0x0000000003065b77 in  ()
+#6  0x000000000304410c in  ()
+#7  0x00007fea3e635609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#8  0x00007fea3bef2353 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 23 (Thread 0x7fea2bf25700 (LWP 192)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea3326a070) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea3326a020, cond=0x7fea3326a048) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea3326a048, mutex=0x7fea3326a020) at pthread_cond_wait.c:647
+#3  0x0000000003030fcb in  ()
+#4  0x000000000307133f in  ()
+#5  0x0000000003065b77 in  ()
+#6  0x000000000304410c in  ()
+#7  0x00007fea3e635609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#8  0x00007fea3bef2353 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 22 (Thread 0x7fea2ca47700 (LWP 191)):
+#0  futex_abstimed_wait_cancelable (private=<optimized out>, abstime=0x7fea2ca464d8, clockid=<optimized out>, expected=0, futex_word=0x7fea33267670) at ../sysdeps/nptl/futex-internal.h:320
+#1  __pthread_cond_wait_common (abstime=0x7fea2ca464d8, clockid=<optimized out>, mutex=0x7fea33267620, cond=0x7fea33267648) at pthread_cond_wait.c:520
+#2  __pthread_cond_timedwait (cond=0x7fea33267648, mutex=0x7fea33267620, abstime=0x7fea2ca464d8) at pthread_cond_wait.c:665
+#3  0x0000000003030ecc in  ()
+#4  0x0000000002dcd15f in  ()
+#5  0x0000000003065b77 in  ()
+#6  0x000000000304410c in  ()
+#7  0x00007fea3e635609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#8  0x00007fea3bef2353 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 21 (Thread 0x7fea2dd87700 (LWP 190)):
+#0  0x00007fea3beb023f in __GI___clock_nanosleep (clock_id=clock_id@entry=0, flags=flags@entry=0, req=req@entry=0x7fea2dd86470, rem=rem@entry=0x0) at ../sysdeps/unix/sysv/linux/clock_nanosleep.c:78
+#1  0x00007fea3beb5ec7 in __GI___nanosleep (requested_time=requested_time@entry=0x7fea2dd86470, remaining=remaining@entry=0x0) at nanosleep.c:27
+#2  0x00007fea3bee8a7f in usleep (useconds=<optimized out>) at ../sysdeps/posix/usleep.c:32
+#3  0x000000000478b8b4 in  ()
+#4  0x0000000003065b77 in  ()
+#5  0x000000000304410c in  ()
+#6  0x00007fea3e635609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#7  0x00007fea3bef2353 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 20 (Thread 0x7fea2dd49700 (LWP 187)):
+#0  0x00007fea3beb023f in __GI___clock_nanosleep (clock_id=clock_id@entry=0, flags=flags@entry=0, req=req@entry=0x7fea2dd484e0, rem=rem@entry=0x0) at ../sysdeps/unix/sysv/linux/clock_nanosleep.c:78
+#1  0x00007fea3beb5ec7 in __GI___nanosleep (requested_time=requested_time@entry=0x7fea2dd484e0, remaining=remaining@entry=0x0) at nanosleep.c:27
+#2  0x00007fea3bee8a7f in usleep (useconds=<optimized out>) at ../sysdeps/posix/usleep.c:32
+#3  0x000000000315eb74 in  ()
+#4  0x0000000003065b77 in  ()
+#5  0x000000000304410c in  ()
+#6  0x00007fea3e635609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#7  0x00007fea3bef2353 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 19 (Thread 0x7fea2f37a700 (LWP 186)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea329bd670) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea329bd620, cond=0x7fea329bd648) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea329bd648, mutex=0x7fea329bd620) at pthread_cond_wait.c:647
+#3  0x0000000003030fcb in  ()
+#4  0x000000000307133f in  ()
+#5  0x0000000003065b77 in  ()
+#6  0x000000000304410c in  ()
+#7  0x00007fea3e635609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#8  0x00007fea3bef2353 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 18 (Thread 0x7fea2f39b700 (LWP 185)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea329bd5f0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea329bd5a0, cond=0x7fea329bd5c8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea329bd5c8, mutex=0x7fea329bd5a0) at pthread_cond_wait.c:647
+#3  0x0000000003030fcb in  ()
+#4  0x000000000307133f in  ()
+#5  0x0000000003065b77 in  ()
+#6  0x000000000304410c in  ()
+#7  0x00007fea3e635609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#8  0x00007fea3bef2353 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 17 (Thread 0x7fea2f3bc700 (LWP 184)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea329bd574) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea329bd520, cond=0x7fea329bd548) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea329bd548, mutex=0x7fea329bd520) at pthread_cond_wait.c:647
+#3  0x0000000003030fcb in  ()
+#4  0x000000000307133f in  ()
+#5  0x0000000003065b77 in  ()
+#6  0x000000000304410c in  ()
+#7  0x00007fea3e635609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#8  0x00007fea3bef2353 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 16 (Thread 0x7fea2f3dd700 (LWP 183)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea329bd4f0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea329bd4a0, cond=0x7fea329bd4c8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea329bd4c8, mutex=0x7fea329bd4a0) at pthread_cond_wait.c:647
+#3  0x0000000003030fcb in  ()
+#4  0x000000000307133f in  ()
+#5  0x0000000003065b77 in  ()
+#6  0x000000000304410c in  ()
+#7  0x00007fea3e635609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#8  0x00007fea3bef2353 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 15 (Thread 0x7fea2f3fe700 (LWP 182)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea329bd470) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea329bd420, cond=0x7fea329bd448) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea329bd448, mutex=0x7fea329bd420) at pthread_cond_wait.c:647
+#3  0x0000000003030fcb in  ()
+#4  0x000000000307133f in  ()
+#5  0x0000000003065b77 in  ()
+#6  0x000000000304410c in  ()
+#7  0x00007fea3e635609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#8  0x00007fea3bef2353 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 14 (Thread 0x7fea2f41f700 (LWP 181)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea329bd3f0) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea329bd3a0, cond=0x7fea329bd3c8) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea329bd3c8, mutex=0x7fea329bd3a0) at pthread_cond_wait.c:647
+#3  0x0000000003030fcb in  ()
+#4  0x000000000307133f in  ()
+#5  0x0000000003065b77 in  ()
+#6  0x000000000304410c in  ()
+#7  0x00007fea3e635609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#8  0x00007fea3bef2353 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 13 (Thread 0x7fea2ff2c700 (LWP 180)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea329bc470) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea329bc420, cond=0x7fea329bc448) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea329bc448, mutex=0x7fea329bc420) at pthread_cond_wait.c:647
+#3  0x0000000003030fcb in  ()
+#4  0x000000000300d084 in  ()
+#5  0x000000000300ce38 in  ()
+#6  0x000000000300cd16 in  ()
+#7  0x0000000003065b77 in  ()
+#8  0x000000000304410c in  ()
+#9  0x00007fea3e635609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fea3bef2353 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 12 (Thread 0x7fea2ff8d700 (LWP 179)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea329bc570) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea329bc520, cond=0x7fea329bc548) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea329bc548, mutex=0x7fea329bc520) at pthread_cond_wait.c:647
+#3  0x0000000003030fcb in  ()
+#4  0x000000000300d084 in  ()
+#5  0x000000000300ce38 in  ()
+#6  0x000000000300cd16 in  ()
+#7  0x0000000003065b77 in  ()
+#8  0x000000000304410c in  ()
+#9  0x00007fea3e635609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fea3bef2353 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 11 (Thread 0x7fea2ffee700 (LWP 178)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea329bc670) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea329bc620, cond=0x7fea329bc648) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea329bc648, mutex=0x7fea329bc620) at pthread_cond_wait.c:647
+#3  0x0000000003030fcb in  ()
+#4  0x000000000300d084 in  ()
+#5  0x000000000300ce38 in  ()
+#6  0x000000000300cd16 in  ()
+#7  0x0000000003065b77 in  ()
+#8  0x000000000304410c in  ()
+#9  0x00007fea3e635609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fea3bef2353 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 10 (Thread 0x7fea3004f700 (LWP 177)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea329bc770) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea329bc720, cond=0x7fea329bc748) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea329bc748, mutex=0x7fea329bc720) at pthread_cond_wait.c:647
+#3  0x0000000003030fcb in  ()
+#4  0x000000000300d084 in  ()
+#5  0x000000000300ce38 in  ()
+#6  0x000000000300cd16 in  ()
+#7  0x0000000003065b77 in  ()
+#8  0x000000000304410c in  ()
+#9  0x00007fea3e635609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fea3bef2353 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 9 (Thread 0x7fea300bf700 (LWP 176)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea329bc874) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea329bc820, cond=0x7fea329bc848) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea329bc848, mutex=0x7fea329bc820) at pthread_cond_wait.c:647
+#3  0x0000000003030fcb in  ()
+#4  0x000000000300d084 in  ()
+#5  0x000000000300ce38 in  ()
+#6  0x000000000300cd16 in  ()
+#7  0x0000000003065b77 in  ()
+#8  0x000000000304410c in  ()
+#9  0x00007fea3e635609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fea3bef2353 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 8 (Thread 0x7fea3012f700 (LWP 175)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea329bc970) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea329bc920, cond=0x7fea329bc948) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea329bc948, mutex=0x7fea329bc920) at pthread_cond_wait.c:647
+#3  0x0000000003030fcb in  ()
+#4  0x000000000300d084 in  ()
+#5  0x000000000300ce38 in  ()
+#6  0x000000000300cd16 in  ()
+#7  0x0000000003065b77 in  ()
+#8  0x000000000304410c in  ()
+#9  0x00007fea3e635609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fea3bef2353 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 7 (Thread 0x7fea3019f700 (LWP 174)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea329bca74) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea329bca20, cond=0x7fea329bca48) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea329bca48, mutex=0x7fea329bca20) at pthread_cond_wait.c:647
+#3  0x0000000003030fcb in  ()
+#4  0x000000000300d084 in  ()
+#5  0x000000000300ce38 in  ()
+#6  0x000000000300cd16 in  ()
+#7  0x0000000003065b77 in  ()
+#8  0x000000000304410c in  ()
+#9  0x00007fea3e635609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fea3bef2353 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 6 (Thread 0x7fea3020a700 (LWP 173)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea329bcb70) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea329bcb20, cond=0x7fea329bcb48) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea329bcb48, mutex=0x7fea329bcb20) at pthread_cond_wait.c:647
+#3  0x0000000003030fcb in  ()
+#4  0x000000000300d084 in  ()
+#5  0x000000000300ce38 in  ()
+#6  0x000000000300cd16 in  ()
+#7  0x0000000003065b77 in  ()
+#8  0x000000000304410c in  ()
+#9  0x00007fea3e635609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fea3bef2353 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 5 (Thread 0x7fea3026b700 (LWP 172)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea329bab74) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea329bab20, cond=0x7fea329bab48) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea329bab48, mutex=0x7fea329bab20) at pthread_cond_wait.c:647
+#3  0x0000000003030fcb in  ()
+#4  0x000000000300d084 in  ()
+#5  0x000000000300ce38 in  ()
+#6  0x000000000300cd16 in  ()
+#7  0x0000000003065b77 in  ()
+#8  0x000000000304410c in  ()
+#9  0x00007fea3e635609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fea3bef2353 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 4 (Thread 0x7fea302cc700 (LWP 171)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea329bac70) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea329bac20, cond=0x7fea329bac48) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea329bac48, mutex=0x7fea329bac20) at pthread_cond_wait.c:647
+#3  0x0000000003030fcb in  ()
+#4  0x000000000300d084 in  ()
+#5  0x000000000300ce38 in  ()
+#6  0x000000000300cd16 in  ()
+#7  0x0000000003065b77 in  ()
+#8  0x000000000304410c in  ()
+#9  0x00007fea3e635609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fea3bef2353 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 3 (Thread 0x7fea3289f700 (LWP 170)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea329bad74) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea329bad20, cond=0x7fea329bad48) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea329bad48, mutex=0x7fea329bad20) at pthread_cond_wait.c:647
+#3  0x0000000003030fcb in  ()
+#4  0x000000000300d084 in  ()
+#5  0x000000000300ce38 in  ()
+#6  0x000000000300cd16 in  ()
+#7  0x0000000003065b77 in  ()
+#8  0x000000000304410c in  ()
+#9  0x00007fea3e635609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fea3bef2353 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 2 (Thread 0x7fea3290f700 (LWP 169)):
+#0  futex_wait_cancelable (private=<optimized out>, expected=0, futex_word=0x7fea329bae74) at ../sysdeps/nptl/futex-internal.h:183
+#1  __pthread_cond_wait_common (abstime=0x0, clockid=0, mutex=0x7fea329bae20, cond=0x7fea329bae48) at pthread_cond_wait.c:508
+#2  __pthread_cond_wait (cond=0x7fea329bae48, mutex=0x7fea329bae20) at pthread_cond_wait.c:647
+#3  0x0000000003030fcb in  ()
+#4  0x000000000300d084 in  ()
+#5  0x000000000300ce38 in  ()
+#6  0x000000000300cd16 in  ()
+#7  0x0000000003065b77 in  ()
+#8  0x000000000304410c in  ()
+#9  0x00007fea3e635609 in start_thread (arg=<optimized out>) at pthread_create.c:477
+#10 0x00007fea3bef2353 in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95
+
+Thread 1 (Thread 0x7fea339bc0c0 (LWP 110)):
+#0  0x00007fea3beb023f in __GI___clock_nanosleep (clock_id=clock_id@entry=0, flags=flags@entry=0, req=req@entry=0x7ffe54ef2d30, rem=rem@entry=0x0) at ../sysdeps/unix/sysv/linux/clock_nanosleep.c:78
+#1  0x00007fea3beb5ec7 in __GI___nanosleep (requested_time=requested_time@entry=0x7ffe54ef2d30, remaining=remaining@entry=0x0) at nanosleep.c:27
+#2  0x00007fea3bee8a7f in usleep (useconds=<optimized out>) at ../sysdeps/posix/usleep.c:32
+#3  0x0000000005930cc5 in  ()
+#4  0x00000000025dd63a in _start ()
+
+RMUA_26B6223_EFFECTIVE_ADDRESS_IF_THIS_IS_THE_FAULT_PC: $1 = 0x7fec10f283e8

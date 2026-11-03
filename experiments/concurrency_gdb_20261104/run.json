@@ -1,0 +1,21 @@
+{
+  "start_wall_unix_s": 1793730697.140154,
+  "start_monotonic_s": 66842.785114425,
+  "seeds": [
+    "123",
+    "456",
+    "2026",
+    "789",
+    "42",
+    "1005",
+    "1007",
+    "2024"
+  ],
+  "note": "idle diagnostic only; GDB can perturb timings, no rule or binary changes",
+  "monitor_start_wall_unix_s": 1793730700.6516116,
+  "monitor_exit_code": 0,
+  "start_exit_code": 0,
+  "cleanup_exit_code": 0,
+  "end_wall_unix_s": 1793730792.0811787,
+  "end_monotonic_s": 66937.726137618
+}

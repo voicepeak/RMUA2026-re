@@ -70,7 +70,16 @@ def main():
             with (out/'cleanup.log').open('w') as log:
                 stop=subprocess.run([sys.executable,str(ROOT/'headless_pool.py'),'stop',str(manifest)],stdout=log,stderr=subprocess.STDOUT)
             meta['cleanup_exit_code']=stop.returncode
+            meta['sigsegv_logs']=[str(p.relative_to(out)) for p in sorted(pool.glob('*.log'))
+                                  if 'received signal SIGSEGV' in p.read_text(errors='replace')]
+        samples=out/'liveness.jsonl'
+        if samples.exists():
+            meta['observed_exited_containers']=sorted({name for line in samples.read_text().splitlines()
+                for name,info in json.loads(line)['containers'].items()
+                if info['docker_state'].get('Status') in ('exited','dead')})
         meta['end_wall_unix_s']=time.time();meta['end_monotonic_s']=time.monotonic();save()
-    return 0 if meta.get('start_exit_code')==0 and meta.get('monitor_exit_code')==0 and meta.get('cleanup_exit_code')==0 else 1
+    return 0 if (meta.get('start_exit_code')==0 and meta.get('monitor_exit_code')==0 and
+                 meta.get('cleanup_exit_code')==0 and not meta.get('sigsegv_logs') and
+                 not meta.get('observed_exited_containers')) else 1
 
 if __name__=='__main__':sys.exit(main())

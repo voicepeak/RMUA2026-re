@@ -59,3 +59,5 @@
 此前 8 路的 seed 42 在约 60.16 墙钟秒后退出 139、Docker 标记非 OOMKilled；同 seed 单进程、相同 NullRHI 空载对照运行至少约 83 秒后仍存活，再由实验脚本主动清理。这是一例对照，不能证明并发就是崩溃原因或给出长期稳定并发上限。重复实验的崩溃顶帧 `0x26b6223` 对应普通整数内存读取，UE 的 SIMD 字样不是对齐错误的确证；缺少崩溃时寄存器与有效地址。`pool8_fast` 没有可用的崩溃栈，不能确定与该故障相同。详情和原始日志在 `experiments/concurrency_followup_20261104/`。
 
 `scripts/run_pool_batches.py` 提供空载诊断的保守 4 路分批、独立端口重试、失败留档和按 manifest 清理；它不是训练 episode 管理器，尚不能从这一短测推断 4 路长期稳定。清理失败会停止后续重试；不应将失败前后轨迹拼成一个 episode。运行命令及边界见上述报告。
+
+8 路带 GDB 的空载复现中（每路独立 ROS master），8 路均就绪，约 89 秒监测内 7 路存活，seed 2024 在启动约 78.16 秒后 SIGSEGV。其寄存器和完整调用栈定位到 `AirSimROSFrame → record_frequency_data → deque::pop_front → operator delete` 路径中读取无效地址；这定位了本次崩溃现场，尚未证明内存为何损坏。独立 master 均曾监听，监测期间宿主 MemAvailable 最低约 28.2 GiB，Docker 未标记该次为 OOM；不能据此排除所有网络、资源或驱动因素。旧崩溃栈不同，不能认定同因。`experiments/concurrency_gdb_20261104/` 包含完整现场与复现命令；`artifacts/rea/frequency_rea.json` 是该频率记录函数的 REA 静态证据。函数内未见显式锁并不单独证明数据竞争。GDB 改变时序，7 路 89 秒存活不能视为长期稳定上限；推荐仍为有监测、失败留档的保守 4 路或更小分批。
