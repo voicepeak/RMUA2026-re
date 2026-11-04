@@ -1,0 +1,15 @@
+{
+  "requested_map": "/Game/Maps/RMUA2024OL/RMUA2024OL2",
+  "seed": 123,
+  "start_wall_unix_s": 1793786911.901348,
+  "status": "target_map_not_observed",
+  "binary_sha256": "5231addfa25ddaa9e4473ea9ac40c9c0bc685174e69cd14bb49159f443b97800",
+  "container_id": "f13c9927388191545ccf3688b0b44653587bc1d8e405b9ec746db882c288e8e3",
+  "window_title": "RMUA  ",
+  "console_command_wall_unix_s": 1793786923.5077713,
+  "observed_maps": [
+    "/Game/Maps/RMUA2024OL/RMUA2024Lobby?Name=Player",
+    "/Game/Maps/RMUA2024OL/RMUA2024OL1"
+  ],
+  "end_wall_unix_s": 1793786931.8997421
+}
