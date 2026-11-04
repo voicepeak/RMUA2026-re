@@ -154,3 +154,7 @@ stage 6 强制风六场均获得非零风、PWM、IMU/GPS 和 LiDAR 时钟；三
 stage 5 固定开环 PWM 六场均发送 248 条命令、采到 800–801 条输出；非初始零阶段的同阶段 header 首次匹配差约 0.1–37.7 ms。不能将 header 差当作已标定的端到端延迟，初始零没有匹配。见 `experiments/wind_pwm_step_5_20261105/`。
 
 对单 seed 延长到 25 秒后，单次状态写入的 stage 4 和 5 风话题分别在 1230/1231 条样本内保持同一向量，未覆盖生成数组预示的过渡。单次状态注入可能被后续状态变化覆盖，也可能涉及其他更新条件，原因尚未确认；前述 8 秒非零风样本因此只能证明一次风状态输出，不证明持续演化。保留 `experiments/wind_transition_4_20261105/` 和 `experiments/wind_transition_5_20261105/`，正在测试持续注入与时钟追踪。
+
+碰撞回调开发注入对照已覆盖三个 seed 各两次：将 state 设为 7 后直接调用 `0x2fb7110`，`IgnoreAllHitCollision=0` 的六场返回时均为 state 12；标志为 1 的六场返回时均为 state 7。两组均在调用后恢复原指令字节，见 `experiments/collision_inject_ignore0_20261105/`、`experiments/collision_inject_ignore1_20261105/` 和 `scripts/analyze_collision_inject.py`。这验证被注入回调的分支，不是线障/车辆物理接触或碰撞几何验收。
+
+stage 6 单次状态注入的 25 秒风也保持同一向量（1234 条），见 `experiments/wind_transition_6_20261105/`。另一个 stage 4 单 seed 试场每个游戏 tick 将 state 重新写为 7，并只在首次设置段起始单调时钟；其关键帧索引从 0 推进到 1、2 等，25 秒 ROS 风矢量发生变化，速度模约 1.50–1.84。该试场保留 GDB 时钟、索引和传感器原始数据于 `experiments/wind_persistent_pilot_20261105/`；持续注入改变每个 tick 且断点影响调度，不能视为自然赛程或确定单次注入冻结的根因。

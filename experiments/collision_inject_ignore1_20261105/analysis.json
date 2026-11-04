@@ -1,0 +1,81 @@
+{
+  "ignore_collision": 1,
+  "runs": {
+    "seed123_repeat1": {
+      "injections": [
+        [
+          "7",
+          "1"
+        ]
+      ],
+      "return_states": [
+        7
+      ],
+      "status": "observed"
+    },
+    "seed123_repeat2": {
+      "injections": [
+        [
+          "7",
+          "1"
+        ]
+      ],
+      "return_states": [
+        7
+      ],
+      "status": "observed"
+    },
+    "seed456_repeat1": {
+      "injections": [
+        [
+          "7",
+          "1"
+        ]
+      ],
+      "return_states": [
+        7
+      ],
+      "status": "observed"
+    },
+    "seed456_repeat2": {
+      "injections": [
+        [
+          "7",
+          "1"
+        ]
+      ],
+      "return_states": [
+        7
+      ],
+      "status": "observed"
+    },
+    "seed2026_repeat1": {
+      "injections": [
+        [
+          "7",
+          "1"
+        ]
+      ],
+      "return_states": [
+        7
+      ],
+      "status": "observed"
+    },
+    "seed2026_repeat2": {
+      "injections": [
+        [
+          "7",
+          "1"
+        ]
+      ],
+      "return_states": [
+        7
+      ],
+      "status": "observed"
+    }
+  },
+  "limitations": [
+    "callback deliberately invoked; no geometric contact or force measured",
+    "state and ignore flag overwritten in process memory"
+  ]
+}
