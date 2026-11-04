@@ -1,0 +1,953 @@
+Breakpoint 1 (_ZN10airsim_ros21record_frequency_dataERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE) pending.
+FREQ_PROBE {"event": "ready", "monotonic_s": 122662.312714606, "wall_unix_s": 1793786516.667756}
+Function "_ZN10airsim_ros21record_frequency_dataERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE" not defined.
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/usr/lib/x86_64-linux-gnu/libthread_db.so.1".
+Looking for binary: ../../../RMUA/Config/BinaryConfig.ini
+[Detaching after vfork from child process 225]
+sh: 1: xdg-user-dir: not found
+4.27.2-0+++UE4+Release-4.27 522 0
+Disabling core dumps.
+LogConsoleResponse: Display: Failed to find resolution value strings in scalability ini. Falling back to default.
+LogConsoleResponse: Display: Failed to find resolution value strings in scalability ini. Falling back to default.
+LogPakFile: Display: Found Pak file ../../../RMUA/Content/Paks/RMUA-LinuxNoEditor.pak attempting to mount.
+LogPakFile: Display: Mounting pak file ../../../RMUA/Content/Paks/RMUA-LinuxNoEditor.pak.
+LogPakFile: PakFile PrimaryIndexSize=122598
+LogPakFile: PakFile PathHashIndexSize=60199
+LogPakFile: PakFile FullDirectoryIndexSize=94561
+LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile '../../../RMUA/Content/Paks/RMUA-LinuxNoEditor.pak' (chunk index -1, root '../../../') mounted
+LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:../../../ File:../../../RMUA/Content/Paks/RMUA-LinuxNoEditor.pak)
+LogPakFile: OnPakFileMounted2Time == 0.000004
+LogPlatformFile: Using cached read wrapper
+LogTaskGraph: Started task graph with 4 named threads and 16 total threads with 3 sets of task threads.
+LogICUInternationalization: ICU TimeZone Detection - Raw Offset: +0:00, Platform Override: ''
+LogInit: Display: Loading text-based GConfig....
+LogPluginManager: Mounting plugin AirSim
+LogPluginManager: Mounting plugin PhysXVehicles
+LogPluginManager: Mounting plugin AirSimROS
+LogPluginManager: Mounting plugin Paper2D
+LogPluginManager: Mounting plugin AISupport
+LogPluginManager: Mounting plugin EnvironmentQueryEditor
+LogPluginManager: Mounting plugin LightPropagationVolume
+LogPluginManager: Mounting plugin CameraShakePreviewer
+LogPluginManager: Mounting plugin GameplayCameras
+LogPluginManager: Mounting plugin TemplateSequence
+LogPluginManager: Mounting plugin LevelSequenceEditor
+LogPluginManager: Mounting plugin OodleData
+LogPluginManager: Mounting plugin OodleNetwork
+LogPluginManager: Mounting plugin AnimationSharing
+LogPluginManager: Mounting plugin SignificanceManager
+LogPluginManager: Mounting plugin PluginUtils
+LogPluginManager: Mounting plugin PropertyAccessEditor
+LogPluginManager: Mounting plugin UObjectPlugin
+LogPluginManager: Mounting plugin AssetManagerEditor
+LogPluginManager: Mounting plugin FacialAnimation
+LogPluginManager: Mounting plugin GeometryMode
+LogPluginManager: Mounting plugin SpeedTreeImporter
+LogPluginManager: Mounting plugin DatasmithContent
+LogPluginManager: Mounting plugin VariantManagerContent
+LogPluginManager: Mounting plugin AlembicImporter
+LogPluginManager: Mounting plugin GeometryCache
+LogPluginManager: Mounting plugin AutomationUtils
+LogPluginManager: Mounting plugin ScreenshotTools
+LogPluginManager: Mounting plugin BackChannel
+LogPluginManager: Mounting plugin ChaosCloth
+LogPluginManager: Mounting plugin ChaosClothEditor
+LogPluginManager: Mounting plugin ChaosEditor
+LogPluginManager: Mounting plugin PlanarCut
+LogPluginManager: Mounting plugin GeometryProcessing
+LogPluginManager: Mounting plugin EditableMesh
+LogPluginManager: Mounting plugin GeometryCollectionPlugin
+LogPluginManager: Mounting plugin ProceduralMeshComponent
+LogPluginManager: Mounting plugin ChaosSolverPlugin
+LogPluginManager: Mounting plugin ChaosNiagara
+LogPluginManager: Mounting plugin Niagara
+LogPluginManager: Mounting plugin PythonScriptPlugin
+LogPluginManager: Mounting plugin CharacterAI
+LogPluginManager: Mounting plugin MotoSynth
+LogPluginManager: Mounting plugin PlatformCrypto
+LogPluginManager: Mounting plugin AvfMedia
+LogPluginManager: Mounting plugin ImgMedia
+LogPluginManager: Mounting plugin MediaCompositing
+LogPluginManager: Mounting plugin WmfMedia
+LogPluginManager: Mounting plugin MeshPainting
+LogPluginManager: Mounting plugin TcpMessaging
+LogPluginManager: Mounting plugin UdpMessaging
+LogPluginManager: Mounting plugin ActorSequence
+LogPluginManager: Mounting plugin MatineeToLevelSequence
+LogPluginManager: Mounting plugin OnlineSubsystem
+LogPluginManager: Mounting plugin OnlineSubsystemNull
+LogPluginManager: Mounting plugin OnlineSubsystemUtils
+LogPluginManager: Mounting plugin LauncherChunkInstaller
+LogPluginManager: Mounting plugin ActorLayerUtilities
+LogPluginManager: Mounting plugin AndroidPermission
+LogPluginManager: Mounting plugin AppleImageUtils
+LogPluginManager: Mounting plugin ArchVisCharacter
+LogPluginManager: Mounting plugin AssetTags
+LogPluginManager: Mounting plugin AudioCapture
+LogPluginManager: Mounting plugin CableComponent
+LogPluginManager: Mounting plugin ChunkDownloader
+LogPluginManager: Mounting plugin CustomMeshComponent
+LogPluginManager: Mounting plugin ExampleDeviceProfileSelector
+LogPluginManager: Mounting plugin GooglePAD
+LogPluginManager: Mounting plugin LinuxDeviceProfileSelector
+LogPluginManager: Mounting plugin LocationServicesBPLibrary
+LogPluginManager: Mounting plugin MobilePatchingUtils
+LogPluginManager: Mounting plugin RuntimePhysXCooking
+LogPluginManager: Mounting plugin SoundFields
+LogPluginManager: Mounting plugin Synthesis
+LogPluginManager: Mounting plugin AudioSynesthesia
+LogPluginManager: Mounting plugin WebMMoviePlayer
+LogPluginManager: Mounting plugin WebMMedia
+LogInit: Using libcurl 7.65.3-DEV
+LogInit:  - built for x86_64-unknown-linux-gnu
+LogInit:  - supports SSL with OpenSSL/1.1.1c
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_TLSAUTH_SRP
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - MaxHostConnections = 16  - Libcurl will limit the number of connections to a host
+LogInit:  - LocalHostAddr = Default
+LogInit:  - BufferSize = 65536
+LogOnline: OSS: Creating online subsystem instance for: NULL
+LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
+LogInit: Build: ++UE4+Release-4.27-CL-0
+LogInit: Engine Version: 4.27.2-0+++UE4+Release-4.27
+LogInit: Compatible Engine Version: 4.27.0-0+++UE4+Release-4.27
+LogInit: Net CL: 0
+LogInit: OS: GenericOSVersionLabel (GenericOSSubVersionLabel), CPU: 12th Gen Intel(R) Core(TM) i7-12700H, GPU: GenericGPUBrand
+LogInit: Compiled (64-bit): Jan 28 2026 12:56:35
+LogInit: Compiled with Clang: 11.0.1 
+LogInit: Build Configuration: Shipping
+LogInit: Branch Name: ++UE4+Release-4.27
+LogInit: Command Line:  seed 123 -nullrhi -settings=/configs/settings.json
+LogInit: Base Directory: /sim/Build/LinuxNoEditor/RMUA/Binaries/Linux/
+LogInit: Allocator: binned2
+LogInit: Installed Engine Build: 1
+LogInit: Presizing for max 2097152 objects, including 1 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Engine.ini]
+LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+LogStreaming: Display: Async Loading initialized: Event Driven Loader: true, Async Loading Thread: false, Async Post Load: true
+LogInit: Object subsystem initialized
+LogConfig: Setting CVar [[r.setres:1280x720]]
+LogConfig: Setting CVar [[fx.NiagaraAllowRuntimeScalabilityChanges:1]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.setres:1280x720]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[fx.NiagaraAllowRuntimeScalabilityChanges:1]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Engine.ini]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Engine.ini]
+[2026.11.04-10.01.57:460][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Engine.ini]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Engine.ini]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:25165824]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[gc.MultithreadedDestructionEnabled:1]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Engine.ini]
+[2026.11.04-10.01.57:460][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.AnisotropicMaterials:1]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountMaxPerSlice:4]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:128.0]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:128.0]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.SkyLight.RealTimeReflectionCapture:1]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[fx.Niagara.QualityLevel:3]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.IntegrationType:2]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:4]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.HairStrands.Visibility.MSAA.SamplePerPixel:4]]
+[2026.11.04-10.01.57:460][  0]LogLinux: Selected Device Profile: [LinuxNoEditor]
+[2026.11.04-10.01.57:460][  0]LogInit: Applying CVar settings loaded from the selected device profile: [LinuxNoEditor]
+[2026.11.04-10.01.57:460][  0]LogHAL: Display: Platform has ~ 4 GB [41855913984 / 4294967296 / 39], which maps to Smallest [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
+[2026.11.04-10.01.57:460][  0]LogInit: Going up to parent DeviceProfile [Linux]
+[2026.11.04-10.01.57:460][  0]LogInit: Going up to parent DeviceProfile []
+[2026.11.04-10.01.57:460][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2026.11.04-10.01.57:460][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2026.11.04-10.01.57:461][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2026.11.04-10.01.57:461][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2026.11.04-10.01.57:461][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2026.11.04-10.01.57:461][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2026.11.04-10.01.57:461][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2026.11.04-10.01.57:461][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2026.11.04-10.01.57:461][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2026.11.04-10.01.57:461][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2026.11.04-10.01.57:461][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2026.11.04-10.01.57:461][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2026.11.04-10.01.57:461][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.04-10.01.57:461][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2026.11.04-10.01.57:461][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2026.11.04-10.01.57:461][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2026.11.04-10.01.57:461][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2026.11.04-10.01.57:461][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2026.11.04-10.01.57:461][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2026.11.04-10.01.57:461][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2026.11.04-10.01.57:461][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2026.11.04-10.01.57:461][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2026.11.04-10.01.57:461][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.04-10.01.57:461][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2026.11.04-10.01.57:461][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2026.11.04-10.01.57:461][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2026.11.04-10.01.57:461][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2026.11.04-10.01.57:461][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2026.11.04-10.01.57:461][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2026.11.04-10.01.57:461][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2026.11.04-10.01.57:461][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2026.11.04-10.01.57:461][  0]LogConfig: Setting CVar [[r.AnisotropicMaterials:1]]
+[2026.11.04-10.01.57:461][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2026.11.04-10.01.57:461][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2026.11.04-10.01.57:461][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2026.11.04-10.01.57:461][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2026.11.04-10.01.57:461][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2026.11.04-10.01.57:461][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2026.11.04-10.01.57:461][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2026.11.04-10.01.57:461][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2026.11.04-10.01.57:461][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountMaxPerSlice:4]]
+[2026.11.04-10.01.57:461][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2026.11.04-10.01.57:461][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2026.11.04-10.01.57:461][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2026.11.04-10.01.57:461][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:128.0]]
+[2026.11.04-10.01.57:461][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2026.11.04-10.01.57:461][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:128.0]]
+[2026.11.04-10.01.57:461][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2026.11.04-10.01.57:461][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2026.11.04-10.01.57:461][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2026.11.04-10.01.57:461][  0]LogConfig: Setting CVar [[r.SkyLight.RealTimeReflectionCapture:1]]
+[2026.11.04-10.01.57:461][  0]LogConfig: Setting CVar [[fx.Niagara.QualityLevel:3]]
+[2026.11.04-10.01.57:461][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.04-10.01.57:461][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2026.11.04-10.01.57:461][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2026.11.04-10.01.57:461][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.04-10.01.57:461][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.IntegrationType:2]]
+[2026.11.04-10.01.57:461][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:4]]
+[2026.11.04-10.01.57:461][  0]LogConfig: Setting CVar [[r.HairStrands.Visibility.MSAA.SamplePerPixel:4]]
+[2026.11.04-10.01.57:461][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Engine.ini]
+[2026.11.04-10.01.57:461][  0]LogConfig: Setting CVar [[g.TimeoutForBlockOnRenderFence:60000]]
+[2026.11.04-10.01.57:461][  0]LogInit: Unix hardware info:
+[2026.11.04-10.01.57:461][  0]LogInit:  - we are the first instance of this executable
+[2026.11.04-10.01.57:461][  0]LogInit:  - this process' id (pid) is 128, parent process' id (ppid) is 126
+[2026.11.04-10.01.57:461][  0]LogInit:  - we are not running under debugger
+[2026.11.04-10.01.57:461][  0]LogInit:  - machine network name is 'tianbot'
+[2026.11.04-10.01.57:461][  0]LogInit:  - user name is 'euid1000' (euid1000)
+[2026.11.04-10.01.57:461][  0]LogInit:  - we're logged in locally
+[2026.11.04-10.01.57:461][  0]LogInit:  - we're running without rendering
+[2026.11.04-10.01.57:461][  0]LogInit:  - CPU: GenuineIntel '12th Gen Intel(R) Core(TM) i7-12700H' (signature: 0x906A3)
+[2026.11.04-10.01.57:461][  0]LogInit:  - Number of physical cores available for the process: 14
+[2026.11.04-10.01.57:461][  0]LogInit:  - Number of logical cores available for the process: 20
+[2026.11.04-10.01.57:461][  0]LogInit:  - Cache line size: 64
+[2026.11.04-10.01.57:461][  0]LogInit:  - Memory allocator used: binned2
+[2026.11.04-10.01.57:461][  0]LogInit:  - This binary is optimized with LTO: no, PGO: no, instrumented for PGO data collection: no
+[2026.11.04-10.01.57:461][  0]LogInit:  - This is an internal build.
+[2026.11.04-10.01.57:461][  0]LogCore: Benchmarking clocks:
+[2026.11.04-10.01.57:461][  0]LogCore:  - CLOCK_MONOTONIC (id=1) can sustain 80557108 (80557K, 81M) calls per second without zero deltas.
+[2026.11.04-10.01.57:461][  0]LogCore:  - CLOCK_MONOTONIC_RAW (id=4) can sustain 81995543 (81996K, 82M) calls per second without zero deltas.
+[2026.11.04-10.01.57:461][  0]LogCore:  - CLOCK_MONOTONIC_COARSE (id=6) can sustain 211809909 (211810K, 212M) calls per second with 99.999523% zero deltas.
+[2026.11.04-10.01.57:461][  0]LogCore: Selected clock_id 4 (CLOCK_MONOTONIC_RAW) since it is the fastest support clock without zero deltas.
+[2026.11.04-10.01.57:461][  0]LogInit: Unix-specific commandline switches:
+[2026.11.04-10.01.57:461][  0]LogInit:  -ansimalloc - use malloc()/free() from libc (useful for tools like valgrind and electric fence)
+[2026.11.04-10.01.57:461][  0]LogInit:  -jemalloc - use jemalloc for all memory allocation
+[2026.11.04-10.01.57:461][  0]LogInit:  -binnedmalloc - use binned malloc  for all memory allocation
+[2026.11.04-10.01.57:461][  0]LogInit:  -filemapcachesize=NUMBER - set the size for case-sensitive file mapping cache
+[2026.11.04-10.01.57:461][  0]LogInit:  -useksm - uses kernel same-page mapping (KSM) for mapped memory (OFF)
+[2026.11.04-10.01.57:461][  0]LogInit:  -ksmmergeall - marks all mmap'd memory pages suitable for KSM (OFF)
+[2026.11.04-10.01.57:461][  0]LogInit:  -preloadmodulesymbols - Loads the main module symbols file into memory (OFF)
+[2026.11.04-10.01.57:461][  0]LogInit:  -sigdfl=SIGNAL - Allows a specific signal to be set to its default handler rather then ignoring the signal
+[2026.11.04-10.01.57:461][  0]LogInit:  -httpproxy=ADDRESS:PORT - redirects HTTP requests to a proxy (only supported if compiled with libcurl)
+[2026.11.04-10.01.57:461][  0]LogInit:  -reuseconn - allow libcurl to reuse HTTP connections (only matters if compiled with libcurl)
+[2026.11.04-10.01.57:461][  0]LogInit:  -virtmemkb=NUMBER - sets process virtual memory (address space) limit (overrides VirtualMemoryLimitInKB value from .ini)
+[2026.11.04-10.01.57:461][  0]LogInit:  - Physical RAM available (not considering process quota): 39 GB (39916 MB, 40874916 KB, 41855913984 bytes)
+[2026.11.04-10.01.57:461][  0]LogInit:  - VirtualMemoryAllocator pools will grow at scale 1.4
+[2026.11.04-10.01.57:461][  0]LogInit:  - MemoryRangeDecommit() will be a no-op (re-run with -vmapoolevict to change)
+[2026.11.04-10.01.57:512][  0]LogInit: Physics initialised using underlying interface: PhysX
+[2026.11.04-10.01.57:512][  0]LogInit: Using OS detected language (en-US-POSIX).
+[2026.11.04-10.01.57:512][  0]LogInit: Using OS detected locale (en-US-POSIX).
+[2026.11.04-10.01.57:512][  0]LogTextLocalizationManager: No specific localization for 'en-US-POSIX' exists, so the 'en' localization will be used.
+[2026.11.04-10.01.57:523][  0]LogInit: Not creating cursor resources due to headless application.
+[2026.11.04-10.01.57:524][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2026.11.04-10.01.57:524][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2026.11.04-10.01.57:525][  0]LogRendererCore: Ray tracing is disabled. Reason: r.RayTracing=0.
+[2026.11.04-10.01.57:525][  0]LogSlate: Using FreeType 2.10.0
+[2026.11.04-10.01.57:525][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2026.11.04-10.01.57:527][  0]LogInit: Using OS detected language (en-US-POSIX).
+[2026.11.04-10.01.57:527][  0]LogInit: Using OS detected locale (en-US-POSIX).
+[2026.11.04-10.01.57:527][  0]LogTextLocalizationManager: No localization for 'en-US-POSIX' exists, so 'en' will be used for the language.
+[2026.11.04-10.01.57:527][  0]LogTextLocalizationManager: No localization for 'en-US-POSIX' exists, so 'en' will be used for the locale.
+[2026.11.04-10.01.57:527][  0]LogSlate: Warning: FontCache flush requested. Reason: Culture for localization was changed
+[2026.11.04-10.01.57:528][  0]LogAssetRegistry: FAssetRegistry took 0.0002 seconds to start up
+[2026.11.04-10.01.57:556][  0]LogTextLocalizationManager: Compacting localization data took   1.31ms
+[2026.11.04-10.01.57:556][  0]LogStreaming: Display: FlushAsyncLoading: 1 QueuedPackages, 0 AsyncPackages
+[2026.11.04-10.01.57:556][  0]LogPackageLocalizationCache: Processed 20 localized package path(s) for 1 prioritized culture(s) in 0.000023 seconds
+[2026.11.04-10.01.57:556][  0]LogPakFile: New pak file ../../../RMUA/Content/Paks/RMUA-LinuxNoEditor.pak added to pak precacher.
+[2026.11.04-10.01.57:560][  0]LogSerialization: Display: AllowBulkDataInIoStore: 'true'
+[2026.11.04-10.01.57:560][  0]LogLinux: Selected Device Profile: [LinuxNoEditor]
+[2026.11.04-10.01.57:560][  0]LogInit: Active device profile: [0x73669c9191c0][0x73669bce9250 49] LinuxNoEditor
+[2026.11.04-10.01.57:560][  0]LogInit: Profiles: [0x73669c918ec0][0x7366a3f30010 49] Linux, [0x73669c9191c0][0x73669bce9250 49] LinuxNoEditor, 
+[2026.11.04-10.01.57:563][  0]LogNetVersion: RMUA 1.0.0, NetCL: 0, EngineNetVer: 17, GameNetVer: 0 (Checksum: 41731042)
+[2026.11.04-10.01.57:588][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2026.11.04-10.01.57:588][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2026.11.04-10.01.57:589][  0]LogTemp: Circle 构造函数调用
+[2026.11.04-10.01.57:589][  0]LogTemp: Circle 构造函数调用
+[2026.11.04-10.01.57:589][  0]LogTemp: Circle 构造函数调用
+[2026.11.04-10.01.57:594][  0]LogTemp: StartupModule: AirSim plugin
+[2026.11.04-10.01.57:666][  0]LogTemp: AirSimROS Loaded.
+[2026.11.04-10.01.57:666][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2026.11.04-10.01.57:668][  0]LogUObjectArray: 15078 objects as part of root set at end of initial load.
+[2026.11.04-10.01.57:668][  0]LogUObjectArray: 2 objects are not in the root set, but can never be destroyed because they are in the DisregardForGC set.
+[2026.11.04-10.01.57:668][  0]LogUObjectAllocator: 3117992 out of 0 bytes used by permanent object pool.
+[2026.11.04-10.01.57:668][  0]LogUObjectArray: CloseDisregardForGC: 15078/15078 objects in disregard for GC pool
+[2026.11.04-10.01.57:670][  0]LogEngine: Initializing Engine...
+ALSA lib confmisc.c:767:(parse_card) cannot find card '0'
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_card_driver returned error: No such file or directory
+ALSA lib confmisc.c:392:(snd_func_concat) error evaluating strings
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_concat returned error: No such file or directory
+ALSA lib confmisc.c:1246:(snd_func_refer) error evaluating name
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5220:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2642:(snd_pcm_open_noupdate) Unknown PCM default
+ALSA lib confmisc.c:767:(parse_card) cannot find card '0'
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_card_driver returned error: No such file or directory
+ALSA lib confmisc.c:392:(snd_func_concat) error evaluating strings
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_concat returned error: No such file or directory
+ALSA lib confmisc.c:1246:(snd_func_refer) error evaluating name
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5220:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2642:(snd_pcm_open_noupdate) Unknown PCM default
+[2026.11.04-10.01.57:670][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.000 s
+[2026.11.04-10.01.57:701][  0]LogInit: Initializing FReadOnlyCVARCache
+[2026.11.04-10.01.57:701][  0]LogAudio: Display: Initializing Audio Device Manager...
+[2026.11.04-10.01.57:701][  0]LogAudio: Display: Loading Default Audio Settings Objects...
+[2026.11.04-10.01.57:702][  0]LogAudio: Display: No default SoundConcurrencyObject specified (or failed to load).
+[2026.11.04-10.01.57:702][  0]LogAudio: Display: Audio Device Manager Initialized
+[2026.11.04-10.01.57:702][  0]LogAudio: Display: Creating Audio Device:                 Id: 1, Scope: Shared, Realtime: True
+[2026.11.04-10.01.57:702][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2026.11.04-10.01.57:702][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2026.11.04-10.01.57:702][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2026.11.04-10.01.57:702][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2026.11.04-10.01.57:702][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2026.11.04-10.01.57:702][  0]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2026.11.04-10.01.57:702][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2026.11.04-10.01.57:702][  0]LogAudio: Display: AudioDevice MaxSources: 32
+[2026.11.04-10.01.57:702][  0]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2026.11.04-10.01.57:702][  0]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2026.11.04-10.01.57:702][  0]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2026.11.04-10.01.57:702][  0]LogAudioMixer: Display: Initializing audio mixer.
+[2026.11.04-10.01.57:736][  0]LogAudioMixerSDL: Display: Initialized SDL using alsa platform API backend.
+[2026.11.04-10.01.57:736][  0]LogAudioMixerSDL: Error: ALSA: Couldn't open audio device: No such file or directory
+[2026.11.04-10.01.57:736][  0]LogAudioMixerSDL: Opening default audio device (device index -1)
+[2026.11.04-10.01.57:736][  0]LogAudioMixerSDL: Error: ALSA: Couldn't open audio device: No such file or directory
+[2026.11.04-10.01.57:736][  0]LogAudio: Warning: Could not initialize hardware. Tearing down anything that was set up during initialization
+[2026.11.04-10.01.57:841][  0]LogAudio: Warning: FAudioDevice::Init Failed!
+[2026.11.04-10.01.57:841][  0]LogAudio: Display: Destroying Audio Device 1: could not be initialized. Check AudioDeviceModuleName and AudioMixerModuleName in [Platform]Engine.ini.
+[2026.11.04-10.01.57:841][  0]LogAudio: Display: Main audio device could not be initialized. Please check the value for AudioDeviceModuleName and AudioMixerModuleName in [Platform]Engine.ini.
+[2026.11.04-10.01.57:841][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2026.11.04-10.01.57:841][  0]LogInit: Texture streaming: Disabled
+[2026.11.04-10.01.57:843][  0]LogTemp: Warning: Air Sim Set Event System Success
+[2026.11.04-10.01.57:843][  0]LogTemp: Warning: Air Sim ROS Set Event System Success
+[2026.11.04-10.01.57:843][  0]LogTemp: 当前比赛模式为 2！
+[2026.11.04-10.01.57:843][  0]LogTemp: 当前版本号为 12.0.0.5！
+[2026.11.04-10.01.57:843][  0]LogTemp: Warning: App Init End !!! 2026-11-04 10:01:57 127.0.0.2
+[2026.11.04-10.01.57:843][  0]LogAudio: Display: Creating Audio Device:                 Id: 2, Scope: Shared, Realtime: True
+[2026.11.04-10.01.57:843][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2026.11.04-10.01.57:843][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2026.11.04-10.01.57:843][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2026.11.04-10.01.57:843][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2026.11.04-10.01.57:843][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2026.11.04-10.01.57:843][  0]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2026.11.04-10.01.57:843][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2026.11.04-10.01.57:843][  0]LogAudio: Display: AudioDevice MaxSources: 32
+ALSA lib confmisc.c:767:(parse_card) cannot find card '0'
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_card_driver returned error: No such file or directory
+ALSA lib confmisc.c:392:(snd_func_concat) error evaluating strings
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_concat returned error: No such file or directory
+ALSA lib confmisc.c:1246:(snd_func_refer) error evaluating name
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5220:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2642:(snd_pcm_open_noupdate) Unknown PCM default
+ALSA lib confmisc.c:767:(parse_card) cannot find card '0'
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_card_driver returned error: No such file or directory
+ALSA lib confmisc.c:392:(snd_func_concat) error evaluating strings
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_concat returned error: No such file or directory
+ALSA lib confmisc.c:1246:(snd_func_refer) error evaluating name
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5220:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2642:(snd_pcm_open_noupdate) Unknown PCM default
+Resizing viewport due to setres change, 1280 x 720
+[2026.11.04-10.01.57:843][  0]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2026.11.04-10.01.57:843][  0]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2026.11.04-10.01.57:843][  0]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2026.11.04-10.01.57:843][  0]LogAudioMixer: Display: Initializing audio mixer.
+[2026.11.04-10.01.57:857][  0]LogAudioMixerSDL: Display: Initialized SDL using alsa platform API backend.
+[2026.11.04-10.01.57:857][  0]LogAudioMixerSDL: Error: ALSA: Couldn't open audio device: No such file or directory
+[2026.11.04-10.01.57:857][  0]LogAudioMixerSDL: Opening default audio device (device index -1)
+[2026.11.04-10.01.57:857][  0]LogAudioMixerSDL: Error: ALSA: Couldn't open audio device: No such file or directory
+[2026.11.04-10.01.57:857][  0]LogAudio: Warning: Could not initialize hardware. Tearing down anything that was set up during initialization
+[2026.11.04-10.01.57:960][  0]LogAudio: Warning: FAudioDevice::Init Failed!
+[2026.11.04-10.01.57:960][  0]LogAudio: Display: Destroying Audio Device 2: could not be initialized. Check AudioDeviceModuleName and AudioMixerModuleName in [Platform]Engine.ini.
+[2026.11.04-10.01.57:960][  0]LogEngine: GameWindow did not exist.  Was created
+[2026.11.04-10.01.57:960][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2026.11.04-10.01.57:960][  0]LogInit: Display: Game Engine Initialized.
+[2026.11.04-10.01.57:960][  0]LogInit: Display: Starting Game.
+[2026.11.04-10.01.57:960][  0]LogNet: Browse: /Game/Maps/RMUA2024OL/RMUA2024Lobby?Name=Player
+[2026.11.04-10.01.57:960][  0]LogLoad: LoadMap: /Game/Maps/RMUA2024OL/RMUA2024Lobby?Name=Player
+[2026.11.04-10.01.57:960][  0]LogWorld: BeginTearingDown for /Temp/Untitled_0
+[2026.11.04-10.01.57:961][  0]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2026.11.04-10.01.57:961][  0]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.11.04-10.01.57:962][  0]LogUObjectHash: Compacting FUObjectHashTables data took   0.25ms
+[2026.11.04-10.01.57:965][  0]LogAIModule: Creating AISystem for world RMUA2024Lobby
+[2026.11.04-10.01.57:965][  0]LogLoad: Game class is 'GameModeBase'
+[2026.11.04-10.01.57:966][  0]LogWorld: Bringing World /Game/Maps/RMUA2024OL/RMUA2024Lobby.RMUA2024Lobby up for play (max tick rate 0) at 2026.11.04-10.01.57
+[2026.11.04-10.01.57:966][  0]LogWorld: Bringing up level for play took: 0.000100
+[2026.11.04-10.01.57:966][  0]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2026.11.04-10.01.57:966][  0]r.SetRes = "1280x720 w"
+[2026.11.04-10.01.57:966][  0]LogViewport: Display: Viewport HideCursorDuringCapture Changed, False -> True
+[2026.11.04-10.01.57:966][  0]LogViewport: Display: Viewport MouseCaptureMode Changed, NoCapture -> CaptureDuringMouseDown
+[2026.11.04-10.01.57:966][  0]LogLoad: Took 0.005581 seconds to LoadMap(/Game/Maps/RMUA2024OL/RMUA2024Lobby)
+[2026.11.04-10.01.57:973][  0]LogInit: Display: Engine is initialized. Leaving FEngineLoop::Init()
+[2026.11.04-10.01.57:973][  0]LogLoad: (Engine Initialization) Total time: 0.60 seconds
+[2026.11.04-10.02.02:973][985]LogNet: Browse: /Game/Maps/RMUA2024OL/RMUA2024OL1
+[2026.11.04-10.02.02:973][985]LogLoad: LoadMap: /Game/Maps/RMUA2024OL/RMUA2024OL1
+[2026.11.04-10.02.02:973][985]LogWorld: BeginTearingDown for /Game/Maps/RMUA2024OL/RMUA2024Lobby
+[2026.11.04-10.02.02:973][985]LogWorld: UWorld::CleanupWorld for RMUA2024Lobby, bSessionEnded=true, bCleanupResources=true
+[2026.11.04-10.02.02:973][985]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.11.04-10.02.02:974][985]LogUObjectHash: Compacting FUObjectHashTables data took   0.30ms
+[2026.11.04-10.02.02:974][985]LogStreaming: Display: FlushAsyncLoading: 1 QueuedPackages, 0 AsyncPackages
+[2026.11.04-10.02.03:274][985]LogPakFile: Precache HighWater 16MB
+
+[2026.11.04-10.02.03:274][985]LogAIModule: Creating AISystem for world RMUA2024OL1
+[2026.11.04-10.02.03:274][985]LogLoad: Game class is 'AirSimGameMode'
+[2026.11.04-10.02.03:303][985]LogWorld: Bringing World /Game/Maps/RMUA2024OL/RMUA2024OL1.RMUA2024OL1 up for play (max tick rate 0) at 2026.11.04-10.02.03
+[2026.11.04-10.02.03:304][985]LogWorld: Bringing up level for play took: 0.029142
+[2026.11.04-10.02.03:319][985]LogPackageName: SearchForPackageOnDisk took   0.013s, but failed to resolve .
+[2026.11.04-10.02.03:319][985]r.CustomDepth = "3"
+[2026.11.04-10.02.03:320][985]LogActor: Warning: BP_CameraDirector_C /Game/Maps/RMUA2024OL/RMUA2024OL1.RMUA2024OL1:PersistentLevel.CameraDirector has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2026.11.04-10.02.03:337][985]LogScript: Warning: Script Msg: Attempted to access index 0 from array 'CallFunc_GetAllActorsOfClass_OutActors' of length 0 in '/AirSim/Weather/WeatherFX/WeatherActor.WeatherActor_C:ExecuteUbergraph_WeatherActor'!
+[2026.11.04-10.02.03:338][985]LogTemp: Warning: No Drone API
+[2026.11.04-10.02.03:339][985]LogTemp: drone_1
+drone_1
+Resizing viewport due to setres change, 1280 x 720
+[Detaching after vfork from child process 476]
+FREQ_PROBE {"count": 1, "event": "count", "monotonic_s": 122669.027543403, "tid": 257, "topic": "frame", "wall_unix_s": 1793786523.3825843}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122669.030147943, "others": [{"tid": 257, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "imu", "wall_unix_s": 1793786523.3851895}
+FREQ_PROBE {"count": 1, "event": "count", "monotonic_s": 122669.030183626, "tid": 479, "topic": "imu", "wall_unix_s": 1793786523.3852255}
+FREQ_PROBE {"count": 1, "event": "count", "monotonic_s": 122669.031415514, "tid": 479, "topic": "rotor_pwm", "wall_unix_s": 1793786523.3864574}
+FREQ_PROBE {"count": 1, "event": "count", "monotonic_s": 122669.089122939, "tid": 469, "topic": "lidar", "wall_unix_s": 1793786523.444164}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122669.089807349, "others": [{"tid": 469, "topics": ["lidar"]}], "same_topic": false, "tid": 479, "topic": "imu", "wall_unix_s": 1793786523.444849}
+FREQ_PROBE {"count": 1, "event": "count", "monotonic_s": 122669.119791998, "tid": 479, "topic": "gps", "wall_unix_s": 1793786523.4748335}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122669.38234199, "others": [{"tid": 479, "topics": ["rotor_pwm"]}], "same_topic": false, "tid": 469, "topic": "lidar", "wall_unix_s": 1793786523.737383}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122669.481750304, "others": [{"tid": 469, "topics": ["lidar"]}], "same_topic": false, "tid": 479, "topic": "rotor_pwm", "wall_unix_s": 1793786523.8367918}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122669.580674238, "others": [{"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 469, "topic": "lidar", "wall_unix_s": 1793786523.9357154}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122669.623207628, "others": [{"tid": 479, "topics": ["rotor_pwm"]}], "same_topic": false, "tid": 270, "topic": "frame", "wall_unix_s": 1793786523.978249}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122669.680000041, "others": [{"tid": 469, "topics": ["lidar"]}], "same_topic": false, "tid": 479, "topic": "imu", "wall_unix_s": 1793786524.0350413}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122669.723567543, "others": [{"tid": 479, "topics": ["rotor_pwm"]}], "same_topic": false, "tid": 272, "topic": "frame", "wall_unix_s": 1793786524.078609}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122669.923342692, "others": [{"tid": 479, "topics": ["rotor_pwm"]}], "same_topic": false, "tid": 276, "topic": "frame", "wall_unix_s": 1793786524.2783837}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122670.023772848, "others": [{"tid": 479, "topics": ["rotor_pwm"]}], "same_topic": false, "tid": 278, "topic": "frame", "wall_unix_s": 1793786524.378814}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122670.174254499, "others": [{"tid": 281, "topics": ["frame"]}], "same_topic": false, "tid": 469, "topic": "lidar", "wall_unix_s": 1793786524.529296}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122670.274084295, "others": [{"tid": 469, "topics": ["lidar"]}], "same_topic": false, "tid": 283, "topic": "frame", "wall_unix_s": 1793786524.6291254}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122670.323783292, "others": [{"tid": 479, "topics": ["rotor_pwm"]}], "same_topic": false, "tid": 284, "topic": "frame", "wall_unix_s": 1793786524.6788244}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122670.382206452, "others": [{"tid": 479, "topics": ["rotor_pwm"]}], "same_topic": false, "tid": 469, "topic": "lidar", "wall_unix_s": 1793786524.7372475}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122670.42386359, "others": [{"tid": 479, "topics": ["rotor_pwm"]}], "same_topic": false, "tid": 286, "topic": "frame", "wall_unix_s": 1793786524.778905}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122670.524149203, "others": [{"tid": 479, "topics": ["rotor_pwm"]}], "same_topic": false, "tid": 288, "topic": "frame", "wall_unix_s": 1793786524.8791902}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122670.623628607, "others": [{"tid": 479, "topics": ["rotor_pwm"]}], "same_topic": false, "tid": 290, "topic": "frame", "wall_unix_s": 1793786524.9786701}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122670.724114593, "others": [{"tid": 479, "topics": ["rotor_pwm"]}], "same_topic": false, "tid": 292, "topic": "frame", "wall_unix_s": 1793786525.0791557}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122670.825219978, "others": [{"tid": 479, "topics": ["rotor_pwm"]}], "same_topic": false, "tid": 294, "topic": "frame", "wall_unix_s": 1793786525.180261}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122670.882624763, "others": [{"tid": 479, "topics": ["rotor_pwm"]}], "same_topic": false, "tid": 469, "topic": "lidar", "wall_unix_s": 1793786525.237666}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122670.924283113, "others": [{"tid": 479, "topics": ["rotor_pwm"]}], "same_topic": false, "tid": 296, "topic": "frame", "wall_unix_s": 1793786525.279324}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122670.981120343, "others": [{"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 469, "topic": "lidar", "wall_unix_s": 1793786525.3361616}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122670.982450408, "others": [{"tid": 469, "topics": ["lidar"]}], "same_topic": false, "tid": 479, "topic": "rotor_pwm", "wall_unix_s": 1793786525.3374922}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122671.024096082, "others": [{"tid": 298, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "rotor_pwm", "wall_unix_s": 1793786525.3791378}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122671.080961908, "others": [{"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 469, "topic": "lidar", "wall_unix_s": 1793786525.4360034}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122671.124097329, "others": [{"tid": 300, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "rotor_pwm", "wall_unix_s": 1793786525.4791389}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122671.173302207, "others": [{"tid": 479, "topics": ["rotor_pwm"]}], "same_topic": false, "tid": 301, "topic": "frame", "wall_unix_s": 1793786525.5283432}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122671.180338564, "others": [{"tid": 469, "topics": ["lidar"]}], "same_topic": false, "tid": 479, "topic": "imu", "wall_unix_s": 1793786525.5353796}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122671.224337898, "others": [{"tid": 479, "topics": ["rotor_pwm"]}], "same_topic": false, "tid": 302, "topic": "frame", "wall_unix_s": 1793786525.5793788}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122671.32420124, "others": [{"tid": 304, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "rotor_pwm", "wall_unix_s": 1793786525.6792426}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122671.424518769, "others": [{"tid": 306, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "rotor_pwm", "wall_unix_s": 1793786525.77956}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122671.473548901, "others": [{"tid": 479, "topics": ["rotor_pwm"]}], "same_topic": false, "tid": 307, "topic": "frame", "wall_unix_s": 1793786525.8285904}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122671.524686437, "others": [{"tid": 308, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "rotor_pwm", "wall_unix_s": 1793786525.8797278}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122671.62440722, "others": [{"tid": 310, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "rotor_pwm", "wall_unix_s": 1793786525.9794483}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122671.673491415, "others": [{"tid": 479, "topics": ["rotor_pwm"]}], "same_topic": false, "tid": 311, "topic": "frame", "wall_unix_s": 1793786526.0285325}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122671.674956524, "others": [{"tid": 479, "topics": ["rotor_pwm"]}, {"tid": 311, "topics": ["frame"]}], "same_topic": false, "tid": 469, "topic": "lidar", "wall_unix_s": 1793786526.029998}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122671.774533051, "others": [{"tid": 479, "topics": ["rotor_pwm"]}], "same_topic": false, "tid": 469, "topic": "lidar", "wall_unix_s": 1793786526.129574}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122671.77546636, "others": [{"tid": 479, "topics": ["rotor_pwm"]}, {"tid": 469, "topics": ["lidar"]}], "same_topic": false, "tid": 313, "topic": "frame", "wall_unix_s": 1793786526.130508}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122671.8235101, "others": [{"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 314, "topic": "frame", "wall_unix_s": 1793786526.1785514}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122671.82521801, "others": [{"tid": 314, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "rotor_pwm", "wall_unix_s": 1793786526.1802595}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122671.87163151, "others": [{"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 469, "topic": "lidar", "wall_unix_s": 1793786526.226673}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122671.873368215, "others": [{"tid": 469, "topics": ["lidar"]}], "same_topic": false, "tid": 479, "topic": "rotor_pwm", "wall_unix_s": 1793786526.22841}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122671.923527851, "others": [{"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 316, "topic": "frame", "wall_unix_s": 1793786526.2785695}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122671.925227968, "others": [{"tid": 316, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "rotor_pwm", "wall_unix_s": 1793786526.2802696}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122671.971014321, "others": [{"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 469, "topic": "lidar", "wall_unix_s": 1793786526.326056}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122671.974528617, "others": [{"tid": 479, "topics": ["rotor_pwm"]}], "same_topic": false, "tid": 317, "topic": "frame", "wall_unix_s": 1793786526.3295703}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122672.02532221, "others": [{"tid": 479, "topics": ["rotor_pwm"]}], "same_topic": false, "tid": 318, "topic": "frame", "wall_unix_s": 1793786526.380364}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122672.071066984, "others": [{"tid": 469, "topics": ["lidar"]}], "same_topic": false, "tid": 479, "topic": "imu", "wall_unix_s": 1793786526.4261086}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122672.075020495, "others": [{"tid": 479, "topics": ["rotor_pwm"]}], "same_topic": false, "tid": 319, "topic": "frame", "wall_unix_s": 1793786526.4300623}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122672.125503499, "others": [{"tid": 320, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "rotor_pwm", "wall_unix_s": 1793786526.4805448}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122672.170840637, "others": [{"tid": 469, "topics": ["lidar"]}], "same_topic": false, "tid": 479, "topic": "imu", "wall_unix_s": 1793786526.5258818}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122672.174847992, "others": [{"tid": 479, "topics": ["rotor_pwm"]}], "same_topic": false, "tid": 321, "topic": "frame", "wall_unix_s": 1793786526.5298893}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122672.225513943, "others": [{"tid": 479, "topics": ["rotor_pwm"]}], "same_topic": false, "tid": 322, "topic": "frame", "wall_unix_s": 1793786526.5805554}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122672.270502435, "others": [{"tid": 469, "topics": ["lidar"]}], "same_topic": false, "tid": 479, "topic": "imu", "wall_unix_s": 1793786526.6255438}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122672.274552589, "others": [{"tid": 323, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "rotor_pwm", "wall_unix_s": 1793786526.6295943}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122672.32400669, "others": [{"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 324, "topic": "frame", "wall_unix_s": 1793786526.6790483}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122672.325887732, "others": [{"tid": 324, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "rotor_pwm", "wall_unix_s": 1793786526.6809292}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122672.370328227, "others": [{"tid": 469, "topics": ["lidar"]}], "same_topic": false, "tid": 479, "topic": "imu", "wall_unix_s": 1793786526.7253697}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122672.374715152, "others": [{"tid": 479, "topics": ["rotor_pwm"]}], "same_topic": false, "tid": 325, "topic": "frame", "wall_unix_s": 1793786526.7297568}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122672.425404598, "others": [{"tid": 326, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "rotor_pwm", "wall_unix_s": 1793786526.780446}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122672.470255867, "others": [{"tid": 469, "topics": ["lidar"]}], "same_topic": false, "tid": 479, "topic": "imu", "wall_unix_s": 1793786526.825297}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122672.474598967, "others": [{"tid": 479, "topics": ["rotor_pwm"]}], "same_topic": false, "tid": 327, "topic": "frame", "wall_unix_s": 1793786526.8296406}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122672.523859018, "others": [{"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 328, "topic": "frame", "wall_unix_s": 1793786526.8789005}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122672.57026411, "others": [{"tid": 469, "topics": ["lidar"]}], "same_topic": false, "tid": 479, "topic": "imu", "wall_unix_s": 1793786526.9253056}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122672.574595188, "others": [{"tid": 329, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "rotor_pwm", "wall_unix_s": 1793786526.929637}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122672.62399057, "others": [{"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 330, "topic": "frame", "wall_unix_s": 1793786526.979032}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122672.626172585, "others": [{"tid": 330, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "rotor_pwm", "wall_unix_s": 1793786526.9812143}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122672.670043752, "others": [{"tid": 469, "topics": ["lidar"]}], "same_topic": false, "tid": 479, "topic": "imu", "wall_unix_s": 1793786527.0250852}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122672.674425972, "others": [{"tid": 479, "topics": ["rotor_pwm"]}], "same_topic": false, "tid": 331, "topic": "frame", "wall_unix_s": 1793786527.0294676}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122672.723500628, "others": [{"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 332, "topic": "frame", "wall_unix_s": 1793786527.078542}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122672.773954489, "others": [{"tid": 479, "topics": ["rotor_pwm"]}], "same_topic": false, "tid": 333, "topic": "frame", "wall_unix_s": 1793786527.128996}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122672.826060716, "others": [{"tid": 479, "topics": ["rotor_pwm"]}], "same_topic": false, "tid": 334, "topic": "frame", "wall_unix_s": 1793786527.1811023}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122672.864304049, "others": [{"tid": 479, "topics": ["rotor_pwm"]}], "same_topic": false, "tid": 469, "topic": "lidar", "wall_unix_s": 1793786527.2193453}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122672.87400736, "others": [{"tid": 479, "topics": ["rotor_pwm"]}], "same_topic": false, "tid": 335, "topic": "frame", "wall_unix_s": 1793786527.2290492}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122672.924524442, "others": [{"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 336, "topic": "frame", "wall_unix_s": 1793786527.279566}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122672.926863147, "others": [{"tid": 336, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "rotor_pwm", "wall_unix_s": 1793786527.2819047}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122672.964211711, "others": [{"tid": 479, "topics": ["rotor_pwm"]}], "same_topic": false, "tid": 469, "topic": "lidar", "wall_unix_s": 1793786527.3192532}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122672.974125569, "others": [{"tid": 479, "topics": ["rotor_pwm"]}], "same_topic": false, "tid": 337, "topic": "frame", "wall_unix_s": 1793786527.3291674}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122673.026390595, "others": [{"tid": 338, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "rotor_pwm", "wall_unix_s": 1793786527.381432}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122673.061196231, "others": [{"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 469, "topic": "lidar", "wall_unix_s": 1793786527.4162376}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122673.07429697, "others": [{"tid": 479, "topics": ["rotor_pwm"]}], "same_topic": false, "tid": 339, "topic": "frame", "wall_unix_s": 1793786527.4293387}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122673.126575267, "others": [{"tid": 340, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "rotor_pwm", "wall_unix_s": 1793786527.4816167}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122673.16120573, "others": [{"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 469, "topic": "lidar", "wall_unix_s": 1793786527.516247}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122673.22414489, "others": [{"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 342, "topic": "frame", "wall_unix_s": 1793786527.579186}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122673.275188916, "others": [{"tid": 479, "topics": ["rotor_pwm"]}], "same_topic": false, "tid": 343, "topic": "frame", "wall_unix_s": 1793786527.6302302}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122673.324477716, "others": [{"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 344, "topic": "frame", "wall_unix_s": 1793786527.6795192}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122673.355521529, "others": [{"tid": 479, "topics": ["rotor_pwm"]}], "same_topic": false, "tid": 469, "topic": "lidar", "wall_unix_s": 1793786527.7105632}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122673.375143848, "others": [{"tid": 479, "topics": ["rotor_pwm"]}], "same_topic": false, "tid": 345, "topic": "frame", "wall_unix_s": 1793786527.7301855}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122673.424493616, "others": [{"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 346, "topic": "frame", "wall_unix_s": 1793786527.7795353}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122673.474820458, "others": [{"tid": 479, "topics": ["rotor_pwm"]}], "same_topic": false, "tid": 347, "topic": "frame", "wall_unix_s": 1793786527.8298616}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122673.524718383, "others": [{"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 348, "topic": "frame", "wall_unix_s": 1793786527.8797598}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122673.55446155, "others": [{"tid": 469, "topics": ["lidar"]}], "same_topic": false, "tid": 479, "topic": "rotor_pwm", "wall_unix_s": 1793786527.909503}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122673.574828771, "others": [{"tid": 479, "topics": ["rotor_pwm"]}], "same_topic": false, "tid": 349, "topic": "frame", "wall_unix_s": 1793786527.9298704}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122673.624925156, "others": [{"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 350, "topic": "frame", "wall_unix_s": 1793786527.9799664}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122673.651373817, "others": [{"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 469, "topic": "lidar", "wall_unix_s": 1793786528.0064154}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122673.67491518, "others": [{"tid": 351, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "rotor_pwm", "wall_unix_s": 1793786528.0299566}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122673.725427257, "others": [{"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 352, "topic": "frame", "wall_unix_s": 1793786528.080469}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122673.728390638, "others": [{"tid": 352, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "rotor_pwm", "wall_unix_s": 1793786528.0834324}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122673.751571461, "others": [{"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 469, "topic": "lidar", "wall_unix_s": 1793786528.1066132}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122673.775320647, "others": [{"tid": 479, "topics": ["rotor_pwm"]}], "same_topic": false, "tid": 353, "topic": "frame", "wall_unix_s": 1793786528.1303623}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122673.824823045, "others": [{"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 354, "topic": "frame", "wall_unix_s": 1793786528.179865}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122673.875306972, "others": [{"tid": 479, "topics": ["rotor_pwm"]}], "same_topic": false, "tid": 355, "topic": "frame", "wall_unix_s": 1793786528.2303483}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122673.924811719, "others": [{"tid": 356, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "imu", "wall_unix_s": 1793786528.2798533}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122673.946198038, "others": [{"tid": 479, "topics": ["rotor_pwm"]}], "same_topic": false, "tid": 469, "topic": "lidar", "wall_unix_s": 1793786528.3012397}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122673.97532493, "others": [{"tid": 257, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "rotor_pwm", "wall_unix_s": 1793786528.3303664}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122674.024973701, "others": [{"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 259, "topic": "frame", "wall_unix_s": 1793786528.3800154}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122674.043034773, "others": [{"tid": 469, "topics": ["lidar"]}], "same_topic": false, "tid": 479, "topic": "imu", "wall_unix_s": 1793786528.3980765}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122674.075316293, "others": [{"tid": 258, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "rotor_pwm", "wall_unix_s": 1793786528.4303577}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122674.12582731, "others": [{"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 260, "topic": "frame", "wall_unix_s": 1793786528.4808688}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122674.129201701, "others": [{"tid": 260, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "rotor_pwm", "wall_unix_s": 1793786528.4842434}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122674.143563743, "others": [{"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 469, "topic": "lidar", "wall_unix_s": 1793786528.4986053}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122674.175547076, "others": [{"tid": 261, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "rotor_pwm", "wall_unix_s": 1793786528.5305886}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122674.225133292, "others": [{"tid": 262, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "imu", "wall_unix_s": 1793786528.5801747}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122674.24056339, "others": [{"tid": 479, "topics": ["rotor_pwm"]}], "same_topic": false, "tid": 469, "topic": "lidar", "wall_unix_s": 1793786528.595605}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122674.275504162, "others": [{"tid": 264, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "rotor_pwm", "wall_unix_s": 1793786528.6305459}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122674.32537236, "others": [{"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 263, "topic": "frame", "wall_unix_s": 1793786528.680414}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122674.33658603, "others": [{"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 469, "topic": "lidar", "wall_unix_s": 1793786528.6916275}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122674.374242539, "others": [{"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 265, "topic": "frame", "wall_unix_s": 1793786528.729284}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122674.377824107, "others": [{"tid": 265, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "rotor_pwm", "wall_unix_s": 1793786528.7328658}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122674.424921115, "others": [{"tid": 479, "topics": ["gps"]}], "same_topic": false, "tid": 266, "topic": "frame", "wall_unix_s": 1793786528.7799625}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122674.437224524, "others": [{"tid": 479, "topics": ["rotor_pwm"]}], "same_topic": false, "tid": 469, "topic": "lidar", "wall_unix_s": 1793786528.7922661}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122674.473839168, "others": [{"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 267, "topic": "frame", "wall_unix_s": 1793786528.8288805}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122674.525719393, "others": [{"tid": 268, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "imu", "wall_unix_s": 1793786528.880761}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122674.53386439, "others": [{"tid": 479, "topics": ["rotor_pwm"]}], "same_topic": false, "tid": 469, "topic": "lidar", "wall_unix_s": 1793786528.888906}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122674.575664142, "others": [{"tid": 269, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "imu", "wall_unix_s": 1793786528.930706}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122674.624250419, "others": [{"tid": 479, "topics": ["gps"]}], "same_topic": false, "tid": 270, "topic": "frame", "wall_unix_s": 1793786528.9792922}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122674.63346613, "others": [{"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 469, "topic": "lidar", "wall_unix_s": 1793786528.9885077}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122674.637492211, "others": [{"tid": 469, "topics": ["lidar"]}], "same_topic": false, "tid": 479, "topic": "rotor_pwm", "wall_unix_s": 1793786528.9925337}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122674.676006918, "others": [{"tid": 271, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "rotor_pwm", "wall_unix_s": 1793786529.0310483}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122674.724273052, "others": [{"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 272, "topic": "frame", "wall_unix_s": 1793786529.0793145}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122674.732677523, "others": [{"tid": 479, "topics": ["gps"]}], "same_topic": false, "tid": 469, "topic": "lidar", "wall_unix_s": 1793786529.0877192}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122674.773332898, "others": [{"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 273, "topic": "frame", "wall_unix_s": 1793786529.1283743}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122674.777410956, "others": [{"tid": 273, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "rotor_pwm", "wall_unix_s": 1793786529.1324527}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122674.825315158, "others": [{"tid": 274, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "gps", "wall_unix_s": 1793786529.180357}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122674.833883861, "others": [{"tid": 469, "topics": ["lidar"]}], "same_topic": false, "tid": 479, "topic": "imu", "wall_unix_s": 1793786529.1889255}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122674.878198454, "others": [{"tid": 275, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "rotor_pwm", "wall_unix_s": 1793786529.2332401}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122674.924317425, "others": [{"tid": 479, "topics": ["gps"]}], "same_topic": false, "tid": 276, "topic": "frame", "wall_unix_s": 1793786529.2793589}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122674.930088184, "others": [{"tid": 276, "topics": ["frame"]}], "same_topic": false, "tid": 469, "topic": "lidar", "wall_unix_s": 1793786529.2851298}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122674.9342159, "others": [{"tid": 469, "topics": ["lidar"]}], "same_topic": false, "tid": 479, "topic": "imu", "wall_unix_s": 1793786529.2892578}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122674.973989086, "others": [{"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 277, "topic": "frame", "wall_unix_s": 1793786529.3290305}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122675.025362219, "others": [{"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 278, "topic": "frame", "wall_unix_s": 1793786529.3804038}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122675.028883226, "others": [{"tid": 278, "topics": ["frame"]}], "same_topic": false, "tid": 469, "topic": "lidar", "wall_unix_s": 1793786529.383925}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122675.032905018, "others": [{"tid": 278, "topics": ["frame"]}, {"tid": 469, "topics": ["lidar"]}], "same_topic": false, "tid": 479, "topic": "gps", "wall_unix_s": 1793786529.3879468}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122675.076533414, "others": [{"tid": 279, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "imu", "wall_unix_s": 1793786529.4315748}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122675.123892742, "others": [{"tid": 479, "topics": ["rotor_pwm"]}], "same_topic": false, "tid": 280, "topic": "frame", "wall_unix_s": 1793786529.4789343}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122675.125838402, "others": [{"tid": 479, "topics": ["rotor_pwm"]}, {"tid": 280, "topics": ["frame"]}], "same_topic": false, "tid": 469, "topic": "lidar", "wall_unix_s": 1793786529.4808798}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122675.176932025, "others": [{"tid": 281, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "rotor_pwm", "wall_unix_s": 1793786529.5319736}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122675.226592439, "others": [{"tid": 282, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "imu", "wall_unix_s": 1793786529.581634}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122675.228631035, "others": [{"tid": 282, "topics": ["frame"]}, {"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 469, "topic": "lidar", "wall_unix_s": 1793786529.5836725}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122675.277441439, "others": [{"tid": 283, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "rotor_pwm", "wall_unix_s": 1793786529.6324828}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122675.323975777, "others": [{"tid": 479, "topics": ["rotor_pwm"]}], "same_topic": false, "tid": 469, "topic": "lidar", "wall_unix_s": 1793786529.6790175}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122675.334872263, "others": [{"tid": 479, "topics": ["gps"]}], "same_topic": false, "tid": 284, "topic": "frame", "wall_unix_s": 1793786529.6899137}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122675.339493612, "others": [{"tid": 284, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "imu", "wall_unix_s": 1793786529.6945355}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122675.374013661, "others": [{"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 285, "topic": "frame", "wall_unix_s": 1793786529.729055}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122675.424378569, "others": [{"tid": 479, "topics": ["rotor_pwm"]}], "same_topic": false, "tid": 469, "topic": "lidar", "wall_unix_s": 1793786529.77942}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122675.429041108, "others": [{"tid": 469, "topics": ["lidar"]}], "same_topic": false, "tid": 479, "topic": "gps", "wall_unix_s": 1793786529.7840827}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122675.437508346, "others": [{"tid": 286, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "imu", "wall_unix_s": 1793786529.79255}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122675.473360345, "others": [{"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 287, "topic": "frame", "wall_unix_s": 1793786529.8284018}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122675.478076711, "others": [{"tid": 287, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "rotor_pwm", "wall_unix_s": 1793786529.8331184}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122675.522566122, "others": [{"tid": 479, "topics": ["rotor_pwm"]}], "same_topic": false, "tid": 469, "topic": "lidar", "wall_unix_s": 1793786529.8776078}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122675.532653446, "others": [{"tid": 479, "topics": ["gps"]}], "same_topic": false, "tid": 288, "topic": "frame", "wall_unix_s": 1793786529.887695}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122675.578275193, "others": [{"tid": 289, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "rotor_pwm", "wall_unix_s": 1793786529.933317}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122675.620558718, "others": [{"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 469, "topic": "lidar", "wall_unix_s": 1793786529.9756002}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122675.630937009, "others": [{"tid": 479, "topics": ["rotor_pwm"]}], "same_topic": false, "tid": 290, "topic": "frame", "wall_unix_s": 1793786529.9859786}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122675.678383946, "others": [{"tid": 291, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "imu", "wall_unix_s": 1793786530.033425}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122675.721459977, "others": [{"tid": 469, "topics": ["lidar"]}], "same_topic": false, "tid": 479, "topic": "rotor_pwm", "wall_unix_s": 1793786530.0765016}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122675.731982809, "others": [{"tid": 292, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "imu", "wall_unix_s": 1793786530.0870247}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122675.777439455, "others": [{"tid": 293, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "imu", "wall_unix_s": 1793786530.132481}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122675.817798086, "others": [{"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 469, "topic": "lidar", "wall_unix_s": 1793786530.1728396}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122675.822795589, "others": [{"tid": 469, "topics": ["lidar"]}], "same_topic": false, "tid": 479, "topic": "rotor_pwm", "wall_unix_s": 1793786530.1778374}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122675.83202952, "others": [{"tid": 294, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "gps", "wall_unix_s": 1793786530.1870713}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122675.87574153, "others": [{"tid": 295, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "imu", "wall_unix_s": 1793786530.230783}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122675.918971245, "others": [{"tid": 469, "topics": ["lidar"]}], "same_topic": false, "tid": 479, "topic": "rotor_pwm", "wall_unix_s": 1793786530.274013}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122675.929703164, "others": [{"tid": 296, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "imu", "wall_unix_s": 1793786530.2847447}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122675.973803191, "others": [{"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 297, "topic": "frame", "wall_unix_s": 1793786530.3288448}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122675.978984699, "others": [{"tid": 297, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "rotor_pwm", "wall_unix_s": 1793786530.3340266}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122676.017283514, "others": [{"tid": 479, "topics": ["rotor_pwm"]}], "same_topic": false, "tid": 469, "topic": "lidar", "wall_unix_s": 1793786530.372325}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122676.02863537, "others": [{"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 298, "topic": "frame", "wall_unix_s": 1793786530.3836772}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122676.074528731, "others": [{"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 299, "topic": "frame", "wall_unix_s": 1793786530.42957}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122676.114487143, "others": [{"tid": 469, "topics": ["lidar"]}], "same_topic": false, "tid": 479, "topic": "imu", "wall_unix_s": 1793786530.4695287}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122676.12612783, "others": [{"tid": 479, "topics": ["rotor_pwm"]}], "same_topic": false, "tid": 300, "topic": "frame", "wall_unix_s": 1793786530.4811695}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122676.173400422, "others": [{"tid": 479, "topics": ["rotor_pwm"]}], "same_topic": false, "tid": 301, "topic": "frame", "wall_unix_s": 1793786530.528442}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122676.209163833, "others": [{"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 469, "topic": "lidar", "wall_unix_s": 1793786530.5642052}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122676.226636449, "others": [{"tid": 302, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "imu", "wall_unix_s": 1793786530.581678}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122676.280257176, "others": [{"tid": 303, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "rotor_pwm", "wall_unix_s": 1793786530.6352983}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122676.314899427, "others": [{"tid": 469, "topics": ["lidar"]}], "same_topic": false, "tid": 479, "topic": "imu", "wall_unix_s": 1793786530.6699405}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122676.326629942, "others": [{"tid": 304, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "rotor_pwm", "wall_unix_s": 1793786530.6816714}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122676.374298592, "others": [{"tid": 479, "topics": ["rotor_pwm"]}], "same_topic": false, "tid": 305, "topic": "frame", "wall_unix_s": 1793786530.7293398}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122676.410153438, "others": [{"tid": 469, "topics": ["lidar"]}], "same_topic": false, "tid": 479, "topic": "imu", "wall_unix_s": 1793786530.7651947}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122676.423786122, "others": [{"tid": 479, "topics": ["rotor_pwm"]}], "same_topic": false, "tid": 306, "topic": "frame", "wall_unix_s": 1793786530.7788274}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122676.429307641, "others": [{"tid": 306, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "gps", "wall_unix_s": 1793786530.7843494}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122676.47540708, "others": [{"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 307, "topic": "frame", "wall_unix_s": 1793786530.8304484}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122676.505404183, "others": [{"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 469, "topic": "lidar", "wall_unix_s": 1793786530.8604457}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122676.523504363, "others": [{"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 308, "topic": "frame", "wall_unix_s": 1793786530.878546}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122676.577836039, "others": [{"tid": 309, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "rotor_pwm", "wall_unix_s": 1793786530.9328773}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122676.602765937, "others": [{"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 469, "topic": "lidar", "wall_unix_s": 1793786530.9578073}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122676.627413271, "others": [{"tid": 479, "topics": ["rotor_pwm"]}], "same_topic": false, "tid": 310, "topic": "frame", "wall_unix_s": 1793786530.9824548}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122676.678384896, "others": [{"tid": 311, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "rotor_pwm", "wall_unix_s": 1793786531.0334263}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122676.70394249, "others": [{"tid": 469, "topics": ["lidar"]}], "same_topic": false, "tid": 479, "topic": "imu", "wall_unix_s": 1793786531.0589843}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122676.724257993, "others": [{"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 312, "topic": "frame", "wall_unix_s": 1793786531.0792997}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122676.73008101, "others": [{"tid": 312, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "gps", "wall_unix_s": 1793786531.0851228}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122676.773879155, "others": [{"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 313, "topic": "frame", "wall_unix_s": 1793786531.1289206}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122676.779665839, "others": [{"tid": 313, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "rotor_pwm", "wall_unix_s": 1793786531.1347075}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122676.80295926, "others": [{"tid": 469, "topics": ["lidar"]}], "same_topic": false, "tid": 479, "topic": "imu", "wall_unix_s": 1793786531.158001}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122676.8283991, "others": [{"tid": 314, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "rotor_pwm", "wall_unix_s": 1793786531.1834407}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122676.873435682, "others": [{"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 315, "topic": "frame", "wall_unix_s": 1793786531.228477}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122676.899329365, "others": [{"tid": 479, "topics": ["rotor_pwm"]}], "same_topic": false, "tid": 469, "topic": "lidar", "wall_unix_s": 1793786531.254371}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122676.92541981, "others": [{"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 316, "topic": "frame", "wall_unix_s": 1793786531.2804615}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122676.931676353, "others": [{"tid": 316, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "rotor_pwm", "wall_unix_s": 1793786531.2867181}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122676.975710199, "others": [{"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 317, "topic": "frame", "wall_unix_s": 1793786531.3307514}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122677.008728692, "others": [{"tid": 469, "topics": ["lidar"]}], "same_topic": false, "tid": 479, "topic": "imu", "wall_unix_s": 1793786531.36377}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122677.023500252, "others": [{"tid": 479, "topics": ["rotor_pwm"]}], "same_topic": false, "tid": 318, "topic": "frame", "wall_unix_s": 1793786531.3785417}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122677.029684588, "others": [{"tid": 318, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "imu", "wall_unix_s": 1793786531.3847263}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122677.075011966, "others": [{"tid": 479, "topics": ["rotor_pwm"]}], "same_topic": false, "tid": 319, "topic": "frame", "wall_unix_s": 1793786531.4300535}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122677.107717707, "others": [{"tid": 469, "topics": ["lidar"]}], "same_topic": false, "tid": 479, "topic": "rotor_pwm", "wall_unix_s": 1793786531.4627593}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122677.127337611, "others": [{"tid": 320, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "rotor_pwm", "wall_unix_s": 1793786531.482379}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122677.17723035, "others": [{"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 321, "topic": "frame", "wall_unix_s": 1793786531.5322716}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122677.183382192, "others": [{"tid": 321, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "rotor_pwm", "wall_unix_s": 1793786531.5384238}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122677.207933397, "others": [{"tid": 469, "topics": ["lidar"]}], "same_topic": false, "tid": 479, "topic": "imu", "wall_unix_s": 1793786531.562975}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122677.227938835, "others": [{"tid": 322, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "imu", "wall_unix_s": 1793786531.5829804}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122677.276945447, "others": [{"tid": 479, "topics": ["rotor_pwm"]}], "same_topic": false, "tid": 323, "topic": "frame", "wall_unix_s": 1793786531.6319864}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122677.28323427, "others": [{"tid": 323, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "imu", "wall_unix_s": 1793786531.6382759}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122677.301900609, "others": [{"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 469, "topic": "lidar", "wall_unix_s": 1793786531.6569424}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122677.323708228, "others": [{"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 324, "topic": "frame", "wall_unix_s": 1793786531.67875}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122677.330205059, "others": [{"tid": 324, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "rotor_pwm", "wall_unix_s": 1793786531.6852467}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122677.376176458, "others": [{"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 325, "topic": "frame", "wall_unix_s": 1793786531.7312176}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122677.403468037, "others": [{"tid": 469, "topics": ["lidar"]}], "same_topic": false, "tid": 479, "topic": "rotor_pwm", "wall_unix_s": 1793786531.7585096}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122677.424652808, "others": [{"tid": 479, "topics": ["rotor_pwm"]}], "same_topic": false, "tid": 326, "topic": "frame", "wall_unix_s": 1793786531.7796943}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122677.473866185, "others": [{"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 327, "topic": "frame", "wall_unix_s": 1793786531.8289077}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122677.501288587, "others": [{"tid": 479, "topics": ["rotor_pwm"]}], "same_topic": false, "tid": 469, "topic": "lidar", "wall_unix_s": 1793786531.85633}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122677.523321542, "others": [{"tid": 479, "topics": ["rotor_pwm"]}], "same_topic": false, "tid": 328, "topic": "frame", "wall_unix_s": 1793786531.8783631}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122677.529670515, "others": [{"tid": 328, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "imu", "wall_unix_s": 1793786531.884712}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122677.576589097, "others": [{"tid": 329, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "rotor_pwm", "wall_unix_s": 1793786531.9316306}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122677.599263699, "others": [{"tid": 479, "topics": ["rotor_pwm"]}], "same_topic": false, "tid": 469, "topic": "lidar", "wall_unix_s": 1793786531.954305}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122677.605765667, "others": [{"tid": 469, "topics": ["lidar"]}], "same_topic": false, "tid": 479, "topic": "imu", "wall_unix_s": 1793786531.9608073}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122677.624915438, "others": [{"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 330, "topic": "frame", "wall_unix_s": 1793786531.9799573}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122677.675014112, "others": [{"tid": 479, "topics": ["rotor_pwm"]}], "same_topic": false, "tid": 331, "topic": "frame", "wall_unix_s": 1793786532.0300553}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122677.696464118, "others": [{"tid": 479, "topics": ["rotor_pwm"]}], "same_topic": false, "tid": 469, "topic": "lidar", "wall_unix_s": 1793786532.0515053}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122677.725258542, "others": [{"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 332, "topic": "frame", "wall_unix_s": 1793786532.0803}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122677.775943675, "others": [{"tid": 479, "topics": ["rotor_pwm"]}], "same_topic": false, "tid": 333, "topic": "frame", "wall_unix_s": 1793786532.130985}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122677.797776732, "others": [{"tid": 479, "topics": ["rotor_pwm"]}], "same_topic": false, "tid": 469, "topic": "lidar", "wall_unix_s": 1793786532.1528182}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122677.825844276, "others": [{"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 334, "topic": "frame", "wall_unix_s": 1793786532.1808858}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122677.832828399, "others": [{"tid": 334, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "rotor_pwm", "wall_unix_s": 1793786532.18787}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122677.874709155, "others": [{"tid": 479, "topics": ["rotor_pwm"]}], "same_topic": false, "tid": 335, "topic": "frame", "wall_unix_s": 1793786532.2297506}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122677.904724029, "others": [{"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 469, "topic": "lidar", "wall_unix_s": 1793786532.2597654}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122677.9262039, "others": [{"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 336, "topic": "frame", "wall_unix_s": 1793786532.2812457}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122677.976547681, "others": [{"tid": 337, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "rotor_pwm", "wall_unix_s": 1793786532.3315892}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122678.006165096, "others": [{"tid": 469, "topics": ["lidar"]}], "same_topic": false, "tid": 479, "topic": "imu", "wall_unix_s": 1793786532.3612063}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122678.028560601, "others": [{"tid": 338, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "imu", "wall_unix_s": 1793786532.3836021}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122678.074198583, "others": [{"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 339, "topic": "frame", "wall_unix_s": 1793786532.4292397}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122678.080939409, "others": [{"tid": 339, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "rotor_pwm", "wall_unix_s": 1793786532.4359808}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122678.107377077, "others": [{"tid": 469, "topics": ["lidar"]}], "same_topic": false, "tid": 479, "topic": "imu", "wall_unix_s": 1793786532.462419}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122678.123762285, "others": [{"tid": 479, "topics": ["rotor_pwm"]}], "same_topic": false, "tid": 340, "topic": "frame", "wall_unix_s": 1793786532.4788039}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122678.130794282, "others": [{"tid": 340, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "imu", "wall_unix_s": 1793786532.485836}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122678.174541334, "others": [{"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 341, "topic": "frame", "wall_unix_s": 1793786532.5295825}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122678.181379642, "others": [{"tid": 341, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "rotor_pwm", "wall_unix_s": 1793786532.5364213}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122678.201712768, "others": [{"tid": 479, "topics": ["rotor_pwm"]}], "same_topic": false, "tid": 469, "topic": "lidar", "wall_unix_s": 1793786532.5567544}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122678.228807789, "others": [{"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 342, "topic": "frame", "wall_unix_s": 1793786532.5838494}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122678.274259016, "others": [{"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 343, "topic": "frame", "wall_unix_s": 1793786532.6293}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122678.29840766, "others": [{"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 469, "topic": "lidar", "wall_unix_s": 1793786532.6534493}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122678.305258385, "others": [{"tid": 469, "topics": ["lidar"]}], "same_topic": false, "tid": 479, "topic": "rotor_pwm", "wall_unix_s": 1793786532.6603003}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122678.325786247, "others": [{"tid": 479, "topics": ["rotor_pwm"]}], "same_topic": false, "tid": 344, "topic": "frame", "wall_unix_s": 1793786532.6808279}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122678.378160953, "others": [{"tid": 345, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "imu", "wall_unix_s": 1793786532.7332022}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122678.40146474, "others": [{"tid": 469, "topics": ["lidar"]}], "same_topic": false, "tid": 479, "topic": "imu", "wall_unix_s": 1793786532.7565064}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122678.424427695, "others": [{"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 346, "topic": "frame", "wall_unix_s": 1793786532.7794693}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122678.476916331, "others": [{"tid": 347, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "rotor_pwm", "wall_unix_s": 1793786532.831958}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122678.499559433, "others": [{"tid": 469, "topics": ["lidar"]}], "same_topic": false, "tid": 479, "topic": "rotor_pwm", "wall_unix_s": 1793786532.8546011}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122678.530420668, "others": [{"tid": 348, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "imu", "wall_unix_s": 1793786532.885462}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122678.577761693, "others": [{"tid": 349, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "imu", "wall_unix_s": 1793786532.9328032}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122678.601405081, "others": [{"tid": 469, "topics": ["lidar"]}], "same_topic": false, "tid": 479, "topic": "imu", "wall_unix_s": 1793786532.9564466}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122678.624816676, "others": [{"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 350, "topic": "frame", "wall_unix_s": 1793786532.9798582}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122678.679530896, "others": [{"tid": 351, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "rotor_pwm", "wall_unix_s": 1793786533.0345724}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122678.695215967, "others": [{"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 469, "topic": "lidar", "wall_unix_s": 1793786533.0502577}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122678.725754085, "others": [{"tid": 479, "topics": ["rotor_pwm"]}], "same_topic": false, "tid": 352, "topic": "frame", "wall_unix_s": 1793786533.0807958}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122678.7734441, "others": [{"tid": 479, "topics": ["rotor_pwm"]}], "same_topic": false, "tid": 353, "topic": "frame", "wall_unix_s": 1793786533.1284857}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122678.796879662, "others": [{"tid": 469, "topics": ["lidar"]}], "same_topic": false, "tid": 479, "topic": "rotor_pwm", "wall_unix_s": 1793786533.151921}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122678.828065812, "others": [{"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 354, "topic": "frame", "wall_unix_s": 1793786533.1831076}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122678.875752081, "others": [{"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 355, "topic": "frame", "wall_unix_s": 1793786533.2307935}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122678.891747469, "others": [{"tid": 479, "topics": ["rotor_pwm"]}], "same_topic": false, "tid": 469, "topic": "lidar", "wall_unix_s": 1793786533.246789}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122678.931381229, "others": [{"tid": 356, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "gps", "wall_unix_s": 1793786533.286423}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122678.974663663, "others": [{"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 257, "topic": "frame", "wall_unix_s": 1793786533.329705}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122678.982263089, "others": [{"tid": 257, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "rotor_pwm", "wall_unix_s": 1793786533.3373048}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122678.989819294, "others": [{"tid": 479, "topics": ["rotor_pwm"]}], "same_topic": false, "tid": 469, "topic": "lidar", "wall_unix_s": 1793786533.3448613}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122678.997339558, "others": [{"tid": 469, "topics": ["lidar"]}], "same_topic": false, "tid": 479, "topic": "imu", "wall_unix_s": 1793786533.3523812}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122679.027224004, "others": [{"tid": 259, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "rotor_pwm", "wall_unix_s": 1793786533.3822656}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122679.076547043, "others": [{"tid": 479, "topics": ["rotor_pwm"]}], "same_topic": false, "tid": 258, "topic": "frame", "wall_unix_s": 1793786533.4315884}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122679.092619443, "others": [{"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 469, "topic": "lidar", "wall_unix_s": 1793786533.4476612}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122679.124213103, "others": [{"tid": 479, "topics": ["rotor_pwm"]}], "same_topic": false, "tid": 260, "topic": "frame", "wall_unix_s": 1793786533.4792547}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122679.174799724, "others": [{"tid": 479, "topics": ["rotor_pwm"]}], "same_topic": false, "tid": 261, "topic": "frame", "wall_unix_s": 1793786533.529841}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122679.182379818, "others": [{"tid": 261, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "imu", "wall_unix_s": 1793786533.5374212}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122679.189955404, "others": [{"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 469, "topic": "lidar", "wall_unix_s": 1793786533.5449972}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122679.197367848, "others": [{"tid": 469, "topics": ["lidar"]}], "same_topic": false, "tid": 479, "topic": "rotor_pwm", "wall_unix_s": 1793786533.5524096}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122679.227343637, "others": [{"tid": 262, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "imu", "wall_unix_s": 1793786533.582385}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122679.276853179, "others": [{"tid": 264, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "imu", "wall_unix_s": 1793786533.6318946}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122679.293213119, "others": [{"tid": 469, "topics": ["lidar"]}], "same_topic": false, "tid": 479, "topic": "rotor_pwm", "wall_unix_s": 1793786533.6482546}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122679.32602472, "others": [{"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 263, "topic": "frame", "wall_unix_s": 1793786533.6810663}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122679.376414768, "others": [{"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 265, "topic": "frame", "wall_unix_s": 1793786533.7314558}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122679.382482747, "others": [{"tid": 479, "topics": ["imu"]}, {"tid": 265, "topics": ["frame"]}], "same_topic": false, "tid": 469, "topic": "lidar", "wall_unix_s": 1793786533.7375243}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122679.425912792, "others": [{"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 266, "topic": "frame", "wall_unix_s": 1793786533.7809544}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122679.475401654, "others": [{"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 267, "topic": "frame", "wall_unix_s": 1793786533.830443}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122679.485883195, "others": [{"tid": 267, "topics": ["frame"]}], "same_topic": false, "tid": 469, "topic": "lidar", "wall_unix_s": 1793786533.8409245}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122679.489163516, "others": [{"tid": 267, "topics": ["frame"]}, {"tid": 469, "topics": ["lidar"]}], "same_topic": false, "tid": 479, "topic": "rotor_pwm", "wall_unix_s": 1793786533.8442051}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122679.525554899, "others": [{"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 268, "topic": "frame", "wall_unix_s": 1793786533.8805966}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122679.575485973, "others": [{"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 269, "topic": "frame", "wall_unix_s": 1793786533.930527}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122679.578818402, "others": [{"tid": 479, "topics": ["imu"]}, {"tid": 269, "topics": ["frame"]}], "same_topic": false, "tid": 469, "topic": "lidar", "wall_unix_s": 1793786533.93386}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122679.595055336, "others": [{"tid": 469, "topics": ["lidar"]}], "same_topic": false, "tid": 479, "topic": "rotor_pwm", "wall_unix_s": 1793786533.950097}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122679.625830054, "others": [{"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 270, "topic": "frame", "wall_unix_s": 1793786533.9808714}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122679.678165439, "others": [{"tid": 271, "topics": ["frame"]}], "same_topic": false, "tid": 469, "topic": "lidar", "wall_unix_s": 1793786534.0332067}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122679.681436599, "others": [{"tid": 271, "topics": ["frame"]}, {"tid": 469, "topics": ["lidar"]}], "same_topic": false, "tid": 479, "topic": "imu", "wall_unix_s": 1793786534.0364783}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122679.729536809, "others": [{"tid": 272, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "imu", "wall_unix_s": 1793786534.0845785}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122679.774369897, "others": [{"tid": 479, "topics": ["rotor_pwm"]}], "same_topic": false, "tid": 273, "topic": "frame", "wall_unix_s": 1793786534.1294112}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122679.777755974, "others": [{"tid": 479, "topics": ["rotor_pwm"]}, {"tid": 273, "topics": ["frame"]}], "same_topic": false, "tid": 469, "topic": "lidar", "wall_unix_s": 1793786534.1327977}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122679.786975275, "others": [{"tid": 273, "topics": ["frame"]}, {"tid": 469, "topics": ["lidar"]}], "same_topic": false, "tid": 479, "topic": "imu", "wall_unix_s": 1793786534.1420171}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122679.823376844, "others": [{"tid": 479, "topics": ["rotor_pwm"]}], "same_topic": false, "tid": 274, "topic": "frame", "wall_unix_s": 1793786534.1784186}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122679.875323133, "others": [{"tid": 479, "topics": ["rotor_pwm"]}], "same_topic": false, "tid": 275, "topic": "frame", "wall_unix_s": 1793786534.2303646}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122679.881596712, "others": [{"tid": 479, "topics": ["rotor_pwm"]}, {"tid": 275, "topics": ["frame"]}], "same_topic": false, "tid": 469, "topic": "lidar", "wall_unix_s": 1793786534.2366385}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122679.890792519, "others": [{"tid": 275, "topics": ["frame"]}, {"tid": 469, "topics": ["lidar"]}], "same_topic": false, "tid": 479, "topic": "imu", "wall_unix_s": 1793786534.2458344}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122679.927771055, "others": [{"tid": 479, "topics": ["rotor_pwm"]}], "same_topic": false, "tid": 276, "topic": "frame", "wall_unix_s": 1793786534.2828126}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122679.979203548, "others": [{"tid": 277, "topics": ["frame"]}], "same_topic": false, "tid": 469, "topic": "lidar", "wall_unix_s": 1793786534.3342452}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122679.985570513, "others": [{"tid": 277, "topics": ["frame"]}, {"tid": 469, "topics": ["lidar"]}], "same_topic": false, "tid": 479, "topic": "rotor_pwm", "wall_unix_s": 1793786534.3406122}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122680.024601534, "others": [{"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 278, "topic": "frame", "wall_unix_s": 1793786534.3796432}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122680.032624193, "others": [{"tid": 278, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "rotor_pwm", "wall_unix_s": 1793786534.387666}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122680.074005591, "others": [{"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 469, "topic": "lidar", "wall_unix_s": 1793786534.429047}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122680.077598559, "others": [{"tid": 479, "topics": ["imu"]}, {"tid": 469, "topics": ["lidar"]}], "same_topic": false, "tid": 279, "topic": "frame", "wall_unix_s": 1793786534.4326403}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122680.094361974, "others": [{"tid": 279, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "rotor_pwm", "wall_unix_s": 1793786534.4494038}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122680.127107406, "others": [{"tid": 280, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "imu", "wall_unix_s": 1793786534.482149}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122680.172633767, "others": [{"tid": 479, "topics": ["rotor_pwm"]}], "same_topic": false, "tid": 469, "topic": "lidar", "wall_unix_s": 1793786534.5276754}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122680.180792873, "others": [{"tid": 469, "topics": ["lidar"]}], "same_topic": false, "tid": 479, "topic": "imu", "wall_unix_s": 1793786534.5358346}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122680.188840416, "others": [{"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 281, "topic": "frame", "wall_unix_s": 1793786534.5438821}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122680.197073038, "others": [{"tid": 281, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "rotor_pwm", "wall_unix_s": 1793786534.552115}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122680.229617435, "others": [{"tid": 282, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "imu", "wall_unix_s": 1793786534.584659}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122680.274064188, "others": [{"tid": 479, "topics": ["rotor_pwm"]}], "same_topic": false, "tid": 469, "topic": "lidar", "wall_unix_s": 1793786534.6291053}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122680.291732372, "others": [{"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 283, "topic": "frame", "wall_unix_s": 1793786534.646774}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122680.328465961, "others": [{"tid": 479, "topics": ["rotor_pwm"]}], "same_topic": false, "tid": 284, "topic": "frame", "wall_unix_s": 1793786534.6835074}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122680.374589814, "others": [{"tid": 469, "topics": ["lidar"]}], "same_topic": false, "tid": 479, "topic": "imu", "wall_unix_s": 1793786534.7296312}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122680.393208979, "others": [{"tid": 285, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "rotor_pwm", "wall_unix_s": 1793786534.7482507}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122680.423602064, "others": [{"tid": 479, "topics": ["rotor_pwm"]}], "same_topic": false, "tid": 286, "topic": "frame", "wall_unix_s": 1793786534.7786436}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122680.432409837, "others": [{"tid": 286, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "imu", "wall_unix_s": 1793786534.7874517}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122680.467403358, "others": [{"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 469, "topic": "lidar", "wall_unix_s": 1793786534.8224452}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122680.485983727, "others": [{"tid": 479, "topics": ["rotor_pwm"]}], "same_topic": false, "tid": 287, "topic": "frame", "wall_unix_s": 1793786534.8410254}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122680.523791733, "others": [{"tid": 479, "topics": ["imu"]}], "same_topic": false, "tid": 288, "topic": "frame", "wall_unix_s": 1793786534.878833}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122680.570496354, "others": [{"tid": 469, "topics": ["lidar"]}], "same_topic": false, "tid": 479, "topic": "rotor_pwm", "wall_unix_s": 1793786534.9255378}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 122680.589480074, "others": [{"tid": 289, "topics": ["frame"]}], "same_topic": false, "tid": 479, "topic": "imu", "wall_unix_s": 1793786534.9445214}

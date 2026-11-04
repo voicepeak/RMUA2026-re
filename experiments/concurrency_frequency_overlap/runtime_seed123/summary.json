@@ -1,0 +1,25 @@
+{
+  "events": {
+    "ready": 1,
+    "count": 5,
+    "overlap": 343,
+    "same_topic": 0
+  },
+  "overlap_topic_pairs": {
+    "imu / frame": 35,
+    "imu / lidar": 31,
+    "lidar / rotor_pwm": 29,
+    "rotor_pwm / lidar": 19,
+    "lidar / imu": 28,
+    "frame / rotor_pwm": 64,
+    "lidar / frame": 13,
+    "frame / lidar": 3,
+    "rotor_pwm / frame": 58,
+    "frame / imu": 64,
+    "frame / gps": 5,
+    "lidar / gps": 1,
+    "gps / frame": 6,
+    "gps / lidar": 2
+  },
+  "scope": "single simulator, stationary NullRHI, debugger all-stop; overlapping call lifetimes do not prove simultaneous execution or a data race"
+}

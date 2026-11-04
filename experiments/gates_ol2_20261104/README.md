@@ -1,0 +1,3 @@
+# OL2 launch attempts — did not reach OL2
+
+Attempts in this and sibling `gates_ol2_execcmds_20261104`, `gates_ol2_mapflag_20261104`, and `gates_ol2_ini_20261104` used distinct requested startup selectors. All logs show the actual final LoadMap as OL1; `actual_maps_summary.json` is derived from those logs. Older manifests record the requested path as `map`, not the actual path, so `status: observed` does not mean OL2 was loaded. These failed attempts are retained as evidence and do not satisfy the cross-map requirement. `scripts/run_map_gate_trace.py` was changed afterward to validate observed LoadMap rather than trusting the requested parameter.

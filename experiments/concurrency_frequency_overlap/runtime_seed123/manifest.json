@@ -1,0 +1,31 @@
+{
+  "binary_sha256": "5231addfa25ddaa9e4473ea9ac40c9c0bc685174e69cd14bb49159f443b97800",
+  "settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+  "image_id": "sha256:cd46a48cd28c2a9c6345f60227fd1bd50e78c67ef1e98dcddc0e65893771da57",
+  "gdb_script_sha256": "ed32f1cc5239f100a98bd2e547928a4ebcba532f6d4b8c35ebd8602fbadecb01",
+  "mode": "nullrhi",
+  "map": "default Lobby -> OL1",
+  "seeds": [
+    123
+  ],
+  "repeats": 1,
+  "stage_coverage": "initial stationary only; no flight and no forced state changes",
+  "runs": [
+    {
+      "seed": 123,
+      "repeat": 1,
+      "port": 11691,
+      "container": "rmua-trace-66ad4e2466a5",
+      "start_wall": 1793786515.3815234,
+      "status": "observed",
+      "id": "025e336e292d0b962f06fbc5679bd30dabc665fbe7d9e1d6f9b6ee6250904875",
+      "ready_wall": 1793786524.1656659,
+      "before_reset_exit_code": 124,
+      "end_wall": 1793786535.079823
+    }
+  ],
+  "actual_gdb_script_sha256": "7fa03cbc460d6d00591495055dcdaf59062a424e44730cb68c41403b44db66be",
+  "actual_gdb_python_sha256": "78bd782d160d352ced48dccf40beb8dc8df16e9571fdf66bb0de0cad67638e3f",
+  "gdb_script_sha256_note": "legacy runtime_trace.gdb field inherited from harness is not the selected script",
+  "probe_limit": "All-stop GDB changes scheduling. Overlap confirms simultaneous active calls, not concurrent instruction execution or data race. No overlap is not evidence of absence."
+}

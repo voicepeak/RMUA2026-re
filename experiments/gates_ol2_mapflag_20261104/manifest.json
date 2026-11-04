@@ -1,0 +1,27 @@
+{
+  "binary_sha256": "5231addfa25ddaa9e4473ea9ac40c9c0bc685174e69cd14bb49159f443b97800",
+  "settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+  "image_id": "sha256:cd46a48cd28c2a9c6345f60227fd1bd50e78c67ef1e98dcddc0e65893771da57",
+  "gdb_script_sha256": "ed32f1cc5239f100a98bd2e547928a4ebcba532f6d4b8c35ebd8602fbadecb01",
+  "mode": "nullrhi",
+  "map": "/Game/Maps/RMUA2024OL/RMUA2024OL2",
+  "seeds": [
+    123
+  ],
+  "repeats": 1,
+  "stage_coverage": "initial stationary only; no flight and no forced state changes",
+  "runs": [
+    {
+      "seed": 123,
+      "repeat": 1,
+      "port": 12031,
+      "container": "rmua-trace-bb34c03eda66",
+      "start_wall": 1793731813.3267312,
+      "status": "observed",
+      "id": "c7e3d3115c5cdb987ca2e3ad41e461397a9ef87fd20e6b13626da4dac66597ee",
+      "ready_wall": 1793731822.164381,
+      "before_reset_exit_code": 124,
+      "end_wall": 1793731825.153075
+    }
+  ]
+}

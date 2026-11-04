@@ -1,0 +1,7 @@
+Breakpoint 1 at 0x24ba: file /tmp/rmua_freq_probe_test/test.cc, line 4.
+FREQ_PROBE {"event": "ready", "monotonic_s": 67955.976971017, "wall_unix_s": 1793731810.3320122}
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+FREQ_PROBE {"count": 1, "event": "count", "monotonic_s": 67956.116645739, "tid": 149008, "topic": "same", "wall_unix_s": 1793731810.4716868}
+FREQ_PROBE {"event": "overlap", "monotonic_s": 67956.116920891, "others": [{"tid": 149008, "topics": ["same"]}], "same_topic": true, "tid": 149009, "topic": "same", "wall_unix_s": 1793731810.4719627}
+[Inferior 1 (process 149005) exited normally]

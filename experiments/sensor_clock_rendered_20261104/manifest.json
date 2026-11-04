@@ -1,0 +1,17 @@
+{
+  "seed": 123,
+  "port": 11681,
+  "mode": "RenderOffscreen",
+  "binary_sha256": "5231addfa25ddaa9e4473ea9ac40c9c0bc685174e69cd14bb49159f443b97800",
+  "settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+  "observer_sha256": "266167fedcf8d5b3370cac5efa1321281a07981f23af60d22ce374c1e4ee059b",
+  "image_id": "sha256:a1bfe1df3d0f0b57c406fc7873803c07a812f291e42c1a7eba13d2f9328fc106",
+  "start_wall_unix_s": 1793786462.8452497,
+  "start_monotonic_s": 122608.490208124,
+  "status": "observed",
+  "container": "rmua-sensor-6f84cb17470c",
+  "container_id": "59e652b2396f860f7bc67343b8d0663ba6ee7b6e7927dce87e6b8d8599a32613",
+  "container_exit_code": 0,
+  "end_wall_unix_s": 1793786494.3323739,
+  "end_monotonic_s": 122639.977333161
+}

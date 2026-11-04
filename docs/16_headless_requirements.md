@@ -61,3 +61,5 @@
 `scripts/run_pool_batches.py` 提供空载诊断的保守 4 路分批、独立端口重试、失败留档和按 manifest 清理；它不是训练 episode 管理器，尚不能从这一短测推断 4 路长期稳定。清理失败会停止后续重试；不应将失败前后轨迹拼成一个 episode。运行命令及边界见上述报告。
 
 8 路带 GDB 的空载复现中（每路独立 ROS master），8 路均就绪，约 89 秒监测内 7 路存活，seed 2024 在启动约 78.16 秒后 SIGSEGV。其寄存器和完整调用栈定位到 `AirSimROSFrame → record_frequency_data → deque::pop_front → operator delete` 路径中读取无效地址；这定位了本次崩溃现场，尚未证明内存为何损坏。独立 master 均曾监听，监测期间宿主 MemAvailable 最低约 28.2 GiB，Docker 未标记该次为 OOM；不能据此排除所有网络、资源或驱动因素。旧崩溃栈不同，不能认定同因。`experiments/concurrency_gdb_20261104/` 包含完整现场与复现命令；`artifacts/rea/frequency_rea.json` 是该频率记录函数的 REA 静态证据。函数内未见显式锁并不单独证明数据竞争。GDB 改变时序，7 路 89 秒存活不能视为长期稳定上限；推荐仍为有监测、失败留档的保守 4 路或更小分批。
+
+单实例只读 GDB 频率统计入口/返回探针观测到多线程调用生命周期跨 frame、imu、lidar、rotor_pwm 重叠（343 次，未观测到同 topic 重叠）；GDB all-stop 会影响调度，不能单凭此确认竞争或将其等同先前崩溃根因。见 `experiments/concurrency_frequency_overlap/` 和 docs/17。
