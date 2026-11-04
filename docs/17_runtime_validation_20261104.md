@@ -164,3 +164,5 @@ stage 6 固定开环 PWM 六场均发送 248 条命令并记录 800–802 条实
 对持续注入的 stage 4 seed 123 风试场，用生成器关键帧和 GDB 的墙钟/单调钟对估算相对时间：保持区间直接取关键帧速度和角度；标记为过渡的区间对速度和角度分别线性插值，再按 `(speed*cos(angle), speed*sin(angle), 0)` 重建。1230 条 ROS 向量与该模型的二维误差 RMSE 约 0.0383、最大约 0.207；包括调试暂停和未经标定的 ROS header/墙钟偏差。该试场的角度从约 276.6° 到 9.6°，数据与直接线性插值角度相符，不能据此推广到所有角度边界。逐条原始流、关键帧和脚本见 `experiments/wind_persistent_pilot_20261105/wind_interpolation_analysis.json`、`scripts/analyze_persistent_wind.py`。
 
 离线风模型已与 stage 4/5/6 × seed 123/456/2026 × 两次 fresh 运行的全部关键帧逐字节吻合，见 `experiments/wind_offline_model_20261105/`、`scripts/wind_offline_model.py`。反汇编确认 `rand()` 只取低 24 位再除以 16777215，保持时间分布为 `8+2u` 秒；公式、上限/下限和依赖条件见 docs/15。此证据不覆盖 reset 后或任何其他消费者提前推进 libc 随机流的序列。
+
+线障阶段距离采样首场记录 198 个内层候选及每次更新后的随机流状态；`1500+7000u` cm（反向时取负）的 float32 重建最大差约 `4.9e-6` cm，基准距离相邻相差 10000 cm。它不是最终障碍间距，且候选失败/裁剪可能改变结果。见 `experiments/line_offsets_pilot_20261105/` 和 docs/15。
