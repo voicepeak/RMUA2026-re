@@ -208,3 +208,5 @@ stage 5 持续风过渡与固定延迟开环 PWM 已覆盖三 seed 各两次。�
 固定夹具实验的无夹具对照已完成三个 seed 各两次；六场事后 NED z 最小值约 -5.14 至 -4.80 m，均保留固定 PWM、LiDAR 原始帧及碰撞回调日志，见 `experiments/line_fixture_control_20261105/`。粗/细夹具组仍在采集；对照数据不能单独证明接触或归因。
 
 stage 6 持续风过渡与固定延迟开环 PWM 的三 seed 各两次已完成；seed 456 的两场、2026 的两场有风变化与非零 PWM 命令近似重叠，而 seed 123 两场在首次风变化前均已回到零命令，不能声称其非零阶段覆盖动态风。保留 `experiments/wind_pwm_transition_6_20261105/`，另以预先固定的更晚命令时间做 seed 123 重试；该选择来自事后分析，而非飞行控制读取调试真值。
+
+对上述五个事件补做符号核对：二进制导出的 `vtable for DroneHitEvent` 地址为 `0xbacf50`，五个运行时事件的 vptr 均为其地址点 `0xbacf60`（+16 字节），类型值均为 29。因此可以将这些分派事件识别为 `DroneHitEvent`，而非仅凭回调名称推测；仍不能识别碰撞对方，也不能确定事件后 96 字节读出是否属于同一对象。证据见 `experiments/line_fixture_event_pilot_20261105/event_analysis.json` 和 `event_vtable_symbols.txt`。

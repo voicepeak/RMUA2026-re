@@ -1,0 +1,2 @@
+0000000000bacf28 V vtable for SyncDroneLocationEvent
+0000000000bacf50 V vtable for DroneHitEvent
