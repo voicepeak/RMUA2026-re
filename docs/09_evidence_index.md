@@ -119,3 +119,4 @@
 | 合成碰撞回调及忽略标志三 seed 对照 | `experiments/collision_inject_ignore0_20261105/analysis.json`、`experiments/collision_inject_ignore1_20261105/analysis.json`；非几何接触 |
 | 逐 tick 强制状态后风索引与话题变化 | `experiments/wind_persistent_pilot_20261105/`、`scripts/stage_force_wind_persistent.gdb` |
 | stage 6 单次注入后风话题 25 秒保持不变 | `experiments/wind_transition_6_20261105/` |
+| stage 6 固定 PWM 开环三 seed 两次 | `experiments/wind_pwm_step_6_20261105/pwm_analysis.json` 与原始流；短场风向量保持不变 |

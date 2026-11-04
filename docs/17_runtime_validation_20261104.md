@@ -158,3 +158,5 @@ stage 5 固定开环 PWM 六场均发送 248 条命令、采到 800–801 条输
 碰撞回调开发注入对照已覆盖三个 seed 各两次：将 state 设为 7 后直接调用 `0x2fb7110`，`IgnoreAllHitCollision=0` 的六场返回时均为 state 12；标志为 1 的六场返回时均为 state 7。两组均在调用后恢复原指令字节，见 `experiments/collision_inject_ignore0_20261105/`、`experiments/collision_inject_ignore1_20261105/` 和 `scripts/analyze_collision_inject.py`。这验证被注入回调的分支，不是线障/车辆物理接触或碰撞几何验收。
 
 stage 6 单次状态注入的 25 秒风也保持同一向量（1234 条），见 `experiments/wind_transition_6_20261105/`。另一个 stage 4 单 seed 试场每个游戏 tick 将 state 重新写为 7，并只在首次设置段起始单调时钟；其关键帧索引从 0 推进到 1、2 等，25 秒 ROS 风矢量发生变化，速度模约 1.50–1.84。该试场保留 GDB 时钟、索引和传感器原始数据于 `experiments/wind_persistent_pilot_20261105/`；持续注入改变每个 tick 且断点影响调度，不能视为自然赛程或确定单次注入冻结的根因。
+
+stage 6 固定开环 PWM 六场均发送 248 条命令并记录 800–802 条实际 PWM；非初始零阶段同阶段首次 header 匹配差约 0.1–38.9 ms，不能解释为经过标定的端到端延迟。各流和失败/缺失的初始零匹配见 `experiments/wind_pwm_step_6_20261105/`。三个 stage 的固定序列均有三 seed 各两次，但这些短场的单次状态注入风向量保持不变；动态风与 PWM 的耦合尚未完成验证。
