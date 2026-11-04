@@ -144,3 +144,4 @@
 | stage 5/6 初始位置原始 LiDAR 三 seed 两次 | `experiments/lidar_snapshot_5_20261105/lidar_analysis.json`、`experiments/lidar_snapshot_6_20261105/lidar_analysis.json` |
 | 原点粗/细线夹具及无夹具的固定 PWM 先导对照 | `experiments/line_fixture_thick_pilot_20261105/`、`experiments/line_fixture_0_pilot_20261105/`、`experiments/line_fixture_-1_pilot_20261105/`、`scripts/stage_line_fixture.gdb`；未确认碰撞对象 |
 | stage 4 持续风过渡与 PWM 三 seed 两次 | `experiments/wind_pwm_transition_4_20261105/overlap_analysis.json`、`pwm_analysis.json`、原始消息；近似时间对齐 |
+| 碰撞分派事件前 96 字节及栈 | `experiments/line_fixture_event_pilot_20261105/`、`scripts/stage_line_fixture_event.gdb`；对象长度及接触对方未知 |
