@@ -114,3 +114,9 @@ stage 4 的三个 seed 各两场已完成：每个 seed 的两次风关键帧原
 stage 5 六场注入也完成：每个 seed 两次风关键帧字节一致，三个 seed 不同，每场 37 条；可配对保持约 8.015–9.985 秒、过渡 2 秒，样本关键帧标量约 2.402–4.0。每场线障生成入口 2 次、`0x2fc4980` 14 次、`0x2fc3fc0` 628 次，仅代表入口尝试。seed 123 第一次风话题采样命令退出码 137，其余为超时退出码 124；关键帧来自 GDB 内存，不依赖该话题。原始文件及比较见 `experiments/stage_inject_5_20261104/`。
 
 车辆直接调用的首个探索失败：风数组生成返回断点中以 GDB `call` 请求 `0x2fc8900`，调试器报告无法取得寄存器、线程仍在运行，容器未达到就绪。该场不能认定函数完成或得到车辆行为，保留 `experiments/vehicle_call_pilot_20261104/`，后续应改变调用方法。reset 注入首次试验所用 ROS 工作区缺少 `airsim_ros/Reset` 类型，服务调用未发出；保留 `experiments/stage_reset_inject_pilot_20261104/`，并改用包含该类型的工作区重试。
+
+stage 6 三 seed 各两次的注入风数组同 seed 逐字一致、不同 seed 不同；每场 35 条，保持约 8.015–9.985 秒，过渡 2 秒，样本关键帧标量约 9.537–15.0。入口实测 `xmm0..3 = 200,1800,15,4`，更正此前 docs/15 的末两参数顺序。每场两次线障生成入口、14 次 `0x2fc4980` 和 804 次 `0x2fc3fc0` 入口均为尝试，不是成功生成数。见 `experiments/stage_inject_6_20261104/`。
+
+换用含 Reset 服务类型的工作区后，对三个 seed 各做一次 stage 4 注入、ROS reset、再注入：服务都返回 `success: False`，每场两个风数组字节均不同。此结果不能证明成功 reset 或单独归因于 libc 状态；先前只读探针曾观察 FRandomStream 恢复 seed。GDB 因临时断点回调继续执行而重复输出第二个数组一次，第三份 dump 并非第三次生成。`scripts/analyze_injected_reset.py` 和 `experiments/stage_reset_inject_retry_20261104/` 保存完整数据及哈希。
+
+替代 GDB `call` 的车辆探索用游戏线程上修改返回地址和寄存器的方法，在 seed 123 命中 `0x2fc8900` 以及 `0x2fc93c0` 分支；尚未观察到调用返回，不能据此断言车辆生成或运动。运行器的 `observed` 只验证了风和线障入口、话题就绪，不验证车辆返回；详见 `experiments/vehicle_trampoline_pilot_20261104/`。

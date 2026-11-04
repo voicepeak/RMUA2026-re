@@ -1,0 +1,72 @@
+{
+  "binary_sha256": "5231addfa25ddaa9e4473ea9ac40c9c0bc685174e69cd14bb49159f443b97800",
+  "settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+  "image_id": "sha256:cd46a48cd28c2a9c6345f60227fd1bd50e78c67ef1e98dcddc0e65893771da57",
+  "gdb_script_sha256": "3fdc9c63b3cefb685a13d582fa06dd0a85b1e44965d15abad9f8935bd989161d",
+  "mode": "nullrhi",
+  "map": "default Lobby -> OL1",
+  "seeds": [
+    123,
+    456,
+    2026
+  ],
+  "repeats": 1,
+  "stage_coverage": "GDB mutates initial stage call arguments; diagnostic, not official progression",
+  "injected_stage": 4,
+  "runs": [
+    {
+      "seed": 123,
+      "repeat": 1,
+      "port": 11960,
+      "container": "rmua-trace-e548e9e2cd6f",
+      "start_wall": 1793805085.5585697,
+      "status": "reset_failed",
+      "id": "8020cbc71586c3d9169b2975ac4bbdbfd6f021cffeb62af763f48978024a8858",
+      "ready_wall": 1793805094.2962906,
+      "before_reset_exit_code": 124,
+      "reset_exit_code": 0,
+      "reset_response_success": false,
+      "after_reset_exit_code": 124,
+      "injection_observed": true,
+      "wind_generation_observed": true,
+      "line_generation_observed": true,
+      "end_wall": 1793805105.3382819
+    },
+    {
+      "seed": 456,
+      "repeat": 1,
+      "port": 11961,
+      "container": "rmua-trace-d9fa4f23a924",
+      "start_wall": 1793805105.3385332,
+      "status": "reset_failed",
+      "id": "2e12d15bfdd4fad422525b0856ede6e46d874be5fd530d953a4d8d34cb630e27",
+      "ready_wall": 1793805114.1284447,
+      "before_reset_exit_code": 124,
+      "reset_exit_code": 0,
+      "reset_response_success": false,
+      "after_reset_exit_code": 124,
+      "injection_observed": true,
+      "wind_generation_observed": true,
+      "line_generation_observed": true,
+      "end_wall": 1793805125.1525993
+    },
+    {
+      "seed": 2026,
+      "repeat": 1,
+      "port": 11962,
+      "container": "rmua-trace-61a22af71132",
+      "start_wall": 1793805125.1528537,
+      "status": "reset_failed",
+      "id": "a0ef79ee9a2203ce92cf30fef1506ae74eaa00eba9b73ec6aeec481c4a0a8521",
+      "ready_wall": 1793805133.8369026,
+      "before_reset_exit_code": 124,
+      "reset_exit_code": 0,
+      "reset_response_success": false,
+      "after_reset_exit_code": 124,
+      "injection_observed": true,
+      "wind_generation_observed": true,
+      "line_generation_observed": true,
+      "end_wall": 1793805144.9014041
+    }
+  ]
+}

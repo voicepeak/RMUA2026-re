@@ -1,0 +1,50 @@
+{
+  "seed123_repeat1": {
+    "reset_response_success": false,
+    "injection_count": 2,
+    "array_lengths": [
+      35,
+      35,
+      35
+    ],
+    "array_sha256": [
+      "d2ad79ebe9b78a9c5321f627ccd0e6b35dd02aa0d694eb3aceadd5ee5eee20cf",
+      "7b61903806dfcbe14ad3a15aea2145a375ae4ca485da3ae9b6426411e3ec10cf",
+      "7b61903806dfcbe14ad3a15aea2145a375ae4ca485da3ae9b6426411e3ec10cf"
+    ],
+    "first_two_equal": false,
+    "note": "The third dump repeats the second due to a lingering breakpoint; it is not a third generation."
+  },
+  "seed456_repeat1": {
+    "reset_response_success": false,
+    "injection_count": 2,
+    "array_lengths": [
+      35,
+      35,
+      35
+    ],
+    "array_sha256": [
+      "7d369f0dadae9758b107a3f760bbb08fc75c21043410246c8b96543ad4ee0ef9",
+      "ce92e1b52e139dbb6be26af3526efb600f11aab50d23c2e31fc85bc657377654",
+      "ce92e1b52e139dbb6be26af3526efb600f11aab50d23c2e31fc85bc657377654"
+    ],
+    "first_two_equal": false,
+    "note": "The third dump repeats the second due to a lingering breakpoint; it is not a third generation."
+  },
+  "seed2026_repeat1": {
+    "reset_response_success": false,
+    "injection_count": 2,
+    "array_lengths": [
+      35,
+      35,
+      35
+    ],
+    "array_sha256": [
+      "b7f89c696969e3719187fe3c55acae5f9a563b91b3f40481658069aaa0e214a9",
+      "6f91d20ef309fc6e4a3077e060d52a279e9f6d909159a5b45e9bd72c97d80aa8",
+      "6f91d20ef309fc6e4a3077e060d52a279e9f6d909159a5b45e9bd72c97d80aa8"
+    ],
+    "first_two_equal": false,
+    "note": "The third dump repeats the second due to a lingering breakpoint; it is not a third generation."
+  }
+}

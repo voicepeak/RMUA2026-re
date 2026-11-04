@@ -1,0 +1,1502 @@
+Breakpoint 1 at 0x2fbac30
+Breakpoint 2 at 0x2fb23b0
+Breakpoint 3 at 0x2fc77b0
+Breakpoint 4 at 0x2fc3fc0
+Breakpoint 5 at 0x2fc4980
+Breakpoint 6 at 0x2fc8900
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/usr/lib/x86_64-linux-gnu/libthread_db.so.1".
+Looking for binary: ../../../RMUA/Config/BinaryConfig.ini
+[Detaching after vfork from child process 224]
+sh: 1: xdg-user-dir: not found
+4.27.2-0+++UE4+Release-4.27 522 0
+Disabling core dumps.
+LogConsoleResponse: Display: Failed to find resolution value strings in scalability ini. Falling back to default.
+LogConsoleResponse: Display: Failed to find resolution value strings in scalability ini. Falling back to default.
+LogPakFile: Display: Found Pak file ../../../RMUA/Content/Paks/RMUA-LinuxNoEditor.pak attempting to mount.
+LogPakFile: Display: Mounting pak file ../../../RMUA/Content/Paks/RMUA-LinuxNoEditor.pak.
+LogPakFile: PakFile PrimaryIndexSize=122598
+LogPakFile: PakFile PathHashIndexSize=60199
+LogPakFile: PakFile FullDirectoryIndexSize=94561
+LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile '../../../RMUA/Content/Paks/RMUA-LinuxNoEditor.pak' (chunk index -1, root '../../../') mounted
+LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:../../../ File:../../../RMUA/Content/Paks/RMUA-LinuxNoEditor.pak)
+LogPakFile: OnPakFileMounted2Time == 0.000004
+LogPlatformFile: Using cached read wrapper
+LogTaskGraph: Started task graph with 4 named threads and 16 total threads with 3 sets of task threads.
+LogICUInternationalization: ICU TimeZone Detection - Raw Offset: +0:00, Platform Override: ''
+LogInit: Display: Loading text-based GConfig....
+LogPluginManager: Mounting plugin AirSim
+LogPluginManager: Mounting plugin PhysXVehicles
+LogPluginManager: Mounting plugin AirSimROS
+LogPluginManager: Mounting plugin Paper2D
+LogPluginManager: Mounting plugin AISupport
+LogPluginManager: Mounting plugin EnvironmentQueryEditor
+LogPluginManager: Mounting plugin LightPropagationVolume
+LogPluginManager: Mounting plugin CameraShakePreviewer
+LogPluginManager: Mounting plugin GameplayCameras
+LogPluginManager: Mounting plugin TemplateSequence
+LogPluginManager: Mounting plugin LevelSequenceEditor
+LogPluginManager: Mounting plugin OodleData
+LogPluginManager: Mounting plugin OodleNetwork
+LogPluginManager: Mounting plugin AnimationSharing
+LogPluginManager: Mounting plugin SignificanceManager
+LogPluginManager: Mounting plugin PluginUtils
+LogPluginManager: Mounting plugin PropertyAccessEditor
+LogPluginManager: Mounting plugin UObjectPlugin
+LogPluginManager: Mounting plugin AssetManagerEditor
+LogPluginManager: Mounting plugin FacialAnimation
+LogPluginManager: Mounting plugin GeometryMode
+LogPluginManager: Mounting plugin SpeedTreeImporter
+LogPluginManager: Mounting plugin DatasmithContent
+LogPluginManager: Mounting plugin VariantManagerContent
+LogPluginManager: Mounting plugin AlembicImporter
+LogPluginManager: Mounting plugin GeometryCache
+LogPluginManager: Mounting plugin AutomationUtils
+LogPluginManager: Mounting plugin ScreenshotTools
+LogPluginManager: Mounting plugin BackChannel
+LogPluginManager: Mounting plugin ChaosCloth
+LogPluginManager: Mounting plugin ChaosClothEditor
+LogPluginManager: Mounting plugin ChaosEditor
+LogPluginManager: Mounting plugin PlanarCut
+LogPluginManager: Mounting plugin GeometryProcessing
+LogPluginManager: Mounting plugin EditableMesh
+LogPluginManager: Mounting plugin GeometryCollectionPlugin
+LogPluginManager: Mounting plugin ProceduralMeshComponent
+LogPluginManager: Mounting plugin ChaosSolverPlugin
+LogPluginManager: Mounting plugin ChaosNiagara
+LogPluginManager: Mounting plugin Niagara
+LogPluginManager: Mounting plugin PythonScriptPlugin
+LogPluginManager: Mounting plugin CharacterAI
+LogPluginManager: Mounting plugin MotoSynth
+LogPluginManager: Mounting plugin PlatformCrypto
+LogPluginManager: Mounting plugin AvfMedia
+LogPluginManager: Mounting plugin ImgMedia
+LogPluginManager: Mounting plugin MediaCompositing
+LogPluginManager: Mounting plugin WmfMedia
+LogPluginManager: Mounting plugin MeshPainting
+LogPluginManager: Mounting plugin TcpMessaging
+LogPluginManager: Mounting plugin UdpMessaging
+LogPluginManager: Mounting plugin ActorSequence
+LogPluginManager: Mounting plugin MatineeToLevelSequence
+LogPluginManager: Mounting plugin OnlineSubsystem
+LogPluginManager: Mounting plugin OnlineSubsystemNull
+LogPluginManager: Mounting plugin OnlineSubsystemUtils
+LogPluginManager: Mounting plugin LauncherChunkInstaller
+LogPluginManager: Mounting plugin ActorLayerUtilities
+LogPluginManager: Mounting plugin AndroidPermission
+LogPluginManager: Mounting plugin AppleImageUtils
+LogPluginManager: Mounting plugin ArchVisCharacter
+LogPluginManager: Mounting plugin AssetTags
+LogPluginManager: Mounting plugin AudioCapture
+LogPluginManager: Mounting plugin CableComponent
+LogPluginManager: Mounting plugin ChunkDownloader
+LogPluginManager: Mounting plugin CustomMeshComponent
+LogPluginManager: Mounting plugin ExampleDeviceProfileSelector
+LogPluginManager: Mounting plugin GooglePAD
+LogPluginManager: Mounting plugin LinuxDeviceProfileSelector
+LogPluginManager: Mounting plugin LocationServicesBPLibrary
+LogPluginManager: Mounting plugin MobilePatchingUtils
+LogPluginManager: Mounting plugin RuntimePhysXCooking
+LogPluginManager: Mounting plugin SoundFields
+LogPluginManager: Mounting plugin Synthesis
+LogPluginManager: Mounting plugin AudioSynesthesia
+LogPluginManager: Mounting plugin WebMMoviePlayer
+LogPluginManager: Mounting plugin WebMMedia
+LogInit: Using libcurl 7.65.3-DEV
+LogInit:  - built for x86_64-unknown-linux-gnu
+LogInit:  - supports SSL with OpenSSL/1.1.1c
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_TLSAUTH_SRP
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - MaxHostConnections = 16  - Libcurl will limit the number of connections to a host
+LogInit:  - LocalHostAddr = Default
+LogInit:  - BufferSize = 65536
+LogOnline: OSS: Creating online subsystem instance for: NULL
+LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
+LogInit: Build: ++UE4+Release-4.27-CL-0
+LogInit: Engine Version: 4.27.2-0+++UE4+Release-4.27
+LogInit: Compatible Engine Version: 4.27.0-0+++UE4+Release-4.27
+LogInit: Net CL: 0
+LogInit: OS: GenericOSVersionLabel (GenericOSSubVersionLabel), CPU: 12th Gen Intel(R) Core(TM) i7-12700H, GPU: GenericGPUBrand
+LogInit: Compiled (64-bit): Jan 28 2026 12:56:35
+LogInit: Compiled with Clang: 11.0.1 
+LogInit: Build Configuration: Shipping
+LogInit: Branch Name: ++UE4+Release-4.27
+LogInit: Command Line:  seed 123 -nullrhi -settings=/configs/settings.json
+LogInit: Base Directory: /sim/Build/LinuxNoEditor/RMUA/Binaries/Linux/
+LogInit: Allocator: binned2
+LogInit: Installed Engine Build: 1
+LogInit: Presizing for max 2097152 objects, including 1 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Engine.ini]
+LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+LogStreaming: Display: Async Loading initialized: Event Driven Loader: true, Async Loading Thread: false, Async Post Load: true
+LogInit: Object subsystem initialized
+LogConfig: Setting CVar [[r.setres:1280x720]]
+LogConfig: Setting CVar [[fx.NiagaraAllowRuntimeScalabilityChanges:1]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.setres:1280x720]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[fx.NiagaraAllowRuntimeScalabilityChanges:1]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Engine.ini]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Engine.ini]
+[2026.11.04-15.10.37:918][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Engine.ini]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Engine.ini]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:25165824]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[gc.MultithreadedDestructionEnabled:1]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Engine.ini]
+[2026.11.04-15.10.37:918][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.AnisotropicMaterials:1]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountMaxPerSlice:4]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:128.0]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:128.0]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.SkyLight.RealTimeReflectionCapture:1]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[fx.Niagara.QualityLevel:3]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.IntegrationType:2]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:4]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.HairStrands.Visibility.MSAA.SamplePerPixel:4]]
+[2026.11.04-15.10.37:918][  0]LogLinux: Selected Device Profile: [LinuxNoEditor]
+[2026.11.04-15.10.37:918][  0]LogInit: Applying CVar settings loaded from the selected device profile: [LinuxNoEditor]
+[2026.11.04-15.10.37:918][  0]LogHAL: Display: Platform has ~ 4 GB [41855913984 / 4294967296 / 39], which maps to Smallest [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
+[2026.11.04-15.10.37:918][  0]LogInit: Going up to parent DeviceProfile [Linux]
+[2026.11.04-15.10.37:918][  0]LogInit: Going up to parent DeviceProfile []
+[2026.11.04-15.10.37:918][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2026.11.04-15.10.37:918][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2026.11.04-15.10.37:919][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2026.11.04-15.10.37:919][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2026.11.04-15.10.37:919][  0]LogConfig: Setting CVar [[r.AnisotropicMaterials:1]]
+[2026.11.04-15.10.37:919][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2026.11.04-15.10.37:919][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2026.11.04-15.10.37:919][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2026.11.04-15.10.37:919][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2026.11.04-15.10.37:919][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2026.11.04-15.10.37:919][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2026.11.04-15.10.37:919][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2026.11.04-15.10.37:919][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2026.11.04-15.10.37:919][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountMaxPerSlice:4]]
+[2026.11.04-15.10.37:919][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2026.11.04-15.10.37:919][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2026.11.04-15.10.37:919][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2026.11.04-15.10.37:919][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:128.0]]
+[2026.11.04-15.10.37:919][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2026.11.04-15.10.37:919][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:128.0]]
+[2026.11.04-15.10.37:919][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2026.11.04-15.10.37:919][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2026.11.04-15.10.37:919][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2026.11.04-15.10.37:919][  0]LogConfig: Setting CVar [[r.SkyLight.RealTimeReflectionCapture:1]]
+[2026.11.04-15.10.37:919][  0]LogConfig: Setting CVar [[fx.Niagara.QualityLevel:3]]
+[2026.11.04-15.10.37:919][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.04-15.10.37:919][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2026.11.04-15.10.37:919][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2026.11.04-15.10.37:919][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.04-15.10.37:919][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.IntegrationType:2]]
+[2026.11.04-15.10.37:919][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:4]]
+[2026.11.04-15.10.37:919][  0]LogConfig: Setting CVar [[r.HairStrands.Visibility.MSAA.SamplePerPixel:4]]
+[2026.11.04-15.10.37:919][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Engine.ini]
+[2026.11.04-15.10.37:919][  0]LogConfig: Setting CVar [[g.TimeoutForBlockOnRenderFence:60000]]
+[2026.11.04-15.10.37:919][  0]LogInit: Unix hardware info:
+[2026.11.04-15.10.37:919][  0]LogInit:  - we are the first instance of this executable
+[2026.11.04-15.10.37:919][  0]LogInit:  - this process' id (pid) is 128, parent process' id (ppid) is 126
+[2026.11.04-15.10.37:919][  0]LogInit:  - we are not running under debugger
+[2026.11.04-15.10.37:919][  0]LogInit:  - machine network name is 'tianbot'
+[2026.11.04-15.10.37:919][  0]LogInit:  - user name is 'euid1000' (euid1000)
+[2026.11.04-15.10.37:919][  0]LogInit:  - we're logged in locally
+[2026.11.04-15.10.37:919][  0]LogInit:  - we're running without rendering
+[2026.11.04-15.10.37:919][  0]LogInit:  - CPU: GenuineIntel '12th Gen Intel(R) Core(TM) i7-12700H' (signature: 0x906A3)
+[2026.11.04-15.10.37:919][  0]LogInit:  - Number of physical cores available for the process: 14
+[2026.11.04-15.10.37:919][  0]LogInit:  - Number of logical cores available for the process: 20
+[2026.11.04-15.10.37:919][  0]LogInit:  - Cache line size: 64
+[2026.11.04-15.10.37:919][  0]LogInit:  - Memory allocator used: binned2
+[2026.11.04-15.10.37:919][  0]LogInit:  - This binary is optimized with LTO: no, PGO: no, instrumented for PGO data collection: no
+[2026.11.04-15.10.37:919][  0]LogInit:  - This is an internal build.
+[2026.11.04-15.10.37:919][  0]LogCore: Benchmarking clocks:
+[2026.11.04-15.10.37:919][  0]LogCore:  - CLOCK_MONOTONIC (id=1) can sustain 76911838 (76912K, 77M) calls per second without zero deltas.
+[2026.11.04-15.10.37:919][  0]LogCore:  - CLOCK_MONOTONIC_RAW (id=4) can sustain 70878249 (70878K, 71M) calls per second without zero deltas.
+[2026.11.04-15.10.37:919][  0]LogCore:  - CLOCK_MONOTONIC_COARSE (id=6) can sustain 218742869 (218743K, 219M) calls per second with 99.999538% zero deltas.
+[2026.11.04-15.10.37:919][  0]LogCore: Selected clock_id 1 (CLOCK_MONOTONIC) since it is the fastest support clock without zero deltas.
+[2026.11.04-15.10.37:919][  0]LogInit: Unix-specific commandline switches:
+[2026.11.04-15.10.37:919][  0]LogInit:  -ansimalloc - use malloc()/free() from libc (useful for tools like valgrind and electric fence)
+[2026.11.04-15.10.37:919][  0]LogInit:  -jemalloc - use jemalloc for all memory allocation
+[2026.11.04-15.10.37:919][  0]LogInit:  -binnedmalloc - use binned malloc  for all memory allocation
+[2026.11.04-15.10.37:919][  0]LogInit:  -filemapcachesize=NUMBER - set the size for case-sensitive file mapping cache
+[2026.11.04-15.10.37:919][  0]LogInit:  -useksm - uses kernel same-page mapping (KSM) for mapped memory (OFF)
+[2026.11.04-15.10.37:919][  0]LogInit:  -ksmmergeall - marks all mmap'd memory pages suitable for KSM (OFF)
+[2026.11.04-15.10.37:919][  0]LogInit:  -preloadmodulesymbols - Loads the main module symbols file into memory (OFF)
+[2026.11.04-15.10.37:919][  0]LogInit:  -sigdfl=SIGNAL - Allows a specific signal to be set to its default handler rather then ignoring the signal
+[2026.11.04-15.10.37:919][  0]LogInit:  -httpproxy=ADDRESS:PORT - redirects HTTP requests to a proxy (only supported if compiled with libcurl)
+[2026.11.04-15.10.37:919][  0]LogInit:  -reuseconn - allow libcurl to reuse HTTP connections (only matters if compiled with libcurl)
+[2026.11.04-15.10.37:919][  0]LogInit:  -virtmemkb=NUMBER - sets process virtual memory (address space) limit (overrides VirtualMemoryLimitInKB value from .ini)
+[2026.11.04-15.10.37:919][  0]LogInit:  - Physical RAM available (not considering process quota): 39 GB (39916 MB, 40874916 KB, 41855913984 bytes)
+[2026.11.04-15.10.37:919][  0]LogInit:  - VirtualMemoryAllocator pools will grow at scale 1.4
+[2026.11.04-15.10.37:919][  0]LogInit:  - MemoryRangeDecommit() will be a no-op (re-run with -vmapoolevict to change)
+[2026.11.04-15.10.37:961][  0]LogInit: Physics initialised using underlying interface: PhysX
+[2026.11.04-15.10.37:961][  0]LogInit: Using OS detected language (en-US-POSIX).
+[2026.11.04-15.10.37:961][  0]LogInit: Using OS detected locale (en-US-POSIX).
+[2026.11.04-15.10.37:961][  0]LogTextLocalizationManager: No specific localization for 'en-US-POSIX' exists, so the 'en' localization will be used.
+[2026.11.04-15.10.37:972][  0]LogInit: Not creating cursor resources due to headless application.
+[2026.11.04-15.10.37:973][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2026.11.04-15.10.37:973][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2026.11.04-15.10.37:974][  0]LogRendererCore: Ray tracing is disabled. Reason: r.RayTracing=0.
+[2026.11.04-15.10.37:975][  0]LogSlate: Using FreeType 2.10.0
+[2026.11.04-15.10.37:975][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2026.11.04-15.10.37:977][  0]LogInit: Using OS detected language (en-US-POSIX).
+[2026.11.04-15.10.37:977][  0]LogInit: Using OS detected locale (en-US-POSIX).
+[2026.11.04-15.10.37:977][  0]LogTextLocalizationManager: No localization for 'en-US-POSIX' exists, so 'en' will be used for the language.
+[2026.11.04-15.10.37:977][  0]LogTextLocalizationManager: No localization for 'en-US-POSIX' exists, so 'en' will be used for the locale.
+[2026.11.04-15.10.37:977][  0]LogSlate: Warning: FontCache flush requested. Reason: Culture for localization was changed
+[2026.11.04-15.10.37:977][  0]LogAssetRegistry: FAssetRegistry took 0.0002 seconds to start up
+[2026.11.04-15.10.38:007][  0]LogTextLocalizationManager: Compacting localization data took   1.30ms
+[2026.11.04-15.10.38:007][  0]LogStreaming: Display: FlushAsyncLoading: 1 QueuedPackages, 0 AsyncPackages
+[2026.11.04-15.10.38:007][  0]LogPackageLocalizationCache: Processed 20 localized package path(s) for 1 prioritized culture(s) in 0.000028 seconds
+[2026.11.04-15.10.38:007][  0]LogPakFile: New pak file ../../../RMUA/Content/Paks/RMUA-LinuxNoEditor.pak added to pak precacher.
+[2026.11.04-15.10.38:011][  0]LogSerialization: Display: AllowBulkDataInIoStore: 'true'
+[2026.11.04-15.10.38:011][  0]LogLinux: Selected Device Profile: [LinuxNoEditor]
+[2026.11.04-15.10.38:011][  0]LogInit: Active device profile: [0x7fffe54b91c0][0x7fffe4889250 49] LinuxNoEditor
+[2026.11.04-15.10.38:011][  0]LogInit: Profiles: [0x7fffe54b8ec0][0x7fffecad0010 49] Linux, [0x7fffe54b91c0][0x7fffe4889250 49] LinuxNoEditor, 
+[2026.11.04-15.10.38:014][  0]LogNetVersion: RMUA 1.0.0, NetCL: 0, EngineNetVer: 17, GameNetVer: 0 (Checksum: 41731042)
+[2026.11.04-15.10.38:039][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2026.11.04-15.10.38:039][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2026.11.04-15.10.38:039][  0]LogTemp: Circle 构造函数调用
+[2026.11.04-15.10.38:039][  0]LogTemp: Circle 构造函数调用
+[2026.11.04-15.10.38:039][  0]LogTemp: Circle 构造函数调用
+[2026.11.04-15.10.38:046][  0]LogTemp: StartupModule: AirSim plugin
+[2026.11.04-15.10.38:080][  0]LogTemp: AirSimROS Loaded.
+[2026.11.04-15.10.38:080][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2026.11.04-15.10.38:082][  0]LogUObjectArray: 15078 objects as part of root set at end of initial load.
+[2026.11.04-15.10.38:082][  0]LogUObjectArray: 2 objects are not in the root set, but can never be destroyed because they are in the DisregardForGC set.
+[2026.11.04-15.10.38:082][  0]LogUObjectAllocator: 3117992 out of 0 bytes used by permanent object pool.
+[2026.11.04-15.10.38:082][  0]LogUObjectArray: CloseDisregardForGC: 15078/15078 objects in disregard for GC pool
+[2026.11.04-15.10.38:084][  0]LogEngine: Initializing Engine...
+ALSA lib confmisc.c:767:(parse_card) cannot find card '0'
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_card_driver returned error: No such file or directory
+ALSA lib confmisc.c:392:(snd_func_concat) error evaluating strings
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_concat returned error: No such file or directory
+ALSA lib confmisc.c:1246:(snd_func_refer) error evaluating name
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5220:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2642:(snd_pcm_open_noupdate) Unknown PCM default
+ALSA lib confmisc.c:767:(parse_card) cannot find card '0'
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_card_driver returned error: No such file or directory
+ALSA lib confmisc.c:392:(snd_func_concat) error evaluating strings
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_concat returned error: No such file or directory
+ALSA lib confmisc.c:1246:(snd_func_refer) error evaluating name
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5220:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2642:(snd_pcm_open_noupdate) Unknown PCM default
+[2026.11.04-15.10.38:084][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.000 s
+[2026.11.04-15.10.38:118][  0]LogInit: Initializing FReadOnlyCVARCache
+[2026.11.04-15.10.38:118][  0]LogAudio: Display: Initializing Audio Device Manager...
+[2026.11.04-15.10.38:118][  0]LogAudio: Display: Loading Default Audio Settings Objects...
+[2026.11.04-15.10.38:118][  0]LogAudio: Display: No default SoundConcurrencyObject specified (or failed to load).
+[2026.11.04-15.10.38:118][  0]LogAudio: Display: Audio Device Manager Initialized
+[2026.11.04-15.10.38:118][  0]LogAudio: Display: Creating Audio Device:                 Id: 1, Scope: Shared, Realtime: True
+[2026.11.04-15.10.38:118][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2026.11.04-15.10.38:118][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2026.11.04-15.10.38:118][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2026.11.04-15.10.38:118][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2026.11.04-15.10.38:118][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2026.11.04-15.10.38:118][  0]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2026.11.04-15.10.38:118][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2026.11.04-15.10.38:118][  0]LogAudio: Display: AudioDevice MaxSources: 32
+[2026.11.04-15.10.38:118][  0]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2026.11.04-15.10.38:118][  0]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2026.11.04-15.10.38:118][  0]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2026.11.04-15.10.38:118][  0]LogAudioMixer: Display: Initializing audio mixer.
+[2026.11.04-15.10.38:143][  0]LogAudioMixerSDL: Display: Initialized SDL using alsa platform API backend.
+[2026.11.04-15.10.38:143][  0]LogAudioMixerSDL: Error: ALSA: Couldn't open audio device: No such file or directory
+[2026.11.04-15.10.38:143][  0]LogAudioMixerSDL: Opening default audio device (device index -1)
+[2026.11.04-15.10.38:143][  0]LogAudioMixerSDL: Error: ALSA: Couldn't open audio device: No such file or directory
+[2026.11.04-15.10.38:143][  0]LogAudio: Warning: Could not initialize hardware. Tearing down anything that was set up during initialization
+[2026.11.04-15.10.38:247][  0]LogAudio: Warning: FAudioDevice::Init Failed!
+[2026.11.04-15.10.38:247][  0]LogAudio: Display: Destroying Audio Device 1: could not be initialized. Check AudioDeviceModuleName and AudioMixerModuleName in [Platform]Engine.ini.
+[2026.11.04-15.10.38:247][  0]LogAudio: Display: Main audio device could not be initialized. Please check the value for AudioDeviceModuleName and AudioMixerModuleName in [Platform]Engine.ini.
+[2026.11.04-15.10.38:247][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2026.11.04-15.10.38:247][  0]LogInit: Texture streaming: Disabled
+[2026.11.04-15.10.38:257][  0]LogTemp: Warning: Air Sim Set Event System Success
+[2026.11.04-15.10.38:257][  0]LogTemp: Warning: Air Sim ROS Set Event System Success
+[2026.11.04-15.10.38:257][  0]LogTemp: 当前比赛模式为 2！
+[2026.11.04-15.10.38:257][  0]LogTemp: 当前版本号为 12.0.0.5！
+[2026.11.04-15.10.38:257][  0]LogTemp: Warning: App Init End !!! 2026-11-04 15:10:38 127.0.0.2
+[2026.11.04-15.10.38:257][  0]LogAudio: Display: Creating Audio Device:                 Id: 2, Scope: Shared, Realtime: True
+[2026.11.04-15.10.38:257][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2026.11.04-15.10.38:257][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2026.11.04-15.10.38:257][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2026.11.04-15.10.38:257][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2026.11.04-15.10.38:257][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2026.11.04-15.10.38:257][  0]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2026.11.04-15.10.38:257][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2026.11.04-15.10.38:257][  0]LogAudio: Display: AudioDevice MaxSources: 32
+ALSA lib confmisc.c:767:(parse_card) cannot find card '0'
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_card_driver returned error: No such file or directory
+ALSA lib confmisc.c:392:(snd_func_concat) error evaluating strings
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_concat returned error: No such file or directory
+ALSA lib confmisc.c:1246:(snd_func_refer) error evaluating name
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5220:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2642:(snd_pcm_open_noupdate) Unknown PCM default
+ALSA lib confmisc.c:767:(parse_card) cannot find card '0'
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_card_driver returned error: No such file or directory
+ALSA lib confmisc.c:392:(snd_func_concat) error evaluating strings
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_concat returned error: No such file or directory
+ALSA lib confmisc.c:1246:(snd_func_refer) error evaluating name
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5220:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2642:(snd_pcm_open_noupdate) Unknown PCM default
+Resizing viewport due to setres change, 1280 x 720
+[2026.11.04-15.10.38:257][  0]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2026.11.04-15.10.38:257][  0]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2026.11.04-15.10.38:257][  0]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2026.11.04-15.10.38:257][  0]LogAudioMixer: Display: Initializing audio mixer.
+[2026.11.04-15.10.38:266][  0]LogAudioMixerSDL: Display: Initialized SDL using alsa platform API backend.
+[2026.11.04-15.10.38:266][  0]LogAudioMixerSDL: Error: ALSA: Couldn't open audio device: No such file or directory
+[2026.11.04-15.10.38:266][  0]LogAudioMixerSDL: Opening default audio device (device index -1)
+[2026.11.04-15.10.38:266][  0]LogAudioMixerSDL: Error: ALSA: Couldn't open audio device: No such file or directory
+[2026.11.04-15.10.38:266][  0]LogAudio: Warning: Could not initialize hardware. Tearing down anything that was set up during initialization
+[2026.11.04-15.10.38:369][  0]LogAudio: Warning: FAudioDevice::Init Failed!
+[2026.11.04-15.10.38:369][  0]LogAudio: Display: Destroying Audio Device 2: could not be initialized. Check AudioDeviceModuleName and AudioMixerModuleName in [Platform]Engine.ini.
+[2026.11.04-15.10.38:369][  0]LogEngine: GameWindow did not exist.  Was created
+[2026.11.04-15.10.38:370][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2026.11.04-15.10.38:370][  0]LogInit: Display: Game Engine Initialized.
+[2026.11.04-15.10.38:370][  0]LogInit: Display: Starting Game.
+[2026.11.04-15.10.38:370][  0]LogNet: Browse: /Game/Maps/RMUA2024OL/RMUA2024Lobby?Name=Player
+[2026.11.04-15.10.38:370][  0]LogLoad: LoadMap: /Game/Maps/RMUA2024OL/RMUA2024Lobby?Name=Player
+[2026.11.04-15.10.38:370][  0]LogWorld: BeginTearingDown for /Temp/Untitled_0
+[2026.11.04-15.10.38:370][  0]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2026.11.04-15.10.38:370][  0]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.11.04-15.10.38:371][  0]LogUObjectHash: Compacting FUObjectHashTables data took   0.32ms
+[2026.11.04-15.10.38:375][  0]LogAIModule: Creating AISystem for world RMUA2024Lobby
+[2026.11.04-15.10.38:375][  0]LogLoad: Game class is 'GameModeBase'
+[2026.11.04-15.10.38:375][  0]LogWorld: Bringing World /Game/Maps/RMUA2024OL/RMUA2024Lobby.RMUA2024Lobby up for play (max tick rate 0) at 2026.11.04-15.10.38
+[2026.11.04-15.10.38:375][  0]LogWorld: Bringing up level for play took: 0.000105
+[2026.11.04-15.10.38:375][  0]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2026.11.04-15.10.38:376][  0]r.SetRes = "1280x720 w"
+[2026.11.04-15.10.38:376][  0]LogViewport: Display: Viewport HideCursorDuringCapture Changed, False -> True
+[2026.11.04-15.10.38:376][  0]LogViewport: Display: Viewport MouseCaptureMode Changed, NoCapture -> CaptureDuringMouseDown
+[2026.11.04-15.10.38:376][  0]LogLoad: Took 0.005830 seconds to LoadMap(/Game/Maps/RMUA2024OL/RMUA2024Lobby)
+[2026.11.04-15.10.38:381][  0]LogInit: Display: Engine is initialized. Leaving FEngineLoop::Init()
+[2026.11.04-15.10.38:381][  0]LogLoad: (Engine Initialization) Total time: 0.54 seconds
+[2026.11.04-15.10.43:381][281]LogNet: Browse: /Game/Maps/RMUA2024OL/RMUA2024OL1
+[2026.11.04-15.10.43:381][281]LogLoad: LoadMap: /Game/Maps/RMUA2024OL/RMUA2024OL1
+[2026.11.04-15.10.43:381][281]LogWorld: BeginTearingDown for /Game/Maps/RMUA2024OL/RMUA2024Lobby
+[2026.11.04-15.10.43:381][281]LogWorld: UWorld::CleanupWorld for RMUA2024Lobby, bSessionEnded=true, bCleanupResources=true
+[2026.11.04-15.10.43:381][281]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.11.04-15.10.43:382][281]LogUObjectHash: Compacting FUObjectHashTables data took   0.26ms
+[2026.11.04-15.10.43:382][281]LogStreaming: Display: FlushAsyncLoading: 1 QueuedPackages, 0 AsyncPackages
+[2026.11.04-15.10.43:686][281]LogPakFile: Precache HighWater 16MB
+
+[2026.11.04-15.10.43:686][281]LogAIModule: Creating AISystem for world RMUA2024OL1
+[2026.11.04-15.10.43:686][281]LogLoad: Game class is 'AirSimGameMode'
+[2026.11.04-15.10.43:717][281]LogWorld: Bringing World /Game/Maps/RMUA2024OL/RMUA2024OL1.RMUA2024OL1 up for play (max tick rate 0) at 2026.11.04-15.10.43
+[2026.11.04-15.10.43:718][281]LogWorld: Bringing up level for play took: 0.031039
+[2026.11.04-15.10.43:734][281]LogPackageName: SearchForPackageOnDisk took   0.014s, but failed to resolve .
+[2026.11.04-15.10.43:734][281]r.CustomDepth = "3"
+[2026.11.04-15.10.43:735][281]LogActor: Warning: BP_CameraDirector_C /Game/Maps/RMUA2024OL/RMUA2024OL1.RMUA2024OL1:PersistentLevel.CameraDirector has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2026.11.04-15.10.43:751][281]LogScript: Warning: Script Msg: Attempted to access index 0 from array 'CallFunc_GetAllActorsOfClass_OutActors' of length 0 in '/AirSim/Weather/WeatherFX/WeatherActor.WeatherActor_C:ExecuteUbergraph_WeatherActor'!
+[2026.11.04-15.10.43:752][281]LogTemp: Warning: No Drone API
+[2026.11.04-15.10.43:752][281]LogTemp: drone_1
+drone_1
+Resizing viewport due to setres change, 1280 x 720
+[Detaching after vfork from child process 474]
+INJECT state=0x7ffdf4554780 old=(1,3,1) new=(10,7,6)
+TRACE line rdi=0x7ffe02f19400 rsi=0x0 rdx=0x2d rcx=0x0 r8=0x3c r9=0x3 xmm0=80 xmm1=120 xmm2=9.56036e-06 xmm3=8.02629e+17
+TRACE thin_place rdi=0x7ffe02e0df00 rsi=0x0 rdx=0x2d rcx=0x3 r8=0x7fffec260000 r9=0x5 xmm0=80 xmm1=0 xmm2=100 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0d900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=3798.6 xmm2=3190.81 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0d600 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=5955.85 xmm2=7071.95 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0dc00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=1917.41 xmm2=2555.19 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0d900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=3798.6 xmm2=4611.29 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0d600 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=5955.85 xmm2=7134.88 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0d900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=3798.6 xmm2=4197.55 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0dc00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=1917.41 xmm2=1876.58 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0d600 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=5955.85 xmm2=6303.07 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0d600 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=5955.85 xmm2=6691.17 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0d900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=3798.6 xmm2=4922.12 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0d900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=3798.6 xmm2=4905.55 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0dc00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=1917.41 xmm2=2298.54 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0d900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=3798.6 xmm2=4995.62 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0d600 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=5955.85 xmm2=7216.79 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0d900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=3798.6 xmm2=3615.01 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0d300 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=7669.86 xmm2=8565.44 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0d600 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=5955.85 xmm2=6722.17 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0d900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=3798.6 xmm2=3555.39 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0d600 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=5955.85 xmm2=6383.44 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0d900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=3798.6 xmm2=4278.84 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0dc00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=1917.41 xmm2=2152.06 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0d900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=3798.6 xmm2=4240.14 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0dc00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=1917.41 xmm2=2536.94 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0d900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=3798.6 xmm2=3822.1 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0d900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=3798.6 xmm2=4257.45 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0d900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=3798.6 xmm2=3524.22 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0dc00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=1917.41 xmm2=2459.85 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0dc00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=1917.41 xmm2=3078.43 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0d900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=3798.6 xmm2=4328.75 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0d600 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=5955.85 xmm2=6648.23 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0d900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=3798.6 xmm2=4066.29 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0d900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=3798.6 xmm2=3485.92 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0d900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=3798.6 xmm2=3406.48 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0d900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=3798.6 xmm2=5001.17 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0dc00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=1917.41 xmm2=1642.29 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0d900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=3798.6 xmm2=4217.14 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0d900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=3798.6 xmm2=4206.52 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0d600 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=5955.85 xmm2=6632.06 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0d600 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=5955.85 xmm2=6514.14 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0d900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=3798.6 xmm2=4717.29 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0d900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=3798.6 xmm2=4661.56 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0d900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=3798.6 xmm2=4178.16 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0d600 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=5955.85 xmm2=7104.15 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0d900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=3798.6 xmm2=4139.24 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0d900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=3798.6 xmm2=3407.7 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0d900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=3798.6 xmm2=4416 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0dc00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=1917.41 xmm2=2368.98 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0dc00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=1917.41 xmm2=3028.58 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0d900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=3798.6 xmm2=4664.14 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0d900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=3798.6 xmm2=3500.75 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0d600 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=5955.85 xmm2=6510.35 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0d600 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=5955.85 xmm2=7204.47 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0dc00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=1917.41 xmm2=2508.94 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0d900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=3798.6 xmm2=4412.11 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0d900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=3798.6 xmm2=4865.88 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0d900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=3798.6 xmm2=4949.5 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0d900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=3798.6 xmm2=4115.62 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0d900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=3798.6 xmm2=5039.52 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0d900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=3798.6 xmm2=5191.4 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0d900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=3798.6 xmm2=4730.35 xmm3=0.1
+TRACE thin_place rdi=0x7ffe02e0d300 rsi=0x0 rdx=0x2d rcx=0x3 r8=0x7fffec260000 r9=0x5 xmm0=80 xmm1=7669.86 xmm2=9050 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0d000 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=10484.8 xmm2=11029.8 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0d000 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=10484.8 xmm2=11031 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0c700 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=16125.9 xmm2=17076.5 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0cd00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=12562.2 xmm2=12729.2 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0cd00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=12562.2 xmm2=12973.1 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0ca00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=13679.8 xmm2=15450.9 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e0cd00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=12562.2 xmm2=13114.9 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0ca00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=13679.8 xmm2=15015.5 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e0cd00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=12562.2 xmm2=13501 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0c700 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=16125.9 xmm2=16923.8 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0d000 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=10484.8 xmm2=10915.9 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0c700 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=16125.9 xmm2=17328.5 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0cd00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=12562.2 xmm2=13463.9 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0c700 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=16125.9 xmm2=17447.6 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0c700 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=16125.9 xmm2=17814.9 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0d000 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=10484.8 xmm2=11039 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0ca00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=13679.8 xmm2=15486.8 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e0cd00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=12562.2 xmm2=12607.5 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0ca00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=13679.8 xmm2=14773.9 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e0cd00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=12562.2 xmm2=12901.5 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0ca00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=13679.8 xmm2=15201.9 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e0c700 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=16125.9 xmm2=16888 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0ca00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=13679.8 xmm2=14845 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e0cd00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=12562.2 xmm2=13512.8 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0ca00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=13679.8 xmm2=14719 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e0c700 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=16125.9 xmm2=16939.9 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0c700 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=16125.9 xmm2=17241.4 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0ca00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=13679.8 xmm2=15675.7 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e0c700 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=16125.9 xmm2=16908.2 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0c700 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=16125.9 xmm2=17797.6 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0c700 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=16125.9 xmm2=16830.5 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0cd00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=12562.2 xmm2=13055.7 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0cd00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=12562.2 xmm2=12868.2 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0c700 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=16125.9 xmm2=17105.3 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0cd00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=12562.2 xmm2=13090.4 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0ca00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=13679.8 xmm2=15621 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e0cd00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=12562.2 xmm2=13255.7 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0cd00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=12562.2 xmm2=13471.9 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0ca00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=13679.8 xmm2=14859 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e0cd00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=12562.2 xmm2=13516.5 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0c700 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=16125.9 xmm2=17399.9 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0d000 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=10484.8 xmm2=11369.7 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0c700 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=16125.9 xmm2=17012.1 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0c700 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=16125.9 xmm2=17509 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0ca00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=13679.8 xmm2=15226 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e0ca00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=13679.8 xmm2=14710.6 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e0c700 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=16125.9 xmm2=17225.8 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0cd00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=12562.2 xmm2=13232 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0d000 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=10484.8 xmm2=10900.6 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0ca00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=13679.8 xmm2=14841.8 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e0cd00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=12562.2 xmm2=12773.6 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0c700 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=16125.9 xmm2=17387.5 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0ca00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=13679.8 xmm2=14950.2 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e0ca00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=13679.8 xmm2=15119.2 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e0cd00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=12562.2 xmm2=12950.4 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0d000 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=10484.8 xmm2=11187.7 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0ca00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=13679.8 xmm2=14734.8 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e0d000 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=10484.8 xmm2=11248.1 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0d000 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=10484.8 xmm2=11119.2 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e0d000 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=10484.8 xmm2=11104.8 xmm3=0.1
+TRACE thin_place rdi=0x7ffe02e66100 rsi=0x0 rdx=0x2d rcx=0x3 r8=0x7fffec260000 r9=0x5 xmm0=80 xmm1=17484.5 xmm2=19050 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e65e00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=20662.4 xmm2=21611.4 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e65b00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=22471.5 xmm2=24022.9 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e65500 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=26341.5 xmm2=27380.4 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e65500 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=26341.5 xmm2=27535.3 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e65800 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=24378.1 xmm2=25201.1 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e65800 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=24378.1 xmm2=26226 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e65500 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=26341.5 xmm2=28225.7 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e65e00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=20662.4 xmm2=21752.8 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e65800 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=24378.1 xmm2=25203.1 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e65b00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=22471.5 xmm2=23742.6 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e65b00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=22471.5 xmm2=23371 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e65b00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=22471.5 xmm2=23215.4 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e65800 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=24378.1 xmm2=25419.5 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e65e00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=20662.4 xmm2=21539.6 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e65800 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=24378.1 xmm2=25888.2 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e65e00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=20662.4 xmm2=21789 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e65800 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=24378.1 xmm2=25859.1 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e65e00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=20662.4 xmm2=21128.2 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e65800 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=24378.1 xmm2=25848.6 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e65800 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=24378.1 xmm2=26171.8 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e65e00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=20662.4 xmm2=21610.4 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e65b00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=22471.5 xmm2=23740.9 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e65e00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=20662.4 xmm2=21944.7 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e65800 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=24378.1 xmm2=25331.5 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e65800 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=24378.1 xmm2=25524 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e65b00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=22471.5 xmm2=23179.9 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e65b00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=22471.5 xmm2=23866.9 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e65b00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=22471.5 xmm2=23477.4 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e65e00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=20662.4 xmm2=21915.6 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e65b00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=22471.5 xmm2=23503.9 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e65b00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=22471.5 xmm2=23773.6 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e65500 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=26341.5 xmm2=28085.7 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e65800 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=24378.1 xmm2=26050.5 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e65b00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=22471.5 xmm2=23649.7 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e65b00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=22471.5 xmm2=23591.1 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e65b00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=22471.5 xmm2=23553.4 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e65b00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=22471.5 xmm2=24117.2 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e65800 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=24378.1 xmm2=25534.4 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e65500 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=26341.5 xmm2=28126.7 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e65500 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=26341.5 xmm2=27446.9 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e65800 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=24378.1 xmm2=25869.5 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e65800 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=24378.1 xmm2=25396.2 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e65b00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=22471.5 xmm2=23997.8 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e65e00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=20662.4 xmm2=21693.7 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e65800 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=24378.1 xmm2=26017.9 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e65e00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=20662.4 xmm2=21700.9 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e65e00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=20662.4 xmm2=21029.5 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e65800 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=24378.1 xmm2=25523.8 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e65800 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=24378.1 xmm2=26076.1 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e65b00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=22471.5 xmm2=23958.8 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e65b00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=22471.5 xmm2=23433 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e65b00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=22471.5 xmm2=23329.1 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e65b00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=22471.5 xmm2=23847.4 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e65e00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=20662.4 xmm2=21069.1 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e65500 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=26341.5 xmm2=27497.3 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e65b00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=22471.5 xmm2=23508.3 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e65b00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=22471.5 xmm2=23694.4 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e65500 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=26341.5 xmm2=27508.8 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e65e00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=20662.4 xmm2=21167.5 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e65e00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=20662.4 xmm2=21865.8 xmm3=0.0999999
+TRACE thin_place rdi=0x7ffe02e65200 rsi=0x0 rdx=0x2d rcx=0x3 r8=0x7fffec260000 r9=0x5 xmm0=80 xmm1=28320.6 xmm2=30100 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e64c00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=32174.1 xmm2=33661.6 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e64900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=33985.4 xmm2=36080.8 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e64900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=33985.4 xmm2=36542.6 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e64f00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=30276.5 xmm2=31929.6 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e64600 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=37471.3 xmm2=38415.3 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e64f00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=30276.5 xmm2=32297.6 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e64c00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=32174.1 xmm2=34411.2 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e64f00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=30276.5 xmm2=31722.6 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e64c00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=32174.1 xmm2=34026.1 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e64f00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=30276.5 xmm2=32245.2 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e64c00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=32174.1 xmm2=34314.2 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e64c00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=32174.1 xmm2=33970.1 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e64900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=33985.4 xmm2=36331.7 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e64600 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=37471.3 xmm2=37863 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e64f00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=30276.5 xmm2=31646.5 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e64c00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=32174.1 xmm2=34097.6 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e64f00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=30276.5 xmm2=31930.6 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e64c00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=32174.1 xmm2=33979.9 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e64c00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=32174.1 xmm2=34414.3 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e64900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=33985.4 xmm2=36326.1 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e64900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=33985.4 xmm2=35786.8 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e64c00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=32174.1 xmm2=34629.3 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e64900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=33985.4 xmm2=36275.2 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e64600 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=37471.3 xmm2=38170.6 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e64900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=33985.4 xmm2=36651.7 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e64600 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=37471.3 xmm2=38287.3 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e64c00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=32174.1 xmm2=34294.7 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e64f00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=30276.5 xmm2=32503.3 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e64f00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=30276.5 xmm2=31664.1 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e64c00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=32174.1 xmm2=33978.9 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e64900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=33985.4 xmm2=36404.3 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e64900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=33985.4 xmm2=36653.2 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e64c00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=32174.1 xmm2=34037.2 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e64f00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=30276.5 xmm2=32000 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e64c00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=32174.1 xmm2=34254.1 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e64900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=33985.4 xmm2=36471.4 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e64900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=33985.4 xmm2=36671.3 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e64c00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=32174.1 xmm2=34384.5 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e64f00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=30276.5 xmm2=32290.4 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e64900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=33985.4 xmm2=35822.4 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e64c00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=32174.1 xmm2=34243.2 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e64f00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=30276.5 xmm2=32436.7 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e64900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=33985.4 xmm2=36276.6 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e64f00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=30276.5 xmm2=32403 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e64900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=33985.4 xmm2=35730.8 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e64600 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=37471.3 xmm2=37992.9 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e64f00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=30276.5 xmm2=32079.4 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e64600 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=37471.3 xmm2=38188.8 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e64f00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=30276.5 xmm2=32315.1 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e64900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=33985.4 xmm2=36444.8 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e64900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=33985.4 xmm2=36137.2 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e64900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=33985.4 xmm2=36474.2 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e64f00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=30276.5 xmm2=32432.9 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e64900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=33985.4 xmm2=36441.8 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e64c00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=32174.1 xmm2=34364.2 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e64c00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=32174.1 xmm2=34622 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e64900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=33985.4 xmm2=35842.6 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e64f00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=30276.5 xmm2=31500.8 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e64900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=33985.4 xmm2=36699.6 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e64f00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=30276.5 xmm2=31783.9 xmm3=0.0999999
+TRACE thin_place rdi=0x7ffe02e64300 rsi=0x0 rdx=0x2d rcx=0x3 r8=0x7fffec260000 r9=0x5 xmm0=80 xmm1=39461.9 xmm2=40100 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e64000 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=41614.6 xmm2=42430.1 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e63a00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=46139.3 xmm2=48561.9 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e64000 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=41614.6 xmm2=42991.6 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e63d00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=43864.4 xmm2=44541 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e63d00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=43864.4 xmm2=44615.4 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e64000 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=41614.6 xmm2=42283.3 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e64300 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=39461.9 xmm2=40712.1 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e63d00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=43864.4 xmm2=45138.3 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e64000 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=41614.6 xmm2=42048 xmm3=0.1
+TRACE thick_place rdi=0x7fffdce6df00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=46139.3 xmm2=46731 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e64000 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=41614.6 xmm2=42506.9 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e63d00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=43864.4 xmm2=44312 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e63d00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=43864.4 xmm2=44696.6 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e63d00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=43864.4 xmm2=45036 xmm3=0.0999999
+TRACE thick_place rdi=0x7fffdce6df00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=46139.3 xmm2=46355.3 xmm3=0.0999999
+TRACE thick_place rdi=0x7fffdce6df00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=46139.3 xmm2=46757.7 xmm3=0.0999999
+TRACE thick_place rdi=0x7fffdce6df00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=46139.3 xmm2=46545.5 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e63d00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=43864.4 xmm2=45092.5 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e64000 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=41614.6 xmm2=42891.7 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e64000 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=41614.6 xmm2=42842.6 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e64000 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=41614.6 xmm2=42798 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e63d00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=43864.4 xmm2=44096.3 xmm3=0.0999999
+TRACE thick_place rdi=0x7fffdce6df00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=46139.3 xmm2=46583 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e63d00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=43864.4 xmm2=44330.2 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e63d00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=43864.4 xmm2=44683.2 xmm3=0.0999999
+TRACE thick_place rdi=0x7fffdce6df00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=46139.3 xmm2=47020.4 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e64000 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=41614.6 xmm2=42135.1 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e64300 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=39461.9 xmm2=40790.7 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e63d00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=43864.4 xmm2=44578.3 xmm3=0.0999999
+TRACE thick_place rdi=0x7fffdce6df00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=46139.3 xmm2=47051.1 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e63d00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=43864.4 xmm2=44259.2 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e64000 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=41614.6 xmm2=42636.8 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e63d00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=43864.4 xmm2=45021.4 xmm3=0.0999999
+TRACE thick_place rdi=0x7fffdce6df00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=46139.3 xmm2=46581.2 xmm3=0.0999999
+TRACE thick_place rdi=0x7fffdce6df00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=46139.3 xmm2=46853.3 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e63d00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=43864.4 xmm2=44827 xmm3=0.0999999
+TRACE thick_place rdi=0x7fffdce6df00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=46139.3 xmm2=46712.1 xmm3=0.0999999
+TRACE thick_place rdi=0x7fffdce6df00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=46139.3 xmm2=46423 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e63d00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=43864.4 xmm2=44119.4 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e64000 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=41614.6 xmm2=42128.6 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e63d00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=43864.4 xmm2=44092.7 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e64000 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=41614.6 xmm2=42985.8 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e63d00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=43864.4 xmm2=44231.8 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e63d00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=43864.4 xmm2=44338.7 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e63d00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=43864.4 xmm2=44942.8 xmm3=0.0999999
+TRACE thick_place rdi=0x7fffdce6df00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=46139.3 xmm2=46709.8 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e64000 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=41614.6 xmm2=42235 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e63d00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=43864.4 xmm2=44785.6 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e64000 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=41614.6 xmm2=42114 xmm3=0.1
+TRACE thick_place rdi=0x7fffdce6df00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=46139.3 xmm2=46498.7 xmm3=0.0999999
+TRACE thick_place rdi=0x7fffdce6df00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=46139.3 xmm2=47129.7 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e64000 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=41614.6 xmm2=42200.5 xmm3=0.1
+TRACE thick_place rdi=0x7fffdce6df00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=46139.3 xmm2=46587.5 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e63d00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=43864.4 xmm2=44632.1 xmm3=0.0999999
+TRACE thick_place rdi=0x7fffdce6df00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=46139.3 xmm2=46255.5 xmm3=0.0999999
+TRACE thick_place rdi=0x7fffdce6df00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=46139.3 xmm2=46239 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e63d00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=43864.4 xmm2=44918.4 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e64000 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=41614.6 xmm2=42171 xmm3=0.1
+TRACE thick_place rdi=0x7fffdce6df00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=46139.3 xmm2=47063.4 xmm3=0.0999999
+TRACE thick_place rdi=0x7fffdce6df00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=46139.3 xmm2=46296.2 xmm3=0.0999999
+TRACE thin_place rdi=0x7ffe02e63a00 rsi=0x0 rdx=0x2d rcx=0x3 r8=0x7fffec260000 r9=0x5 xmm0=80 xmm1=46139.3 xmm2=49050 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e63400 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=52354.7 xmm2=52725.9 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e63700 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=48364.1 xmm2=50872.3 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e62e00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=56262.1 xmm2=57541.2 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e63400 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=52354.7 xmm2=52584.7 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e62e00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=56262.1 xmm2=57534.4 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e63400 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=52354.7 xmm2=52886.8 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e62e00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=56262.1 xmm2=56730.4 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e62e00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=56262.1 xmm2=57469.4 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e63700 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=48364.1 xmm2=50750.5 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e63100 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=53966.3 xmm2=55386.9 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e62e00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=56262.1 xmm2=57226.8 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e63100 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=53966.3 xmm2=54776.2 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e63400 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=52354.7 xmm2=53141.6 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e63400 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=52354.7 xmm2=52790.4 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e62e00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=56262.1 xmm2=56826.6 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e62e00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=56262.1 xmm2=57116.8 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e62e00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=56262.1 xmm2=56728.2 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e63400 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=52354.7 xmm2=52991.7 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e63700 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=48364.1 xmm2=50678.4 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e62e00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=56262.1 xmm2=56972.8 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e62e00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=56262.1 xmm2=57419.9 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e63400 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=52354.7 xmm2=53152 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e63100 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=53966.3 xmm2=55224 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e63400 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=52354.7 xmm2=52783.8 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e63100 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=53966.3 xmm2=54886.6 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e63400 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=52354.7 xmm2=53396.8 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e63100 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=53966.3 xmm2=55283.8 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e62e00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=56262.1 xmm2=57348.4 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e63100 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=53966.3 xmm2=55649.6 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e63100 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=53966.3 xmm2=55594 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e63400 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=52354.7 xmm2=52548.9 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e62e00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=56262.1 xmm2=57234.1 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e63400 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=52354.7 xmm2=53076.3 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e63700 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=48364.1 xmm2=50733.2 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e62e00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=56262.1 xmm2=57388.2 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e63400 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=52354.7 xmm2=52544.7 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e62e00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=56262.1 xmm2=57364 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e62e00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=56262.1 xmm2=57229.3 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e62e00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=56262.1 xmm2=56979.3 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e62e00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=56262.1 xmm2=56839.8 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e63100 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=53966.3 xmm2=55396.3 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e62e00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=56262.1 xmm2=56990.3 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e63400 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=52354.7 xmm2=52901.4 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e63400 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=52354.7 xmm2=53439.9 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e63100 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=53966.3 xmm2=54986.1 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e63700 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=48364.1 xmm2=50778.6 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e63400 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=52354.7 xmm2=52793.7 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e63100 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=53966.3 xmm2=54651.8 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e62e00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=56262.1 xmm2=56712.1 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e63100 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=53966.3 xmm2=54823.1 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e63400 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=52354.7 xmm2=52689.4 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e62e00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=56262.1 xmm2=57413.4 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e63400 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=52354.7 xmm2=53401.6 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e63100 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=53966.3 xmm2=55352.2 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e63400 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=52354.7 xmm2=53048.1 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e63400 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=52354.7 xmm2=52885.4 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e63700 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=48364.1 xmm2=51027.6 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02e62e00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=56262.1 xmm2=56837.5 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e62e00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=56262.1 xmm2=57542.7 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e63100 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=53966.3 xmm2=54711.3 xmm3=0.0999999
+TRACE thin_place rdi=0x7ffe02e62b00 rsi=0x0 rdx=0x2d rcx=0x3 r8=0x7fffec260000 r9=0x5 xmm0=80 xmm1=58220.9 xmm2=59050 xmm3=0.0999999
+TRACE thick_place rdi=0x7fffdce6dc00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=62908.5 xmm2=63792 xmm3=0.0999999
+TRACE thick_place rdi=0x7fffdce6dc00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=62908.5 xmm2=64931.6 xmm3=0.0999999
+TRACE thick_place rdi=0x7fffdce6dc00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=62908.5 xmm2=64931.6 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e62800 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=60089.7 xmm2=61406.6 xmm3=0.0999999
+TRACE thick_place rdi=0x7fffdce6dc00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=62908.5 xmm2=64931.6 xmm3=0.0999999
+TRACE thick_place rdi=0x7fffdce6dc00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=62908.5 xmm2=64507.4 xmm3=0.0999999
+TRACE thick_place rdi=0x7fffdce6dc00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=62908.5 xmm2=64931.6 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e62800 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=60089.7 xmm2=61099 xmm3=0.0999999
+TRACE thick_place rdi=0x7fffdce6dc00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=62908.5 xmm2=64549.6 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e62800 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=60089.7 xmm2=61136.2 xmm3=0.0999999
+TRACE thick_place rdi=0x7fffdce6dc00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=62908.5 xmm2=63932.4 xmm3=0.0999999
+TRACE thick_place rdi=0x7fffdce6dc00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=62908.5 xmm2=64931.6 xmm3=0.0999999
+TRACE thick_place rdi=0x7fffdce6dc00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=62908.5 xmm2=64931.6 xmm3=0.0999999
+TRACE thick_place rdi=0x7fffdce6dc00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=62908.5 xmm2=64766.1 xmm3=0.0999999
+TRACE thick_place rdi=0x7fffdce6dc00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=62908.5 xmm2=63771.1 xmm3=0.0999999
+TRACE thick_place rdi=0x7fffdce6dc00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=62908.5 xmm2=64931.6 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e62800 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=60089.7 xmm2=61908.6 xmm3=0.0999999
+TRACE thick_place rdi=0x7fffdce6dc00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=62908.5 xmm2=63356.9 xmm3=0.0999999
+TRACE thick_place rdi=0x7fffdce6dc00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=62908.5 xmm2=64931.6 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e62800 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=60089.7 xmm2=61802.5 xmm3=0.0999999
+TRACE thick_place rdi=0x7fffdce6dc00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=62908.5 xmm2=64931.6 xmm3=0.0999999
+TRACE thick_place rdi=0x7fffdce6dc00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=62908.5 xmm2=64931.6 xmm3=0.0999999
+TRACE thick_place rdi=0x7fffdce6dc00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=62908.5 xmm2=64188.3 xmm3=0.0999999
+TRACE thick_place rdi=0x7fffdce6dc00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=62908.5 xmm2=64931.6 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e62800 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=60089.7 xmm2=61873 xmm3=0.0999999
+TRACE thick_place rdi=0x7fffdce6dc00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=62908.5 xmm2=64548.2 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e62800 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=60089.7 xmm2=61603 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e62800 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=60089.7 xmm2=61611.3 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02e62800 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=60089.7 xmm2=61782.8 xmm3=0.0999999
+TRACE line rdi=0x7ffe02f1ca00 rsi=0x0 rdx=0x2d rcx=0x0 r8=0x3c r9=0x3 xmm0=80 xmm1=120 xmm2=16755.2 xmm3=70100
+TRACE thin_place rdi=0x7ffe02bc7600 rsi=0x0 rdx=0x2d rcx=0x3 r8=0x7fffec260000 r9=0x5 xmm0=80 xmm1=66642.1 xmm2=69056.6 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc7600 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=66642.1 xmm2=67230.8 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc7c00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=60478.9 xmm2=61795.2 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc7c00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=60478.9 xmm2=60905.2 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc7900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=62984.9 xmm2=63621.7 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc7c00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=60478.9 xmm2=61519.3 xmm3=0.0999999
+TRACE thick_place rdi=0x7fffdce6ee00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=64204.8 xmm2=66010.9 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc7600 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=66642.1 xmm2=67441.5 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc7900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=62984.9 xmm2=63911.5 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc7900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=62984.9 xmm2=63391 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc7c00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=60478.9 xmm2=61729.5 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc7c00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=60478.9 xmm2=61806.8 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc7900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=62984.9 xmm2=63609.8 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc7c00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=60478.9 xmm2=61485 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc7c00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=60478.9 xmm2=61567.4 xmm3=0.0999999
+TRACE thick_place rdi=0x7fffdce6ee00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=64204.8 xmm2=66141 xmm3=0.0999999
+TRACE thick_place rdi=0x7fffdce6ee00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=64204.8 xmm2=65466 xmm3=0.0999999
+TRACE thick_place rdi=0x7fffdce6ee00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=64204.8 xmm2=65548.4 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc7c00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=60478.9 xmm2=61233.6 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc7c00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=60478.9 xmm2=61227.8 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc7900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=62984.9 xmm2=63215.7 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc7c00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=60478.9 xmm2=61346.6 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc7c00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=60478.9 xmm2=61060.2 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc7600 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=66642.1 xmm2=67295.4 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc7c00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=60478.9 xmm2=61887.7 xmm3=0.0999999
+TRACE thick_place rdi=0x7fffdce6ee00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=64204.8 xmm2=65228.4 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc7c00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=60478.9 xmm2=61447.2 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc7c00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=60478.9 xmm2=61574.3 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc7c00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=60478.9 xmm2=61886.9 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc7c00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=60478.9 xmm2=61478.5 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc7c00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=60478.9 xmm2=61043.1 xmm3=0.0999999
+TRACE thick_place rdi=0x7fffdce6ee00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=64204.8 xmm2=65394.9 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc7900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=62984.9 xmm2=63537.8 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc7600 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=66642.1 xmm2=67314.1 xmm3=0.0999999
+TRACE thick_place rdi=0x7fffdce6ee00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=64204.8 xmm2=65317.3 xmm3=0.0999999
+TRACE thick_place rdi=0x7fffdce6ee00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=64204.8 xmm2=65779.1 xmm3=0.0999999
+TRACE thick_place rdi=0x7fffdce6ee00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=64204.8 xmm2=65490.6 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc7900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=62984.9 xmm2=63641.1 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc7900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=62984.9 xmm2=63830.5 xmm3=0.0999999
+TRACE thick_place rdi=0x7fffdce6ee00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=64204.8 xmm2=65232.9 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc7900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=62984.9 xmm2=63613.5 xmm3=0.0999999
+TRACE thick_place rdi=0x7fffdce6ee00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=64204.8 xmm2=65554.6 xmm3=0.0999999
+TRACE thick_place rdi=0x7fffdce6ee00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=64204.8 xmm2=65212.4 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc7900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=62984.9 xmm2=63979.1 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc7900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=62984.9 xmm2=63926.6 xmm3=0.0999999
+TRACE thick_place rdi=0x7fffdce6ee00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=64204.8 xmm2=65574.1 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc7900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=62984.9 xmm2=63602.2 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc7900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=62984.9 xmm2=63408.1 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc7900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=62984.9 xmm2=63921.6 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc7900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=62984.9 xmm2=63520.2 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc7c00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=60478.9 xmm2=61860.8 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc7900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=62984.9 xmm2=63843.1 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc7c00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=60478.9 xmm2=61758 xmm3=0.0999999
+TRACE thick_place rdi=0x7fffdce6ee00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=64204.8 xmm2=65810.2 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc7c00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=60478.9 xmm2=61612.6 xmm3=0.0999999
+TRACE thick_place rdi=0x7fffdce6ee00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=64204.8 xmm2=66024.7 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc7900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=62984.9 xmm2=63332.9 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc7c00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=60478.9 xmm2=60996.5 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc7c00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=60478.9 xmm2=61531.2 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc7600 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=66642.1 xmm2=67218 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc7c00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=60478.9 xmm2=61106.4 xmm3=0.0999999
+TRACE thin_place rdi=0x7ffe02bc7f00 rsi=0x0 rdx=0x2d rcx=0x3 r8=0x7fffec260000 r9=0x5 xmm0=80 xmm1=57778.3 xmm2=59056.6 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc8800 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=51044.4 xmm2=52720 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc8b00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=49060.6 xmm2=50656.1 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc8500 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=52937.7 xmm2=55581.9 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc8500 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=52937.7 xmm2=54808 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc8200 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=56305.9 xmm2=57457.7 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc8800 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=51044.4 xmm2=53451.7 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc8800 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=51044.4 xmm2=52898.2 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc8800 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=51044.4 xmm2=52930.1 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc8200 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=56305.9 xmm2=56754.2 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc8500 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=52937.7 xmm2=54742.9 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc8800 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=51044.4 xmm2=53272 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc8200 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=56305.9 xmm2=57387.9 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc8500 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=52937.7 xmm2=55346.6 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc8200 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=56305.9 xmm2=56737.5 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc8200 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=56305.9 xmm2=57435.9 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc8500 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=52937.7 xmm2=54905.4 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc8500 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=52937.7 xmm2=54770.3 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc8500 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=52937.7 xmm2=55087.8 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc8b00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=49060.6 xmm2=50427.3 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc8500 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=52937.7 xmm2=55007.1 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc8800 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=51044.4 xmm2=52601.5 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc8200 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=56305.9 xmm2=56800.4 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc8500 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=52937.7 xmm2=54877 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc8500 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=52937.7 xmm2=55451.2 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc8500 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=52937.7 xmm2=55147.6 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc8200 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=56305.9 xmm2=57225 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc8800 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=51044.4 xmm2=52870.2 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc8800 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=51044.4 xmm2=53314.2 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc8500 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=52937.7 xmm2=55024.1 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc8500 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=52937.7 xmm2=54837 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc8200 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=56305.9 xmm2=57146.5 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc8500 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=52937.7 xmm2=55162 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc8800 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=51044.4 xmm2=53344.8 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc8200 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=56305.9 xmm2=57334.2 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc8800 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=51044.4 xmm2=52997.4 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc8b00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=49060.6 xmm2=51376.2 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc8500 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=52937.7 xmm2=54774 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc8200 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=56305.9 xmm2=56788.7 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc8b00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=49060.6 xmm2=50522.7 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc8800 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=51044.4 xmm2=52785.4 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc8800 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=51044.4 xmm2=52975.4 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc8b00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=49060.6 xmm2=51006.1 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc8800 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=51044.4 xmm2=52529.2 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc8800 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=51044.4 xmm2=53512.2 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc8b00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=49060.6 xmm2=50545.7 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc8500 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=52937.7 xmm2=55044.8 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc8500 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=52937.7 xmm2=55279.8 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc8500 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=52937.7 xmm2=54669.4 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc8b00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=49060.6 xmm2=50714.8 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc8b00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=49060.6 xmm2=51080.7 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc8b00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=49060.6 xmm2=50802.5 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc8800 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=51044.4 xmm2=52841.4 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc8b00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=49060.6 xmm2=50867.5 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc8b00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=49060.6 xmm2=51424.6 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc8800 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=51044.4 xmm2=52584 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc8200 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=56305.9 xmm2=57217.3 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc8b00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=49060.6 xmm2=50987.2 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc8500 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=52937.7 xmm2=55561.9 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc8b00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=49060.6 xmm2=51177.9 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc8500 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=52937.7 xmm2=54765.1 xmm3=0.1
+TRACE thin_place rdi=0x7ffe02bc8e00 rsi=0x0 rdx=0x2d rcx=0x3 r8=0x7fffec260000 r9=0x5 xmm0=80 xmm1=47032.8 xmm2=49056.6 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc0d00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=41133.5 xmm2=42687 xmm3=0.0999999
+TRACE thick_place rdi=0x7fffdce6f100 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=45008 xmm2=46222.3 xmm3=0.0999999
+TRACE thick_place rdi=0x7fffdce6f100 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=45008 xmm2=46314.5 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bcb200 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=43030 xmm2=44354 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc2e00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=39337.2 xmm2=40035.2 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc0d00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=41133.5 xmm2=42747.2 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc2e00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=39337.2 xmm2=40919.3 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc0d00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=41133.5 xmm2=42402.3 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc2e00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=39337.2 xmm2=40705.7 xmm3=0.1
+TRACE thick_place rdi=0x7fffdce6f100 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=45008 xmm2=46836.2 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc0d00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=41133.5 xmm2=42789.7 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc0d00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=41133.5 xmm2=42236.4 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bcb200 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=43030 xmm2=44401 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc0d00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=41133.5 xmm2=42098.1 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc0d00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=41133.5 xmm2=42205.1 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc2e00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=39337.2 xmm2=40215.3 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bcb200 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=43030 xmm2=44735.2 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc0d00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=41133.5 xmm2=42961.4 xmm3=0.0999999
+TRACE thick_place rdi=0x7fffdce6f100 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=45008 xmm2=46417.5 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc2e00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=39337.2 xmm2=40017.9 xmm3=0.1
+TRACE thick_place rdi=0x7fffdce6f100 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=45008 xmm2=47188 xmm3=0.0999999
+TRACE thick_place rdi=0x7fffdce6f100 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=45008 xmm2=46386.4 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc0d00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=41133.5 xmm2=42221.2 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc0d00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=41133.5 xmm2=42130.2 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc0d00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=41133.5 xmm2=42985 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bcb200 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=43030 xmm2=44813.1 xmm3=0.1
+TRACE thick_place rdi=0x7fffdce6f100 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=45008 xmm2=46658.3 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bcb200 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=43030 xmm2=44937.8 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc0d00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=41133.5 xmm2=42099.6 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bcb200 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=43030 xmm2=44946.9 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bcb200 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=43030 xmm2=44476.7 xmm3=0.1
+TRACE thick_place rdi=0x7fffdce6f100 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=45008 xmm2=47101 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc0d00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=41133.5 xmm2=42603.2 xmm3=0.0999999
+TRACE thick_place rdi=0x7fffdce6f100 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=45008 xmm2=46475.3 xmm3=0.0999999
+TRACE thick_place rdi=0x7fffdce6f100 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=45008 xmm2=46308.9 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bcb200 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=43030 xmm2=44171.2 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bcb200 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=43030 xmm2=44157.4 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bcb200 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=43030 xmm2=44637.2 xmm3=0.1
+TRACE thick_place rdi=0x7fffdce6f100 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=45008 xmm2=46981.1 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc0d00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=41133.5 xmm2=42080.7 xmm3=0.0999999
+TRACE thick_place rdi=0x7fffdce6f100 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=45008 xmm2=46284.2 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc2e00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=39337.2 xmm2=40834.7 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc0d00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=41133.5 xmm2=42202 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc0d00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=41133.5 xmm2=42830.3 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bcb200 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=43030 xmm2=44922 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc0d00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=41133.5 xmm2=42409.2 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc0d00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=41133.5 xmm2=42649.1 xmm3=0.0999999
+TRACE thick_place rdi=0x7fffdce6f100 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=45008 xmm2=47037.1 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bcb200 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=43030 xmm2=44155.3 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc0d00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=41133.5 xmm2=42443.4 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bcb200 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=43030 xmm2=44102.9 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bcb200 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=43030 xmm2=45030.4 xmm3=0.1
+TRACE thick_place rdi=0x7fffdce6f100 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=45008 xmm2=46311.2 xmm3=0.0999999
+TRACE thick_place rdi=0x7fffdce6f100 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=45008 xmm2=46475.5 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc2e00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=39337.2 xmm2=40195 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bcb200 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=43030 xmm2=44506.9 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bcb200 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=43030 xmm2=44636.4 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc2e00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=39337.2 xmm2=40677.5 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc0d00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=41133.5 xmm2=42808.6 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc0d00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=41133.5 xmm2=42801.3 xmm3=0.0999999
+TRACE thin_place rdi=0x7ffe02bc3100 rsi=0x0 rdx=0x2d rcx=0x3 r8=0x7fffec260000 r9=0x5 xmm0=80 xmm1=37631.5 xmm2=38006.6 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc3700 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=32329.8 xmm2=33864.3 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc3a00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=30396.6 xmm2=32146 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc3d00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=28410.8 xmm2=29894.9 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc3a00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=30396.6 xmm2=32063.1 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc3400 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=34181.4 xmm2=36318.1 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc3700 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=32329.8 xmm2=34535.5 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc3a00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=30396.6 xmm2=31547.1 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc3d00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=28410.8 xmm2=30017.6 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc3700 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=32329.8 xmm2=34391.8 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc3700 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=32329.8 xmm2=34646.9 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc3700 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=32329.8 xmm2=33664.1 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc3700 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=32329.8 xmm2=34254.7 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc3400 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=34181.4 xmm2=36477.1 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc3700 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=32329.8 xmm2=34274.3 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc3400 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=34181.4 xmm2=36599.1 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc3d00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=28410.8 xmm2=29859.7 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc3a00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=30396.6 xmm2=31549.6 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc3400 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=34181.4 xmm2=35759.3 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc3400 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=34181.4 xmm2=36112.2 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc3400 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=34181.4 xmm2=36265.9 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc3400 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=34181.4 xmm2=36179.3 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc3700 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=32329.8 xmm2=34579.3 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc3a00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=30396.6 xmm2=31948.6 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc3700 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=32329.8 xmm2=34136.9 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc3700 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=32329.8 xmm2=34173.4 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc3700 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=32329.8 xmm2=34044.9 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc3d00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=28410.8 xmm2=30387.4 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc3a00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=30396.6 xmm2=32366.1 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc3400 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=34181.4 xmm2=35728.1 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc3400 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=34181.4 xmm2=36325 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc3700 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=32329.8 xmm2=34521.5 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc3700 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=32329.8 xmm2=33867 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc3400 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=34181.4 xmm2=36124.6 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc3400 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=34181.4 xmm2=35812.4 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc3700 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=32329.8 xmm2=33846.1 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc3700 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=32329.8 xmm2=33601.4 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc3400 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=34181.4 xmm2=35802.6 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc3a00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=30396.6 xmm2=32359 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc3400 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=34181.4 xmm2=35757.8 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc3a00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=30396.6 xmm2=32549.6 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc3400 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=34181.4 xmm2=35711.8 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc3700 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=32329.8 xmm2=34083.7 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc3700 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=32329.8 xmm2=33671 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc3a00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=30396.6 xmm2=32289.7 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc3a00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=30396.6 xmm2=31993.5 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc3400 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=34181.4 xmm2=36201.6 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc3a00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=30396.6 xmm2=32212.1 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc3a00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=30396.6 xmm2=31843.1 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc3700 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=32329.8 xmm2=34407.5 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc3400 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=34181.4 xmm2=36212.1 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc3700 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=32329.8 xmm2=34620.9 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc3400 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=34181.4 xmm2=36370.9 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc3400 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=34181.4 xmm2=36457.9 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc3a00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=30396.6 xmm2=31708.9 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc3a00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=30396.6 xmm2=31669.8 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc3400 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=34181.4 xmm2=36006.9 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc3700 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=32329.8 xmm2=34316.2 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc3d00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=28410.8 xmm2=29784.5 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc3a00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=30396.6 xmm2=32434.2 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc3700 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=32329.8 xmm2=34647.5 xmm3=0.0999999
+TRACE thin_place rdi=0x7ffe02bc4000 rsi=0x0 rdx=0x2d rcx=0x3 r8=0x7fffec260000 r9=0x5 xmm0=80 xmm1=26411.1 xmm2=28006.6 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc4300 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=24438.8 xmm2=25553.9 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc4600 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=22532.3 xmm2=23347 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc4600 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=22532.3 xmm2=23937 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc4600 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=22532.3 xmm2=23956.9 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc4300 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=24438.8 xmm2=26222.6 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc4900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=20719.5 xmm2=21722.7 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc4000 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=26411.1 xmm2=27532.1 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc4900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=20719.5 xmm2=22001 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc4300 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=24438.8 xmm2=25629 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc4c00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=17304.7 xmm2=19862.3 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc4600 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=22532.3 xmm2=23325.5 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc4900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=20719.5 xmm2=21181.7 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc4900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=20719.5 xmm2=21164 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc4900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=20719.5 xmm2=21703.3 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc4900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=20719.5 xmm2=21620.8 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc4c00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=17304.7 xmm2=19826.9 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc4300 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=24438.8 xmm2=25311.9 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc4300 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=24438.8 xmm2=26097.7 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc4300 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=24438.8 xmm2=25700.2 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc4600 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=22532.3 xmm2=23123.4 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc4600 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=22532.3 xmm2=23214 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc4300 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=24438.8 xmm2=25246.3 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc4300 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=24438.8 xmm2=25840.5 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc4900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=20719.5 xmm2=21930.5 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc4000 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=26411.1 xmm2=27410.6 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc4900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=20719.5 xmm2=21155.7 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc4600 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=22532.3 xmm2=23129.8 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc4300 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=24438.8 xmm2=25500.7 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc4900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=20719.5 xmm2=21839.7 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc4300 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=24438.8 xmm2=25442.9 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc4300 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=24438.8 xmm2=25548 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc4300 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=24438.8 xmm2=25499.5 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc4000 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=26411.1 xmm2=27313.1 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc4300 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=24438.8 xmm2=25381.8 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc4600 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=22532.3 xmm2=23751.2 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc4900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=20719.5 xmm2=21228 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc4600 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=22532.3 xmm2=24049.1 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc4900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=20719.5 xmm2=22008.2 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc4900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=20719.5 xmm2=21015.2 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc4600 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=22532.3 xmm2=23410.6 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc4900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=20719.5 xmm2=21478.8 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc4600 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=22532.3 xmm2=23619.5 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc4300 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=24438.8 xmm2=26070.5 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc4900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=20719.5 xmm2=21229.7 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc4900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=20719.5 xmm2=21252.3 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc4600 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=22532.3 xmm2=23753.2 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc4900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=20719.5 xmm2=21070.2 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc4600 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=22532.3 xmm2=23383.1 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc4300 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=24438.8 xmm2=25387.3 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc4900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=20719.5 xmm2=22033.4 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc4300 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=24438.8 xmm2=25540.5 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc4900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=20719.5 xmm2=21400 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc4900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=20719.5 xmm2=21932.1 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc4300 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=24438.8 xmm2=26115 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc4900 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=20719.5 xmm2=21018 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc4000 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=26411.1 xmm2=27496 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc4300 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=24438.8 xmm2=25263.7 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc4300 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=24438.8 xmm2=25843.6 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc4300 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=24438.8 xmm2=25938.2 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc4300 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=24438.8 xmm2=25386.4 xmm3=0.1
+TRACE thin_place rdi=0x7ffe02bc4c00 rsi=0x0 rdx=0x2d rcx=0x3 r8=0x7fffec260000 r9=0x5 xmm0=80 xmm1=17304.7 xmm2=19056.6 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc5800 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=10072.8 xmm2=10873.2 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc5200 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=13713.3 xmm2=15148.5 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc5800 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=10072.8 xmm2=11234.8 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc5800 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=10072.8 xmm2=10505.5 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc5800 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=10072.8 xmm2=10841.9 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc5500 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=11880.9 xmm2=13432.4 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc5500 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=11880.9 xmm2=13330.6 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc5800 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=10072.8 xmm2=10641.9 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc5500 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=11880.9 xmm2=13165.7 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc5200 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=13713.3 xmm2=14800.8 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc5800 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=10072.8 xmm2=11385.6 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc5200 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=13713.3 xmm2=15343.8 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc5500 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=11880.9 xmm2=12657.8 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc5800 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=10072.8 xmm2=10701.3 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc5200 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=13713.3 xmm2=15279 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc5200 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=13713.3 xmm2=15082.8 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc5800 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=10072.8 xmm2=11210.3 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc5200 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=13713.3 xmm2=15296.7 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc5500 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=11880.9 xmm2=13382.2 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc5500 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=11880.9 xmm2=13263.4 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc5800 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=10072.8 xmm2=11185.1 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc4f00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=15532 xmm2=17388.6 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc5800 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=10072.8 xmm2=10553.1 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc5500 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=11880.9 xmm2=13579.7 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc5800 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=10072.8 xmm2=10955.1 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc5800 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=10072.8 xmm2=11408.8 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc5800 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=10072.8 xmm2=11142.4 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc5800 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=10072.8 xmm2=11127.7 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc5800 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=10072.8 xmm2=11526.3 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc5800 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=10072.8 xmm2=11309.5 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc4f00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=15532 xmm2=17123.5 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc4f00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=15532 xmm2=17090.1 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc4f00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=15532 xmm2=16824.9 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc5500 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=11880.9 xmm2=13306.7 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc5800 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=10072.8 xmm2=10806.7 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc5800 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=10072.8 xmm2=11083.8 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc5800 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=10072.8 xmm2=10632.7 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc5800 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=10072.8 xmm2=11328.3 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc5500 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=11880.9 xmm2=13003.2 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc5500 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=11880.9 xmm2=12742.9 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc5500 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=11880.9 xmm2=13506.4 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc5200 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=13713.3 xmm2=14718.9 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc5800 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=10072.8 xmm2=10994.8 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc5800 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=10072.8 xmm2=11085.4 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc5500 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=11880.9 xmm2=12879.2 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc5500 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=11880.9 xmm2=13074.1 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc5800 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=10072.8 xmm2=10758.7 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc5200 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=13713.3 xmm2=15141.1 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc5200 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=13713.3 xmm2=14728.8 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc5500 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=11880.9 xmm2=12795.7 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc5200 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=13713.3 xmm2=14953.5 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc5200 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=13713.3 xmm2=14906.9 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc5500 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=11880.9 xmm2=12939 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc5800 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=10072.8 xmm2=11224 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc5200 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=13713.3 xmm2=15254.1 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc5800 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=10072.8 xmm2=11053.3 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc5200 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=13713.3 xmm2=14836.5 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc5800 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=10072.8 xmm2=11100.4 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc5500 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=11880.9 xmm2=13253.5 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc5500 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=11880.9 xmm2=13503.4 xmm3=0.1
+TRACE thin_place rdi=0x7ffe02bc5b00 rsi=0x0 rdx=0x2d rcx=0x3 r8=0x7fffec260000 r9=0x5 xmm0=80 xmm1=8330.89 xmm2=9056.58 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02aac700 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=2056.71 xmm2=1278.47 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc6100 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=3935.1 xmm2=4470.61 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02aaca00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=0 xmm2=724.977 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc5e00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=5219.33 xmm2=6433.68 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc6100 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=3935.1 xmm2=3816.4 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc6100 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=3935.1 xmm2=3448.12 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc5e00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=5219.33 xmm2=7044.83 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc6100 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=3935.1 xmm2=4756.77 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc6100 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=3935.1 xmm2=4645.92 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc6100 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=3935.1 xmm2=3163.88 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02aac700 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=2056.71 xmm2=2151.45 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc6100 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=3935.1 xmm2=3227.7 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02aac700 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=2056.71 xmm2=1101.54 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02aaca00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=0 xmm2=932.026 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc6100 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=3935.1 xmm2=3400.98 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc6100 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=3935.1 xmm2=4459.55 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc5e00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=5219.33 xmm2=7062.94 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc6100 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=3935.1 xmm2=4451.45 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc6100 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=3935.1 xmm2=3620.9 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc6100 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=3935.1 xmm2=4938.3 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02aac700 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=2056.71 xmm2=2391.92 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc6100 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=3935.1 xmm2=3806.55 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc6100 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=3935.1 xmm2=4398.31 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc6100 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=3935.1 xmm2=4712.52 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc6100 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=3935.1 xmm2=3455.57 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02aac700 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=2056.71 xmm2=2392.54 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02aac700 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=2056.71 xmm2=2621.27 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc5e00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=5219.33 xmm2=6937.25 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc6100 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=3935.1 xmm2=5153.64 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc6100 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=3935.1 xmm2=4980.03 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02aac700 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=2056.71 xmm2=3091.17 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02aac700 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=2056.71 xmm2=1268.19 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc6100 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=3935.1 xmm2=3681.16 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc6100 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=3935.1 xmm2=4674.71 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc5e00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=5219.33 xmm2=7148.69 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc6100 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=3935.1 xmm2=4159.07 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02aac700 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=2056.71 xmm2=2437.54 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc6100 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=3935.1 xmm2=4538.56 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02aac700 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=2056.71 xmm2=2667.38 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc6100 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=3935.1 xmm2=3734.69 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02aac700 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=2056.71 xmm2=2433.57 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc5e00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=5219.33 xmm2=6506.32 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc6100 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=3935.1 xmm2=4591.07 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02aac700 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=2056.71 xmm2=3013.84 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc6100 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=3935.1 xmm2=5085.7 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc6100 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=3935.1 xmm2=4213.24 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc5e00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=5219.33 xmm2=6341.7 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc5e00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=5219.33 xmm2=6953.62 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc6100 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=3935.1 xmm2=4617.62 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc6100 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=3935.1 xmm2=4918.43 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc6100 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=3935.1 xmm2=4818.65 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc6100 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=3935.1 xmm2=4776.08 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc6100 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=3935.1 xmm2=4860.75 xmm3=0.1
+TRACE thick_place rdi=0x7ffe02bc5e00 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=5219.33 xmm2=7042.58 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe02bc6100 rsi=0x0 rdx=0x3 rcx=0x7ffdf37a7170 r8=0x7fffec260000 r9=0x5 xmm0=120 xmm1=3935.1 xmm2=4262.04 xmm3=0.1
+TRACE wind rdi=0x7ffdf4554980 rsi=0x1 rdx=0x1 rcx=0x80 r8=0x0 r9=0x33 xmm0=200 xmm1=1800 xmm2=15 xmm3=4
+[2026.11.04-15.10.43:752][281]r.SetRes = "1280x720 w"
+[2026.11.04-15.10.43:752][281]t.MaxFPS = "20"
+[2026.11.04-15.10.43:768][281]LogViewport: Display: Player bShowMouseCursor Changed, False -> True
+[2026.11.04-15.10.43:768][281]LogLoad: Took 0.386522 seconds to LoadMap(/Game/Maps/RMUA2024OL/RMUA2024OL1)
+[2026.11.04-15.10.43:791][281]LogTemp: NodeRunnable: Current game type is 2
+[2026.11.04-15.10.43:791][281]LogTemp: Warning: Init Frametime Tolerance: 125000000.000000
+[2026.11.04-15.10.43:791][281]LogSlate: Took 0.000205 seconds to synchronously load lazily loaded font '../../../Engine/Content/EngineFonts/Faces/RobotoBold.ufont' (160K)
+[2026.11.04-15.10.43:798][282]LogTemp: Warning: Reset Route 10 7
+[2026.11.04-15.10.43:798][282]LogTemp: Warning: Reset Spline 10 Num 0 PortNum 31 Reversed 0
+[2026.11.04-15.10.43:798][282]LogTemp: Warning: Reset Spline 7 Num 0 PortNum 33 Reversed 1
+[2026.11.04-15.10.44:313][282]LogTemp: Warning: Reset Spline 19 Num 0 PortNum 5 Reversed 0
+[2026.11.04-15.10.44:313][282]LogTemp: Warning: Reset Spline 20 Num 0 PortNum 4 Reversed 0
+[2026.11.04-15.10.44:313][282]LogTemp: Warning: Reset Spline 13 Num 0 PortNum 6 Reversed 1
+[2026.11.04-15.10.44:313][282]LogTemp: Warning: Reset Spline 14 Num 0 PortNum 5 Reversed 1
+[2026.11.04-15.10.44:313][282]LogTemp: A FACTORIE: 0
+[2026.11.04-15.10.44:313][282]LogTemp: B FACTORIE: 0
+[2026.11.04-15.10.44:314][282]LogWindSim: [Wind  0] 0.00s ~ 9.37s | Speed=9.57 | Dir=276.6 | Trans=0 | Integral=89.72 | Accum=89.72
+[2026.11.04-15.10.44:314][282]LogWindSim: [Wind  1] 9.37s ~ 11.37s | Speed=9.57 | Dir=276.6 | Trans=1 | Integral=19.92 | Accum=109.64
+[2026.11.04-15.10.44:314][282]LogWindSim: [Wind  2] 11.37s ~ 21.18s | Speed=10.35 | Dir=9.6 | Trans=0 | Integral=101.52 | Accum=211.16
+[2026.11.04-15.10.44:314][282]LogWindSim: [Wind  3] 21.18s ~ 23.18s | Speed=10.35 | Dir=9.6 | Trans=1 | Integral=19.89 | Accum=231.05
+[2026.11.04-15.10.44:314][282]LogWindSim: [Wind  4] 23.18s ~ 33.17s | Speed=9.54 | Dir=100.9 | Trans=0 | Integral=95.23 | Accum=326.28
+[2026.11.04-15.10.44:314][282]LogWindSim: [Wind  5] 33.17s ~ 35.17s | Speed=9.54 | Dir=100.9 | Trans=1 | Integral=20.65 | Accum=346.93
+[2026.11.04-15.10.44:314][282]LogWindSim: [Wind  6] 35.17s ~ 44.40s | Speed=11.12 | Dir=355.9 | Trans=0 | Integral=102.62 | Accum=449.55
+[2026.11.04-15.10.44:314][282]LogWindSim: [Wind  7] 44.40s ~ 46.40s | Speed=11.12 | Dir=355.9 | Trans=1 | Integral=22.94 | Accum=472.49
+[2026.11.04-15.10.44:314][282]LogWindSim: [Wind  8] 46.40s ~ 54.97s | Speed=11.82 | Dir=165.6 | Trans=0 | Integral=101.32 | Accum=573.81
+[2026.11.04-15.10.44:314][282]LogWindSim: [Wind  9] 54.97s ~ 56.97s | Speed=11.82 | Dir=165.6 | Trans=1 | Integral=22.32 | Accum=596.13
+[2026.11.04-15.10.44:314][282]LogWindSim: [Wind 10] 56.97s ~ 65.44s | Speed=10.50 | Dir=258.4 | Trans=0 | Integral=88.93 | Accum=685.06
+[2026.11.04-15.10.44:314][282]LogWindSim: [Wind 11] 65.44s ~ 67.44s | Speed=10.50 | Dir=258.4 | Trans=1 | Integral=25.50 | Accum=710.56
+[2026.11.04-15.10.44:314][282]LogWindSim: [Wind 12] 67.44s ~ 75.69s | Speed=15.00 | Dir=52.7 | Trans=0 | Integral=123.72 | Accum=834.28
+[2026.11.04-15.10.44:314][282]LogWindSim: [Wind 13] 75.69s ~ 77.69s | Speed=15.00 | Dir=52.7 | Trans=1 | Integral=25.27 | Accum=859.55
+[2026.11.04-15.10.44:314][282]LogWindSim: [Wind 14] 77.69s ~ 86.07s | Speed=10.27 | Dir=255.8 | Trans=0 | Integral=86.16 | Accum=945.71
+[2026.11.04-15.10.44:314][282]LogWindSim: [Wind 15] 86.07s ~ 88.07s | Speed=10.27 | Dir=255.8 | Trans=1 | Integral=21.53 | Accum=967.24
+[2026.11.04-15.10.44:314][282]LogWindSim: [Wind 16] 88.07s ~ 97.42s | Speed=11.26 | Dir=230.1 | Trans=0 | Integral=105.19 | Accum=1072.43
+[2026.11.04-15.10.44:314][282]LogWindSim: [Wind 17] 97.42s ~ 99.42s | Speed=11.26 | Dir=230.1 | Trans=1 | Integral=22.95 | Accum=1095.38
+[2026.11.04-15.10.44:314][282]LogWindSim: [Wind 18] 99.42s ~ 108.59s | Speed=11.69 | Dir=319.1 | Trans=0 | Integral=107.19 | Accum=1202.57
+[2026.11.04-15.10.44:314][282]LogWindSim: [Wind 19] 108.59s ~ 110.59s | Speed=11.69 | Dir=319.1 | Trans=1 | Integral=23.12 | Accum=1225.69
+[2026.11.04-15.WIND_ARRAY context=0x7ffdf4554980 ptr=0x7fffe4ca7e80 count=35 capacity=56 tail=0x45020ba600000000
+WIND_ITEM 0 hex=00000000ec261941ae4d8a4300000000 floats=0,9.57200241,276.606873,0
+WIND_ITEM 1 hex=74f81541ec261941ae4d8a4301000000 floats=9.3731575,9.57200241,276.606873,1.40129846e-45
+WIND_ITEM 2 hex=74f83541699625413881194100000000 floats=11.3731575,10.3492212,9.59404755,0
+WIND_ITEM 3 hex=2476a941699625413881194101000000 floats=21.1826859,10.3492212,9.59404755,1.40129846e-45
+WIND_ITEM 4 hex=2476b941b197184135b6c94200000000 floats=23.1826859,9.53703403,100.855873,0
+WIND_ITEM 5 hex=36ac0442b197184135b6c94201000000 floats=33.1681747,9.53703403,100.855873,1.40129846e-45
+WIND_ITEM 6 hex=36ac0c4242d8314116f9b14300000000 floats=35.1681747,11.1152973,355.945984,0
+WIND_ITEM 7 hex=f299314242d8314116f9b14301000000 floats=44.4003372,11.1152973,355.945984,1.40129846e-45
+WIND_ITEM 8 hex=f299394248203d412d8e254300000000 floats=46.4003372,11.8203812,165.555374,0
+WIND_ITEM 9 hex=aee35b4248203d412d8e254301000000 floats=54.9723434,11.8203812,165.555374,1.40129846e-45
+WIND_ITEM 10 hex=aee36342550928415b34814300000000 floats=56.9723434,10.5022783,258.409027,0
+WIND_ITEM 11 hex=33e18242550928415b34814301000000 floats=65.4398422,10.5022783,258.409027,1.40129846e-45
+WIND_ITEM 12 hex=33e18642000070411be5524200000000 floats=67.4398422,15,52.7237358,0
+WIND_ITEM 13 hex=15609742000070411be5524201000000 floats=75.6876602,15,52.7237358,1.40129846e-45
+WIND_ITEM 14 hex=15609b421e612441f6cb7f4300000000 floats=77.6876602,10.2737103,255.796722,0
+WIND_ITEM 15 hex=e425ac421e612441f6cb7f4301000000 floats=86.0740051,10.2737103,255.796722,1.40129846e-45
+WIND_ITEM 16 hex=e425b04224193441381c664300000000 floats=88.0740051,11.2561378,230.110229,0
+WIND_ITEM 17 hex=83d6c24224193441381c664301000000 floats=97.4189682,11.2561378,230.110229,1.40129846e-45
+WIND_ITEM 18 hex=83d6c642e8133b41548f9f4300000000 floats=99.4189682,11.6923599,319.119751,0
+WIND_ITEM 19 hex=662cd942e8133b41548f9f4301000000 floats=108.586716,11.6923599,319.119751,1.40129846e-45
+WIND_ITEM 20 hex=662cdd429cc736410f0a5e4300000000 floats=110.586716,11.4237328,222.039291,0
+WIND_ITEM 21 hex=aeebef429cc736410f0a5e4301000000 floats=119.960312,11.4237328,222.039291,1.40129846e-45
+WIND_ITEM 22 hex=aeebf34289e0284135e63a4300000000 floats=121.960312,10.5548182,186.899246,0
+WIND_ITEM 23 hex=6a82024389e0284135e63a4301000000 floats=130.50943,10.5548182,186.899246,1.40129846e-45
+WIND_ITEM 24 hex=6a820443430b394194680e4300000000 floats=132.50943,11.5652494,142.408508,0
+WIND_ITEM 25 hex=265c0e43430b394194680e4301000000 floats=142.359955,11.5652494,142.408508,1.40129846e-45
+WIND_ITEM 26 hex=265c10439a702941c967db4200000000 floats=144.359955,10.5899906,109.702705,0
+WIND_ITEM 27 hex=a54a1a439a702941c967db4201000000 floats=154.29158,10.5899906,109.702705,1.40129846e-45
+WIND_ITEM 28 hex=a54a1c4341193141c0d1794300000000 floats=156.29158,11.0686655,249.819336,0
+WIND_ITEM 29 hex=4e1e254341193141c0d1794301000000 floats=165.118378,11.0686655,249.819336,1.40129846e-45
+WIND_ITEM 30 hex=4e1e27430d102d41975f824100000000 floats=167.118378,10.8164186,16.2966747,0
+WIND_ITEM 31 hex=31b22f430d102d41975f824101000000 floats=175.69606,10.8164186,16.2966747,1.40129846e-45
+WIND_ITEM 32 hex=31b23143a8cc3341eb52fa4200000000 floats=177.69606,11.2374649,125.161949,0
+WIND_ITEM 33 hex=2f1d3a43a8cc3341eb52fa4201000000 floats=186.113998,11.2374649,125.161949,1.40129846e-45
+WIND_ITEM 34 hex=2f1d3c436b5327412ea78c4300000000 floats=188.113998,10.4578657,281.306091,0

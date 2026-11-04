@@ -69,3 +69,5 @@
 stage 4 注入风关键帧在每个 seed 的两场逐字一致；该场中许多 SpawnActor 碰撞失败，训练障碍生成器不能用入口调用次数代替实际成功实例数。具体样本和限制见 docs/17。
 
 stage 5 注入风序列的三 seed 重复数据与脚本见 `experiments/stage_inject_5_20261104/`；线障入口尝试次数并不能替代真实障碍实例、运动和碰撞采样。
+
+三个 seed 的一次 ROS reset 均返回 false，但 reset 路径重新触发注入后的 stage 4 生成，风数组与 reset 前不同；勿将此响应或场景当作已验证成功的 episode 重置。详见 `experiments/stage_reset_inject_retry_20261104/`。

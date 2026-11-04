@@ -20,7 +20,7 @@
 ```text
 0x2fb23b0( GameConfig+0x2bc, 350.0, 2.0, 1.5, state+0x200 )  // stage 4
 0x2fb23b0( GameConfig+0x2c0, 660.0, 4.0, 2.0, state+0x200 )  // stage 5
-0x2fb23b0( GameConfig+0x2c4, 1800.0, 4.0, 15.0, state+0x200 ) // stage 6
+0x2fb23b0( GameConfig+0x2c4, 1800.0, 15.0, 4.0, state+0x200 ) // stage 6
 ```
 
 `GameConfig+0x2bc/+0x2c0/+0x2c4` 在默认配置中对应 200/220/200 秒（与 `docs/03` 的时段常量表一致）。`0x2fb23b0` 生成约 8–10 秒间隔的分段风时间序列，`0x2fb2050` 取标量、`0x2fb2130` 插值成三维向量；`0x2fb2040` 明确调用 `srand`。如果默认坐标单位是 UE 厘米，350/660/1800 分别是 3.5/6.6/18.0 m/s 量级的基准风速；这只是从常量和接口推断，仍应在 `/airsim_node/drone_1/debug/wind` 上按段实测。
@@ -68,3 +68,5 @@ OL2 请求的四种启动选项在实际运行均回到 OL1；原请求参数不
 注入 stage 4 对三个 seed 各重复两次：每 seed 风数组字节完全一致、不同 seed 数组不同；数据及注入限制见 `experiments/stage_inject_4_20261104/analysis.json` 和 docs/17。不能把这项确定性推广到 reset 或完整赛程。
 
 stage 5 三 seed 各两场的注入风关键帧也逐字重复；生成入口计数、原始样本和采样退出码见 `experiments/stage_inject_5_20261104/`。车辆直接函数调用初探失败，尚不构成车辆动态证据。
+
+**更正**：stage 6 浮点入参的顺序经运行时寄存器核验为 `200, 1800, 15, 4`，本页先前将最后两个数写反。三个 seed 在 ROS reset 返回 false 的注入场里，reset 前后的 stage 4 风数组均不同；这只证明这些具体场次不重放风数组，不证明 reset 成功或所有随机状态机制。
