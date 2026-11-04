@@ -108,3 +108,5 @@ stage 6 强制风场中的固定 PWM 步进已覆盖三 seed 各两次；短场�
 `0x2fc77b0` 的一次内层候选距离并非简单“相邻障碍随机间距”：汇编在随机流 LCG 更新后，把状态高 23 位装入 `[1,2)` 的 float 尾数，再减 1，得到 `u∈[0,1)`；候选沿样条偏移的绝对值为 `1500+7000u` cm，即 `[15,85)` m。反向样条改变符号；外层基准按 ±10000 cm（100 m）步进，候选还会裁剪到样条端点，失败时可重复尝试。因此这不是最终生成的线障间距分布。LCG 为 `state=(state*0x0bb38435+0x3619636b) mod 2^32`，且其他放置和采样会消费同一流。
 
 stage 4 seed 123 的开发注入试场捕获 198 个内层候选，绝对偏移约 15.058–84.895 m；根据捕获的更新后状态与 float32 操作重建，最大差约 `4.9e-6` cm（文本输出取整误差）。基准值每次相隔 10000 cm。见 `experiments/line_offsets_pilot_20261105/offset_analysis.json`、`scripts/stage_line_offsets.gdb` 和 `scripts/analyze_line_offsets.py`；位置和 spawn 成功率另行核验。
+
+持续逐 tick 状态注入的 stage 4/5 已覆盖三 seed 各两次，并观测 ROS 矢量随关键帧推进；近似插值误差和时钟限制见 docs/17。

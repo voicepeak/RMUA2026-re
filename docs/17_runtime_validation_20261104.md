@@ -166,3 +166,5 @@ stage 6 固定开环 PWM 六场均发送 248 条命令并记录 800–802 条实
 离线风模型已与 stage 4/5/6 × seed 123/456/2026 × 两次 fresh 运行的全部关键帧逐字节吻合，见 `experiments/wind_offline_model_20261105/`、`scripts/wind_offline_model.py`。反汇编确认 `rand()` 只取低 24 位再除以 16777215，保持时间分布为 `8+2u` 秒；公式、上限/下限和依赖条件见 docs/15。此证据不覆盖 reset 后或任何其他消费者提前推进 libc 随机流的序列。
 
 线障阶段距离采样首场记录 198 个内层候选及每次更新后的随机流状态；`1500+7000u` cm（反向时取负）的 float32 重建最大差约 `4.9e-6` cm，基准距离相邻相差 10000 cm。它不是最终障碍间距，且候选失败/裁剪可能改变结果。见 `experiments/line_offsets_pilot_20261105/` 和 docs/15。
+
+持续逐 tick 强制状态的 stage 4、5 现各覆盖三个 seed 两次、每场约 25 秒。每场约 1230 条风向量、四舍五入至 `1e-6` 后有 83 个不同二维向量；按上述近似钟域模型重建，stage 4 的二维 RMSE 约 0.0074–0.0400，stage 5 约 0.0206–0.1493。所有样本有调试器暂停和未经校准的 header/墙钟偏差；这不是自然赛程、稳态精度或时延认证。原始风、PWM、IMU/GPS、LiDAR 时钟、逐 tick 状态和比较结果见 `experiments/wind_persistent_4_20261105/`、`experiments/wind_persistent_5_20261105/`。
