@@ -1,0 +1,29 @@
+
+/home/tianbot/RUMA-by-helinjun/main/simulator/simulator_12.0.0.5/Build/LinuxNoEditor/RMUA/Binaries/Linux/RMUA-Linux-Shipping：     文件格式 elf64-x86-64
+
+
+Disassembly of section .text:
+
+0000000002fb94be <SampleVectorField@@Base+0x268a4e>:
+ 2fb94be:	41 80 be 80 01 00 00 	cmpb   $0x0,0x180(%r14)
+ 2fb94c5:	00 
+ 2fb94c6:	75 4f                	jne    2fb9517 <SampleVectorField@@Base+0x268aa7>
+ 2fb94c8:	f3 0f 10 44 24 04    	movss  0x4(%rsp),%xmm0
+ 2fb94ce:	f3 41 0f 58 86 ac 01 	addss  0x1ac(%r14),%xmm0
+ 2fb94d5:	00 00 
+ 2fb94d7:	f3 0f 11 44 24 04    	movss  %xmm0,0x4(%rsp)
+ 2fb94dd:	f3 41 0f 11 86 ac 01 	movss  %xmm0,0x1ac(%r14)
+ 2fb94e4:	00 00 
+ 2fb94e6:	e8 95 b9 ff ff       	call   2fb4e80 <SampleVectorField@@Base+0x264410>
+ 2fb94eb:	f3 0f 10 44 24 04    	movss  0x4(%rsp),%xmm0
+ 2fb94f1:	0f 2e 80 cc 02 00 00 	ucomiss 0x2cc(%rax),%xmm0
+ 2fb94f8:	76 1d                	jbe    2fb9517 <SampleVectorField@@Base+0x268aa7>
+ 2fb94fa:	e8 81 b9 ff ff       	call   2fb4e80 <SampleVectorField@@Base+0x264410>
+ 2fb94ff:	80 b8 d4 02 00 00 00 	cmpb   $0x0,0x2d4(%rax)
+ 2fb9506:	75 0f                	jne    2fb9517 <SampleVectorField@@Base+0x268aa7>
+ 2fb9508:	4c 89 f7             	mov    %r14,%rdi
+ 2fb950b:	be 0c 00 00 00       	mov    $0xc,%esi
+ 2fb9510:	31 d2                	xor    %edx,%edx
+ 2fb9512:	e8 49 04 00 00       	call   2fb9960 <SampleVectorField@@Base+0x268ef0>
+ 2fb9517:	4c 89 f7             	mov    %r14,%rdi
+ 2fb951a:	e8 11 13 00 00       	call   2fba830 <SampleVectorField@@Base+0x269dc0>
