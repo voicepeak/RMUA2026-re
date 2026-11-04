@@ -133,3 +133,4 @@
 | 动态风 18 场传感器时钟和 IMU 分布 | `experiments/wind_persistent_{4,5,6}_20261105/` 各 `sensor_clock_summary.json`、`imu_analysis.json`，`scripts/analyze_imu_samples.py` |
 | 三 stage/三 seed 的固定 PWM 事后位置范围 | `experiments/wind_pwm_step_{4,5,6}_20261105/motion_analysis.json`、`scripts/analyze_pwm_motion.py`；真值未用于控制 |
 | 七实例第一轮 300 秒空载存活 | `experiments/concurrency_7_long_a_20261105/results.json`、`batch00_attempt00_liveness.jsonl`；有限窗口 |
+| 七实例第二轮 300 秒存活及 60 秒订阅负载 | `experiments/concurrency_7_long_b_20261105/results.json`、`measurement.json` 和逐秒 liveness；一个 IMU header 重复 |

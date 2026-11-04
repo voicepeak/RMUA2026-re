@@ -13,7 +13,7 @@
 | PWM：动作/输出/动力学，seed 重复 | `experiments/wind_pwm_step_{4,5,6}_20261105/`、`experiments/pwm_20261104/` | 三 stage、三 seed 各两次固定开环命令、PWM 输出、IMU/GPS 和事后位姿已保存；这些短场风保持初始向量，动态风耦合和可辨识动力学模型尚缺。header 首次匹配差不是已标定端到端延迟。 |
 | 传感器：IMU、GPS、LiDAR、相机、时间/噪声 | `experiments/wind_persistent_{4,5,6}_20261105/`、`experiments/sensor_clock_rendered_20261104/` | 三 stage/seed/重复有 IMU、GPS、LiDAR 消息时钟；IMU 分量统计与原始流已保存，变化不能单独解释为噪声。NullRHI 相机为空，有渲染单场相机有数据；动态障碍点云、多 seed 图片与准确端到端延迟未验收。 |
 | reset / 随机流重放 | `experiments/reset_semantics_20261104/`、`experiments/stage_reset_inject_retry_20261104/` | 多 seed 中官方 ROS reset 响应 false；此前观察 FRandomStream 回到 seed，但三 seed 的注入风数组 reset 前后不同。成功 reset、各机制场景重放以及 libc 状态变化的确切原因未验证。 |
-| 8 实例崩溃根因或稳定并发上限 | `experiments/concurrency_gdb_20261104/`、`experiments/concurrency_frequency_overlap/`、`experiments/concurrency_followup_20261104/` | 八实例曾崩溃，单次栈指向频率统计 deque，但根因未证；7 路长时探针正在进行。不同负载、时长和重复条件下的稳定上限尚未确立。 |
+| 8 实例崩溃根因或稳定并发上限 | `experiments/concurrency_gdb_20261104/`、`experiments/concurrency_frequency_overlap/`、`experiments/concurrency_followup_20261104/` | 八实例曾崩溃，单次栈指向频率统计 deque，但根因未证；7 路两次各 300 秒存活，第二轮含 60 秒订阅，部分 LiDAR/源时钟变慢。该主机有限空载观测支持七路操作边界，但不同负载或长期的稳定上限及八路根因仍未知。 |
 | 训练规格和逐类可复现脚本 | `docs/15_seed_dependency_matrix.md`、`docs/16_headless_requirements.md`、`experiments/training_host_20261105/`、`scripts/` | 硬件、镜像 ID、二进制和 settings 哈希、实际 settings 副本及已完成机制的脚本已记录；自定义训练环境完整等价和未完成类的验证尚缺。 |
 | OL1 12 门和额外地图 | `experiments/runtime_trace_20261104_v2/`、`experiments/gates_ol2_20261104/` | OL1 三 seed 两次门变换一致；第二地图请求均实际加载 OL1，门洞物理尺寸与跨地图核验未完成。 |
 | 失败样本、限制、原始数据与提交推送 | docs/09、15、16、17、Git 历史；各 `experiments/` | 各试验失败/原始流保留；逐阶段提交并推送。仍需在最终交付时重核远端 HEAD、当前文件和所有未完成项。 |
