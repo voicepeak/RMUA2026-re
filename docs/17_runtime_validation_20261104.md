@@ -104,3 +104,7 @@ seed 123 的后续 6 m/s 场使用相同无真值控制输入及 LiDAR 新鲜度
 ### 真值隔离更正
 
 此前部分 `run_beta_sensor_scout.py` 的场次虽然控制器没有订阅 `/debug/pose_gt`，运行器却轮询 GDB 的 `requested_state=12` 并据此发送 SIGINT 停止控制。那些 manifest 中的 `debug_truth_control: false` 只能描述导航话题，不代表整个实验生命周期完全未使用调试内部状态；凡 `status: race_end_stop` 均受此限制，不应计作满足严格“调试真值只用于事后评估”的验收。现在的运行器不再基于 GDB 状态停止控制，只使用固定时限和控制器自身传感器保护；GDB 日志用于事后分析。旧 manifest 和实验日志保持原样。
+
+## 室外段开发注入试运行
+
+通过 `scripts/stage_inject.gdb` 将初始 `0x2fbac30` 的寄存器实参 `(1,3,1)` 改为官方切换代码中的 stage 4 实参 `(8,12,4)`；这是内存/寄存器注入，而非合法飞行。seed 123 试运行命中 `0x2fc77b0` 和 `0x2fb23b0`，后者入口的四个浮点参数为 200、350、2、1.5，并在返回后读到 35 个 16 字节条目。日志逐条保存字节和四个浮点视图；每个最后的第四字段实际上以原始字节保存，不能直接当作浮点物理量。ROS 采样仍在起点、风为零；此法尚未验证风区实际作用、碰撞或 reset 重放。原始日志和 manifest 在 `experiments/stage_inject_pilot_20261104/`；更多 seed、重复与 stage 正在采集。
