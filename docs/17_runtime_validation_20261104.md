@@ -190,3 +190,5 @@ stage 6 线障内层偏移三 seed 各两次每场 804 次，同 seed 状态/基
 线障组件实例首场：在 stage 4 seed 123 注入场，`0x2fc3db0` 共向两个组件提交 373 个 48 字节变换，全部调用返回非负索引；选择位 1 有 272 次、0 有 101 次。构造函数使用 `HISM_ThickLine` 名称创建 `GameConfig+0x240`、`HISM_ThinLine` 创建 `+0x248`，`0x2fc3db0` 选择位 1/0 分别选择这两个组件；相关构造与选择反汇编和字符串在 `experiments/line_instances_pilot_20261105/`。因此可分别记录粗线/细线的组件提交变换与返回索引，但这不证明可见性、精确物理几何或接触。完整 48 字节和浮点视图保留在 GDB 日志；正在做三 stage/seed 重复。
 
 `experiments/lidar_snapshot_pilot_20261105/` 在初始无人机位置保存一帧 PointCloud2 原始 payload 和布局，15882 点全部 XYZ 有限，内容哈希匹配。它是传感器局部 frame 的原始样本，不能证明室外线障可见或点云精度。`experiments/wind_pwm_transition_pilot_20261105/` 的固定延迟开环 PWM 与持续强制状态风在近似 ROS header 对齐下有 8 个风矢量变化样本落在最近命令 0.2 的阶段；只证明采样时间重叠，不证明因果关系或精确控制延迟，命令器不读取真值。
+
+stage 4 三 seed 各两次的线障组件提交均为粗线 272、细线 101，373 个返回索引均非负；同 seed 两场按选择位和原始变换字节组成的多重集合一致，跨 seed 不同。见 `experiments/line_instances_4_20261105/instances_analysis.json` 和每场变换日志；这是提交及返回观测，不证明碰撞可用。stage 4 同样完成六帧初始位置 LiDAR 原始 PointCloud2：每帧 15251–16333 个点、XYZ 均有限，payload 哈希匹配，采样时间及数据布局不同导致点数不同，不把逐帧字节差当作 seed 效应；见 `experiments/lidar_snapshot_4_20261105/`。
