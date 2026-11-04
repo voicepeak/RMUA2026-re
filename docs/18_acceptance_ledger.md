@@ -1,44 +1,23 @@
-# 逆向验收进度与证据边界
+# 动态机制验收清单
 
-本表是持续更新的检查表，不是验收通过声明。正式目标为完整交付；所有训练诊断不得改变官方模拟器、规则或计分，调试真值仅用于事后评估。
+状态截至 2026-11-05；本表是逐项证据与未完成项，不是最终验收通过声明。目标版本为模拟器 12.0.0.5，主程序 SHA-256 `5231addfa25ddaa9e4473ea9ac40c9c0bc685174e69cd14bb49159f443b97800`。官方发布文件保持只读；标注为注入的场次在开发容器中临时更改寄存器或内存，调试真值只用于事后评估。运行器的 `observed` 只代表其所检查条件，不自动证明每一个采样流成功。
 
-| 要求 | 当前证据 | 状态与缺口 |
+| 要求 | 当前证据 | 状态与剩余工作 |
 |---|---|---|
-| stage 4/5/6，seed 123/456/2026 各两次；风时间序列及指定四个函数命中参数 | `experiments/stage_probe_20261104/`；`experiments/runtime_trace_20261104_v2/` | 未达成。只到 stage 1，室外三个函数未命中，六次均没有室外风/车辆/线障。静态路线与合法时限内的安全导航仍需解决。 |
-| OL1 12 门，跨 seed ID/位置/姿态/尺寸 | `experiments/runtime_trace_20261104_v2/gate_comparison.json` | 部分：三个 seed 各重复两次的 12 门 BeginPlay 位置、四元数、组件缩放一致。FName 索引与地图静态表位置配对，不是已解码的稳定名称；组件缩放不等于门洞物理尺寸。 |
-| 至少另一图逐门比较 | `experiments/gates_ol2_20261104/actual_maps_summary.json`；`experiments/map_console_20261104/` | 未达成。多种参数以及一次未确认控制台接收输入的键盘尝试均未观测 OL2，所有观测最终为 OL1。 |
-| SIGSEGV 根因或可复现稳定并发上限和降级 | `experiments/concurrency_gdb_20261104/`；`experiments/concurrency_frequency_overlap/`；`scripts/run_pool_batches.py` | 部分：一次崩溃定位到 AirSimROS 频率记录 deque 释放调用链，不同线程调用生命周期可重叠，但没有证据证明是该崩溃根因。8 路不稳定，4 路 15 秒、7 路约 89 秒样本均不能证明长期稳定上限。保守分批重试脚本是诊断手段。 |
-| reset 与 seed / 随机流重放的成功和失败 | `experiments/reset_semantics_20261104/` | 部分：seed123/456 观测随机流重置回 seed，但两次 ROS 响应 false；一次 reset 窗口未命中 glibc srand。未证实动态障碍/风序列重放、reset 成功场次。 |
-| PWM 到姿态和位置响应 | `experiments/pwm_20261104/` | 部分：一次 PWM 闭环参考阶跃原始数据，开环脉冲触发 POSITION_LIMIT；未完成可信系统辨识或参数标定。 |
-| LiDAR/IMU/相机频率、时间戳、延迟及钟域 | `experiments/sensor_clock_rendered_20261104/` | 部分：单次有渲染场景的消息到达频率及头时间戳、墙钟、单调钟；源时间语义/同步和端到端延迟未标定。 |
-| 文档、原始数据提交并 push | docs/09、15、16、17 和 Git 记录 | 部分：截至 2026-11-04 18:09 CST，`682f93c` 和 `0d29746` 已提交本地；远端实际 main 为 `ce3fedb`，本机 SSH 公钥被拒绝、HTTPS 无凭据，尚未推送新提交。待认证恢复后以 `git push` 和远端 HEAD 校验。 |
+| 从既有基线继续；不重做门/PWM/四实例基线 | `docs/17_runtime_validation_20261104.md`、Git 历史 | 复用原有基线；新增的是室外注入、风下 PWM、车辆、碰撞和不同并发范围。 |
+| 强制进入 stage 4/5/6 或直接进入指定入口 | `experiments/stage_inject_{4,5,6}_20261104/`、`scripts/stage_inject.gdb` | 三 stage 的入口参数已注入，每 stage 三 seed 各两场均命中 `0x2fbac30`、`0x2fc77b0`、`0x2fb23b0`；车辆入口另通过调用目标重定向命中并返回。注入场不是合法赛程。 |
+| 风：seed 123/456/2026 各重复，算法/参数/分布、动态原始数据 | `experiments/wind_offline_model_20261105/`、`experiments/wind_persistent_{4,5,6}_20261105/`、docs/15、17 | fresh 生成的全部 18 场关键帧由离线 float32 模型逐字节重建；持续注入的 18 场记录随时间变化的 ROS 矢量。正常赛程前随机流消耗、自然风区、时钟标定和留出 seed 尚未证明。单次状态写入场的风话题冻结 25 秒，失败样本见 `experiments/wind_transition_{4,5,6}_20261105/`。 |
+| 粗/细线障：seed、算法、数量/位置/运动/碰撞 | `experiments/line_offsets_{4,5,6}_20261105/`、`experiments/obstacle_inventory_{4,5,6}_20261105/`、docs/14、15 | 内层候选的 LCG 和距离公式、三 seed 两次候选点/序列一致性已核验；候选不等于实际 spawn 或障碍间距，阶段 4 有大量 SpawnActor 碰撞失败。粗/细资产类型与实例变换、成功数、运动和实际碰撞未验收。 |
+| 车辆：seed、分支、路径、速度和动态轨迹 | `experiments/vehicle_redirect_4_20261105/`、`experiments/vehicle_forcegate_4_20261105/`、`experiments/vehicle_world_4_20261105/` | 入口/返回三 seed 两次；额外强制状态门槛后记录车辆五点路径、进度和组件世界坐标。seed 456 两次路径不同；自然时序、分支概率、路径重复性的原因、碰撞未确定。 |
+| 碰撞：回调与动态物理 | `experiments/collision_inject_ignore{0,1}_20261105/`、`experiments/fall_collision_pilot_20261105/` | 合成回调在忽略标志 0/1 下三 seed 两次分别返回 state 12/7；另有开环 PWM 运行时回调。碰撞对方、线障/车辆实际接触、力和自然终止未确认；逐 tick 强制状态会覆盖终止。 |
+| PWM：动作/输出/动力学，seed 重复 | `experiments/wind_pwm_step_{4,5,6}_20261105/`、`experiments/pwm_20261104/` | 三 stage、三 seed 各两次固定开环命令、PWM 输出、IMU/GPS 和事后位姿已保存；这些短场风保持初始向量，动态风耦合和可辨识动力学模型尚缺。header 首次匹配差不是已标定端到端延迟。 |
+| 传感器：IMU、GPS、LiDAR、相机、时间/噪声 | `experiments/wind_persistent_{4,5,6}_20261105/`、`experiments/sensor_clock_rendered_20261104/` | 三 stage/seed/重复有 IMU、GPS、LiDAR 消息时钟；IMU 分量统计与原始流已保存，变化不能单独解释为噪声。NullRHI 相机为空，有渲染单场相机有数据；动态障碍点云、多 seed 图片与准确端到端延迟未验收。 |
+| reset / 随机流重放 | `experiments/reset_semantics_20261104/`、`experiments/stage_reset_inject_retry_20261104/` | 多 seed 中官方 ROS reset 响应 false；此前观察 FRandomStream 回到 seed，但三 seed 的注入风数组 reset 前后不同。成功 reset、各机制场景重放以及 libc 状态变化的确切原因未验证。 |
+| 8 实例崩溃根因或稳定并发上限 | `experiments/concurrency_gdb_20261104/`、`experiments/concurrency_frequency_overlap/`、`experiments/concurrency_followup_20261104/` | 八实例曾崩溃，单次栈指向频率统计 deque，但根因未证；7 路长时探针正在进行。不同负载、时长和重复条件下的稳定上限尚未确立。 |
+| 训练规格和逐类可复现脚本 | `docs/15_seed_dependency_matrix.md`、`docs/16_headless_requirements.md`、`experiments/training_host_20261105/`、`scripts/` | 硬件、镜像 ID、二进制和 settings 哈希、实际 settings 副本及已完成机制的脚本已记录；自定义训练环境完整等价和未完成类的验证尚缺。 |
+| OL1 12 门和额外地图 | `experiments/runtime_trace_20261104_v2/`、`experiments/gates_ol2_20261104/` | OL1 三 seed 两次门变换一致；第二地图请求均实际加载 OL1，门洞物理尺寸与跨地图核验未完成。 |
+| 失败样本、限制、原始数据与提交推送 | docs/09、15、16、17、Git 历史；各 `experiments/` | 各试验失败/原始流保留；逐阶段提交并推送。仍需在最终交付时重核远端 HEAD、当前文件和所有未完成项。 |
 
-运行时样本、复现命令和时间域以各实验目录的 manifest 与日志为准；任何单场诊断均不能推广为比赛等价性或最终稳定性。
+重要失败样本包括：`experiments/vehicle_call_pilot_20261104/`（GDB call 未完成）、`experiments/vehicle_trampoline_v2_pilot_20261105/`（错误返回标记后 SIGSEGV）、`experiments/stage_reset_inject_pilot_20261104/`（缺 ROS 服务类型，未发出调用）、`experiments/force_wind_tick_4_20261105/`（PWM 消息类型缺失，其他流保留）、`experiments/pwm_20261104/seed456_motor_pulses_failed/`（位置限制）及上述并发和地图失败。不要把失败场次的 `observed` 状态解释为全部机制通过。
 
-2026-11-04 后续：用户已明确授权开发注入以获得动态机制证据；此前本表将合法导航列为室外采集的前置条件已不适用。stage 4 注入试运行已命中线障和风生成，其他验收仍未完成，详见 docs/17。远端 main 在此轮开始时已与本地 `cec112e` 一致，旧的认证状态记录属于历史。
-
-stage 4/5/6 的三个 seed 各两次开发注入已命中线障和风生成，同 seed 风数组逐字一致；这不是赛程等价或风作用到飞机的验收。三个 seed 的 ROS reset 返回 false 且重生成风数组不同。车辆入口已通过跳转命中，但返回及动态行为未确认；线障资产实例、碰撞、PWM/传感器完整标定和稳定并发上限仍未完成。各阶段原始数据及失败样本见 docs/17。官方发布文件应保持只读，调试真值只用于事后评估；注入场均标为开发诊断。
-
-车辆已通过修改容器内调用目标进入 `0x2fc8900`、命中一个分支并返回；仍需三 seed 重复、实际实例/轨迹和碰撞。线障候选点内存数组已采样，实例与碰撞尚未验证；不可将这些点当作验收完成。
-
-stage 4 三 seed 各两次的内部线障间距点集合已比较；车辆调用六场均返回，但无车辆初始化或运动证明。其余缺口仍见上一条。
-
-单 seed 车辆经额外强制状态检查后已采集初始化点、进度和组件世界坐标；其他 seed、自然分支、碰撞仍待核验。stage 5 线障候选点三 seed 两次一致性已完成。
-
-stage 6 线障候选点三 seed 重复比较已完成。车辆强制状态检查六场均有初始化与进度，但 seed 456 两次路径不同，世界坐标多 seed 对照和自然场景仍待核验。
-
-车辆世界坐标已覆盖三 seed 各两次，但 seed 456 路径仍不重复；风更新注入单场 ROS 风非零。多 seed 风、PWM、传感器、碰撞及并发验证仍在进行。
-
-stage 4 强制风状态下三 seed 各两次已采风、PWM、IMU/GPS/LiDAR 时钟；一场固定开环 PWM 步进已记录。仍需其余 stage/seed 步进、延迟和碰撞、并发及完整验收。
-
-合成碰撞回调的忽略标志三 seed 各两次对照已完成，真实障碍接触仍缺。持续逐 tick 强制状态的单场已观测风随时间变化；自然场景和其余 seed 重复仍待核验。
-
-stage 4/5/6 的三个 seed 各两次固定开环 PWM 步进均有命令与输出样本，短场风不变，尚未证明动态风耦合或标定端到端延迟。
-
-风关键帧的 fresh 状态离线算法已逐字节对照全部 18 场；随机流先前消耗、reset 后状态与自然赛程仍有限制，持续风更新多 seed 场次进行中。
-
-持续逐 tick 状态注入的 stage 4/5 动态风与插值比较已覆盖三 seed 各两次；stage 6 仍在采样，自然风区和动态风下 PWM 耦合未完成。
-
-三个室外 stage 的持续状态注入动态风均已覆盖三 seed 各两次；仍不证明自然风区、动态风下动力学耦合或真实碰撞。线障内层距离公式已覆盖 stage 4/5，stage 6 正采样。
-
-三个 stage 的线障内层候选偏移均已覆盖三 seed 两次，最终实例、物理碰撞与运动仍待验证。
+剩余工作按证据缺口推进：实际粗/细线和车辆实例/碰撞对象及动态数据；自然或等价开发注入下的动态风与 PWM/传感器耦合和时钟标定；reset 成功及随机流重放；8 路根因或经明确持续时间、重复次数和负载限制界定的稳定上限；额外地图与最终逐项复核。若不能证明某项，保留为未完成，不用已有局部样本替代。
