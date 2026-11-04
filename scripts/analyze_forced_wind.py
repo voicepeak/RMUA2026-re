@@ -2,7 +2,7 @@
 """Summarize forced wind and passive ROS streams without using debug truth for control."""
 import argparse,csv,json,math,statistics
 from pathlib import Path
-p=argparse.ArgumentParser(description=__doc__);p.add_argument('directory',type=Path);a=p.parse_args();m=json.loads((a.directory/'manifest.json').read_text());out={'stage':m['injected_stage'],'runs':{},'limitations':['forced game state at start, not natural outdoor traversal','initially grounded; no PWM commands applied by this probe','ROS timestamp semantics and transport latency not calibrated']}
+p=argparse.ArgumentParser(description=__doc__);p.add_argument('directory',type=Path);a=p.parse_args();m=json.loads((a.directory/'manifest.json').read_text());out={'stage':m['injected_stage'],'runs':{},'limitations':['forced game state at start, not natural outdoor traversal','initially grounded; command policy: '+m.get('command_policy','no PWM commands applied by this probe'),'ROS timestamp semantics and transport latency not calibrated']}
 def csvrows(p):
  if not p.exists() or p.stat().st_size==0:return []
  with p.open() as f:return list(csv.DictReader(f))
