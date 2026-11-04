@@ -194,3 +194,5 @@ stage 6 线障内层偏移三 seed 各两次每场 804 次，同 seed 状态/基
 stage 4 三 seed 各两次的线障组件提交均为粗线 272、细线 101，373 个返回索引均非负；同 seed 两场按选择位和原始变换字节组成的多重集合一致，跨 seed 不同。见 `experiments/line_instances_4_20261105/instances_analysis.json` 和每场变换日志；这是提交及返回观测，不证明碰撞可用。stage 4 同样完成六帧初始位置 LiDAR 原始 PointCloud2：每帧 15251–16333 个点、XYZ 均有限，payload 哈希匹配，采样时间及数据布局不同导致点数不同，不把逐帧字节差当作 seed 效应；见 `experiments/lidar_snapshot_4_20261105/`。
 
 后续单场对前五个非直接调用的碰撞回调采集栈，均经 `0x2fce60b ← 0x2fcd85a ← 0x2fcd479` 等地址分派后进入 `0x2fb7110`，但缺少事件参数/对方对象的可验证解码，不能将该栈命名为某个具体接触。`experiments/collision_stack_pilot_20261105/` 保留回调栈、固定命令、风和事后真值；状态仍被逐 tick 强制，暂停改变时序。
+
+stage 5/6 的粗细线组件提交变换也已各覆盖三 seed 两次：stage 5 每场粗线 594、细线 524，stage 6 每场粗线 0、细线 1434；这些调用均返回非负索引，同 seed 的变换字节多重集合一致，跨 seed 不同。计数仅适用于所测注入/版本/地图及调用窗口，未证明实际可碰撞或全赛程场景；见 `experiments/line_instances_{5,6}_20261105/`。stage 5/6 各六帧初始位置 LiDAR 原始 payload 共 12 帧，点数 14773–17097，XYZ 均有限且哈希匹配；采样帧不同，不能把点数差直接归因于 seed 或室外障碍。见 `experiments/lidar_snapshot_{5,6}_20261105/`。

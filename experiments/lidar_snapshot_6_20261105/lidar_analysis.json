@@ -1,0 +1,140 @@
+{
+  "seed123_repeat1": {
+    "payload_bytes": 193332,
+    "sha256_matches": true,
+    "declared_points": 16111,
+    "finite_points": 16111,
+    "invalid_points": 0,
+    "bounds": {
+      "x": [
+        -27.333736419677734,
+        28.375829696655273
+      ],
+      "y": [
+        -17.67862319946289,
+        12.757051467895508
+      ],
+      "z": [
+        -19.221254348754883,
+        0.9440669417381287
+      ]
+    },
+    "frame_id": "lidar",
+    "note": "One snapshot at the initial vehicle location, not a dynamic obstacle visibility or geometry equivalence test."
+  },
+  "seed123_repeat2": {
+    "payload_bytes": 196392,
+    "sha256_matches": true,
+    "declared_points": 16366,
+    "finite_points": 16366,
+    "invalid_points": 0,
+    "bounds": {
+      "x": [
+        -27.835634231567383,
+        28.945499420166016
+      ],
+      "y": [
+        -17.664501190185547,
+        12.757158279418945
+      ],
+      "z": [
+        -18.982341766357422,
+        0.9444288611412048
+      ]
+    },
+    "frame_id": "lidar",
+    "note": "One snapshot at the initial vehicle location, not a dynamic obstacle visibility or geometry equivalence test."
+  },
+  "seed456_repeat1": {
+    "payload_bytes": 186288,
+    "sha256_matches": true,
+    "declared_points": 15524,
+    "finite_points": 15524,
+    "invalid_points": 0,
+    "bounds": {
+      "x": [
+        -27.518924713134766,
+        28.403610229492188
+      ],
+      "y": [
+        -17.745635986328125,
+        12.835593223571777
+      ],
+      "z": [
+        -19.180950164794922,
+        0.9369912147521973
+      ]
+    },
+    "frame_id": "lidar",
+    "note": "One snapshot at the initial vehicle location, not a dynamic obstacle visibility or geometry equivalence test."
+  },
+  "seed456_repeat2": {
+    "payload_bytes": 203784,
+    "sha256_matches": true,
+    "declared_points": 16982,
+    "finite_points": 16982,
+    "invalid_points": 0,
+    "bounds": {
+      "x": [
+        -27.356645584106445,
+        28.816646575927734
+      ],
+      "y": [
+        -17.62034797668457,
+        12.83790397644043
+      ],
+      "z": [
+        -19.105087280273438,
+        0.936408519744873
+      ]
+    },
+    "frame_id": "lidar",
+    "note": "One snapshot at the initial vehicle location, not a dynamic obstacle visibility or geometry equivalence test."
+  },
+  "seed2026_repeat1": {
+    "payload_bytes": 188988,
+    "sha256_matches": true,
+    "declared_points": 15749,
+    "finite_points": 15749,
+    "invalid_points": 0,
+    "bounds": {
+      "x": [
+        -27.582881927490234,
+        27.769147872924805
+      ],
+      "y": [
+        -17.62522315979004,
+        12.904946327209473
+      ],
+      "z": [
+        -19.009763717651367,
+        0.9301453828811646
+      ]
+    },
+    "frame_id": "lidar",
+    "note": "One snapshot at the initial vehicle location, not a dynamic obstacle visibility or geometry equivalence test."
+  },
+  "seed2026_repeat2": {
+    "payload_bytes": 189204,
+    "sha256_matches": true,
+    "declared_points": 15767,
+    "finite_points": 15767,
+    "invalid_points": 0,
+    "bounds": {
+      "x": [
+        -27.426156997680664,
+        29.028757095336914
+      ],
+      "y": [
+        -17.658702850341797,
+        12.858617782592773
+      ],
+      "z": [
+        -19.075538635253906,
+        0.9344669580459595
+      ]
+    },
+    "frame_id": "lidar",
+    "note": "One snapshot at the initial vehicle location, not a dynamic obstacle visibility or geometry equivalence test."
+  }
+}

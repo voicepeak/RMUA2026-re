@@ -1,0 +1,110 @@
+{
+  "seed123_repeat1": {
+    "call_count": 1434,
+    "selector_counts": {
+      "0": 1434
+    },
+    "asset_component_counts": {
+      "HISM_ThickLine": 0,
+      "HISM_ThinLine": 1434
+    },
+    "return_count": 1434,
+    "return_minmax": [
+      0,
+      1433
+    ],
+    "negative_returns": 0,
+    "transform_multiset_sha256": "8b383bbf49134539d3dd06e06665adcd29281eb0cae6a4ab6c254ebb3d243dfe",
+    "note": "Component mapping follows native constructor and selector; call transforms and nonnegative return values do not establish collision response or successful physical contact."
+  },
+  "seed123_repeat2": {
+    "call_count": 1434,
+    "selector_counts": {
+      "0": 1434
+    },
+    "asset_component_counts": {
+      "HISM_ThickLine": 0,
+      "HISM_ThinLine": 1434
+    },
+    "return_count": 1434,
+    "return_minmax": [
+      0,
+      1433
+    ],
+    "negative_returns": 0,
+    "transform_multiset_sha256": "8b383bbf49134539d3dd06e06665adcd29281eb0cae6a4ab6c254ebb3d243dfe",
+    "note": "Component mapping follows native constructor and selector; call transforms and nonnegative return values do not establish collision response or successful physical contact."
+  },
+  "seed456_repeat1": {
+    "call_count": 1434,
+    "selector_counts": {
+      "0": 1434
+    },
+    "asset_component_counts": {
+      "HISM_ThickLine": 0,
+      "HISM_ThinLine": 1434
+    },
+    "return_count": 1434,
+    "return_minmax": [
+      0,
+      1433
+    ],
+    "negative_returns": 0,
+    "transform_multiset_sha256": "8842e0d491b97892c4a385514cab52b8c057f2dec22775d2b5966cf120245516",
+    "note": "Component mapping follows native constructor and selector; call transforms and nonnegative return values do not establish collision response or successful physical contact."
+  },
+  "seed456_repeat2": {
+    "call_count": 1434,
+    "selector_counts": {
+      "0": 1434
+    },
+    "asset_component_counts": {
+      "HISM_ThickLine": 0,
+      "HISM_ThinLine": 1434
+    },
+    "return_count": 1434,
+    "return_minmax": [
+      0,
+      1433
+    ],
+    "negative_returns": 0,
+    "transform_multiset_sha256": "8842e0d491b97892c4a385514cab52b8c057f2dec22775d2b5966cf120245516",
+    "note": "Component mapping follows native constructor and selector; call transforms and nonnegative return values do not establish collision response or successful physical contact."
+  },
+  "seed2026_repeat1": {
+    "call_count": 1434,
+    "selector_counts": {
+      "0": 1434
+    },
+    "asset_component_counts": {
+      "HISM_ThickLine": 0,
+      "HISM_ThinLine": 1434
+    },
+    "return_count": 1434,
+    "return_minmax": [
+      0,
+      1433
+    ],
+    "negative_returns": 0,
+    "transform_multiset_sha256": "ad91202753992e5542666923e2e196bceda5939204ab59f8eb70778fa3c60a1f",
+    "note": "Component mapping follows native constructor and selector; call transforms and nonnegative return values do not establish collision response or successful physical contact."
+  },
+  "seed2026_repeat2": {
+    "call_count": 1434,
+    "selector_counts": {
+      "0": 1434
+    },
+    "asset_component_counts": {
+      "HISM_ThickLine": 0,
+      "HISM_ThinLine": 1434
+    },
+    "return_count": 1434,
+    "return_minmax": [
+      0,
+      1433
+    ],
+    "negative_returns": 0,
+    "transform_multiset_sha256": "ad91202753992e5542666923e2e196bceda5939204ab59f8eb70778fa3c60a1f",
+    "note": "Component mapping follows native constructor and selector; call transforms and nonnegative return values do not establish collision response or successful physical contact."
+  }
+}
