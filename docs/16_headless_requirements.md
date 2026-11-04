@@ -103,3 +103,17 @@ stage 4/5/6 固定 PWM 步进均已覆盖三 seed 各两次，动作不依赖真
 线障内层候选沿样条偏移服从 `1500+7000u` cm 的随机表达式、基准按 10000 cm 步进，反向、裁剪和拒绝/生成失败必须建模；这不是最终相邻障碍间距。首场状态与偏移对照见 docs/15。
 
 持续注入的 stage 4/5 动态风三 seed 各两次可供矢量模型对照，但不能以 GDB 干预下的近似时间误差代替严格钟域或动态等价验证。
+
+## 2026-11-05 开发场次主机与可复现配置
+
+本机 Ubuntu 22.04.5、x86-64、i7-12700H（20 逻辑 CPU）、内存 40,874,916 kB、无 swap，RTX 3060 Laptop GPU 6144 MiB、驱动 595.99.02。模拟器主程序 SHA-256 为 `5231addfa25ddaa9e4473ea9ac40c9c0bc685174e69cd14bb49159f443b97800`；实验 Docker 镜像 `rmua/re-probe:20261104` 的不可变 ID、kernel、Docker 版本和完整 CPU 信息在 `experiments/training_host_20261105/host.json`。实际 settings 文件副本为 `experiments/training_host_20261105/settings.json`，SHA-256 `0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17`。这是实验硬件快照，不是训练环境等价或并发上限承诺；官方包与原始设置文件未修改。
+
+使用已有同版本模拟器、含 ROS 消息的 catkin 工作区、Docker 镜像和 X 显示，可参照：
+
+```bash
+python3 scripts/run_stage_force_wind_persistent.py --stage 4 --simulator "$SIM_DIR" --settings experiments/training_host_20261105/settings.json --messages "$ROS_WS" --output /tmp/rmua-wind-4 --seeds 123,456,2026 --repeats 2 --sample-seconds 25 --port 12220
+python3 scripts/analyze_persistent_wind.py /tmp/rmua-wind-4
+python3 scripts/wind_offline_model.py --output /tmp/rmua-wind-offline
+```
+
+`SIM_DIR` 指向解包后的模拟器目录，`ROS_WS` 指向已构建的 ROS 工作区；其依赖、镜像构建与复原步骤仍须结合 docs/07 和 docs/17。第一个命令会在开发容器的内存中注入阶段与状态，记录的真值仅供事后分析。实际建模须分别处理模拟时钟、传感器和物理时间、通信队列以及随机流消费顺序。

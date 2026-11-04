@@ -29,6 +29,8 @@
 | [docs/14_obstacle_asset_and_vehicle_trace.md](docs/14_obstacle_asset_and_vehicle_trace.md) | 车辆/线障资源、碰撞网格、生成入口 |
 | [docs/15_seed_dependency_matrix.md](docs/15_seed_dependency_matrix.md) | 门/树/车辆/线障/风是否受 seed 影响的总表（2026-11-04） |
 | [docs/16_headless_requirements.md](docs/16_headless_requirements.md) | 官方 NullRHI 实测边界与高并发训练环境要求 |
+| [docs/17_runtime_validation_20261104.md](docs/17_runtime_validation_20261104.md) | 动态实验、开发注入和证据边界 |
+| [docs/18_acceptance_ledger.md](docs/18_acceptance_ledger.md) | 动态验收进度、失败样本与未完成项 |
 
 ## 核心结论（TL;DR）
 
