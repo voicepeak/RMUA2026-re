@@ -218,3 +218,5 @@ stage 6 seed 123 的补样改用预定的 6.5 秒延迟（依据前次事后时�
 原点夹具对照三组现均覆盖三个 seed 各两次。各场相同固定命令序列、248 条命令、最大观测 PWM 约 0.4；事后 z 最小值无夹具为 -5.142 至 -4.802 m、细线夹具为 -0.079 至 -0.016 m、粗线夹具为 -0.016 至 0.012 m。回调数分别为 19–22、20–37、43–49；粗线单独事件样本的 vptr 对应 `DroneHitEvent`。每个夹具场恰有一次预设变换写入，对照没有；这些差异与夹具阻碍运动并触发命中相符，但事件未携带已解码的对方组件，持续强制 state 及 GDB 暂停改变行为，不能把全部回调精确归因于夹具或宣布自然赛程碰撞通道验证。`experiments/line_fixture_comparison_20261105.json`、`scripts/analyze_fixture_comparison.py` 和三组原始流可复算；位置真值仅事后使用。
 
 车辆随机桶在 stage 4 重定向六场中逐场采集：seed 123/456/2026 分别为 2/7/0，重复一致；从更新后随机流状态重建的桶和 `<6` 分支均匹配。样本不证明理想 `6/11` 概率或自然赛程中的相同随机流位置；见 `experiments/vehicle_branch_4_20261105/` 和 `scripts/analyze_vehicle_branch.py`。
+
+reset 与不同随机流的直接对照首场：seed 123 的 ROS reset 返回 false，reset helper 入口的 FRandomStream current 从 2071961785，至随后游戏 reset 入口为 123；前后各 373 个粗/细组件提交变换的多重集合字节一致，而风关键帧数组不同。该现象与两类随机流重置方式不同相符，但不能证明 libc 状态变化的具体原因，或已成功重置物理场景。第三次风 dump 是断点遗留导致的第二数组重复输出。见 `experiments/reset_instances_pilot_20261105/reset_analysis.json`、`scripts/analyze_reset_instances.py`；三 seed 两次正在采集。

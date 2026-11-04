@@ -150,3 +150,5 @@ stage 6 seed 123 调整预设命令延迟后，两场均获得非零 PWM 与动�
 粗/细线固定原点夹具及无夹具三组均已覆盖三 seed 两次，固定动作下事后 z 范围与回调计数差异见 `experiments/line_fixture_comparison_20261105.json`；事件对方组件仍未解码，不能声称自然赛程碰撞已验收。
 
 stage 4 车辆入口的三 seed 各两次开发重定向场中，观察更新后的 FRandomStream 状态分别为 997704449、2925953427、276274103；按 `(float32(bits(state>>9 | 0x3f800000))-1)*11` 截断得到桶 2、7、0，与入口前比较值逐场一致。桶 `<6` 走直接分支，理想均匀假设下为 `6/11`，但六个样本不能实证总体概率。seed 456 的桶 7 与其直接调用返回前未进入 `0x2fc93c0` 的观测一致，不解释后续路径两次不同的全部原因。见 `experiments/vehicle_branch_4_20261105/branch_analysis.json`。
+
+seed 123 一次 false reset 的直接对照中，线障组件提交变换前后相同、风数组不同，FRandomStream 在游戏 reset 入口恢复到 seed；该结果不证明完整场景 reset 成功。见 docs/17。
