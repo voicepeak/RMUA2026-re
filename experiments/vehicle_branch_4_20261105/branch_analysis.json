@@ -1,0 +1,56 @@
+{
+  "seed123_repeat1": [
+    {
+      "state": 997704449,
+      "bucket": 2,
+      "direct": true,
+      "reconstructed_bucket": 2,
+      "matches": true
+    }
+  ],
+  "seed123_repeat2": [
+    {
+      "state": 997704449,
+      "bucket": 2,
+      "direct": true,
+      "reconstructed_bucket": 2,
+      "matches": true
+    }
+  ],
+  "seed456_repeat1": [
+    {
+      "state": 2925953427,
+      "bucket": 7,
+      "direct": false,
+      "reconstructed_bucket": 7,
+      "matches": true
+    }
+  ],
+  "seed456_repeat2": [
+    {
+      "state": 2925953427,
+      "bucket": 7,
+      "direct": false,
+      "reconstructed_bucket": 7,
+      "matches": true
+    }
+  ],
+  "seed2026_repeat1": [
+    {
+      "state": 276274103,
+      "bucket": 0,
+      "direct": true,
+      "reconstructed_bucket": 0,
+      "matches": true
+    }
+  ],
+  "seed2026_repeat2": [
+    {
+      "state": 276274103,
+      "bucket": 0,
+      "direct": true,
+      "reconstructed_bucket": 0,
+      "matches": true
+    }
+  ]
+}
