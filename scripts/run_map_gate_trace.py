@@ -120,7 +120,7 @@ def main():
             logs=(run/'gdb.log').read_text(errors='replace')
             loaded=re.findall(r'LogLoad: LoadMap: ([^\s]+)',logs)
             entry['observed_maps']=loaded
-            if a.map_url not in loaded:
+            if entry['status']=='observed' and (not loaded or loaded[-1].split('?',1)[0]!=a.map_url):
                 entry['status']='requested_map_not_observed'
             docker('rm','-f',name,stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL)
             entry['end_wall']=time.time();save()
