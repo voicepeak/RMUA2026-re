@@ -67,3 +67,5 @@
 注入式室外探针已能在 NullRHI 初始路线设置时触发 stage 4 生成，见 `experiments/stage_inject_pilot_20261104/` 和 `scripts/run_stage_injection.py`。场景被调试器改变，且无人机仍在起点；生成器数组可供校准，不能据此宣称官方赛程或传感器在室外等价。
 
 stage 4 注入风关键帧在每个 seed 的两场逐字一致；该场中许多 SpawnActor 碰撞失败，训练障碍生成器不能用入口调用次数代替实际成功实例数。具体样本和限制见 docs/17。
+
+stage 5 注入风序列的三 seed 重复数据与脚本见 `experiments/stage_inject_5_20261104/`；线障入口尝试次数并不能替代真实障碍实例、运动和碰撞采样。
