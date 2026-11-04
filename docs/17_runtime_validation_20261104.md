@@ -170,3 +170,7 @@ stage 6 固定开环 PWM 六场均发送 248 条命令并记录 800–802 条实
 持续逐 tick 强制状态的 stage 4、5 现各覆盖三个 seed 两次、每场约 25 秒。每场约 1230 条风向量、四舍五入至 `1e-6` 后有 83 个不同二维向量；按上述近似钟域模型重建，stage 4 的二维 RMSE 约 0.0074–0.0400，stage 5 约 0.0206–0.1493。所有样本有调试器暂停和未经校准的 header/墙钟偏差；这不是自然赛程、稳态精度或时延认证。原始风、PWM、IMU/GPS、LiDAR 时钟、逐 tick 状态和比较结果见 `experiments/wind_persistent_4_20261105/`、`experiments/wind_persistent_5_20261105/`。
 
 stage 4 的线障内层候选偏移已覆盖三 seed 各两次，每场 198 次；三组的同 seed 状态/基准/偏移序列一致。按捕获状态重建偏移的最大误差不超过 `5e-6` cm（日志小数输出精度），采样偏移绝对值总体约 15.032–84.895 m。详见 `experiments/line_offsets_4_20261105/offset_analysis.json`；它们不是 spawn 成功位置。
+
+stage 6 持续状态注入的三个 seed 各两次完成：每场约 1233–1235 条风矢量，近似墙钟对齐下与关键帧模型的二维 RMSE 约 0.0312–0.3733，最大单样本误差约 0.204–1.750；仍包含调试暂停与未标定钟域误差。见 `experiments/wind_persistent_6_20261105/`。
+
+stage 5 线障候选偏移三 seed 各两次均为 628 个调用，同 seed 的状态/基准/偏移序列一致；样本绝对偏移约 15.051–84.992 m，基于捕获状态的 float32 重建最大文本误差约 `5e-6` cm。见 `experiments/line_offsets_5_20261105/offset_analysis.json`，不能当作实际障碍间距。

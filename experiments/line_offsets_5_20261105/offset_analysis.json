@@ -1,0 +1,158 @@
+{
+  "seed123_repeat1": {
+    "samples": 628,
+    "observed_sequence_sha256": "9519da2a97ccb59108a52e3b17310b49933e8f6727bbefc9a6560a1f3b7217bb",
+    "offset_abs_minmax_cm": [
+      1511.58984,
+      8491.19531
+    ],
+    "base_values_cm": [
+      100.0,
+      4831.64844,
+      10100.0,
+      14831.6484,
+      20100.0,
+      24831.6484,
+      30100.0,
+      34831.6484,
+      40100.0,
+      44831.6484,
+      50100.0,
+      54831.6484,
+      60100.0,
+      64831.6484
+    ],
+    "max_reconstruction_error_cm": 4.999999873689376e-06,
+    "limitation": "Candidate distance offsets at one internal call site, not final successful line positions or inter-obstacle spacing."
+  },
+  "seed123_repeat2": {
+    "samples": 628,
+    "observed_sequence_sha256": "9519da2a97ccb59108a52e3b17310b49933e8f6727bbefc9a6560a1f3b7217bb",
+    "offset_abs_minmax_cm": [
+      1511.58984,
+      8491.19531
+    ],
+    "base_values_cm": [
+      100.0,
+      4831.64844,
+      10100.0,
+      14831.6484,
+      20100.0,
+      24831.6484,
+      30100.0,
+      34831.6484,
+      40100.0,
+      44831.6484,
+      50100.0,
+      54831.6484,
+      60100.0,
+      64831.6484
+    ],
+    "max_reconstruction_error_cm": 4.999999873689376e-06,
+    "limitation": "Candidate distance offsets at one internal call site, not final successful line positions or inter-obstacle spacing."
+  },
+  "seed456_repeat1": {
+    "samples": 628,
+    "observed_sequence_sha256": "5102249aa354b815e35d756cdbe806f86691106aedc7b5f412fa63fb9e2f542b",
+    "offset_abs_minmax_cm": [
+      1505.11865,
+      8499.16992
+    ],
+    "base_values_cm": [
+      100.0,
+      4831.64844,
+      10100.0,
+      14831.6484,
+      20100.0,
+      24831.6484,
+      30100.0,
+      34831.6484,
+      40100.0,
+      44831.6484,
+      50100.0,
+      54831.6484,
+      60100.0,
+      64831.6484
+    ],
+    "max_reconstruction_error_cm": 5.000000101063051e-06,
+    "limitation": "Candidate distance offsets at one internal call site, not final successful line positions or inter-obstacle spacing."
+  },
+  "seed456_repeat2": {
+    "samples": 628,
+    "observed_sequence_sha256": "5102249aa354b815e35d756cdbe806f86691106aedc7b5f412fa63fb9e2f542b",
+    "offset_abs_minmax_cm": [
+      1505.11865,
+      8499.16992
+    ],
+    "base_values_cm": [
+      100.0,
+      4831.64844,
+      10100.0,
+      14831.6484,
+      20100.0,
+      24831.6484,
+      30100.0,
+      34831.6484,
+      40100.0,
+      44831.6484,
+      50100.0,
+      54831.6484,
+      60100.0,
+      64831.6484
+    ],
+    "max_reconstruction_error_cm": 5.000000101063051e-06,
+    "limitation": "Candidate distance offsets at one internal call site, not final successful line positions or inter-obstacle spacing."
+  },
+  "seed2026_repeat1": {
+    "samples": 628,
+    "observed_sequence_sha256": "1e318038ec4d2bdc184b0cf6daf495dbca2014635374f4f22a8d95d2d82dec55",
+    "offset_abs_minmax_cm": [
+      1507.97168,
+      8485.49805
+    ],
+    "base_values_cm": [
+      100.0,
+      4831.64844,
+      10100.0,
+      14831.6484,
+      20100.0,
+      24831.6484,
+      30100.0,
+      34831.6484,
+      40100.0,
+      44831.6484,
+      50100.0,
+      54831.6484,
+      60100.0,
+      64831.6484
+    ],
+    "max_reconstruction_error_cm": 4.999999873689376e-06,
+    "limitation": "Candidate distance offsets at one internal call site, not final successful line positions or inter-obstacle spacing."
+  },
+  "seed2026_repeat2": {
+    "samples": 628,
+    "observed_sequence_sha256": "1e318038ec4d2bdc184b0cf6daf495dbca2014635374f4f22a8d95d2d82dec55",
+    "offset_abs_minmax_cm": [
+      1507.97168,
+      8485.49805
+    ],
+    "base_values_cm": [
+      100.0,
+      4831.64844,
+      10100.0,
+      14831.6484,
+      20100.0,
+      24831.6484,
+      30100.0,
+      34831.6484,
+      40100.0,
+      44831.6484,
+      50100.0,
+      54831.6484,
+      60100.0,
+      64831.6484
+    ],
+    "max_reconstruction_error_cm": 4.999999873689376e-06,
+    "limitation": "Candidate distance offsets at one internal call site, not final successful line positions or inter-obstacle spacing."
+  }
+}
