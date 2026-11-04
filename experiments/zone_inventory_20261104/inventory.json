@@ -1,0 +1,1389 @@
+{
+  "map": "RMUA2024OL1",
+  "matching": "raw root world location to serialized actor/spline location; multiple candidates and no matches retained, FName not decoded",
+  "limitations": [
+    "identical root positions make some names ambiguous",
+    "positions alone do not establish class identity or runtime collision bounds",
+    "array70 has no side-track positions in the static input",
+    "single process"
+  ],
+  "inventory": {
+    "array30": [
+      {
+        "index": 0,
+        "object": "0x7ffe19230400",
+        "vtable": "0xcd8198",
+        "class_fname": [
+          390259,
+          0
+        ],
+        "object_fname": [
+          387258,
+          2
+        ],
+        "root_xyz_cm": [
+          706.734375,
+          -5.68359375,
+          8278.6328125
+        ],
+        "within_0_1cm": [
+          {
+            "name": "1_1",
+            "distance_cm": 0.0
+          }
+        ]
+      },
+      {
+        "index": 1,
+        "object": "0x7ffe1923bb00",
+        "vtable": "0xcd8198",
+        "class_fname": [
+          390259,
+          0
+        ],
+        "object_fname": [
+          380103,
+          2
+        ],
+        "root_xyz_cm": [
+          13282.10546875,
+          28619.36328125,
+          941.4375
+        ],
+        "within_0_1cm": [
+          {
+            "name": "2_1",
+            "distance_cm": 0.0
+          },
+          {
+            "name": "2_2",
+            "distance_cm": 0.0
+          },
+          {
+            "name": "3_1",
+            "distance_cm": 0.0
+          },
+          {
+            "name": "3_2",
+            "distance_cm": 0.0
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "object": "0x7ffe1923a900",
+        "vtable": "0xcd8198",
+        "class_fname": [
+          390259,
+          0
+        ],
+        "object_fname": [
+          419644,
+          2
+        ],
+        "root_xyz_cm": [
+          13282.10546875,
+          28619.36328125,
+          941.4375
+        ],
+        "within_0_1cm": [
+          {
+            "name": "2_1",
+            "distance_cm": 0.0
+          },
+          {
+            "name": "2_2",
+            "distance_cm": 0.0
+          },
+          {
+            "name": "3_1",
+            "distance_cm": 0.0
+          },
+          {
+            "name": "3_2",
+            "distance_cm": 0.0
+          }
+        ]
+      },
+      {
+        "index": 3,
+        "object": "0x7ffe19239700",
+        "vtable": "0xcd8198",
+        "class_fname": [
+          390259,
+          0
+        ],
+        "object_fname": [
+          380360,
+          2
+        ],
+        "root_xyz_cm": [
+          134678.4375,
+          -10331.3955078125,
+          8278.6328125
+        ],
+        "within_0_1cm": [
+          {
+            "name": "4_1",
+            "distance_cm": 0.0
+          }
+        ]
+      },
+      {
+        "index": 4,
+        "object": "0x7ffe19238500",
+        "vtable": "0xcd8198",
+        "class_fname": [
+          390259,
+          0
+        ],
+        "object_fname": [
+          384956,
+          2
+        ],
+        "root_xyz_cm": [
+          118147.8125,
+          -42291.05078125,
+          8041.71533203125
+        ],
+        "within_0_1cm": [
+          {
+            "name": "5_1",
+            "distance_cm": 0.0
+          }
+        ]
+      },
+      {
+        "index": 5,
+        "object": "0x7ffe19237300",
+        "vtable": "0xcd8198",
+        "class_fname": [
+          390259,
+          0
+        ],
+        "object_fname": [
+          378140,
+          2
+        ],
+        "root_xyz_cm": [
+          79579.359375,
+          -68812.4375,
+          16851.94921875
+        ],
+        "within_0_1cm": [
+          {
+            "name": "6_1",
+            "distance_cm": 0.0
+          }
+        ]
+      },
+      {
+        "index": 6,
+        "object": "0x7ffe1923c400",
+        "vtable": "0xcd8198",
+        "class_fname": [
+          390259,
+          0
+        ],
+        "object_fname": [
+          387258,
+          3
+        ],
+        "root_xyz_cm": [
+          1391.3828125,
+          -28377.55078125,
+          8278.6328125
+        ],
+        "within_0_1cm": [
+          {
+            "name": "1_2",
+            "distance_cm": 0.0
+          }
+        ]
+      },
+      {
+        "index": 7,
+        "object": "0x7ffe19236a00",
+        "vtable": "0xcd8198",
+        "class_fname": [
+          390259,
+          0
+        ],
+        "object_fname": [
+          378140,
+          3
+        ],
+        "root_xyz_cm": [
+          71372.953125,
+          -72546.75,
+          16851.94921875
+        ],
+        "within_0_1cm": [
+          {
+            "name": "6_2",
+            "distance_cm": 0.0
+          }
+        ]
+      },
+      {
+        "index": 8,
+        "object": "0x7ffe19237c00",
+        "vtable": "0xcd8198",
+        "class_fname": [
+          390259,
+          0
+        ],
+        "object_fname": [
+          384956,
+          3
+        ],
+        "root_xyz_cm": [
+          107240.53125,
+          -52746.671875,
+          8322.685546875
+        ],
+        "within_0_1cm": [
+          {
+            "name": "5_2",
+            "distance_cm": 0.0
+          }
+        ]
+      },
+      {
+        "index": 9,
+        "object": "0x7ffe19238e00",
+        "vtable": "0xcd8198",
+        "class_fname": [
+          390259,
+          0
+        ],
+        "object_fname": [
+          380360,
+          3
+        ],
+        "root_xyz_cm": [
+          132427.28125,
+          15237.658203125,
+          8278.6328125
+        ],
+        "within_0_1cm": [
+          {
+            "name": "4_2",
+            "distance_cm": 0.0
+          }
+        ]
+      },
+      {
+        "index": 10,
+        "object": "0x7ffe1923a000",
+        "vtable": "0xcd8198",
+        "class_fname": [
+          390259,
+          0
+        ],
+        "object_fname": [
+          419644,
+          3
+        ],
+        "root_xyz_cm": [
+          13282.10546875,
+          28619.36328125,
+          941.4375
+        ],
+        "within_0_1cm": [
+          {
+            "name": "2_1",
+            "distance_cm": 0.0
+          },
+          {
+            "name": "2_2",
+            "distance_cm": 0.0
+          },
+          {
+            "name": "3_1",
+            "distance_cm": 0.0
+          },
+          {
+            "name": "3_2",
+            "distance_cm": 0.0
+          }
+        ]
+      },
+      {
+        "index": 11,
+        "object": "0x7ffe1923b200",
+        "vtable": "0xcd8198",
+        "class_fname": [
+          390259,
+          0
+        ],
+        "object_fname": [
+          380103,
+          3
+        ],
+        "root_xyz_cm": [
+          13282.10546875,
+          28619.36328125,
+          941.4375
+        ],
+        "within_0_1cm": [
+          {
+            "name": "2_1",
+            "distance_cm": 0.0
+          },
+          {
+            "name": "2_2",
+            "distance_cm": 0.0
+          },
+          {
+            "name": "3_1",
+            "distance_cm": 0.0
+          },
+          {
+            "name": "3_2",
+            "distance_cm": 0.0
+          }
+        ]
+      }
+    ],
+    "array40": [
+      {
+        "index": 0,
+        "object": "0x7fffdcfa7600",
+        "vtable": "0xcd74d0",
+        "class_fname": [
+          400179,
+          0
+        ],
+        "object_fname": [
+          765806,
+          0
+        ],
+        "root_xyz_cm": [
+          -249.9921875,
+          0.0009765625,
+          -50.0
+        ],
+        "within_0_1cm": [
+          {
+            "name": "1_1_Port",
+            "distance_cm": 0.0
+          }
+        ]
+      },
+      {
+        "index": 1,
+        "object": "0x7fffdcfa7000",
+        "vtable": "0xcd74d0",
+        "class_fname": [
+          400179,
+          0
+        ],
+        "object_fname": [
+          765906,
+          0
+        ],
+        "root_xyz_cm": [
+          14103.421875,
+          28683.0390625,
+          789.783203125
+        ],
+        "within_0_1cm": [
+          {
+            "name": "2_1_Port",
+            "distance_cm": 0.0
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "object": "0x7fffdcfa6a00",
+        "vtable": "0xcd74d0",
+        "class_fname": [
+          400179,
+          0
+        ],
+        "object_fname": [
+          766006,
+          0
+        ],
+        "root_xyz_cm": [
+          54556.0,
+          51985.48046875,
+          3021.28564453125
+        ],
+        "within_0_1cm": [
+          {
+            "name": "3_1_Port",
+            "distance_cm": 0.0
+          }
+        ]
+      },
+      {
+        "index": 3,
+        "object": "0x7fffdcfa5800",
+        "vtable": "0xcd74d0",
+        "class_fname": [
+          400179,
+          0
+        ],
+        "object_fname": [
+          766106,
+          0
+        ],
+        "root_xyz_cm": [
+          135177.625,
+          -10293.8125,
+          3420.88427734375
+        ],
+        "within_0_1cm": [
+          {
+            "name": "4_1_Port",
+            "distance_cm": 0.0
+          }
+        ]
+      },
+      {
+        "index": 4,
+        "object": "0x7fffdcfa3400",
+        "vtable": "0xcd74d0",
+        "class_fname": [
+          400179,
+          0
+        ],
+        "object_fname": [
+          766206,
+          0
+        ],
+        "root_xyz_cm": [
+          117809.015625,
+          -42388.46484375,
+          10422.7734375
+        ],
+        "within_0_1cm": [
+          {
+            "name": "5_1_Port",
+            "distance_cm": 0.0
+          }
+        ]
+      },
+      {
+        "index": 5,
+        "object": "0x7fffdcfafa00",
+        "vtable": "0xcd74d0",
+        "class_fname": [
+          400179,
+          0
+        ],
+        "object_fname": [
+          766306,
+          0
+        ],
+        "root_xyz_cm": [
+          78551.328125,
+          -67674.4375,
+          274.70458984375
+        ],
+        "within_0_1cm": [
+          {
+            "name": "6_1_Port",
+            "distance_cm": 0.0
+          }
+        ]
+      },
+      {
+        "index": 6,
+        "object": "0x7fffdcfa7300",
+        "vtable": "0xcd74d0",
+        "class_fname": [
+          400179,
+          0
+        ],
+        "object_fname": [
+          765856,
+          0
+        ],
+        "root_xyz_cm": [
+          -36.953125,
+          -28827.708984375,
+          348.5751953125
+        ],
+        "within_0_1cm": [
+          {
+            "name": "1_2_Port",
+            "distance_cm": 0.0
+          }
+        ]
+      },
+      {
+        "index": 7,
+        "object": "0x7fffdcfaf700",
+        "vtable": "0xcd74d0",
+        "class_fname": [
+          400179,
+          0
+        ],
+        "object_fname": [
+          766356,
+          0
+        ],
+        "root_xyz_cm": [
+          71288.5234375,
+          -73059.4453125,
+          1468.92236328125
+        ],
+        "within_0_1cm": [
+          {
+            "name": "6_2_Port",
+            "distance_cm": 0.0
+          }
+        ]
+      },
+      {
+        "index": 8,
+        "object": "0x7fffdcfafd00",
+        "vtable": "0xcd74d0",
+        "class_fname": [
+          400179,
+          0
+        ],
+        "object_fname": [
+          766256,
+          0
+        ],
+        "root_xyz_cm": [
+          103327.109375,
+          -48587.921875,
+          8420.8046875
+        ],
+        "within_0_1cm": [
+          {
+            "name": "5_2_Port",
+            "distance_cm": 0.0
+          }
+        ]
+      },
+      {
+        "index": 9,
+        "object": "0x7fffdcfa6100",
+        "vtable": "0xcd74d0",
+        "class_fname": [
+          400179,
+          0
+        ],
+        "object_fname": [
+          766156,
+          0
+        ],
+        "root_xyz_cm": [
+          133010.625,
+          15461.44921875,
+          3513.44970703125
+        ],
+        "within_0_1cm": [
+          {
+            "name": "4_2_Port",
+            "distance_cm": 0.0
+          }
+        ]
+      },
+      {
+        "index": 10,
+        "object": "0x7fffdcfa6400",
+        "vtable": "0xcd74d0",
+        "class_fname": [
+          400179,
+          0
+        ],
+        "object_fname": [
+          766056,
+          0
+        ],
+        "root_xyz_cm": [
+          67865.5,
+          54070.76171875,
+          4751.70166015625
+        ],
+        "within_0_1cm": [
+          {
+            "name": "3_2_Port",
+            "distance_cm": 0.0
+          }
+        ]
+      },
+      {
+        "index": 11,
+        "object": "0x7fffdcfa6d00",
+        "vtable": "0xcd74d0",
+        "class_fname": [
+          400179,
+          0
+        ],
+        "object_fname": [
+          765956,
+          0
+        ],
+        "root_xyz_cm": [
+          26390.73046875,
+          39976.50390625,
+          -20.10400390625
+        ],
+        "within_0_1cm": [
+          {
+            "name": "2_2_Port",
+            "distance_cm": 0.0
+          }
+        ]
+      }
+    ],
+    "array60": [
+      {
+        "index": 0,
+        "object": "0x7fffe57eec50",
+        "vtable": "0xcd61e0",
+        "class_fname": [
+          378949,
+          0
+        ],
+        "object_fname": [
+          765772,
+          0
+        ],
+        "root_xyz_cm": [
+          50034.19921875,
+          -17674.208984375,
+          9422.673828125
+        ],
+        "within_0_1cm": [
+          {
+            "name": "1_1_Factory",
+            "distance_cm": 0.0
+          }
+        ]
+      },
+      {
+        "index": 1,
+        "object": "0x7fffe57edc90",
+        "vtable": "0xcd61e0",
+        "class_fname": [
+          378949,
+          0
+        ],
+        "object_fname": [
+          765872,
+          0
+        ],
+        "root_xyz_cm": [
+          52920.640625,
+          -1881.3447265625,
+          6824.14208984375
+        ],
+        "within_0_1cm": [
+          {
+            "name": "2_1_Factory",
+            "distance_cm": 0.0
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "object": "0x7fffe57ed4b0",
+        "vtable": "0xcd61e0",
+        "class_fname": [
+          378949,
+          0
+        ],
+        "object_fname": [
+          765972,
+          0
+        ],
+        "root_xyz_cm": [
+          64926.5,
+          6009.064453125,
+          8528.49609375
+        ],
+        "within_0_1cm": [
+          {
+            "name": "3_1_Factory",
+            "distance_cm": 0.0
+          }
+        ]
+      },
+      {
+        "index": 3,
+        "object": "0x7fffe57ead50",
+        "vtable": "0xcd61e0",
+        "class_fname": [
+          378949,
+          0
+        ],
+        "object_fname": [
+          766072,
+          0
+        ],
+        "root_xyz_cm": [
+          82773.265625,
+          1502.2626953125,
+          9255.138671875
+        ],
+        "within_0_1cm": [
+          {
+            "name": "4_1_Factory",
+            "distance_cm": 0.0
+          }
+        ]
+      },
+      {
+        "index": 4,
+        "object": "0x7fffe57ea960",
+        "vtable": "0xcd61e0",
+        "class_fname": [
+          378949,
+          0
+        ],
+        "object_fname": [
+          766172,
+          0
+        ],
+        "root_xyz_cm": [
+          80753.90625,
+          -23280.8671875,
+          7219.29150390625
+        ],
+        "within_0_1cm": [
+          {
+            "name": "5_1_Factory",
+            "distance_cm": 0.0
+          }
+        ]
+      },
+      {
+        "index": 5,
+        "object": "0x7fffe57ea180",
+        "vtable": "0xcd61e0",
+        "class_fname": [
+          378949,
+          0
+        ],
+        "object_fname": [
+          766272,
+          0
+        ],
+        "root_xyz_cm": [
+          58917.640625,
+          -28449.78515625,
+          8123.69482421875
+        ],
+        "within_0_1cm": [
+          {
+            "name": "6_1_Factory",
+            "distance_cm": 0.0
+          }
+        ]
+      },
+      {
+        "index": 6,
+        "object": "0x7fffe57ed8a0",
+        "vtable": "0xcd61e0",
+        "class_fname": [
+          378949,
+          0
+        ],
+        "object_fname": [
+          765822,
+          0
+        ],
+        "root_xyz_cm": [
+          50034.16796875,
+          -17674.123046875,
+          11826.298828125
+        ],
+        "within_0_1cm": [
+          {
+            "name": "1_2_Factory",
+            "distance_cm": 0.0
+          }
+        ]
+      },
+      {
+        "index": 7,
+        "object": "0x7fffe57e9d90",
+        "vtable": "0xcd61e0",
+        "class_fname": [
+          378949,
+          0
+        ],
+        "object_fname": [
+          766322,
+          0
+        ],
+        "root_xyz_cm": [
+          58917.55078125,
+          -28449.763671875,
+          10527.3203125
+        ],
+        "within_0_1cm": [
+          {
+            "name": "6_2_Factory",
+            "distance_cm": 0.0
+          }
+        ]
+      },
+      {
+        "index": 8,
+        "object": "0x7fffe57ea570",
+        "vtable": "0xcd61e0",
+        "class_fname": [
+          378949,
+          0
+        ],
+        "object_fname": [
+          766222,
+          0
+        ],
+        "root_xyz_cm": [
+          80753.96875,
+          -23280.798828125,
+          9622.91015625
+        ],
+        "within_0_1cm": [
+          {
+            "name": "5_2_Factory",
+            "distance_cm": 0.0
+          }
+        ]
+      },
+      {
+        "index": 9,
+        "object": "0x7fffe57ef040",
+        "vtable": "0xcd61e0",
+        "class_fname": [
+          378949,
+          0
+        ],
+        "object_fname": [
+          766122,
+          0
+        ],
+        "root_xyz_cm": [
+          82773.3046875,
+          1502.1845703125,
+          11658.759765625
+        ],
+        "within_0_1cm": [
+          {
+            "name": "4_2_Factory",
+            "distance_cm": 0.0
+          }
+        ]
+      },
+      {
+        "index": 10,
+        "object": "0x7fffe57eb920",
+        "vtable": "0xcd61e0",
+        "class_fname": [
+          378949,
+          0
+        ],
+        "object_fname": [
+          766022,
+          0
+        ],
+        "root_xyz_cm": [
+          64926.58203125,
+          6009.0927734375,
+          10932.111328125
+        ],
+        "within_0_1cm": [
+          {
+            "name": "3_2_Factory",
+            "distance_cm": 0.0
+          }
+        ]
+      },
+      {
+        "index": 11,
+        "object": "0x7fffe57ed0c0",
+        "vtable": "0xcd61e0",
+        "class_fname": [
+          378949,
+          0
+        ],
+        "object_fname": [
+          765922,
+          0
+        ],
+        "root_xyz_cm": [
+          52920.6875,
+          -1881.2705078125,
+          9227.759765625
+        ],
+        "within_0_1cm": [
+          {
+            "name": "2_2_Factory",
+            "distance_cm": 0.0
+          }
+        ]
+      }
+    ],
+    "array70": [
+      {
+        "index": 0,
+        "object": "0x7ffe19230100",
+        "vtable": "0xcd8198",
+        "class_fname": [
+          390259,
+          0
+        ],
+        "object_fname": [
+          765784,
+          0
+        ],
+        "root_xyz_cm": [
+          40469.58984375,
+          -14906.634765625,
+          7607.88720703125
+        ],
+        "within_0_1cm": []
+      },
+      {
+        "index": 1,
+        "object": "0x7ffe1923c700",
+        "vtable": "0xcd8198",
+        "class_fname": [
+          390259,
+          0
+        ],
+        "object_fname": [
+          765795,
+          0
+        ],
+        "root_xyz_cm": [
+          52684.48828125,
+          -16955.78125,
+          10717.595703125
+        ],
+        "within_0_1cm": []
+      },
+      {
+        "index": 2,
+        "object": "0x7ffe1923b800",
+        "vtable": "0xcd8198",
+        "class_fname": [
+          390259,
+          0
+        ],
+        "object_fname": [
+          765884,
+          0
+        ],
+        "root_xyz_cm": [
+          51282.078125,
+          11941.875,
+          6771.67431640625
+        ],
+        "within_0_1cm": []
+      },
+      {
+        "index": 3,
+        "object": "0x7ffe1923b500",
+        "vtable": "0xcd8198",
+        "class_fname": [
+          390259,
+          0
+        ],
+        "object_fname": [
+          765895,
+          0
+        ],
+        "root_xyz_cm": [
+          55105.7890625,
+          -3429.7529296875,
+          7870.74853515625
+        ],
+        "within_0_1cm": []
+      },
+      {
+        "index": 4,
+        "object": "0x7ffe1923a600",
+        "vtable": "0xcd8198",
+        "class_fname": [
+          390259,
+          0
+        ],
+        "object_fname": [
+          765984,
+          0
+        ],
+        "root_xyz_cm": [
+          64083.94921875,
+          8702.0859375,
+          9575.099609375
+        ],
+        "within_0_1cm": []
+      },
+      {
+        "index": 5,
+        "object": "0x7ffe1923a300",
+        "vtable": "0xcd8198",
+        "class_fname": [
+          390259,
+          0
+        ],
+        "object_fname": [
+          765995,
+          0
+        ],
+        "root_xyz_cm": [
+          65674.4765625,
+          2969.353515625,
+          9821.724609375
+        ],
+        "within_0_1cm": []
+      },
+      {
+        "index": 6,
+        "object": "0x7ffe19239400",
+        "vtable": "0xcd8198",
+        "class_fname": [
+          390259,
+          0
+        ],
+        "object_fname": [
+          766084,
+          0
+        ],
+        "root_xyz_cm": [
+          85301.5703125,
+          2728.3701171875,
+          10301.7421875
+        ],
+        "within_0_1cm": []
+      },
+      {
+        "index": 7,
+        "object": "0x7ffe19239100",
+        "vtable": "0xcd8198",
+        "class_fname": [
+          390259,
+          0
+        ],
+        "object_fname": [
+          766095,
+          0
+        ],
+        "root_xyz_cm": [
+          80266.78125,
+          286.56494140625,
+          10301.7421875
+        ],
+        "within_0_1cm": []
+      },
+      {
+        "index": 8,
+        "object": "0x7ffe19238200",
+        "vtable": "0xcd8198",
+        "class_fname": [
+          390259,
+          0
+        ],
+        "object_fname": [
+          766184,
+          0
+        ],
+        "root_xyz_cm": [
+          82708.2421875,
+          -25275.177734375,
+          8549.95703125
+        ],
+        "within_0_1cm": []
+      },
+      {
+        "index": 9,
+        "object": "0x7ffe19237f00",
+        "vtable": "0xcd8198",
+        "class_fname": [
+          390259,
+          0
+        ],
+        "object_fname": [
+          766195,
+          0
+        ],
+        "root_xyz_cm": [
+          78629.25,
+          -21412.33203125,
+          8265.8984375
+        ],
+        "within_0_1cm": []
+      },
+      {
+        "index": 10,
+        "object": "0x7ffe19237000",
+        "vtable": "0xcd8198",
+        "class_fname": [
+          390259,
+          0
+        ],
+        "object_fname": [
+          766284,
+          0
+        ],
+        "root_xyz_cm": [
+          60551.35546875,
+          -33996.484375,
+          8076.13037109375
+        ],
+        "within_0_1cm": []
+      },
+      {
+        "index": 11,
+        "object": "0x7ffe19236d00",
+        "vtable": "0xcd8198",
+        "class_fname": [
+          390259,
+          0
+        ],
+        "object_fname": [
+          766295,
+          0
+        ],
+        "root_xyz_cm": [
+          64109.2265625,
+          -21715.41015625,
+          10492.681640625
+        ],
+        "within_0_1cm": []
+      },
+      {
+        "index": 12,
+        "object": "0x7ffe1923c100",
+        "vtable": "0xcd8198",
+        "class_fname": [
+          390259,
+          0
+        ],
+        "object_fname": [
+          765834,
+          0
+        ],
+        "root_xyz_cm": [
+          40469.58984375,
+          -14906.634765625,
+          10146.515625
+        ],
+        "within_0_1cm": []
+      },
+      {
+        "index": 13,
+        "object": "0x7ffe1923be00",
+        "vtable": "0xcd8198",
+        "class_fname": [
+          390259,
+          0
+        ],
+        "object_fname": [
+          765845,
+          0
+        ],
+        "root_xyz_cm": [
+          52810.74609375,
+          -16940.6484375,
+          13155.83984375
+        ],
+        "within_0_1cm": []
+      },
+      {
+        "index": 14,
+        "object": "0x7ffe19236700",
+        "vtable": "0xcd8198",
+        "class_fname": [
+          390259,
+          0
+        ],
+        "object_fname": [
+          766334,
+          0
+        ],
+        "root_xyz_cm": [
+          60551.35546875,
+          -33996.484375,
+          10492.68359375
+        ],
+        "within_0_1cm": []
+      },
+      {
+        "index": 15,
+        "object": "0x7ffe1923fd00",
+        "vtable": "0xcd8198",
+        "class_fname": [
+          390259,
+          0
+        ],
+        "object_fname": [
+          766345,
+          0
+        ],
+        "root_xyz_cm": [
+          64109.2265625,
+          -21715.41015625,
+          12951.076171875
+        ],
+        "within_0_1cm": []
+      },
+      {
+        "index": 16,
+        "object": "0x7ffe19237900",
+        "vtable": "0xcd8198",
+        "class_fname": [
+          390259,
+          0
+        ],
+        "object_fname": [
+          766234,
+          0
+        ],
+        "root_xyz_cm": [
+          82740.0546875,
+          -25234.34375,
+          10669.515625
+        ],
+        "within_0_1cm": []
+      },
+      {
+        "index": 17,
+        "object": "0x7ffe19237600",
+        "vtable": "0xcd8198",
+        "class_fname": [
+          390259,
+          0
+        ],
+        "object_fname": [
+          766245,
+          0
+        ],
+        "root_xyz_cm": [
+          78629.25,
+          -21412.33203125,
+          10671.17578125
+        ],
+        "within_0_1cm": []
+      },
+      {
+        "index": 18,
+        "object": "0x7ffe19238b00",
+        "vtable": "0xcd8198",
+        "class_fname": [
+          390259,
+          0
+        ],
+        "object_fname": [
+          766134,
+          0
+        ],
+        "root_xyz_cm": [
+          85301.5703125,
+          2728.3701171875,
+          12740.404296875
+        ],
+        "within_0_1cm": []
+      },
+      {
+        "index": 19,
+        "object": "0x7ffe19238800",
+        "vtable": "0xcd8198",
+        "class_fname": [
+          390259,
+          0
+        ],
+        "object_fname": [
+          766145,
+          0
+        ],
+        "root_xyz_cm": [
+          80266.78125,
+          286.56494140625,
+          12810.826171875
+        ],
+        "within_0_1cm": []
+      },
+      {
+        "index": 20,
+        "object": "0x7ffe19239d00",
+        "vtable": "0xcd8198",
+        "class_fname": [
+          390259,
+          0
+        ],
+        "object_fname": [
+          766034,
+          0
+        ],
+        "root_xyz_cm": [
+          64083.94921875,
+          8702.0859375,
+          12064.796875
+        ],
+        "within_0_1cm": []
+      },
+      {
+        "index": 21,
+        "object": "0x7ffe19239a00",
+        "vtable": "0xcd8198",
+        "class_fname": [
+          390259,
+          0
+        ],
+        "object_fname": [
+          766045,
+          0
+        ],
+        "root_xyz_cm": [
+          65674.4765625,
+          2969.353515625,
+          12325.9609375
+        ],
+        "within_0_1cm": []
+      },
+      {
+        "index": 22,
+        "object": "0x7ffe1923af00",
+        "vtable": "0xcd8198",
+        "class_fname": [
+          390259,
+          0
+        ],
+        "object_fname": [
+          765934,
+          0
+        ],
+        "root_xyz_cm": [
+          50525.06640625,
+          -239.83203125,
+          10564.251953125
+        ],
+        "within_0_1cm": []
+      },
+      {
+        "index": 23,
+        "object": "0x7ffe1923ac00",
+        "vtable": "0xcd8198",
+        "class_fname": [
+          390259,
+          0
+        ],
+        "object_fname": [
+          765945,
+          0
+        ],
+        "root_xyz_cm": [
+          55105.7890625,
+          -3429.7529296875,
+          10396.5
+        ],
+        "within_0_1cm": []
+      }
+    ]
+  },
+  "predicate_events": 8
+}
