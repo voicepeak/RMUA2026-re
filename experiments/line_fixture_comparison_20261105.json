@@ -1,0 +1,184 @@
+{
+  "line_fixture_control_20261105": {
+    "selector": -1,
+    "runs": {
+      "seed123_repeat1": {
+        "z_min": -4.870813369750977,
+        "z_max": 0.9715036749839783,
+        "pose_samples": 1167,
+        "command_samples": 248,
+        "max_observed_pwm": 0.4000000059604645,
+        "fixture_writes": 0,
+        "collision_callbacks": 19
+      },
+      "seed123_repeat2": {
+        "z_min": -4.8092546463012695,
+        "z_max": 0.6953470706939697,
+        "pose_samples": 1168,
+        "command_samples": 248,
+        "max_observed_pwm": 0.4000000059604645,
+        "fixture_writes": 0,
+        "collision_callbacks": 20
+      },
+      "seed456_repeat1": {
+        "z_min": -4.8021697998046875,
+        "z_max": 0.9346451163291931,
+        "pose_samples": 1167,
+        "command_samples": 248,
+        "max_observed_pwm": 0.4000000059604645,
+        "fixture_writes": 0,
+        "collision_callbacks": 22
+      },
+      "seed456_repeat2": {
+        "z_min": -5.114995956420898,
+        "z_max": 0.7731923460960388,
+        "pose_samples": 1168,
+        "command_samples": 248,
+        "max_observed_pwm": 0.4000000059604645,
+        "fixture_writes": 0,
+        "collision_callbacks": 21
+      },
+      "seed2026_repeat1": {
+        "z_min": -4.8067121505737305,
+        "z_max": 0.952995240688324,
+        "pose_samples": 1166,
+        "command_samples": 248,
+        "max_observed_pwm": 0.4000000059604645,
+        "fixture_writes": 0,
+        "collision_callbacks": 19
+      },
+      "seed2026_repeat2": {
+        "z_min": -5.142490863800049,
+        "z_max": 0.745185375213623,
+        "pose_samples": 1169,
+        "command_samples": 248,
+        "max_observed_pwm": 0.4000000059604645,
+        "fixture_writes": 0,
+        "collision_callbacks": 22
+      }
+    }
+  },
+  "line_fixture_thin_20261105": {
+    "selector": 0,
+    "runs": {
+      "seed123_repeat1": {
+        "z_min": -0.03109559789299965,
+        "z_max": 0.4617753326892853,
+        "pose_samples": 1164,
+        "command_samples": 248,
+        "max_observed_pwm": 0.4000000059604645,
+        "fixture_writes": 1,
+        "collision_callbacks": 24
+      },
+      "seed123_repeat2": {
+        "z_min": -0.01869732327759266,
+        "z_max": 0.5341403484344482,
+        "pose_samples": 1164,
+        "command_samples": 248,
+        "max_observed_pwm": 0.4000000059604645,
+        "fixture_writes": 1,
+        "collision_callbacks": 22
+      },
+      "seed456_repeat1": {
+        "z_min": -0.016205130144953728,
+        "z_max": 0.5008834600448608,
+        "pose_samples": 1169,
+        "command_samples": 248,
+        "max_observed_pwm": 0.4000000059604645,
+        "fixture_writes": 1,
+        "collision_callbacks": 37
+      },
+      "seed456_repeat2": {
+        "z_min": -0.0367109589278698,
+        "z_max": 0.4770039916038513,
+        "pose_samples": 1178,
+        "command_samples": 248,
+        "max_observed_pwm": 0.4000000059604645,
+        "fixture_writes": 1,
+        "collision_callbacks": 20
+      },
+      "seed2026_repeat1": {
+        "z_min": -0.06405724585056305,
+        "z_max": 0.3931383788585663,
+        "pose_samples": 1170,
+        "command_samples": 248,
+        "max_observed_pwm": 0.4000000059604645,
+        "fixture_writes": 1,
+        "collision_callbacks": 20
+      },
+      "seed2026_repeat2": {
+        "z_min": -0.07892785966396332,
+        "z_max": 0.44663748145103455,
+        "pose_samples": 1170,
+        "command_samples": 248,
+        "max_observed_pwm": 0.4000000059604645,
+        "fixture_writes": 1,
+        "collision_callbacks": 24
+      }
+    }
+  },
+  "line_fixture_thick_20261105": {
+    "selector": 1,
+    "runs": {
+      "seed123_repeat1": {
+        "z_min": -0.004445129539817572,
+        "z_max": 0.4668157398700714,
+        "pose_samples": 1166,
+        "command_samples": 248,
+        "max_observed_pwm": 0.4000000059604645,
+        "fixture_writes": 1,
+        "collision_callbacks": 47
+      },
+      "seed123_repeat2": {
+        "z_min": -0.011878210119903088,
+        "z_max": 0.46055254340171814,
+        "pose_samples": 1170,
+        "command_samples": 248,
+        "max_observed_pwm": 0.4000000059604645,
+        "fixture_writes": 1,
+        "collision_callbacks": 46
+      },
+      "seed456_repeat1": {
+        "z_min": 0.012070097029209137,
+        "z_max": 0.54128098487854,
+        "pose_samples": 1169,
+        "command_samples": 248,
+        "max_observed_pwm": 0.4000000059604645,
+        "fixture_writes": 1,
+        "collision_callbacks": 44
+      },
+      "seed456_repeat2": {
+        "z_min": -0.011012239381670952,
+        "z_max": 0.5192370414733887,
+        "pose_samples": 1169,
+        "command_samples": 248,
+        "max_observed_pwm": 0.4000000059604645,
+        "fixture_writes": 1,
+        "collision_callbacks": 49
+      },
+      "seed2026_repeat1": {
+        "z_min": -0.015502333641052246,
+        "z_max": 0.5599968433380127,
+        "pose_samples": 1165,
+        "command_samples": 248,
+        "max_observed_pwm": 0.4000000059604645,
+        "fixture_writes": 1,
+        "collision_callbacks": 43
+      },
+      "seed2026_repeat2": {
+        "z_min": 0.006790949963033199,
+        "z_max": 0.5496782660484314,
+        "pose_samples": 1168,
+        "command_samples": 248,
+        "max_observed_pwm": 0.4000000059604645,
+        "fixture_writes": 1,
+        "collision_callbacks": 46
+      }
+    }
+  },
+  "limitations": [
+    "Fixed fixture position is a scenario input; debug pose used only posthoc",
+    "Callback does not identify the contacted component",
+    "Repeated forced state and debugger pause change scheduling; comparison does not establish causality or collision channels"
+  ]
+}

@@ -151,3 +151,4 @@
 | 碰撞事件 vptr 对应 DroneHitEvent | `experiments/line_fixture_event_pilot_20261105/event_analysis.json`、`event_vtable_symbols.txt`；不识别接触对象 |
 | stage 6 seed 123 迟发固定 PWM 补样 | `experiments/wind_pwm_transition_6_seed123_late_20261105/overlap_analysis.json`、`scripts/pwm_transition_late_probe.py` |
 | 细线固定夹具与无夹具三 seed 两次 | `experiments/line_fixture_thin_20261105/`、`experiments/line_fixture_control_20261105/`；未确认碰撞对方 |
+| 粗/细线固定夹具三 seed 两次与对照 | `experiments/line_fixture_comparison_20261105.json`、`experiments/line_fixture_{control,thin,thick}_20261105/`、`scripts/analyze_fixture_comparison.py`；事件对方未识别 |
