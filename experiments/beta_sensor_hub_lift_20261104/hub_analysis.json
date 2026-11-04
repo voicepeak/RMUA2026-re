@@ -1,0 +1,200 @@
+{
+  "method": "approximate raw lidar transformed by latest GPS/IMU, -0.05m sensor offset, cylinder toward static spline 3 endpoint; no pose interpolation",
+  "limits": [
+    "GPS/IMU not synchronized exactly to scan; stamp offsets recorded",
+    "zero points do not prove free space",
+    "point return is not collision mesh or cause proof",
+    "no debug truth used"
+  ],
+  "scans": [
+    {
+      "file": "scan_000.npz",
+      "metadata": {
+        "cloud_stamp_ros": 1793788750.6077547,
+        "gps_stamp_ros": 1793788750.517753,
+        "imu_stamp_ros": 1793788750.5987546,
+        "wall_unix": 1793788750.866306,
+        "monotonic": 124896.511098022,
+        "frame_id": "lidar",
+        "position": [
+          560.0837536891219,
+          -115.74808514668933,
+          -133.73925890612085
+        ],
+        "orientation_xyzw": [
+          -0.011516713537275791,
+          0.06303089112043381,
+          0.20826058089733124,
+          0.9759723544120789
+        ],
+        "input_points": 1173,
+        "saved_points": 1173,
+        "point_frame": "message frame; not transformed"
+      },
+      "cloud_minus_gps_stamp_s": 0.09000182151794434,
+      "cloud_minus_imu_stamp_s": 0.009000062942504883,
+      "bands": [
+        {
+          "relative_ned_z_m": [
+            -8,
+            -6
+          ],
+          "points": 0,
+          "closest_forward_m": null
+        },
+        {
+          "relative_ned_z_m": [
+            -6,
+            -4
+          ],
+          "points": 0,
+          "closest_forward_m": null
+        },
+        {
+          "relative_ned_z_m": [
+            -4,
+            -2
+          ],
+          "points": 0,
+          "closest_forward_m": null
+        },
+        {
+          "relative_ned_z_m": [
+            -2,
+            0
+          ],
+          "points": 39,
+          "closest_forward_m": 7.558224980875362
+        },
+        {
+          "relative_ned_z_m": [
+            0,
+            2
+          ],
+          "points": 0,
+          "closest_forward_m": null
+        },
+        {
+          "relative_ned_z_m": [
+            2,
+            4
+          ],
+          "points": 0,
+          "closest_forward_m": null
+        },
+        {
+          "relative_ned_z_m": [
+            4,
+            6
+          ],
+          "points": 0,
+          "closest_forward_m": null
+        },
+        {
+          "relative_ned_z_m": [
+            6,
+            8
+          ],
+          "points": 0,
+          "closest_forward_m": null
+        }
+      ]
+    },
+    {
+      "file": "scan_001.npz",
+      "metadata": {
+        "cloud_stamp_ros": 1793788753.6768203,
+        "gps_stamp_ros": 1793788753.619819,
+        "imu_stamp_ros": 1793788753.66782,
+        "wall_unix": 1793788753.9359705,
+        "monotonic": 124899.580757244,
+        "frame_id": "lidar",
+        "position": [
+          570.0827205707768,
+          -111.24205485605415,
+          -134.8127176008905
+        ],
+        "orientation_xyzw": [
+          -0.0506247952580452,
+          0.14852002263069153,
+          0.2100493460893631,
+          0.9650172591209412
+        ],
+        "input_points": 1880,
+        "saved_points": 1880,
+        "point_frame": "message frame; not transformed"
+      },
+      "cloud_minus_gps_stamp_s": 0.057001352310180664,
+      "cloud_minus_imu_stamp_s": 0.009000301361083984,
+      "bands": [
+        {
+          "relative_ned_z_m": [
+            -8,
+            -6
+          ],
+          "points": 0,
+          "closest_forward_m": null
+        },
+        {
+          "relative_ned_z_m": [
+            -6,
+            -4
+          ],
+          "points": 0,
+          "closest_forward_m": null
+        },
+        {
+          "relative_ned_z_m": [
+            -4,
+            -2
+          ],
+          "points": 0,
+          "closest_forward_m": null
+        },
+        {
+          "relative_ned_z_m": [
+            -2,
+            0
+          ],
+          "points": 0,
+          "closest_forward_m": null
+        },
+        {
+          "relative_ned_z_m": [
+            0,
+            2
+          ],
+          "points": 0,
+          "closest_forward_m": null
+        },
+        {
+          "relative_ned_z_m": [
+            2,
+            4
+          ],
+          "points": 0,
+          "closest_forward_m": null
+        },
+        {
+          "relative_ned_z_m": [
+            4,
+            6
+          ],
+          "points": 0,
+          "closest_forward_m": null
+        },
+        {
+          "relative_ned_z_m": [
+            6,
+            8
+          ],
+          "points": 0,
+          "closest_forward_m": null
+        }
+      ]
+    }
+  ],
+  "near_hub_telemetry_samples": 0,
+  "near_hub_reasons": {},
+  "near_hub_clearance_reasons": {}
+}
