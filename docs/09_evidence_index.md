@@ -121,3 +121,4 @@
 | stage 6 单次注入后风话题 25 秒保持不变 | `experiments/wind_transition_6_20261105/` |
 | stage 6 固定 PWM 开环三 seed 两次 | `experiments/wind_pwm_step_6_20261105/pwm_analysis.json` 与原始流；短场风向量保持不变 |
 | 风关键帧至 ROS 矢量的近似重建 | `experiments/wind_persistent_pilot_20261105/wind_interpolation_analysis.json`、`scripts/analyze_persistent_wind.py`；时钟未标定 |
+| 风生成 float32 离线模型与 18 场逐字节比较 | `scripts/wind_offline_model.py`、`experiments/wind_offline_model_20261105/model_results.json`、`disassembly_excerpt.txt` |
