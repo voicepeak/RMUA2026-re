@@ -134,3 +134,6 @@
 | 三 stage/三 seed 的固定 PWM 事后位置范围 | `experiments/wind_pwm_step_{4,5,6}_20261105/motion_analysis.json`、`scripts/analyze_pwm_motion.py`；真值未用于控制 |
 | 七实例第一轮 300 秒空载存活 | `experiments/concurrency_7_long_a_20261105/results.json`、`batch00_attempt00_liveness.jsonl`；有限窗口 |
 | 七实例第二轮 300 秒存活及 60 秒订阅负载 | `experiments/concurrency_7_long_b_20261105/results.json`、`measurement.json` 和逐秒 liveness；一个 IMU header 重复 |
+| 粗/细线组件映射与实例首场 | `experiments/line_instances_pilot_20261105/component_constructor.disasm`、`component_selector.disasm`、`instances_analysis.json`、原始变换日志 |
+| 原始 LiDAR 帧及布局首场 | `experiments/lidar_snapshot_pilot_20261105/`、`scripts/lidar_snapshot_probe.py` |
+| 动态风与固定 PWM 的时间重叠首场 | `experiments/wind_pwm_transition_pilot_20261105/overlap_analysis.json`、`scripts/analyze_wind_pwm_overlap.py`；非因果/延迟证明 |

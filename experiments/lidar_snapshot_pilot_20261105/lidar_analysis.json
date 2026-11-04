@@ -1,0 +1,25 @@
+{
+  "seed123_repeat1": {
+    "payload_bytes": 190584,
+    "sha256_matches": true,
+    "declared_points": 15882,
+    "finite_points": 15882,
+    "invalid_points": 0,
+    "bounds": {
+      "x": [
+        -27.27096939086914,
+        28.26112174987793
+      ],
+      "y": [
+        -17.692214965820312,
+        12.812213897705078
+      ],
+      "z": [
+        -19.141889572143555,
+        0.9388327598571777
+      ]
+    },
+    "frame_id": "lidar",
+    "note": "One snapshot at the initial vehicle location, not a dynamic obstacle visibility or geometry equivalence test."
+  }
+}

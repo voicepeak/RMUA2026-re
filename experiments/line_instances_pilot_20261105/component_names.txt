@@ -1,0 +1,2 @@
+file_offset=0x608ac4 mapped_address=0x808ac4 utf16=HISM_ThickLine
+file_offset=0x620f1c mapped_address=0x820f1c utf16=HISM_ThinLine

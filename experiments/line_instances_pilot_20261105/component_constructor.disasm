@@ -1,0 +1,71 @@
+
+/home/tianbot/RUMA-by-helinjun/main/simulator/simulator_12.0.0.5/Build/LinuxNoEditor/RMUA/Binaries/Linux/RMUA-Linux-Shipping：     文件格式 elf64-x86-64
+
+
+Disassembly of section .text:
+
+0000000002fb4528 <SampleVectorField@@Base+0x263ab8>:
+ 2fb4528:	48 8d 7c 24 70       	lea    0x70(%rsp),%rdi
+ 2fb452d:	be c4 8a 80 00       	mov    $0x808ac4,%esi
+ 2fb4532:	ba 01 00 00 00       	mov    $0x1,%edx
+ 2fb4537:	e8 c4 17 22 00       	call   31d5d00 <LZ4_saveDictHC@@Base+0x1db770>
+ 2fb453c:	48 8b 5c 24 70       	mov    0x70(%rsp),%rbx
+ 2fb4541:	e8 ca 26 ab 02       	call   5a66c10 <src_float_to_int_array@@Base+0xc0ad10>
+ 2fb4546:	4c 89 ef             	mov    %r13,%rdi
+ 2fb4549:	48 89 de             	mov    %rbx,%rsi
+ 2fb454c:	48 89 c2             	mov    %rax,%rdx
+ 2fb454f:	48 89 c1             	mov    %rax,%rcx
+ 2fb4552:	41 b8 01 00 00 00    	mov    $0x1,%r8d
+ 2fb4558:	45 31 c9             	xor    %r9d,%r9d
+ 2fb455b:	e8 40 13 38 00       	call   33358a0 <LZ4_saveDictHC@@Base+0x33b310>
+ 2fb4560:	48 89 c3             	mov    %rax,%rbx
+ 2fb4563:	49 89 85 40 02 00 00 	mov    %rax,0x240(%r13)
+ 2fb456a:	49 89 85 30 01 00 00 	mov    %rax,0x130(%r13)
+ 2fb4571:	48 8d 7c 24 68       	lea    0x68(%rsp),%rdi
+ 2fb4576:	be 72 56 72 00       	mov    $0x725672,%esi
+ 2fb457b:	ba 01 00 00 00       	mov    $0x1,%edx
+ 2fb4580:	e8 7b 17 22 00       	call   31d5d00 <LZ4_saveDictHC@@Base+0x1db770>
+ 2fb4585:	48 8b 74 24 68       	mov    0x68(%rsp),%rsi
+ 2fb458a:	48 8b 03             	mov    (%rbx),%rax
+ 2fb458d:	48 89 df             	mov    %rbx,%rdi
+ 2fb4590:	ba 01 00 00 00       	mov    $0x1,%edx
+ 2fb4595:	ff 90 68 06 00 00    	call   *0x668(%rax)
+ 2fb459b:	49 8b bd 40 02 00 00 	mov    0x240(%r13),%rdi
+ 2fb45a2:	48 8b 07             	mov    (%rdi),%rax
+ 2fb45a5:	be 03 00 00 00       	mov    $0x3,%esi
+ 2fb45aa:	ff 90 60 06 00 00    	call   *0x660(%rax)
+ 2fb45b0:	49 8b bd 40 02 00 00 	mov    0x240(%r13),%rdi
+ 2fb45b7:	48 8b 07             	mov    (%rdi),%rax
+ 2fb45ba:	31 f6                	xor    %esi,%esi
+ 2fb45bc:	ff 90 70 06 00 00    	call   *0x670(%rax)
+ 2fb45c2:	49 8b bd 40 02 00 00 	mov    0x240(%r13),%rdi
+ 2fb45c9:	48 8b 07             	mov    (%rdi),%rax
+ 2fb45cc:	31 f6                	xor    %esi,%esi
+ 2fb45ce:	ff 90 50 08 00 00    	call   *0x850(%rax)
+ 2fb45d4:	49 8b bd 40 02 00 00 	mov    0x240(%r13),%rdi
+ 2fb45db:	48 8b 07             	mov    (%rdi),%rax
+ 2fb45de:	be 02 00 00 00       	mov    $0x2,%esi
+ 2fb45e3:	ba 02 00 00 00       	mov    $0x2,%edx
+ 2fb45e8:	ff 90 48 08 00 00    	call   *0x848(%rax)
+ 2fb45ee:	49 8b bd 40 02 00 00 	mov    0x240(%r13),%rdi
+ 2fb45f5:	48 8b 07             	mov    (%rdi),%rax
+ 2fb45f8:	be 03 00 00 00       	mov    $0x3,%esi
+ 2fb45fd:	ba 02 00 00 00       	mov    $0x2,%edx
+ 2fb4602:	ff 90 48 08 00 00    	call   *0x848(%rax)
+ 2fb4608:	49 8b 85 40 02 00 00 	mov    0x240(%r13),%rax
+ 2fb460f:	c7 80 08 05 00 00 50 	movl   $0xc350,0x508(%rax)
+ 2fb4616:	c3 00 00 
+ 2fb4619:	48 8d 7c 24 60       	lea    0x60(%rsp),%rdi
+ 2fb461e:	be 1c 0f 82 00       	mov    $0x820f1c,%esi
+ 2fb4623:	ba 01 00 00 00       	mov    $0x1,%edx
+ 2fb4628:	e8 d3 16 22 00       	call   31d5d00 <LZ4_saveDictHC@@Base+0x1db770>
+ 2fb462d:	48 8b 5c 24 60       	mov    0x60(%rsp),%rbx
+ 2fb4632:	e8 d9 25 ab 02       	call   5a66c10 <src_float_to_int_array@@Base+0xc0ad10>
+ 2fb4637:	4c 89 ef             	mov    %r13,%rdi
+ 2fb463a:	48 89 de             	mov    %rbx,%rsi
+ 2fb463d:	48 89 c2             	mov    %rax,%rdx
+ 2fb4640:	48 89 c1             	mov    %rax,%rcx
+ 2fb4643:	41 b8 01 00 00 00    	mov    $0x1,%r8d
+ 2fb4649:	45 31 c9             	xor    %r9d,%r9d
+ 2fb464c:	e8 4f 12 38 00       	call   33358a0 <LZ4_saveDictHC@@Base+0x33b310>
+ 2fb4651:	49 89 85 48 02 00 00 	mov    %rax,0x248(%r13)

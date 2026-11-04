@@ -1,0 +1,21 @@
+{
+  "seed123_repeat1": {
+    "call_count": 373,
+    "selector_counts": {
+      "1": 272,
+      "0": 101
+    },
+    "asset_component_counts": {
+      "HISM_ThickLine": 272,
+      "HISM_ThinLine": 101
+    },
+    "return_count": 373,
+    "return_minmax": [
+      0,
+      271
+    ],
+    "negative_returns": 0,
+    "transform_multiset_sha256": "b43fad1829e1e37e3ec3e7495e65ac9e57c8df0824ca79e8d81fc173fa39ac76",
+    "note": "Component mapping follows native constructor and selector; call transforms and nonnegative return values do not establish collision response or successful physical contact."
+  }
+}
