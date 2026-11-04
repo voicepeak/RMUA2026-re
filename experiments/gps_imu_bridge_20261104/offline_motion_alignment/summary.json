@@ -1,0 +1,99 @@
+{
+  "inputs_sha256": {
+    "gps": "bdc57347df613f305ac0ffd9ec700aa2e5c133ec7fdd785d42d0ddce46f52d4f",
+    "imu": "009cbc76ee4c25ffb9507f284e32c9b2c8cc54624b31b67947db83d2fb0b71f3",
+    "truth": "7305744e35b283cd75b514e807e1734efbddcf167b3036182f798a48942cd6ef"
+  },
+  "method": "offline nearest truth by recorded source stamp, no interpolation; quaternion wxyz sign-invariant; truth used only after run",
+  "tolerance_s": 0.02,
+  "results": {
+    "gps": {
+      "source_count": 170,
+      "matched_count": 170,
+      "unmatched_count": 0,
+      "signed_truth_minus_sensor_s": {
+        "count": 170,
+        "mean": 8.823591120102826e-05,
+        "rmse": 0.0005144993536110374,
+        "median": 0.0,
+        "p95": 0.0,
+        "max": 0.003000020980834961
+      },
+      "error_norm": {
+        "count": 170,
+        "mean": 0.0628835147476383,
+        "rmse": 0.07276657877472519,
+        "median": 0.07097873091697693,
+        "p95": 0.10000000000000003,
+        "max": 0.10000000000000006
+      },
+      "position_axis_error_m": [
+        {
+          "count": 170,
+          "mean": 0.0015530410286709994,
+          "rmse": 0.041344929834355997,
+          "median": 0.001989360809493468,
+          "p95": 0.07140883856745106,
+          "max": 0.09945824878176429
+        },
+        {
+          "count": 170,
+          "mean": 0.0007723257253075846,
+          "rmse": 0.04463403392318616,
+          "median": 0.0007431818014679442,
+          "p95": 0.08512508434477503,
+          "max": 0.09813302211722001
+        },
+        {
+          "count": 170,
+          "mean": -0.00012227115858921196,
+          "rmse": 0.03991709883388736,
+          "median": -0.0007442022848182517,
+          "p95": 0.07264802711189666,
+          "max": 0.09720945459501429
+        }
+      ]
+    },
+    "imu": {
+      "source_count": 1698,
+      "matched_count": 1698,
+      "unmatched_count": 0,
+      "signed_truth_minus_sensor_s": {
+        "count": 1698,
+        "mean": 4.240326381544062e-05,
+        "rmse": 0.00043682903093750783,
+        "median": 0.0,
+        "p95": 0.0,
+        "max": 0.0030002593994140625
+      },
+      "error_norm": {
+        "count": 1698,
+        "mean": 6.325408974152652e-06,
+        "rmse": 8.759039581811452e-05,
+        "median": 5.960464477539063e-08,
+        "p95": 7.300048299977715e-08,
+        "max": 0.0029331293757046805
+      }
+    }
+  },
+  "truth_position_range_m": [
+    [
+      -0.49959356726112386,
+      0.4493089223322492
+    ],
+    [
+      -0.1271562401368582,
+      0.08598992349607243
+    ],
+    [
+      -0.7113970518112183,
+      0.30820754170417786
+    ]
+  ],
+  "limitations": [
+    "single seed and short closed-loop reference-step flight",
+    "source timestamp semantics and frame conventions are not independently calibrated",
+    "offline truth matching does not measure online latency or prove safe control",
+    "nearest sample mismatch and sensor noise contribute to residual"
+  ]
+}
