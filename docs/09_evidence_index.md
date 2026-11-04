@@ -154,3 +154,4 @@
 | 粗/细线固定夹具三 seed 两次与对照 | `experiments/line_fixture_comparison_20261105.json`、`experiments/line_fixture_{control,thin,thick}_20261105/`、`scripts/analyze_fixture_comparison.py`；事件对方未识别 |
 | 车辆随机桶三 seed 两次运行时重建 | `experiments/vehicle_branch_4_20261105/branch_analysis.json`、`scripts/analyze_vehicle_branch.py`、`scripts/stage_vehicle_branch.gdb` |
 | false reset 前后线障提交与风数组对照 | `experiments/reset_instances_pilot_20261105/reset_analysis.json`、`scripts/stage_reset_instances.gdb`；单 seed 首场 |
+| 固定车辆路径、世界轨迹及回调首场 | `experiments/vehicle_fixture_pilot_20261105/`、`scripts/stage_vehicle_fixture.gdb`；未证明车辆接触 |

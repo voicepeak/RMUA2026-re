@@ -1,0 +1,26 @@
+{
+  "seed123_repeat1": {
+    "samples": 1170,
+    "position_ned_m": {
+      "x": {
+        "first": -7.79395184781335e-05,
+        "last": 1.1444821323983392,
+        "min": -7.79395184781335e-05,
+        "max": 1.2967101315212106
+      },
+      "y": {
+        "first": -1.3260382631556361e-05,
+        "last": 0.10342166695064428,
+        "min": -0.05217334572800426,
+        "max": 0.1259538825322988
+      },
+      "z": {
+        "first": 0.31028327345848083,
+        "last": 0.29692503809928894,
+        "min": -5.028560161590576,
+        "max": 1.0327553749084473
+      }
+    },
+    "limitation": "Posthoc debug pose only; forced wind/state and fixed PWM sequence; no claim of open-loop identification or calibrated latency."
+  }
+}

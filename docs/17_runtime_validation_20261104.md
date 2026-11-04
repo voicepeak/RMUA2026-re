@@ -220,3 +220,5 @@ stage 6 seed 123 的补样改用预定的 6.5 秒延迟（依据前次事后时�
 车辆随机桶在 stage 4 重定向六场中逐场采集：seed 123/456/2026 分别为 2/7/0，重复一致；从更新后随机流状态重建的桶和 `<6` 分支均匹配。样本不证明理想 `6/11` 概率或自然赛程中的相同随机流位置；见 `experiments/vehicle_branch_4_20261105/` 和 `scripts/analyze_vehicle_branch.py`。
 
 reset 与不同随机流的直接对照首场：seed 123 的 ROS reset 返回 false，reset helper 入口的 FRandomStream current 从 2071961785，至随后游戏 reset 入口为 123；前后各 373 个粗/细组件提交变换的多重集合字节一致，而风关键帧数组不同。该现象与两类随机流重置方式不同相符，但不能证明 libc 状态变化的具体原因，或已成功重置物理场景。第三次风 dump 是断点遗留导致的第二数组重复输出。见 `experiments/reset_instances_pilot_20261105/reset_analysis.json`、`scripts/analyze_reset_instances.py`；三 seed 两次正在采集。
+
+车辆固定路径夹具首场将强制初始化的五点路线改为预设世界坐标 x `[-5000,-2500,0,2500,5000]` cm、y=z=0，速度字段 667；输入不依赖调试真值。seed 123 记录到车辆组件世界 x 从约 -4999.94 到 3955.20 cm，期间有无人机碰撞回调，同时固定 PWM 飞行的事后 z 范围约 -5.03 至 1.03 m。回调对方未识别，且无人机和车辆未做同步碰撞体配准，不能将这些回调归因于车辆接触；见 `experiments/vehicle_fixture_pilot_20261105/`。正在追加无人机空载与车辆原路线对照。
