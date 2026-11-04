@@ -1,0 +1,22 @@
+/airsim_node
+/rmua_gps_imu_pose_bridge_541_1793787696528
+/rosout
+/route_follower
+/stage_wind_recorder_540_1793787696515
+Type: geometry_msgs/PoseStamped
+
+Publishers: 
+ * /rmua_gps_imu_pose_bridge_541_1793787696528 (http://localhost:41849/)
+
+Subscribers: 
+ * /route_follower (http://localhost:35493/)
+
+
+Type: geometry_msgs/PoseStamped
+
+Publishers: 
+ * /airsim_node (http://localhost:42811/)
+
+Subscribers: None
+
+

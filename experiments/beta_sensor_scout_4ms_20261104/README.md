@@ -1,0 +1,3 @@
+# 4 m/s bounded beta VEL sensor-navigation probe
+
+The same static-spline, GPS/IMU bridge, LiDAR backend and state monitor were run at speed cap 4 m/s for 60 wall-clock seconds, seed 123. This run additionally explicitly enabled LiDAR publication-time freshness checking. ROS graph snapshot shows the route controller consuming only the diagnostic pose, with no subscriber on debug pose_gt. The process exited on its timeout (124), GPS last position ≈[209.69,-0.20,-12.49] m; state observations were 0→1, stage 1 only. A local 60-second sample does not establish long-run stability, collision clearance in the whole course, or stage 4/5/6. The 2 m/s and failed offset comparison are documented in `../beta_sensor_scout_corrected_20261104/`.
