@@ -72,3 +72,5 @@ stage 5 三 seed 各两场的注入风关键帧也逐字重复；生成入口计
 **更正**：stage 6 浮点入参的顺序经运行时寄存器核验为 `200, 1800, 15, 4`，本页先前将最后两个数写反。三个 seed 在 ROS reset 返回 false 的注入场里，reset 前后的 stage 4 风数组均不同；这只证明这些具体场次不重放风数组，不证明 reset 成功或所有随机状态机制。
 
 车辆在开发容器内通过临时改写调用目标命中 `0x2fc8900` 并返回，见 `experiments/vehicle_redirect_pilot_20261105/`；尚未据此认定车辆实际运动。线障对象候选点数组首场见 `experiments/obstacle_inventory_pilot_20261105/`。
+
+stage 4 三 seed 各两次的内部线障间距点集合在同 seed 两场一致、跨 seed 不同；点数分别 371/373/373。它们并非已确认 spawn 实例，详见 `experiments/obstacle_inventory_4_20261105/`。

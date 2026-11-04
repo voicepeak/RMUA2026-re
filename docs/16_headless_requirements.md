@@ -73,3 +73,5 @@ stage 5 注入风序列的三 seed 重复数据与脚本见 `experiments/stage_i
 三个 seed 的一次 ROS reset 均返回 false，但 reset 路径重新触发注入后的 stage 4 生成，风数组与 reset 前不同；勿将此响应或场景当作已验证成功的 episode 重置。详见 `experiments/stage_reset_inject_retry_20261104/`。
 
 车辆注入试场已证明可在游戏线程上调用并返回生成入口，但不能替代车辆实例和运动标定。线障内部候选点数组并不等于成功 spawn 或实际碰撞体；详见 docs/17。
+
+stage 4 注入获得可重复的线障内部候选点集合，但仍需确认资产实例和实际碰撞；车辆重定向六场均返回，初始化和运动尚未观测，见 docs/17。

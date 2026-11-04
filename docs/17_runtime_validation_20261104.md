@@ -124,3 +124,7 @@ stage 6 三 seed 各两次的注入风数组同 seed 逐字一致、不同 seed 
 车辆调用后续：`experiments/vehicle_trampoline_v2_pilot_20261105/` 的返回标记在目标入口之前出现，随后 SIGSEGV；该标记无效，不能称目标函数返回。另一种试运行 `experiments/vehicle_redirect_pilot_20261105/` 在开发容器中临时将游戏线程 `0x2fbb5a9` 的现有 call 目标改为 `0x2fc8900`，提供对应路线对象和 1000 cm 浮点参数；观察到目标入口、`0x2fc93c0` 分支以及原调用位置的返回，并恢复被改写的指令字节。它替代了原函数调用、改变了随机流和场景，不能称为自然赛程；车辆对象、运动和碰撞仍待采集。官方磁盘文件没有修改。
 
 `experiments/obstacle_inventory_pilot_20261105/` 在 stage 4 注入场读出 31 个曾进入线障放置入口的对象的 `+0x250` 数组，共 371 个三浮点点位，附原始字节。静态代码使用此数组进行候选点间距检查；这些是内部记录的点，不是已证实成功 spawn 的实例或碰撞形状。正在对三个 seed 做重复采样。
+
+stage 4 线障候选数组对 seed 123/456/2026 各两次：每场均读到 31 个对象数组，点数分别 371/373/373；按原始点字节作为多重集合比较，同 seed 两场一致，不同 seed 不同。对象地址被排除，所有声明点数均成功读取；这仍是内部间距点，而非已证明 spawn 的线障数量或运动。复现和分析见 `experiments/obstacle_inventory_4_20261105/`、`scripts/analyze_obstacle_inventory.py`。
+
+同样六场车辆调用重定向均观察目标入口并返回。seed 123 和 2026 的两场中，`0x2fc93c0` 在重定向调用返回前命中；seed 456 的该入口出现在返回之后，不能归因于重定向调用。`experiments/vehicle_redirect_4_20261105/analysis.json` 按事件顺序区分。seed 123 单场增加 `0x2fbff60` 和车辆 tick 探针但未观察到车辆初始化或活动 tick；入口命中不等于生成/运动，见 `experiments/vehicle_dynamics_pilot_20261105/`。较长的六场旧跳转试验没有观测到返回，原始失败数据在 `experiments/vehicle_trampoline_long_20261105/`。

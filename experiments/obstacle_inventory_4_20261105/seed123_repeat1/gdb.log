@@ -1,0 +1,1507 @@
+Breakpoint 1 at 0x2fbac30
+Breakpoint 2 at 0x2fb23b0
+Breakpoint 3 at 0x2fc77b0
+Breakpoint 4 at 0x2fc3fc0
+Breakpoint 5 at 0x2fc4980
+Breakpoint 6 at 0x2fc8900
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/usr/lib/x86_64-linux-gnu/libthread_db.so.1".
+Looking for binary: ../../../RMUA/Config/BinaryConfig.ini
+[Detaching after vfork from child process 225]
+sh: 1: xdg-user-dir: not found
+4.27.2-0+++UE4+Release-4.27 522 0
+Disabling core dumps.
+LogConsoleResponse: Display: Failed to find resolution value strings in scalability ini. Falling back to default.
+LogConsoleResponse: Display: Failed to find resolution value strings in scalability ini. Falling back to default.
+LogPakFile: Display: Found Pak file ../../../RMUA/Content/Paks/RMUA-LinuxNoEditor.pak attempting to mount.
+LogPakFile: Display: Mounting pak file ../../../RMUA/Content/Paks/RMUA-LinuxNoEditor.pak.
+LogPakFile: PakFile PrimaryIndexSize=122598
+LogPakFile: PakFile PathHashIndexSize=60199
+LogPakFile: PakFile FullDirectoryIndexSize=94561
+LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: PakFile '../../../RMUA/Content/Paks/RMUA-LinuxNoEditor.pak' (chunk index -1, root '../../../') mounted
+LogShaderLibrary: Display: ShaderCodeLibraryPakFileMountedCallback: pending pak file info (ChunkID:-1 Root:../../../ File:../../../RMUA/Content/Paks/RMUA-LinuxNoEditor.pak)
+LogPakFile: OnPakFileMounted2Time == 0.000004
+LogPlatformFile: Using cached read wrapper
+LogTaskGraph: Started task graph with 4 named threads and 16 total threads with 3 sets of task threads.
+LogICUInternationalization: ICU TimeZone Detection - Raw Offset: +0:00, Platform Override: ''
+LogInit: Display: Loading text-based GConfig....
+LogPluginManager: Mounting plugin AirSim
+LogPluginManager: Mounting plugin PhysXVehicles
+LogPluginManager: Mounting plugin AirSimROS
+LogPluginManager: Mounting plugin Paper2D
+LogPluginManager: Mounting plugin AISupport
+LogPluginManager: Mounting plugin EnvironmentQueryEditor
+LogPluginManager: Mounting plugin LightPropagationVolume
+LogPluginManager: Mounting plugin CameraShakePreviewer
+LogPluginManager: Mounting plugin GameplayCameras
+LogPluginManager: Mounting plugin TemplateSequence
+LogPluginManager: Mounting plugin LevelSequenceEditor
+LogPluginManager: Mounting plugin OodleData
+LogPluginManager: Mounting plugin OodleNetwork
+LogPluginManager: Mounting plugin AnimationSharing
+LogPluginManager: Mounting plugin SignificanceManager
+LogPluginManager: Mounting plugin PluginUtils
+LogPluginManager: Mounting plugin PropertyAccessEditor
+LogPluginManager: Mounting plugin UObjectPlugin
+LogPluginManager: Mounting plugin AssetManagerEditor
+LogPluginManager: Mounting plugin FacialAnimation
+LogPluginManager: Mounting plugin GeometryMode
+LogPluginManager: Mounting plugin SpeedTreeImporter
+LogPluginManager: Mounting plugin DatasmithContent
+LogPluginManager: Mounting plugin VariantManagerContent
+LogPluginManager: Mounting plugin AlembicImporter
+LogPluginManager: Mounting plugin GeometryCache
+LogPluginManager: Mounting plugin AutomationUtils
+LogPluginManager: Mounting plugin ScreenshotTools
+LogPluginManager: Mounting plugin BackChannel
+LogPluginManager: Mounting plugin ChaosCloth
+LogPluginManager: Mounting plugin ChaosClothEditor
+LogPluginManager: Mounting plugin ChaosEditor
+LogPluginManager: Mounting plugin PlanarCut
+LogPluginManager: Mounting plugin GeometryProcessing
+LogPluginManager: Mounting plugin EditableMesh
+LogPluginManager: Mounting plugin GeometryCollectionPlugin
+LogPluginManager: Mounting plugin ProceduralMeshComponent
+LogPluginManager: Mounting plugin ChaosSolverPlugin
+LogPluginManager: Mounting plugin ChaosNiagara
+LogPluginManager: Mounting plugin Niagara
+LogPluginManager: Mounting plugin PythonScriptPlugin
+LogPluginManager: Mounting plugin CharacterAI
+LogPluginManager: Mounting plugin MotoSynth
+LogPluginManager: Mounting plugin PlatformCrypto
+LogPluginManager: Mounting plugin AvfMedia
+LogPluginManager: Mounting plugin ImgMedia
+LogPluginManager: Mounting plugin MediaCompositing
+LogPluginManager: Mounting plugin WmfMedia
+LogPluginManager: Mounting plugin MeshPainting
+LogPluginManager: Mounting plugin TcpMessaging
+LogPluginManager: Mounting plugin UdpMessaging
+LogPluginManager: Mounting plugin ActorSequence
+LogPluginManager: Mounting plugin MatineeToLevelSequence
+LogPluginManager: Mounting plugin OnlineSubsystem
+LogPluginManager: Mounting plugin OnlineSubsystemNull
+LogPluginManager: Mounting plugin OnlineSubsystemUtils
+LogPluginManager: Mounting plugin LauncherChunkInstaller
+LogPluginManager: Mounting plugin ActorLayerUtilities
+LogPluginManager: Mounting plugin AndroidPermission
+LogPluginManager: Mounting plugin AppleImageUtils
+LogPluginManager: Mounting plugin ArchVisCharacter
+LogPluginManager: Mounting plugin AssetTags
+LogPluginManager: Mounting plugin AudioCapture
+LogPluginManager: Mounting plugin CableComponent
+LogPluginManager: Mounting plugin ChunkDownloader
+LogPluginManager: Mounting plugin CustomMeshComponent
+LogPluginManager: Mounting plugin ExampleDeviceProfileSelector
+LogPluginManager: Mounting plugin GooglePAD
+LogPluginManager: Mounting plugin LinuxDeviceProfileSelector
+LogPluginManager: Mounting plugin LocationServicesBPLibrary
+LogPluginManager: Mounting plugin MobilePatchingUtils
+LogPluginManager: Mounting plugin RuntimePhysXCooking
+LogPluginManager: Mounting plugin SoundFields
+LogPluginManager: Mounting plugin Synthesis
+LogPluginManager: Mounting plugin AudioSynesthesia
+LogPluginManager: Mounting plugin WebMMoviePlayer
+LogPluginManager: Mounting plugin WebMMedia
+LogInit: Using libcurl 7.65.3-DEV
+LogInit:  - built for x86_64-unknown-linux-gnu
+LogInit:  - supports SSL with OpenSSL/1.1.1c
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_TLSAUTH_SRP
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - MaxHostConnections = 16  - Libcurl will limit the number of connections to a host
+LogInit:  - LocalHostAddr = Default
+LogInit:  - BufferSize = 65536
+LogOnline: OSS: Creating online subsystem instance for: NULL
+LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
+LogInit: Build: ++UE4+Release-4.27-CL-0
+LogInit: Engine Version: 4.27.2-0+++UE4+Release-4.27
+LogInit: Compatible Engine Version: 4.27.0-0+++UE4+Release-4.27
+LogInit: Net CL: 0
+LogInit: OS: GenericOSVersionLabel (GenericOSSubVersionLabel), CPU: 12th Gen Intel(R) Core(TM) i7-12700H, GPU: GenericGPUBrand
+LogInit: Compiled (64-bit): Jan 28 2026 12:56:35
+LogInit: Compiled with Clang: 11.0.1 
+LogInit: Build Configuration: Shipping
+LogInit: Branch Name: ++UE4+Release-4.27
+LogInit: Command Line:  seed 123 -nullrhi -settings=/configs/settings.json
+LogInit: Base Directory: /sim/Build/LinuxNoEditor/RMUA/Binaries/Linux/
+LogInit: Allocator: binned2
+LogInit: Installed Engine Build: 1
+LogInit: Presizing for max 2097152 objects, including 1 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Engine.ini]
+LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+LogStreaming: Display: Async Loading initialized: Event Driven Loader: true, Async Loading Thread: false, Async Post Load: true
+LogInit: Object subsystem initialized
+LogConfig: Setting CVar [[r.setres:1280x720]]
+LogConfig: Setting CVar [[fx.NiagaraAllowRuntimeScalabilityChanges:1]]
+[2026.11.04-16.03.57:294][  0]LogConfig: Setting CVar [[r.setres:1280x720]]
+[2026.11.04-16.03.57:294][  0]LogConfig: Setting CVar [[fx.NiagaraAllowRuntimeScalabilityChanges:1]]
+[2026.11.04-16.03.57:294][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Engine.ini]
+[2026.11.04-16.03.57:294][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
+[2026.11.04-16.03.57:294][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Engine.ini]
+[2026.11.04-16.03.57:294][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Engine.ini]
+[2026.11.04-16.03.57:294][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2026.11.04-16.03.57:294][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+[2026.11.04-16.03.57:294][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+[2026.11.04-16.03.57:294][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2026.11.04-16.03.57:294][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2026.11.04-16.03.57:294][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2026.11.04-16.03.57:294][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+[2026.11.04-16.03.57:294][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2026.11.04-16.03.57:294][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2026.11.04-16.03.57:294][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2026.11.04-16.03.57:294][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2026.11.04-16.03.57:294][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2026.11.04-16.03.57:294][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2026.11.04-16.03.57:294][  0]LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+[2026.11.04-16.03.57:294][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Engine.ini]
+[2026.11.04-16.03.57:294][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2026.11.04-16.03.57:294][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
+[2026.11.04-16.03.57:294][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
+[2026.11.04-16.03.57:294][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2026.11.04-16.03.57:294][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
+[2026.11.04-16.03.57:294][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2026.11.04-16.03.57:294][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:25165824]]
+[2026.11.04-16.03.57:294][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2026.11.04-16.03.57:294][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
+[2026.11.04-16.03.57:294][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
+[2026.11.04-16.03.57:294][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
+[2026.11.04-16.03.57:294][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
+[2026.11.04-16.03.57:294][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
+[2026.11.04-16.03.57:294][  0]LogConfig: Setting CVar [[gc.MultithreadedDestructionEnabled:1]]
+[2026.11.04-16.03.57:294][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Engine.ini]
+[2026.11.04-16.03.57:294][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.04-16.03.57:294][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2026.11.04-16.03.57:294][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2026.11.04-16.03.57:294][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.04-16.03.57:294][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2026.11.04-16.03.57:294][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.04-16.03.57:294][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2026.11.04-16.03.57:294][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.AnisotropicMaterials:1]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountMaxPerSlice:4]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:128.0]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:128.0]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.SkyLight.RealTimeReflectionCapture:1]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[fx.Niagara.QualityLevel:3]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.IntegrationType:2]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:4]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.HairStrands.Visibility.MSAA.SamplePerPixel:4]]
+[2026.11.04-16.03.57:295][  0]LogLinux: Selected Device Profile: [LinuxNoEditor]
+[2026.11.04-16.03.57:295][  0]LogInit: Applying CVar settings loaded from the selected device profile: [LinuxNoEditor]
+[2026.11.04-16.03.57:295][  0]LogHAL: Display: Platform has ~ 4 GB [41855913984 / 4294967296 / 39], which maps to Smallest [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
+[2026.11.04-16.03.57:295][  0]LogInit: Going up to parent DeviceProfile [Linux]
+[2026.11.04-16.03.57:295][  0]LogInit: Going up to parent DeviceProfile []
+[2026.11.04-16.03.57:295][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.AnisotropicMaterials:1]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountMaxPerSlice:4]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:128.0]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:128.0]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.SkyLight.RealTimeReflectionCapture:1]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[fx.Niagara.QualityLevel:3]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Scalability.ini]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.IntegrationType:2]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:4]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[r.HairStrands.Visibility.MSAA.SamplePerPixel:4]]
+[2026.11.04-16.03.57:295][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [/tmp/.config/Epic/RMUA/Saved/Config/LinuxNoEditor/Engine.ini]
+[2026.11.04-16.03.57:295][  0]LogConfig: Setting CVar [[g.TimeoutForBlockOnRenderFence:60000]]
+[2026.11.04-16.03.57:295][  0]LogInit: Unix hardware info:
+[2026.11.04-16.03.57:295][  0]LogInit:  - we are the first instance of this executable
+[2026.11.04-16.03.57:295][  0]LogInit:  - this process' id (pid) is 128, parent process' id (ppid) is 126
+[2026.11.04-16.03.57:295][  0]LogInit:  - we are not running under debugger
+[2026.11.04-16.03.57:295][  0]LogInit:  - machine network name is 'tianbot'
+[2026.11.04-16.03.57:295][  0]LogInit:  - user name is 'euid1000' (euid1000)
+[2026.11.04-16.03.57:295][  0]LogInit:  - we're logged in locally
+[2026.11.04-16.03.57:295][  0]LogInit:  - we're running without rendering
+[2026.11.04-16.03.57:295][  0]LogInit:  - CPU: GenuineIntel '12th Gen Intel(R) Core(TM) i7-12700H' (signature: 0x906A3)
+[2026.11.04-16.03.57:295][  0]LogInit:  - Number of physical cores available for the process: 14
+[2026.11.04-16.03.57:295][  0]LogInit:  - Number of logical cores available for the process: 20
+[2026.11.04-16.03.57:295][  0]LogInit:  - Cache line size: 64
+[2026.11.04-16.03.57:295][  0]LogInit:  - Memory allocator used: binned2
+[2026.11.04-16.03.57:295][  0]LogInit:  - This binary is optimized with LTO: no, PGO: no, instrumented for PGO data collection: no
+[2026.11.04-16.03.57:295][  0]LogInit:  - This is an internal build.
+[2026.11.04-16.03.57:295][  0]LogCore: Benchmarking clocks:
+[2026.11.04-16.03.57:295][  0]LogCore:  - CLOCK_MONOTONIC (id=1) can sustain 82719740 (82720K, 83M) calls per second without zero deltas.
+[2026.11.04-16.03.57:295][  0]LogCore:  - CLOCK_MONOTONIC_RAW (id=4) can sustain 80404034 (80404K, 80M) calls per second without zero deltas.
+[2026.11.04-16.03.57:295][  0]LogCore:  - CLOCK_MONOTONIC_COARSE (id=6) can sustain 231873062 (231873K, 232M) calls per second with 99.999564% zero deltas.
+[2026.11.04-16.03.57:295][  0]LogCore: Selected clock_id 1 (CLOCK_MONOTONIC) since it is the fastest support clock without zero deltas.
+[2026.11.04-16.03.57:295][  0]LogInit: Unix-specific commandline switches:
+[2026.11.04-16.03.57:295][  0]LogInit:  -ansimalloc - use malloc()/free() from libc (useful for tools like valgrind and electric fence)
+[2026.11.04-16.03.57:295][  0]LogInit:  -jemalloc - use jemalloc for all memory allocation
+[2026.11.04-16.03.57:295][  0]LogInit:  -binnedmalloc - use binned malloc  for all memory allocation
+[2026.11.04-16.03.57:295][  0]LogInit:  -filemapcachesize=NUMBER - set the size for case-sensitive file mapping cache
+[2026.11.04-16.03.57:295][  0]LogInit:  -useksm - uses kernel same-page mapping (KSM) for mapped memory (OFF)
+[2026.11.04-16.03.57:295][  0]LogInit:  -ksmmergeall - marks all mmap'd memory pages suitable for KSM (OFF)
+[2026.11.04-16.03.57:295][  0]LogInit:  -preloadmodulesymbols - Loads the main module symbols file into memory (OFF)
+[2026.11.04-16.03.57:295][  0]LogInit:  -sigdfl=SIGNAL - Allows a specific signal to be set to its default handler rather then ignoring the signal
+[2026.11.04-16.03.57:295][  0]LogInit:  -httpproxy=ADDRESS:PORT - redirects HTTP requests to a proxy (only supported if compiled with libcurl)
+[2026.11.04-16.03.57:295][  0]LogInit:  -reuseconn - allow libcurl to reuse HTTP connections (only matters if compiled with libcurl)
+[2026.11.04-16.03.57:295][  0]LogInit:  -virtmemkb=NUMBER - sets process virtual memory (address space) limit (overrides VirtualMemoryLimitInKB value from .ini)
+[2026.11.04-16.03.57:295][  0]LogInit:  - Physical RAM available (not considering process quota): 39 GB (39916 MB, 40874916 KB, 41855913984 bytes)
+[2026.11.04-16.03.57:295][  0]LogInit:  - VirtualMemoryAllocator pools will grow at scale 1.4
+[2026.11.04-16.03.57:296][  0]LogInit:  - MemoryRangeDecommit() will be a no-op (re-run with -vmapoolevict to change)
+[2026.11.04-16.03.57:337][  0]LogInit: Physics initialised using underlying interface: PhysX
+[2026.11.04-16.03.57:337][  0]LogInit: Using OS detected language (en-US-POSIX).
+[2026.11.04-16.03.57:337][  0]LogInit: Using OS detected locale (en-US-POSIX).
+[2026.11.04-16.03.57:337][  0]LogTextLocalizationManager: No specific localization for 'en-US-POSIX' exists, so the 'en' localization will be used.
+[2026.11.04-16.03.57:351][  0]LogInit: Not creating cursor resources due to headless application.
+[2026.11.04-16.03.57:352][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2026.11.04-16.03.57:352][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2026.11.04-16.03.57:353][  0]LogRendererCore: Ray tracing is disabled. Reason: r.RayTracing=0.
+[2026.11.04-16.03.57:353][  0]LogSlate: Using FreeType 2.10.0
+[2026.11.04-16.03.57:353][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2026.11.04-16.03.57:355][  0]LogInit: Using OS detected language (en-US-POSIX).
+[2026.11.04-16.03.57:355][  0]LogInit: Using OS detected locale (en-US-POSIX).
+[2026.11.04-16.03.57:355][  0]LogTextLocalizationManager: No localization for 'en-US-POSIX' exists, so 'en' will be used for the language.
+[2026.11.04-16.03.57:355][  0]LogTextLocalizationManager: No localization for 'en-US-POSIX' exists, so 'en' will be used for the locale.
+[2026.11.04-16.03.57:356][  0]LogSlate: Warning: FontCache flush requested. Reason: Culture for localization was changed
+[2026.11.04-16.03.57:356][  0]LogAssetRegistry: FAssetRegistry took 0.0002 seconds to start up
+[2026.11.04-16.03.57:385][  0]LogTextLocalizationManager: Compacting localization data took   0.94ms
+[2026.11.04-16.03.57:385][  0]LogStreaming: Display: FlushAsyncLoading: 1 QueuedPackages, 0 AsyncPackages
+[2026.11.04-16.03.57:385][  0]LogPackageLocalizationCache: Processed 20 localized package path(s) for 1 prioritized culture(s) in 0.000024 seconds
+[2026.11.04-16.03.57:385][  0]LogPakFile: New pak file ../../../RMUA/Content/Paks/RMUA-LinuxNoEditor.pak added to pak precacher.
+[2026.11.04-16.03.57:388][  0]LogSerialization: Display: AllowBulkDataInIoStore: 'true'
+[2026.11.04-16.03.57:388][  0]LogLinux: Selected Device Profile: [LinuxNoEditor]
+[2026.11.04-16.03.57:389][  0]LogInit: Active device profile: [0x7fffe54b91c0][0x7fffe4889250 49] LinuxNoEditor
+[2026.11.04-16.03.57:389][  0]LogInit: Profiles: [0x7fffe54b8ec0][0x7fffecad0010 49] Linux, [0x7fffe54b91c0][0x7fffe4889250 49] LinuxNoEditor, 
+[2026.11.04-16.03.57:391][  0]LogNetVersion: RMUA 1.0.0, NetCL: 0, EngineNetVer: 17, GameNetVer: 0 (Checksum: 41731042)
+[2026.11.04-16.03.57:415][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2026.11.04-16.03.57:415][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2026.11.04-16.03.57:415][  0]LogTemp: Circle 构造函数调用
+[2026.11.04-16.03.57:415][  0]LogTemp: Circle 构造函数调用
+[2026.11.04-16.03.57:415][  0]LogTemp: Circle 构造函数调用
+[2026.11.04-16.03.57:421][  0]LogTemp: StartupModule: AirSim plugin
+[2026.11.04-16.03.57:455][  0]LogTemp: AirSimROS Loaded.
+[2026.11.04-16.03.57:455][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2026.11.04-16.03.57:457][  0]LogUObjectArray: 15078 objects as part of root set at end of initial load.
+[2026.11.04-16.03.57:457][  0]LogUObjectArray: 2 objects are not in the root set, but can never be destroyed because they are in the DisregardForGC set.
+[2026.11.04-16.03.57:457][  0]LogUObjectAllocator: 3117992 out of 0 bytes used by permanent object pool.
+[2026.11.04-16.03.57:457][  0]LogUObjectArray: CloseDisregardForGC: 15078/15078 objects in disregard for GC pool
+[2026.11.04-16.03.57:459][  0]LogEngine: Initializing Engine...
+ALSA lib confmisc.c:767:(parse_card) cannot find card '0'
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_card_driver returned error: No such file or directory
+ALSA lib confmisc.c:392:(snd_func_concat) error evaluating strings
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_concat returned error: No such file or directory
+ALSA lib confmisc.c:1246:(snd_func_refer) error evaluating name
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5220:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2642:(snd_pcm_open_noupdate) Unknown PCM default
+ALSA lib confmisc.c:767:(parse_card) cannot find card '0'
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_card_driver returned error: No such file or directory
+ALSA lib confmisc.c:392:(snd_func_concat) error evaluating strings
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_concat returned error: No such file or directory
+ALSA lib confmisc.c:1246:(snd_func_refer) error evaluating name
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5220:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2642:(snd_pcm_open_noupdate) Unknown PCM default
+[2026.11.04-16.03.57:459][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.000 s
+[2026.11.04-16.03.57:491][  0]LogInit: Initializing FReadOnlyCVARCache
+[2026.11.04-16.03.57:491][  0]LogAudio: Display: Initializing Audio Device Manager...
+[2026.11.04-16.03.57:491][  0]LogAudio: Display: Loading Default Audio Settings Objects...
+[2026.11.04-16.03.57:491][  0]LogAudio: Display: No default SoundConcurrencyObject specified (or failed to load).
+[2026.11.04-16.03.57:491][  0]LogAudio: Display: Audio Device Manager Initialized
+[2026.11.04-16.03.57:491][  0]LogAudio: Display: Creating Audio Device:                 Id: 1, Scope: Shared, Realtime: True
+[2026.11.04-16.03.57:491][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2026.11.04-16.03.57:491][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2026.11.04-16.03.57:491][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2026.11.04-16.03.57:491][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2026.11.04-16.03.57:491][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2026.11.04-16.03.57:491][  0]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2026.11.04-16.03.57:491][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2026.11.04-16.03.57:491][  0]LogAudio: Display: AudioDevice MaxSources: 32
+[2026.11.04-16.03.57:491][  0]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2026.11.04-16.03.57:491][  0]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2026.11.04-16.03.57:491][  0]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2026.11.04-16.03.57:491][  0]LogAudioMixer: Display: Initializing audio mixer.
+[2026.11.04-16.03.57:514][  0]LogAudioMixerSDL: Display: Initialized SDL using alsa platform API backend.
+[2026.11.04-16.03.57:514][  0]LogAudioMixerSDL: Error: ALSA: Couldn't open audio device: No such file or directory
+[2026.11.04-16.03.57:514][  0]LogAudioMixerSDL: Opening default audio device (device index -1)
+[2026.11.04-16.03.57:514][  0]LogAudioMixerSDL: Error: ALSA: Couldn't open audio device: No such file or directory
+[2026.11.04-16.03.57:514][  0]LogAudio: Warning: Could not initialize hardware. Tearing down anything that was set up during initialization
+[2026.11.04-16.03.57:617][  0]LogAudio: Warning: FAudioDevice::Init Failed!
+[2026.11.04-16.03.57:617][  0]LogAudio: Display: Destroying Audio Device 1: could not be initialized. Check AudioDeviceModuleName and AudioMixerModuleName in [Platform]Engine.ini.
+[2026.11.04-16.03.57:617][  0]LogAudio: Display: Main audio device could not be initialized. Please check the value for AudioDeviceModuleName and AudioMixerModuleName in [Platform]Engine.ini.
+[2026.11.04-16.03.57:617][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2026.11.04-16.03.57:617][  0]LogInit: Texture streaming: Disabled
+[2026.11.04-16.03.57:619][  0]LogTemp: Warning: Air Sim Set Event System Success
+[2026.11.04-16.03.57:619][  0]LogTemp: Warning: Air Sim ROS Set Event System Success
+[2026.11.04-16.03.57:619][  0]LogTemp: 当前比赛模式为 2！
+[2026.11.04-16.03.57:619][  0]LogTemp: 当前版本号为 12.0.0.5！
+[2026.11.04-16.03.57:619][  0]LogTemp: Warning: App Init End !!! 2026-11-04 16:03:57 127.0.0.2
+[2026.11.04-16.03.57:619][  0]LogAudio: Display: Creating Audio Device:                 Id: 2, Scope: Shared, Realtime: True
+[2026.11.04-16.03.57:619][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2026.11.04-16.03.57:619][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2026.11.04-16.03.57:619][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2026.11.04-16.03.57:619][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2026.11.04-16.03.57:619][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2026.11.04-16.03.57:619][  0]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2026.11.04-16.03.57:619][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2026.11.04-16.03.57:619][  0]LogAudio: Display: AudioDevice MaxSources: 32
+ALSA lib confmisc.c:767:(parse_card) cannot find card '0'
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_card_driver returned error: No such file or directory
+ALSA lib confmisc.c:392:(snd_func_concat) error evaluating strings
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_concat returned error: No such file or directory
+ALSA lib confmisc.c:1246:(snd_func_refer) error evaluating name
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5220:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2642:(snd_pcm_open_noupdate) Unknown PCM default
+ALSA lib confmisc.c:767:(parse_card) cannot find card '0'
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_card_driver returned error: No such file or directory
+ALSA lib confmisc.c:392:(snd_func_concat) error evaluating strings
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_concat returned error: No such file or directory
+ALSA lib confmisc.c:1246:(snd_func_refer) error evaluating name
+ALSA lib conf.c:4732:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5220:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2642:(snd_pcm_open_noupdate) Unknown PCM default
+Resizing viewport due to setres change, 1280 x 720
+[2026.11.04-16.03.57:619][  0]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2026.11.04-16.03.57:619][  0]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2026.11.04-16.03.57:619][  0]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2026.11.04-16.03.57:619][  0]LogAudioMixer: Display: Initializing audio mixer.
+[2026.11.04-16.03.57:627][  0]LogAudioMixerSDL: Display: Initialized SDL using alsa platform API backend.
+[2026.11.04-16.03.57:627][  0]LogAudioMixerSDL: Error: ALSA: Couldn't open audio device: No such file or directory
+[2026.11.04-16.03.57:627][  0]LogAudioMixerSDL: Opening default audio device (device index -1)
+[2026.11.04-16.03.57:627][  0]LogAudioMixerSDL: Error: ALSA: Couldn't open audio device: No such file or directory
+[2026.11.04-16.03.57:627][  0]LogAudio: Warning: Could not initialize hardware. Tearing down anything that was set up during initialization
+[2026.11.04-16.03.57:730][  0]LogAudio: Warning: FAudioDevice::Init Failed!
+[2026.11.04-16.03.57:730][  0]LogAudio: Display: Destroying Audio Device 2: could not be initialized. Check AudioDeviceModuleName and AudioMixerModuleName in [Platform]Engine.ini.
+[2026.11.04-16.03.57:730][  0]LogEngine: GameWindow did not exist.  Was created
+[2026.11.04-16.03.57:730][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2026.11.04-16.03.57:730][  0]LogInit: Display: Game Engine Initialized.
+[2026.11.04-16.03.57:731][  0]LogInit: Display: Starting Game.
+[2026.11.04-16.03.57:731][  0]LogNet: Browse: /Game/Maps/RMUA2024OL/RMUA2024Lobby?Name=Player
+[2026.11.04-16.03.57:731][  0]LogLoad: LoadMap: /Game/Maps/RMUA2024OL/RMUA2024Lobby?Name=Player
+[2026.11.04-16.03.57:731][  0]LogWorld: BeginTearingDown for /Temp/Untitled_0
+[2026.11.04-16.03.57:731][  0]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2026.11.04-16.03.57:731][  0]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.11.04-16.03.57:732][  0]LogUObjectHash: Compacting FUObjectHashTables data took   0.25ms
+[2026.11.04-16.03.57:736][  0]LogAIModule: Creating AISystem for world RMUA2024Lobby
+[2026.11.04-16.03.57:736][  0]LogLoad: Game class is 'GameModeBase'
+[2026.11.04-16.03.57:736][  0]LogWorld: Bringing World /Game/Maps/RMUA2024OL/RMUA2024Lobby.RMUA2024Lobby up for play (max tick rate 0) at 2026.11.04-16.03.57
+[2026.11.04-16.03.57:736][  0]LogWorld: Bringing up level for play took: 0.000125
+[2026.11.04-16.03.57:736][  0]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
+[2026.11.04-16.03.57:736][  0]r.SetRes = "1280x720 w"
+[2026.11.04-16.03.57:736][  0]LogViewport: Display: Viewport HideCursorDuringCapture Changed, False -> True
+[2026.11.04-16.03.57:736][  0]LogViewport: Display: Viewport MouseCaptureMode Changed, NoCapture -> CaptureDuringMouseDown
+[2026.11.04-16.03.57:736][  0]LogLoad: Took 0.005869 seconds to LoadMap(/Game/Maps/RMUA2024OL/RMUA2024Lobby)
+[2026.11.04-16.03.57:742][  0]LogInit: Display: Engine is initialized. Leaving FEngineLoop::Init()
+[2026.11.04-16.03.57:742][  0]LogLoad: (Engine Initialization) Total time: 0.53 seconds
+[2026.11.04-16.04.02:742][863]LogNet: Browse: /Game/Maps/RMUA2024OL/RMUA2024OL1
+[2026.11.04-16.04.02:742][863]LogLoad: LoadMap: /Game/Maps/RMUA2024OL/RMUA2024OL1
+[2026.11.04-16.04.02:742][863]LogWorld: BeginTearingDown for /Game/Maps/RMUA2024OL/RMUA2024Lobby
+[2026.11.04-16.04.02:742][863]LogWorld: UWorld::CleanupWorld for RMUA2024Lobby, bSessionEnded=true, bCleanupResources=true
+[2026.11.04-16.04.02:742][863]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2026.11.04-16.04.02:743][863]LogUObjectHash: Compacting FUObjectHashTables data took   0.24ms
+[2026.11.04-16.04.02:743][863]LogStreaming: Display: FlushAsyncLoading: 1 QueuedPackages, 0 AsyncPackages
+[2026.11.04-16.04.03:060][863]LogPakFile: Precache HighWater 16MB
+
+[2026.11.04-16.04.03:060][863]LogAIModule: Creating AISystem for world RMUA2024OL1
+[2026.11.04-16.04.03:060][863]LogLoad: Game class is 'AirSimGameMode'
+[2026.11.04-16.04.03:090][863]LogWorld: Bringing World /Game/Maps/RMUA2024OL/RMUA2024OL1.RMUA2024OL1 up for play (max tick rate 0) at 2026.11.04-16.04.03
+[2026.11.04-16.04.03:091][863]LogWorld: Bringing up level for play took: 0.030038
+[2026.11.04-16.04.03:106][863]LogPackageName: SearchForPackageOnDisk took   0.013s, but failed to resolve .
+[2026.11.04-16.04.03:106][863]r.CustomDepth = "3"
+[2026.11.04-16.04.03:108][863]LogActor: Warning: BP_CameraDirector_C /Game/Maps/RMUA2024OL/RMUA2024OL1.RMUA2024OL1:PersistentLevel.CameraDirector has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2026.11.04-16.04.03:123][863]LogScript: Warning: Script Msg: Attempted to access index 0 from array 'CallFunc_GetAllActorsOfClass_OutActors' of length 0 in '/AirSim/Weather/WeatherFX/WeatherActor.WeatherActor_C:ExecuteUbergraph_WeatherActor'!
+[2026.11.04-16.04.03:124][863]LogTemp: Warning: No Drone API
+[2026.11.04-16.04.03:125][863]LogTemp: drone_1
+drone_1
+Resizing viewport due to setres change, 1280 x 720
+[Detaching after vfork from child process 475]
+INJECT state=0x7ffdef464780 old=(1,3,1) new=(8,12,4)
+[2026.11.04-16.04.03:125][863]r.SetRes = "1280x720 w"
+[2026.11.04-16.04.03:125][863]t.MaxFPS = "20"
+[2026.11.04-16.04.03:140][863]LogViewport: Display: Player bShowMouseCursor Changed, False -> True
+[2026.11.04-16.04.03:140][863]LogLoad: Took 0.398325 seconds to LoadMap(/Game/Maps/RMUA2024OL/RMUA2024OL1)
+[2026.11.04-16.04.03:161][863]LogTemp: NodeRunnable: Current game type is 2
+[2026.11.04-16.04.03:161][863]LogTemp: Warning: Init Frametime Tolerance: 125000000.000000
+[2026.11.04-16.04.03:161][863]LogSlate: Took 0.000198 seconds to synchronously load lazily loaded font '../../../Engine/Content/EngineFonts/Faces/RobotoBold.ufont' (160K)
+[2026.11.04-16.04.03:167][864]LogTemp: Warning: Reset Route 8 12
+[2026.11.04-16.04.03:167][864]LogTemp: Warning: Reset Spline 8 Num 0 PortNum 30 Reversed 0
+[2026.11.04-16.04.03:167][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=71466.000 Y=-72058.156 Z=1889.192] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:167][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=71433.711 Y=-72100.469 Z=2009.024] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:167][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=71466.000 Y=-72058.156 Z=1889.192] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:167][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=71423.469 Y=-72317.062 Z=1949.103] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:167][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=71466.000 Y=-72058.156 Z=1889.192] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:167][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=71895.414 Y=-72241.859 Z=1884.164] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:168][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=71097.336 Y=-72378.953 Z=2088.891] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:168][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=71649.680 Y=-72282.633 Z=1671.614] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:168][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=71337.375 Y=-72464.750 Z=1924.189] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:168][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=71502.211 Y=-71998.500 Z=2029.927] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:168][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=71411.539 Y=-72158.398 Z=1652.331] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:168][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=71466.000 Y=-72058.156 Z=1889.192] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:168][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=71085.000 Y=-72494.562 Z=2067.721] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:168][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=71496.781 Y=-72313.281 Z=1791.766] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:168][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=71851.828 Y=-72526.789 Z=1747.506] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:168][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=71782.125 Y=-72235.398 Z=2112.061] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:168][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=71877.117 Y=-72130.070 Z=2107.656] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:168][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=71466.000 Y=-72058.156 Z=1889.192] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:168][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=71466.000 Y=-72058.156 Z=1889.192] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:168][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=71466.000 Y=-72058.156 Z=1889.192] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:168][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=71466.000 Y=-72058.156 Z=1889.192] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:168][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=71201.938 Y=-72023.781 Z=1903.148] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:168][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=71561.188 Y=-72145.898 Z=1641.503] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:168][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=71466.000 Y=-72058.156 Z=1889.192] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:168][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=71386.953 Y=-72222.461 Z=1649.539] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:168][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=71142.422 Y=-71993.984 Z=2025.885] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:168][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=71500.531 Y=-72400.609 Z=1853.163] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:169][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=71445.141 Y=-71954.984 Z=1932.779] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:169][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=71587.906 Y=-71794.617 Z=1784.401] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:169][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=71466.000 Y=-72058.156 Z=1889.192] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:169][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=71791.141 Y=-72298.414 Z=1831.497] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:169][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=71569.070 Y=-72380.156 Z=1780.248] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:169][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=71831.281 Y=-71836.391 Z=1705.500] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:169][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=71753.719 Y=-72591.359 Z=2002.699] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:169][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=71639.031 Y=-72010.414 Z=2054.762] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:169][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=71466.000 Y=-72058.156 Z=1889.192] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:169][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=71466.000 Y=-72058.156 Z=1889.192] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:169][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=71722.766 Y=-72526.242 Z=1785.973] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:169][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=71221.578 Y=-71577.055 Z=1844.855] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:169][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=71384.375 Y=-71814.570 Z=1899.683] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:169][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=71574.570 Y=-72075.805 Z=1947.774] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:169][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=71100.914 Y=-71776.672 Z=1907.756] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:169][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=71466.000 Y=-72058.156 Z=1889.192] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:169][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=71880.727 Y=-72072.891 Z=2103.078] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:169][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=71974.812 Y=-72011.188 Z=1867.227] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:169][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=71286.773 Y=-71603.156 Z=1964.114] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:169][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=71466.000 Y=-72058.156 Z=1889.192] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:169][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=71752.805 Y=-72429.336 Z=1703.473] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:169][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=71120.492 Y=-72497.438 Z=2014.793] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:170][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=70979.680 Y=-72041.492 Z=1855.630] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:170][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=71066.266 Y=-71598.758 Z=2045.807] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:170][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=71965.750 Y=-71762.297 Z=1782.788] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:170][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=71755.555 Y=-71862.328 Z=2010.151] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:170][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=71629.438 Y=-72477.180 Z=2008.778] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:170][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=71420.336 Y=-71668.750 Z=1754.500] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:170][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=70947.234 Y=-72391.312 Z=1870.145] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:170][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=71266.781 Y=-72097.984 Z=1844.487] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:170][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=71361.492 Y=-72222.562 Z=1957.257] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:170][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=73446.562 Y=-63897.824 Z=1876.343] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:170][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=73960.945 Y=-63661.504 Z=1708.237] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:170][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=73446.562 Y=-63897.824 Z=1876.343] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:170][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=73446.562 Y=-63897.824 Z=1876.343] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:170][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=73446.562 Y=-63897.824 Z=1876.343] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:170][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=73446.562 Y=-63897.824 Z=1876.343] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:170][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=73250.156 Y=-63951.762 Z=1745.234] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:170][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=73486.234 Y=-63644.832 Z=1763.704] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:170][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=73446.562 Y=-63897.824 Z=1876.343] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:170][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=73514.617 Y=-64409.613 Z=2083.087] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:170][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=72891.961 Y=-64153.383 Z=1932.959] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:170][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=73156.055 Y=-63344.984 Z=1747.005] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:171][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=73067.562 Y=-63422.926 Z=1668.304] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:171][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=73474.273 Y=-63681.934 Z=1750.335] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:171][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=73883.391 Y=-64196.719 Z=1762.795] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:171][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=72951.430 Y=-65936.180 Z=1879.688] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:171][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=72951.430 Y=-65936.180 Z=1879.688] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:171][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=72407.398 Y=-67964.711 Z=1901.557] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:171][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=72951.430 Y=-65936.180 Z=1879.688] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:171][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=72407.398 Y=-67964.711 Z=1901.557] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:171][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=71886.883 Y=-70000.984 Z=1914.258] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:171][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=72951.430 Y=-65936.180 Z=1879.688] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:171][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=71886.883 Y=-70000.984 Z=1914.258] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:171][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=71886.883 Y=-70000.984 Z=1914.258] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:171][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=72407.398 Y=-67964.711 Z=1901.557] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:171][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=72407.398 Y=-67964.711 Z=1901.557] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:172][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=72951.430 Y=-65936.180 Z=1879.688] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:172][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=73095.648 Y=-65843.594 Z=2019.864] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:172][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=72399.914 Y=-53894.410 Z=3063.861] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:172][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=72399.914 Y=-53894.410 Z=3063.861] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:172][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=72399.914 Y=-53894.410 Z=3063.861] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:172][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=72119.344 Y=-53604.250 Z=2919.438] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:172][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=72399.914 Y=-53894.410 Z=3063.861] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:172][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=72399.914 Y=-53894.410 Z=3063.861] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:172][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=72238.617 Y=-54485.152 Z=3006.773] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:172][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=71923.312 Y=-53974.238 Z=2999.178] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:172][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=72399.914 Y=-53894.410 Z=3063.861] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:172][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=71981.594 Y=-53621.051 Z=3292.083] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:172][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=72249.328 Y=-54313.945 Z=3101.776] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:172][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=72338.734 Y=-54230.879 Z=3191.336] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:172][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=73297.750 Y=-55729.211 Z=2624.454] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:172][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=73167.016 Y=-55447.117 Z=2766.629] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:173][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=73045.023 Y=-56233.395 Z=2448.537] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:173][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=73297.750 Y=-55729.211 Z=2624.454] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:173][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=73297.750 Y=-55729.211 Z=2624.454] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:173][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=73969.469 Y=-59761.008 Z=2044.328] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:173][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=73297.750 Y=-55729.211 Z=2624.454] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:173][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=73969.469 Y=-59761.008 Z=2044.328] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:173][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=73879.141 Y=-59798.363 Z=1910.521] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:173][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=73297.750 Y=-55729.211 Z=2624.454] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:173][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=73469.891 Y=-55581.566 Z=2463.598] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:173][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=73297.750 Y=-55729.211 Z=2624.454] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:173][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=73820.281 Y=-57700.426 Z=2276.019] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:173][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=73969.469 Y=-59761.008 Z=2044.328] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:173][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=73820.281 Y=-57700.426 Z=2276.019] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:173][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=73820.281 Y=-57700.426 Z=2276.019] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:174][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=66245.820 Y=-45837.008 Z=5773.950] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:174][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=65719.039 Y=-45909.793 Z=5698.475] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:174][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=66245.820 Y=-45837.008 Z=5773.950] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:174][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=66245.820 Y=-45837.008 Z=5773.950] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:174][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=66163.805 Y=-45464.543 Z=5870.527] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:174][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=66245.820 Y=-45837.008 Z=5773.950] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:174][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=66518.703 Y=-45520.164 Z=5830.548] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:174][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=66385.297 Y=-45998.109 Z=5638.331] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:174][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=66348.461 Y=-45898.207 Z=5784.875] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:174][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=66245.820 Y=-45837.008 Z=5773.950] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:174][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=66186.789 Y=-45410.379 Z=5630.212] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:174][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=66101.039 Y=-46328.883 Z=5508.991] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:174][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=66509.000 Y=-45611.160 Z=5747.275] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:174][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=66423.203 Y=-45750.984 Z=5725.791] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:174][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=66193.055 Y=-45540.766 Z=6055.406] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:174][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=66244.453 Y=-45404.598 Z=5993.601] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:174][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=66245.820 Y=-45837.008 Z=5773.950] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:175][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=70041.664 Y=-50569.895 Z=4077.372] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:175][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=70041.664 Y=-50569.895 Z=4077.372] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:175][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=68759.164 Y=-48997.207 Z=4623.211] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:175][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=68759.164 Y=-48997.207 Z=4623.211] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:175][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=68759.164 Y=-48997.207 Z=4623.211] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:175][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=67477.852 Y=-47431.828 Z=5189.186] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:175][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=70041.664 Y=-50569.895 Z=4077.372] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:175][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=67477.852 Y=-47431.828 Z=5189.186] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:175][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=68759.164 Y=-48997.207 Z=4623.211] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:175][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=68700.367 Y=-49320.359 Z=4368.244] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:175][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=69268.414 Y=-48908.250 Z=4579.402] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:175][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=68709.008 Y=-49345.523 Z=4304.124] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:175][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=67477.852 Y=-47431.828 Z=5189.186] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:176][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=68759.164 Y=-48997.207 Z=4623.211] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:176][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=69243.422 Y=-49118.695 Z=4632.019] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:176][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=68839.477 Y=-49009.949 Z=4573.994] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:176][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=68759.164 Y=-48997.207 Z=4623.211] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:176][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=63429.980 Y=-36479.637 Z=8848.039] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:176][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=63304.113 Y=-36749.242 Z=8728.380] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:176][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=63429.980 Y=-36479.637 Z=8848.039] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:176][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=63429.980 Y=-36479.637 Z=8848.039] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:176][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=63429.980 Y=-36479.637 Z=8848.039] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:176][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=63429.980 Y=-36479.637 Z=8848.039] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:176][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=63429.980 Y=-36479.637 Z=8848.039] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:176][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=65125.766 Y=-44168.898 Z=6377.028] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:176][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=64219.180 Y=-42377.363 Z=6994.839] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:177][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=63974.020 Y=-42125.391 Z=7028.774] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:177][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=64219.180 Y=-42377.363 Z=6994.839] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:177][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=65125.766 Y=-44168.898 Z=6377.028] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:177][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=64219.180 Y=-42377.363 Z=6994.839] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:177][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=63656.191 Y=-40467.992 Z=7610.345] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:177][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=63656.191 Y=-40467.992 Z=7610.345] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:177][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=63341.023 Y=-40134.965 Z=7662.211] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:177][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=65125.766 Y=-44168.898 Z=6377.028] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:177][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=65135.688 Y=-44200.785 Z=6269.850] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:177][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=64948.547 Y=-44185.723 Z=6450.691] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:177][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=65498.188 Y=-44391.184 Z=6338.626] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:177][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=63656.191 Y=-40467.992 Z=7610.345] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:177][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=65125.766 Y=-44168.898 Z=6377.028] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:177][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=64920.191 Y=-44057.281 Z=6306.665] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:177][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=65125.766 Y=-44168.898 Z=6377.028] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:178][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=64573.285 Y=-28557.762 Z=11383.477] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:178][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=64573.285 Y=-28557.762 Z=11383.477] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:178][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=64573.285 Y=-28557.762 Z=11383.477] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:178][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=64689.312 Y=-28175.238 Z=11442.070] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:178][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=64538.555 Y=-28665.041 Z=11434.516] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:178][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=64573.285 Y=-28557.762 Z=11383.477] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:178][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=65005.898 Y=-28480.059 Z=11382.946] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:178][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=64573.285 Y=-28557.762 Z=11383.477] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:178][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=64922.301 Y=-29032.562 Z=11466.249] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:178][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=64531.430 Y=-28629.447 Z=11366.194] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:178][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=64926.648 Y=-28944.178 Z=11442.217] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:178][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=64573.285 Y=-28557.762 Z=11383.477] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:178][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=63623.984 Y=-34482.289 Z=9465.562] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:178][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=64079.148 Y=-34730.109 Z=9378.830] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:178][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=63564.230 Y=-34059.191 Z=9477.695] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:178][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=63927.672 Y=-32499.734 Z=10086.884] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:179][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=63927.672 Y=-32499.734 Z=10086.884] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:179][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=63960.012 Y=-32466.551 Z=10166.930] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:179][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=63623.984 Y=-34482.289 Z=9465.562] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:179][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=63927.672 Y=-32499.734 Z=10086.884] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:179][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=63927.672 Y=-32499.734 Z=10086.884] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:179][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=63927.672 Y=-32499.734 Z=10086.884] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:179][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=64270.145 Y=-30528.678 Z=10721.386] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:179][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=64270.145 Y=-30528.678 Z=10721.386] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:179][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=63623.984 Y=-34482.289 Z=9465.562] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:179][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=63892.711 Y=-34971.898 Z=9448.510] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:179][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=63932.074 Y=-34967.746 Z=9516.730] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:179][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=64089.812 Y=-34681.191 Z=9220.268] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:179][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=63573.871 Y=-34206.410 Z=9594.676] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:179][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=63927.672 Y=-32499.734 Z=10086.884] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:179][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=64270.145 Y=-30528.678 Z=10721.386] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:179][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=64165.266 Y=-30811.387 Z=10767.573] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:179][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=64352.863 Y=-30333.256 Z=10795.345] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:179][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=64404.148 Y=-30984.219 Z=10809.285] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:180][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=65191.711 Y=-19147.711 Z=15932.014] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:180][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=65191.711 Y=-19147.711 Z=15932.014] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:180][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=65191.711 Y=-19147.711 Z=15932.014] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:180][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=65191.711 Y=-19147.711 Z=15932.014] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:180][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=65081.777 Y=-18889.328 Z=15896.833] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:180][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=65191.711 Y=-19147.711 Z=15932.014] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:180][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=65191.711 Y=-19147.711 Z=15932.014] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:180][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=65075.617 Y=-21063.188 Z=15029.431] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:180][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=64910.898 Y=-21135.857 Z=15041.013] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:180][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=64870.062 Y=TRACE line rdi=0x7ffe011fb800 rsi=0x14 rdx=0x5 rcx=0x14 r8=0xa r9=0x1 xmm0=120 xmm1=120 xmm2=1.03101e-08 xmm3=5.79873e+07
+TRACE thin_place rdi=0x7fffdce6ee00 rsi=0x14 rdx=0x5 rcx=0x1 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=63773.3 xmm2=65782.3 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e5b200 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=57665.8 xmm2=58067.5 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe00e5ac00 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=62256 xmm2=62743.4 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe00e5af00 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=59923.8 xmm2=60395.5 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e5af00 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=59923.8 xmm2=61174.9 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e5b200 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=57665.8 xmm2=59008.4 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe00e5b200 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=57665.8 xmm2=58946 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe00e5af00 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=59923.8 xmm2=61262.3 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e5af00 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=59923.8 xmm2=60316.1 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e5af00 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=59923.8 xmm2=60321.2 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e5b200 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=57665.8 xmm2=58364.4 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe00e5af00 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=59923.8 xmm2=60611.3 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e5af00 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=59923.8 xmm2=60520.5 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e5af00 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=59923.8 xmm2=60327.3 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e5b500 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=55408.3 xmm2=56809.1 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe00e5af00 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=59923.8 xmm2=60254.1 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e5ac00 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=62256 xmm2=62391.5 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe00e5af00 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=59923.8 xmm2=60629.3 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e5ac00 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=62256 xmm2=62826.7 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe00e5ac00 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=62256 xmm2=63014.1 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe00e5b500 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=55408.3 xmm2=56677.1 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe00e5af00 rsi=0x0 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=59923.8 xmm2=60691.9 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e5b200 rsi=0x0 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=57665.8 xmm2=58744.1 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe00e5ac00 rsi=0x0 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=62256 xmm2=62589.7 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe00e5af00 rsi=0x0 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=59923.8 xmm2=60310.5 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e5b200 rsi=0x0 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=57665.8 xmm2=58923.4 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe00e5af00 rsi=0x0 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=59923.8 xmm2=60248.7 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e5b200 rsi=0x0 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=57665.8 xmm2=58659.9 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe00e5af00 rsi=0x0 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=59923.8 xmm2=61185.8 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e5af00 rsi=0x0 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=59923.8 xmm2=60290 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e5b500 rsi=0x0 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=55408.3 xmm2=56273.4 xmm3=0.0999999
+TRACE thin_place rdi=0x7ffe00e5b800 rsi=0x14 rdx=0x5 rcx=0x1 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=53126.6 xmm2=54732.3 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe00e5c100 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=46943.3 xmm2=47928.7 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe00e5c100 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=46943.3 xmm2=47392.1 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe00e5bb00 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=50865.1 xmm2=52094.7 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe00e5be00 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=49325.7 xmm2=49504.8 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e5c100 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=46943.3 xmm2=47971.3 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe00e5be00 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=49325.7 xmm2=49537.8 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e5c100 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=46943.3 xmm2=47725.3 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe00e5bb00 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=50865.1 xmm2=52493.7 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe00e5be00 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=49325.7 xmm2=50250.5 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e5bb00 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=50865.1 xmm2=51706.4 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe00e5be00 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=49325.7 xmm2=50361.4 xmm3=0.1
+TRACE thick_place rdi=0x7fffdce6f100 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=44548.3 xmm2=45192.9 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe00e5be00 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=49325.7 xmm2=49616.3 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e5be00 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=49325.7 xmm2=49715.7 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e5bb00 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=50865.1 xmm2=51751.4 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe00e5bb00 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=50865.1 xmm2=52483 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe00e5c100 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=46943.3 xmm2=47872.5 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe00e5c100 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=46943.3 xmm2=47359.5 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe00e5c100 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=46943.3 xmm2=47495.5 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe00e5bb00 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=50865.1 xmm2=51995.8 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe00e5be00 rsi=0x0 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=49325.7 xmm2=50180.8 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e5c100 rsi=0x0 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=46943.3 xmm2=48358.2 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe00e5b800 rsi=0x0 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=53126.6 xmm2=54085.7 xmm3=0.0999999
+TRACE thick_place rdi=0x7fffdce6f100 rsi=0x0 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=44548.3 xmm2=45194.7 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe00e5c100 rsi=0x0 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=46943.3 xmm2=47753.3 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe00e5b800 rsi=0x0 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=53126.6 xmm2=54257.5 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe00e5be00 rsi=0x0 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=49325.7 xmm2=49500.3 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e5c100 rsi=0x0 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=46943.3 xmm2=48163.7 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe00e5c100 rsi=0x0 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=46943.3 xmm2=47504.2 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe00e5be00 rsi=0x0 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=49325.7 xmm2=50421.5 xmm3=0.1
+TRACE thin_place rdi=0x7fffdce6f100 rsi=0x14 rdx=0x5 rcx=0x1 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=44548.3 xmm2=45782.3 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe00e50400 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=38146.5 xmm2=39076.1 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe00e50400 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=38146.5 xmm2=39334.7 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe00e5c400 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=42964.5 xmm2=43706.1 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe00e50100 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=40270.2 xmm2=41715.3 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe00e50100 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=40270.2 xmm2=41564 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe00e5c400 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=42964.5 xmm2=43404.9 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe00e50700 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=35849.6 xmm2=36900.4 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e5c400 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=42964.5 xmm2=43590.2 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe00e50100 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=40270.2 xmm2=41363.7 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe00e50700 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=35849.6 xmm2=36588.1 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e50100 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=40270.2 xmm2=41533.4 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe00e50400 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=38146.5 xmm2=38825.2 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe00e50100 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=40270.2 xmm2=40902.6 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe00e50100 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=40270.2 xmm2=41503.3 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe00e50700 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=35849.6 xmm2=36696.9 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e50100 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=40270.2 xmm2=40951.8 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe00e5c400 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=42964.5 xmm2=43535.7 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe00e50400 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=38146.5 xmm2=39280.5 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe00e50700 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=35849.6 xmm2=37220.3 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e50700 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=35849.6 xmm2=37456.8 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e50400 rsi=0x0 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=38146.5 xmm2=39430 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe00e50100 rsi=0x0 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=40270.2 xmm2=41570.4 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe00e50100 rsi=0x0 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=40270.2 xmm2=41717 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe00e50400 rsi=0x0 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=38146.5 xmm2=39236.3 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe00e50400 rsi=0x0 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=38146.5 xmm2=39499.2 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe00e50400 rsi=0x0 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=38146.5 xmm2=39296.1 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe00e50700 rsi=0x0 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=35849.6 xmm2=37324 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e50400 rsi=0x0 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=38146.5 xmm2=39436.1 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe00e50100 rsi=0x0 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=40270.2 xmm2=41884.6 xmm3=0.0999999
+TRACE thick_place rdi=0x7ffe00e50400 rsi=0x0 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=38146.5 xmm2=38878.1 xmm3=0.0999999
+TRACE thin_place rdi=0x7ffe00e50a00 rsi=0x14 rdx=0x5 rcx=0x1 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=33464.5 xmm2=34732.3 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e51000 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=29604.7 xmm2=30561.8 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e51000 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=29604.7 xmm2=30514.7 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e51600 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=24870 xmm2=26584 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e50d00 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=30990.8 xmm2=33203.2 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e51000 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=29604.7 xmm2=30489.4 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e51300 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=26525.4 xmm2=28963.8 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e51000 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=29604.7 xmm2=30959 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e50d00 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=30990.8 xmm2=32541.9 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e51600 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=24870 xmm2=26783.1 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e50d00 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=30990.8 xmm2=33216.4 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e50d00 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=30990.8 xmm2=32840 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e51300 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=26525.4 xmm2=28887 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e51000 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=29604.7 xmm2=30670.2 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e51000 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=29604.7 xmm2=30988.2 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e51000 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=29604.7 xmm2=30418.8 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e51300 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=26525.4 xmm2=28969.5 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e51000 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=29604.7 xmm2=30817.7 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e51300 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=26525.4 xmm2=28935.7 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e50d00 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=30990.8 xmm2=33108.9 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e51300 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=26525.4 xmm2=28481.3 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e50d00 rsi=0x0 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=30990.8 xmm2=32827.1 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e50d00 rsi=0x0 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=30990.8 xmm2=33179.4 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e51300 rsi=0x0 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=26525.4 xmm2=28032.4 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e51300 rsi=0x0 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=26525.4 xmm2=27984.9 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e51000 rsi=0x0 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=29604.7 xmm2=30512.1 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e51300 rsi=0x0 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=26525.4 xmm2=28672.8 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e51000 rsi=0x0 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=29604.7 xmm2=30790.1 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e50d00 rsi=0x0 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=30990.8 xmm2=32345.9 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e50d00 rsi=0x0 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=30990.8 xmm2=32383.5 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e51600 rsi=0x0 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=24870 xmm2=26260.6 xmm3=0.1
+TRACE thin_place rdi=0x7ffe00e51900 rsi=0x14 rdx=0x5 rcx=0x1 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=23167.4 xmm2=23682.3 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e51f00 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=18025.3 xmm2=19991.1 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e51c00 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=21442.4 xmm2=21624.9 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e51c00 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=21442.4 xmm2=22232.8 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e52200 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=16383.2 xmm2=17588.3 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e51f00 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=18025.3 xmm2=20108.4 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e52200 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=16383.2 xmm2=17878.9 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e51c00 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=21442.4 xmm2=22130.9 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e52200 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=16383.2 xmm2=17728.6 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e51f00 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=18025.3 xmm2=19662.3 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e52200 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=16383.2 xmm2=17966.4 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e51900 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=23167.4 xmm2=24267.9 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e51f00 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=18025.3 xmm2=19558.5 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e51c00 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=21442.4 xmm2=21855.2 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e51900 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=23167.4 xmm2=24276.6 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e52200 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=16383.2 xmm2=17725.2 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e51f00 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=18025.3 xmm2=20360.2 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e51c00 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=21442.4 xmm2=21926.2 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e51900 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=23167.4 xmm2=23797.2 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e52200 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=16383.2 xmm2=17654.7 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e51f00 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=18025.3 xmm2=20042.1 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e51f00 rsi=0x0 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=18025.3 xmm2=19407.6 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e52200 rsi=0x0 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=16383.2 xmm2=18217.9 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e52200 rsi=0x0 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=16383.2 xmm2=17503.4 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e51900 rsi=0x0 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=23167.4 xmm2=24270.6 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e51c00 rsi=0x0 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=21442.4 xmm2=21988.3 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e51c00 rsi=0x0 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=21442.4 xmm2=22033.6 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e51c00 rsi=0x0 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=21442.4 xmm2=21641 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e51c00 rsi=0x0 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=21442.4 xmm2=21932.8 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e52200 rsi=0x0 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=16383.2 xmm2=17645.2 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e51f00 rsi=0x0 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=18025.3 xmm2=19408.2 xmm3=0.1
+TRACE thin_place rdi=0x7ffe00e52500 rsi=0x14 rdx=0x5 rcx=0x1 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=14769.9 xmm2=15782.3 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e52b00 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=9875.22 xmm2=11088.2 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e53100 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=4934.69 xmm2=6949.17 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e52b00 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=9875.22 xmm2=10873.2 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e52b00 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=9875.22 xmm2=11676.9 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e52800 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=11514.3 xmm2=13930 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e53100 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=4934.69 xmm2=6651.98 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e53100 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=4934.69 xmm2=7457.08 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e52800 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=11514.3 xmm2=13953.3 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e53100 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=4934.69 xmm2=6805.65 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e52b00 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=9875.22 xmm2=11342.3 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e52800 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=11514.3 xmm2=13100.2 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e52e00 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=8230.99 xmm2=9587.37 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e53100 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=4934.69 xmm2=6797.14 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e52e00 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=8230.99 xmm2=9672.06 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e52b00 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=9875.22 xmm2=11050.2 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e53100 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=4934.69 xmm2=7521.72 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e52e00 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=8230.99 xmm2=9569.23 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e52800 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=11514.3 xmm2=13639.5 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e52800 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=11514.3 xmm2=13092.4 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e52b00 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=9875.22 xmm2=11371.8 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e53100 rsi=0x0 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=4934.69 xmm2=7271.81 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e52e00 rsi=0x0 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=8230.99 xmm2=8808.56 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e52800 rsi=0x0 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=11514.3 xmm2=13249.8 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e52e00 rsi=0x0 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=8230.99 xmm2=9504.78 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e52800 rsi=0x0 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=11514.3 xmm2=13897.4 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e52b00 rsi=0x0 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=9875.22 xmm2=10973.3 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e52b00 rsi=0x0 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=9875.22 xmm2=11052.4 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e53100 rsi=0x0 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=4934.69 xmm2=7367.25 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e52e00 rsi=0x0 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=8230.99 xmm2=9393 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e52e00 rsi=0x0 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=8230.99 xmm2=8619.71 xmm3=0.1
+TRACE thin_place rdi=0x7ffe00e53400 rsi=0x14 rdx=0x5 rcx=0x1 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=3286.54 xmm2=4732.34 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e53a00 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=0 xmm2=0 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e53a00 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=0 xmm2=0 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e53400 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=3286.54 xmm2=3299.24 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e53400 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=3286.54 xmm2=3740.56 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e53a00 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=0 xmm2=0 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e53700 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=1641 xmm2=1512.25 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e53a00 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=0 xmm2=923.221 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e53a00 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=0 xmm2=264.461 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e53700 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=1641 xmm2=2013.21 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e53a00 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=0 xmm2=0 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e53a00 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=0 xmm2=0 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e53700 rsi=0x1 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=1641 xmm2=2993.57 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e53a00 rsi=0x0 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=0 xmm2=0 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e53a00 rsi=0x0 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=0 xmm2=24.8232 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e53a00 rsi=0x0 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=0 xmm2=0 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e53a00 rsi=0x0 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=0 xmm2=988.312 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e53700 rsi=0x0 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=1641 xmm2=2739.6 xmm3=0.1
+TRACE thick_place rdi=0x7ffe00e53700 rsi=0x0 rdx=0x1 rcx=0x7fffe525a970 r8=0x7fffec260000 r9=0x6 xmm0=120 xmm1=1641 xmm2=3051.41 xmm3=0.1
+TRACE wind rdi=0x7ffdef464980 rsi=0x1 rdx=0x1 rcx=0x80 r8=0x0 r9=0x33 xmm0=200 xmm1=350 xmm2=2 xmm3=1.5
+-24723.348 Z=12976.006] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:180][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=64971.848 Y=-22893.838 Z=13991.206] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:180][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=65055.992 Y=-22894.951 Z=13845.882] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:180][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=65377.945 Y=-23344.930 Z=13891.467] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:180][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=64870.062 Y=-24723.348 Z=12976.006] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:181][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=64870.062 Y=-24723.348 Z=12976.006] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:181][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=65075.617 Y=-21063.188 Z=15029.431] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:181][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=65075.617 Y=-21063.188 Z=15029.431] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:181][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=64935.934 Y=-21370.311 Z=14974.604] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:181][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=65075.617 Y=-21063.188 Z=15029.431] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:181][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=65145.324 Y=-20872.537 Z=15260.548] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:181][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=65099.594 Y=-21106.434 Z=15087.571] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:181][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=65075.617 Y=-21063.188 Z=15029.431] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:181][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=65075.617 Y=-21063.188 Z=15029.431] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:181][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=64971.848 Y=-22893.838 Z=13991.206] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:181][864]LogSpawn: Warning: SpawnActor failed because of collision at the spawn location [X=65415.074 Y=-23292.373 Z=13681.504] for [BP_Hover_1_C]
+[2026.11.04-16.04.03:181][864]LogTemp: Warning: Reset Spline 12 Num 0 PortNum 31 Reversed 1
+[2026.11.04-16.04.03:328][864]LogTemp: Warning: Reset Spline 15 Num 0 PortNum 5 Reversed 0
+[2026.11.04-16.04.03:328][864]LogTemp: Warning: Reset Spline 16 Num 0 PortNum 4 Reversed 0
+[2026.11.04-16.04.03:328][864]LogTemp: A FACTORIE: 0
+[2026.11.04-16.04.03:328][864]LogTemp: NO B FACTORIE
+[2026.11.04-16.04.03:329][864]LogWindSim: [Wind  0] 0.00s ~ 9.37s | Speed=1.50 | Dir=276.6 | Trans=0 | Integral=14.06 | Accum=14.06
+[2026.11.04-16.04.03:329][864]LogWindSim: [Wind  1] 9.37s ~ 11.37s | Speed=1.50 | Dir=276.6 | Trans=1 | Integral=3.34 | Accum=17.40
+[2026.11.04-16.04.03:329][864]LogWindSim: [Wind  2] 11.37s ~ 21.18s | Speed=1.84 | Dir=9.6 | Trans=0 | Integral=18.02 | Accum=35.42
+[2026.11.04-16.04.03:329][864]LogWindSim: [Wind  3] 21.18s ~ 23.18s | Speed=1.84 | Dir=9.6 | Trans=1 | Integral=3.34 | Accum=38.76
+[2026.11.04-16.04.03:329][864]LogWindSim: [Wind  4] 23.18s ~ 33.17s | Speed=1.50 | Dir=100.9 | Trans=0 | Integral=14.98 | Accum=53.74
+[2026.11.04-16.04.03:329][864]LogWindSim: [Wind  5] 33.17s ~ 35.17s | Speed=1.50 | Dir=100.9 | Trans=1 | Integral=3.49 | Accum=57.23
+[2026.11.04-16.04.03:329][864]LogWindSim: [Wind  6] 35.17s ~ 44.40s | Speed=1.99 | Dir=355.9 | Trans=0 | Integral=18.37 | Accum=75.60
+[2026.11.04-16.04.03:329][864]LogWindSim: [Wind  7] 44.40s ~ 46.40s | Speed=1.99 | Dir=355.9 | Trans=1 | Integral=3.98 | Accum=79.58
+[2026.11.04-16.04.03:329][864]LogWindSim: [Wind  8] 46.40s ~ 54.97s | Speed=1.99 | Dir=165.6WIND_ARRAY context=0x7ffdef464980 ptr=0x7ffdef8f6980 count=35 capacity=56 tail=0x43b3a34100000000
+WIND_ITEM 0 hex=000000000000c03fae4d8a4300000000 floats=0,1.5,276.606873,0
+WIND_ITEM 1 hex=74f815410000c03fae4d8a4301000000 floats=9.3731575,1.5,276.606873,1.40129846e-45
+WIND_ITEM 2 hex=74f83541c82beb3f3881194100000000 floats=11.3731575,1.8372736,9.59404755,0
+WIND_ITEM 3 hex=2476a941c82beb3f3881194101000000 floats=21.1826859,1.8372736,9.59404755,1.40129846e-45
+WIND_ITEM 4 hex=2476b9410000c03f35b6c94200000000 floats=23.1826859,1.5,100.855873,0
+WIND_ITEM 5 hex=36ac04420000c03f35b6c94201000000 floats=33.1681747,1.5,100.855873,1.40129846e-45
+WIND_ITEM 6 hex=36ac0c4252b8fe3f16f9b14300000000 floats=35.1681747,1.99000001,355.945984,0
+WIND_ITEM 7 hex=f299314252b8fe3f16f9b14301000000 floats=44.4003372,1.99000001,355.945984,1.40129846e-45
+WIND_ITEM 8 hex=f299394252b8fe3f2d8e254300000000 floats=46.4003372,1.99000001,165.555374,0
+WIND_ITEM 9 hex=aee35b4252b8fe3f2d8e254301000000 floats=54.9723434,1.99000001,165.555374,1.40129846e-45
+WIND_ITEM 10 hex=aee3634252b8fe3f5b34814300000000 floats=56.9723434,1.99000001,258.409027,0
+WIND_ITEM 11 hex=33e1824252b8fe3f5b34814301000000 floats=65.4398422,1.99000001,258.409027,1.40129846e-45
+WIND_ITEM 12 hex=33e18642000000401be5524200000000 floats=67.4398422,2,52.7237358,0
+WIND_ITEM 13 hex=15609742000000401be5524201000000 floats=75.6876602,2,52.7237358,1.40129846e-45
+WIND_ITEM 14 hex=15609b427081e13ff6cb7f4300000000 floats=77.6876602,1.76176262,255.796722,0
+WIND_ITEM 15 hex=e425ac427081e13ff6cb7f4301000000 floats=86.0740051,1.76176262,255.796722,1.40129846e-45
+WIND_ITEM 16 hex=e425b04252b8fe3f381c664300000000 floats=88.0740051,1.99000001,230.110229,0
+WIND_ITEM 17 hex=83d6c24252b8fe3f381c664301000000 floats=97.4189682,1.99000001,230.110229,1.40129846e-45
+WIND_ITEM 18 hex=83d6c64252b8fe3f548f9f4300000000 floats=99.4189682,1.99000001,319.119751,0
+WIND_ITEM 19 hex=662cd94252b8fe3f548f9f4301000000 floats=108.586716,1.99000001,319.119751,1.40129846e-45
+WIND_ITEM 20 hex=662cdd4252b8fe3f0f0a5e4300000000 floats=110.586716,1.99000001,222.039291,0
+WIND_ITEM 21 hex=aeebef4252b8fe3f0f0a5e4301000000 floats=119.960312,1.99000001,222.039291,1.40129846e-45
+WIND_ITEM 22 hex=aeebf34252b8fe3f35e63a4300000000 floats=121.960312,1.99000001,186.899246,0
+WIND_ITEM 23 hex=6a82024352b8fe3f35e63a4301000000 floats=130.50943,1.99000001,186.899246,1.40129846e-45
+WIND_ITEM 24 hex=6a82044352b8fe3f94680e4300000000 floats=132.50943,1.99000001,142.408508,0
+WIND_ITEM 25 hex=265c0e4352b8fe3f94680e4301000000 floats=142.359955,1.99000001,142.408508,1.40129846e-45
+WIND_ITEM 26 hex=265c104352b8fe3fc967db4200000000 floats=144.359955,1.99000001,109.702705,0
+WIND_ITEM 27 hex=a54a1a4352b8fe3fc967db4201000000 floats=154.29158,1.99000001,109.702705,1.40129846e-45
+WIND_ITEM 28 hex=a54a1c4352b8fe3fc0d1794300000000 floats=156.29158,1.99000001,249.819336,0
+WIND_ITEM 29 hex=4e1e254352b8fe3fc0d1794301000000 floats=165.118378,1.99000001,249.819336,1.40129846e-45
+WIND_ITEM 30 hex=4e1e274352b8fe3f975f824100000000 floats=167.118378,1.99000001,16.2966747,0
+WIND_ITEM 31 hex=31b22f4352b8fe3f975f824101000000 floats=175.69606,1.99000001,16.2966747,1.40129846e-45
+WIND_ITEM 32 hex=31b2314352b8fe3feb52fa4200000000 floats=177.69606,1.99000001,125.161949,0
+WIND_ITEM 33 hex=2f1d3a4352b8fe3feb52fa4201000000 floats=186.113998,1.99000001,125.161949,1.40129846e-45
+WIND_ITEM 34 hex=2f1d3c43d913f93f2ea78c4300000000 floats=188.113998,1.9459182,281.306091,0
+OBSTACLE_ARRAY actor=0x7ffe00e50100 ptr=0x7ffdeeb13220 count=10 cap=24
+OBSTACLE_POINT actor=0x7ffe00e50100 index=0 hex=642f254773ef8845ea39e045 xyz=42287.3906,4381.93115,7175.23926
+OBSTACLE_POINT actor=0x7ffe00e50100 index=1 hex=f6812547c05c71452a03e145 xyz=42369.9609,3861.79688,7200.39551
+OBSTACLE_POINT actor=0x7ffe00e50100 index=2 hex=de302747e60b6e4578a3e445 xyz=42800.8672,3808.74365,7316.43359
+OBSTACLE_POINT actor=0x7ffe00e50100 index=3 hex=87e427470ec168456329e645 xyz=42980.5273,3724.06592,7365.17334
+OBSTACLE_POINT actor=0x7ffe00e50100 index=4 hex=01442347a3648545451fdc45 xyz=41796.0039,4268.57959,7043.90869
+OBSTACLE_POINT actor=0x7ffe00e50100 index=5 hex=75042647c14b89453303e245 xyz=42500.457,4393.46924,7232.3999
+OBSTACLE_POINT actor=0x7ffe00e50100 index=6 hex=742a2847417888452ca2e645 xyz=43050.4531,4367.03174,7380.27148
+OBSTACLE_POINT actor=0x7ffe00e50100 index=7 hex=9870224714be8245e95cda45 xyz=41584.5938,4183.75977,6987.61377
+OBSTACLE_POINT actor=0x7ffe00e50100 index=8 hex=dd882247fa9c8945fb86da45 xyz=41608.8633,4403.62207,6992.87256
+OBSTACLE_POINT actor=0x7ffe00e50100 index=9 hex=4c692347ef6e89457c69dc45 xyz=41833.2969,4397.8667,7053.18555
+OBSTACLE_ARRAY actor=0x7ffe00e50400 ptr=0x7ffdeeb12ec0 count=10 cap=24
+OBSTACLE_POINT actor=0x7ffe00e50400 index=0 hex=81401947e20d96455148c245 xyz=39232.5039,4801.73535,6217.03955
+OBSTACLE_POINT actor=0x7ffe00e50400 index=1 hex=c3721e473bfb81452cc2d045 xyz=40562.7617,4159.40381,6680.27148
+OBSTACLE_POINT actor=0x7ffe00e50400 index=2 hex=9d001b47073596454579c645 xyz=39680.6133,4806.62842,6351.15869
+OBSTACLE_POINT actor=0x7ffe00e50400 index=3 hex=dab11a474fe38845df0dc745 xyz=39601.8516,4380.41357,6369.73389
+OBSTACLE_POINT actor=0x7ffe00e50400 index=4 hex=ecf21c471e238545bdd7cc45 xyz=40178.9219,4260.38965,6554.96729
+OBSTACLE_POINT actor=0x7ffe00e50400 index=5 hex=256b1947908080457ed1c445 xyz=39275.1445,4112.07031,6298.18652
+OBSTACLE_POINT actor=0x7ffe00e50400 index=6 hex=6b9c1f47b1bf6145673fd545 xyz=40860.418,3611.98071,6823.92529
+OBSTACLE_POINT actor=0x7ffe00e50400 index=7 hex=1f751a473e4494454a5bc545 xyz=39541.1211,4744.53027,6315.41113
+OBSTACLE_POINT actor=0x7ffe00e50400 index=8 hex=60fa1f4743e17b45c2d5d445 xyz=40954.375,4030.07886,6810.71973
+OBSTACLE_POINT actor=0x7ffe00e50400 index=9 hex=09e01f47e64a73456203d545 xyz=40928.0352,3892.68115,6816.42285
+OBSTACLE_ARRAY actor=0x7ffe00e50700 ptr=0x7ffdeeb13100 count=6 cap=24
+OBSTACLE_POINT actor=0x7ffe00e50700 index=0 hex=797d144727529b45685bb645 xyz=38013.4727,4970.26904,5835.42578
+OBSTACLE_POINT actor=0x7ffe00e50700 index=1 hex=8a541647b79191452f05bc45 xyz=38484.5391,4658.21436,6016.64795
+OBSTACLE_POINT actor=0x7ffe00e50700 index=2 hex=e0641747d4f18745c7efbf45 xyz=38756.875,4350.22852,6141.97217
+OBSTACLE_POINT actor=0x7ffe00e50700 index=3 hex=d93b1247bad1a545dea5af45 xyz=37435.8477,5306.21582,5620.7334
+OBSTACLE_POINT actor=0x7ffe00e50700 index=4 hex=fec41547ec3a9545f62eba45 xyz=38340.9922,4775.36523,5957.87012
+OBSTACLE_POINT actor=0x7ffe00e50700 index=5 hex=900212475527aa45b373ae45 xyz=37378.5625,5444.9165,5582.4624
+OBSTACLE_ARRAY actor=0x7ffe00e50a00 ptr=0x7ffdef8d8080 count=25 cap=53
+OBSTACLE_POINT actor=0x7ffe00e50a00 index=0 hex=94300f47f705d345bf3da145 xyz=36656.5781,6752.74561,5159.71826
+OBSTACLE_POINT actor=0x7ffe00e50a00 index=1 hex=aec10c4795f6d04547239d45 xyz=36033.6797,6686.82275,5028.40967
+OBSTACLE_POINT actor=0x7ffe00e50a00 index=2 hex=a85c0c475717dc4559339a45 xyz=35932.6562,7042.91748,4934.41846
+OBSTACLE_POINT actor=0x7ffe00e50a00 index=3 hex=abd40c4751c6d94569879b45 xyz=36052.668,6968.78955,4976.92627
+OBSTACLE_POINT actor=0x7ffe00e50a00 index=4 hex=76270d472212c345e0a0a045 xyz=36135.4609,6242.2666,5140.10938
+OBSTACLE_POINT actor=0x7ffe00e50a00 index=5 hex=2e220c47e559d545e61c9b45 xyz=35874.1797,6827.23682,4963.6123
+OBSTACLE_POINT actor=0x7ffe00e50a00 index=6 hex=71a40e4788adce456116a145 xyz=36516.4414,6613.69141,5154.79736
+OBSTACLE_POINT actor=0x7ffe00e50a00 index=7 hex=42230c47ad19d14593f69b45 xyz=35875.2578,6691.20947,4990.82178
+OBSTACLE_POINT actor=0x7ffe00e50a00 index=8 hex=a0da0b479a65cd45cd2b9c45 xyz=35802.625,6572.7002,4997.4751
+OBSTACLE_POINT actor=0x7ffe00e50a00 index=9 hex=06be0d470e10cc45d3ef9f45 xyz=36286.0234,6530.00684,5117.97803
+OBSTACLE_POINT actor=0x7ffe00e50a00 index=10 hex=d54b0e47d70bca45135da145 xyz=36427.832,6465.47998,5163.63428
+OBSTACLE_POINT actor=0x7ffe00e50a00 index=11 hex=5add0b478537c645279d9d45 xyz=35805.3516,6342.93994,5043.64404
+OBSTACLE_POINT actor=0x7ffe00e50a00 index=12 hex=ec2d0c47f743ca4522659d45 xyz=35885.9219,6472.49561,5036.6416
+OBSTACLE_POINT actor=0x7ffe00e50a00 index=13 hex=e3320d47409fba45bb62a245 xyz=36146.8867,5971.90625,5196.34131
+OBSTACLE_POINT actor=0x7ffe00e50a00 index=14 hex=f2d40e478cd4d645add29f45 xyz=36564.9453,6874.56836,5114.33447
+OBSTACLE_POINT actor=0x7ffe00e50a00 index=15 hex=3bfd0a478357ce455a619a45 xyz=35581.2305,6602.93896,4940.16895
+OBSTACLE_POINT actor=0x7ffe00e50a00 index=16 hex=86670b47cf85d445d5ec9945 xyz=35687.5234,6800.72607,4925.604
+OBSTACLE_POINT actor=0x7ffe00e50a00 index=17 hex=96720e47afa8d445778a9f45 xyz=36466.5859,6805.08545,5105.30811
+OBSTACLE_POINT actor=0x7ffe00e50a00 index=18 hex=45f80c4741f5cc45b8539e45 xyz=36088.2695,6558.65674,5066.46484
+OBSTACLE_POINT actor=0x7ffe00e50a00 index=19 hex=76240d471013c945b26a9f45 xyz=36132.4609,6434.38281,5101.33691
+OBSTACLE_POINT actor=0x7ffe00e50a00 index=20 hex=31690e477e64d945df889e45 xyz=36457.1914,6956.56152,5073.10889
+OBSTACLE_POINT actor=0x7ffe00e50a00 index=21 hex=e7940d473908d84545449d45 xyz=36244.9023,6913.02783,5032.53369
+OBSTACLE_POINT actor=0x7ffe00e50a00 index=22 hex=5abf0b47b070d9452f969945 xyz=35775.3516,6958.08594,4914.77295
+OBSTACLE_POINT actor=0x7ffe00e50a00 index=23 hex=9eee0d47313bdb454e489d45 xyz=36334.6172,7015.39893,5033.03809
+OBSTACLE_POINT actor=0x7ffe00e50a00 index=24 hex=f89f0c47b3b8c6456bec9e45 xyz=35999.9688,6359.0874,5085.55225
+OBSTACLE_ARRAY actor=0x7ffe00e50d00 ptr=0x7ffdeeb12a40 count=9 cap=24
+OBSTACLE_POINT actor=0x7ffe00e50d00 index=0 hex=f9b50647c2c00346a7058945 xyz=34485.9727,8432.18945,4384.70654
+OBSTACLE_POINT actor=0x7ffe00e50d00 index=1 hex=b5a90847754bfc4509068e45 xyz=34985.707,8073.43213,4544.75439
+OBSTACLE_POINT actor=0x7ffe00e50d00 index=2 hex=9ef00947197e004671c38e45 xyz=35312.6172,8223.52441,4568.43018
+OBSTACLE_POINT actor=0x7ffe00e50d00 index=3 hex=2b2f09477dfcdc4548529545 xyz=35119.168,7071.56104,4778.28516
+OBSTACLE_POINT actor=0x7ffe00e50d00 index=4 hex=192c0a474475ee459ffa9245 xyz=35372.0977,7630.6582,4703.32764
+OBSTACLE_POINT actor=0x7ffe00e50d00 index=5 hex=ab940a477fecdf4590979645 xyz=35476.668,7165.56201,4818.94531
+OBSTACLE_POINT actor=0x7ffe00e50d00 index=6 hex=c89e0847d161ea45d9bc9145 xyz=34974.7812,7500.22705,4663.60596
+OBSTACLE_POINT actor=0x7ffe00e50d00 index=7 hex=a672094705c4f945339e8f45 xyz=35186.6484,7992.50244,4595.7749
+OBSTACLE_POINT actor=0x7ffe00e50d00 index=8 hex=b676094734c3f1451d539145 xyz=35190.7109,7736.40039,4650.38916
+OBSTACLE_ARRAY actor=0x7ffe00e51000 ptr=0x7ffdeeb12b60 count=10 cap=24
+OBSTACLE_POINT actor=0x7ffe00e51000 index=0 hex=3a8a0147096b1b4603e17545 xyz=33162.2266,9946.75879,3934.06323
+OBSTACLE_POINT actor=0x7ffe00e51000 index=1 hex=a8390447ea7e1b46c54b7a45 xyz=33849.6562,9951.72852,4004.7356
+OBSTACLE_POINT actor=0x7ffe00e51000 index=2 hex=55640447094a254655967245 xyz=33892.332,10578.5088,3881.39575
+OBSTACLE_POINT actor=0x7ffe00e51000 index=3 hex=2dea0347d6e6164647867d45 xyz=33770.1758,9657.70898,4056.39233
+OBSTACLE_POINT actor=0x7ffe00e51000 index=4 hex=79a803478f7e1c460b897845 xyz=33704.4727,10015.6396,3976.56519
+OBSTACLE_POINT actor=0x7ffe00e51000 index=5 hex=7e3b064795ef1446537f8145 xyz=34363.4922,9531.89551,4143.91553
+OBSTACLE_POINT actor=0x7ffe00e51000 index=6 hex=b4d10447f1f80b462ef98345 xyz=34001.7031,8958.23535,4223.14746
+OBSTACLE_POINT actor=0x7ffe00e51000 index=7 hex=a574054768d6064623998645 xyz=34164.6445,8629.60156,4307.14209
+OBSTACLE_POINT actor=0x7ffe00e51000 index=8 hex=c72104474a642146fb547545 xyz=33825.7773,10329.0723,3925.31128
+OBSTACLE_POINT actor=0x7ffe00e51000 index=9 hex=da12054702111b46c90f7c45 xyz=34066.8516,9924.25195,4032.98657
+OBSTACLE_ARRAY actor=0x7ffe00e51300 ptr=0x7ffdeeb12800 count=8 cap=24
+OBSTACLE_POINT actor=0x7ffe00e51300 index=0 hex=21a60047a7672e4604ce6645 xyz=32934.1289,11161.9131,3692.87598
+OBSTACLE_POINT actor=0x7ffe00e51300 index=1 hex=db0a0147fbeb234631386f45 xyz=33034.8555,10490.9951,3827.51196
+OBSTACLE_POINT actor=0x7ffe00e51300 index=2 hex=cea4004706ec41460beb5745 xyz=32932.8047,12411.0059,3454.69019
+OBSTACLE_POINT actor=0x7ffe00e51300 index=3 hex=a0c00147122240466e785a45 xyz=33216.625,12296.5176,3495.52686
+OBSTACLE_POINT actor=0x7ffe00e51300 index=4 hex=1507044732932b467e956c45 xyz=33799.082,10980.7988,3785.34326
+OBSTACLE_POINT actor=0x7ffe00e51300 index=5 hex=54ebfd463bec3a461b735b45 xyz=32501.6641,11963.0576,3511.19409
+OBSTACLE_POINT actor=0x7ffe00e51300 index=6 hex=5d34024795622846e20f6d45 xyz=33332.3633,10776.6455,3792.99268
+OBSTACLE_POINT actor=0x7ffe00e51300 index=7 hex=067a01474add24465cf76e45 xyz=33146.0234,10551.3223,3823.45996
+OBSTACLE_ARRAY actor=0x7ffe00e51600 ptr=0x7ffdef537ea0 count=3 cap=4
+OBSTACLE_POINT actor=0x7ffe00e51600 index=0 hex=ab9500477b03494671aa5245 xyz=32917.668,12864.8701,3370.65259
+OBSTACLE_POINT actor=0x7ffe00e51600 index=1 hex=d571fd46728d614684da3f45 xyz=32440.916,14435.3613,3069.65723
+OBSTACLE_POINT actor=0x7ffe00e51600 index=2 hex=2a7efa46cd5a5b46e6194345 xyz=32063.082,14038.7002,3121.61865
+OBSTACLE_ARRAY actor=0x7ffe00e51900 ptr=0x7ffdef8d7b80 count=29 cap=53
+OBSTACLE_POINT actor=0x7ffe00e51900 index=0 hex=5718fb46264f78463de92f45 xyz=32140.1699,15891.7871,2814.57739
+OBSTACLE_POINT actor=0x7ffe00e51900 index=1 hex=4d5ef94666c1804696492945 xyz=31919.1504,16480.6992,2708.59912
+OBSTACLE_POINT actor=0x7ffe00e51900 index=2 hex=327dfc468ef479469f3f2f45 xyz=32318.5977,15997.1387,2803.97632
+OBSTACLE_POINT actor=0x7ffe00e51900 index=3 hex=3e54fb464d567f461a542b45 xyz=32170.1211,16341.5752,2741.25635
+OBSTACLE_POINT actor=0x7ffe00e51900 index=4 hex=2b65f546429b7946b24d2d45 xyz=31410.584,15974.8145,2772.85596
+OBSTACLE_POINT actor=0x7ffe00e51900 index=5 hex=bbc1fc4688a577460edc3045 xyz=32352.8652,15849.3828,2829.75342
+OBSTACLE_POINT actor=0x7ffe00e51900 index=6 hex=4064fc46839f7c46ac732d45 xyz=32306.125,16167.8779,2775.22949
+OBSTACLE_POINT actor=0x7ffe00e51900 index=7 hex=b38dfa46094b7c46471b2d45 xyz=32070.8496,16146.7588,2769.70483
+OBSTACLE_POINT actor=0x7ffe00e51900 index=8 hex=6b50f446ecdf7f4619d22845 xyz=31272.209,16375.9805,2701.1311
+OBSTACLE_POINT actor=0x7ffe00e51900 index=9 hex=6aa9f5465c4680467dc92845 xyz=31444.707,16419.1797,2700.59302
+OBSTACLE_POINT actor=0x7ffe00e51900 index=10 hex=e369f74629be794615d52d45 xyz=31668.9434,15983.54,2781.31763
+OBSTACLE_POINT actor=0x7ffe00e51900 index=11 hex=9030f746fbfe764630952f45 xyz=31640.2812,15807.7451,2809.32422
+OBSTACLE_POINT actor=0x7ffe00e51900 index=12 hex=f19cf546d4557c462a902b45 xyz=31438.4707,16149.457,2745.01025
+OBSTACLE_POINT actor=0x7ffe00e51900 index=13 hex=e30af946b56177464de52f45 xyz=31877.4434,15832.4268,2814.3313
+OBSTACLE_POINT actor=0x7ffe00e51900 index=14 hex=04d0f946c582784656622f45 xyz=31976.0078,15904.6924,2806.146
+OBSTACLE_POINT actor=0x7ffe00e51900 index=15 hex=2ff0f54661717546393a3045 xyz=31480.0918,15708.3447,2819.63892
+OBSTACLE_POINT actor=0x7ffe00e51900 index=16 hex=223cf94688947c460f832c45 xyz=31902.0664,16165.1328,2760.19116
+OBSTACLE_POINT actor=0x7ffe00e51900 index=17 hex=d805f74657987e46bf7f2a45 xyz=31618.9219,16294.085,2727.98413
+OBSTACLE_POINT actor=0x7ffe00e51900 index=18 hex=b2bff646c4d97146e7da3245 xyz=31583.8477,15478.4414,2861.6814
+OBSTACLE_POINT actor=0x7ffe00e51900 index=19 hex=ac7af7467de580466f852845 xyz=31677.3359,16498.7441,2696.3396
+OBSTACLE_POINT actor=0x7ffe00e51900 index=20 hex=5550fa46603b814645f22845 xyz=32040.166,16541.6875,2703.14185
+OBSTACLE_POINT actor=0x7ffe00e51900 index=21 hex=7a21f846be1f7546771c3145 xyz=31760.7383,15687.9355,2833.77905
+OBSTACLE_POINT actor=0x7ffe00e51900 index=22 hex=193af84619e37b4669a92c45 xyz=31773.0488,16120.7744,2762.58813
+OBSTACLE_POINT actor=0x7ffe00e51900 index=23 hex=63def9465ddc744691d13145 xyz=31983.1934,15671.0908,2845.0979
+OBSTACLE_POINT actor=0x7ffe00e51900 index=24 hex=f973f44672867d46566b2a45 xyz=31289.9863,16225.6113,2726.7085
+OBSTACLE_POINT actor=0x7ffe00e51900 index=25 hex=8d80f546c37d7746b5bc2e45 xyz=31424.2754,15839.4404,2795.79419
+OBSTACLE_POINT actor=0x7ffe00e51900 index=26 hex=0eaffb4619ca6b460b623845 xyz=32215.5273,15090.5244,2950.12769
+OBSTACLE_POINT actor=0x7ffe00e51900 index=27 hex=8507f94680b97046e54c3445 xyz=31875.7598,15406.375,2884.80591
+OBSTACLE_POINT actor=0x7ffe00e51900 index=28 hex=5851fb4668b3804634f52945 xyz=32168.6719,16473.7031,2719.3252
+OBSTACLE_ARRAY actor=0x7ffe00e51c00 ptr=0x7ffdeeb1d0c0 count=9 cap=24
+OBSTACLE_POINT actor=0x7ffe00e51c00 index=0 hex=4008f9468faf8d46e2fb1845 xyz=31876.125,18135.7793,2447.74268
+OBSTACLE_POINT actor=0x7ffe00e51c00 index=1 hex=2eb4f24605bd8b462cbc1945 xyz=31066.0898,17886.5098,2459.76074
+OBSTACLE_POINT actor=0x7ffe00e51c00 index=2 hex=6084f5469d2c8b464e2f1b45 xyz=31426.1875,17814.3066,2482.95654
+OBSTACLE_POINT actor=0x7ffe00e51c00 index=3 hex=70dff34681ef8746fac91e45 xyz=31215.7188,17399.752,2540.62354
+OBSTACLE_POINT actor=0x7ffe00e51c00 index=4 hex=c9c8f546fe1f854654cd2245 xyz=31460.3926,17039.9961,2604.83301
+OBSTACLE_POINT actor=0x7ffe00e51c00 index=5 hex=bcf0f946c2e4824618b02645 xyz=31992.3672,16754.3789,2667.00586
+OBSTACLE_POINT actor=0x7ffe00e51c00 index=6 hex=d680f646db2c90462e351545 xyz=31552.418,18454.4277,2387.32373
+OBSTACLE_POINT actor=0x7ffe00e51c00 index=7 hex=49e9f3461cbd85462a8a2145 xyz=31220.6426,17118.5547,2584.63525
+OBSTACLE_POINT actor=0x7ffe00e51c00 index=8 hex=680ff44652758e46a0b31645 xyz=31239.7031,18234.6602,2411.22656
+OBSTACLE_ARRAY actor=0x7ffe00e51f00 ptr=0x7ffdeeb1d300 count=8 cap=24
+OBSTACLE_POINT actor=0x7ffe00e51f00 index=0 hex=9987f24635829c46648e0545 xyz=31043.7988,20033.1035,2136.89941
+OBSTACLE_POINT actor=0x7ffe00e51f00 index=1 hex=4b73ef469cb49f46c8040145 xyz=30649.6465,20442.3047,2064.29883
+OBSTACLE_POINT actor=0x7ffe00e51f00 index=2 hex=1ebef6465cd99646ff470d45 xyz=31583.0586,19308.6797,2260.49976
+OBSTACLE_POINT actor=0x7ffe00e51f00 index=3 hex=8d30f2460cba94463ba70e45 xyz=31000.2754,19037.0234,2282.4519
+OBSTACLE_POINT actor=0x7ffe00e51f00 index=4 hex=2a97f546d8739e4612060445 xyz=31435.582,20281.9219,2112.37939
+OBSTACLE_POINT actor=0x7ffe00e51f00 index=5 hex=08a5f346fcdc9a4658c60745 xyz=31186.5156,19822.4922,2172.39648
+OBSTACLE_POINT actor=0x7ffe00e51f00 index=6 hex=a0f1f146b7339646fcd90c45 xyz=30968.8125,19225.8574,2253.62402
+OBSTACLE_POINT actor=0x7ffe00e51f00 index=7 hex=f3b6f446b62ea2466acffe44 xyz=31323.4746,20759.3555,2038.48169
+OBSTACLE_ARRAY actor=0x7ffe00e52200 ptr=0x7ffdeeb1d420 count=9 cap=24
+OBSTACLE_POINT actor=0x7ffe00e52200 index=0 hex=84d8e9460d9fb046ab32d944 xyz=29932.2578,22607.5254,1737.58337
+OBSTACLE_POINT actor=0x7ffe00e52200 index=1 hex=9048f0467449a946c5d0ec44 xyz=30756.2812,21668.7266,1894.52405
+OBSTACLE_POINT actor=0x7ffe00e52200 index=2 hex=88bdee466445a446c93bf744 xyz=30558.7656,21026.6953,1977.86829
+OBSTACLE_POINT actor=0x7ffe00e52200 index=3 hex=d2f1ec46ec7ea94667aaea44 xyz=30328.9102,21695.4609,1877.32507
+OBSTACLE_POINT actor=0x7ffe00e52200 index=4 hex=3992f0467ffcab4667efe644 xyz=30793.1113,22014.248,1847.48132
+OBSTACLE_POINT actor=0x7ffe00e52200 index=5 hex=f323f0467105a346b1bafa44 xyz=30737.9746,20866.7207,2005.83411
+OBSTACLE_POINT actor=0x7ffe00e52200 index=6 hex=140cf14618fcac4653f2e444 xyz=30854.0391,22142.0469,1831.57263
+OBSTACLE_POINT actor=0x7ffe00e52200 index=7 hex=be99eb466099ab46014be544 xyz=30156.8711,21964.6875,1834.34387
+OBSTACLE_POINT actor=0x7ffe00e52200 index=8 hex=a6ebec46e0e3ab46194fe544 xyz=30325.8242,22001.9375,1834.4718
+OBSTACLE_ARRAY actor=0x7ffe00e52500 ptr=0x7ffdef8d8300 count=25 cap=53
+OBSTACLE_POINT actor=0x7ffe00e52500 index=0 hex=388ce846faa4bf46742fb944 xyz=29766.1094,24530.4883,1481.48291
+OBSTACLE_POINT actor=0x7ffe00e52500 index=1 hex=92a1eb46a7d4ba46f9bdc444 xyz=30160.7852,23914.3262,1573.93665
+OBSTACLE_POINT actor=0x7ffe00e52500 index=2 hex=0e07e9460e8ebc46bcd3bf44 xyz=29827.5273,24135.0273,1534.6167
+OBSTACLE_POINT actor=0x7ffe00e52500 index=3 hex=c61bee460ad5be462ebebd44 xyz=30477.8867,24426.5195,1517.94312
+OBSTACLE_POINT actor=0x7ffe00e52500 index=4 hex=681aeb46c07fbd4671f2be44 xyz=30093.2031,24255.875,1527.57629
+OBSTACLE_POINT actor=0x7ffe00e52500 index=5 hex=2e89ed4683f0bb46cb6ec344 xyz=30404.5898,24056.2559,1563.46228
+OBSTACLE_POINT actor=0x7ffe00e52500 index=6 hex=1424e7466f15c146aa7ab544 xyz=29586.0391,24714.7168,1451.83325
+OBSTACLE_POINT actor=0x7ffe00e52500 index=7 hex=d1aeea465c7dbb4643e3c244 xyz=30039.4082,23998.6797,1559.10193
+OBSTACLE_POINT actor=0x7ffe00e52500 index=8 hex=4c3fe94646caba46c197c344 xyz=29855.6484,23909.1367,1564.74231
+OBSTACLE_POINT actor=0x7ffe00e52500 index=9 hex=04d3e746a7cbbb46afc6c044 xyz=29673.5078,24037.8262,1542.20886
+OBSTACLE_POINT actor=0x7ffe00e52500 index=10 hex=1713ea46cbebbf461a67b944 xyz=29961.5449,24565.8965,1483.22192
+OBSTACLE_POINT actor=0x7ffe00e52500 index=11 hex=12e1e846d126be463172bc44 xyz=29808.5352,24339.4082,1507.56848
+OBSTACLE_POINT actor=0x7ffe00e52500 index=12 hex=383dec46928fbf469a44bb44 xyz=30238.6094,24519.7852,1498.1438
+OBSTACLE_POINT actor=0x7ffe00e52500 index=13 hex=c092e7467adbbc46ec72be44 xyz=29641.375,24173.7383,1523.59131
+OBSTACLE_POINT actor=0x7ffe00e52500 index=14 hex=46f7ea46591cc2462155b544 xyz=30075.6367,24846.1738,1450.66028
+OBSTACLE_POINT actor=0x7ffe00e52500 index=15 hex=acd2e546a3d2c0465a56b544 xyz=29417.3359,24681.3184,1450.69849
+OBSTACLE_POINT actor=0x7ffe00e52500 index=16 hex=ba69ec46b94ebd465e05c044 xyz=30260.8633,24231.3613,1536.16772
+OBSTACLE_POINT actor=0x7ffe00e52500 index=17 hex=652eee46e03ebb46dd33c544 xyz=30487.1973,23967.4375,1577.62073
+OBSTACLE_POINT actor=0x7ffe00e52500 index=18 hex=5b55ec46cc51be46b1e2bd44 xyz=30250.6777,24360.8984,1519.08411
+OBSTACLE_POINT actor=0x7ffe00e52500 index=19 hex=a619ec462f5ac146267db744 xyz=30220.8242,24749.0918,1467.91089
+OBSTACLE_POINT actor=0x7ffe00e52500 index=20 hex=687ee646399ebd46f450bc44 xyz=29503.2031,24271.1113,1506.52979
+OBSTACLE_POINT actor=0x7ffe00e52500 index=21 hex=a3a2e646db32c046950cb744 xyz=29521.3184,24601.4277,1464.39319
+OBSTACLE_POINT actor=0x7ffe00e52500 index=22 hex=222ced46eba8c046fa79b944 xyz=30358.0664,24660.459,1483.81177
+OBSTACLE_POINT actor=0x7ffe00e52500 index=23 hex=dc46e9467e82c04698c5b744 xyz=29859.4297,24641.2461,1470.1748
+OBSTACLE_POINT actor=0x7ffe00e52500 index=24 hex=655aec46ec6bc2462a68b544 xyz=30253.1973,24885.9609,1451.25513
+OBSTACLE_ARRAY actor=0x7ffe00e52800 ptr=0x7ffdeeb1ca00 count=7 cap=24
+OBSTACLE_POINT actor=0x7ffe00e52800 index=0 hex=6262e646e119d246b22a9644 xyz=29489.1914,26892.9395,1201.33423
+OBSTACLE_POINT actor=0x7ffe00e52800 index=1 hex=d379e7461360d24616269644 xyz=29628.9121,26928.0371,1201.19019
+OBSTACLE_POINT actor=0x7ffe00e52800 index=2 hex=5866e7460c6ed0464fa69944 xyz=29619.1719,26679.0234,1229.19714
+OBSTACLE_POINT actor=0x7ffe00e52800 index=3 hex=5048e64664b5c946875ea544 xyz=29476.1562,25818.6953,1322.95398
+OBSTACLE_POINT actor=0x7ffe00e52800 index=4 hex=9eb4e646d290cd463d8c9e44 xyz=29530.3086,26312.4102,1268.38245
+OBSTACLE_POINT actor=0x7ffe00e52800 index=5 hex=a16ae8468bc3d2464cdb9544 xyz=29749.3145,26977.7715,1198.85303
+OBSTACLE_POINT actor=0x7ffe00e52800 index=6 hex=6ac0e946bfb1ca46b71aa544 xyz=29920.207,25944.873,1320.83484
+OBSTACLE_ARRAY actor=0x7ffe00e52b00 ptr=0x7ffdeeb1cc40 count=8 cap=24
+OBSTACLE_POINT actor=0x7ffe00e52b00 index=0 hex=83dadf46dcd7dc46d9438244 xyz=28653.2559,28267.9297,1042.12024
+OBSTACLE_POINT actor=0x7ffe00e52b00 index=1 hex=6ebbe5464e8cdc4693f48444 xyz=29405.7148,28230.1523,1063.64294
+OBSTACLE_POINT actor=0x7ffe00e52b00 index=2 hex=050ee346025bd64601f38d44 xyz=29063.0098,27437.5039,1135.59387
+OBSTACLE_POINT actor=0x7ffe00e52b00 index=3 hex=82d6e4461a4dd6465db58e44 xyz=29291.2539,27430.5508,1141.6676
+OBSTACLE_POINT actor=0x7ffe00e52b00 index=4 hex=cec4e446c7c7e04671837b44 xyz=29282.4023,28771.8887,1006.05377
+OBSTACLE_POINT actor=0x7ffe00e52b00 index=5 hex=9f38e3468ef0d446794c9044 xyz=29084.3105,27256.2773,1154.38977
+OBSTACLE_POINT actor=0x7ffe00e52b00 index=6 hex=c6d2e046736bd64657018d44 xyz=28777.3867,27445.7246,1128.04187
+OBSTACLE_POINT actor=0x7ffe00e52b00 index=7 hex=5c07e6463ac9de46ce738144 xyz=29443.6797,28516.6133,1035.6189
+OBSTACLE_ARRAY actor=0x7ffe00e52e00 ptr=0x7ffdeeb1c7c0 count=7 cap=24
+OBSTACLE_POINT actor=0x7ffe00e52e00 index=0 hex=7d8edf461e84ef4635cf4b44 xyz=28615.2441,30658.0586,815.23761
+OBSTACLE_POINT actor=0x7ffe00e52e00 index=1 hex=ffa3db469b46f046cff24644 xyz=28113.998,30755.3027,795.793884
+OBSTACLE_POINT actor=0x7ffe00e52e00 index=2 hex=de0ae14662b7ef468f364c44 xyz=28805.4336,30683.6914,816.852478
+OBSTACLE_POINT actor=0x7ffe00e52e00 index=3 hex=974be1465670eb462bff5844 xyz=28837.7949,30136.168,867.987
+OBSTACLE_POINT actor=0x7ffe00e52e00 index=4 hex=f6d3dd460944e24651ba7144 xyz=28393.9805,28962.0176,966.911194
+OBSTACLE_POINT actor=0x7ffe00e52e00 index=5 hex=d5cedf4660f1e346611b6e44 xyz=28647.416,29176.6875,952.427795
+OBSTACLE_POINT actor=0x7ffe00e52e00 index=6 hex=47b2e1462128e5467bca6b44 xyz=28889.1387,29332.0645,943.163757
+OBSTACLE_ARRAY actor=0x7ffe00e53100 ptr=0x7ffdeeb1cd60 count=8 cap=24
+OBSTACLE_POINT actor=0x7ffe00e53100 index=0 hex=7d86dc46a1c8004741081744 xyz=28227.2441,32968.6289,604.128967
+OBSTACLE_POINT actor=0x7ffe00e53100 index=1 hex=e075db463b77f546ff103844 xyz=28090.9375,31419.6152,736.265564
+OBSTACLE_POINT actor=0x7ffe00e53100 index=2 hex=5da7db465980fb467d612744 xyz=28115.6816,32192.1738,669.523254
+OBSTACLE_POINT actor=0x7ffe00e53100 index=3 hex=b860dc46c25bfc46cf712544 xyz=28208.3594,32301.8789,661.778259
+OBSTACLE_POINT actor=0x7ffe00e53100 index=4 hex=50c7d946b0a5004792151644 xyz=27875.6562,32933.6875,600.337036
+OBSTACLE_POINT actor=0x7ffe00e53100 index=5 hex=67d9da4635bdf446a9b53944 xyz=28012.7012,31326.6035,742.83844
+OBSTACLE_POINT actor=0x7ffe00e53100 index=6 hex=5165d846aef9fa46d0d12644 xyz=27698.6582,32124.8398,667.27832
+OBSTACLE_POINT actor=0x7ffe00e53100 index=7 hex=2fedda46e655fc461a9b2444 xyz=28022.5918,32298.9492,658.423462
+OBSTACLE_ARRAY actor=0x7ffe00e53400 ptr=0x7ffdef8d7400 count=27 cap=53
+OBSTACLE_POINT actor=0x7ffe00e53400 index=0 hex=f20ed446b28a0747d8a5d943 xyz=27143.4727,34698.6953,435.295654
+OBSTACLE_POINT actor=0x7ffe00e53400 index=1 hex=a404d846d1e90947a286c443 xyz=27650.3203,35305.8164,393.051819
+OBSTACLE_POINT actor=0x7ffe00e53400 index=2 hex=c9d1d346732908479493d243 xyz=27112.8926,34857.4492,421.152954
+OBSTACLE_POINT actor=0x7ffe00e53400 index=3 hex=c71ed446aa0409471294c943 xyz=27151.3887,35076.6641,403.156799
+OBSTACLE_POINT actor=0x7ffe00e53400 index=4 hex=098ddb461189074704d2e243 xyz=28102.5176,34697.0664,453.640747
+OBSTACLE_POINT actor=0x7ffe00e53400 index=5 hex=c924d746997509477c6dc843 xyz=27538.3926,35189.5977,400.855347
+OBSTACLE_POINT actor=0x7ffe00e53400 index=6 hex=9268da46cc4006474c74ef43 xyz=27956.2852,34368.7969,478.908569
+OBSTACLE_POINT actor=0x7ffe00e53400 index=7 hex=e662d54613ae0547a89eef43 xyz=27313.4492,34222.0742,479.239502
+OBSTACLE_POINT actor=0x7ffe00e53400 index=8 hex=a01cd546e8920747b693da43 xyz=27278.3125,34706.9062,437.153992
+OBSTACLE_POINT actor=0x7ffe00e53400 index=9 hex=177cdb4606d606473a63ea43 xyz=28094.0449,34518.0234,468.775208
+OBSTACLE_POINT actor=0x7ffe00e53400 index=10 hex=523eda468d1207474e4be643 xyz=27935.1602,34578.5508,460.588318
+OBSTACLE_POINT actor=0x7ffe00e53400 index=11 hex=b8ead746dfe40747e07bda43 xyz=27637.3594,34788.8711,436.967773
+OBSTACLE_POINT actor=0x7ffe00e53400 index=12 hex=983ad5464cfb08475053cb43 xyz=27293.2969,35067.2969,406.650879
+OBSTACLE_POINT actor=0x7ffe00e53400 index=13 hex=0e07d646cb93094730c8c543 xyz=27395.5273,35219.793,395.563965
+OBSTACLE_POINT actor=0x7ffe00e53400 index=14 hex=b4e6d6469c1007470851e243 xyz=27507.3516,34576.6094,452.633057
+OBSTACLE_POINT actor=0x7ffe00e53400 index=15 hex=1c0adb460d7f084724b1d743 xyz=28037.0547,34943.0508,431.383911
+OBSTACLE_POINT actor=0x7ffe00e53400 index=16 hex=cc27da4639bc08475001d443 xyz=27923.8984,35004.2227,424.010254
+OBSTACLE_POINT actor=0x7ffe00e53400 index=17 hex=c682d8462b790847feded443 xyz=27713.3867,34937.168,425.742126
+OBSTACLE_POINT actor=0x7ffe00e53400 index=18 hex=74bfd446ec840947c8dcc443 xyz=27231.7266,35204.9219,393.724854
+OBSTACLE_POINT actor=0x7ffe00e53400 index=19 hex=5c45d64666b30747e498da43 xyz=27426.6797,34739.3984,437.194458
+OBSTACLE_POINT actor=0x7ffe00e53400 index=20 hex=01ead546fe340847d2a0d443 xyz=27381.002,34868.9922,425.256409
+OBSTACLE_POINT actor=0x7ffe00e53400 index=21 hex=3e81d84633fe06471e0de543 xyz=27712.6211,34558.1992,458.102478
+OBSTACLE_POINT actor=0x7ffe00e53400 index=22 hex=8960d546cca40647e811e543 xyz=27312.2676,34468.7969,458.139893
+OBSTACLE_POINT actor=0x7ffe00e53400 index=23 hex=4cc0d8466b93074706fade43 xyz=27744.1484,34707.418,445.953308
+OBSTACLE_POINT actor=0x7ffe00e53400 index=24 hex=690eda465dd50747debedd43 xyz=27911.2051,34773.3633,443.49115
+OBSTACLE_POINT actor=0x7ffe00e53400 index=25 hex=bd34d746aac401477b4d0e44 xyz=27546.3691,33220.6641,569.210632
+OBSTACLE_POINT actor=0x7ffe00e53400 index=26 hex=ad93db46d9f80447d0e1fe43 xyz=28105.8379,34040.8477,509.76416
+OBSTACLE_ARRAY actor=0x7ffe00e53700 ptr=0x7ffdeeb1c340 count=5 cap=24
+OBSTACLE_POINT actor=0x7ffe00e53700 index=0 hex=3cf3d546a7b90a47b8dfb843 xyz=27385.6172,35513.6523,369.747803
+OBSTACLE_POINT actor=0x7ffe00e53700 index=1 hex=c126d44632261147bc8f5d43 xyz=27155.377,37158.1953,221.561462
+OBSTACLE_POINT actor=0x7ffe00e53700 index=2 hex=1716d2468a1c0e47062c8e43 xyz=26891.0449,36380.5391,284.343933
+OBSTACLE_POINT actor=0x7ffe00e53700 index=3 hex=c88ad746a3fd0a47fae4b743 xyz=27589.3906,35581.6367,367.788879
+OBSTACLE_POINT actor=0x7ffe00e53700 index=4 hex=9a93d046ad580f476af27c43 xyz=26697.8008,36696.6758,252.94693
+OBSTACLE_ARRAY actor=0x7ffe00e53a00 ptr=0x7ffdeeb1c460 count=11 cap=24
+OBSTACLE_POINT actor=0x7ffe00e53a00 index=0 hex=2a7dd04651261247bb353d43 xyz=26686.582,37414.3164,189.209885
+OBSTACLE_POINT actor=0x7ffe00e53a00 index=1 hex=6cf3d246dfa21747bad28242 xyz=27001.7109,38818.8711,65.4115753
+OBSTACLE_POINT actor=0x7ffe00e53a00 index=2 hex=2346d446396e1347e3fc2843 xyz=27171.0684,37742.2227,168.987839
+OBSTACLE_POINT actor=0x7ffe00e53a00 index=3 hex=77bed546ffc21347d1162543 xyz=27359.2324,37826.9961,165.089127
+OBSTACLE_POINT actor=0x7ffe00e53a00 index=4 hex=aa36cd46f0aa184778f9ca41 xyz=26267.332,39082.9375,25.3718109
+OBSTACLE_POINT actor=0x7ffe00e53a00 index=5 hex=2d79cf460e6c174724667442 xyz=26556.5879,38764.0547,61.0997467
+OBSTACLE_POINT actor=0x7ffe00e53a00 index=6 hex=8215d246fd3f1547c69cef42 xyz=26890.7539,38207.9883,119.806198
+OBSTACLE_POINT actor=0x7ffe00e53a00 index=7 hex=e30dce465d3a174764837742 xyz=26374.9434,38714.3633,61.8783112
+OBSTACLE_POINT actor=0x7ffe00e53a00 index=8 hex=de1ecf46751f154756a1e542 xyz=26511.4336,38175.457,114.815109
+OBSTACLE_POINT actor=0x7ffe00e53a00 index=9 hex=69b5d446b12916478a64d242 xyz=27226.7051,38441.6914,105.196365
+OBSTACLE_POINT actor=0x7ffe00e53a00 index=10 hex=a1ced346c3601547dad7f242 xyz=27111.3145,38240.7617,121.421585
+OBSTACLE_ARRAY actor=0x7ffe00e5ac00 ptr=0x7ffdeeb13fa0 count=5 cap=24
+OBSTACLE_POINT actor=0x7ffe00e5ac00 index=0 hex=1b086d476088cbc492e17646 xyz=60680.1055,-1628.26172,15800.3926
+OBSTACLE_POINT actor=0x7ffe00e5ac00 index=1 hex=bf106c476b61a7c443b07546 xyz=60432.7461,-1339.04431,15724.0654
+OBSTACLE_POINT actor=0x7ffe00e5ac00 index=2 hex=e7fd6c471ccbadc4c77f7646 xyz=60669.9023,-1390.34717,15775.9443
+OBSTACLE_POINT actor=0x7ffe00e5ac00 index=3 hex=54ab6c474be67bc4f4ad7546 xyz=60587.3281,-1007.59833,15723.4883
+OBSTACLE_POINT actor=0x7ffe00e5ac00 index=4 hex=cc1b6a47760644c490517346 xyz=59931.7969,-784.100952,15572.3906
+OBSTACLE_ARRAY actor=0x7ffe00e5af00 ptr=0x7fffe54a6dc0 count=15 cap=24
+OBSTACLE_POINT actor=0x7ffe00e5af00 index=0 hex=7a156747467d03c49dc76f46 xyz=59157.4766,-525.957397,15345.9033
+OBSTACLE_POINT actor=0x7ffe00e5af00 index=1 hex=3c9467477d0a94c4c4d17146 xyz=59284.2344,-1184.32776,15476.4414
+OBSTACLE_POINT actor=0x7ffe00e5af00 index=2 hex=91496347442049c3db8b6a46 xyz=58185.5664,-201.126038,15010.9639
+OBSTACLE_POINT actor=0x7ffe00e5af00 index=3 hex=a92067471240c8c32b8e6f46 xyz=59168.6602,-400.500549,15331.542
+OBSTACLE_POINT actor=0x7ffe00e5af00 index=4 hex=df386647388d24c4ae0b6f46 xyz=58936.8711,-658.206543,15298.9199
+OBSTACLE_POINT actor=0x7ffe00e5af00 index=5 hex=1ad76447c5f195c39e9c6c46 xyz=58583.1016,-299.888824,15143.1543
+OBSTACLE_POINT actor=0x7ffe00e5af00 index=6 hex=30c66147939c804360bc6746 xyz=57798.1875,257.223236,14831.0938
+OBSTACLE_POINT actor=0x7ffe00e5af00 index=7 hex=b2ac6247f48a734365d66846 xyz=58028.6953,243.542786,14901.5986
+OBSTACLE_POINT actor=0x7ffe00e5af00 index=8 hex=df646747a0584cc473ca7046 xyz=59236.8711,-817.384766,15410.6123
+OBSTACLE_POINT actor=0x7ffe00e5af00 index=9 hex=563f6347cc4139c42cb06b46 xyz=58175.3359,-741.028076,15084.043
+OBSTACLE_POINT actor=0x7ffe00e5af00 index=10 hex=baa86247400f2dc470e16a46 xyz=58024.7266,-692.238281,15032.3594
+OBSTACLE_POINT actor=0x7ffe00e5af00 index=11 hex=0858644708a843c4a9156d46 xyz=58456.0312,-782.625488,15173.415
+OBSTACLE_POINT actor=0x7ffe00e5af00 index=12 hex=8db5654797da14c4004c6e46 xyz=58805.5508,-595.415466,15251
+OBSTACLE_POINT actor=0x7ffe00e5af00 index=13 hex=c5236147ba6bd7c3297f6846 xyz=57635.7695,-430.841614,14879.79
+OBSTACLE_POINT actor=0x7ffe00e5af00 index=14 hex=a16c6447df59f3c346876c46 xyz=58476.6289,-486.702118,15137.8184
+OBSTACLE_ARRAY actor=0x7ffe00e5b200 ptr=0x7ffdeeb14300 count=7 cap=24
+OBSTACLE_POINT actor=0x7ffe00e5b200 index=0 hex=09dc5c47cb62414470045f46 xyz=56540.0352,773.54364,14273.1094
+OBSTACLE_POINT actor=0x7ffe00e5b200 index=1 hex=3d246047b942894320476546 xyz=57380.2383,274.521271,14673.7812
+OBSTACLE_POINT actor=0x7ffe00e5b200 index=2 hex=e35b5b47468e0c445c5d5d46 xyz=56155.8867,562.223022,14167.3398
+OBSTACLE_POINT actor=0x7ffe00e5b200 index=3 hex=bb5f5f478a6a2c437a6a6446 xyz=57183.7305,172.416168,14618.6191
+OBSTACLE_POINT actor=0x7ffe00e5b200 index=4 hex=1af25f47c67570c35b676646 xyz=57330.1016,-240.460052,14745.8389
+OBSTACLE_POINT actor=0x7ffe00e5b200 index=5 hex=35f25947bf8b1744da235b46 xyz=55794.207,606.183533,14024.9629
+OBSTACLE_POINT actor=0x7ffe00e5b200 index=6 hex=30075f47dd4616448fb86246 xyz=57095.1875,601.107239,14510.1396
+OBSTACLE_ARRAY actor=0x7ffe00e5b500 ptr=0x7ffdef537ed0 count=3 cap=4
+OBSTACLE_POINT actor=0x7ffe00e5b500 index=0 hex=e83058470a525c4474935646 xyz=55344.9062,881.28186,13732.8633
+OBSTACLE_POINT actor=0x7ffe00e5b500 index=1 hex=0b515547aac9fe4463da4b46 xyz=54609.043,2038.302,13046.5967
+OBSTACLE_POINT actor=0x7ffe00e5b500 index=2 hex=500a55473162b844adab4d46 xyz=54538.3125,1475.06848,13162.9189
+OBSTACLE_ARRAY actor=0x7ffe00e5b800 ptr=0x7ffdef8d8d00 count=27 cap=53
+OBSTACLE_POINT actor=0x7ffe00e5b800 index=0 hex=4d9f4f47f0041a4578213c46 xyz=53151.3008,2464.30859,12040.3672
+OBSTACLE_POINT actor=0x7ffe00e5b800 index=1 hex=5c5e4e4750d717458a423946 xyz=52830.3594,2429.45703,11856.6348
+OBSTACLE_POINT actor=0x7ffe00e5b800 index=2 hex=8e294e477594224519e43746 xyz=52777.5547,2601.27856,11769.0244
+OBSTACLE_POINT actor=0x7ffe00e5b800 index=3 hex=237f51478e5e2045412c4046 xyz=53631.1367,2565.90967,12299.0635
+OBSTACLE_POINT actor=0x7ffe00e5b800 index=4 hex=7bdc4f47aecd064599433e46 xyz=53212.4805,2156.85498,12176.8994
+OBSTACLE_POINT actor=0x7ffe00e5b800 index=5 hex=4a2e4d4745e103456ffc3746 xyz=52526.2891,2110.07935,11775.1084
+OBSTACLE_POINT actor=0x7ffe00e5b800 index=6 hex=4ba15047e8eb054527344046 xyz=53409.293,2142.74414,12301.0381
+OBSTACLE_POINT actor=0x7ffe00e5b800 index=7 hex=6fb54e4769eb0f4502ba3a46 xyz=52917.4336,2302.71313,11950.502
+OBSTACLE_POINT actor=0x7ffe00e5b800 index=8 hex=e8d04e47f9ce044597e23b46 xyz=52944.9062,2124.93579,12024.6475
+OBSTACLE_POINT actor=0x7ffe00e5b800 index=9 hex=5d964f476e2a294576d23a46 xyz=53142.3633,2706.65186,11956.6152
+OBSTACLE_POINT actor=0x7ffe00e5b800 index=10 hex=4f424f4764abef4486023e46 xyz=53058.3086,1917.35596,12160.6309
+OBSTACLE_POINT actor=0x7ffe00e5b800 index=11 hex=c2a24e479b282d45d92f3846 xyz=52898.7578,2770.53784,11787.9619
+OBSTACLE_POINT actor=0x7ffe00e5b800 index=12 hex=385a4e47cff0fd44e63a3b46 xyz=52826.2188,2031.52527,11982.7246
+OBSTACLE_POINT actor=0x7ffe00e5b800 index=13 hex=a3115047bc43f64431b63f46 xyz=53265.6367,1970.1167,12269.5479
+OBSTACLE_POINT actor=0x7ffe00e5b800 index=14 hex=440550475c7426450f183c46 xyz=53253.2656,2663.27246,12038.0146
+OBSTACLE_POINT actor=0x7ffe00e5b800 index=15 hex=ab894e473f0bef4445483c46 xyz=52873.668,1912.35144,12050.0674
+OBSTACLE_POINT actor=0x7ffe00e5b800 index=16 hex=e50d4e4726420f4583303946 xyz=52749.8945,2292.13428,11852.1279
+OBSTACLE_POINT actor=0x7ffe00e5b800 index=17 hex=41914d4710510245490d3946 xyz=52625.2539,2085.06641,11843.3213
+OBSTACLE_POINT actor=0x7ffe00e5b800 index=18 hex=be564f479b7b1f4520003b46 xyz=53078.7422,2551.72534,11968.0312
+OBSTACLE_POINT actor=0x7ffe00e5b800 index=19 hex=26045047eebd1845fc303d46 xyz=53252.1484,2443.87061,12108.2461
+OBSTACLE_POINT actor=0x7ffe00e5b800 index=20 hex=ede65047e6eb254583473e46 xyz=53478.9258,2654.74365,12177.8779
+OBSTACLE_POINT actor=0x7ffe00e5b800 index=21 hex=da3d5047e97a1245bb3e3e46 xyz=53309.8516,2343.68188,12175.6826
+OBSTACLE_POINT actor=0x7ffe00e5b800 index=22 hex=d5624f47ee790345c7603d46 xyz=53090.832,2103.62061,12120.1943
+OBSTACLE_POINT actor=0x7ffe00e5b800 index=23 hex=406a4f4796df0a45d1d93c46 xyz=53098.25,2221.97412,12086.4541
+OBSTACLE_POINT actor=0x7ffe00e5b800 index=24 hex=787b4d4788d90945873c3846 xyz=52603.4688,2205.5957,11791.1318
+OBSTACLE_POINT actor=0x7ffe00e5b800 index=25 hex=609b5347336ed544f2a24946 xyz=54171.375,1707.44373,12904.7363
+OBSTACLE_POINT actor=0x7ffe00e5b800 index=26 hex=c92a514772cfc8448a374446 xyz=53546.7852,1606.48267,12557.8848
+OBSTACLE_ARRAY actor=0x7ffe00e5bb00 ptr=0x7ffdeeb13580 count=6 cap=24
+OBSTACLE_POINT actor=0x7ffe00e5bb00 index=0 hex=c64d4c47ecfd1845db0b3446 xyz=52301.7734,2447.87012,11522.9639
+OBSTACLE_POINT actor=0x7ffe00e5bb00 index=1 hex=e7194d47e4c20e4578973646 xyz=52505.9023,2284.18066,11685.8672
+OBSTACLE_POINT actor=0x7ffe00e5bb00 index=2 hex=e3bd4b4717422945ccb23146 xyz=52157.8867,2708.13062,11372.6992
+OBSTACLE_POINT actor=0x7ffe00e5bb00 index=3 hex=3c4f4847dbce61451ffa2546 xyz=51279.2344,3612.92847,10622.5303
+OBSTACLE_POINT actor=0x7ffe00e5bb00 index=4 hex=91644b47dbcf3a45f8c82f46 xyz=52068.5664,2988.99097,11250.2422
+OBSTACLE_POINT actor=0x7ffe00e5bb00 index=5 hex=c9874a47a5e15445571d2c46 xyz=51847.7852,3406.10278,11015.335
+OBSTACLE_ARRAY actor=0x7ffe00e5be00 ptr=0x7ffdeeb13e80 count=9 cap=24
+OBSTACLE_POINT actor=0x7ffe00e5be00 index=0 hex=bb2345472c59544536702046 xyz=50467.7305,3397.57324,10268.0527
+OBSTACLE_POINT actor=0x7ffe00e5be00 index=1 hex=f2ec45470ca24c4533352246 xyz=50668.9453,3274.12793,10381.2998
+OBSTACLE_POINT actor=0x7ffe00e5be00 index=2 hex=448b414749d980453d0c1846 xyz=49547.2656,4123.16064,9731.05957
+OBSTACLE_POINT actor=0x7ffe00e5be00 index=3 hex=bb7f404716765f4531011746 xyz=49279.7305,3575.38037,9664.29785
+OBSTACLE_POINT actor=0x7ffe00e5be00 index=4 hex=1a564247c6214445266a1b46 xyz=49750.1016,3138.11084,9946.53711
+OBSTACLE_POINT actor=0x7ffe00e5be00 index=5 hex=275e4347bc667245b0131c46 xyz=50014.1523,3878.4209,9988.92188
+OBSTACLE_POINT actor=0x7ffe00e5be00 index=6 hex=9d944547349066457ac42046 xyz=50580.6133,3689.0127,10289.1191
+OBSTACLE_POINT actor=0x7ffe00e5be00 index=7 hex=775b434736677a4520d21b46 xyz=50011.4648,4006.45068,9972.53125
+OBSTACLE_POINT actor=0x7ffe00e5be00 index=8 hex=f73c4647bea53445f2862346 xyz=50748.9648,2890.35889,10465.7363
+OBSTACLE_ARRAY actor=0x7ffe00e5c100 ptr=0x7ffdeeb10400 count=11 cap=24
+OBSTACLE_POINT actor=0x7ffe00e5c100 index=0 hex=dd6b3f47c69b4d45b2351546 xyz=49003.8633,3289.73584,9549.42383
+OBSTACLE_POINT actor=0x7ffe00e5c100 index=1 hex=4cc63f470a417c45580a1546 xyz=49094.2969,4036.06494,9538.58594
+OBSTACLE_POINT actor=0x7ffe00e5c100 index=2 hex=475c39472b658645099d0946 xyz=47452.2773,4300.646,8807.25879
+OBSTACLE_POINT actor=0x7ffe00e5c100 index=3 hex=16033b4772cb6545a1230d46 xyz=47875.0859,3676.71533,9032.90723
+OBSTACLE_POINT actor=0x7ffe00e5c100 index=4 hex=bef7394749b0874526a00a46 xyz=47607.7422,4342.03564,8872.03711
+OBSTACLE_POINT actor=0x7ffe00e5c100 index=5 hex=deb03847f6d56745f8110946 xyz=47280.8672,3709.37256,8772.49219
+OBSTACLE_POINT actor=0x7ffe00e5c100 index=6 hex=50273f476e375545d59d1446 xyz=48935.3125,3411.46436,9511.45801
+OBSTACLE_POINT actor=0x7ffe00e5c100 index=7 hex=21483c478db56945ce470f46 xyz=48200.1289,3739.34692,9169.95117
+OBSTACLE_POINT actor=0x7ffe00e5c100 index=8 hex=12393e47d70863454dc41246 xyz=48697.0703,3632.55249,9393.0752
+OBSTACLE_POINT actor=0x7ffe00e5c100 index=9 hex=719f3d472728534587fd1146 xyz=48543.4414,3378.50952,9343.38184
+OBSTACLE_POINT actor=0x7ffe00e5c100 index=10 hex=99123b47a39b7a451ce50c46 xyz=47890.5977,4009.72729,9017.27734
+OBSTACLE_ARRAY actor=0x7ffe00e5c400 ptr=0x7ffdef537f30 count=4 cap=4
+OBSTACLE_POINT actor=0x7ffe00e5c400 index=0 hex=8b1b29470f2a6a453e98e845 xyz=43291.543,3746.62866,7443.03027
+OBSTACLE_POINT actor=0x7ffe00e5c400 index=1 hex=0a70284709506e450a30e745 xyz=43120.0391,3813.0022,7398.00488
+OBSTACLE_POINT actor=0x7ffe00e5c400 index=2 hex=45132947e1ff7645c3b1e845 xyz=43283.2695,3951.99243,7446.22021
+OBSTACLE_POINT actor=0x7ffe00e5c400 index=3 hex=00be2e470e908445524df545 xyz=44734,4242.00684,7849.66504
+OBSTACLE_ARRAY actor=0x7fffdce6ee00 ptr=0x7ffdef8d9200 count=25 cap=53
+OBSTACLE_POINT actor=0x7fffdce6ee00 index=0 hex=ee7470470de100c5ed937946 xyz=61556.9297,-2062.06567,15972.9814
+OBSTACLE_POINT actor=0x7fffdce6ee00 index=1 hex=fa767347e7ded9c4b7517a46 xyz=62326.9766,-1742.9657,16020.4287
+OBSTACLE_POINT actor=0x7fffdce6ee00 index=2 hex=f8ca70470e4bd6c49c7b7946 xyz=61642.9688,-1714.34546,15966.9023
+OBSTACLE_POINT actor=0x7fffdce6ee00 index=3 hex=b26f724719c6f2c4f91d7a46 xyz=62063.6953,-1942.19055,16007.4932
+OBSTACLE_POINT actor=0x7fffdce6ee00 index=4 hex=8e7771477f4ee5c419c27946 xyz=61815.5547,-1834.453,15984.5244
+OBSTACLE_POINT actor=0x7fffdce6ee00 index=5 hex=50926f47a44d0bc5b4667946 xyz=61330.3125,-2228.85254,15961.6758
+OBSTACLE_POINT actor=0x7fffdce6ee00 index=6 hex=b6f372470624e9c43f3b7a46 xyz=62195.7109,-1865.12573,16014.8115
+OBSTACLE_POINT actor=0x7fffdce6ee00 index=7 hex=90a572473f5a0dc51a5d7a46 xyz=62117.5625,-2261.64038,16023.2754
+OBSTACLE_POINT actor=0x7fffdce6ee00 index=8 hex=39547247f6ef06c52a357a46 xyz=62036.2227,-2158.99756,16013.291
+OBSTACLE_POINT actor=0x7fffdce6ee00 index=9 hex=da97724732b015c55a6c7a46 xyz=62103.8516,-2395.01221,16027.0879
+OBSTACLE_POINT actor=0x7fffdce6ee00 index=10 hex=cc57714794d0c0c4c48d7946 xyz=61783.7969,-1542.51807,15971.4414
+OBSTACLE_POINT actor=0x7fffdce6ee00 index=11 hex=c53d7247439b1bc5845e7a46 xyz=62013.7695,-2489.70386,16023.6289
+OBSTACLE_POINT actor=0x7fffdce6ee00 index=12 hex=403c6f4753e503c5003b7946 xyz=61244.25,-2110.33276,15950.75
+OBSTACLE_POINT actor=0x7fffdce6ee00 index=13 hex=3cfd7047648013c539e97946 xyz=61693.2344,-2360.02441,15994.3057
+OBSTACLE_POINT actor=0x7fffdce6ee00 index=14 hex=d4a57247ce31d5c4110c7a46 xyz=62117.8281,-1705.5564,16003.0166
+OBSTACLE_POINT actor=0x7fffdce6ee00 index=15 hex=a6da704776d5bfc436667946 xyz=61658.6484,-1534.67065,15961.5527
+OBSTACLE_POINT actor=0x7fffdce6ee00 index=16 hex=5eea70474a3eecc4dc9e7946 xyz=61674.3672,-1889.94653,15975.7148
+OBSTACLE_POINT actor=0x7fffdce6ee00 index=17 hex=12dd714712c709c53a177a46 xyz=61917.0703,-2204.44189,16005.8066
+OBSTACLE_POINT actor=0x7fffdce6ee00 index=18 hex=9b8a6f47de61f6c4bc3e7946 xyz=61322.6055,-1971.05835,15951.6836
+OBSTACLE_POINT actor=0x7fffdce6ee00 index=19 hex=447b714768c104c57ded7946 xyz=61819.2656,-2124.08789,15995.3721
+OBSTACLE_POINT actor=0x7fffdce6ee00 index=20 hex=5c71704763c7b1c47e357946 xyz=61553.3594,-1422.23083,15949.373
+OBSTACLE_POINT actor=0x7fffdce6ee00 index=21 hex=6c0370478f25d5c4073d7946 xyz=61443.4219,-1705.17371,15951.2568
+OBSTACLE_POINT actor=0x7fffdce6ee00 index=22 hex=6e697047a9f4f1c4f47d7946 xyz=61545.4297,-1935.64563,15967.4883
+OBSTACLE_POINT actor=0x7fffdce6ee00 index=23 hex=18f3724741f4c5c4ff117a46 xyz=62195.0938,-1583.63293,16004.499
+OBSTACLE_POINT actor=0x7fffdce6ee00 index=24 hex=8fa6714752a415c530227a46 xyz=61862.5586,-2394.27002,16008.5469
+OBSTACLE_ARRAY actor=0x7fffdce6f100 ptr=0x7ffdef8d8a80 count=25 cap=53
+OBSTACLE_POINT actor=0x7fffdce6f100 index=0 hex=20d33447f99968457c080346 xyz=46291.125,3721.62329,8386.12109
+OBSTACLE_POINT actor=0x7fffdce6f100 index=1 hex=3026334704ed8f457f520046 xyz=45862.1875,4605.62695,8212.62402
+OBSTACLE_POINT actor=0x7fffdce6f100 index=2 hex=9b6b33474659714591ec0046 xyz=45931.6055,3861.57959,8251.1416
+OBSTACLE_POINT actor=0x7fffdce6f100 index=3 hex=ac44314798fc8045375bfb45 xyz=45380.6719,4127.57422,8043.40186
+OBSTACLE_POINT actor=0x7fffdce6f100 index=4 hex=99ff3347291d6b45bfcd0146 xyz=46079.5977,3761.82251,8307.43652
+OBSTACLE_POINT actor=0x7fffdce6f100 index=5 hex=03a232475a156845239bff45 xyz=45730.0117,3713.33447,8179.39209
+OBSTACLE_POINT actor=0x7fffdce6f100 index=6 hex=5c0a344725f98d4555a70146 xyz=46090.3594,4543.14307,8297.83301
+OBSTACLE_POINT actor=0x7fffdce6f100 index=7 hex=35503147a6ba7245239ffb45 xyz=45392.207,3883.66553,8051.89209
+OBSTACLE_POINT actor=0x7fffdce6f100 index=8 hex=968b30473a5c7d459343f945 xyz=45195.5859,4053.76416,7976.44678
+OBSTACLE_POINT actor=0x7fffdce6f100 index=9 hex=929c3247490c8c455720ff45 xyz=45724.5703,4481.53564,8164.04248
+OBSTACLE_POINT actor=0x7fffdce6f100 index=10 hex=fafe3047279187456570fa45 xyz=45310.9766,4338.14404,8014.04932
+OBSTACLE_POINT actor=0x7fffdce6f100 index=11 hex=4d893047aba88545cb1df945 xyz=45193.3008,4277.0835,7971.72412
+OBSTACLE_POINT actor=0x7fffdce6f100 index=12 hex=1704344751497645f3c70146 xyz=46084.0898,3940.58228,8305.9873
+OBSTACLE_POINT actor=0x7fffdce6f100 index=13 hex=8b6d3147ebd08b459da3fb45 xyz=45421.543,4474.11475,8052.45166
+OBSTACLE_POINT actor=0x7fffdce6f100 index=14 hex=5ee43247b5897145ea240046 xyz=45796.3672,3864.60669,8201.22852
+OBSTACLE_POINT actor=0x7fffdce6f100 index=15 hex=5f473347b1f58945b2900046 xyz=45895.3711,4414.71143,8228.17383
+OBSTACLE_POINT actor=0x7fffdce6f100 index=16 hex=b5c331470b5077459be9fc45 xyz=45507.707,3957.00269,8093.20068
+OBSTACLE_POINT actor=0x7fffdce6f100 index=17 hex=39fe31472485634533c2fd45 xyz=45566.2227,3640.32129,8120.2749
+OBSTACLE_POINT actor=0x7fffdce6f100 index=18 hex=2b5c334786d9694523de0046 xyz=45916.168,3741.59521,8247.53418
+OBSTACLE_POINT actor=0x7fffdce6f100 index=19 hex=ba6d3247e65c7e4563cffe45 xyz=45677.7266,4069.80615,8153.92334
+OBSTACLE_POINT actor=0x7fffdce6f100 index=20 hex=384231473f4590450510fb45 xyz=45378.2188,4616.65576,8034.00244
+OBSTACLE_POINT actor=0x7fffdce6f100 index=21 hex=baee30475fff69450b93fa45 xyz=45294.7266,3743.96069,8018.38037
+OBSTACLE_POINT actor=0x7fffdce6f100 index=22 hex=f90a3347b0e17d4522500046 xyz=45834.9727,4062.10547,8212.0332
+OBSTACLE_POINT actor=0x7fffdce6f100 index=23 hex=79d53147f8a58e458dc9fc45 xyz=45525.4727,4564.74609,8089.19385
+OBSTACLE_POINT actor=0x7fffdce6f100 index=24 hex=61c53247488284453dbaff45 xyz=45765.3789,4240.28516,8183.27979

@@ -1,0 +1,102 @@
+{
+  "seed123_repeat1": {
+    "status": "observed",
+    "events": [
+      "VEHICLE_REDIRECT",
+      "TRACE vehicle",
+      "TRACE vehicle_branch",
+      "VEHICLE_REDIRECT_RETURNED"
+    ],
+    "injected_call_events": [
+      "VEHICLE_REDIRECT",
+      "TRACE vehicle",
+      "TRACE vehicle_branch",
+      "VEHICLE_REDIRECT_RETURNED"
+    ],
+    "branch_before_return": true,
+    "target_before_return": true
+  },
+  "seed123_repeat2": {
+    "status": "observed",
+    "events": [
+      "VEHICLE_REDIRECT",
+      "TRACE vehicle",
+      "TRACE vehicle_branch",
+      "VEHICLE_REDIRECT_RETURNED"
+    ],
+    "injected_call_events": [
+      "VEHICLE_REDIRECT",
+      "TRACE vehicle",
+      "TRACE vehicle_branch",
+      "VEHICLE_REDIRECT_RETURNED"
+    ],
+    "branch_before_return": true,
+    "target_before_return": true
+  },
+  "seed456_repeat1": {
+    "status": "observed",
+    "events": [
+      "VEHICLE_REDIRECT",
+      "TRACE vehicle",
+      "VEHICLE_REDIRECT_RETURNED",
+      "TRACE vehicle_branch"
+    ],
+    "injected_call_events": [
+      "VEHICLE_REDIRECT",
+      "TRACE vehicle",
+      "VEHICLE_REDIRECT_RETURNED"
+    ],
+    "branch_before_return": false,
+    "target_before_return": true
+  },
+  "seed456_repeat2": {
+    "status": "observed",
+    "events": [
+      "VEHICLE_REDIRECT",
+      "TRACE vehicle",
+      "VEHICLE_REDIRECT_RETURNED",
+      "TRACE vehicle_branch"
+    ],
+    "injected_call_events": [
+      "VEHICLE_REDIRECT",
+      "TRACE vehicle",
+      "VEHICLE_REDIRECT_RETURNED"
+    ],
+    "branch_before_return": false,
+    "target_before_return": true
+  },
+  "seed2026_repeat1": {
+    "status": "observed",
+    "events": [
+      "VEHICLE_REDIRECT",
+      "TRACE vehicle",
+      "TRACE vehicle_branch",
+      "VEHICLE_REDIRECT_RETURNED"
+    ],
+    "injected_call_events": [
+      "VEHICLE_REDIRECT",
+      "TRACE vehicle",
+      "TRACE vehicle_branch",
+      "VEHICLE_REDIRECT_RETURNED"
+    ],
+    "branch_before_return": true,
+    "target_before_return": true
+  },
+  "seed2026_repeat2": {
+    "status": "observed",
+    "events": [
+      "VEHICLE_REDIRECT",
+      "TRACE vehicle",
+      "TRACE vehicle_branch",
+      "VEHICLE_REDIRECT_RETURNED"
+    ],
+    "injected_call_events": [
+      "VEHICLE_REDIRECT",
+      "TRACE vehicle",
+      "TRACE vehicle_branch",
+      "VEHICLE_REDIRECT_RETURNED"
+    ],
+    "branch_before_return": true,
+    "target_before_return": true
+  }
+}

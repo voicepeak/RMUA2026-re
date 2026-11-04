@@ -97,3 +97,6 @@
 | 车辆函数重定向入口、分支和返回 | `scripts/stage_vehicle_redirect.gdb`、`experiments/vehicle_redirect_pilot_20261105/`；替代原调用并更改随机流 |
 | 车辆返回探针失败 | `experiments/vehicle_trampoline_v2_pilot_20261105/`；标记先于目标入口且 SIGSEGV |
 | 线障候选点内部数组 | `scripts/stage_obstacle_inventory.gdb`、`experiments/obstacle_inventory_pilot_20261105/`；不是已确认 spawn 实例 |
+| stage 4 候选点三 seed 重复 | `experiments/obstacle_inventory_4_20261105/analysis.json`、`scripts/analyze_obstacle_inventory.py` |
+| 车辆注入六场入口及返回顺序 | `experiments/vehicle_redirect_4_20261105/analysis.json`、`scripts/analyze_vehicle_redirect.py` |
+| 车辆初始化/tick 尚未命中的单场 | `experiments/vehicle_dynamics_pilot_20261105/`、`scripts/stage_vehicle_dynamics.gdb` |
