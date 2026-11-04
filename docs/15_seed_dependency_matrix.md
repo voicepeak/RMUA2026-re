@@ -76,3 +76,5 @@ stage 5 三 seed 各两场的注入风关键帧也逐字重复；生成入口计
 stage 4 三 seed 各两次的内部线障间距点集合在同 seed 两场一致、跨 seed 不同；点数分别 371/373/373。它们并非已确认 spawn 实例，详见 `experiments/obstacle_inventory_4_20261105/`。
 
 开发注入额外强制通过状态字符串分支后，seed 123 的车辆初始化产生五点路径，观测到组件世界坐标随时间变化；见 `experiments/vehicle_world_pilot_20261105/`。这不代表自然赛程必然生成该车。
+
+stage 6 的内部候选点在每个 seed 两场逐字集合一致，跨 seed 不同；车辆强制状态门槛的六场中 seed 456 路径重复性未成立，原因未确定。详见 docs/17。

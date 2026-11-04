@@ -102,3 +102,5 @@
 | 车辆初始化/tick 尚未命中的单场 | `experiments/vehicle_dynamics_pilot_20261105/`、`scripts/stage_vehicle_dynamics.gdb` |
 | stage 5 线障候选点三 seed 重复 | `experiments/obstacle_inventory_5_20261105/analysis.json` 和原始日志 |
 | 强制通过状态检查后的车辆路径、进度和组件世界坐标 | `experiments/vehicle_forcegate_pilot_20261105/`、`experiments/vehicle_world_pilot_20261105/`、`scripts/stage_vehicle_world.gdb`；开发注入 |
+| stage 6 候选点三 seed 重复 | `experiments/obstacle_inventory_6_20261105/analysis.json` |
+| 六场强制状态门槛的车辆初始化和进度 | `experiments/vehicle_forcegate_4_20261105/analysis.json`；seed 456 两次路径不同 |
