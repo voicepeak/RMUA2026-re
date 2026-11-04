@@ -1,0 +1,50 @@
+{
+  "seed123_repeat1": {
+    "keyframes": 37,
+    "compared_vectors": 982,
+    "distinct_vectors_rounded_1e-6": 63,
+    "vector_error_rmse": 0.14526217714104905,
+    "vector_error_max": 0.5557405372118792,
+    "limitations": "ROS header and GDB wall clocks only approximately aligned; debugger stops and message timing affect differences. This is a diagnostic comparison, not calibrated latency."
+  },
+  "seed123_repeat2": {
+    "keyframes": 37,
+    "compared_vectors": 976,
+    "distinct_vectors_rounded_1e-6": 42,
+    "vector_error_rmse": 0.22568081514454183,
+    "vector_error_max": 0.9904157835411206,
+    "limitations": "ROS header and GDB wall clocks only approximately aligned; debugger stops and message timing affect differences. This is a diagnostic comparison, not calibrated latency."
+  },
+  "seed456_repeat1": {
+    "keyframes": 37,
+    "compared_vectors": 984,
+    "distinct_vectors_rounded_1e-6": 78,
+    "vector_error_rmse": 0.02698676236096617,
+    "vector_error_max": 0.10133641725037155,
+    "limitations": "ROS header and GDB wall clocks only approximately aligned; debugger stops and message timing affect differences. This is a diagnostic comparison, not calibrated latency."
+  },
+  "seed456_repeat2": {
+    "keyframes": 37,
+    "compared_vectors": 982,
+    "distinct_vectors_rounded_1e-6": 78,
+    "vector_error_rmse": 0.01987292766923343,
+    "vector_error_max": 0.08439251965990979,
+    "limitations": "ROS header and GDB wall clocks only approximately aligned; debugger stops and message timing affect differences. This is a diagnostic comparison, not calibrated latency."
+  },
+  "seed2026_repeat1": {
+    "keyframes": 37,
+    "compared_vectors": 987,
+    "distinct_vectors_rounded_1e-6": 44,
+    "vector_error_rmse": 0.1080432978709367,
+    "vector_error_max": 3.1253416538238525,
+    "limitations": "ROS header and GDB wall clocks only approximately aligned; debugger stops and message timing affect differences. This is a diagnostic comparison, not calibrated latency."
+  },
+  "seed2026_repeat2": {
+    "keyframes": 37,
+    "compared_vectors": 984,
+    "distinct_vectors_rounded_1e-6": 47,
+    "vector_error_rmse": 0.09801887049174501,
+    "vector_error_max": 0.40725713290247956,
+    "limitations": "ROS header and GDB wall clocks only approximately aligned; debugger stops and message timing affect differences. This is a diagnostic comparison, not calibrated latency."
+  }
+}
