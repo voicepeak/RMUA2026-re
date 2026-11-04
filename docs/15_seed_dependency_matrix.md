@@ -120,3 +120,5 @@ stage 6 持续状态注入动态风已覆盖三 seed 各两次；stage 5 线障�
 stage 6 的内层候选距离三 seed 各两次也完成核对；stage 4/5/6 三组同 seed 序列一致。详见 `experiments/line_offsets_6_20261105/` 和 docs/17。
 
 动态风注入的 IMU 统计和 LiDAR 消息时序覆盖三 stage、三 seed 和重复，具体值及不能单独作为噪声模型的限制见 docs/17。
+
+在固定开环 PWM 与单次注入风状态下，三 seed 的事后真值轨迹范围已保存；不能将这些场次等同自然动态风或比赛表现。

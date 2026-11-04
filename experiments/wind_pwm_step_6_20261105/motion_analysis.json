@@ -1,0 +1,146 @@
+{
+  "seed123_repeat1": {
+    "samples": 769,
+    "position_ned_m": {
+      "x": {
+        "first": -7.797241474690959e-05,
+        "last": 1.1877605469290176,
+        "min": -7.797241474690959e-05,
+        "max": 1.306825706534273
+      },
+      "y": {
+        "first": -1.0070796533909049e-05,
+        "last": -2.5878592817644765,
+        "min": -2.6870874325533305,
+        "max": -1.0070796533909049e-05
+      },
+      "z": {
+        "first": 0.30765196681022644,
+        "last": 0.3822355270385742,
+        "min": -4.753747463226318,
+        "max": 1.0117462873458862
+      }
+    },
+    "limitation": "Posthoc debug pose only; forced wind/state and fixed PWM sequence; no claim of open-loop identification or calibrated latency."
+  },
+  "seed123_repeat2": {
+    "samples": 764,
+    "position_ned_m": {
+      "x": {
+        "first": -7.797241474690959e-05,
+        "last": 1.1227495229575812,
+        "min": -7.797241474690959e-05,
+        "max": 1.2412579751046062
+      },
+      "y": {
+        "first": -1.0070796533909049e-05,
+        "last": -2.5794092466089995,
+        "min": -2.6799129367628645,
+        "max": -1.0070796533909049e-05
+      },
+      "z": {
+        "first": 0.3068765699863434,
+        "last": 0.38184526562690735,
+        "min": -4.843271732330322,
+        "max": 1.0283923149108887
+      }
+    },
+    "limitation": "Posthoc debug pose only; forced wind/state and fixed PWM sequence; no claim of open-loop identification or calibrated latency."
+  },
+  "seed456_repeat1": {
+    "samples": 770,
+    "position_ned_m": {
+      "x": {
+        "first": -7.797241474690959e-05,
+        "last": -0.9579455934854425,
+        "min": -1.1136218827417637,
+        "max": -7.797241474690959e-05
+      },
+      "y": {
+        "first": -1.0070796533909049e-05,
+        "last": -0.9781191350258014,
+        "min": -1.0039722925256507,
+        "max": -1.0070796533909049e-05
+      },
+      "z": {
+        "first": 0.3077944219112396,
+        "last": 0.2760446071624756,
+        "min": -4.901902198791504,
+        "max": 0.8451605439186096
+      }
+    },
+    "limitation": "Posthoc debug pose only; forced wind/state and fixed PWM sequence; no claim of open-loop identification or calibrated latency."
+  },
+  "seed456_repeat2": {
+    "samples": 769,
+    "position_ned_m": {
+      "x": {
+        "first": -7.797241474690959e-05,
+        "last": -0.9640504185765529,
+        "min": -1.1390038059715686,
+        "max": -7.797241474690959e-05
+      },
+      "y": {
+        "first": -1.0070796533909049e-05,
+        "last": -0.9473149178002005,
+        "min": -0.9772529604652307,
+        "max": -1.0070796533909049e-05
+      },
+      "z": {
+        "first": 0.3078075051307678,
+        "last": 0.2743753492832184,
+        "min": -4.986177921295166,
+        "max": 0.9738004207611084
+      }
+    },
+    "limitation": "Posthoc debug pose only; forced wind/state and fixed PWM sequence; no claim of open-loop identification or calibrated latency."
+  },
+  "seed2026_repeat1": {
+    "samples": 771,
+    "position_ned_m": {
+      "x": {
+        "first": -7.797241474690959e-05,
+        "last": -0.04967058682755734,
+        "min": -0.2622841038843747,
+        "max": -7.797241474690959e-05
+      },
+      "y": {
+        "first": -1.0070796533909049e-05,
+        "last": 2.8084811621704078,
+        "min": -1.0070796533909049e-05,
+        "max": 2.892841999200023
+      },
+      "z": {
+        "first": 0.3076353371143341,
+        "last": 0.3900947570800781,
+        "min": -5.103931903839111,
+        "max": 0.8594830632209778
+      }
+    },
+    "limitation": "Posthoc debug pose only; forced wind/state and fixed PWM sequence; no claim of open-loop identification or calibrated latency."
+  },
+  "seed2026_repeat2": {
+    "samples": 764,
+    "position_ned_m": {
+      "x": {
+        "first": -7.797241474690959e-05,
+        "last": 0.40974771115288844,
+        "min": -0.261490438514477,
+        "max": 0.453144545667726
+      },
+      "y": {
+        "first": -1.0070796533909049e-05,
+        "last": 2.515551485433912,
+        "min": -1.0070796533909049e-05,
+        "max": 2.5819231621532897
+      },
+      "z": {
+        "first": 0.3077099919319153,
+        "last": 0.37935560941696167,
+        "min": -4.992049217224121,
+        "max": 0.8442047238349915
+      }
+    },
+    "limitation": "Posthoc debug pose only; forced wind/state and fixed PWM sequence; no claim of open-loop identification or calibrated latency."
+  }
+}
