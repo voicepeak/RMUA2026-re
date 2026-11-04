@@ -1,0 +1,188 @@
+{
+  "seed123_repeat1": {
+    "status": "observed",
+    "gate_checks": 1,
+    "forced_indices": 1,
+    "initializations": 1,
+    "path_points": 5,
+    "path_sha256": "d055667cc723c7a55d2bdcbb5d4fa9e84098d43dadf36818229a68e2f8cd2cc0",
+    "ticks": 18,
+    "first_tick": [
+      144610.477389708,
+      0.0,
+      667.0,
+      0.188276693
+    ],
+    "last_tick": [
+      144619.505252657,
+      6110.07227,
+      667.0,
+      0.0500001125
+    ],
+    "world_samples": 18,
+    "first_world": [
+      "144610.478043439",
+      "-3317.53906,4146.4375,1775.10095"
+    ],
+    "last_world": [
+      "144619.505912830",
+      "1298.05469,7853.27344,241.517212"
+    ],
+    "warning": "Injected branch/route, not natural progression; wall-time sample rate is not simulation step rate."
+  },
+  "seed123_repeat2": {
+    "status": "observed",
+    "gate_checks": 1,
+    "forced_indices": 1,
+    "initializations": 1,
+    "path_points": 5,
+    "path_sha256": "d055667cc723c7a55d2bdcbb5d4fa9e84098d43dadf36818229a68e2f8cd2cc0",
+    "ticks": 18,
+    "first_tick": [
+      144628.302182361,
+      0.0,
+      667.0,
+      0.170643881
+    ],
+    "last_tick": [
+      144637.251548268,
+      6054.06934,
+      667.0,
+      0.0500001535
+    ],
+    "world_samples": 18,
+    "first_world": [
+      "144628.302892275",
+      "-3317.53906,4146.4375,1775.10095"
+    ],
+    "last_world": [
+      "144637.252141553",
+      "1254.42188,7819.53125,256.000244"
+    ],
+    "warning": "Injected branch/route, not natural progression; wall-time sample rate is not simulation step rate."
+  },
+  "seed456_repeat1": {
+    "status": "observed",
+    "gate_checks": 1,
+    "forced_indices": 1,
+    "initializations": 1,
+    "path_points": 5,
+    "path_sha256": "e5382050436bffdc9cd48e0c2f5b46f684d8e52eee71b0c48ce0f4f7f4004b5d",
+    "ticks": 11,
+    "first_tick": [
+      144649.845894078,
+      0.0,
+      1670.00012,
+      0.0500001386
+    ],
+    "last_tick": [
+      144655.059276922,
+      8767.53906,
+      1670.00012,
+      0.0500001051
+    ],
+    "world_samples": 11,
+    "first_world": [
+      "144649.846681385",
+      "0.0390625,-0.03125,-37.9101562"
+    ],
+    "last_world": [
+      "144655.059992959",
+      "5280.38281,6866.97656,-1384.35962"
+    ],
+    "warning": "Injected branch/route, not natural progression; wall-time sample rate is not simulation step rate."
+  },
+  "seed456_repeat2": {
+    "status": "observed",
+    "gate_checks": 1,
+    "forced_indices": 1,
+    "initializations": 1,
+    "path_points": 5,
+    "path_sha256": "3464a1abc9e62a4391bdf92178b7012c48a3a86ddd8836a6650875699609ad03",
+    "ticks": 11,
+    "first_tick": [
+      144667.499857604,
+      0.0,
+      1670.00012,
+      0.0500000976
+    ],
+    "last_tick": [
+      144672.76525602,
+      8851.02441,
+      1670.00012,
+      0.0500000939
+    ],
+    "world_samples": 11,
+    "first_world": [
+      "144667.500460983",
+      "0.0390625,-0.03125,-37.9106445"
+    ],
+    "last_world": [
+      "144672.716515529",
+      "5280.38281,6866.97656,-1384.35864"
+    ],
+    "warning": "Injected branch/route, not natural progression; wall-time sample rate is not simulation step rate."
+  },
+  "seed2026_repeat1": {
+    "status": "observed",
+    "gate_checks": 1,
+    "forced_indices": 1,
+    "initializations": 1,
+    "path_points": 5,
+    "path_sha256": "d055667cc723c7a55d2bdcbb5d4fa9e84098d43dadf36818229a68e2f8cd2cc0",
+    "ticks": 18,
+    "first_tick": [
+      144681.291632411,
+      0.0,
+      667.0,
+      0.162092283
+    ],
+    "last_tick": [
+      144690.241969026,
+      6044.43213,
+      667.0,
+      0.0500001684
+    ],
+    "world_samples": 18,
+    "first_world": [
+      "144681.292331347",
+      "-3317.53906,4146.4375,1775.10095"
+    ],
+    "last_world": [
+      "144690.242518299",
+      "1246.92969,7813.69531,258.498169"
+    ],
+    "warning": "Injected branch/route, not natural progression; wall-time sample rate is not simulation step rate."
+  },
+  "seed2026_repeat2": {
+    "status": "observed",
+    "gate_checks": 1,
+    "forced_indices": 1,
+    "initializations": 1,
+    "path_points": 5,
+    "path_sha256": "d055667cc723c7a55d2bdcbb5d4fa9e84098d43dadf36818229a68e2f8cd2cc0",
+    "ticks": 18,
+    "first_tick": [
+      144698.87079189,
+      0.0,
+      667.0,
+      0.155160859
+    ],
+    "last_tick": [
+      144708.014244176,
+      6173.20898,
+      667.0,
+      0.0500001945
+    ],
+    "world_samples": 18,
+    "first_world": [
+      "144698.871556841",
+      "-3317.53906,4146.4375,1775.10095"
+    ],
+    "last_world": [
+      "144708.014819390",
+      "1347.04688,7891.03125,225.263062"
+    ],
+    "warning": "Injected branch/route, not natural progression; wall-time sample rate is not simulation step rate."
+  }
+}

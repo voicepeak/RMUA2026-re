@@ -104,3 +104,5 @@
 | 强制通过状态检查后的车辆路径、进度和组件世界坐标 | `experiments/vehicle_forcegate_pilot_20261105/`、`experiments/vehicle_world_pilot_20261105/`、`scripts/stage_vehicle_world.gdb`；开发注入 |
 | stage 6 候选点三 seed 重复 | `experiments/obstacle_inventory_6_20261105/analysis.json` |
 | 六场强制状态门槛的车辆初始化和进度 | `experiments/vehicle_forcegate_4_20261105/analysis.json`；seed 456 两次路径不同 |
+| 三 seed 两次车辆组件世界坐标 | `experiments/vehicle_world_4_20261105/analysis.json`、各 `gdb.log`；状态门槛被强制 |
+| 注入风状态的非零 ROS 风 | `experiments/force_wind_tick_pilot_20261105/`、`scripts/stage_force_wind_tick.gdb`；起点注入，非自然赛程 |
