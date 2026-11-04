@@ -139,3 +139,4 @@
 | 动态风与固定 PWM 的时间重叠首场 | `experiments/wind_pwm_transition_pilot_20261105/overlap_analysis.json`、`scripts/analyze_wind_pwm_overlap.py`；非因果/延迟证明 |
 | stage 4 粗/细组件变换三 seed 两次 | `experiments/line_instances_4_20261105/instances_analysis.json`、各 GDB 原始变换 |
 | stage 4 LiDAR 原始帧三 seed 两次 | `experiments/lidar_snapshot_4_20261105/lidar_analysis.json`、每场 payload 与 metadata |
+| 非直接调用碰撞回调的分派栈 | `experiments/collision_stack_pilot_20261105/`、`scripts/stage_collision_stack.gdb`；接触对象未知 |
