@@ -1,0 +1,31 @@
+{
+  "binary_sha256": "5231addfa25ddaa9e4473ea9ac40c9c0bc685174e69cd14bb49159f443b97800",
+  "settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+  "image_id": "sha256:cd46a48cd28c2a9c6345f60227fd1bd50e78c67ef1e98dcddc0e65893771da57",
+  "gdb_script_sha256": "98158c0b17596dcad5840e4ce6600e3303cb45742e3fef7db69d4128b6978028",
+  "mode": "nullrhi",
+  "map": "default Lobby -> OL1",
+  "seeds": [
+    123
+  ],
+  "repeats": 1,
+  "stage_coverage": "GDB mutates initial stage call arguments; diagnostic, not official progression",
+  "injected_stage": 4,
+  "runs": [
+    {
+      "seed": 123,
+      "repeat": 1,
+      "port": 12080,
+      "container": "rmua-trace-81c9adb4aa0d",
+      "start_wall": 1793808420.6481209,
+      "status": "observed",
+      "id": "f7e055c8e67ff3bf8f31ed348a2ad17c2469f8712d5ce8246b5967cc6c9b05b4",
+      "ready_wall": 1793808429.376892,
+      "before_reset_exit_code": 124,
+      "injection_observed": true,
+      "wind_generation_observed": true,
+      "line_generation_observed": true,
+      "end_wall": 1793808438.2983246
+    }
+  ]
+}

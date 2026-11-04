@@ -1,0 +1,33 @@
+{
+  "seed123_repeat1": {
+    "status": "observed",
+    "gate_checks": 1,
+    "forced_indices": 1,
+    "initializations": 1,
+    "path_points": 5,
+    "path_sha256": "d055667cc723c7a55d2bdcbb5d4fa9e84098d43dadf36818229a68e2f8cd2cc0",
+    "ticks": 18,
+    "first_tick": [
+      144574.405882221,
+      0.0,
+      667.0,
+      0.16876021
+    ],
+    "last_tick": [
+      144583.367654472,
+      6066.14941,
+      667.0,
+      0.0500001796
+    ],
+    "world_samples": 18,
+    "first_world": [
+      "144574.406600102",
+      "-3317.53906,4146.4375,1775.10095"
+    ],
+    "last_world": [
+      "144583.368240717",
+      "1263.85938,7826.84375,252.870605"
+    ],
+    "warning": "Injected branch/route, not natural progression; wall-time sample rate is not simulation step rate."
+  }
+}

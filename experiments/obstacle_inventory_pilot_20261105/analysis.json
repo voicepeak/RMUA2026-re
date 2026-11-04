@@ -1,0 +1,22 @@
+{
+  "runs": {
+    "seed123_repeat1": {
+      "points": 371,
+      "arrays": 31,
+      "declared_points": 371,
+      "point_multiset_sha256": "29ec3f3b482712ca22e9c8bbb72ed6012f90f51b68b322755bd52e8d708897c7",
+      "read_errors": 0,
+      "status": "observed"
+    }
+  },
+  "repeats": {
+    "123": {
+      "runs": 1,
+      "same_point_multiset": false
+    }
+  },
+  "limitations": [
+    "Internal point arrays used for spacing checks, not verified spawned actor transforms",
+    "Actor addresses are process-specific; points are compared as a multiset"
+  ]
+}

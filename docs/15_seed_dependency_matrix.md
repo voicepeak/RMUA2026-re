@@ -74,3 +74,5 @@ stage 5 三 seed 各两场的注入风关键帧也逐字重复；生成入口计
 车辆在开发容器内通过临时改写调用目标命中 `0x2fc8900` 并返回，见 `experiments/vehicle_redirect_pilot_20261105/`；尚未据此认定车辆实际运动。线障对象候选点数组首场见 `experiments/obstacle_inventory_pilot_20261105/`。
 
 stage 4 三 seed 各两次的内部线障间距点集合在同 seed 两场一致、跨 seed 不同；点数分别 371/373/373。它们并非已确认 spawn 实例，详见 `experiments/obstacle_inventory_4_20261105/`。
+
+开发注入额外强制通过状态字符串分支后，seed 123 的车辆初始化产生五点路径，观测到组件世界坐标随时间变化；见 `experiments/vehicle_world_pilot_20261105/`。这不代表自然赛程必然生成该车。

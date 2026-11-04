@@ -1,0 +1,70 @@
+{
+  "runs": {
+    "seed123_repeat1": {
+      "points": 1107,
+      "arrays": 62,
+      "declared_points": 1107,
+      "point_multiset_sha256": "45d0edf1a37afcd3ef55e0d0fff2b771770fda435ba4634717532019ebc14d11",
+      "read_errors": 0,
+      "status": "observed"
+    },
+    "seed123_repeat2": {
+      "points": 1107,
+      "arrays": 62,
+      "declared_points": 1107,
+      "point_multiset_sha256": "45d0edf1a37afcd3ef55e0d0fff2b771770fda435ba4634717532019ebc14d11",
+      "read_errors": 0,
+      "status": "observed"
+    },
+    "seed456_repeat1": {
+      "points": 1100,
+      "arrays": 62,
+      "declared_points": 1100,
+      "point_multiset_sha256": "d6a1ae97c0fa53d1afaad9ce0d52bca0c5db1bdf2174ea9b828bd5e5a2f56151",
+      "read_errors": 0,
+      "status": "observed"
+    },
+    "seed456_repeat2": {
+      "points": 1100,
+      "arrays": 62,
+      "declared_points": 1100,
+      "point_multiset_sha256": "d6a1ae97c0fa53d1afaad9ce0d52bca0c5db1bdf2174ea9b828bd5e5a2f56151",
+      "read_errors": 0,
+      "status": "observed"
+    },
+    "seed2026_repeat1": {
+      "points": 1100,
+      "arrays": 62,
+      "declared_points": 1100,
+      "point_multiset_sha256": "136103ead057f48561ed38a99881228859b72dc05a19105bc01bfd8ceb2b4fc8",
+      "read_errors": 0,
+      "status": "observed"
+    },
+    "seed2026_repeat2": {
+      "points": 1100,
+      "arrays": 62,
+      "declared_points": 1100,
+      "point_multiset_sha256": "136103ead057f48561ed38a99881228859b72dc05a19105bc01bfd8ceb2b4fc8",
+      "read_errors": 0,
+      "status": "observed"
+    }
+  },
+  "repeats": {
+    "123": {
+      "runs": 2,
+      "same_point_multiset": true
+    },
+    "456": {
+      "runs": 2,
+      "same_point_multiset": true
+    },
+    "2026": {
+      "runs": 2,
+      "same_point_multiset": true
+    }
+  },
+  "limitations": [
+    "Internal point arrays used for spacing checks, not verified spawned actor transforms",
+    "Actor addresses are process-specific; points are compared as a multiset"
+  ]
+}

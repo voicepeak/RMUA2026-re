@@ -128,3 +128,7 @@ stage 6 三 seed 各两次的注入风数组同 seed 逐字一致、不同 seed 
 stage 4 线障候选数组对 seed 123/456/2026 各两次：每场均读到 31 个对象数组，点数分别 371/373/373；按原始点字节作为多重集合比较，同 seed 两场一致，不同 seed 不同。对象地址被排除，所有声明点数均成功读取；这仍是内部间距点，而非已证明 spawn 的线障数量或运动。复现和分析见 `experiments/obstacle_inventory_4_20261105/`、`scripts/analyze_obstacle_inventory.py`。
 
 同样六场车辆调用重定向均观察目标入口并返回。seed 123 和 2026 的两场中，`0x2fc93c0` 在重定向调用返回前命中；seed 456 的该入口出现在返回之后，不能归因于重定向调用。`experiments/vehicle_redirect_4_20261105/analysis.json` 按事件顺序区分。seed 123 单场增加 `0x2fbff60` 和车辆 tick 探针但未观察到车辆初始化或活动 tick；入口命中不等于生成/运动，见 `experiments/vehicle_dynamics_pilot_20261105/`。较长的六场旧跳转试验没有观测到返回，原始失败数据在 `experiments/vehicle_trampoline_long_20261105/`。
+
+stage 5 的六场候选点数组也已完成，同 seed 两次点字节多重集合一致、三个 seed 不同；具体数组数和原始点见 `experiments/obstacle_inventory_5_20261105/analysis.json`。它们仍不是成功生成数。
+
+车辆机制进一步验证：`experiments/vehicle_forcegate_pilot_20261105/` 在重定向调用外，把 `0x2fc93c0` 的状态字符串查找结果从 -1 临时改为 0；seed 123 于是进入 `0x2fbff60`，输入 5 个三维路径点、速度字段 667，随后活动 tick 的进度从 0 增至约 6019。独立重复试场 `experiments/vehicle_world_pilot_20261105/` 在设置车辆组件位置后读取其世界坐标，约 9 秒观测中由 `(-3317.54,4146.44,1775.10)` cm 移至 `(1263.86,7826.84,252.87)` cm。原始点、世界坐标、单调时钟及 tick 保留在日志；以 UE 厘米解释时速度字段为 6.67 m/s，但 GDB 干扰时间且这不是自然路径、车辆碰撞或真实评测证明。此状态分支强制和调用重定向都只改变开发进程内存。
