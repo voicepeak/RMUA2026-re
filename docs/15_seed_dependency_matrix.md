@@ -118,3 +118,5 @@ stage 6 持续状态注入动态风已覆盖三 seed 各两次；stage 5 线障�
 持续风和开环 PWM 注入场额外记录到非直接调用的碰撞回调，但其对方对象尚未识别；状态被逐 tick 强制，不能将回调次数外推到比赛。
 
 stage 6 的内层候选距离三 seed 各两次也完成核对；stage 4/5/6 三组同 seed 序列一致。详见 `experiments/line_offsets_6_20261105/` 和 docs/17。
+
+动态风注入的 IMU 统计和 LiDAR 消息时序覆盖三 stage、三 seed 和重复，具体值及不能单独作为噪声模型的限制见 docs/17。

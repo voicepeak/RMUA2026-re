@@ -130,3 +130,4 @@
 | stage 5 线障候选偏移三 seed 两次 | `experiments/line_offsets_5_20261105/offset_analysis.json` |
 | 持续状态和开环 PWM 场的运行时碰撞回调 | `experiments/fall_collision_pilot_20261105/`、`scripts/stage_fall_collision.gdb`；碰撞对方未知且状态被反复覆盖 |
 | stage 6 线障候选偏移三 seed 两次 | `experiments/line_offsets_6_20261105/offset_analysis.json` |
+| 动态风 18 场传感器时钟和 IMU 分布 | `experiments/wind_persistent_{4,5,6}_20261105/` 各 `sensor_clock_summary.json`、`imu_analysis.json`，`scripts/analyze_imu_samples.py` |

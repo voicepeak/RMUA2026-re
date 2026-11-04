@@ -178,3 +178,5 @@ stage 5 线障候选偏移三 seed 各两次均为 628 个调用，同 seed 的�
 在持续强制 stage 4 状态、动态风和固定开环 PWM 的独立 seed 123 场，未直接调用碰撞回调，而是对 `0x2fb7110` 与状态入口设断点：记录 20 次回调和 20 次 state 12 请求；事后位置真值的 z 范围约 -5.096 至 0.836 m（NED）。该场每 tick 强制 state 7，能在回调后覆盖 state 12，因此回调次数与正常赛程终止行为不同；尚未解码碰撞对方或校准时间，不能将所有回调认定为无人机落地、线障或车辆接触。原始日志、PWM、IMU/GPS/风和事后真值见 `experiments/fall_collision_pilot_20261105/`。这补充了真实运行时回调样本，但物理接触对象和碰撞响应仍未验收。
 
 stage 6 线障内层偏移三 seed 各两次每场 804 次，同 seed 状态/基准/偏移序列一致；样本绝对偏移约 15.003–84.996 m，float32 按捕获状态重建的最大文本误差约 `5e-6` cm。三个室外 stage 的候选距离均已覆盖三 seed 和重复；仍不能把这些值直接当作成功实例或碰撞位置。见 `experiments/line_offsets_6_20261105/offset_analysis.json`。
+
+持续状态注入的 18 个动态风场中，独立订阅的 IMU 到达频率约 100 Hz、LiDAR 约 10.04–10.10 Hz，IMU 到达间隔 p99 约 10.21–10.33 ms、LiDAR 约 99.31–108.60 ms；观察端序号缺口合计 0。NullRHI 相机消息约 20 Hz，但每帧 0×0、0 字节，不能作为图像训练样本。18 场 IMU z 轴加速度均值约 -9.8081 至 -9.8059、总体标准差约 0.0420–0.0440（消息单位按 ROS 定义）；这些样本混合状态、运动、风与传感器效应，不能直接当作噪声参数。每场 `sensor_clock_summary.json`、`imu_analysis.json`、原始数据和 `scripts/summarize_sensor_clock.py`、`scripts/analyze_imu_samples.py` 可复算；消息到达时钟不证明采样端或端到端延迟。
