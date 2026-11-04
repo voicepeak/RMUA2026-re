@@ -1,0 +1,18 @@
+{
+  "run_scope": "NullRHI stationary, seed 123, passive bridge only; no flight or truth",
+  "observer_sha256": "1ac2f35ba667d18374e5662c2e762e1670e033c5cb2e72a344cc2804bcc02dc5",
+  "duration_requested_wall_s": 12,
+  "count": 121,
+  "reasons": {
+    "accepted": 121
+  },
+  "max_abs_header_skew_s": 0.012000322341918945,
+  "max_imu_callback_age_monotonic_s": 0.010073978002765216,
+  "gps_stamp_regressions": 0,
+  "limitations": [
+    "Frame and orientation equivalence to the controller have not been verified",
+    "stationary observations do not validate dynamics or flight safety",
+    "this bridge was not connected to a control publisher",
+    "clock offsets and end-to-end latency are not established"
+  ]
+}
