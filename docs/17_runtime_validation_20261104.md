@@ -182,3 +182,5 @@ stage 6 线障内层偏移三 seed 各两次每场 804 次，同 seed 状态/基
 持续状态注入的 18 个动态风场中，独立订阅的 IMU 到达频率约 100 Hz、LiDAR 约 10.04–10.10 Hz，IMU 到达间隔 p99 约 10.21–10.33 ms、LiDAR 约 99.31–108.60 ms；观察端序号缺口合计 0。NullRHI 相机消息约 20 Hz，但每帧 0×0、0 字节，不能作为图像训练样本。18 场 IMU z 轴加速度均值约 -9.8081 至 -9.8059、总体标准差约 0.0420–0.0440（消息单位按 ROS 定义）；这些样本混合状态、运动、风与传感器效应，不能直接当作噪声参数。每场 `sensor_clock_summary.json`、`imu_analysis.json`、原始数据和 `scripts/summarize_sensor_clock.py`、`scripts/analyze_imu_samples.py` 可复算；消息到达时钟不证明采样端或端到端延迟。
 
 对三 stage、三 seed、各两次固定 PWM 场的 `pose_gt` 做独立事后统计：所有 18 场的 NED z 全局观测范围约 -5.10 至 1.04 m，末次 x/y 与风状态、采样时长均相关；逐场初末值和范围见 `experiments/wind_pwm_step_{4,5,6}_20261105/motion_analysis.json`。固定命令器没有读取真值；这些数不等于净高度、碰撞点或已辨识的动力学模型，原始姿态/位置、IMU 和命令时钟保留。
+
+七实例空载长时验证第一轮：三个目标 seed 加 789/1001/1002/1003，独立 ROS master，全部 IMU 就绪后 300 秒存活，清理成功。`experiments/concurrency_7_long_a_20261105/` 含逐次容器状态、启动和清理日志；这是一次有限空载窗口，非训练负载的稳定上限或八实例崩溃根因。独立第二轮正在进行。
