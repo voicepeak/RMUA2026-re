@@ -8,7 +8,7 @@ import argparse,hashlib,json,os,secrets,subprocess,time
 from pathlib import Path
 from run_readonly_trace import LAUNCH,docker,sha
 base=Path(__file__).resolve().parent.parent;workspace=Path('/home/tianbot/RUMA-by-helinjun');sim=workspace/'main/simulator/simulator_12.0.0.5';settings=workspace/'main/configs/simulator_settings.json'
-p=argparse.ArgumentParser();p.add_argument('--output',type=Path,required=True);p.add_argument('--seconds',type=int,default=35);p.add_argument('--speed',type=float,default=2.0);p.add_argument('--hub-observer',action='store_true');p.add_argument('--cause-trace',action='store_true');a=p.parse_args()
+p=argparse.ArgumentParser();p.add_argument('--output',type=Path,required=True);p.add_argument('--seconds',type=int,default=35);p.add_argument('--speed',type=float,default=2.0);p.add_argument('--hub-observer',action='store_true');p.add_argument('--cause-trace',action='store_true');p.add_argument('--predicate-trace',action='store_true');a=p.parse_args()
 if not 1 <= a.seconds <= 180 or not 0 < a.speed <= 6:raise SystemExit('invalid duration or speed')
 out=a.output.resolve();out.mkdir(parents=True,exist_ok=True)
 if not (out/'route/route.json').is_file():raise SystemExit('output must contain pre-generated route/')
@@ -17,7 +17,7 @@ meta={'seed':123,'mode':'VEL diagnostic','requested_duration_wall_s':a.seconds,'
 def save():(out/'manifest.json').write_text(json.dumps(meta,indent=2)+'\n')
 save();bridge=None;wind=None;control=None;hub=None
 try:
- args=['run','-d','--init','--name',name,'--network','host','--gpus','all','--cap-add','SYS_PTRACE','--security-opt','seccomp=unconfined','--user',f'{os.getuid()}:{os.getgid()}','-e','HOME=/tmp','-e','LD_LIBRARY_PATH=','-e','NVIDIA_DRIVER_CAPABILITIES=all','-e','DISPLAY=:1','-e','ROS_HOSTNAME=localhost','-e',f'ROS_MASTER_URI=http://127.0.0.1:{port}','-e',f'RMUA_PORT={port}','-e','RMUA_SEED=123','-v',str(sim)+':/sim:ro','-v',str(settings)+':/configs/settings.json:ro','-v',str(workspace)+':/workspace:ro','-v',str(base)+':/analysis:ro','-v',str(out)+':/out','-v','/tmp/.X11-unix:/tmp/.X11-unix','--entrypoint','bash','rmua/re-probe:20261104','-c',LAUNCH.replace('runtime_trace.gdb','stage_trace_cause.gdb' if a.cause_trace else 'stage_trace.gdb')]
+ args=['run','-d','--init','--name',name,'--network','host','--gpus','all','--cap-add','SYS_PTRACE','--security-opt','seccomp=unconfined','--user',f'{os.getuid()}:{os.getgid()}','-e','HOME=/tmp','-e','LD_LIBRARY_PATH=','-e','NVIDIA_DRIVER_CAPABILITIES=all','-e','DISPLAY=:1','-e','ROS_HOSTNAME=localhost','-e',f'ROS_MASTER_URI=http://127.0.0.1:{port}','-e',f'RMUA_PORT={port}','-e','RMUA_SEED=123','-v',str(sim)+':/sim:ro','-v',str(settings)+':/configs/settings.json:ro','-v',str(workspace)+':/workspace:ro','-v',str(base)+':/analysis:ro','-v',str(out)+':/out','-v','/tmp/.X11-unix:/tmp/.X11-unix','--entrypoint','bash','rmua/re-probe:20261104','-c',LAUNCH.replace('runtime_trace.gdb','stage_trace_predicate.gdb' if a.predicate_trace else ('stage_trace_cause.gdb' if a.cause_trace else 'stage_trace.gdb'))]
  meta['container_id']=docker(*args,capture_output=True,check=True).stdout.strip();save()
  prefix='source /opt/ros/noetic/setup.bash; source /workspace/rmua_ws/devel/setup.bash; export OPENBLAS_NUM_THREADS=1; export ROS_HOME=/tmp/probe; '
  def cmd(s):return ['docker','exec','-u',f'{os.getuid()}:{os.getgid()}',name,'bash','-c',prefix+s]
