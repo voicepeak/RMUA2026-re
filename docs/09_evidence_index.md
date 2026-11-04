@@ -112,3 +112,5 @@
 | 风注入下固定开环 PWM 步进单场 | `experiments/wind_pwm_step_pilot_20261105/`、`scripts/pwm_wind_step_probe.py`；不读取真值控制 |
 | stage 5 强制风/传感器三 seed 两次 | `experiments/force_wind_tick_5_20261105/analysis.json` 和原始流 |
 | 合成碰撞回调首场 state 7→12 | `experiments/collision_inject_pilot_20261105/`、`scripts/stage_collision_inject.gdb`；不是物理接触 |
+| stage 6 强制风、PWM、传感器三 seed 两次 | `experiments/force_wind_tick_6_20261105/analysis.json` 和原始流 |
+| stage 4 固定 PWM 开环三 seed 两次 | `experiments/wind_pwm_step_4_20261105/pwm_analysis.json`、`analysis.json`；header 匹配不代表端到端延迟 |

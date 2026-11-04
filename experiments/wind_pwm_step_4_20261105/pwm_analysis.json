@@ -1,0 +1,260 @@
+{
+  "seed123_repeat1": {
+    "command_samples": 248,
+    "output_samples": 801,
+    "edges": [
+      {
+        "command": 0.0,
+        "command_header_ns": 1793808822915675878,
+        "first_matching_output_header_ns": null,
+        "header_delta_ms": null
+      },
+      {
+        "command": 0.2,
+        "command_header_ns": 1793808823925184965,
+        "first_matching_output_header_ns": 1793808823947342157,
+        "header_delta_ms": 22.157192
+      },
+      {
+        "command": 0.3,
+        "command_header_ns": 1793808824671818971,
+        "first_matching_output_header_ns": 1793808824676357746,
+        "header_delta_ms": 4.538775
+      },
+      {
+        "command": 0.4,
+        "command_header_ns": 1793808825419782876,
+        "first_matching_output_header_ns": 1793808825426373720,
+        "header_delta_ms": 6.590844
+      },
+      {
+        "command": 0.2,
+        "command_header_ns": 1793808826168638229,
+        "first_matching_output_header_ns": 1793808826185389757,
+        "header_delta_ms": 16.751528
+      },
+      {
+        "command": 0.0,
+        "command_header_ns": 1793808826916420936,
+        "first_matching_output_header_ns": 1793808826926405668,
+        "header_delta_ms": 9.984732
+      }
+    ],
+    "limitations": "First matching output header during each command phase; not calibrated source-to-actuator latency, and no pairing/interpolation between command samples."
+  },
+  "seed123_repeat2": {
+    "command_samples": 248,
+    "output_samples": 801,
+    "edges": [
+      {
+        "command": 0.0,
+        "command_header_ns": 1793808840959618568,
+        "first_matching_output_header_ns": null,
+        "header_delta_ms": null
+      },
+      {
+        "command": 0.2,
+        "command_header_ns": 1793808841969502210,
+        "first_matching_output_header_ns": 1793808841978923082,
+        "header_delta_ms": 9.420872
+      },
+      {
+        "command": 0.3,
+        "command_header_ns": 1793808842716763734,
+        "first_matching_output_header_ns": 1793808842719938755,
+        "header_delta_ms": 3.175021
+      },
+      {
+        "command": 0.4,
+        "command_header_ns": 1793808843465080022,
+        "first_matching_output_header_ns": 1793808843466954708,
+        "header_delta_ms": 1.874686
+      },
+      {
+        "command": 0.2,
+        "command_header_ns": 1793808844213535547,
+        "first_matching_output_header_ns": 1793808844216970682,
+        "header_delta_ms": 3.435135
+      },
+      {
+        "command": 0.0,
+        "command_header_ns": 1793808844961939096,
+        "first_matching_output_header_ns": 1793808844966986656,
+        "header_delta_ms": 5.04756
+      }
+    ],
+    "limitations": "First matching output header during each command phase; not calibrated source-to-actuator latency, and no pairing/interpolation between command samples."
+  },
+  "seed456_repeat1": {
+    "command_samples": 248,
+    "output_samples": 801,
+    "edges": [
+      {
+        "command": 0.0,
+        "command_header_ns": 1793808859011818170,
+        "first_matching_output_header_ns": null,
+        "header_delta_ms": null
+      },
+      {
+        "command": 0.2,
+        "command_header_ns": 1793808860021207571,
+        "first_matching_output_header_ns": 1793808860040490866,
+        "header_delta_ms": 19.283295
+      },
+      {
+        "command": 0.3,
+        "command_header_ns": 1793808860768918991,
+        "first_matching_output_header_ns": 1793808860787506580,
+        "header_delta_ms": 18.587589
+      },
+      {
+        "command": 0.4,
+        "command_header_ns": 1793808861517553091,
+        "first_matching_output_header_ns": 1793808861534522533,
+        "header_delta_ms": 16.969442
+      },
+      {
+        "command": 0.2,
+        "command_header_ns": 1793808862266168355,
+        "first_matching_output_header_ns": 1793808862284538507,
+        "header_delta_ms": 18.370152
+      },
+      {
+        "command": 0.0,
+        "command_header_ns": 1793808863014380693,
+        "first_matching_output_header_ns": 1793808863034554720,
+        "header_delta_ms": 20.174027
+      }
+    ],
+    "limitations": "First matching output header during each command phase; not calibrated source-to-actuator latency, and no pairing/interpolation between command samples."
+  },
+  "seed456_repeat2": {
+    "command_samples": 248,
+    "output_samples": 800,
+    "edges": [
+      {
+        "command": 0.0,
+        "command_header_ns": 1793808876889159440,
+        "first_matching_output_header_ns": null,
+        "header_delta_ms": null
+      },
+      {
+        "command": 0.2,
+        "command_header_ns": 1793808877899143218,
+        "first_matching_output_header_ns": 1793808877924885988,
+        "header_delta_ms": 25.74277
+      },
+      {
+        "command": 0.3,
+        "command_header_ns": 1793808878646717786,
+        "first_matching_output_header_ns": 1793808878668901920,
+        "header_delta_ms": 22.184134
+      },
+      {
+        "command": 0.4,
+        "command_header_ns": 1793808879395357370,
+        "first_matching_output_header_ns": 1793808879418917894,
+        "header_delta_ms": 23.560524
+      },
+      {
+        "command": 0.2,
+        "command_header_ns": 1793808880143515586,
+        "first_matching_output_header_ns": 1793808880168933868,
+        "header_delta_ms": 25.418282
+      },
+      {
+        "command": 0.0,
+        "command_header_ns": 1793808880891180276,
+        "first_matching_output_header_ns": 1793808880918949842,
+        "header_delta_ms": 27.769566
+      }
+    ],
+    "limitations": "First matching output header during each command phase; not calibrated source-to-actuator latency, and no pairing/interpolation between command samples."
+  },
+  "seed2026_repeat1": {
+    "command_samples": 248,
+    "output_samples": 801,
+    "edges": [
+      {
+        "command": 0.0,
+        "command_header_ns": 1793808895037479400,
+        "first_matching_output_header_ns": null,
+        "header_delta_ms": null
+      },
+      {
+        "command": 0.2,
+        "command_header_ns": 1793808896048034667,
+        "first_matching_output_header_ns": 1793808896060349226,
+        "header_delta_ms": 12.314559
+      },
+      {
+        "command": 0.3,
+        "command_header_ns": 1793808896796317577,
+        "first_matching_output_header_ns": 1793808896807365179,
+        "header_delta_ms": 11.047602
+      },
+      {
+        "command": 0.4,
+        "command_header_ns": 1793808897543843030,
+        "first_matching_output_header_ns": 1793808897557381153,
+        "header_delta_ms": 13.538123
+      },
+      {
+        "command": 0.2,
+        "command_header_ns": 1793808898291841983,
+        "first_matching_output_header_ns": 1793808898307397127,
+        "header_delta_ms": 15.555144
+      },
+      {
+        "command": 0.0,
+        "command_header_ns": 1793808899040321588,
+        "first_matching_output_header_ns": 1793808899057413101,
+        "header_delta_ms": 17.091513
+      }
+    ],
+    "limitations": "First matching output header during each command phase; not calibrated source-to-actuator latency, and no pairing/interpolation between command samples."
+  },
+  "seed2026_repeat2": {
+    "command_samples": 248,
+    "output_samples": 800,
+    "edges": [
+      {
+        "command": 0.0,
+        "command_header_ns": 1793808914757184505,
+        "first_matching_output_header_ns": null,
+        "header_delta_ms": null
+      },
+      {
+        "command": 0.2,
+        "command_header_ns": 1793808915768017053,
+        "first_matching_output_header_ns": 1793808915800075769,
+        "header_delta_ms": 32.058716
+      },
+      {
+        "command": 0.3,
+        "command_header_ns": 1793808916516441106,
+        "first_matching_output_header_ns": 1793808916550091743,
+        "header_delta_ms": 33.650637
+      },
+      {
+        "command": 0.4,
+        "command_header_ns": 1793808917265347242,
+        "first_matching_output_header_ns": 1793808917300107718,
+        "header_delta_ms": 34.760476
+      },
+      {
+        "command": 0.2,
+        "command_header_ns": 1793808918013629674,
+        "first_matching_output_header_ns": 1793808918050123692,
+        "header_delta_ms": 36.494018
+      },
+      {
+        "command": 0.0,
+        "command_header_ns": 1793808918760014772,
+        "first_matching_output_header_ns": 1793808918800139666,
+        "header_delta_ms": 40.124894
+      }
+    ],
+    "limitations": "First matching output header during each command phase; not calibrated source-to-actuator latency, and no pairing/interpolation between command samples."
+  }
+}

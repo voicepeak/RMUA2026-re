@@ -86,3 +86,5 @@ stage 4 强制风状态的三个 seed 各两场均观测到非零 ROS 风，见 
 stage 4 的三 seed 各两次强制风场均采到风与 PWM、IMU/GPS/LiDAR 时钟；开放环 PWM 步进首场也已记录。均是起点开发注入，见 docs/17。
 
 stage 5 强制风更新六场均采到非零风及 PWM、传感器流；样本并非真实室外遍历，见 `experiments/force_wind_tick_5_20261105/`。
+
+stage 6 强制风更新三 seed 两次均获得非零 ROS 风；完整时序和对应 PWM、传感器流见 `experiments/force_wind_tick_6_20261105/`。

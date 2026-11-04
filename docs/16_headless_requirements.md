@@ -87,3 +87,5 @@ stage 4 注入获得可重复的线障内部候选点集合，但仍需确认资
 强制 stage 4 风的六场中 ROS 原始 PWM、IMU、GPS 和 LiDAR 时钟均有采样；另有单 seed 固定开环 PWM 序列。需继续测其他 seed 与 stage、延迟和受风时动力学，见 docs/17。
 
 stage 5 的三 seed 强制风采样已包含原始 PWM 和传感器流；合成碰撞回调证明一次忽略标志为 0 时的 state 12 分支，尚未测真实几何碰撞。
+
+stage 4 的固定开环 PWM 序列在三 seed 两次均采到对应输出，header 首次匹配差约 1.9–40.1 ms，不是经校准的端到端延迟。stage 6 强制风及传感器采样已覆盖三 seed 两次。
