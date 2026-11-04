@@ -1,0 +1,10 @@
+{
+  "seed123_repeat1": {
+    "keyframes": 35,
+    "compared_vectors": 1230,
+    "distinct_vectors_rounded_1e-6": 83,
+    "vector_error_rmse": 0.038276355869753594,
+    "vector_error_max": 0.20711838667486518,
+    "limitations": "ROS header and GDB wall clocks only approximately aligned; debugger stops and message timing affect differences. This is a diagnostic comparison, not calibrated latency."
+  }
+}

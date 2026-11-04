@@ -160,3 +160,5 @@ stage 5 固定开环 PWM 六场均发送 248 条命令、采到 800–801 条输
 stage 6 单次状态注入的 25 秒风也保持同一向量（1234 条），见 `experiments/wind_transition_6_20261105/`。另一个 stage 4 单 seed 试场每个游戏 tick 将 state 重新写为 7，并只在首次设置段起始单调时钟；其关键帧索引从 0 推进到 1、2 等，25 秒 ROS 风矢量发生变化，速度模约 1.50–1.84。该试场保留 GDB 时钟、索引和传感器原始数据于 `experiments/wind_persistent_pilot_20261105/`；持续注入改变每个 tick 且断点影响调度，不能视为自然赛程或确定单次注入冻结的根因。
 
 stage 6 固定开环 PWM 六场均发送 248 条命令并记录 800–802 条实际 PWM；非初始零阶段同阶段首次 header 匹配差约 0.1–38.9 ms，不能解释为经过标定的端到端延迟。各流和失败/缺失的初始零匹配见 `experiments/wind_pwm_step_6_20261105/`。三个 stage 的固定序列均有三 seed 各两次，但这些短场的单次状态注入风向量保持不变；动态风与 PWM 的耦合尚未完成验证。
+
+对持续注入的 stage 4 seed 123 风试场，用生成器关键帧和 GDB 的墙钟/单调钟对估算相对时间：保持区间直接取关键帧速度和角度；标记为过渡的区间对速度和角度分别线性插值，再按 `(speed*cos(angle), speed*sin(angle), 0)` 重建。1230 条 ROS 向量与该模型的二维误差 RMSE 约 0.0383、最大约 0.207；包括调试暂停和未经标定的 ROS header/墙钟偏差。该试场的角度从约 276.6° 到 9.6°，数据与直接线性插值角度相符，不能据此推广到所有角度边界。逐条原始流、关键帧和脚本见 `experiments/wind_persistent_pilot_20261105/wind_interpolation_analysis.json`、`scripts/analyze_persistent_wind.py`。
