@@ -147,3 +147,4 @@
 | 碰撞分派事件前 96 字节及栈 | `experiments/line_fixture_event_pilot_20261105/`、`scripts/stage_line_fixture_event.gdb`；对象长度及接触对方未知 |
 | stage 5 动态风过渡与 PWM 三 seed 两次 | `experiments/wind_pwm_transition_5_20261105/overlap_analysis.json` 和原始流 |
 | 固定线障夹具实验无夹具对照三 seed 两次 | `experiments/line_fixture_control_20261105/`、`scripts/run_line_fixture.py` |
+| stage 6 动态风与固定 PWM 三 seed 两次 | `experiments/wind_pwm_transition_6_20261105/overlap_analysis.json`；seed 123 非零命令未与变化重叠 |
