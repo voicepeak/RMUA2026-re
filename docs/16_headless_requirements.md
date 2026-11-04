@@ -117,3 +117,5 @@ python3 scripts/wind_offline_model.py --output /tmp/rmua-wind-offline
 ```
 
 `SIM_DIR` 指向解包后的模拟器目录，`ROS_WS` 指向已构建的 ROS 工作区；其依赖、镜像构建与复原步骤仍须结合 docs/07 和 docs/17。第一个命令会在开发容器的内存中注入阶段与状态，记录的真值仅供事后分析。实际建模须分别处理模拟时钟、传感器和物理时间、通信队列以及随机流消费顺序。
+
+stage 4 内层线障候选的状态与距离公式已覆盖三 seed 各两次；最终接触几何和成功放置仍应独立验证。

@@ -1,6 +1,7 @@
 {
   "seed123_repeat1": {
     "samples": 198,
+    "observed_sequence_sha256": "9dc3ff1134506d41d99932db37770d022a3c5924c8f624d98825bb7ce5dcce33",
     "offset_abs_minmax_cm": [
       1505.75952,
       8489.48242

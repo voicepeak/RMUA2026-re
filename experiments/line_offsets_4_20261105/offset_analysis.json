@@ -1,0 +1,116 @@
+{
+  "seed123_repeat1": {
+    "samples": 198,
+    "observed_sequence_sha256": "9dc3ff1134506d41d99932db37770d022a3c5924c8f624d98825bb7ce5dcce33",
+    "offset_abs_minmax_cm": [
+      1505.75952,
+      8489.48242
+    ],
+    "base_values_cm": [
+      5782.34375,
+      15782.3438,
+      25782.3438,
+      35782.3438,
+      45782.3438,
+      55782.3438,
+      65782.3438
+    ],
+    "max_reconstruction_error_cm": 4.882812390860636e-06,
+    "limitation": "Candidate distance offsets at one internal call site, not final successful line positions or inter-obstacle spacing."
+  },
+  "seed123_repeat2": {
+    "samples": 198,
+    "observed_sequence_sha256": "9dc3ff1134506d41d99932db37770d022a3c5924c8f624d98825bb7ce5dcce33",
+    "offset_abs_minmax_cm": [
+      1505.75952,
+      8489.48242
+    ],
+    "base_values_cm": [
+      5782.34375,
+      15782.3438,
+      25782.3438,
+      35782.3438,
+      45782.3438,
+      55782.3438,
+      65782.3438
+    ],
+    "max_reconstruction_error_cm": 4.882812390860636e-06,
+    "limitation": "Candidate distance offsets at one internal call site, not final successful line positions or inter-obstacle spacing."
+  },
+  "seed456_repeat1": {
+    "samples": 198,
+    "observed_sequence_sha256": "9104f4002be60816ade42b3d5bfb3737214e16cce62deafedbc310f55c6fcbf8",
+    "offset_abs_minmax_cm": [
+      1513.23547,
+      8488.21973
+    ],
+    "base_values_cm": [
+      5782.34375,
+      15782.3438,
+      25782.3438,
+      35782.3438,
+      45782.3438,
+      55782.3438,
+      65782.3438
+    ],
+    "max_reconstruction_error_cm": 4.999999873689376e-06,
+    "limitation": "Candidate distance offsets at one internal call site, not final successful line positions or inter-obstacle spacing."
+  },
+  "seed456_repeat2": {
+    "samples": 198,
+    "observed_sequence_sha256": "9104f4002be60816ade42b3d5bfb3737214e16cce62deafedbc310f55c6fcbf8",
+    "offset_abs_minmax_cm": [
+      1513.23547,
+      8488.21973
+    ],
+    "base_values_cm": [
+      5782.34375,
+      15782.3438,
+      25782.3438,
+      35782.3438,
+      45782.3438,
+      55782.3438,
+      65782.3438
+    ],
+    "max_reconstruction_error_cm": 4.999999873689376e-06,
+    "limitation": "Candidate distance offsets at one internal call site, not final successful line positions or inter-obstacle spacing."
+  },
+  "seed2026_repeat1": {
+    "samples": 198,
+    "observed_sequence_sha256": "9de61b4623653f640d9cd0107b97441974cf83d1e0fcacc271d08118269f5201",
+    "offset_abs_minmax_cm": [
+      1503.19348,
+      8486.88867
+    ],
+    "base_values_cm": [
+      5782.34375,
+      15782.3438,
+      25782.3438,
+      35782.3438,
+      45782.3438,
+      55782.3438,
+      65782.3438
+    ],
+    "max_reconstruction_error_cm": 4.999999873689376e-06,
+    "limitation": "Candidate distance offsets at one internal call site, not final successful line positions or inter-obstacle spacing."
+  },
+  "seed2026_repeat2": {
+    "samples": 198,
+    "observed_sequence_sha256": "9de61b4623653f640d9cd0107b97441974cf83d1e0fcacc271d08118269f5201",
+    "offset_abs_minmax_cm": [
+      1503.19348,
+      8486.88867
+    ],
+    "base_values_cm": [
+      5782.34375,
+      15782.3438,
+      25782.3438,
+      35782.3438,
+      45782.3438,
+      55782.3438,
+      65782.3438
+    ],
+    "max_reconstruction_error_cm": 4.999999873689376e-06,
+    "limitation": "Candidate distance offsets at one internal call site, not final successful line positions or inter-obstacle spacing."
+  }
+}

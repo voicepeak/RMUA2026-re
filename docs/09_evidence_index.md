@@ -125,3 +125,4 @@
 | 线障内层偏移 LCG/float32 与 198 次运行时值 | `scripts/stage_line_offsets.gdb`、`scripts/analyze_line_offsets.py`、`experiments/line_offsets_pilot_20261105/offset_analysis.json`；非最终间距 |
 | stage 4/5 持续注入动态风与关键帧重建，三 seed 两次 | `experiments/wind_persistent_4_20261105/wind_interpolation_analysis.json`、`experiments/wind_persistent_5_20261105/wind_interpolation_analysis.json` |
 | 训练诊断主机、镜像和实用 settings 副本 | `experiments/training_host_20261105/host.json`、`settings.json`、`scripts/capture_training_host.py`、docs/16 |
+| stage 4 线障偏移三 seed 两次 | `experiments/line_offsets_4_20261105/offset_analysis.json` 及原始日志 |
