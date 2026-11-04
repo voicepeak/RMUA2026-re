@@ -1,0 +1,1857 @@
+{
+  "stage": 4,
+  "runs": {
+    "seed123_repeat1": {
+      "status": "observed",
+      "wind_items": [
+        {
+          "index": 0,
+          "time_s": 0.0,
+          "speed": 1.5,
+          "direction_deg": 276.60687255859375,
+          "transition": 0,
+          "raw_hex": "000000000000c03fae4d8a4300000000"
+        },
+        {
+          "index": 1,
+          "time_s": 9.373157501220703,
+          "speed": 1.5,
+          "direction_deg": 276.60687255859375,
+          "transition": 1,
+          "raw_hex": "74f815410000c03fae4d8a4301000000"
+        },
+        {
+          "index": 2,
+          "time_s": 11.373157501220703,
+          "speed": 1.8372735977172852,
+          "direction_deg": 9.594047546386719,
+          "transition": 0,
+          "raw_hex": "74f83541c82beb3f3881194100000000"
+        },
+        {
+          "index": 3,
+          "time_s": 21.18268585205078,
+          "speed": 1.8372735977172852,
+          "direction_deg": 9.594047546386719,
+          "transition": 1,
+          "raw_hex": "2476a941c82beb3f3881194101000000"
+        },
+        {
+          "index": 4,
+          "time_s": 23.18268585205078,
+          "speed": 1.5,
+          "direction_deg": 100.85587310791016,
+          "transition": 0,
+          "raw_hex": "2476b9410000c03f35b6c94200000000"
+        },
+        {
+          "index": 5,
+          "time_s": 33.168174743652344,
+          "speed": 1.5,
+          "direction_deg": 100.85587310791016,
+          "transition": 1,
+          "raw_hex": "36ac04420000c03f35b6c94201000000"
+        },
+        {
+          "index": 6,
+          "time_s": 35.168174743652344,
+          "speed": 1.9900000095367432,
+          "direction_deg": 355.94598388671875,
+          "transition": 0,
+          "raw_hex": "36ac0c4252b8fe3f16f9b14300000000"
+        },
+        {
+          "index": 7,
+          "time_s": 44.40033721923828,
+          "speed": 1.9900000095367432,
+          "direction_deg": 355.94598388671875,
+          "transition": 1,
+          "raw_hex": "f299314252b8fe3f16f9b14301000000"
+        },
+        {
+          "index": 8,
+          "time_s": 46.40033721923828,
+          "speed": 1.9900000095367432,
+          "direction_deg": 165.5553741455078,
+          "transition": 0,
+          "raw_hex": "f299394252b8fe3f2d8e254300000000"
+        },
+        {
+          "index": 9,
+          "time_s": 54.97234344482422,
+          "speed": 1.9900000095367432,
+          "direction_deg": 165.5553741455078,
+          "transition": 1,
+          "raw_hex": "aee35b4252b8fe3f2d8e254301000000"
+        },
+        {
+          "index": 10,
+          "time_s": 56.97234344482422,
+          "speed": 1.9900000095367432,
+          "direction_deg": 258.4090270996094,
+          "transition": 0,
+          "raw_hex": "aee3634252b8fe3f5b34814300000000"
+        },
+        {
+          "index": 11,
+          "time_s": 65.4398422241211,
+          "speed": 1.9900000095367432,
+          "direction_deg": 258.4090270996094,
+          "transition": 1,
+          "raw_hex": "33e1824252b8fe3f5b34814301000000"
+        },
+        {
+          "index": 12,
+          "time_s": 67.4398422241211,
+          "speed": 2.0,
+          "direction_deg": 52.72373580932617,
+          "transition": 0,
+          "raw_hex": "33e18642000000401be5524200000000"
+        },
+        {
+          "index": 13,
+          "time_s": 75.68766021728516,
+          "speed": 2.0,
+          "direction_deg": 52.72373580932617,
+          "transition": 1,
+          "raw_hex": "15609742000000401be5524201000000"
+        },
+        {
+          "index": 14,
+          "time_s": 77.68766021728516,
+          "speed": 1.7617626190185547,
+          "direction_deg": 255.79672241210938,
+          "transition": 0,
+          "raw_hex": "15609b427081e13ff6cb7f4300000000"
+        },
+        {
+          "index": 15,
+          "time_s": 86.07400512695312,
+          "speed": 1.7617626190185547,
+          "direction_deg": 255.79672241210938,
+          "transition": 1,
+          "raw_hex": "e425ac427081e13ff6cb7f4301000000"
+        },
+        {
+          "index": 16,
+          "time_s": 88.07400512695312,
+          "speed": 1.9900000095367432,
+          "direction_deg": 230.1102294921875,
+          "transition": 0,
+          "raw_hex": "e425b04252b8fe3f381c664300000000"
+        },
+        {
+          "index": 17,
+          "time_s": 97.4189682006836,
+          "speed": 1.9900000095367432,
+          "direction_deg": 230.1102294921875,
+          "transition": 1,
+          "raw_hex": "83d6c24252b8fe3f381c664301000000"
+        },
+        {
+          "index": 18,
+          "time_s": 99.4189682006836,
+          "speed": 1.9900000095367432,
+          "direction_deg": 319.1197509765625,
+          "transition": 0,
+          "raw_hex": "83d6c64252b8fe3f548f9f4300000000"
+        },
+        {
+          "index": 19,
+          "time_s": 108.58671569824219,
+          "speed": 1.9900000095367432,
+          "direction_deg": 319.1197509765625,
+          "transition": 1,
+          "raw_hex": "662cd94252b8fe3f548f9f4301000000"
+        },
+        {
+          "index": 20,
+          "time_s": 110.58671569824219,
+          "speed": 1.9900000095367432,
+          "direction_deg": 222.03929138183594,
+          "transition": 0,
+          "raw_hex": "662cdd4252b8fe3f0f0a5e4300000000"
+        },
+        {
+          "index": 21,
+          "time_s": 119.96031188964844,
+          "speed": 1.9900000095367432,
+          "direction_deg": 222.03929138183594,
+          "transition": 1,
+          "raw_hex": "aeebef4252b8fe3f0f0a5e4301000000"
+        },
+        {
+          "index": 22,
+          "time_s": 121.96031188964844,
+          "speed": 1.9900000095367432,
+          "direction_deg": 186.8992462158203,
+          "transition": 0,
+          "raw_hex": "aeebf34252b8fe3f35e63a4300000000"
+        },
+        {
+          "index": 23,
+          "time_s": 130.50942993164062,
+          "speed": 1.9900000095367432,
+          "direction_deg": 186.8992462158203,
+          "transition": 1,
+          "raw_hex": "6a82024352b8fe3f35e63a4301000000"
+        },
+        {
+          "index": 24,
+          "time_s": 132.50942993164062,
+          "speed": 1.9900000095367432,
+          "direction_deg": 142.40850830078125,
+          "transition": 0,
+          "raw_hex": "6a82044352b8fe3f94680e4300000000"
+        },
+        {
+          "index": 25,
+          "time_s": 142.35995483398438,
+          "speed": 1.9900000095367432,
+          "direction_deg": 142.40850830078125,
+          "transition": 1,
+          "raw_hex": "265c0e4352b8fe3f94680e4301000000"
+        },
+        {
+          "index": 26,
+          "time_s": 144.35995483398438,
+          "speed": 1.9900000095367432,
+          "direction_deg": 109.70270538330078,
+          "transition": 0,
+          "raw_hex": "265c104352b8fe3fc967db4200000000"
+        },
+        {
+          "index": 27,
+          "time_s": 154.2915802001953,
+          "speed": 1.9900000095367432,
+          "direction_deg": 109.70270538330078,
+          "transition": 1,
+          "raw_hex": "a54a1a4352b8fe3fc967db4201000000"
+        },
+        {
+          "index": 28,
+          "time_s": 156.2915802001953,
+          "speed": 1.9900000095367432,
+          "direction_deg": 249.8193359375,
+          "transition": 0,
+          "raw_hex": "a54a1c4352b8fe3fc0d1794300000000"
+        },
+        {
+          "index": 29,
+          "time_s": 165.11837768554688,
+          "speed": 1.9900000095367432,
+          "direction_deg": 249.8193359375,
+          "transition": 1,
+          "raw_hex": "4e1e254352b8fe3fc0d1794301000000"
+        },
+        {
+          "index": 30,
+          "time_s": 167.11837768554688,
+          "speed": 1.9900000095367432,
+          "direction_deg": 16.296674728393555,
+          "transition": 0,
+          "raw_hex": "4e1e274352b8fe3f975f824100000000"
+        },
+        {
+          "index": 31,
+          "time_s": 175.69606018066406,
+          "speed": 1.9900000095367432,
+          "direction_deg": 16.296674728393555,
+          "transition": 1,
+          "raw_hex": "31b22f4352b8fe3f975f824101000000"
+        },
+        {
+          "index": 32,
+          "time_s": 177.69606018066406,
+          "speed": 1.9900000095367432,
+          "direction_deg": 125.16194915771484,
+          "transition": 0,
+          "raw_hex": "31b2314352b8fe3feb52fa4200000000"
+        },
+        {
+          "index": 33,
+          "time_s": 186.11399841308594,
+          "speed": 1.9900000095367432,
+          "direction_deg": 125.16194915771484,
+          "transition": 1,
+          "raw_hex": "2f1d3a4352b8fe3feb52fa4201000000"
+        },
+        {
+          "index": 34,
+          "time_s": 188.11399841308594,
+          "speed": 1.9459182024002075,
+          "direction_deg": 281.30609130859375,
+          "transition": 0,
+          "raw_hex": "2f1d3c43d913f93f2ea78c4300000000"
+        }
+      ],
+      "wind_bytes_sha256": "d2ad79ebe9b78a9c5321f627ccd0e6b35dd02aa0d694eb3aceadd5ee5eee20cf",
+      "entry_counts": {
+        "line": 1,
+        "thin_place": 7,
+        "thick_place": 198,
+        "vehicle": 0
+      },
+      "spawn_collision_warnings": 231,
+      "hold_duration_min_max_s": [
+        8.247817993164062,
+        9.985488891601562
+      ],
+      "transition_duration_min_max_s": [
+        2.0,
+        2.0
+      ],
+      "speed_min_max": [
+        1.5,
+        2.0
+      ]
+    },
+    "seed123_repeat2": {
+      "status": "observed",
+      "wind_items": [
+        {
+          "index": 0,
+          "time_s": 0.0,
+          "speed": 1.5,
+          "direction_deg": 276.60687255859375,
+          "transition": 0,
+          "raw_hex": "000000000000c03fae4d8a4300000000"
+        },
+        {
+          "index": 1,
+          "time_s": 9.373157501220703,
+          "speed": 1.5,
+          "direction_deg": 276.60687255859375,
+          "transition": 1,
+          "raw_hex": "74f815410000c03fae4d8a4301000000"
+        },
+        {
+          "index": 2,
+          "time_s": 11.373157501220703,
+          "speed": 1.8372735977172852,
+          "direction_deg": 9.594047546386719,
+          "transition": 0,
+          "raw_hex": "74f83541c82beb3f3881194100000000"
+        },
+        {
+          "index": 3,
+          "time_s": 21.18268585205078,
+          "speed": 1.8372735977172852,
+          "direction_deg": 9.594047546386719,
+          "transition": 1,
+          "raw_hex": "2476a941c82beb3f3881194101000000"
+        },
+        {
+          "index": 4,
+          "time_s": 23.18268585205078,
+          "speed": 1.5,
+          "direction_deg": 100.85587310791016,
+          "transition": 0,
+          "raw_hex": "2476b9410000c03f35b6c94200000000"
+        },
+        {
+          "index": 5,
+          "time_s": 33.168174743652344,
+          "speed": 1.5,
+          "direction_deg": 100.85587310791016,
+          "transition": 1,
+          "raw_hex": "36ac04420000c03f35b6c94201000000"
+        },
+        {
+          "index": 6,
+          "time_s": 35.168174743652344,
+          "speed": 1.9900000095367432,
+          "direction_deg": 355.94598388671875,
+          "transition": 0,
+          "raw_hex": "36ac0c4252b8fe3f16f9b14300000000"
+        },
+        {
+          "index": 7,
+          "time_s": 44.40033721923828,
+          "speed": 1.9900000095367432,
+          "direction_deg": 355.94598388671875,
+          "transition": 1,
+          "raw_hex": "f299314252b8fe3f16f9b14301000000"
+        },
+        {
+          "index": 8,
+          "time_s": 46.40033721923828,
+          "speed": 1.9900000095367432,
+          "direction_deg": 165.5553741455078,
+          "transition": 0,
+          "raw_hex": "f299394252b8fe3f2d8e254300000000"
+        },
+        {
+          "index": 9,
+          "time_s": 54.97234344482422,
+          "speed": 1.9900000095367432,
+          "direction_deg": 165.5553741455078,
+          "transition": 1,
+          "raw_hex": "aee35b4252b8fe3f2d8e254301000000"
+        },
+        {
+          "index": 10,
+          "time_s": 56.97234344482422,
+          "speed": 1.9900000095367432,
+          "direction_deg": 258.4090270996094,
+          "transition": 0,
+          "raw_hex": "aee3634252b8fe3f5b34814300000000"
+        },
+        {
+          "index": 11,
+          "time_s": 65.4398422241211,
+          "speed": 1.9900000095367432,
+          "direction_deg": 258.4090270996094,
+          "transition": 1,
+          "raw_hex": "33e1824252b8fe3f5b34814301000000"
+        },
+        {
+          "index": 12,
+          "time_s": 67.4398422241211,
+          "speed": 2.0,
+          "direction_deg": 52.72373580932617,
+          "transition": 0,
+          "raw_hex": "33e18642000000401be5524200000000"
+        },
+        {
+          "index": 13,
+          "time_s": 75.68766021728516,
+          "speed": 2.0,
+          "direction_deg": 52.72373580932617,
+          "transition": 1,
+          "raw_hex": "15609742000000401be5524201000000"
+        },
+        {
+          "index": 14,
+          "time_s": 77.68766021728516,
+          "speed": 1.7617626190185547,
+          "direction_deg": 255.79672241210938,
+          "transition": 0,
+          "raw_hex": "15609b427081e13ff6cb7f4300000000"
+        },
+        {
+          "index": 15,
+          "time_s": 86.07400512695312,
+          "speed": 1.7617626190185547,
+          "direction_deg": 255.79672241210938,
+          "transition": 1,
+          "raw_hex": "e425ac427081e13ff6cb7f4301000000"
+        },
+        {
+          "index": 16,
+          "time_s": 88.07400512695312,
+          "speed": 1.9900000095367432,
+          "direction_deg": 230.1102294921875,
+          "transition": 0,
+          "raw_hex": "e425b04252b8fe3f381c664300000000"
+        },
+        {
+          "index": 17,
+          "time_s": 97.4189682006836,
+          "speed": 1.9900000095367432,
+          "direction_deg": 230.1102294921875,
+          "transition": 1,
+          "raw_hex": "83d6c24252b8fe3f381c664301000000"
+        },
+        {
+          "index": 18,
+          "time_s": 99.4189682006836,
+          "speed": 1.9900000095367432,
+          "direction_deg": 319.1197509765625,
+          "transition": 0,
+          "raw_hex": "83d6c64252b8fe3f548f9f4300000000"
+        },
+        {
+          "index": 19,
+          "time_s": 108.58671569824219,
+          "speed": 1.9900000095367432,
+          "direction_deg": 319.1197509765625,
+          "transition": 1,
+          "raw_hex": "662cd94252b8fe3f548f9f4301000000"
+        },
+        {
+          "index": 20,
+          "time_s": 110.58671569824219,
+          "speed": 1.9900000095367432,
+          "direction_deg": 222.03929138183594,
+          "transition": 0,
+          "raw_hex": "662cdd4252b8fe3f0f0a5e4300000000"
+        },
+        {
+          "index": 21,
+          "time_s": 119.96031188964844,
+          "speed": 1.9900000095367432,
+          "direction_deg": 222.03929138183594,
+          "transition": 1,
+          "raw_hex": "aeebef4252b8fe3f0f0a5e4301000000"
+        },
+        {
+          "index": 22,
+          "time_s": 121.96031188964844,
+          "speed": 1.9900000095367432,
+          "direction_deg": 186.8992462158203,
+          "transition": 0,
+          "raw_hex": "aeebf34252b8fe3f35e63a4300000000"
+        },
+        {
+          "index": 23,
+          "time_s": 130.50942993164062,
+          "speed": 1.9900000095367432,
+          "direction_deg": 186.8992462158203,
+          "transition": 1,
+          "raw_hex": "6a82024352b8fe3f35e63a4301000000"
+        },
+        {
+          "index": 24,
+          "time_s": 132.50942993164062,
+          "speed": 1.9900000095367432,
+          "direction_deg": 142.40850830078125,
+          "transition": 0,
+          "raw_hex": "6a82044352b8fe3f94680e4300000000"
+        },
+        {
+          "index": 25,
+          "time_s": 142.35995483398438,
+          "speed": 1.9900000095367432,
+          "direction_deg": 142.40850830078125,
+          "transition": 1,
+          "raw_hex": "265c0e4352b8fe3f94680e4301000000"
+        },
+        {
+          "index": 26,
+          "time_s": 144.35995483398438,
+          "speed": 1.9900000095367432,
+          "direction_deg": 109.70270538330078,
+          "transition": 0,
+          "raw_hex": "265c104352b8fe3fc967db4200000000"
+        },
+        {
+          "index": 27,
+          "time_s": 154.2915802001953,
+          "speed": 1.9900000095367432,
+          "direction_deg": 109.70270538330078,
+          "transition": 1,
+          "raw_hex": "a54a1a4352b8fe3fc967db4201000000"
+        },
+        {
+          "index": 28,
+          "time_s": 156.2915802001953,
+          "speed": 1.9900000095367432,
+          "direction_deg": 249.8193359375,
+          "transition": 0,
+          "raw_hex": "a54a1c4352b8fe3fc0d1794300000000"
+        },
+        {
+          "index": 29,
+          "time_s": 165.11837768554688,
+          "speed": 1.9900000095367432,
+          "direction_deg": 249.8193359375,
+          "transition": 1,
+          "raw_hex": "4e1e254352b8fe3fc0d1794301000000"
+        },
+        {
+          "index": 30,
+          "time_s": 167.11837768554688,
+          "speed": 1.9900000095367432,
+          "direction_deg": 16.296674728393555,
+          "transition": 0,
+          "raw_hex": "4e1e274352b8fe3f975f824100000000"
+        },
+        {
+          "index": 31,
+          "time_s": 175.69606018066406,
+          "speed": 1.9900000095367432,
+          "direction_deg": 16.296674728393555,
+          "transition": 1,
+          "raw_hex": "31b22f4352b8fe3f975f824101000000"
+        },
+        {
+          "index": 32,
+          "time_s": 177.69606018066406,
+          "speed": 1.9900000095367432,
+          "direction_deg": 125.16194915771484,
+          "transition": 0,
+          "raw_hex": "31b2314352b8fe3feb52fa4200000000"
+        },
+        {
+          "index": 33,
+          "time_s": 186.11399841308594,
+          "speed": 1.9900000095367432,
+          "direction_deg": 125.16194915771484,
+          "transition": 1,
+          "raw_hex": "2f1d3a4352b8fe3feb52fa4201000000"
+        },
+        {
+          "index": 34,
+          "time_s": 188.11399841308594,
+          "speed": 1.9459182024002075,
+          "direction_deg": 281.30609130859375,
+          "transition": 0,
+          "raw_hex": "2f1d3c43d913f93f2ea78c4300000000"
+        }
+      ],
+      "wind_bytes_sha256": "d2ad79ebe9b78a9c5321f627ccd0e6b35dd02aa0d694eb3aceadd5ee5eee20cf",
+      "entry_counts": {
+        "line": 1,
+        "thin_place": 7,
+        "thick_place": 198,
+        "vehicle": 0
+      },
+      "spawn_collision_warnings": 231,
+      "hold_duration_min_max_s": [
+        8.247817993164062,
+        9.985488891601562
+      ],
+      "transition_duration_min_max_s": [
+        2.0,
+        2.0
+      ],
+      "speed_min_max": [
+        1.5,
+        2.0
+      ]
+    },
+    "seed456_repeat1": {
+      "status": "observed",
+      "wind_items": [
+        {
+          "index": 0,
+          "time_s": 0.0,
+          "speed": 1.5,
+          "direction_deg": 213.75405883789062,
+          "transition": 0,
+          "raw_hex": "000000000000c03f0ac1554300000000"
+        },
+        {
+          "index": 1,
+          "time_s": 8.014947891235352,
+          "speed": 1.5,
+          "direction_deg": 213.75405883789062,
+          "transition": 1,
+          "raw_hex": "3a3d00410000c03f0ac1554301000000"
+        },
+        {
+          "index": 2,
+          "time_s": 10.014947891235352,
+          "speed": 1.6993510723114014,
+          "direction_deg": 159.42433166503906,
+          "transition": 0,
+          "raw_hex": "3a3d20415684d93fa16c1f4300000000"
+        },
+        {
+          "index": 3,
+          "time_s": 18.669559478759766,
+          "speed": 1.6993510723114014,
+          "direction_deg": 159.42433166503906,
+          "transition": 1,
+          "raw_hex": "425b95415684d93fa16c1f4301000000"
+        },
+        {
+          "index": 4,
+          "time_s": 20.669559478759766,
+          "speed": 1.5,
+          "direction_deg": 183.2107696533203,
+          "transition": 0,
+          "raw_hex": "425ba5410000c03ff535374300000000"
+        },
+        {
+          "index": 5,
+          "time_s": 29.491619110107422,
+          "speed": 1.5,
+          "direction_deg": 183.2107696533203,
+          "transition": 1,
+          "raw_hex": "d6eeeb410000c03ff535374301000000"
+        },
+        {
+          "index": 6,
+          "time_s": 31.491619110107422,
+          "speed": 1.6162924766540527,
+          "direction_deg": 137.33822631835938,
+          "transition": 0,
+          "raw_hex": "d6eefb41ace2ce3f9656094300000000"
+        },
+        {
+          "index": 7,
+          "time_s": 40.666648864746094,
+          "speed": 1.6162924766540527,
+          "direction_deg": 137.33822631835938,
+          "transition": 1,
+          "raw_hex": "a6aa2242ace2ce3f9656094301000000"
+        },
+        {
+          "index": 8,
+          "time_s": 42.666648864746094,
+          "speed": 1.5,
+          "direction_deg": 316.9830017089844,
+          "transition": 0,
+          "raw_hex": "a6aa2a420000c03fd37d9e4300000000"
+        },
+        {
+          "index": 9,
+          "time_s": 52.158382415771484,
+          "speed": 1.5,
+          "direction_deg": 316.9830017089844,
+          "transition": 1,
+          "raw_hex": "2fa250420000c03fd37d9e4301000000"
+        },
+        {
+          "index": 10,
+          "time_s": 54.158382415771484,
+          "speed": 1.9900000095367432,
+          "direction_deg": 315.1202392578125,
+          "transition": 0,
+          "raw_hex": "2fa2584252b8fe3f648f9d4300000000"
+        },
+        {
+          "index": 11,
+          "time_s": 63.91002655029297,
+          "speed": 1.9900000095367432,
+          "direction_deg": 315.1202392578125,
+          "transition": 1,
+          "raw_hex": "dea37f4252b8fe3f648f9d4301000000"
+        },
+        {
+          "index": 12,
+          "time_s": 65.91002655029297,
+          "speed": 1.9900000095367432,
+          "direction_deg": 332.0097351074219,
+          "transition": 0,
+          "raw_hex": "efd1834252b8fe3f3f01a64300000000"
+        },
+        {
+          "index": 13,
+          "time_s": 75.66986846923828,
+          "speed": 1.9900000095367432,
+          "direction_deg": 332.0097351074219,
+          "transition": 1,
+          "raw_hex": "f956974252b8fe3f3f01a64301000000"
+        },
+        {
+          "index": 14,
+          "time_s": 77.66986846923828,
+          "speed": 1.602127194404602,
+          "direction_deg": 171.17916870117188,
+          "transition": 0,
+          "raw_hex": "f9569b428112cd3fde2d2b4300000000"
+        },
+        {
+          "index": 15,
+          "time_s": 86.97640991210938,
+          "speed": 1.602127194404602,
+          "direction_deg": 171.17916870117188,
+          "transition": 1,
+          "raw_hex": "ecf3ad428112cd3fde2d2b4301000000"
+        },
+        {
+          "index": 16,
+          "time_s": 88.97640991210938,
+          "speed": 1.9900000095367432,
+          "direction_deg": 58.38723373413086,
+          "transition": 0,
+          "raw_hex": "ecf3b14252b8fe3f878c694200000000"
+        },
+        {
+          "index": 17,
+          "time_s": 97.36395263671875,
+          "speed": 1.9900000095367432,
+          "direction_deg": 58.38723373413086,
+          "transition": 1,
+          "raw_hex": "58bac24252b8fe3f878c694201000000"
+        },
+        {
+          "index": 18,
+          "time_s": 99.36395263671875,
+          "speed": 1.767857313156128,
+          "direction_deg": 115.70008087158203,
+          "transition": 0,
+          "raw_hex": "58bac6422649e23f7166e74200000000"
+        },
+        {
+          "index": 19,
+          "time_s": 107.84740447998047,
+          "speed": 1.767857313156128,
+          "direction_deg": 115.70008087158203,
+          "transition": 1,
+          "raw_hex": "dfb1d7422649e23f7166e74201000000"
+        },
+        {
+          "index": 20,
+          "time_s": 109.84740447998047,
+          "speed": 1.7691540718078613,
+          "direction_deg": 214.9723358154297,
+          "transition": 0,
+          "raw_hex": "dfb1db42a473e23febf8564300000000"
+        },
+        {
+          "index": 21,
+          "time_s": 118.99407958984375,
+          "speed": 1.7691540718078613,
+          "direction_deg": 214.9723358154297,
+          "transition": 1,
+          "raw_hex": "f8fced42a473e23febf8564301000000"
+        },
+        {
+          "index": 22,
+          "time_s": 120.99407958984375,
+          "speed": 1.9900000095367432,
+          "direction_deg": 239.66754150390625,
+          "transition": 0,
+          "raw_hex": "f8fcf14252b8fe3fe4aa6f4300000000"
+        },
+        {
+          "index": 23,
+          "time_s": 129.6136474609375,
+          "speed": 1.9900000095367432,
+          "direction_deg": 239.66754150390625,
+          "transition": 1,
+          "raw_hex": "189d014352b8fe3fe4aa6f4301000000"
+        },
+        {
+          "index": 24,
+          "time_s": 131.6136474609375,
+          "speed": 1.9900000095367432,
+          "direction_deg": 56.03899002075195,
+          "transition": 0,
+          "raw_hex": "189d034352b8fe3fed27604200000000"
+        },
+        {
+          "index": 25,
+          "time_s": 139.66136169433594,
+          "speed": 1.9900000095367432,
+          "direction_deg": 56.03899002075195,
+          "transition": 1,
+          "raw_hex": "4fa90b4352b8fe3fed27604201000000"
+        },
+        {
+          "index": 26,
+          "time_s": 141.66136169433594,
+          "speed": 1.9900000095367432,
+          "direction_deg": 93.56466674804688,
+          "transition": 0,
+          "raw_hex": "4fa90d4352b8fe3f1c21bb4200000000"
+        },
+        {
+          "index": 27,
+          "time_s": 150.1832275390625,
+          "speed": 1.9900000095367432,
+          "direction_deg": 93.56466674804688,
+          "transition": 1,
+          "raw_hex": "e82e164352b8fe3f1c21bb4201000000"
+        },
+        {
+          "index": 28,
+          "time_s": 152.1832275390625,
+          "speed": 1.5,
+          "direction_deg": 189.0719451904297,
+          "transition": 0,
+          "raw_hex": "e82e18430000c03f6b123d4300000000"
+        },
+        {
+          "index": 29,
+          "time_s": 162.15020751953125,
+          "speed": 1.5,
+          "direction_deg": 189.0719451904297,
+          "transition": 1,
+          "raw_hex": "742622430000c03f6b123d4301000000"
+        },
+        {
+          "index": 30,
+          "time_s": 164.15020751953125,
+          "speed": 2.0,
+          "direction_deg": 39.43946075439453,
+          "transition": 0,
+          "raw_hex": "742624430000004002c21d4200000000"
+        },
+        {
+          "index": 31,
+          "time_s": 173.42800903320312,
+          "speed": 2.0,
+          "direction_deg": 39.43946075439453,
+          "transition": 1,
+          "raw_hex": "926d2d430000004002c21d4201000000"
+        },
+        {
+          "index": 32,
+          "time_s": 175.42800903320312,
+          "speed": 1.5,
+          "direction_deg": 42.82595443725586,
+          "transition": 0,
+          "raw_hex": "926d2f430000c03fc74d2b4200000000"
+        },
+        {
+          "index": 33,
+          "time_s": 185.3671417236328,
+          "speed": 1.5,
+          "direction_deg": 42.82595443725586,
+          "transition": 1,
+          "raw_hex": "fd5d39430000c03fc74d2b4201000000"
+        },
+        {
+          "index": 34,
+          "time_s": 187.3671417236328,
+          "speed": 1.9622807502746582,
+          "direction_deg": 226.12423706054688,
+          "transition": 0,
+          "raw_hex": "fd5d3b43042cfb3fce1f624300000000"
+        }
+      ],
+      "wind_bytes_sha256": "7d369f0dadae9758b107a3f760bbb08fc75c21043410246c8b96543ad4ee0ef9",
+      "entry_counts": {
+        "line": 1,
+        "thin_place": 7,
+        "thick_place": 198,
+        "vehicle": 0
+      },
+      "spawn_collision_warnings": 275,
+      "hold_duration_min_max_s": [
+        8.014947891235352,
+        9.96697998046875
+      ],
+      "transition_duration_min_max_s": [
+        2.0,
+        2.0
+      ],
+      "speed_min_max": [
+        1.5,
+        2.0
+      ]
+    },
+    "seed456_repeat2": {
+      "status": "observed",
+      "wind_items": [
+        {
+          "index": 0,
+          "time_s": 0.0,
+          "speed": 1.5,
+          "direction_deg": 213.75405883789062,
+          "transition": 0,
+          "raw_hex": "000000000000c03f0ac1554300000000"
+        },
+        {
+          "index": 1,
+          "time_s": 8.014947891235352,
+          "speed": 1.5,
+          "direction_deg": 213.75405883789062,
+          "transition": 1,
+          "raw_hex": "3a3d00410000c03f0ac1554301000000"
+        },
+        {
+          "index": 2,
+          "time_s": 10.014947891235352,
+          "speed": 1.6993510723114014,
+          "direction_deg": 159.42433166503906,
+          "transition": 0,
+          "raw_hex": "3a3d20415684d93fa16c1f4300000000"
+        },
+        {
+          "index": 3,
+          "time_s": 18.669559478759766,
+          "speed": 1.6993510723114014,
+          "direction_deg": 159.42433166503906,
+          "transition": 1,
+          "raw_hex": "425b95415684d93fa16c1f4301000000"
+        },
+        {
+          "index": 4,
+          "time_s": 20.669559478759766,
+          "speed": 1.5,
+          "direction_deg": 183.2107696533203,
+          "transition": 0,
+          "raw_hex": "425ba5410000c03ff535374300000000"
+        },
+        {
+          "index": 5,
+          "time_s": 29.491619110107422,
+          "speed": 1.5,
+          "direction_deg": 183.2107696533203,
+          "transition": 1,
+          "raw_hex": "d6eeeb410000c03ff535374301000000"
+        },
+        {
+          "index": 6,
+          "time_s": 31.491619110107422,
+          "speed": 1.6162924766540527,
+          "direction_deg": 137.33822631835938,
+          "transition": 0,
+          "raw_hex": "d6eefb41ace2ce3f9656094300000000"
+        },
+        {
+          "index": 7,
+          "time_s": 40.666648864746094,
+          "speed": 1.6162924766540527,
+          "direction_deg": 137.33822631835938,
+          "transition": 1,
+          "raw_hex": "a6aa2242ace2ce3f9656094301000000"
+        },
+        {
+          "index": 8,
+          "time_s": 42.666648864746094,
+          "speed": 1.5,
+          "direction_deg": 316.9830017089844,
+          "transition": 0,
+          "raw_hex": "a6aa2a420000c03fd37d9e4300000000"
+        },
+        {
+          "index": 9,
+          "time_s": 52.158382415771484,
+          "speed": 1.5,
+          "direction_deg": 316.9830017089844,
+          "transition": 1,
+          "raw_hex": "2fa250420000c03fd37d9e4301000000"
+        },
+        {
+          "index": 10,
+          "time_s": 54.158382415771484,
+          "speed": 1.9900000095367432,
+          "direction_deg": 315.1202392578125,
+          "transition": 0,
+          "raw_hex": "2fa2584252b8fe3f648f9d4300000000"
+        },
+        {
+          "index": 11,
+          "time_s": 63.91002655029297,
+          "speed": 1.9900000095367432,
+          "direction_deg": 315.1202392578125,
+          "transition": 1,
+          "raw_hex": "dea37f4252b8fe3f648f9d4301000000"
+        },
+        {
+          "index": 12,
+          "time_s": 65.91002655029297,
+          "speed": 1.9900000095367432,
+          "direction_deg": 332.0097351074219,
+          "transition": 0,
+          "raw_hex": "efd1834252b8fe3f3f01a64300000000"
+        },
+        {
+          "index": 13,
+          "time_s": 75.66986846923828,
+          "speed": 1.9900000095367432,
+          "direction_deg": 332.0097351074219,
+          "transition": 1,
+          "raw_hex": "f956974252b8fe3f3f01a64301000000"
+        },
+        {
+          "index": 14,
+          "time_s": 77.66986846923828,
+          "speed": 1.602127194404602,
+          "direction_deg": 171.17916870117188,
+          "transition": 0,
+          "raw_hex": "f9569b428112cd3fde2d2b4300000000"
+        },
+        {
+          "index": 15,
+          "time_s": 86.97640991210938,
+          "speed": 1.602127194404602,
+          "direction_deg": 171.17916870117188,
+          "transition": 1,
+          "raw_hex": "ecf3ad428112cd3fde2d2b4301000000"
+        },
+        {
+          "index": 16,
+          "time_s": 88.97640991210938,
+          "speed": 1.9900000095367432,
+          "direction_deg": 58.38723373413086,
+          "transition": 0,
+          "raw_hex": "ecf3b14252b8fe3f878c694200000000"
+        },
+        {
+          "index": 17,
+          "time_s": 97.36395263671875,
+          "speed": 1.9900000095367432,
+          "direction_deg": 58.38723373413086,
+          "transition": 1,
+          "raw_hex": "58bac24252b8fe3f878c694201000000"
+        },
+        {
+          "index": 18,
+          "time_s": 99.36395263671875,
+          "speed": 1.767857313156128,
+          "direction_deg": 115.70008087158203,
+          "transition": 0,
+          "raw_hex": "58bac6422649e23f7166e74200000000"
+        },
+        {
+          "index": 19,
+          "time_s": 107.84740447998047,
+          "speed": 1.767857313156128,
+          "direction_deg": 115.70008087158203,
+          "transition": 1,
+          "raw_hex": "dfb1d7422649e23f7166e74201000000"
+        },
+        {
+          "index": 20,
+          "time_s": 109.84740447998047,
+          "speed": 1.7691540718078613,
+          "direction_deg": 214.9723358154297,
+          "transition": 0,
+          "raw_hex": "dfb1db42a473e23febf8564300000000"
+        },
+        {
+          "index": 21,
+          "time_s": 118.99407958984375,
+          "speed": 1.7691540718078613,
+          "direction_deg": 214.9723358154297,
+          "transition": 1,
+          "raw_hex": "f8fced42a473e23febf8564301000000"
+        },
+        {
+          "index": 22,
+          "time_s": 120.99407958984375,
+          "speed": 1.9900000095367432,
+          "direction_deg": 239.66754150390625,
+          "transition": 0,
+          "raw_hex": "f8fcf14252b8fe3fe4aa6f4300000000"
+        },
+        {
+          "index": 23,
+          "time_s": 129.6136474609375,
+          "speed": 1.9900000095367432,
+          "direction_deg": 239.66754150390625,
+          "transition": 1,
+          "raw_hex": "189d014352b8fe3fe4aa6f4301000000"
+        },
+        {
+          "index": 24,
+          "time_s": 131.6136474609375,
+          "speed": 1.9900000095367432,
+          "direction_deg": 56.03899002075195,
+          "transition": 0,
+          "raw_hex": "189d034352b8fe3fed27604200000000"
+        },
+        {
+          "index": 25,
+          "time_s": 139.66136169433594,
+          "speed": 1.9900000095367432,
+          "direction_deg": 56.03899002075195,
+          "transition": 1,
+          "raw_hex": "4fa90b4352b8fe3fed27604201000000"
+        },
+        {
+          "index": 26,
+          "time_s": 141.66136169433594,
+          "speed": 1.9900000095367432,
+          "direction_deg": 93.56466674804688,
+          "transition": 0,
+          "raw_hex": "4fa90d4352b8fe3f1c21bb4200000000"
+        },
+        {
+          "index": 27,
+          "time_s": 150.1832275390625,
+          "speed": 1.9900000095367432,
+          "direction_deg": 93.56466674804688,
+          "transition": 1,
+          "raw_hex": "e82e164352b8fe3f1c21bb4201000000"
+        },
+        {
+          "index": 28,
+          "time_s": 152.1832275390625,
+          "speed": 1.5,
+          "direction_deg": 189.0719451904297,
+          "transition": 0,
+          "raw_hex": "e82e18430000c03f6b123d4300000000"
+        },
+        {
+          "index": 29,
+          "time_s": 162.15020751953125,
+          "speed": 1.5,
+          "direction_deg": 189.0719451904297,
+          "transition": 1,
+          "raw_hex": "742622430000c03f6b123d4301000000"
+        },
+        {
+          "index": 30,
+          "time_s": 164.15020751953125,
+          "speed": 2.0,
+          "direction_deg": 39.43946075439453,
+          "transition": 0,
+          "raw_hex": "742624430000004002c21d4200000000"
+        },
+        {
+          "index": 31,
+          "time_s": 173.42800903320312,
+          "speed": 2.0,
+          "direction_deg": 39.43946075439453,
+          "transition": 1,
+          "raw_hex": "926d2d430000004002c21d4201000000"
+        },
+        {
+          "index": 32,
+          "time_s": 175.42800903320312,
+          "speed": 1.5,
+          "direction_deg": 42.82595443725586,
+          "transition": 0,
+          "raw_hex": "926d2f430000c03fc74d2b4200000000"
+        },
+        {
+          "index": 33,
+          "time_s": 185.3671417236328,
+          "speed": 1.5,
+          "direction_deg": 42.82595443725586,
+          "transition": 1,
+          "raw_hex": "fd5d39430000c03fc74d2b4201000000"
+        },
+        {
+          "index": 34,
+          "time_s": 187.3671417236328,
+          "speed": 1.9622807502746582,
+          "direction_deg": 226.12423706054688,
+          "transition": 0,
+          "raw_hex": "fd5d3b43042cfb3fce1f624300000000"
+        }
+      ],
+      "wind_bytes_sha256": "7d369f0dadae9758b107a3f760bbb08fc75c21043410246c8b96543ad4ee0ef9",
+      "entry_counts": {
+        "line": 1,
+        "thin_place": 7,
+        "thick_place": 198,
+        "vehicle": 0
+      },
+      "spawn_collision_warnings": 275,
+      "hold_duration_min_max_s": [
+        8.014947891235352,
+        9.96697998046875
+      ],
+      "transition_duration_min_max_s": [
+        2.0,
+        2.0
+      ],
+      "speed_min_max": [
+        1.5,
+        2.0
+      ]
+    },
+    "seed2026_repeat1": {
+      "status": "observed",
+      "wind_items": [
+        {
+          "index": 0,
+          "time_s": 0.0,
+          "speed": 1.9068636894226074,
+          "direction_deg": 113.97882843017578,
+          "transition": 0,
+          "raw_hex": "000000001c14f43f29f5e34200000000"
+        },
+        {
+          "index": 1,
+          "time_s": 9.010560989379883,
+          "speed": 1.9068636894226074,
+          "direction_deg": 113.97882843017578,
+          "transition": 1,
+          "raw_hex": "422b10411c14f43f29f5e34201000000"
+        },
+        {
+          "index": 2,
+          "time_s": 11.010560989379883,
+          "speed": 1.9900000095367432,
+          "direction_deg": 118.93993377685547,
+          "transition": 0,
+          "raw_hex": "422b304152b8fe3f3fe1ed4200000000"
+        },
+        {
+          "index": 3,
+          "time_s": 20.225828170776367,
+          "speed": 1.9900000095367432,
+          "direction_deg": 118.93993377685547,
+          "transition": 1,
+          "raw_hex": "7fcea14152b8fe3f3fe1ed4201000000"
+        },
+        {
+          "index": 4,
+          "time_s": 22.225828170776367,
+          "speed": 1.7649989128112793,
+          "direction_deg": 268.0795593261719,
+          "transition": 0,
+          "raw_hex": "7fceb1417cebe13f2f0a864300000000"
+        },
+        {
+          "index": 5,
+          "time_s": 30.91595458984375,
+          "speed": 1.7649989128112793,
+          "direction_deg": 268.0795593261719,
+          "transition": 1,
+          "raw_hex": "e053f7417cebe13f2f0a864301000000"
+        },
+        {
+          "index": 6,
+          "time_s": 32.91595458984375,
+          "speed": 1.9900000095367432,
+          "direction_deg": 177.7082061767578,
+          "transition": 0,
+          "raw_hex": "f0a9034252b8fe3f4db5314300000000"
+        },
+        {
+          "index": 7,
+          "time_s": 41.21082305908203,
+          "speed": 1.9900000095367432,
+          "direction_deg": 177.7082061767578,
+          "transition": 1,
+          "raw_hex": "e2d7244252b8fe3f4db5314301000000"
+        },
+        {
+          "index": 8,
+          "time_s": 43.21082305908203,
+          "speed": 1.9900000095367432,
+          "direction_deg": 322.9866638183594,
+          "transition": 0,
+          "raw_hex": "e2d72c4252b8fe3f4b7ea14300000000"
+        },
+        {
+          "index": 9,
+          "time_s": 52.92412567138672,
+          "speed": 1.9900000095367432,
+          "direction_deg": 322.9866638183594,
+          "transition": 1,
+          "raw_hex": "4eb2534252b8fe3f4b7ea14301000000"
+        },
+        {
+          "index": 10,
+          "time_s": 54.92412567138672,
+          "speed": 1.9900000095367432,
+          "direction_deg": 5.520158290863037,
+          "transition": 0,
+          "raw_hex": "4eb25b4252b8fe3f23a5b04000000000"
+        },
+        {
+          "index": 11,
+          "time_s": 64.44279479980469,
+          "speed": 1.9900000095367432,
+          "direction_deg": 5.520158290863037,
+          "transition": 1,
+          "raw_hex": "b6e2804252b8fe3f23a5b04001000000"
+        },
+        {
+          "index": 12,
+          "time_s": 66.44279479980469,
+          "speed": 1.8805941343307495,
+          "direction_deg": 100.5850830078125,
+          "transition": 0,
+          "raw_hex": "b6e284424fb7f03f902bc94200000000"
+        },
+        {
+          "index": 13,
+          "time_s": 75.26680755615234,
+          "speed": 1.8805941343307495,
+          "direction_deg": 100.5850830078125,
+          "transition": 1,
+          "raw_hex": "9b8896424fb7f03f902bc94201000000"
+        },
+        {
+          "index": 14,
+          "time_s": 77.26680755615234,
+          "speed": 1.7796307802200317,
+          "direction_deg": 197.9640350341797,
+          "transition": 0,
+          "raw_hex": "9b889a42f1cae33fcbf6454300000000"
+        },
+        {
+          "index": 15,
+          "time_s": 86.36001586914062,
+          "speed": 1.7796307802200317,
+          "direction_deg": 197.9640350341797,
+          "transition": 1,
+          "raw_hex": "54b8ac42f1cae33fcbf6454301000000"
+        },
+        {
+          "index": 16,
+          "time_s": 88.36001586914062,
+          "speed": 1.5,
+          "direction_deg": 43.104366302490234,
+          "transition": 0,
+          "raw_hex": "54b8b0420000c03fdf6a2c4200000000"
+        },
+        {
+          "index": 17,
+          "time_s": 98.11387634277344,
+          "speed": 1.5,
+          "direction_deg": 43.104366302490234,
+          "transition": 1,
+          "raw_hex": "4e3ac4420000c03fdf6a2c4201000000"
+        },
+        {
+          "index": 18,
+          "time_s": 100.11387634277344,
+          "speed": 1.9900000095367432,
+          "direction_deg": 245.75634765625,
+          "transition": 0,
+          "raw_hex": "4e3ac84252b8fe3fa0c1754300000000"
+        },
+        {
+          "index": 19,
+          "time_s": 108.82872009277344,
+          "speed": 1.9900000095367432,
+          "direction_deg": 245.75634765625,
+          "transition": 1,
+          "raw_hex": "4ea8d94252b8fe3fa0c1754301000000"
+        },
+        {
+          "index": 20,
+          "time_s": 110.82872009277344,
+          "speed": 1.9900000095367432,
+          "direction_deg": 114.95753479003906,
+          "transition": 0,
+          "raw_hex": "4ea8dd4252b8fe3f42eae54200000000"
+        },
+        {
+          "index": 21,
+          "time_s": 119.82374572753906,
+          "speed": 1.9900000095367432,
+          "direction_deg": 114.95753479003906,
+          "transition": 1,
+          "raw_hex": "c2a5ef4252b8fe3f42eae54201000000"
+        },
+        {
+          "index": 22,
+          "time_s": 121.82374572753906,
+          "speed": 1.5,
+          "direction_deg": 277.86724853515625,
+          "transition": 0,
+          "raw_hex": "c2a5f3420000c03f02ef8a4300000000"
+        },
+        {
+          "index": 23,
+          "time_s": 131.37413024902344,
+          "speed": 1.5,
+          "direction_deg": 277.86724853515625,
+          "transition": 1,
+          "raw_hex": "c75f03430000c03f02ef8a4301000000"
+        },
+        {
+          "index": 24,
+          "time_s": 133.37413024902344,
+          "speed": 1.5,
+          "direction_deg": 189.0112762451172,
+          "transition": 0,
+          "raw_hex": "c75f05430000c03fe3023d4300000000"
+        },
+        {
+          "index": 25,
+          "time_s": 143.0938720703125,
+          "speed": 1.5,
+          "direction_deg": 189.0112762451172,
+          "transition": 1,
+          "raw_hex": "08180f430000c03fe3023d4301000000"
+        },
+        {
+          "index": 26,
+          "time_s": 145.0938720703125,
+          "speed": 1.9900000095367432,
+          "direction_deg": 251.06301879882812,
+          "transition": 0,
+          "raw_hex": "0818114352b8fe3f22107b4300000000"
+        },
+        {
+          "index": 27,
+          "time_s": 153.78359985351562,
+          "speed": 1.9900000095367432,
+          "direction_deg": 251.06301879882812,
+          "transition": 1,
+          "raw_hex": "9ac8194352b8fe3f22107b4301000000"
+        },
+        {
+          "index": 28,
+          "time_s": 155.78359985351562,
+          "speed": 1.9900000095367432,
+          "direction_deg": 32.881290435791016,
+          "transition": 0,
+          "raw_hex": "9ac81b4352b8fe3f7186034200000000"
+        },
+        {
+          "index": 29,
+          "time_s": 164.12469482421875,
+          "speed": 1.9900000095367432,
+          "direction_deg": 32.881290435791016,
+          "transition": 1,
+          "raw_hex": "ec1f244352b8fe3f7186034201000000"
+        },
+        {
+          "index": 30,
+          "time_s": 166.12469482421875,
+          "speed": 2.0,
+          "direction_deg": 202.2342529296875,
+          "transition": 0,
+          "raw_hex": "ec1f264300000040f83b4a4300000000"
+        },
+        {
+          "index": 31,
+          "time_s": 175.1610870361328,
+          "speed": 2.0,
+          "direction_deg": 202.2342529296875,
+          "transition": 1,
+          "raw_hex": "3d292f4300000040f83b4a4301000000"
+        },
+        {
+          "index": 32,
+          "time_s": 177.1610870361328,
+          "speed": 1.5,
+          "direction_deg": 146.86013793945312,
+          "transition": 0,
+          "raw_hex": "3d2931430000c03f32dc124300000000"
+        },
+        {
+          "index": 33,
+          "time_s": 185.51107788085938,
+          "speed": 1.5,
+          "direction_deg": 146.86013793945312,
+          "transition": 1,
+          "raw_hex": "d68239430000c03f32dc124301000000"
+        },
+        {
+          "index": 34,
+          "time_s": 187.51107788085938,
+          "speed": 1.9900000095367432,
+          "direction_deg": 159.7778778076172,
+          "transition": 0,
+          "raw_hex": "d6823b4352b8fe3f23c71f4300000000"
+        }
+      ],
+      "wind_bytes_sha256": "b7f89c696969e3719187fe3c55acae5f9a563b91b3f40481658069aaa0e214a9",
+      "entry_counts": {
+        "line": 1,
+        "thin_place": 7,
+        "thick_place": 198,
+        "vehicle": 0
+      },
+      "spawn_collision_warnings": 283,
+      "hold_duration_min_max_s": [
+        8.294868469238281,
+        9.753860473632812
+      ],
+      "transition_duration_min_max_s": [
+        2.0,
+        2.0
+      ],
+      "speed_min_max": [
+        1.5,
+        2.0
+      ]
+    },
+    "seed2026_repeat2": {
+      "status": "observed",
+      "wind_items": [
+        {
+          "index": 0,
+          "time_s": 0.0,
+          "speed": 1.9068636894226074,
+          "direction_deg": 113.97882843017578,
+          "transition": 0,
+          "raw_hex": "000000001c14f43f29f5e34200000000"
+        },
+        {
+          "index": 1,
+          "time_s": 9.010560989379883,
+          "speed": 1.9068636894226074,
+          "direction_deg": 113.97882843017578,
+          "transition": 1,
+          "raw_hex": "422b10411c14f43f29f5e34201000000"
+        },
+        {
+          "index": 2,
+          "time_s": 11.010560989379883,
+          "speed": 1.9900000095367432,
+          "direction_deg": 118.93993377685547,
+          "transition": 0,
+          "raw_hex": "422b304152b8fe3f3fe1ed4200000000"
+        },
+        {
+          "index": 3,
+          "time_s": 20.225828170776367,
+          "speed": 1.9900000095367432,
+          "direction_deg": 118.93993377685547,
+          "transition": 1,
+          "raw_hex": "7fcea14152b8fe3f3fe1ed4201000000"
+        },
+        {
+          "index": 4,
+          "time_s": 22.225828170776367,
+          "speed": 1.7649989128112793,
+          "direction_deg": 268.0795593261719,
+          "transition": 0,
+          "raw_hex": "7fceb1417cebe13f2f0a864300000000"
+        },
+        {
+          "index": 5,
+          "time_s": 30.91595458984375,
+          "speed": 1.7649989128112793,
+          "direction_deg": 268.0795593261719,
+          "transition": 1,
+          "raw_hex": "e053f7417cebe13f2f0a864301000000"
+        },
+        {
+          "index": 6,
+          "time_s": 32.91595458984375,
+          "speed": 1.9900000095367432,
+          "direction_deg": 177.7082061767578,
+          "transition": 0,
+          "raw_hex": "f0a9034252b8fe3f4db5314300000000"
+        },
+        {
+          "index": 7,
+          "time_s": 41.21082305908203,
+          "speed": 1.9900000095367432,
+          "direction_deg": 177.7082061767578,
+          "transition": 1,
+          "raw_hex": "e2d7244252b8fe3f4db5314301000000"
+        },
+        {
+          "index": 8,
+          "time_s": 43.21082305908203,
+          "speed": 1.9900000095367432,
+          "direction_deg": 322.9866638183594,
+          "transition": 0,
+          "raw_hex": "e2d72c4252b8fe3f4b7ea14300000000"
+        },
+        {
+          "index": 9,
+          "time_s": 52.92412567138672,
+          "speed": 1.9900000095367432,
+          "direction_deg": 322.9866638183594,
+          "transition": 1,
+          "raw_hex": "4eb2534252b8fe3f4b7ea14301000000"
+        },
+        {
+          "index": 10,
+          "time_s": 54.92412567138672,
+          "speed": 1.9900000095367432,
+          "direction_deg": 5.520158290863037,
+          "transition": 0,
+          "raw_hex": "4eb25b4252b8fe3f23a5b04000000000"
+        },
+        {
+          "index": 11,
+          "time_s": 64.44279479980469,
+          "speed": 1.9900000095367432,
+          "direction_deg": 5.520158290863037,
+          "transition": 1,
+          "raw_hex": "b6e2804252b8fe3f23a5b04001000000"
+        },
+        {
+          "index": 12,
+          "time_s": 66.44279479980469,
+          "speed": 1.8805941343307495,
+          "direction_deg": 100.5850830078125,
+          "transition": 0,
+          "raw_hex": "b6e284424fb7f03f902bc94200000000"
+        },
+        {
+          "index": 13,
+          "time_s": 75.26680755615234,
+          "speed": 1.8805941343307495,
+          "direction_deg": 100.5850830078125,
+          "transition": 1,
+          "raw_hex": "9b8896424fb7f03f902bc94201000000"
+        },
+        {
+          "index": 14,
+          "time_s": 77.26680755615234,
+          "speed": 1.7796307802200317,
+          "direction_deg": 197.9640350341797,
+          "transition": 0,
+          "raw_hex": "9b889a42f1cae33fcbf6454300000000"
+        },
+        {
+          "index": 15,
+          "time_s": 86.36001586914062,
+          "speed": 1.7796307802200317,
+          "direction_deg": 197.9640350341797,
+          "transition": 1,
+          "raw_hex": "54b8ac42f1cae33fcbf6454301000000"
+        },
+        {
+          "index": 16,
+          "time_s": 88.36001586914062,
+          "speed": 1.5,
+          "direction_deg": 43.104366302490234,
+          "transition": 0,
+          "raw_hex": "54b8b0420000c03fdf6a2c4200000000"
+        },
+        {
+          "index": 17,
+          "time_s": 98.11387634277344,
+          "speed": 1.5,
+          "direction_deg": 43.104366302490234,
+          "transition": 1,
+          "raw_hex": "4e3ac4420000c03fdf6a2c4201000000"
+        },
+        {
+          "index": 18,
+          "time_s": 100.11387634277344,
+          "speed": 1.9900000095367432,
+          "direction_deg": 245.75634765625,
+          "transition": 0,
+          "raw_hex": "4e3ac84252b8fe3fa0c1754300000000"
+        },
+        {
+          "index": 19,
+          "time_s": 108.82872009277344,
+          "speed": 1.9900000095367432,
+          "direction_deg": 245.75634765625,
+          "transition": 1,
+          "raw_hex": "4ea8d94252b8fe3fa0c1754301000000"
+        },
+        {
+          "index": 20,
+          "time_s": 110.82872009277344,
+          "speed": 1.9900000095367432,
+          "direction_deg": 114.95753479003906,
+          "transition": 0,
+          "raw_hex": "4ea8dd4252b8fe3f42eae54200000000"
+        },
+        {
+          "index": 21,
+          "time_s": 119.82374572753906,
+          "speed": 1.9900000095367432,
+          "direction_deg": 114.95753479003906,
+          "transition": 1,
+          "raw_hex": "c2a5ef4252b8fe3f42eae54201000000"
+        },
+        {
+          "index": 22,
+          "time_s": 121.82374572753906,
+          "speed": 1.5,
+          "direction_deg": 277.86724853515625,
+          "transition": 0,
+          "raw_hex": "c2a5f3420000c03f02ef8a4300000000"
+        },
+        {
+          "index": 23,
+          "time_s": 131.37413024902344,
+          "speed": 1.5,
+          "direction_deg": 277.86724853515625,
+          "transition": 1,
+          "raw_hex": "c75f03430000c03f02ef8a4301000000"
+        },
+        {
+          "index": 24,
+          "time_s": 133.37413024902344,
+          "speed": 1.5,
+          "direction_deg": 189.0112762451172,
+          "transition": 0,
+          "raw_hex": "c75f05430000c03fe3023d4300000000"
+        },
+        {
+          "index": 25,
+          "time_s": 143.0938720703125,
+          "speed": 1.5,
+          "direction_deg": 189.0112762451172,
+          "transition": 1,
+          "raw_hex": "08180f430000c03fe3023d4301000000"
+        },
+        {
+          "index": 26,
+          "time_s": 145.0938720703125,
+          "speed": 1.9900000095367432,
+          "direction_deg": 251.06301879882812,
+          "transition": 0,
+          "raw_hex": "0818114352b8fe3f22107b4300000000"
+        },
+        {
+          "index": 27,
+          "time_s": 153.78359985351562,
+          "speed": 1.9900000095367432,
+          "direction_deg": 251.06301879882812,
+          "transition": 1,
+          "raw_hex": "9ac8194352b8fe3f22107b4301000000"
+        },
+        {
+          "index": 28,
+          "time_s": 155.78359985351562,
+          "speed": 1.9900000095367432,
+          "direction_deg": 32.881290435791016,
+          "transition": 0,
+          "raw_hex": "9ac81b4352b8fe3f7186034200000000"
+        },
+        {
+          "index": 29,
+          "time_s": 164.12469482421875,
+          "speed": 1.9900000095367432,
+          "direction_deg": 32.881290435791016,
+          "transition": 1,
+          "raw_hex": "ec1f244352b8fe3f7186034201000000"
+        },
+        {
+          "index": 30,
+          "time_s": 166.12469482421875,
+          "speed": 2.0,
+          "direction_deg": 202.2342529296875,
+          "transition": 0,
+          "raw_hex": "ec1f264300000040f83b4a4300000000"
+        },
+        {
+          "index": 31,
+          "time_s": 175.1610870361328,
+          "speed": 2.0,
+          "direction_deg": 202.2342529296875,
+          "transition": 1,
+          "raw_hex": "3d292f4300000040f83b4a4301000000"
+        },
+        {
+          "index": 32,
+          "time_s": 177.1610870361328,
+          "speed": 1.5,
+          "direction_deg": 146.86013793945312,
+          "transition": 0,
+          "raw_hex": "3d2931430000c03f32dc124300000000"
+        },
+        {
+          "index": 33,
+          "time_s": 185.51107788085938,
+          "speed": 1.5,
+          "direction_deg": 146.86013793945312,
+          "transition": 1,
+          "raw_hex": "d68239430000c03f32dc124301000000"
+        },
+        {
+          "index": 34,
+          "time_s": 187.51107788085938,
+          "speed": 1.9900000095367432,
+          "direction_deg": 159.7778778076172,
+          "transition": 0,
+          "raw_hex": "d6823b4352b8fe3f23c71f4300000000"
+        }
+      ],
+      "wind_bytes_sha256": "b7f89c696969e3719187fe3c55acae5f9a563b91b3f40481658069aaa0e214a9",
+      "entry_counts": {
+        "line": 1,
+        "thin_place": 7,
+        "thick_place": 198,
+        "vehicle": 0
+      },
+      "spawn_collision_warnings": 283,
+      "hold_duration_min_max_s": [
+        8.294868469238281,
+        9.753860473632812
+      ],
+      "transition_duration_min_max_s": [
+        2.0,
+        2.0
+      ],
+      "speed_min_max": [
+        1.5,
+        2.0
+      ]
+    }
+  },
+  "repeat_comparison": {
+    "123": {
+      "runs": 2,
+      "same_wind_bytes": true,
+      "same_entry_counts": true
+    },
+    "456": {
+      "runs": 2,
+      "same_wind_bytes": true,
+      "same_entry_counts": true
+    },
+    "2026": {
+      "runs": 2,
+      "same_wind_bytes": true,
+      "same_entry_counts": true
+    }
+  },
+  "limitations": [
+    "Debugger-modified initial route setup; not legal stage progression",
+    "Placement entry counts are attempts, not successful spawns",
+    "Wind at stationary starting location does not measure outdoor exposure"
+  ]
+}
