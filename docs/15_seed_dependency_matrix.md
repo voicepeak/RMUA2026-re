@@ -80,3 +80,5 @@ stage 4 三 seed 各两次的内部线障间距点集合在同 seed 两场一致
 stage 6 的内部候选点在每个 seed 两场逐字集合一致，跨 seed 不同；车辆强制状态门槛的六场中 seed 456 路径重复性未成立，原因未确定。详见 docs/17。
 
 风更新强制注入的起点场已采到非零风向量；车辆组件世界轨迹已采三个 seed 各两次，但 seed 456 路径不重现。限制及原始文件见 docs/17。
+
+stage 4 强制风状态的三个 seed 各两场均观测到非零 ROS 风，见 `experiments/force_wind_tick_4_20261105/analysis.json`；PWM 采样在这些场次失败，独立修复试场见 docs/17。

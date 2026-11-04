@@ -106,3 +106,5 @@
 | 六场强制状态门槛的车辆初始化和进度 | `experiments/vehicle_forcegate_4_20261105/analysis.json`；seed 456 两次路径不同 |
 | 三 seed 两次车辆组件世界坐标 | `experiments/vehicle_world_4_20261105/analysis.json`、各 `gdb.log`；状态门槛被强制 |
 | 注入风状态的非零 ROS 风 | `experiments/force_wind_tick_pilot_20261105/`、`scripts/stage_force_wind_tick.gdb`；起点注入，非自然赛程 |
+| stage 4 强制风、传感器及 PWM 订阅失败 | `experiments/force_wind_tick_4_20261105/analysis.json`、各流原始文件 |
+| PWM 原始消息订阅修复试场 | `experiments/force_wind_wire_pilot_20261105/`、`scripts/pwm_any_probe.py`、`scripts/analyze_forced_wind.py` |

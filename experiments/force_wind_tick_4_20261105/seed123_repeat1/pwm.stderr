@@ -1,0 +1,2 @@
+the rosdep view is empty: call 'sudo rosdep init' and 'rosdep update'
+ERROR: Cannot load message class for [airsim_ros/RotorPWM]. Are your messages built?

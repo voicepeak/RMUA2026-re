@@ -1,0 +1,244 @@
+{
+  "stage": 4,
+  "runs": {
+    "seed123_repeat1": {
+      "status": "observed",
+      "wind_samples": 384,
+      "wind_nonzero": 384,
+      "wind_speed_minmax": [
+        1.4999999293982815,
+        1.4999999293982815
+      ],
+      "wind_first": [
+        0.1725842958665742,
+        -1.4900384052148081,
+        0.0
+      ],
+      "wind_last": [
+        0.1725842958665742,
+        -1.4900384052148081,
+        0.0
+      ],
+      "imu_rows": 768,
+      "gps_rows": 77,
+      "posthoc_truth_rows": 771,
+      "pwm_rows": 0,
+      "pwm_errors": 0,
+      "pwm_first": null,
+      "sensor_clock_counts": {
+        "imu": 801,
+        "camera_left": 160,
+        "camera_right": 160,
+        "lidar": 81
+      },
+      "exit_codes": {
+        "before_reset_exit_code": 124,
+        "imu_exit_code": 124,
+        "gps_exit_code": 124,
+        "pwm_exit_code": 1,
+        "pose_gt_posthoc_exit_code": 124,
+        "sensor_clock_exit_code": 0
+      }
+    },
+    "seed123_repeat2": {
+      "status": "observed",
+      "wind_samples": 385,
+      "wind_nonzero": 385,
+      "wind_speed_minmax": [
+        1.4999999293982815,
+        1.4999999293982815
+      ],
+      "wind_first": [
+        0.1725842958665742,
+        -1.4900384052148081,
+        0.0
+      ],
+      "wind_last": [
+        0.1725842958665742,
+        -1.4900384052148081,
+        0.0
+      ],
+      "imu_rows": 769,
+      "gps_rows": 77,
+      "posthoc_truth_rows": 771,
+      "pwm_rows": 0,
+      "pwm_errors": 0,
+      "pwm_first": null,
+      "sensor_clock_counts": {
+        "imu": 801,
+        "camera_left": 160,
+        "camera_right": 160,
+        "lidar": 81
+      },
+      "exit_codes": {
+        "before_reset_exit_code": 124,
+        "imu_exit_code": 124,
+        "gps_exit_code": 124,
+        "pwm_exit_code": 1,
+        "pose_gt_posthoc_exit_code": 124,
+        "sensor_clock_exit_code": 0
+      }
+    },
+    "seed456_repeat1": {
+      "status": "observed",
+      "wind_samples": 384,
+      "wind_nonzero": 384,
+      "wind_speed_minmax": [
+        1.4999999632446375,
+        1.4999999632446375
+      ],
+      "wind_first": [
+        -1.2471453448202505,
+        -0.8334436865362246,
+        0.0
+      ],
+      "wind_last": [
+        -1.2471453448202505,
+        -0.8334436865362246,
+        0.0
+      ],
+      "imu_rows": 769,
+      "gps_rows": 77,
+      "posthoc_truth_rows": 770,
+      "pwm_rows": 0,
+      "pwm_errors": 0,
+      "pwm_first": null,
+      "sensor_clock_counts": {
+        "camera_left": 161,
+        "camera_right": 161,
+        "imu": 800,
+        "lidar": 81
+      },
+      "exit_codes": {
+        "before_reset_exit_code": 124,
+        "imu_exit_code": 124,
+        "gps_exit_code": 124,
+        "pwm_exit_code": 1,
+        "pose_gt_posthoc_exit_code": 124,
+        "sensor_clock_exit_code": 0
+      }
+    },
+    "seed456_repeat2": {
+      "status": "observed",
+      "wind_samples": 383,
+      "wind_nonzero": 383,
+      "wind_speed_minmax": [
+        1.4999999632446375,
+        1.4999999632446375
+      ],
+      "wind_first": [
+        -1.2471453448202505,
+        -0.8334436865362246,
+        0.0
+      ],
+      "wind_last": [
+        -1.2471453448202505,
+        -0.8334436865362246,
+        0.0
+      ],
+      "imu_rows": 768,
+      "gps_rows": 76,
+      "posthoc_truth_rows": 771,
+      "pwm_rows": 0,
+      "pwm_errors": 0,
+      "pwm_first": null,
+      "sensor_clock_counts": {
+        "imu": 800,
+        "camera_left": 160,
+        "camera_right": 160,
+        "lidar": 81
+      },
+      "exit_codes": {
+        "before_reset_exit_code": 124,
+        "imu_exit_code": 124,
+        "gps_exit_code": 124,
+        "pwm_exit_code": 1,
+        "pose_gt_posthoc_exit_code": 124,
+        "sensor_clock_exit_code": 0
+      }
+    },
+    "seed2026_repeat1": {
+      "status": "observed",
+      "wind_samples": 385,
+      "wind_nonzero": 385,
+      "wind_speed_minmax": [
+        1.9068636982858216,
+        1.9068636982858216
+      ],
+      "wind_first": [
+        -0.774947539431253,
+        1.7422931656210234,
+        0.0
+      ],
+      "wind_last": [
+        -0.774947539431253,
+        1.7422931656210234,
+        0.0
+      ],
+      "imu_rows": 764,
+      "gps_rows": 77,
+      "posthoc_truth_rows": 769,
+      "pwm_rows": 0,
+      "pwm_errors": 0,
+      "pwm_first": null,
+      "sensor_clock_counts": {
+        "imu": 800,
+        "camera_left": 160,
+        "camera_right": 160,
+        "lidar": 81
+      },
+      "exit_codes": {
+        "before_reset_exit_code": 124,
+        "imu_exit_code": 124,
+        "gps_exit_code": 124,
+        "pwm_exit_code": 1,
+        "pose_gt_posthoc_exit_code": 124,
+        "sensor_clock_exit_code": 0
+      }
+    },
+    "seed2026_repeat2": {
+      "status": "observed",
+      "wind_samples": 383,
+      "wind_nonzero": 383,
+      "wind_speed_minmax": [
+        1.9068636982858216,
+        1.9068636982858216
+      ],
+      "wind_first": [
+        -0.774947539431253,
+        1.7422931656210234,
+        0.0
+      ],
+      "wind_last": [
+        -0.774947539431253,
+        1.7422931656210234,
+        0.0
+      ],
+      "imu_rows": 765,
+      "gps_rows": 77,
+      "posthoc_truth_rows": 768,
+      "pwm_rows": 0,
+      "pwm_errors": 0,
+      "pwm_first": null,
+      "sensor_clock_counts": {
+        "imu": 800,
+        "camera_left": 160,
+        "camera_right": 160,
+        "lidar": 81
+      },
+      "exit_codes": {
+        "before_reset_exit_code": 124,
+        "imu_exit_code": 124,
+        "gps_exit_code": 124,
+        "pwm_exit_code": 1,
+        "pose_gt_posthoc_exit_code": 124,
+        "sensor_clock_exit_code": 0
+      }
+    }
+  },
+  "limitations": [
+    "forced game state at start, not natural outdoor traversal",
+    "initially grounded; no PWM commands applied by this probe",
+    "ROS timestamp semantics and transport latency not calibrated"
+  ]
+}
