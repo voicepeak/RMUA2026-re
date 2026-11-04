@@ -88,3 +88,5 @@ stage 4 的三 seed 各两次强制风场均采到风与 PWM、IMU/GPS/LiDAR 时
 stage 5 强制风更新六场均采到非零风及 PWM、传感器流；样本并非真实室外遍历，见 `experiments/force_wind_tick_5_20261105/`。
 
 stage 6 强制风更新三 seed 两次均获得非零 ROS 风；完整时序和对应 PWM、传感器流见 `experiments/force_wind_tick_6_20261105/`。
+
+单次强制风状态后延长至 25 秒，stage 4/5 风话题向量保持不变；动态风过渡尚未证明，原因正在追踪。风关键帧本身来自生成器内存。

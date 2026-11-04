@@ -1,0 +1,54 @@
+{
+  "stage": 4,
+  "runs": {
+    "seed123_repeat1": {
+      "status": "observed",
+      "wind_samples": 1230,
+      "wind_nonzero": 1230,
+      "wind_speed_minmax": [
+        1.4999999293982815,
+        1.4999999293982815
+      ],
+      "wind_first": [
+        0.1725842958665742,
+        -1.4900384052148081,
+        0.0
+      ],
+      "wind_last": [
+        0.1725842958665742,
+        -1.4900384052148081,
+        0.0
+      ],
+      "imu_rows": 2460,
+      "gps_rows": 247,
+      "posthoc_truth_rows": 2469,
+      "pwm_rows": 2503,
+      "pwm_errors": 0,
+      "pwm_first": [
+        0.007333333604037762,
+        0.007333333604037762,
+        0.007333333604037762,
+        0.007333333604037762
+      ],
+      "sensor_clock_counts": {
+        "imu": 2504,
+        "lidar": 251,
+        "camera_left": 501,
+        "camera_right": 501
+      },
+      "exit_codes": {
+        "before_reset_exit_code": 124,
+        "imu_exit_code": 124,
+        "gps_exit_code": 124,
+        "pose_gt_posthoc_exit_code": 124,
+        "sensor_clock_exit_code": 0,
+        "pwm_wire_exit_code": 0
+      }
+    }
+  },
+  "limitations": [
+    "forced game state at start, not natural outdoor traversal",
+    "initially grounded; command policy: no PWM commands applied by this probe",
+    "ROS timestamp semantics and transport latency not calibrated"
+  ]
+}

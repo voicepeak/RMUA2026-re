@@ -114,3 +114,5 @@
 | 合成碰撞回调首场 state 7→12 | `experiments/collision_inject_pilot_20261105/`、`scripts/stage_collision_inject.gdb`；不是物理接触 |
 | stage 6 强制风、PWM、传感器三 seed 两次 | `experiments/force_wind_tick_6_20261105/analysis.json` 和原始流 |
 | stage 4 固定 PWM 开环三 seed 两次 | `experiments/wind_pwm_step_4_20261105/pwm_analysis.json`、`analysis.json`；header 匹配不代表端到端延迟 |
+| stage 5 固定 PWM 开环三 seed 两次 | `experiments/wind_pwm_step_5_20261105/pwm_analysis.json` 和原始流 |
+| 单次注入后 stage 4/5 风话题 25 秒保持不变 | `experiments/wind_transition_4_20261105/`、`experiments/wind_transition_5_20261105/`；更新原因待查 |
