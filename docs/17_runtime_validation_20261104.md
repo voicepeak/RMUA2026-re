@@ -144,3 +144,7 @@ stage 6 线障候选数组六场均读取 64 个对象：seed 123/456/2026 分�
 强制风状态 stage 4 的六场中均采到非零风、IMU、GPS、LiDAR 消息时钟及事后真值；风样本每场 383–385 条，seed 123/456 的此次采样速度模约 1.5，seed 2026 约 1.907。每场 PWM 的 `rostopic echo` 均因工作区缺少消息类退出 1，不能把运行器的 `observed` 当作 PWM 采集成功；原样保留 `experiments/force_wind_tick_4_20261105/`。随后采用 `rospy.AnyMsg` 解码并核验类型/MD5 的独立试场采到 500 条 PWM，见 `experiments/force_wind_wire_pilot_20261105/`。采样期间未由该探针发布 PWM 指令，不能用静止初态数据声称 PWM 阶跃响应。`scripts/analyze_forced_wind.py` 分开统计各流和退出码。
 
 修复后的 stage 4 风状态六场均录到非零风及 800–801 条 PWM 原始消息，类型和 MD5 校验均通过；IMU 约 800 条、LiDAR 80–81 帧，完整计数和退出码见 `experiments/force_wind_tick_4_wire_20261105/analysis.json`。这些场次没有发送 PWM 指令。独立的 seed 123 场使用预定的四电机相同 PWM 序列 0→0.2→0.3→0.4→0.2→0，发送 248 条命令，接收 801 条实际 PWM，且风样本非零；命令器不订阅任何传感器或真值。该单场仅是开环响应原始采样，未标定延迟或证明动力学等价，见 `experiments/wind_pwm_step_pilot_20261105/`、`scripts/pwm_wind_step_probe.py`。
+
+stage 5 强制风状态下三个 seed 各两次均有非零风、PWM、IMU/GPS 和 LiDAR 时钟。各 seed 本次约 8 秒采样的风速模分别约 3.990、3.792、3.125；每场 PWM 800–801 条、解码错误 0。具体时序和样本见 `experiments/force_wind_tick_5_20261105/`；该探针不发布 PWM 命令。
+
+碰撞裁决单场直接注入试验：在开发容器内将一个现有调用临时重定向到 `0x2fb7110`，先将 state 置 7、`IgnoreAllHitCollision` 置 0；观察该回调请求 state 12，返回时状态为 12。之后原初始化又请求 state 0，日志中另有后续碰撞回调，因此本项只证明直接注入时的回调分支，不证明实际碰撞形状、接触力或真实事件。见 `experiments/collision_inject_pilot_20261105/`。
