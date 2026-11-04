@@ -1,0 +1,30 @@
+{
+  "seed123_repeat1": {
+    "command_samples": 248,
+    "wind_samples": 981,
+    "wind_change_samples": 41,
+    "change_samples_by_latest_command": {
+      "0.3": 5,
+      "0.4": 15,
+      "0.2": 15,
+      "0.0": 6
+    },
+    "first_change_header_ns": 1793810962854350567,
+    "last_change_header_ns": 1793810964855393171,
+    "limitations": "Header-domain nearest previous command is an approximate alignment; wind change is thresholded and observations are under repeated state injection, not a causal or calibrated delay measurement."
+  },
+  "seed123_repeat2": {
+    "command_samples": 248,
+    "wind_samples": 984,
+    "wind_change_samples": 41,
+    "change_samples_by_latest_command": {
+      "0.3": 6,
+      "0.4": 16,
+      "0.2": 15,
+      "0.0": 4
+    },
+    "first_change_header_ns": 1793810992871292830,
+    "last_change_header_ns": 1793810994869335651,
+    "limitations": "Header-domain nearest previous command is an approximate alignment; wind change is thresholded and observations are under repeated state injection, not a causal or calibrated delay measurement."
+  }
+}
