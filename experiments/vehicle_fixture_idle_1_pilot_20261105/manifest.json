@@ -1,0 +1,41 @@
+{
+  "binary_sha256": "5231addfa25ddaa9e4473ea9ac40c9c0bc685174e69cd14bb49159f443b97800",
+  "settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+  "image_id": "sha256:cd46a48cd28c2a9c6345f60227fd1bd50e78c67ef1e98dcddc0e65893771da57",
+  "gdb_script_sha256": "5e6e7bf205ea931972d20bb7f6809ab6e5ebe24257ac6f72936630d04f232820",
+  "runner_sha256": "9135a25e16d1af177aef6acac21856aa73466a5ce7efde313595508065955f53",
+  "sensor_clock_sha256": "266167fedcf8d5b3370cac5efa1321281a07981f23af60d22ce374c1e4ee059b",
+  "pwm_probe_sha256": "6b4c1571c88cec4ff937d542a5ef8e598648be4c816d306fcb82c0e568302fc5",
+  "mode": "nullrhi",
+  "map": "default Lobby -> OL1",
+  "seeds": [
+    123
+  ],
+  "repeats": 1,
+  "stage_coverage": "GDB mutates initial stage call arguments; diagnostic, not official progression",
+  "injected_stage": 4,
+  "vehicle_fixture": 1,
+  "runs": [
+    {
+      "seed": 123,
+      "repeat": 1,
+      "port": 12560,
+      "container": "rmua-trace-fdafd6343319",
+      "start_wall": 1793811395.175119,
+      "status": "observed",
+      "id": "d098927c109b2140267886fcd3eba08aea94f2fffe04ff1dc4dba62756f47b17",
+      "ready_wall": 1793811403.9240057,
+      "before_reset_exit_code": 124,
+      "imu_exit_code": 124,
+      "gps_exit_code": 124,
+      "pose_gt_posthoc_exit_code": 124,
+      "sensor_clock_exit_code": 0,
+      "pwm_wire_exit_code": 0,
+      "lidar_snapshot_exit_code": 0,
+      "injection_observed": true,
+      "wind_generation_observed": true,
+      "line_generation_observed": true,
+      "end_wall": 1793811417.1084623
+    }
+  ]
+}

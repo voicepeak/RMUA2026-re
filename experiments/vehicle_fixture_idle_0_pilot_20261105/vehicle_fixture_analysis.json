@@ -1,0 +1,21 @@
+{
+  "seed123_repeat1": {
+    "vehicle_fixture": 0,
+    "fixture_writes": 0,
+    "world_samples": 26,
+    "closest_sample_to_fixed_world_origin": [
+      147526.874779453,
+      -3317.53906,
+      4146.4375,
+      1775.10095
+    ],
+    "hit_events": 2,
+    "identified_drone_hit_events": 2,
+    "events_within_one_second_of_closest": 2,
+    "limitations": [
+      "Closest fixed-world origin is not measured drone position",
+      "Event type does not identify contact actor",
+      "Fixed test path, forced state and GDB alter behavior"
+    ]
+  }
+}
