@@ -1,0 +1,2396 @@
+{
+  "events": [
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 32,
+      "enter_flag": 1,
+      "event_flag": 0,
+      "sparse_num_before": 0,
+      "free_num_before": 0,
+      "clock": {
+        "wall_unix_s": 1793789885.9311197,
+        "monotonic_s": 126031.576078631
+      },
+      "active_before": 0,
+      "nearest_gps": {
+        "position": [
+          1.9564860229823,
+          -0.04265782837801281,
+          -1.2842580681884346
+        ],
+        "arrival_delta_s": -0.012980453000636771,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 32,
+      "enter_flag": 0,
+      "event_flag": 1,
+      "sparse_num_before": 1,
+      "free_num_before": 0,
+      "clock": {
+        "wall_unix_s": 1793789886.224802,
+        "monotonic_s": 126031.869760945
+      },
+      "active_before": 1,
+      "nearest_gps": {
+        "position": [
+          2.5580911624585805,
+          -0.06665416497142784,
+          -1.3697976950612996
+        ],
+        "arrival_delta_s": -0.0076033280056435615,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 31,
+      "enter_flag": 1,
+      "event_flag": 0,
+      "sparse_num_before": 1,
+      "free_num_before": 0,
+      "clock": {
+        "wall_unix_s": 1793789889.5258968,
+        "monotonic_s": 126035.170855836
+      },
+      "active_before": 1,
+      "nearest_gps": {
+        "position": [
+          19.44590163573972,
+          -0.019413651027554296,
+          -3.0309292361445865
+        ],
+        "arrival_delta_s": -0.008820346993161365,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 32,
+      "enter_flag": 0,
+      "event_flag": 0,
+      "sparse_num_before": 2,
+      "free_num_before": 0,
+      "clock": {
+        "wall_unix_s": 1793789890.1755078,
+        "monotonic_s": 126035.820466947
+      },
+      "active_before": 2,
+      "nearest_gps": {
+        "position": [
+          23.37986691354034,
+          0.000749837299331424,
+          -3.1091553590324486
+        ],
+        "arrival_delta_s": 0.04155352599627804,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 31,
+      "enter_flag": 0,
+      "event_flag": 1,
+      "sparse_num_before": 2,
+      "free_num_before": 1,
+      "clock": {
+        "wall_unix_s": 1793789890.2771168,
+        "monotonic_s": 126035.922075426
+      },
+      "active_before": 1,
+      "nearest_gps": {
+        "position": [
+          23.86965225319783,
+          -0.05910458345343074,
+          -3.213338704848411
+        ],
+        "arrival_delta_s": 0.03986570000415668,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 30,
+      "enter_flag": 1,
+      "event_flag": 0,
+      "sparse_num_before": 2,
+      "free_num_before": 1,
+      "clock": {
+        "wall_unix_s": 1793789893.2821229,
+        "monotonic_s": 126038.927081932
+      },
+      "active_before": 1,
+      "nearest_gps": {
+        "position": [
+          40.77309088825116,
+          0.47204166311877144,
+          -3.901795233131697
+        ],
+        "arrival_delta_s": 0.03492989300866611,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 30,
+      "enter_flag": 0,
+      "event_flag": 1,
+      "sparse_num_before": 2,
+      "free_num_before": 0,
+      "clock": {
+        "wall_unix_s": 1793789893.9798672,
+        "monotonic_s": 126039.624826167
+      },
+      "active_before": 2,
+      "nearest_gps": {
+        "position": [
+          44.73183660232644,
+          0.7142224291442928,
+          -4.06511091832801
+        ],
+        "arrival_delta_s": 0.03735426999628544,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 31,
+      "enter_flag": 0,
+      "event_flag": 0,
+      "sparse_num_before": 2,
+      "free_num_before": 0,
+      "clock": {
+        "wall_unix_s": 1793789894.5249066,
+        "monotonic_s": 126040.169865647
+      },
+      "active_before": 2,
+      "nearest_gps": {
+        "position": [
+          47.63905721209825,
+          0.800619426854243,
+          -4.267799875546588
+        ],
+        "arrival_delta_s": -0.007632287000888027,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 29,
+      "enter_flag": 1,
+      "event_flag": 0,
+      "sparse_num_before": 2,
+      "free_num_before": 1,
+      "clock": {
+        "wall_unix_s": 1793789896.9773858,
+        "monotonic_s": 126042.62234464
+      },
+      "active_before": 1,
+      "nearest_gps": {
+        "position": [
+          61.74956006628239,
+          1.5353770522407586,
+          -4.7856884826013575
+        ],
+        "arrival_delta_s": 0.03970027400646359,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 29,
+      "enter_flag": 0,
+      "event_flag": 1,
+      "sparse_num_before": 2,
+      "free_num_before": 0,
+      "clock": {
+        "wall_unix_s": 1793789897.7251036,
+        "monotonic_s": 126043.370062616
+      },
+      "active_before": 2,
+      "nearest_gps": {
+        "position": [
+          65.70079479602049,
+          1.8284554005265097,
+          -4.80740770602474
+        ],
+        "arrival_delta_s": -0.007895501999882981,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 30,
+      "enter_flag": 0,
+      "event_flag": 0,
+      "sparse_num_before": 2,
+      "free_num_before": 0,
+      "clock": {
+        "wall_unix_s": 1793789898.2260537,
+        "monotonic_s": 126043.871012619
+      },
+      "active_before": 2,
+      "nearest_gps": {
+        "position": [
+          68.39632367130143,
+          1.9497844109715132,
+          -4.94891279767103
+        ],
+        "arrival_delta_s": -0.008922641995013691,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 28,
+      "enter_flag": 1,
+      "event_flag": 0,
+      "sparse_num_before": 2,
+      "free_num_before": 1,
+      "clock": {
+        "wall_unix_s": 1793789900.7306397,
+        "monotonic_s": 126046.375598535
+      },
+      "active_before": 1,
+      "nearest_gps": {
+        "position": [
+          82.58950916513595,
+          2.792522055538596,
+          -5.401173972744259
+        ],
+        "arrival_delta_s": -0.013538241997594014,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 28,
+      "enter_flag": 0,
+      "event_flag": 1,
+      "sparse_num_before": 2,
+      "free_num_before": 0,
+      "clock": {
+        "wall_unix_s": 1793789901.4779801,
+        "monotonic_s": 126047.122939312
+      },
+      "active_before": 2,
+      "nearest_gps": {
+        "position": [
+          86.89265300757036,
+          3.067828479305765,
+          -5.4756623516458625
+        ],
+        "arrival_delta_s": 0.03904903700458817,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 29,
+      "enter_flag": 0,
+      "event_flag": 0,
+      "sparse_num_before": 2,
+      "free_num_before": 0,
+      "clock": {
+        "wall_unix_s": 1793789901.9748237,
+        "monotonic_s": 126047.619782544
+      },
+      "active_before": 2,
+      "nearest_gps": {
+        "position": [
+          89.81990758542976,
+          3.202139239300266,
+          -5.66951107333817
+        ],
+        "arrival_delta_s": 0.04255399700195994,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 27,
+      "enter_flag": 1,
+      "event_flag": 0,
+      "sparse_num_before": 2,
+      "free_num_before": 1,
+      "clock": {
+        "wall_unix_s": 1793789904.4251912,
+        "monotonic_s": 126050.070150114
+      },
+      "active_before": 1,
+      "nearest_gps": {
+        "position": [
+          103.4539442288215,
+          4.072914038536952,
+          -6.194109493143655
+        ],
+        "arrival_delta_s": -0.008087416004855186,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 27,
+      "enter_flag": 0,
+      "event_flag": 1,
+      "sparse_num_before": 2,
+      "free_num_before": 0,
+      "clock": {
+        "wall_unix_s": 1793789905.1750247,
+        "monotonic_s": 126050.819983499
+      },
+      "active_before": 2,
+      "nearest_gps": {
+        "position": [
+          107.83587590189356,
+          4.296874978143259,
+          -6.318711412955283
+        ],
+        "arrival_delta_s": 0.042105937012820505,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 28,
+      "enter_flag": 0,
+      "event_flag": 0,
+      "sparse_num_before": 2,
+      "free_num_before": 0,
+      "clock": {
+        "wall_unix_s": 1793789905.6746383,
+        "monotonic_s": 126051.319597556
+      },
+      "active_before": 2,
+      "nearest_gps": {
+        "position": [
+          110.72992221284038,
+          4.485642981715075,
+          -6.4253010315986865
+        ],
+        "arrival_delta_s": 0.04249260800133925,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 26,
+      "enter_flag": 1,
+      "event_flag": 0,
+      "sparse_num_before": 2,
+      "free_num_before": 1,
+      "clock": {
+        "wall_unix_s": 1793789908.1263337,
+        "monotonic_s": 126053.771292843
+      },
+      "active_before": 1,
+      "nearest_gps": {
+        "position": [
+          124.28751075340122,
+          5.04135188256122,
+          -6.916454649463491
+        ],
+        "arrival_delta_s": -0.009248103990103118,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 26,
+      "enter_flag": 0,
+      "event_flag": 1,
+      "sparse_num_before": 2,
+      "free_num_before": 0,
+      "clock": {
+        "wall_unix_s": 1793789908.8762603,
+        "monotonic_s": 126054.521219262
+      },
+      "active_before": 2,
+      "nearest_gps": {
+        "position": [
+          128.8209350497736,
+          5.2929109653510436,
+          -7.096629313576368
+        ],
+        "arrival_delta_s": 0.04103640600806102,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 27,
+      "enter_flag": 0,
+      "event_flag": 0,
+      "sparse_num_before": 2,
+      "free_num_before": 0,
+      "clock": {
+        "wall_unix_s": 1793789909.3771007,
+        "monotonic_s": 126055.022059839
+      },
+      "active_before": 2,
+      "nearest_gps": {
+        "position": [
+          131.5590137313406,
+          5.342151723833822,
+          -7.269106412484601
+        ],
+        "arrival_delta_s": 0.040062359999865294,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 25,
+      "enter_flag": 1,
+      "event_flag": 0,
+      "sparse_num_before": 2,
+      "free_num_before": 1,
+      "clock": {
+        "wall_unix_s": 1793789911.8785455,
+        "monotonic_s": 126057.523504229
+      },
+      "active_before": 1,
+      "nearest_gps": {
+        "position": [
+          145.71817038466338,
+          5.656869683742586,
+          -7.952501081724972
+        ],
+        "arrival_delta_s": 0.03859122100402601,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 25,
+      "enter_flag": 0,
+      "event_flag": 1,
+      "sparse_num_before": 2,
+      "free_num_before": 0,
+      "clock": {
+        "wall_unix_s": 1793789912.6250699,
+        "monotonic_s": 126058.270028839
+      },
+      "active_before": 2,
+      "nearest_gps": {
+        "position": [
+          149.56328190285515,
+          5.664449619953571,
+          -8.049573499624293
+        ],
+        "arrival_delta_s": -0.007997941997018643,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 26,
+      "enter_flag": 0,
+      "event_flag": 0,
+      "sparse_num_before": 2,
+      "free_num_before": 0,
+      "clock": {
+        "wall_unix_s": 1793789913.1295846,
+        "monotonic_s": 126058.774543654
+      },
+      "active_before": 2,
+      "nearest_gps": {
+        "position": [
+          152.41072494927224,
+          5.589259116461324,
+          -8.211253402054874
+        ],
+        "arrival_delta_s": -0.012278882000828162,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 24,
+      "enter_flag": 1,
+      "event_flag": 0,
+      "sparse_num_before": 2,
+      "free_num_before": 1,
+      "clock": {
+        "wall_unix_s": 1793789915.575923,
+        "monotonic_s": 126061.220882044
+      },
+      "active_before": 1,
+      "nearest_gps": {
+        "position": [
+          166.5667297377544,
+          5.279593937257746,
+          -9.023730364443413
+        ],
+        "arrival_delta_s": 0.04128203900472727,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 24,
+      "enter_flag": 0,
+      "event_flag": 1,
+      "sparse_num_before": 2,
+      "free_num_before": 0,
+      "clock": {
+        "wall_unix_s": 1793789916.3272297,
+        "monotonic_s": 126061.972188575
+      },
+      "active_before": 2,
+      "nearest_gps": {
+        "position": [
+          170.5699221648926,
+          5.074082174246758,
+          -9.199054644078124
+        ],
+        "arrival_delta_s": -0.010045962000731379,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 25,
+      "enter_flag": 0,
+      "event_flag": 0,
+      "sparse_num_before": 2,
+      "free_num_before": 0,
+      "clock": {
+        "wall_unix_s": 1793789916.8272138,
+        "monotonic_s": 126062.472172932
+      },
+      "active_before": 2,
+      "nearest_gps": {
+        "position": [
+          173.3617710086791,
+          4.934514980146846,
+          -9.459262493305419
+        ],
+        "arrival_delta_s": -0.009933367007761262,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 23,
+      "enter_flag": 1,
+      "event_flag": 0,
+      "sparse_num_before": 2,
+      "free_num_before": 1,
+      "clock": {
+        "wall_unix_s": 1793789919.2752378,
+        "monotonic_s": 126064.920196909
+      },
+      "active_before": 1,
+      "nearest_gps": {
+        "position": [
+          187.51678159634682,
+          3.661997892383494,
+          -10.564908557810863
+        ],
+        "arrival_delta_s": 0.04181236099975649,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 23,
+      "enter_flag": 0,
+      "event_flag": 1,
+      "sparse_num_before": 2,
+      "free_num_before": 0,
+      "clock": {
+        "wall_unix_s": 1793789920.0254514,
+        "monotonic_s": 126065.670410341
+      },
+      "active_before": 2,
+      "nearest_gps": {
+        "position": [
+          191.48785772431972,
+          3.2651685841234306,
+          -10.811326304112445
+        ],
+        "arrival_delta_s": -0.008381339008337818,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 24,
+      "enter_flag": 0,
+      "event_flag": 0,
+      "sparse_num_before": 2,
+      "free_num_before": 0,
+      "clock": {
+        "wall_unix_s": 1793789920.5255165,
+        "monotonic_s": 126066.170475774
+      },
+      "active_before": 2,
+      "nearest_gps": {
+        "position": [
+          194.20412929867373,
+          2.795671751870966,
+          -11.077786407893068
+        ],
+        "arrival_delta_s": -0.008313117999932729,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 22,
+      "enter_flag": 1,
+      "event_flag": 0,
+      "sparse_num_before": 2,
+      "free_num_before": 1,
+      "clock": {
+        "wall_unix_s": 1793789922.9778745,
+        "monotonic_s": 126068.622833329
+      },
+      "active_before": 1,
+      "nearest_gps": {
+        "position": [
+          208.18884582375762,
+          0.2839971642926076,
+          -12.369226630481801
+        ],
+        "arrival_delta_s": 0.039449048999813385,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 22,
+      "enter_flag": 0,
+      "event_flag": 1,
+      "sparse_num_before": 2,
+      "free_num_before": 0,
+      "clock": {
+        "wall_unix_s": 1793789923.676888,
+        "monotonic_s": 126069.321846943
+      },
+      "active_before": 2,
+      "nearest_gps": {
+        "position": [
+          211.9472890099276,
+          -0.7252080854865892,
+          -12.752835593638272
+        ],
+        "arrival_delta_s": 0.04020953500003088,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 23,
+      "enter_flag": 0,
+      "event_flag": 0,
+      "sparse_num_before": 2,
+      "free_num_before": 0,
+      "clock": {
+        "wall_unix_s": 1793789924.225867,
+        "monotonic_s": 126069.870825808
+      },
+      "active_before": 2,
+      "nearest_gps": {
+        "position": [
+          214.66339606281295,
+          -1.391185104636457,
+          -13.096382398680989
+        ],
+        "arrival_delta_s": -0.008673239994095638,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 21,
+      "enter_flag": 1,
+      "event_flag": 0,
+      "sparse_num_before": 2,
+      "free_num_before": 1,
+      "clock": {
+        "wall_unix_s": 1793789926.680686,
+        "monotonic_s": 126072.325644912
+      },
+      "active_before": 1,
+      "nearest_gps": {
+        "position": [
+          228.05487095199075,
+          -5.866284499461693,
+          -14.877190586054583
+        ],
+        "arrival_delta_s": 0.03638580800907221,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 21,
+      "enter_flag": 0,
+      "event_flag": 1,
+      "sparse_num_before": 2,
+      "free_num_before": 0,
+      "clock": {
+        "wall_unix_s": 1793789927.4283931,
+        "monotonic_s": 126073.073352179
+      },
+      "active_before": 2,
+      "nearest_gps": {
+        "position": [
+          231.72849832655595,
+          -7.449980315619782,
+          -15.491689870438805
+        ],
+        "arrival_delta_s": -0.011364084988599643,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 22,
+      "enter_flag": 0,
+      "event_flag": 0,
+      "sparse_num_before": 2,
+      "free_num_before": 0,
+      "clock": {
+        "wall_unix_s": 1793789927.9285235,
+        "monotonic_s": 126073.573482436
+      },
+      "active_before": 2,
+      "nearest_gps": {
+        "position": [
+          234.26508329788868,
+          -8.633393385251368,
+          -15.908890963689707
+        ],
+        "arrival_delta_s": -0.011413086001994088,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 20,
+      "enter_flag": 1,
+      "event_flag": 0,
+      "sparse_num_before": 2,
+      "free_num_before": 1,
+      "clock": {
+        "wall_unix_s": 1793789930.327052,
+        "monotonic_s": 126075.972010944
+      },
+      "active_before": 1,
+      "nearest_gps": {
+        "position": [
+          245.54798285509148,
+          -16.003106218809446,
+          -17.735241636062188
+        ],
+        "arrival_delta_s": -0.009942051998223178,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 20,
+      "enter_flag": 0,
+      "event_flag": 1,
+      "sparse_num_before": 2,
+      "free_num_before": 0,
+      "clock": {
+        "wall_unix_s": 1793789931.075271,
+        "monotonic_s": 126076.720229757
+      },
+      "active_before": 2,
+      "nearest_gps": {
+        "position": [
+          248.93340202254706,
+          -18.89436543380811,
+          -18.26813237066126
+        ],
+        "arrival_delta_s": 0.0418611119966954,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 21,
+      "enter_flag": 0,
+      "event_flag": 0,
+      "sparse_num_before": 2,
+      "free_num_before": 0,
+      "clock": {
+        "wall_unix_s": 1793789931.6292737,
+        "monotonic_s": 126077.274232844
+      },
+      "active_before": 2,
+      "nearest_gps": {
+        "position": [
+          251.11230681480077,
+          -20.764303389606145,
+          -18.760972957240526
+        ],
+        "arrival_delta_s": -0.0122477440017974,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 19,
+      "enter_flag": 1,
+      "event_flag": 0,
+      "sparse_num_before": 2,
+      "free_num_before": 1,
+      "clock": {
+        "wall_unix_s": 1793789934.0273688,
+        "monotonic_s": 126079.672327552
+      },
+      "active_before": 1,
+      "nearest_gps": {
+        "position": [
+          259.98096341653076,
+          -30.93108013782359,
+          -20.53577275660842
+        ],
+        "arrival_delta_s": -0.01039828101056628,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 19,
+      "enter_flag": 0,
+      "event_flag": 1,
+      "sparse_num_before": 2,
+      "free_num_before": 0,
+      "clock": {
+        "wall_unix_s": 1793789934.7266307,
+        "monotonic_s": 126080.371589742
+      },
+      "active_before": 2,
+      "nearest_gps": {
+        "position": [
+          262.4627358091346,
+          -34.07510867934895,
+          -20.968941011696792
+        ],
+        "arrival_delta_s": -0.009417414010385983,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 20,
+      "enter_flag": 0,
+      "event_flag": 0,
+      "sparse_num_before": 2,
+      "free_num_before": 0,
+      "clock": {
+        "wall_unix_s": 1793789935.2792153,
+        "monotonic_s": 126080.924174404
+      },
+      "active_before": 2,
+      "nearest_gps": {
+        "position": [
+          264.37996629822237,
+          -36.73684457618558,
+          -21.469732258202363
+        ],
+        "arrival_delta_s": 0.03778954499284737,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 18,
+      "enter_flag": 1,
+      "event_flag": 0,
+      "sparse_num_before": 2,
+      "free_num_before": 1,
+      "clock": {
+        "wall_unix_s": 1793789937.7264786,
+        "monotonic_s": 126083.371437576
+      },
+      "active_before": 1,
+      "nearest_gps": {
+        "position": [
+          271.4829173101001,
+          -48.310155521761544,
+          -23.395603725319802
+        ],
+        "arrival_delta_s": -0.009374362998642027,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 18,
+      "enter_flag": 0,
+      "event_flag": 1,
+      "sparse_num_before": 2,
+      "free_num_before": 0,
+      "clock": {
+        "wall_unix_s": 1793789938.4761245,
+        "monotonic_s": 126084.121083171
+      },
+      "active_before": 2,
+      "nearest_gps": {
+        "position": [
+          273.610820316884,
+          -52.134641408855465,
+          -24.08202380634984
+        ],
+        "arrival_delta_s": 0.040938279998954386,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 19,
+      "enter_flag": 0,
+      "event_flag": 0,
+      "sparse_num_before": 2,
+      "free_num_before": 0,
+      "clock": {
+        "wall_unix_s": 1793789938.9760647,
+        "monotonic_s": 126084.621023648
+      },
+      "active_before": 2,
+      "nearest_gps": {
+        "position": [
+          274.94969698487677,
+          -54.58082426077344,
+          -24.571462954527068
+        ],
+        "arrival_delta_s": 0.04105524600890931,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 17,
+      "enter_flag": 1,
+      "event_flag": 0,
+      "sparse_num_before": 2,
+      "free_num_before": 1,
+      "clock": {
+        "wall_unix_s": 1793789941.3783934,
+        "monotonic_s": 126087.023352539
+      },
+      "active_before": 1,
+      "nearest_gps": {
+        "position": [
+          281.3198039700459,
+          -66.62740174823695,
+          -26.70562783231273
+        ],
+        "arrival_delta_s": 0.03859140399436001,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 17,
+      "enter_flag": 0,
+      "event_flag": 1,
+      "sparse_num_before": 2,
+      "free_num_before": 0,
+      "clock": {
+        "wall_unix_s": 1793789942.1252112,
+        "monotonic_s": 126087.770170321
+      },
+      "active_before": 2,
+      "nearest_gps": {
+        "position": [
+          283.30469170207044,
+          -70.08302063141119,
+          -27.41297007466752
+        ],
+        "arrival_delta_s": -0.008014575010747649,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 18,
+      "enter_flag": 0,
+      "event_flag": 0,
+      "sparse_num_before": 2,
+      "free_num_before": 0,
+      "clock": {
+        "wall_unix_s": 1793789942.6253092,
+        "monotonic_s": 126088.270268001
+      },
+      "active_before": 2,
+      "nearest_gps": {
+        "position": [
+          284.6981219682212,
+          -72.53378030795628,
+          -27.93432231992619
+        ],
+        "arrival_delta_s": -0.008205869002267718,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 16,
+      "enter_flag": 1,
+      "event_flag": 0,
+      "sparse_num_before": 2,
+      "free_num_before": 1,
+      "clock": {
+        "wall_unix_s": 1793789945.02594,
+        "monotonic_s": 126090.670898774
+      },
+      "active_before": 1,
+      "nearest_gps": {
+        "position": [
+          291.59642322598575,
+          -84.23022898148254,
+          -30.59905552321296
+        ],
+        "arrival_delta_s": -0.008838487992761657,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 16,
+      "enter_flag": 0,
+      "event_flag": 1,
+      "sparse_num_before": 2,
+      "free_num_before": 0,
+      "clock": {
+        "wall_unix_s": 1793789945.7763689,
+        "monotonic_s": 126091.421327787
+      },
+      "active_before": 2,
+      "nearest_gps": {
+        "position": [
+          293.9845531123708,
+          -87.98365315827586,
+          -31.598408569713026
+        ],
+        "arrival_delta_s": 0.04083703500509728,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 17,
+      "enter_flag": 0,
+      "event_flag": 0,
+      "sparse_num_before": 2,
+      "free_num_before": 0,
+      "clock": {
+        "wall_unix_s": 1793789946.2763088,
+        "monotonic_s": 126091.921267525
+      },
+      "active_before": 2,
+      "nearest_gps": {
+        "position": [
+          295.5994272433896,
+          -90.26299069919364,
+          -32.21940860108274
+        ],
+        "arrival_delta_s": 0.040919110004324466,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 15,
+      "enter_flag": 1,
+      "event_flag": 0,
+      "sparse_num_before": 2,
+      "free_num_before": 1,
+      "clock": {
+        "wall_unix_s": 1793789948.628467,
+        "monotonic_s": 126094.273426159
+      },
+      "active_before": 1,
+      "nearest_gps": {
+        "position": [
+          303.46305941502703,
+          -100.66629959305774,
+          -35.44484402332152
+        ],
+        "arrival_delta_s": -0.011300879996269941,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 15,
+      "enter_flag": 0,
+      "event_flag": 1,
+      "sparse_num_before": 2,
+      "free_num_before": 0,
+      "clock": {
+        "wall_unix_s": 1793789949.326999,
+        "monotonic_s": 126094.971958073
+      },
+      "active_before": 2,
+      "nearest_gps": {
+        "position": [
+          306.15390112628563,
+          -103.67044076803387,
+          -36.43452799475045
+        ],
+        "arrival_delta_s": -0.009925835998728871,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 16,
+      "enter_flag": 0,
+      "event_flag": 0,
+      "sparse_num_before": 2,
+      "free_num_before": 0,
+      "clock": {
+        "wall_unix_s": 1793789949.8763013,
+        "monotonic_s": 126095.521260173
+      },
+      "active_before": 2,
+      "nearest_gps": {
+        "position": [
+          308.3904298679347,
+          -106.09815383755677,
+          -37.33164659477715
+        ],
+        "arrival_delta_s": 0.040687553002499044,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 14,
+      "enter_flag": 1,
+      "event_flag": 0,
+      "sparse_num_before": 2,
+      "free_num_before": 1,
+      "clock": {
+        "wall_unix_s": 1793789952.1778097,
+        "monotonic_s": 126097.822768803
+      },
+      "active_before": 1,
+      "nearest_gps": {
+        "position": [
+          317.9181372784008,
+          -114.94678215860634,
+          -41.083961959432635
+        ],
+        "arrival_delta_s": 0.039401488000294194,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 14,
+      "enter_flag": 0,
+      "event_flag": 1,
+      "sparse_num_before": 2,
+      "free_num_before": 0,
+      "clock": {
+        "wall_unix_s": 1793789952.8761346,
+        "monotonic_s": 126098.521093725
+      },
+      "active_before": 2,
+      "nearest_gps": {
+        "position": [
+          321.0144212959434,
+          -117.42901715226134,
+          -42.24302316548866
+        ],
+        "arrival_delta_s": 0.0410682910005562,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 15,
+      "enter_flag": 0,
+      "event_flag": 0,
+      "sparse_num_before": 2,
+      "free_num_before": 0,
+      "clock": {
+        "wall_unix_s": 1793789953.4268842,
+        "monotonic_s": 126099.071843118
+      },
+      "active_before": 2,
+      "nearest_gps": {
+        "position": [
+          323.2216050781275,
+          -119.07284047641716,
+          -43.19104574064236
+        ],
+        "arrival_delta_s": -0.009775896003702655,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 13,
+      "enter_flag": 1,
+      "event_flag": 0,
+      "sparse_num_before": 2,
+      "free_num_before": 1,
+      "clock": {
+        "wall_unix_s": 1793789955.7358437,
+        "monotonic_s": 126101.380802632
+      },
+      "active_before": 1,
+      "nearest_gps": {
+        "position": [
+          334.43516982191005,
+          -125.87245569391233,
+          -47.384985984175806
+        ],
+        "arrival_delta_s": -0.018654430998140015,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 13,
+      "enter_flag": 0,
+      "event_flag": 1,
+      "sparse_num_before": 2,
+      "free_num_before": 0,
+      "clock": {
+        "wall_unix_s": 1793789956.427498,
+        "monotonic_s": 126102.072456804
+      },
+      "active_before": 2,
+      "nearest_gps": {
+        "position": [
+          337.84627797271924,
+          -127.64898865972476,
+          -48.6263362162347
+        ],
+        "arrival_delta_s": -0.01050758500059601,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 14,
+      "enter_flag": 0,
+      "event_flag": 0,
+      "sparse_num_before": 2,
+      "free_num_before": 0,
+      "clock": {
+        "wall_unix_s": 1793789956.9263458,
+        "monotonic_s": 126102.571304899
+      },
+      "active_before": 2,
+      "nearest_gps": {
+        "position": [
+          340.4257544089779,
+          -128.93844710602414,
+          -49.57465967330072
+        ],
+        "arrival_delta_s": -0.009291309004765935,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 12,
+      "enter_flag": 1,
+      "event_flag": 0,
+      "sparse_num_before": 2,
+      "free_num_before": 1,
+      "clock": {
+        "wall_unix_s": 1793789959.326808,
+        "monotonic_s": 126104.971767034
+      },
+      "active_before": 1,
+      "nearest_gps": {
+        "position": [
+          352.95567417704467,
+          -133.93441326045644,
+          -54.12592026635322
+        ],
+        "arrival_delta_s": -0.009746814001118764,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 12,
+      "enter_flag": 0,
+      "event_flag": 1,
+      "sparse_num_before": 2,
+      "free_num_before": 0,
+      "clock": {
+        "wall_unix_s": 1793789960.0264008,
+        "monotonic_s": 126105.671359806
+      },
+      "active_before": 2,
+      "nearest_gps": {
+        "position": [
+          356.7430818128119,
+          -135.12727731323662,
+          -55.43693361201403
+        ],
+        "arrival_delta_s": -0.009298598000896163,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 13,
+      "enter_flag": 0,
+      "event_flag": 0,
+      "sparse_num_before": 2,
+      "free_num_before": 0,
+      "clock": {
+        "wall_unix_s": 1793789960.4266596,
+        "monotonic_s": 126106.071618644
+      },
+      "active_before": 2,
+      "nearest_gps": {
+        "position": [
+          359.0010535045329,
+          -135.87594578227367,
+          -56.26651502748417
+        ],
+        "arrival_delta_s": -0.009620707991416566,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 11,
+      "enter_flag": 1,
+      "event_flag": 0,
+      "sparse_num_before": 2,
+      "free_num_before": 1,
+      "clock": {
+        "wall_unix_s": 1793789962.8290036,
+        "monotonic_s": 126108.473962279
+      },
+      "active_before": 1,
+      "nearest_gps": {
+        "position": [
+          372.07954097011134,
+          -139.26900696502966,
+          -61.15998169907351
+        ],
+        "arrival_delta_s": -0.01197469599719625,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 11,
+      "enter_flag": 0,
+      "event_flag": 1,
+      "sparse_num_before": 2,
+      "free_num_before": 0,
+      "clock": {
+        "wall_unix_s": 1793789963.4771066,
+        "monotonic_s": 126109.122065443
+      },
+      "active_before": 2,
+      "nearest_gps": {
+        "position": [
+          376.0374343190051,
+          -140.06501175970308,
+          -62.4826857368057
+        ],
+        "arrival_delta_s": 0.04000687498773914,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 12,
+      "enter_flag": 0,
+      "event_flag": 0,
+      "sparse_num_before": 2,
+      "free_num_before": 0,
+      "clock": {
+        "wall_unix_s": 1793789963.9767778,
+        "monotonic_s": 126109.621736682
+      },
+      "active_before": 2,
+      "nearest_gps": {
+        "position": [
+          378.70158796000504,
+          -140.5502513887803,
+          -63.56831795892808
+        ],
+        "arrival_delta_s": 0.04030936300114263,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 10,
+      "enter_flag": 1,
+      "event_flag": 0,
+      "sparse_num_before": 2,
+      "free_num_before": 1,
+      "clock": {
+        "wall_unix_s": 1793789966.2770915,
+        "monotonic_s": 126111.922050537
+      },
+      "active_before": 1,
+      "nearest_gps": {
+        "position": [
+          391.549840675939,
+          -142.6300451631221,
+          -68.54242326236285
+        ],
+        "arrival_delta_s": 0.04009009199216962,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 10,
+      "enter_flag": 0,
+      "event_flag": 1,
+      "sparse_num_before": 2,
+      "free_num_before": 0,
+      "clock": {
+        "wall_unix_s": 1793789966.9819872,
+        "monotonic_s": 126112.626946233
+      },
+      "active_before": 2,
+      "nearest_gps": {
+        "position": [
+          395.5441486822959,
+          -143.10349685413456,
+          -69.9751821009284
+        ],
+        "arrival_delta_s": 0.035294453002279624,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 11,
+      "enter_flag": 0,
+      "event_flag": 0,
+      "sparse_num_before": 2,
+      "free_num_before": 0,
+      "clock": {
+        "wall_unix_s": 1793789967.478178,
+        "monotonic_s": 126113.123136867
+      },
+      "active_before": 2,
+      "nearest_gps": {
+        "position": [
+          398.25142552317254,
+          -143.4137327195668,
+          -71.03545692333789
+        ],
+        "arrival_delta_s": 0.03885071599506773,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 9,
+      "enter_flag": 1,
+      "event_flag": 0,
+      "sparse_num_before": 2,
+      "free_num_before": 1,
+      "clock": {
+        "wall_unix_s": 1793789969.7771647,
+        "monotonic_s": 126115.422123898
+      },
+      "active_before": 1,
+      "nearest_gps": {
+        "position": [
+          411.35107064537254,
+          -144.1729234502931,
+          -76.21988591397863
+        ],
+        "arrival_delta_s": 0.0399720670102397,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 9,
+      "enter_flag": 0,
+      "event_flag": 1,
+      "sparse_num_before": 2,
+      "free_num_before": 0,
+      "clock": {
+        "wall_unix_s": 1793789970.427249,
+        "monotonic_s": 126116.072207773
+      },
+      "active_before": 2,
+      "nearest_gps": {
+        "position": [
+          414.69198945485203,
+          -144.2386015145551,
+          -77.54646455119043
+        ],
+        "arrival_delta_s": -0.010124509004526772,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 10,
+      "enter_flag": 0,
+      "event_flag": 0,
+      "sparse_num_before": 2,
+      "free_num_before": 0,
+      "clock": {
+        "wall_unix_s": 1793789970.9263318,
+        "monotonic_s": 126116.571290501
+      },
+      "active_before": 2,
+      "nearest_gps": {
+        "position": [
+          417.5549984656469,
+          -144.22857358367602,
+          -78.81078962154365
+        ],
+        "arrival_delta_s": -0.009159332999843173,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 8,
+      "enter_flag": 1,
+      "event_flag": 0,
+      "sparse_num_before": 2,
+      "free_num_before": 1,
+      "clock": {
+        "wall_unix_s": 1793789973.2281253,
+        "monotonic_s": 126118.873084403
+      },
+      "active_before": 1,
+      "nearest_gps": {
+        "position": [
+          430.6382951506221,
+          -143.9663361484649,
+          -83.97445413905967
+        ],
+        "arrival_delta_s": -0.011071461005485617,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 8,
+      "enter_flag": 0,
+      "event_flag": 1,
+      "sparse_num_before": 2,
+      "free_num_before": 0,
+      "clock": {
+        "wall_unix_s": 1793789973.877001,
+        "monotonic_s": 126119.521959682
+      },
+      "active_before": 2,
+      "nearest_gps": {
+        "position": [
+          434.4781814785099,
+          -143.77113031549717,
+          -85.5357680238343
+        ],
+        "arrival_delta_s": 0.04000079000252299,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 9,
+      "enter_flag": 0,
+      "event_flag": 0,
+      "sparse_num_before": 2,
+      "free_num_before": 0,
+      "clock": {
+        "wall_unix_s": 1793789974.3764434,
+        "monotonic_s": 126120.021402338
+      },
+      "active_before": 2,
+      "nearest_gps": {
+        "position": [
+          437.2930196006054,
+          -143.53297141567023,
+          -86.80825988583985
+        ],
+        "arrival_delta_s": 0.04056037600093987,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 7,
+      "enter_flag": 1,
+      "event_flag": 0,
+      "sparse_num_before": 2,
+      "free_num_before": 1,
+      "clock": {
+        "wall_unix_s": 1793789976.6273139,
+        "monotonic_s": 126122.272272923
+      },
+      "active_before": 1,
+      "nearest_gps": {
+        "position": [
+          449.7583802048348,
+          -142.2587407559534,
+          -91.80630882462492
+        ],
+        "arrival_delta_s": -0.0101223069941625,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 7,
+      "enter_flag": 0,
+      "event_flag": 1,
+      "sparse_num_before": 2,
+      "free_num_before": 0,
+      "clock": {
+        "wall_unix_s": 1793789977.328151,
+        "monotonic_s": 126122.973109991
+      },
+      "active_before": 2,
+      "nearest_gps": {
+        "position": [
+          453.76000350438943,
+          -141.7880853456787,
+          -93.36036475792095
+        ],
+        "arrival_delta_s": -0.010885444993618876,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 8,
+      "enter_flag": 0,
+      "event_flag": 0,
+      "sparse_num_before": 2,
+      "free_num_before": 0,
+      "clock": {
+        "wall_unix_s": 1793789977.777946,
+        "monotonic_s": 126123.422905016
+      },
+      "active_before": 2,
+      "nearest_gps": {
+        "position": [
+          456.52117404881466,
+          -141.33817911193063,
+          -94.64949384534268
+        ],
+        "arrival_delta_s": 0.03925726198940538,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 6,
+      "enter_flag": 1,
+      "event_flag": 0,
+      "sparse_num_before": 2,
+      "free_num_before": 1,
+      "clock": {
+        "wall_unix_s": 1793789980.0780313,
+        "monotonic_s": 126125.722990129
+      },
+      "active_before": 1,
+      "nearest_gps": {
+        "position": [
+          469.3714807865638,
+          -139.24934979353895,
+          -99.86627307254352
+        ],
+        "arrival_delta_s": 0.03906026700860821,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 6,
+      "enter_flag": 0,
+      "event_flag": 1,
+      "sparse_num_before": 2,
+      "free_num_before": 0,
+      "clock": {
+        "wall_unix_s": 1793789980.7786283,
+        "monotonic_s": 126126.42358719
+      },
+      "active_before": 2,
+      "nearest_gps": {
+        "position": [
+          473.03075178326526,
+          -138.53443635491433,
+          -101.48328847482982
+        ],
+        "arrival_delta_s": 0.038551638994249515,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 7,
+      "enter_flag": 0,
+      "event_flag": 0,
+      "sparse_num_before": 2,
+      "free_num_before": 0,
+      "clock": {
+        "wall_unix_s": 1793789981.2767313,
+        "monotonic_s": 126126.921690093
+      },
+      "active_before": 2,
+      "nearest_gps": {
+        "position": [
+          475.82900135311314,
+          -138.0023882613885,
+          -102.60171467497328
+        ],
+        "arrival_delta_s": 0.04035119699256029,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 5,
+      "enter_flag": 1,
+      "event_flag": 0,
+      "sparse_num_before": 2,
+      "free_num_before": 1,
+      "clock": {
+        "wall_unix_s": 1793789983.527236,
+        "monotonic_s": 126129.172194964
+      },
+      "active_before": 1,
+      "nearest_gps": {
+        "position": [
+          488.06051022974754,
+          -135.2206304251114,
+          -107.69416120518301
+        ],
+        "arrival_delta_s": -0.0101614200102631,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 5,
+      "enter_flag": 0,
+      "event_flag": 1,
+      "sparse_num_before": 2,
+      "free_num_before": 0,
+      "clock": {
+        "wall_unix_s": 1793789984.2281582,
+        "monotonic_s": 126129.873117043
+      },
+      "active_before": 2,
+      "nearest_gps": {
+        "position": [
+          491.84145346828376,
+          -134.35468374895132,
+          -109.27579064854352
+        ],
+        "arrival_delta_s": -0.011075984002673067,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 6,
+      "enter_flag": 0,
+      "event_flag": 0,
+      "sparse_num_before": 2,
+      "free_num_before": 0,
+      "clock": {
+        "wall_unix_s": 1793789984.7267323,
+        "monotonic_s": 126130.371691435
+      },
+      "active_before": 2,
+      "nearest_gps": {
+        "position": [
+          494.4797634200956,
+          -133.67954633518008,
+          -110.39124479092342
+        ],
+        "arrival_delta_s": -0.009608166990801692,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 4,
+      "enter_flag": 1,
+      "event_flag": 0,
+      "sparse_num_before": 2,
+      "free_num_before": 1,
+      "clock": {
+        "wall_unix_s": 1793789986.9772475,
+        "monotonic_s": 126132.622206393
+      },
+      "active_before": 1,
+      "nearest_gps": {
+        "position": [
+          507.13187030209576,
+          -130.44072010960375,
+          -115.55430604390229
+        ],
+        "arrival_delta_s": 0.03978964500129223,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 4,
+      "enter_flag": 0,
+      "event_flag": 1,
+      "sparse_num_before": 2,
+      "free_num_before": 0,
+      "clock": {
+        "wall_unix_s": 1793789987.6774437,
+        "monotonic_s": 126133.322402801
+      },
+      "active_before": 2,
+      "nearest_gps": {
+        "position": [
+          510.89933644282996,
+          -129.3351763032214,
+          -117.07280233640468
+        ],
+        "arrival_delta_s": 0.039640293005504645,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 5,
+      "enter_flag": 0,
+      "event_flag": 0,
+      "sparse_num_before": 2,
+      "free_num_before": 0,
+      "clock": {
+        "wall_unix_s": 1793789988.1832197,
+        "monotonic_s": 126133.828178644
+      },
+      "active_before": 2,
+      "nearest_gps": {
+        "position": [
+          513.5900280671077,
+          -128.6987576755684,
+          -118.05922299773478
+        ],
+        "arrival_delta_s": 0.0338597009977093,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 3,
+      "enter_flag": 1,
+      "event_flag": 0,
+      "sparse_num_before": 2,
+      "free_num_before": 1,
+      "clock": {
+        "wall_unix_s": 1793789990.480973,
+        "monotonic_s": 126136.125931963
+      },
+      "active_before": 1,
+      "nearest_gps": {
+        "position": [
+          526.159431790597,
+          -125.50501161023683,
+          -123.03547851321584
+        ],
+        "arrival_delta_s": 0.03610383698833175,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 3,
+      "enter_flag": 0,
+      "event_flag": 1,
+      "sparse_num_before": 2,
+      "free_num_before": 0,
+      "clock": {
+        "wall_unix_s": 1793789991.1769834,
+        "monotonic_s": 126136.821942302
+      },
+      "active_before": 2,
+      "nearest_gps": {
+        "position": [
+          529.9312674923082,
+          -124.60834431842608,
+          -124.30220576146739
+        ],
+        "arrival_delta_s": 0.04000920099497307,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 4,
+      "enter_flag": 0,
+      "event_flag": 0,
+      "sparse_num_before": 2,
+      "free_num_before": 0,
+      "clock": {
+        "wall_unix_s": 1793789991.6767073,
+        "monotonic_s": 126137.321666147
+      },
+      "active_before": 2,
+      "nearest_gps": {
+        "position": [
+          532.764674447987,
+          -124.15455650592001,
+          -125.16634768487202
+        ],
+        "arrival_delta_s": 0.04034438899543602,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 2,
+      "enter_flag": 1,
+      "event_flag": 0,
+      "sparse_num_before": 2,
+      "free_num_before": 1,
+      "clock": {
+        "wall_unix_s": 1793789994.032193,
+        "monotonic_s": 126139.677152065
+      },
+      "active_before": 1,
+      "nearest_gps": {
+        "position": [
+          545.4299839451385,
+          -121.03211967141507,
+          -128.2623376625134
+        ],
+        "arrival_delta_s": -0.015155761007918045,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 2,
+      "enter_flag": 0,
+      "event_flag": 1,
+      "sparse_num_before": 2,
+      "free_num_before": 0,
+      "clock": {
+        "wall_unix_s": 1793789994.776691,
+        "monotonic_s": 126140.421649978
+      },
+      "active_before": 2,
+      "nearest_gps": {
+        "position": [
+          549.7003744935951,
+          -119.82242148722916,
+          -129.057385662545
+        ],
+        "arrival_delta_s": 0.04025919199921191,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 3,
+      "enter_flag": 0,
+      "event_flag": 0,
+      "sparse_num_before": 2,
+      "free_num_before": 0,
+      "clock": {
+        "wall_unix_s": 1793789995.3265991,
+        "monotonic_s": 126140.971558367
+      },
+      "active_before": 2,
+      "nearest_gps": {
+        "position": [
+          552.3540921971786,
+          -118.71032076389244,
+          -129.41013935486873
+        ],
+        "arrival_delta_s": -0.009298368997406214,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 1,
+      "enter_flag": 1,
+      "event_flag": 0,
+      "sparse_num_before": 2,
+      "free_num_before": 1,
+      "clock": {
+        "wall_unix_s": 1793789997.7319963,
+        "monotonic_s": 126143.376955474
+      },
+      "active_before": 1,
+      "nearest_gps": {
+        "position": [
+          565.0419683219898,
+          -113.67163193523872,
+          -130.85057911326334
+        ],
+        "arrival_delta_s": -0.014962718996684998,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 1,
+      "enter_flag": 0,
+      "event_flag": 1,
+      "sparse_num_before": 2,
+      "free_num_before": 0,
+      "clock": {
+        "wall_unix_s": 1793789998.4765909,
+        "monotonic_s": 126144.12155004
+      },
+      "active_before": 2,
+      "nearest_gps": {
+        "position": [
+          569.1870662972618,
+          -111.74204684220656,
+          -131.02452630774033
+        ],
+        "arrival_delta_s": 0.04052950099867303,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 2,
+      "enter_flag": 0,
+      "event_flag": 0,
+      "sparse_num_before": 2,
+      "free_num_before": 0,
+      "clock": {
+        "wall_unix_s": 1793789998.98151,
+        "monotonic_s": 126144.626468955
+      },
+      "active_before": 2,
+      "nearest_gps": {
+        "position": [
+          571.6063111780007,
+          -110.51090176222597,
+          -131.14467343664205
+        ],
+        "arrival_delta_s": 0.03585587900306564,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 0,
+      "enter_flag": 1,
+      "event_flag": 0,
+      "sparse_num_before": 2,
+      "free_num_before": 1,
+      "clock": {
+        "wall_unix_s": 1793790001.4305608,
+        "monotonic_s": 126147.075519618
+      },
+      "active_before": 1,
+      "nearest_gps": {
+        "position": [
+          584.1255934577578,
+          -104.7782025143375,
+          -131.9255472834547
+        ],
+        "arrival_delta_s": -0.013264676003018394,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 0,
+      "enter_flag": 0,
+      "event_flag": 1,
+      "sparse_num_before": 2,
+      "free_num_before": 0,
+      "clock": {
+        "wall_unix_s": 1793790002.1767302,
+        "monotonic_s": 126147.821689108
+      },
+      "active_before": 2,
+      "nearest_gps": {
+        "position": [
+          587.9837445525395,
+          -102.97233700721705,
+          -132.22277350951163
+        ],
+        "arrival_delta_s": 0.04045721700822469,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 1,
+      "enter_flag": 0,
+      "event_flag": 0,
+      "sparse_num_before": 2,
+      "free_num_before": 0,
+      "clock": {
+        "wall_unix_s": 1793790002.6771808,
+        "monotonic_s": 126148.322139719
+      },
+      "active_before": 2,
+      "nearest_gps": {
+        "position": [
+          590.648357930895,
+          -101.90360872085695,
+          -132.4291837231117
+        ],
+        "arrival_delta_s": 0.0397979439876508,
+        "accepted": true
+      }
+    },
+    {
+      "spline": "0x7ffe090f0100",
+      "fname_index": 387258,
+      "fname_number": 2,
+      "segment_index": 0,
+      "enter_flag": 0,
+      "event_flag": 0,
+      "sparse_num_before": 2,
+      "free_num_before": 1,
+      "clock": {
+        "wall_unix_s": 1793790006.580066,
+        "monotonic_s": 126152.225024937
+      },
+      "active_before": 1,
+      "nearest_gps": {
+        "position": [
+          608.3571101177961,
+          -89.39941244817842,
+          -132.71111695321395
+        ],
+        "arrival_delta_s": 0.03699146599683445,
+        "accepted": true
+      }
+    }
+  ],
+  "counts": {
+    "enter=1,event=0": 33,
+    "enter=0,event=1": 33,
+    "enter=0,event=0": 33
+  },
+  "adjacent_same_spline_counter_deltas": {
+    "enter=1,event=0,delta=1": 33,
+    "enter=0,event=1,delta=0": 33,
+    "enter=0,event=0,delta=-1": 32
+  },
+  "limits": [
+    "all-stop GDB can change scheduling",
+    "adjacent log entries need not prove no intervening mutation",
+    "nearest GPS callback arrival is not a synchronized source pose",
+    "same FName/position associations are not independently decoded"
+  ]
+}

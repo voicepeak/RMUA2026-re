@@ -1,0 +1,13 @@
+# Runtime spline segment event / counter trace
+
+Seed 123, OL1, unmodified simulator/rules, sensor-only GPS/IMU bridge and LiDAR VEL diagnostic on unraised static candidate 1→3, bounded to 180 wall-clock seconds at 6 m/s. ROS graph snapshot shows the controller consumes `/rmua/diagnostic/pose` and debug pose has no subscribers. The logged spline pointer/FName pair matches the `1_1` actor observed in the prior independently captured inventory by FName fields, but this is not a decoded FName or a global persistent identity. This is development evidence, not an official score or completed course.
+
+A read-only GDB breakpoint at `0x2fc8d80` records integer segment index, two raw event flags, `+0x288` and `+0x2b4` *before* the call. The actor emitted 99 events in this run: 33 (`enter_flag=1,event_flag=0`), 33 (`enter_flag=0,event_flag=0`), and 33 (`enter_flag=0,event_flag=1`). Enter indices were 32 through 0 in order. Among adjacent logged events for the same actor, all 33 enter-type events were followed by an increase of 1 in the difference `+0x288 - +0x2b4`; all 32 exits with a following event had a decrease of 1; all 33 other events had no difference change. See `segment_summary.json` for every event and nearest GPS callback. Adjacent breakpoints do not categorically exclude uninstrumented intervening writes, but the sequence supports the active-segment set interpretation. Static decompilation `artifacts/rea/route_gate_native.c` at `0x2fc8d80` shows insertion on `param_3` and removal in the other branch, while `0x2fc8d70` tests the signed counter difference. Do not infer an exact collision shape or scoring semantics solely from these flags.
+
+After the last recorded exit from segment 0, the overall `0x2fb9830` predicate did not log a transition to 0 during this window; other weak-reference/port/factory/side-route branches may satisfy it. This observation does not identify which one. The controller remained near the hub and never reached stage 4/5/6; 180-second timeout is not race completion. All-stop breakpoints altered scheduling. GDB wall/monotonic times and ROS source stamps are not interchangeable, and nearest GPS means callback arrival, not synchronized pose. Raw telemetry, LiDAR snapshots, wind, state/segment log and source snapshots/hashes are retained.
+
+```bash
+python3 scripts/export_beta_static_route.py --route candidate_1_3 --output /tmp/rmua-segment/route
+python3 scripts/run_beta_sensor_scout.py --output /tmp/rmua-segment --seconds 180 --speed 6 --hub-observer --segment-trace
+python3 scripts/analyze_segment_trace.py /tmp/rmua-segment --output /tmp/rmua-segment/segment_summary.json
+```
