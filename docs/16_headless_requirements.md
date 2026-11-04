@@ -121,3 +121,5 @@ python3 scripts/wind_offline_model.py --output /tmp/rmua-wind-offline
 stage 4 内层线障候选的状态与距离公式已覆盖三 seed 各两次；最终接触几何和成功放置仍应独立验证。
 
 持续状态注入的三个室外 stage 均已覆盖三 seed 两次动态风；stage 6 的近似矢量重建误差受钟域与调试暂停影响，不能当作自然场景精度。
+
+强制状态下的开环 PWM 场记录到运行时碰撞回调与 state 12 请求；状态覆盖影响后续行为，接触对象未解码。详见 docs/17。
