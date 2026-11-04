@@ -1,0 +1,22 @@
+{
+  "seed": 123,
+  "mode": "VEL diagnostic",
+  "requested_duration_wall_s": 150,
+  "binary_sha256": "5231addfa25ddaa9e4473ea9ac40c9c0bc685174e69cd14bb49159f443b97800",
+  "settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+  "bridge_sha256": "70295627077d381d76e2ac9808e8670e681ee33ac74864661b2c75db4d35e8d1",
+  "route_sha256": "21e276954d56a439dd2866c6ccf5d968040364b8368f733e8496fb5e4a770729",
+  "guides_sha256": "b604bf87e95a30f2665c5ae1bae72fff3a87a1d9273703bd9cc9077c6eb32344",
+  "beta_controller_sha256": "8657e952b7afb8b4612a75c96c3f6ab9e43494c7af930c9b3e34fc9c0c7ad0dd",
+  "start_wall_unix_s": 1793790293.3251204,
+  "debug_truth_control": false,
+  "debug_state_used_to_stop": false,
+  "map": "default OL1",
+  "status": "controller_exited",
+  "container_id": "1dd9a3d860e893d034bcd992e889b8624de8367b4476226c792e4fa8484b7a75",
+  "ready_wall_unix_s": 1793790302.6088283,
+  "control_command": "timeout --signal=INT --kill-after=5 150 rosrun route_follower route_follower.py /airsim_node/drone_1/debug/pose_gt:=/rmua/diagnostic/pose _route_file:=/out/route/route.json _route_name:=static_spline1 _guides_file:=/out/route/guides.json _gates_file:= _gate_z_uses_offset:=false _use_gate_map:=false _wait_for_first_map:=false _course_frame_calibration:=false _adaptive_speed:=true _lidar_fresh_publication_check:=true _lidar_stereo_obstacles:=false _cruise_speed:=6.0 _max_speed:=6.0 _normal_speed_floor:=1.0",
+  "control_start_wall_unix_s": 1793790304.6122043,
+  "controller_exit_code": 124,
+  "end_wall_unix_s": 1793790455.7031953
+}

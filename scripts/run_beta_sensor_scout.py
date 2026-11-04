@@ -13,7 +13,7 @@ if not 1 <= a.seconds <= 180 or not 0 < a.speed <= 6:raise SystemExit('invalid d
 out=a.output.resolve();out.mkdir(parents=True,exist_ok=True)
 if not (out/'route/route.json').is_file():raise SystemExit('output must contain pre-generated route/')
 name='rmua-beta-'+secrets.token_hex(6);port=11761
-meta={'seed':123,'mode':'VEL diagnostic','requested_duration_wall_s':a.seconds,'binary_sha256':sha(sim/'Build/LinuxNoEditor/RMUA/Binaries/Linux/RMUA-Linux-Shipping'),'settings_sha256':sha(settings),'bridge_sha256':sha(base/'scripts/gps_imu_pose_bridge.py'),'route_sha256':sha(out/'route/route.json'),'guides_sha256':sha(out/'route/guides.json'),'beta_controller_sha256':sha(workspace/'beta/rmua_ws/src/route_follower/scripts/route_follower.py'),'start_wall_unix_s':time.time(),'debug_truth_control':False,'map':'default OL1','status':'starting'}
+meta={'seed':123,'mode':'VEL diagnostic','requested_duration_wall_s':a.seconds,'binary_sha256':sha(sim/'Build/LinuxNoEditor/RMUA/Binaries/Linux/RMUA-Linux-Shipping'),'settings_sha256':sha(settings),'bridge_sha256':sha(base/'scripts/gps_imu_pose_bridge.py'),'route_sha256':sha(out/'route/route.json'),'guides_sha256':sha(out/'route/guides.json'),'beta_controller_sha256':sha(workspace/'beta/rmua_ws/src/route_follower/scripts/route_follower.py'),'start_wall_unix_s':time.time(),'debug_truth_control':False,'debug_state_used_to_stop':False,'map':'default OL1','status':'starting'}
 def save():(out/'manifest.json').write_text(json.dumps(meta,indent=2)+'\n')
 save();bridge=None;wind=None;control=None;hub=None
 try:
@@ -45,15 +45,7 @@ try:
   meta['control_command']=control_cmd;meta['control_start_wall_unix_s']=time.time();save()
   control=subprocess.Popen(cmd(control_cmd),stdout=c,stderr=subprocess.STDOUT)
   try:
-   deadline=time.monotonic()+a.seconds+10
-   while control.poll() is None and time.monotonic()<deadline:
-    logs=docker('logs',name,capture_output=True).stdout
-    if 'requested_state=12' in logs:
-     meta['race_end_observed_wall_unix_s']=time.time()
-     docker('exec',name,'pkill','-INT','-f','[r]oute_follower.py',capture_output=True)
-     break
-    time.sleep(.5)
-   meta['controller_exit_code']=control.wait(timeout=8);meta['status']='race_end_stop' if 'race_end_observed_wall_unix_s' in meta else 'controller_exited'
+   meta['controller_exit_code']=control.wait(timeout=a.seconds+10);meta['status']='controller_exited'
   except subprocess.TimeoutExpired:control.terminate();meta['controller_exit_code']=control.wait(timeout=8);meta['status']='controller_outer_timeout'
 except Exception as exc:meta.update(status='failed',error=repr(exc))
 finally:

@@ -1,0 +1,58 @@
+{
+  "source": "experiments/stage_probe_20261104/static_spline_candidates.json",
+  "sha256": "575a6b3bf9c32f8bae4f4f5628c31ca72036a0a16aa0ca81a13e31695502eec9",
+  "gate_source": {
+    "path": "artifacts/maps/maps_summary_all.json",
+    "sha256": "d4617e33888d721ff1b8647140be157fbb1fcfe30749bbc12386e910d14f4a03"
+  },
+  "gate_waypoints_ned_m": [
+    [
+      617.5384952195403,
+      -88.48071064670086,
+      -135.0750390625
+    ],
+    [
+      623.495859375,
+      -87.76669921875,
+      -135.0750390625
+    ],
+    [
+      629.4532235304597,
+      -87.05268779079915,
+      -135.0750390625
+    ],
+    [
+      707.6915966393775,
+      -37.998740187288256,
+      -135.0750390625
+    ],
+    [
+      710.051953125,
+      -32.48251708984375,
+      -135.0750390625
+    ],
+    [
+      712.4123096106224,
+      -26.96629399239925,
+      -135.0750390625
+    ]
+  ],
+  "map": "RMUA2024OL1",
+  "route": "candidate_gate_1_3",
+  "straight_unverified_connector_m": 167.40272969116012,
+  "candidate_lift_m": 0.0,
+  "lift_ramp_m": 0,
+  "station": "2D cumulative length, matching beta RouteGeometry",
+  "route_z": "-NED_z (UP); route geometry consumes x/y, not direct altitude",
+  "guide_z": "NED_z",
+  "count": 169,
+  "length_xy_m": 1439.5059272865808,
+  "limitations": [
+    "not validated collision-free",
+    "no terrain or stage-trigger knowledge",
+    "gaps need an independently verified route",
+    "component hierarchy/rotation conversion not established in flight",
+    "straight connector is an unverified candidate, guarded by online LiDAR; not a mapped free-space claim",
+    "gate axis assumption, coordinate conversion and route through gate centers are unverified"
+  ]
+}
