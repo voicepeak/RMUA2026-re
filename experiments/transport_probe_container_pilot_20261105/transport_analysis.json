@@ -1,0 +1,81 @@
+{
+  "scope": "same-host CLOCK_MONOTONIC on hook entry and observer callback; exact header-stamp joins, not physical acquisition or motor response latency",
+  "limitations": [
+    "interposition and ROS observers alter timing",
+    "header stamp is an identifier, not assumed clock-synchronized",
+    "duplicate or zero stamps are excluded, and unmatched rows can be from outside simultaneous windows",
+    "sender command monotonic time is recorded after rospy publish returns, so its comparison is not a full publish-to-callback latency",
+    "one host, seed and run; no general latency bound"
+  ],
+  "hook_counts": {
+    "imu": 1396,
+    "rotor_pwm": 1396,
+    "lidar": 141,
+    "rotor_pwm_command_callback": 238
+  },
+  "comparisons": {
+    "imu_publish_to_subscriber": {
+      "source_rows": 1396,
+      "receiver_rows": 1201,
+      "unique_matched_stamps": 1201,
+      "ambiguous_shared_stamps": 0,
+      "source_only_stamps": 195,
+      "receiver_only_stamps": 0,
+      "negative_delays": 0,
+      "min_ms": 0.113086,
+      "median_ms": 0.235434,
+      "p95_ms": 0.341885,
+      "p99_ms": 0.384521,
+      "max_ms": 3.076243
+    },
+    "lidar_publish_to_subscriber": {
+      "source_rows": 141,
+      "receiver_rows": 121,
+      "unique_matched_stamps": 121,
+      "ambiguous_shared_stamps": 0,
+      "source_only_stamps": 20,
+      "receiver_only_stamps": 0,
+      "negative_delays": 0,
+      "min_ms": 0.243018,
+      "median_ms": 0.454582,
+      "p95_ms": 0.538435,
+      "p99_ms": 0.563672,
+      "max_ms": 0.74381
+    },
+    "pwm_publish_to_subscriber": {
+      "source_rows": 1396,
+      "receiver_rows": 1202,
+      "unique_matched_stamps": 1202,
+      "ambiguous_shared_stamps": 0,
+      "source_only_stamps": 194,
+      "receiver_only_stamps": 0,
+      "negative_delays": 0,
+      "min_ms": 0.063625,
+      "median_ms": 0.1563235,
+      "p95_ms": 0.288538,
+      "p99_ms": 0.328168,
+      "max_ms": 3.006758
+    },
+    "pwm_command_send_return_to_sim_callback": {
+      "source_rows": 248,
+      "receiver_rows": 238,
+      "unique_matched_stamps": 237,
+      "ambiguous_shared_stamps": 0,
+      "source_only_stamps": 11,
+      "receiver_only_stamps": 1,
+      "negative_delays": 0,
+      "min_ms": 0.129442,
+      "median_ms": 0.269573,
+      "p95_ms": 0.383708,
+      "p99_ms": 0.426896,
+      "max_ms": 1.235476
+    }
+  },
+  "wall_minus_monotonic_offset_difference_ms": {
+    "pairs": 1201,
+    "min": -0.003998,
+    "median": -0.000383,
+    "max": -0.000283,
+    "note": "independent wall/monotonic reads include scheduling skew; this checks clock consistency, not acquisition latency"
+  }
+}
