@@ -161,3 +161,4 @@
 | 命中事件构造点及粗线 HISM 组件归因 | `experiments/line_event_source_static_20261105/`、`experiments/line_event_component_thick_20261105/event_component_analysis.json`、`scripts/analyze_line_event_component.py`；组件共享实例，不能区分具体线 |
 | 细线 HISM 组件命中三 seed 两次 | `experiments/line_event_component_thin_20261105/event_component_analysis.json`；共享组件不识别具体实例 |
 | 粗线命中结果候选实例索引及失败探针 | `experiments/line_hit_instance_thick_20261105/hit_instance_analysis.json`、`experiments/line_hit_result_thick_pilot_20261105/`、`scripts/analyze_line_hit_instance.py` |
+| 粗细线候选命中实例索引的完整重复矩阵 | `experiments/line_hit_instance_{thick,thin}_20261105/hit_instance_analysis.json`、`scripts/run_line_hit_result.py`；候选偏移待独立类型验证 |
