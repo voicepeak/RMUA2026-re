@@ -1,0 +1,106 @@
+{
+  "seed123_repeat1": {
+    "run_status": "observed",
+    "vehicle_links": [
+      {
+        "event": {
+          "alloc_mono_s": 237831.348492678,
+          "callback_mono_s": 237831.382450898,
+          "elapsed_ms": 33.958220010390505,
+          "event": "0x7ffdeeccca60",
+          "source_actor": "0x7ffdefef6780",
+          "source_component": "0x7ffdeff0c590",
+          "source_matches_vehicle_and_child": true,
+          "allocation_tid": 128,
+          "callback_tid": 128
+        },
+        "state_write": {
+          "mono_ns": 237831384526355,
+          "tid": 128,
+          "released": true,
+          "state": "0x7ffdefa54780",
+          "current": 12,
+          "previous": 7
+        },
+        "entry": {
+          "mono_ns": 237831384057673,
+          "tid": 128,
+          "state": "0x7ffdefa54780",
+          "flag": "0",
+          "config": "0x7fffdd63cb80",
+          "score": "0",
+          "current": "7",
+          "previous": "7",
+          "label": "Finished",
+          "kind": "ENTRY"
+        },
+        "text_pointer_writes": [
+          {
+            "mono_ns": 237831384764934,
+            "tid": 128,
+            "state": "0x7ffdefa54780",
+            "config": "0x7fffdd63cb80",
+            "ptr": "0x7ffdefd66280",
+            "label": "Finished",
+            "kind": "TEXT_POINTER_WRITTEN"
+          }
+        ],
+        "returns": [
+          {
+            "mono_ns": 237831385055543,
+            "tid": 128,
+            "state": "0x7ffdefa54780",
+            "flag": "0",
+            "config": "0x7fffdd63cb80",
+            "score": "0",
+            "current": "12",
+            "previous": "7",
+            "label": "Finished",
+            "kind": "RETURN"
+          }
+        ]
+      }
+    ],
+    "all_settlement_records": [
+      {
+        "mono_ns": 237831384057673,
+        "tid": 128,
+        "state": "0x7ffdefa54780",
+        "flag": "0",
+        "config": "0x7fffdd63cb80",
+        "score": "0",
+        "current": "7",
+        "previous": "7",
+        "label": "Finished",
+        "kind": "ENTRY"
+      },
+      {
+        "mono_ns": 237831384764934,
+        "tid": 128,
+        "state": "0x7ffdefa54780",
+        "config": "0x7fffdd63cb80",
+        "ptr": "0x7ffdefd66280",
+        "label": "Finished",
+        "kind": "TEXT_POINTER_WRITTEN"
+      },
+      {
+        "mono_ns": 237831385055543,
+        "tid": 128,
+        "state": "0x7ffdefa54780",
+        "flag": "0",
+        "config": "0x7fffdd63cb80",
+        "score": "0",
+        "current": "12",
+        "previous": "7",
+        "label": "Finished",
+        "kind": "RETURN"
+      }
+    ],
+    "out_of_scope_count": 0,
+    "limitations": [
+      "Vehicle path, initial state and stage are debugger-injected; timings use previous posthoc truth.",
+      "The inferred child component and same-thread ordering do not prove force or natural race completion.",
+      "Setter return does not prove full score reporting or episode termination."
+    ]
+  }
+}
