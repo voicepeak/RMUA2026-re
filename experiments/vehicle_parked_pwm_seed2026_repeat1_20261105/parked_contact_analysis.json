@@ -1,0 +1,331 @@
+{
+  "seed2026_repeat1": {
+    "status": "observed",
+    "vehicle_actor_ids": [
+      "0x7ffdef233580"
+    ],
+    "candidate_child_ids": [
+      "0x7ffdef287b30"
+    ],
+    "hit_count": 65,
+    "matched_actor_or_child_count": 12,
+    "matched_both_count": 12,
+    "matched_hits": [
+      {
+        "mono_s": 218447.163662698,
+        "drone": "0x7fffe57dbd10",
+        "drone_component": "0x7ffdee2a1640",
+        "drone_world_cm": [
+          -2.09606587e-05,
+          0.000137824041,
+          -37.9104881
+        ],
+        "source_actor": "0x7ffdef233580",
+        "source_component": "0x7ffdef287b30",
+        "actor_match": true,
+        "child_match": true,
+        "nearest_tick": {
+          "t": 218447.211671105,
+          "actor": "0x7ffdef233580",
+          "progress_cm": 5029.88184,
+          "speed_field_cm_s": 667.0
+        },
+        "tick_gap_s": 0.04800840700045228
+      },
+      {
+        "mono_s": 218447.220463023,
+        "drone": "0x7fffe57dbd10",
+        "drone_component": "0x7ffdee2a1640",
+        "drone_world_cm": [
+          -2.09606587e-05,
+          0.000137824041,
+          -37.9104881
+        ],
+        "source_actor": "0x7ffdef233580",
+        "source_component": "0x7ffdef287b30",
+        "actor_match": true,
+        "child_match": true,
+        "nearest_tick": {
+          "t": 218447.211671105,
+          "actor": "0x7ffdef233580",
+          "progress_cm": 5029.88184,
+          "speed_field_cm_s": 667.0
+        },
+        "tick_gap_s": 0.008791917993221432
+      },
+      {
+        "mono_s": 218448.120765016,
+        "drone": "0x7fffe57dbd10",
+        "drone_component": "0x7ffdee2a1640",
+        "drone_world_cm": [
+          0.00887039676,
+          0.193851233,
+          -38.215004
+        ],
+        "source_actor": "0x7ffdef233580",
+        "source_component": "0x7ffdef287b30",
+        "actor_match": true,
+        "child_match": true,
+        "nearest_tick": {
+          "t": 218448.058628104,
+          "actor": "0x7ffdef233580",
+          "progress_cm": 5029.88184,
+          "speed_field_cm_s": 667.0
+        },
+        "tick_gap_s": 0.06213691201992333
+      },
+      {
+        "mono_s": 218448.169225549,
+        "drone": "0x7fffe57dbd10",
+        "drone_component": "0x7ffdee2a1640",
+        "drone_world_cm": [
+          0.00887039676,
+          0.193851233,
+          -38.215004
+        ],
+        "source_actor": "0x7ffdef233580",
+        "source_component": "0x7ffdef287b30",
+        "actor_match": true,
+        "child_match": true,
+        "nearest_tick": {
+          "t": 218448.206206708,
+          "actor": "0x7ffdef233580",
+          "progress_cm": 5029.88184,
+          "speed_field_cm_s": 667.0
+        },
+        "tick_gap_s": 0.036981159006245434
+      },
+      {
+        "mono_s": 218448.66924677,
+        "drone": "0x7fffe57dbd10",
+        "drone_component": "0x7ffdee2a1640",
+        "drone_world_cm": [
+          0.00887039676,
+          0.193851233,
+          -38.215004
+        ],
+        "source_actor": "0x7ffdef233580",
+        "source_component": "0x7ffdef287b30",
+        "actor_match": true,
+        "child_match": true,
+        "nearest_tick": {
+          "t": 218448.706867782,
+          "actor": "0x7ffdef233580",
+          "progress_cm": 5029.88184,
+          "speed_field_cm_s": 667.0
+        },
+        "tick_gap_s": 0.03762101198663004
+      },
+      {
+        "mono_s": 218448.719274976,
+        "drone": "0x7fffe57dbd10",
+        "drone_component": "0x7ffdee2a1640",
+        "drone_world_cm": [
+          0.00887039676,
+          0.193851233,
+          -38.215004
+        ],
+        "source_actor": "0x7ffdef233580",
+        "source_component": "0x7ffdef287b30",
+        "actor_match": true,
+        "child_match": true,
+        "nearest_tick": {
+          "t": 218448.706867782,
+          "actor": "0x7ffdef233580",
+          "progress_cm": 5029.88184,
+          "speed_field_cm_s": 667.0
+        },
+        "tick_gap_s": 0.012407194008119404
+      },
+      {
+        "mono_s": 218449.020849833,
+        "drone": "0x7fffe57dbd10",
+        "drone_component": "0x7ffdee2a1640",
+        "drone_world_cm": [
+          0.00887039676,
+          0.193851233,
+          -38.215004
+        ],
+        "source_actor": "0x7ffdef233580",
+        "source_component": "0x7ffdef287b30",
+        "actor_match": true,
+        "child_match": true,
+        "nearest_tick": {
+          "t": 218448.956346271,
+          "actor": "0x7ffdef233580",
+          "progress_cm": 5029.88184,
+          "speed_field_cm_s": 667.0
+        },
+        "tick_gap_s": 0.06450356199638918
+      },
+      {
+        "mono_s": 218449.069457384,
+        "drone": "0x7fffe57dbd10",
+        "drone_component": "0x7ffdee2a1640",
+        "drone_world_cm": [
+          0.00887039676,
+          0.193851233,
+          -38.215004
+        ],
+        "source_actor": "0x7ffdef233580",
+        "source_component": "0x7ffdef287b30",
+        "actor_match": true,
+        "child_match": true,
+        "nearest_tick": {
+          "t": 218449.104374756,
+          "actor": "0x7ffdef233580",
+          "progress_cm": 5029.88184,
+          "speed_field_cm_s": 667.0
+        },
+        "tick_gap_s": 0.03491737198783085
+      },
+      {
+        "mono_s": 218449.372557658,
+        "drone": "0x7fffe57dbd10",
+        "drone_component": "0x7ffdee2a1640",
+        "drone_world_cm": [
+          0.00887039676,
+          0.193851233,
+          -38.215004
+        ],
+        "source_actor": "0x7ffdef233580",
+        "source_component": "0x7ffdef287b30",
+        "actor_match": true,
+        "child_match": true,
+        "nearest_tick": {
+          "t": 218449.354712058,
+          "actor": "0x7ffdef233580",
+          "progress_cm": 5029.88184,
+          "speed_field_cm_s": 667.0
+        },
+        "tick_gap_s": 0.017845599999418482
+      },
+      {
+        "mono_s": 218449.419308301,
+        "drone": "0x7fffe57dbd10",
+        "drone_component": "0x7ffdee2a1640",
+        "drone_world_cm": [
+          0.00887039676,
+          0.193851233,
+          -38.215004
+        ],
+        "source_actor": "0x7ffdef233580",
+        "source_component": "0x7ffdef287b30",
+        "actor_match": true,
+        "child_match": true,
+        "nearest_tick": {
+          "t": 218449.354712058,
+          "actor": "0x7ffdef233580",
+          "progress_cm": 5029.88184,
+          "speed_field_cm_s": 667.0
+        },
+        "tick_gap_s": 0.0645962429989595
+      },
+      {
+        "mono_s": 218450.119528088,
+        "drone": "0x7fffe57dbd10",
+        "drone_component": "0x7ffdee2a1640",
+        "drone_world_cm": [
+          0.00887039676,
+          0.193851233,
+          -38.215004
+        ],
+        "source_actor": "0x7ffdef233580",
+        "source_component": "0x7ffdef287b30",
+        "actor_match": true,
+        "child_match": true,
+        "nearest_tick": {
+          "t": 218450.105012851,
+          "actor": "0x7ffdef233580",
+          "progress_cm": 5029.88184,
+          "speed_field_cm_s": 667.0
+        },
+        "tick_gap_s": 0.014515236980514601
+      },
+      {
+        "mono_s": 218450.16941173,
+        "drone": "0x7fffe57dbd10",
+        "drone_component": "0x7ffdee2a1640",
+        "drone_world_cm": [
+          0.00887039676,
+          0.193851233,
+          -38.215004
+        ],
+        "source_actor": "0x7ffdef233580",
+        "source_component": "0x7ffdef287b30",
+        "actor_match": true,
+        "child_match": true,
+        "nearest_tick": {
+          "t": 218450.105012851,
+          "actor": "0x7ffdef233580",
+          "progress_cm": 5029.88184,
+          "speed_field_cm_s": 667.0
+        },
+        "tick_gap_s": 0.06439887898159213
+      }
+    ],
+    "command_transitions": [
+      {
+        "mono_s": 218446.089044341,
+        "command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "mono_s": 218447.099733662,
+        "command": [
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ]
+      },
+      {
+        "mono_s": 218447.847073616,
+        "command": [
+          0.3,
+          0.3,
+          0.3,
+          0.3
+        ]
+      },
+      {
+        "mono_s": 218448.593907495,
+        "command": [
+          0.4,
+          0.4,
+          0.4,
+          0.4
+        ]
+      },
+      {
+        "mono_s": 218449.341820012,
+        "command": [
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ]
+      },
+      {
+        "mono_s": 218450.090004098,
+        "command": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "limitations": [
+      "stage, path and state gate are debugger interventions; not ordinary race progression",
+      "candidate child inferred from pointer ownership and matching asset transform, not independently typed",
+      "HIT_SOURCE callback argument matches attribute event source but does not establish force or complete physical contact manifold",
+      "debugger changes scheduling; continuously forced state may overwrite terminal state",
+      "path and action timing were designed using prior posthoc observations; controller does not read truth online"
+    ]
+  }
+}

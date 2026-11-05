@@ -1,0 +1,105 @@
+{
+  "runs": {
+    "experiments/vehicle_parked_pwm_pilot_20261105": {
+      "seed": 123,
+      "status": "observed",
+      "hits": 66,
+      "vehicle_actor_and_child_matches": 13,
+      "first_match_after_first_nonzero_command_s": 0.07541047799168155,
+      "first_match_nearest_tick": {
+        "t": 218236.33077308,
+        "actor": "0x7ffdef976780",
+        "progress_cm": 5027.88135,
+        "speed_field_cm_s": 667.0
+      },
+      "first_match_tick_gap_s": 0.014150809991406277,
+      "inside_point_samples": 149,
+      "paired_point_samples": 196
+    },
+    "experiments/vehicle_parked_pwm_seed123_repeat2_20261105": {
+      "seed": 123,
+      "status": "observed",
+      "hits": 66,
+      "vehicle_actor_and_child_matches": 12,
+      "first_match_after_first_nonzero_command_s": 0.038257168023847044,
+      "first_match_nearest_tick": {
+        "t": 218341.591844598,
+        "actor": "0x7ffdef636780",
+        "progress_cm": 5022.17139,
+        "speed_field_cm_s": 667.0
+      },
+      "first_match_tick_gap_s": 0.01692252600332722,
+      "inside_point_samples": 149,
+      "paired_point_samples": 202
+    },
+    "experiments/vehicle_parked_pwm_seed456_repeat1_20261105": {
+      "seed": 456,
+      "status": "observed",
+      "hits": 65,
+      "vehicle_actor_and_child_matches": 12,
+      "first_match_after_first_nonzero_command_s": 0.03431963099865243,
+      "first_match_nearest_tick": {
+        "t": 218376.799297303,
+        "actor": "0x7ffdfc931780",
+        "progress_cm": 5010.01367,
+        "speed_field_cm_s": 1670.00012
+      },
+      "first_match_tick_gap_s": 0.04960060800658539,
+      "inside_point_samples": 63,
+      "paired_point_samples": 69
+    },
+    "experiments/vehicle_parked_pwm_seed456_repeat2_20261105": {
+      "seed": 456,
+      "status": "observed",
+      "hits": 65,
+      "vehicle_actor_and_child_matches": 12,
+      "first_match_after_first_nonzero_command_s": 0.04521724200458266,
+      "first_match_nearest_tick": {
+        "t": 218412.077933833,
+        "actor": "0x7ffdef7a1780",
+        "progress_cm": 5010.01465,
+        "speed_field_cm_s": 1670.00012
+      },
+      "first_match_tick_gap_s": 0.05085215799044818,
+      "inside_point_samples": 61,
+      "paired_point_samples": 67
+    },
+    "experiments/vehicle_parked_pwm_seed2026_repeat1_20261105": {
+      "seed": 2026,
+      "status": "observed",
+      "hits": 65,
+      "vehicle_actor_and_child_matches": 12,
+      "first_match_after_first_nonzero_command_s": 0.06392903599771671,
+      "first_match_nearest_tick": {
+        "t": 218447.211671105,
+        "actor": "0x7ffdef233580",
+        "progress_cm": 5029.88184,
+        "speed_field_cm_s": 667.0
+      },
+      "first_match_tick_gap_s": 0.04800840700045228,
+      "inside_point_samples": 144,
+      "paired_point_samples": 194
+    },
+    "experiments/vehicle_parked_pwm_seed2026_repeat2_20261105": {
+      "seed": 2026,
+      "status": "observed",
+      "hits": 65,
+      "vehicle_actor_and_child_matches": 12,
+      "first_match_after_first_nonzero_command_s": 0.073572516994318,
+      "first_match_nearest_tick": {
+        "t": 218482.457668924,
+        "actor": "0x7ffdf6833800",
+        "progress_cm": 5014.98926,
+        "speed_field_cm_s": 667.0
+      },
+      "first_match_tick_gap_s": 0.014283655997132882,
+      "inside_point_samples": 150,
+      "paired_point_samples": 201
+    }
+  },
+  "limitations": [
+    "one diagnostic parked path, one fixed PWM sequence, debugger interventions",
+    "candidate child is inferred; contact identity from actor/component pointer matching",
+    "idle control only seed 123 once; not a statistical causal estimate"
+  ]
+}
