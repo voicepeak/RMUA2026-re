@@ -1,0 +1,18 @@
+{
+  "run_status": "observed",
+  "seed": 123,
+  "configured_seconds": 60,
+  "counter_samples": 24,
+  "largest_logged_call_counter": 23000,
+  "largest_logged_overlap_counter": 0,
+  "largest_logged_untracked_counter": 0,
+  "logged_overlap_events": 0,
+  "overlap_events": [],
+  "cleanup_exit_code": 0,
+  "limitations": [
+    "Sampled counters are lower bounds; the process may terminate before the next periodic snapshot.",
+    "A 64-bit key hash may collide; local nesting is excluded but counter operations can miss short overlaps.",
+    "Wrapper overlap does not establish simultaneous access to a deque or identify the cause of a past crash.",
+    "The probe itself changes timing; direct non-interposed accesses are not counted."
+  ]
+}

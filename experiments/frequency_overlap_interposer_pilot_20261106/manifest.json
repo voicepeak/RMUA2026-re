@@ -1,0 +1,31 @@
+{
+  "binary_sha256": "5231addfa25ddaa9e4473ea9ac40c9c0bc685174e69cd14bb49159f443b97800",
+  "library_sha256": "69d5ea3302bdd5f20b842ec3d3e84bafcb50ef3649ada42c4d346c9bcd389885",
+  "settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+  "preload_sha256": "18652576162a668c9839a66610d947c94c4ba02dd724e45b043d4896ab170fa2",
+  "runner_sha256": "8f2df12041a9795c5930b6496cf57bfb0a96c14cb6e3364030ac1cf48419de92",
+  "source_sha256": "da2292ec631429236cd42045b2886ee4ccd8ef102c48a61d4b61dc413ec7c1c3",
+  "sensor_probe_sha256": "266167fedcf8d5b3370cac5efa1321281a07981f23af60d22ce374c1e4ee059b",
+  "command_probe_sha256": "038ec8cccffbf21692abfb61202afd357c46312c34e2587d1db3b4d305301d3f",
+  "guard_scope": "three exported frequency functions tracked without serialization; key identity by 64-bit hash",
+  "seed": 123,
+  "seconds": 60,
+  "port": 12805,
+  "container": "rmua-pubprobe-f2619a2fe6c9",
+  "start_wall_ns": 1793901873945272119,
+  "status": "observed",
+  "limitations": [
+    "entry/return overlap does not prove concurrent deque accesses; interposer changes timing; hash collisions possible",
+    "open-loop command sequence; no truth used online",
+    "header ABI and source-to-subscriber pairing require verification",
+    "NullRHI single process"
+  ],
+  "image_id": "sha256:cd46a48cd28c2a9c6345f60227fd1bd50e78c67ef1e98dcddc0e65893771da57",
+  "id": "004f9b22eb58289495ceac7f8ca7fdd0404530c5aaf05846fcff44b8b55b7bd4",
+  "ready_wall_ns": 1793901882155999625,
+  "sensor_clock_exit_code": 0,
+  "pwm_output_exit_code": 0,
+  "commands_exit_code": 0,
+  "cleanup_exit_code": 0,
+  "end_wall_ns": 1793901943439584112
+}
