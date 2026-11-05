@@ -1,0 +1,774 @@
+{
+  "runs": {
+    "experiments/transport_probe_container_pilot_20261105": {
+      "seed": 123,
+      "probe_enabled": true,
+      "status": "observed",
+      "phases": [
+        {
+          "command": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "start_mono_ns": 217788501168522,
+          "end_mono_ns": 217789512386027,
+          "matching_samples": 0,
+          "first_match_after_sender_return_ms": null,
+          "previous_output_already_matched": false
+        },
+        {
+          "command": [
+            0.2,
+            0.2,
+            0.2,
+            0.2
+          ],
+          "start_mono_ns": 217789512386027,
+          "end_mono_ns": 217790259497609,
+          "matching_samples": 72,
+          "first_match_after_sender_return_ms": 32.063393,
+          "previous_output_already_matched": false
+        },
+        {
+          "command": [
+            0.3,
+            0.3,
+            0.3,
+            0.3
+          ],
+          "start_mono_ns": 217790259497609,
+          "end_mono_ns": 217791007336780,
+          "matching_samples": 72,
+          "first_match_after_sender_return_ms": 34.982536,
+          "previous_output_already_matched": false
+        },
+        {
+          "command": [
+            0.4,
+            0.4,
+            0.4,
+            0.4
+          ],
+          "start_mono_ns": 217791007336780,
+          "end_mono_ns": 217791755171899,
+          "matching_samples": 72,
+          "first_match_after_sender_return_ms": 37.011791,
+          "previous_output_already_matched": false
+        },
+        {
+          "command": [
+            0.2,
+            0.2,
+            0.2,
+            0.2
+          ],
+          "start_mono_ns": 217791755171899,
+          "end_mono_ns": 217792503581228,
+          "matching_samples": 71,
+          "first_match_after_sender_return_ms": 39.277942,
+          "previous_output_already_matched": false
+        },
+        {
+          "command": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "start_mono_ns": 217792503581228,
+          "end_mono_ns": 217793494432110,
+          "matching_samples": 95,
+          "first_match_after_sender_return_ms": 40.780606,
+          "previous_output_already_matched": false
+        }
+      ]
+    },
+    "experiments/transport_probe_seed123_repeat2_20261105": {
+      "seed": 123,
+      "probe_enabled": true,
+      "status": "observed",
+      "phases": [
+        {
+          "command": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "start_mono_ns": 217841935895953,
+          "end_mono_ns": 217842947434333,
+          "matching_samples": 0,
+          "first_match_after_sender_return_ms": null,
+          "previous_output_already_matched": false
+        },
+        {
+          "command": [
+            0.2,
+            0.2,
+            0.2,
+            0.2
+          ],
+          "start_mono_ns": 217842947434333,
+          "end_mono_ns": 217843695407632,
+          "matching_samples": 71,
+          "first_match_after_sender_return_ms": 45.100143,
+          "previous_output_already_matched": false
+        },
+        {
+          "command": [
+            0.3,
+            0.3,
+            0.3,
+            0.3
+          ],
+          "start_mono_ns": 217843695407632,
+          "end_mono_ns": 217844444142449,
+          "matching_samples": 71,
+          "first_match_after_sender_return_ms": 47.230643,
+          "previous_output_already_matched": false
+        },
+        {
+          "command": [
+            0.4,
+            0.4,
+            0.4,
+            0.4
+          ],
+          "start_mono_ns": 217844444142449,
+          "end_mono_ns": 217845193697646,
+          "matching_samples": 71,
+          "first_match_after_sender_return_ms": 48.396991,
+          "previous_output_already_matched": false
+        },
+        {
+          "command": [
+            0.2,
+            0.2,
+            0.2,
+            0.2
+          ],
+          "start_mono_ns": 217845193697646,
+          "end_mono_ns": 217845942672151,
+          "matching_samples": 71,
+          "first_match_after_sender_return_ms": 48.866317,
+          "previous_output_already_matched": false
+        },
+        {
+          "command": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "start_mono_ns": 217845942672151,
+          "end_mono_ns": 217846933822448,
+          "matching_samples": 95,
+          "first_match_after_sender_return_ms": 49.854046,
+          "previous_output_already_matched": false
+        }
+      ]
+    },
+    "experiments/transport_probe_seed456_repeat1_20261105": {
+      "seed": 456,
+      "probe_enabled": true,
+      "status": "observed",
+      "phases": [
+        {
+          "command": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "start_mono_ns": 217863483044874,
+          "end_mono_ns": 217864493823536,
+          "matching_samples": 0,
+          "first_match_after_sender_return_ms": null,
+          "previous_output_already_matched": false
+        },
+        {
+          "command": [
+            0.2,
+            0.2,
+            0.2,
+            0.2
+          ],
+          "start_mono_ns": 217864493823536,
+          "end_mono_ns": 217865241973440,
+          "matching_samples": 69,
+          "first_match_after_sender_return_ms": 60.703556,
+          "previous_output_already_matched": false
+        },
+        {
+          "command": [
+            0.3,
+            0.3,
+            0.3,
+            0.3
+          ],
+          "start_mono_ns": 217865241973440,
+          "end_mono_ns": 217865988452163,
+          "matching_samples": 69,
+          "first_match_after_sender_return_ms": 62.594965,
+          "previous_output_already_matched": false
+        },
+        {
+          "command": [
+            0.4,
+            0.4,
+            0.4,
+            0.4
+          ],
+          "start_mono_ns": 217865988452163,
+          "end_mono_ns": 217866734682591,
+          "matching_samples": 74,
+          "first_match_after_sender_return_ms": 16.019975,
+          "previous_output_already_matched": false
+        },
+        {
+          "command": [
+            0.2,
+            0.2,
+            0.2,
+            0.2
+          ],
+          "start_mono_ns": 217866734682591,
+          "end_mono_ns": 217867501629823,
+          "matching_samples": 75,
+          "first_match_after_sender_return_ms": 20.017542,
+          "previous_output_already_matched": false
+        },
+        {
+          "command": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "start_mono_ns": 217867501629823,
+          "end_mono_ns": 217868470251477,
+          "matching_samples": 92,
+          "first_match_after_sender_return_ms": 52.984245,
+          "previous_output_already_matched": false
+        }
+      ]
+    },
+    "experiments/transport_probe_seed456_repeat2_20261105": {
+      "seed": 456,
+      "probe_enabled": true,
+      "status": "observed",
+      "phases": [
+        {
+          "command": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "start_mono_ns": 217885080789243,
+          "end_mono_ns": 217886089866322,
+          "matching_samples": 0,
+          "first_match_after_sender_return_ms": null,
+          "previous_output_already_matched": false
+        },
+        {
+          "command": [
+            0.2,
+            0.2,
+            0.2,
+            0.2
+          ],
+          "start_mono_ns": 217886089866322,
+          "end_mono_ns": 217886837383297,
+          "matching_samples": 70,
+          "first_match_after_sender_return_ms": 51.714039,
+          "previous_output_already_matched": false
+        },
+        {
+          "command": [
+            0.3,
+            0.3,
+            0.3,
+            0.3
+          ],
+          "start_mono_ns": 217886837383297,
+          "end_mono_ns": 217887585863018,
+          "matching_samples": 70,
+          "first_match_after_sender_return_ms": 54.253911,
+          "previous_output_already_matched": false
+        },
+        {
+          "command": [
+            0.4,
+            0.4,
+            0.4,
+            0.4
+          ],
+          "start_mono_ns": 217887585863018,
+          "end_mono_ns": 217888333915539,
+          "matching_samples": 70,
+          "first_match_after_sender_return_ms": 55.711669,
+          "previous_output_already_matched": false
+        },
+        {
+          "command": [
+            0.2,
+            0.2,
+            0.2,
+            0.2
+          ],
+          "start_mono_ns": 217888333915539,
+          "end_mono_ns": 217889083512293,
+          "matching_samples": 70,
+          "first_match_after_sender_return_ms": 57.72479,
+          "previous_output_already_matched": false
+        },
+        {
+          "command": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "start_mono_ns": 217889083512293,
+          "end_mono_ns": 217890074699104,
+          "matching_samples": 94,
+          "first_match_after_sender_return_ms": 58.105866,
+          "previous_output_already_matched": false
+        }
+      ]
+    },
+    "experiments/transport_probe_seed2026_repeat1_20261105": {
+      "seed": 2026,
+      "probe_enabled": true,
+      "status": "observed",
+      "phases": [
+        {
+          "command": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "start_mono_ns": 217906687513093,
+          "end_mono_ns": 217907697688537,
+          "matching_samples": 0,
+          "first_match_after_sender_return_ms": null,
+          "previous_output_already_matched": false
+        },
+        {
+          "command": [
+            0.2,
+            0.2,
+            0.2,
+            0.2
+          ],
+          "start_mono_ns": 217907697688537,
+          "end_mono_ns": 217908446317343,
+          "matching_samples": 70,
+          "first_match_after_sender_return_ms": 49.591397,
+          "previous_output_already_matched": false
+        },
+        {
+          "command": [
+            0.3,
+            0.3,
+            0.3,
+            0.3
+          ],
+          "start_mono_ns": 217908446317343,
+          "end_mono_ns": 217909195172471,
+          "matching_samples": 70,
+          "first_match_after_sender_return_ms": 50.819105,
+          "previous_output_already_matched": false
+        },
+        {
+          "command": [
+            0.4,
+            0.4,
+            0.4,
+            0.4
+          ],
+          "start_mono_ns": 217909195172471,
+          "end_mono_ns": 217909943038406,
+          "matching_samples": 70,
+          "first_match_after_sender_return_ms": 51.950736,
+          "previous_output_already_matched": false
+        },
+        {
+          "command": [
+            0.2,
+            0.2,
+            0.2,
+            0.2
+          ],
+          "start_mono_ns": 217909943038406,
+          "end_mono_ns": 217910690410291,
+          "matching_samples": 70,
+          "first_match_after_sender_return_ms": 54.111706,
+          "previous_output_already_matched": false
+        },
+        {
+          "command": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "start_mono_ns": 217910690410291,
+          "end_mono_ns": 217911680403539,
+          "matching_samples": 94,
+          "first_match_after_sender_return_ms": 56.754957,
+          "previous_output_already_matched": false
+        }
+      ]
+    },
+    "experiments/transport_probe_seed2026_repeat2_20261105": {
+      "seed": 2026,
+      "probe_enabled": true,
+      "status": "observed",
+      "phases": [
+        {
+          "command": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "start_mono_ns": 217928314178861,
+          "end_mono_ns": 217929324752402,
+          "matching_samples": 0,
+          "first_match_after_sender_return_ms": null,
+          "previous_output_already_matched": false
+        },
+        {
+          "command": [
+            0.2,
+            0.2,
+            0.2,
+            0.2
+          ],
+          "start_mono_ns": 217929324752402,
+          "end_mono_ns": 217930072698325,
+          "matching_samples": 72,
+          "first_match_after_sender_return_ms": 34.361967,
+          "previous_output_already_matched": false
+        },
+        {
+          "command": [
+            0.3,
+            0.3,
+            0.3,
+            0.3
+          ],
+          "start_mono_ns": 217930072698325,
+          "end_mono_ns": 217930820446830,
+          "matching_samples": 72,
+          "first_match_after_sender_return_ms": 36.456775,
+          "previous_output_already_matched": false
+        },
+        {
+          "command": [
+            0.4,
+            0.4,
+            0.4,
+            0.4
+          ],
+          "start_mono_ns": 217930820446830,
+          "end_mono_ns": 217931569436626,
+          "matching_samples": 72,
+          "first_match_after_sender_return_ms": 38.704874,
+          "previous_output_already_matched": false
+        },
+        {
+          "command": [
+            0.2,
+            0.2,
+            0.2,
+            0.2
+          ],
+          "start_mono_ns": 217931569436626,
+          "end_mono_ns": 217932317271217,
+          "matching_samples": 71,
+          "first_match_after_sender_return_ms": 39.706082,
+          "previous_output_already_matched": false
+        },
+        {
+          "command": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "start_mono_ns": 217932317271217,
+          "end_mono_ns": 217933306401112,
+          "matching_samples": 95,
+          "first_match_after_sender_return_ms": 41.785792,
+          "previous_output_already_matched": false
+        }
+      ]
+    },
+    "experiments/transport_control_seed123_20261105": {
+      "seed": 123,
+      "probe_enabled": false,
+      "status": "observed",
+      "phases": [
+        {
+          "command": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "start_mono_ns": 218070496014511,
+          "end_mono_ns": 218071508217695,
+          "matching_samples": 0,
+          "first_match_after_sender_return_ms": null,
+          "previous_output_already_matched": false
+        },
+        {
+          "command": [
+            0.2,
+            0.2,
+            0.2,
+            0.2
+          ],
+          "start_mono_ns": 218071508217695,
+          "end_mono_ns": 218072257332097,
+          "matching_samples": 70,
+          "first_match_after_sender_return_ms": 58.61664,
+          "previous_output_already_matched": false
+        },
+        {
+          "command": [
+            0.3,
+            0.3,
+            0.3,
+            0.3
+          ],
+          "start_mono_ns": 218072257332097,
+          "end_mono_ns": 218073006575013,
+          "matching_samples": 70,
+          "first_match_after_sender_return_ms": 49.534537,
+          "previous_output_already_matched": false
+        },
+        {
+          "command": [
+            0.4,
+            0.4,
+            0.4,
+            0.4
+          ],
+          "start_mono_ns": 218073006575013,
+          "end_mono_ns": 218073755520135,
+          "matching_samples": 70,
+          "first_match_after_sender_return_ms": 50.26182,
+          "previous_output_already_matched": false
+        },
+        {
+          "command": [
+            0.2,
+            0.2,
+            0.2,
+            0.2
+          ],
+          "start_mono_ns": 218073755520135,
+          "end_mono_ns": 218074502789078,
+          "matching_samples": 69,
+          "first_match_after_sender_return_ms": 61.343545,
+          "previous_output_already_matched": false
+        },
+        {
+          "command": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "start_mono_ns": 218074502789078,
+          "end_mono_ns": 218075492919238,
+          "matching_samples": 94,
+          "first_match_after_sender_return_ms": 53.927355,
+          "previous_output_already_matched": false
+        }
+      ]
+    },
+    "experiments/transport_control_seed456_20261105": {
+      "seed": 456,
+      "probe_enabled": false,
+      "status": "observed",
+      "phases": [
+        {
+          "command": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "start_mono_ns": 218091985935449,
+          "end_mono_ns": 218092996751092,
+          "matching_samples": 0,
+          "first_match_after_sender_return_ms": null,
+          "previous_output_already_matched": false
+        },
+        {
+          "command": [
+            0.2,
+            0.2,
+            0.2,
+            0.2
+          ],
+          "start_mono_ns": 218092996751092,
+          "end_mono_ns": 218093743124903,
+          "matching_samples": 72,
+          "first_match_after_sender_return_ms": 29.217251,
+          "previous_output_already_matched": false
+        },
+        {
+          "command": [
+            0.3,
+            0.3,
+            0.3,
+            0.3
+          ],
+          "start_mono_ns": 218093743124903,
+          "end_mono_ns": 218094490676986,
+          "matching_samples": 72,
+          "first_match_after_sender_return_ms": 32.88236,
+          "previous_output_already_matched": false
+        },
+        {
+          "command": [
+            0.4,
+            0.4,
+            0.4,
+            0.4
+          ],
+          "start_mono_ns": 218094490676986,
+          "end_mono_ns": 218095238451341,
+          "matching_samples": 72,
+          "first_match_after_sender_return_ms": 35.250548,
+          "previous_output_already_matched": false
+        },
+        {
+          "command": [
+            0.2,
+            0.2,
+            0.2,
+            0.2
+          ],
+          "start_mono_ns": 218095238451341,
+          "end_mono_ns": 218095986787105,
+          "matching_samples": 72,
+          "first_match_after_sender_return_ms": 37.532937,
+          "previous_output_already_matched": false
+        },
+        {
+          "command": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "start_mono_ns": 218095986787105,
+          "end_mono_ns": 218096977336384,
+          "matching_samples": 96,
+          "first_match_after_sender_return_ms": 39.151669,
+          "previous_output_already_matched": false
+        }
+      ]
+    },
+    "experiments/transport_control_seed2026_20261105": {
+      "seed": 2026,
+      "probe_enabled": false,
+      "status": "observed",
+      "phases": [
+        {
+          "command": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "start_mono_ns": 218113559931415,
+          "end_mono_ns": 218114571045999,
+          "matching_samples": 0,
+          "first_match_after_sender_return_ms": null,
+          "previous_output_already_matched": false
+        },
+        {
+          "command": [
+            0.2,
+            0.2,
+            0.2,
+            0.2
+          ],
+          "start_mono_ns": 218114571045999,
+          "end_mono_ns": 218115319160800,
+          "matching_samples": 72,
+          "first_match_after_sender_return_ms": 36.575974,
+          "previous_output_already_matched": false
+        },
+        {
+          "command": [
+            0.3,
+            0.3,
+            0.3,
+            0.3
+          ],
+          "start_mono_ns": 218115319160800,
+          "end_mono_ns": 218116068140143,
+          "matching_samples": 72,
+          "first_match_after_sender_return_ms": 38.353685,
+          "previous_output_already_matched": false
+        },
+        {
+          "command": [
+            0.4,
+            0.4,
+            0.4,
+            0.4
+          ],
+          "start_mono_ns": 218116068140143,
+          "end_mono_ns": 218116816561245,
+          "matching_samples": 71,
+          "first_match_after_sender_return_ms": 39.319619,
+          "previous_output_already_matched": false
+        },
+        {
+          "command": [
+            0.2,
+            0.2,
+            0.2,
+            0.2
+          ],
+          "start_mono_ns": 218116816561245,
+          "end_mono_ns": 218117564430471,
+          "matching_samples": 71,
+          "first_match_after_sender_return_ms": 40.903041,
+          "previous_output_already_matched": false
+        },
+        {
+          "command": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "start_mono_ns": 218117564430471,
+          "end_mono_ns": 218118555602364,
+          "matching_samples": 95,
+          "first_match_after_sender_return_ms": 43.027404,
+          "previous_output_already_matched": false
+        }
+      ]
+    }
+  },
+  "limitations": [
+    "sender time follows rospy publish return; subscriber time is callback arrival",
+    "output match is correlational, not proof of actuation or physical response",
+    "observers and repeated commands alter scheduling; small unpaired samples do not establish instrumentation causality"
+  ]
+}

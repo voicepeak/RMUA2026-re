@@ -1,0 +1,151 @@
+{
+  "evidence_id": "ev_973adbf0e4ccf263a1fde36aabe78b2118a0e8340f3ce5cde2e7d119d8ba186a",
+  "subject": {
+    "name": "libairsimros.so",
+    "digest": {
+      "sha256": "69d5ea3302bdd5f20b842ec3d3e84bafcb50ef3649ada42c4d346c9bcd389885"
+    },
+    "local_path": "/home/tianbot/RUMA-by-helinjun/main/simulator/simulator_12.0.0.5/Build/LinuxNoEditor/RMUA/Plugins/AirSimROS/Binaries/Linux/libairsimros.so",
+    "format": "elf",
+    "architecture": "x86_64"
+  },
+  "provider": {
+    "id": "rea-workflow",
+    "name": "REA composed investigation workflow",
+    "version": "1"
+  },
+  "analysis_profile": {
+    "provider": {
+      "id": "rea-workflow",
+      "name": "REA composed investigation workflow",
+      "version": "1"
+    },
+    "parameters": {
+      "upstream_analysis_profile": {
+        "provider": {
+          "id": "ghidra",
+          "name": "Ghidra",
+          "version": "12.1.2"
+        },
+        "parameters": {
+          "target_kind": "executable",
+          "target_format": "elf",
+          "architecture": "x86_64",
+          "available_architectures": [
+            "x86_64"
+          ],
+          "import_mode": "ephemeral-source-immutable",
+          "annotation_policy": "atomic-function-entry-metadata-v1",
+          "load_image_observations": "source-mappings-entry-context-v2",
+          "function_body_evidence": "complete-inclusive-ranges-v1",
+          "function_references": "complete-body-and-entry-reference-manager-v2",
+          "call_relationship_coverage": "function-body-call-coverage-v5",
+          "function_dossier_coverage": "observed-facets-and-call-relationships-v1",
+          "string_inventory_evidence": "defined-data-coverage-v1",
+          "location_resolution": "explicit-address-exact-entry-symbol-first-v3",
+          "procedure_file_offset_resolution": "address-first-unique-target-source-mapping-v2",
+          "instruction_flow_evidence": "decoded-return-pcode-v1",
+          "instruction_references": "exact-address-incoming-without-synthetic-entry-v2",
+          "function_boundary_observations": "ghidra-function-boundary-limitations-v4",
+          "no_return_repair": "returning-imports-decoded-return-v2",
+          "process_launch": "inspected-jvm-launch-support-v1",
+          "jump_table_evidence": "typed-case-default-blocks-v1",
+          "decompiler_jump_loads": true,
+          "loader": "auto-from-header",
+          "language_id": "auto-from-header",
+          "compiler_spec_id": "auto-default",
+          "analyzer_preset": "ghidra-default",
+          "function_coordinate_context": {
+            "kind": "native-function-coordinate-context-v1",
+            "selected_image": null,
+            "mapping_sha256": "55a7964dc0bcdf067484a281c658e6ca8457a49405e0ea9dbd080366ee4c3198"
+          }
+        },
+        "digest": "47c5e480bedc462bcbe2d1da51ce9564f312eb29dca3dd6c8adae30e01c0fc59"
+      },
+      "source_limitations": "provider-operation-caveats-v1",
+      "workflow_revision": 3
+    },
+    "digest": "e986aa11fd7f8340a428e927acae1a9a5038342d96778599da5069b8bb05873c"
+  },
+  "predicate_type": "rea.analysis",
+  "operation": "batch_decompile",
+  "parameters": {
+    "addresses": [
+      "0x28acc1",
+      "0x28c617",
+      "0x2862f0"
+    ]
+  },
+  "raw_result": null,
+  "normalized_result": {
+    "items": [
+      {
+        "address": "0x28acc1",
+        "procedure": {
+          "status": "resolved",
+          "address": "0x28acc1",
+          "name": "airsim_ros::PublishIMU"
+        },
+        "status": "ok",
+        "pseudocode": "\n/* airsim_ros::PublishIMU(ros::TimerEvent const&) */\n\nvoid airsim_ros::PublishIMU(TimerEvent *param_1)\n\n{\n  map<std::__cxx11::string,ros::Publisher,std::less<std::__cxx11::string>,std::allocator<std::pair<std::__cxx11::string_const,ros::Publisher>>>\n  *this;\n  code *pcVar1;\n  long lVar2;\n  undefined8 uVar3;\n  undefined8 uVar4;\n  Publisher *pPVar5;\n  ulong *puVar6;\n  long in_FS_OFFSET;\n  allocator local_1c9;\n  __shared_ptr<airsim_ros::Command,(__gnu_cxx::_Lock_policy)2> local_1c8 [16];\n  __shared_ptr<airsim_ros::GET_IMU_DATA_Result,(__gnu_cxx::_Lock_policy)2> local_1b8 [16];\n  undefined8 local_1a8 [2];\n  string local_198 [32];\n  string local_178 [4];\n  undefined8 local_174;\n  double local_148;\n  double local_140;\n  double local_138;\n  double local_130;\n  double local_e0;\n  double local_d8;\n  double local_d0;\n  double local_80;\n  double local_78;\n  double local_70;\n  long local_20;\n  \n  local_20 = *(long *)(in_FS_OFFSET + 0x28);\n  this = (map<std::__cxx11::string,ros::Publisher,std::less<std::__cxx11::string>,std::allocator<std::pair<std::__cxx11::string_const,ros::Publisher>>>\n          *)(node_instance + 0x20);\n  std::allocator<char>::allocator();\n  std::__cxx11::string::string(local_178,\"imu\",(allocator *)local_1a8);\n  lVar2 = std::\n          map<std::__cxx11::string,ros::Publisher,std::less<std::__cxx11::string>,std::allocator<std::pair<std::__cxx11::string_const,ros::Publisher>>>\n          ::count(this,local_178);\n  std::__cxx11::string::~string(local_178);\n  std::allocator<char>::~allocator((allocator<char> *)local_1a8);\n  if (lVar2 != 0) {\n    local_1a8[0] = 0;\n    std::make_shared<airsim_ros::Command,char_const*const&,decltype(nullptr)>\n              ((char **)local_1c8,(_func_decltype_nullptr **)&CMD_GET_IMU_DATA);\n    std::make_shared<airsim_ros::GET_IMU_DATA_Result>();\n    pcVar1 = *(code **)(node_instance + 0x2940);\n    uVar3 = std::__shared_ptr<airsim_ros::GET_IMU_DATA_Result,(__gnu_cxx::_Lock_policy)2>::get\n                      (local_1b8);\n    uVar4 = std::__shared_ptr<airsim_ros::Command,(__gnu_cxx::_Lock_policy)2>::get(local_1c8);\n    (*pcVar1)(uVar4,uVar3);\n    sensor_msgs::Imu_<std::allocator<void>>::Imu_((Imu_<std::allocator<void>> *)local_178);\n    std::allocator<char>::allocator();\n    std::__cxx11::string::string(local_198,\"imu\",&local_1c9);\n    pPVar5 = (Publisher *)\n             std::\n             map<std::__cxx11::string,ros::Publisher,std::less<std::__cxx11::string>,std::allocator<std::pair<std::__cxx11::string_const,ros::Publisher>>>\n             ::operator[]((map<std::__cxx11::string,ros::Publisher,std::less<std::__cxx11::string>,std::allocator<std::pair<std::__cxx11::string_const,ros::Publisher>>>\n                           *)(node_instance + 0x20),local_198);\n    ros::Publisher::Publisher((Publisher *)local_1a8,pPVar5);\n    std::__cxx11::string::~string(local_198);\n    std::allocator<char>::~allocator((allocator<char> *)&local_1c9);\n    puVar6 = (ulong *)std::\n                      __shared_ptr_access<airsim_ros::GET_IMU_DATA_Result,(__gnu_cxx::_Lock_policy)2,false,false>\n                      ::operator->((__shared_ptr_access<airsim_ros::GET_IMU_DATA_Result,(__gnu_cxx::_Lock_policy)2,false,false>\n                                    *)local_1b8);\n    local_174 = airsim_timestamp_to_ros(*puVar6);\n    lVar2 = std::\n            __shared_ptr_access<airsim_ros::GET_IMU_DATA_Result,(__gnu_cxx::_Lock_policy)2,false,false>\n            ::operator->((__shared_ptr_access<airsim_ros::GET_IMU_DATA_Result,(__gnu_cxx::_Lock_policy)2,false,false>\n                          *)local_1b8);\n    local_148 = (double)*(float *)(lVar2 + 8);\n    lVar2 = std::\n            __shared_ptr_access<airsim_ros::GET_IMU_DATA_Result,(__gnu_cxx::_Lock_policy)2,false,false>\n            ::operator->((__shared_ptr_access<airsim_ros::GET_IMU_DATA_Result,(__gnu_cxx::_Lock_policy)2,false,false>\n                          *)local_1b8);\n    local_140 = (double)*(float *)(lVar2 + 0xc);\n    lVar2 = std::\n            __shared_ptr_access<airsim_ros::GET_IMU_DATA_Result,(__gnu_cxx::_Lock_policy)2,false,false>\n            ::operator->((__shared_ptr_access<airsim_ros::GET_IMU_DATA_Result,(__gnu_cxx::_Lock_policy)2,false,false>\n                          *)local_1b8);\n    local_138 = (double)*(float *)(lVar2 + 0x10);\n    lVar2 = std::\n            __shared_ptr_access<airsim_ros::GET_IMU_DATA_Result,(__gnu_cxx::_Lock_policy)2,false,false>\n            ::operator->((__shared_ptr_access<airsim_ros::GET_IMU_DATA_Result,(__gnu_cxx::_Lock_policy)2,false,false>\n                          *)local_1b8);\n    local_130 = (double)*(float *)(lVar2 + 0x14);\n    lVar2 = std::\n            __shared_ptr_access<airsim_ros::GET_IMU_DATA_Result,(__gnu_cxx::_Lock_policy)2,false,false>\n            ::operator->((__shared_ptr_access<airsim_ros::GET_IMU_DATA_Result,(__gnu_cxx::_Lock_policy)2,false,false>\n                          *)local_1b8);\n    local_e0 = (double)*(float *)(lVar2 + 0x24);\n    lVar2 = std::\n            __shared_ptr_access<airsim_ros::GET_IMU_DATA_Result,(__gnu_cxx::_Lock_policy)2,false,false>\n            ::operator->((__shared_ptr_access<airsim_ros::GET_IMU_DATA_Result,(__gnu_cxx::_Lock_policy)2,false,false>\n                          *)local_1b8);\n    local_d8 = (double)*(float *)(lVar2 + 0x28);\n    lVar2 = std::\n            __shared_ptr_access<airsim_ros::GET_IMU_DATA_Result,(__gnu_cxx::_Lock_policy)2,false,false>\n            ::operator->((__shared_ptr_access<airsim_ros::GET_IMU_DATA_Result,(__gnu_cxx::_Lock_policy)2,false,false>\n                          *)local_1b8);\n    local_d0 = (double)*(float *)(lVar2 + 0x2c);\n    lVar2 = std::\n            __shared_ptr_access<airsim_ros::GET_IMU_DATA_Result,(__gnu_cxx::_Lock_policy)2,false,false>\n            ::operator->((__shared_ptr_access<airsim_ros::GET_IMU_DATA_Result,(__gnu_cxx::_Lock_policy)2,false,false>\n                          *)local_1b8);\n    local_80 = (double)*(float *)(lVar2 + 0x18);\n    lVar2 = std::\n            __shared_ptr_access<airsim_ros::GET_IMU_DATA_Result,(__gnu_cxx::_Lock_policy)2,false,false>\n            ::operator->((__shared_ptr_access<airsim_ros::GET_IMU_DATA_Result,(__gnu_cxx::_Lock_policy)2,false,false>\n                          *)local_1b8);\n    local_78 = (double)*(float *)(lVar2 + 0x1c);\n    lVar2 = std::\n            __shared_ptr_access<airsim_ros::GET_IMU_DATA_Result,(__gnu_cxx::_Lock_policy)2,false,false>\n            ::operator->((__shared_ptr_access<airsim_ros::GET_IMU_DATA_Result,(__gnu_cxx::_Lock_policy)2,false,false>\n                          *)local_1b8);\n    local_70 = (double)*(float *)(lVar2 + 0x20);\n    ros::Publisher::publish<sensor_msgs::Imu_<std::allocator<void>>>\n              ((Publisher *)local_1a8,(Imu_ *)local_178);\n    std::allocator<char>::allocator();\n    std::__cxx11::string::string(local_198,\"imu\",&local_1c9);\n    record_frequency_data(local_198);\n    std::__cxx11::string::~string(local_198);\n    std::allocator<char>::~allocator((allocator<char> *)&local_1c9);\n    ros::Publisher::~Publisher((Publisher *)local_1a8);\n    sensor_msgs::Imu_<std::allocator<void>>::~Imu_((Imu_<std::allocator<void>> *)local_178);\n    std::shared_ptr<airsim_ros::GET_IMU_DATA_Result>::~shared_ptr\n              ((shared_ptr<airsim_ros::GET_IMU_DATA_Result> *)local_1b8);\n    std::shared_ptr<airsim_ros::Command>::~shared_ptr((shared_ptr<airsim_ros::Command> *)local_1c8);\n  }\n  if (local_20 != *(long *)(in_FS_OFFSET + 0x28)) {\n                    /* WARNING: Subroutine does not return */\n    __stack_chk_fail();\n  }\n  return;\n}\n\n"
+      },
+      {
+        "address": "0x28c617",
+        "procedure": {
+          "status": "resolved",
+          "address": "0x28c617",
+          "name": "airsim_ros::PublishRotorPWM"
+        },
+        "status": "ok",
+        "pseudocode": "\n/* airsim_ros::PublishRotorPWM(ros::TimerEvent const&) */\n\nvoid airsim_ros::PublishRotorPWM(TimerEvent *param_1)\n\n{\n  map<std::__cxx11::string,ros::Publisher,std::less<std::__cxx11::string>,std::allocator<std::pair<std::__cxx11::string_const,ros::Publisher>>>\n  *this;\n  code *pcVar1;\n  long lVar2;\n  undefined8 uVar3;\n  undefined8 uVar4;\n  Publisher *pPVar5;\n  ulong *puVar6;\n  float *pfVar7;\n  long in_FS_OFFSET;\n  allocator local_e9;\n  __shared_ptr<airsim_ros::Command,(__gnu_cxx::_Lock_policy)2> local_e8 [16];\n  __shared_ptr<airsim_ros::GET_ROTOR_PWM_Result,(__gnu_cxx::_Lock_policy)2> local_d8 [16];\n  Publisher local_c8 [16];\n  __shared_ptr<airsim_ros::Command,(__gnu_cxx::_Lock_policy)2> local_b8 [16];\n  undefined8 local_a8 [2];\n  string local_98 [32];\n  string local_78 [4];\n  undefined8 local_74;\n  double local_48;\n  double local_40;\n  double local_38;\n  double local_30;\n  long local_20;\n  \n  local_20 = *(long *)(in_FS_OFFSET + 0x28);\n  this = (map<std::__cxx11::string,ros::Publisher,std::less<std::__cxx11::string>,std::allocator<std::pair<std::__cxx11::string_const,ros::Publisher>>>\n          *)(node_instance + 0x20);\n  std::allocator<char>::allocator();\n  std::__cxx11::string::string(local_78,\"rotor_pwm\",(allocator *)local_a8);\n  lVar2 = std::\n          map<std::__cxx11::string,ros::Publisher,std::less<std::__cxx11::string>,std::allocator<std::pair<std::__cxx11::string_const,ros::Publisher>>>\n          ::count(this,local_78);\n  std::__cxx11::string::~string(local_78);\n  std::allocator<char>::~allocator((allocator<char> *)local_a8);\n  if (lVar2 != 0) {\n    local_a8[0] = 0;\n    std::make_shared<airsim_ros::Command,char_const*const&,decltype(nullptr)>\n              ((char **)local_e8,(_func_decltype_nullptr **)&CMD_GET_ROTOR_PWM);\n    std::make_shared<airsim_ros::GET_ROTOR_PWM_Result>();\n    pcVar1 = *(code **)(node_instance + 0x2940);\n    uVar3 = std::__shared_ptr<airsim_ros::GET_ROTOR_PWM_Result,(__gnu_cxx::_Lock_policy)2>::get\n                      (local_d8);\n    uVar4 = std::__shared_ptr<airsim_ros::Command,(__gnu_cxx::_Lock_policy)2>::get(local_e8);\n    (*pcVar1)(uVar4,uVar3);\n    RotorPWM_<std::allocator<void>>::RotorPWM_((RotorPWM_<std::allocator<void>> *)local_78);\n    std::allocator<char>::allocator();\n    std::__cxx11::string::string(local_98,\"rotor_pwm\",(allocator *)local_a8);\n    pPVar5 = (Publisher *)\n             std::\n             map<std::__cxx11::string,ros::Publisher,std::less<std::__cxx11::string>,std::allocator<std::pair<std::__cxx11::string_const,ros::Publisher>>>\n             ::operator[]((map<std::__cxx11::string,ros::Publisher,std::less<std::__cxx11::string>,std::allocator<std::pair<std::__cxx11::string_const,ros::Publisher>>>\n                           *)(node_instance + 0x20),local_98);\n    ros::Publisher::Publisher(local_c8,pPVar5);\n    std::__cxx11::string::~string(local_98);\n    std::allocator<char>::~allocator((allocator<char> *)local_a8);\n    local_a8[0] = 0;\n    std::make_shared<airsim_ros::Command,char_const*const&,decltype(nullptr)>\n              ((char **)local_b8,(_func_decltype_nullptr **)&CMD_GET_IMU_DATA);\n    std::make_shared<airsim_ros::GET_IMU_DATA_Result>();\n    pcVar1 = *(code **)(node_instance + 0x2940);\n    uVar3 = std::__shared_ptr<airsim_ros::GET_IMU_DATA_Result,(__gnu_cxx::_Lock_policy)2>::get\n                      ((__shared_ptr<airsim_ros::GET_IMU_DATA_Result,(__gnu_cxx::_Lock_policy)2> *)\n                       local_a8);\n    uVar4 = std::__shared_ptr<airsim_ros::Command,(__gnu_cxx::_Lock_policy)2>::get(local_b8);\n    (*pcVar1)(uVar4,uVar3);\n    puVar6 = (ulong *)std::\n                      __shared_ptr_access<airsim_ros::GET_IMU_DATA_Result,(__gnu_cxx::_Lock_policy)2,false,false>\n                      ::operator->((__shared_ptr_access<airsim_ros::GET_IMU_DATA_Result,(__gnu_cxx::_Lock_policy)2,false,false>\n                                    *)local_a8);\n    local_74 = airsim_timestamp_to_ros(*puVar6);\n    pfVar7 = (float *)std::\n                      __shared_ptr_access<airsim_ros::GET_ROTOR_PWM_Result,(__gnu_cxx::_Lock_policy)2,false,false>\n                      ::operator->((__shared_ptr_access<airsim_ros::GET_ROTOR_PWM_Result,(__gnu_cxx::_Lock_policy)2,false,false>\n                                    *)local_d8);\n    local_48 = (double)*pfVar7;\n    lVar2 = std::\n            __shared_ptr_access<airsim_ros::GET_ROTOR_PWM_Result,(__gnu_cxx::_Lock_policy)2,false,false>\n            ::operator->((__shared_ptr_access<airsim_ros::GET_ROTOR_PWM_Result,(__gnu_cxx::_Lock_policy)2,false,false>\n                          *)local_d8);\n    local_40 = (double)*(float *)(lVar2 + 4);\n    lVar2 = std::\n            __shared_ptr_access<airsim_ros::GET_ROTOR_PWM_Result,(__gnu_cxx::_Lock_policy)2,false,false>\n            ::operator->((__shared_ptr_access<airsim_ros::GET_ROTOR_PWM_Result,(__gnu_cxx::_Lock_policy)2,false,false>\n                          *)local_d8);\n    local_38 = (double)*(float *)(lVar2 + 8);\n    lVar2 = std::\n            __shared_ptr_access<airsim_ros::GET_ROTOR_PWM_Result,(__gnu_cxx::_Lock_policy)2,false,false>\n            ::operator->((__shared_ptr_access<airsim_ros::GET_ROTOR_PWM_Result,(__gnu_cxx::_Lock_policy)2,false,false>\n                          *)local_d8);\n    local_30 = (double)*(float *)(lVar2 + 0xc);\n    ros::Publisher::publish<airsim_ros::RotorPWM_<std::allocator<void>>>\n              (local_c8,(RotorPWM_ *)local_78);\n    std::allocator<char>::allocator();\n    std::__cxx11::string::string(local_98,\"rotor_pwm\",&local_e9);\n    record_frequency_data(local_98);\n    std::__cxx11::string::~string(local_98);\n    std::allocator<char>::~allocator((allocator<char> *)&local_e9);\n    if (*(char *)(node_instance + 0x2938) != '\\0') {\n      *(float *)(node_instance + 0x2930) =\n           (float)(local_30 + local_48 + local_40 + local_38 +\n                  (double)*(float *)(node_instance + 0x2930));\n      *(int *)(node_instance + 0x2934) = *(int *)(node_instance + 0x2934) + 4;\n    }\n    std::shared_ptr<airsim_ros::GET_IMU_DATA_Result>::~shared_ptr\n              ((shared_ptr<airsim_ros::GET_IMU_DATA_Result> *)local_a8);\n    std::shared_ptr<airsim_ros::Command>::~shared_ptr((shared_ptr<airsim_ros::Command> *)local_b8);\n    ros::Publisher::~Publisher(local_c8);\n    RotorPWM_<std::allocator<void>>::~RotorPWM_((RotorPWM_<std::allocator<void>> *)local_78);\n    std::shared_ptr<airsim_ros::GET_ROTOR_PWM_Result>::~shared_ptr\n              ((shared_ptr<airsim_ros::GET_ROTOR_PWM_Result> *)local_d8);\n    std::shared_ptr<airsim_ros::Command>::~shared_ptr((shared_ptr<airsim_ros::Command> *)local_e8);\n  }\n  if (local_20 != *(long *)(in_FS_OFFSET + 0x28)) {\n                    /* WARNING: Subroutine does not return */\n    __stack_chk_fail();\n  }\n  return;\n}\n\n"
+      },
+      {
+        "address": "0x2862f0",
+        "procedure": {
+          "status": "resolved",
+          "address": "0x2862f0",
+          "name": "airsim_ros::commands_impl::ROTOR_PWM_Callback"
+        },
+        "status": "ok",
+        "pseudocode": "\n/* airsim_ros::commands_impl::ROTOR_PWM_Callback(boost::shared_ptr<airsim_ros::RotorPWM_<std::allocator<void>\n   > const> const&) */\n\nvoid airsim_ros::commands_impl::ROTOR_PWM_Callback(shared_ptr *param_1)\n\n{\n  double dVar1;\n  long lVar2;\n  float *pfVar3;\n  long in_FS_OFFSET;\n  undefined8 local_58 [2];\n  string local_48 [40];\n  long local_20;\n  \n  local_20 = *(long *)(in_FS_OFFSET + 0x28);\n  std::allocator<char>::allocator();\n  std::__cxx11::string::string(local_48,\"rotor_pwm_cmd\",(allocator *)local_58);\n  record_frequency_data(local_48);\n  std::__cxx11::string::~string(local_48);\n  std::allocator<char>::~allocator((allocator<char> *)local_58);\n  local_58[0] = ros::Time::now();\n  lVar2 = ros::TimeBase<ros::Time,ros::Duration>::toNSec\n                    ((TimeBase<ros::Time,ros::Duration> *)local_58);\n  if (4000000.0 <=\n      (double)(ulong)(lVar2 - ROTOR_PWM_Callback(boost::shared_ptr<airsim_ros::RotorPWM_<std::allocator<void>>const>const&)\n                              ::utc_pre)) {\n    ROTOR_PWM_Callback(boost::shared_ptr<airsim_ros::RotorPWM_<std::allocator<void>>const>const&)::\n    utc_pre = lVar2;\n    std::make_shared<airsim_ros::ROTOR_PWM_Params>();\n    lVar2 = boost::shared_ptr<airsim_ros::RotorPWM_<std::allocator<void>>const>::operator->\n                      ((shared_ptr<airsim_ros::RotorPWM_<std::allocator<void>>const> *)param_1);\n    dVar1 = *(double *)(lVar2 + 0x30);\n    pfVar3 = (float *)std::\n                      __shared_ptr_access<airsim_ros::ROTOR_PWM_Params,(__gnu_cxx::_Lock_policy)2,false,false>\n                      ::operator->((__shared_ptr_access<airsim_ros::ROTOR_PWM_Params,(__gnu_cxx::_Lock_policy)2,false,false>\n                                    *)local_58);\n    *pfVar3 = (float)dVar1;\n    lVar2 = boost::shared_ptr<airsim_ros::RotorPWM_<std::allocator<void>>const>::operator->\n                      ((shared_ptr<airsim_ros::RotorPWM_<std::allocator<void>>const> *)param_1);\n    dVar1 = *(double *)(lVar2 + 0x38);\n    lVar2 = std::\n            __shared_ptr_access<airsim_ros::ROTOR_PWM_Params,(__gnu_cxx::_Lock_policy)2,false,false>\n            ::operator->((__shared_ptr_access<airsim_ros::ROTOR_PWM_Params,(__gnu_cxx::_Lock_policy)2,false,false>\n                          *)local_58);\n    *(float *)(lVar2 + 4) = (float)dVar1;\n    lVar2 = boost::shared_ptr<airsim_ros::RotorPWM_<std::allocator<void>>const>::operator->\n                      ((shared_ptr<airsim_ros::RotorPWM_<std::allocator<void>>const> *)param_1);\n    dVar1 = *(double *)(lVar2 + 0x40);\n    lVar2 = std::\n            __shared_ptr_access<airsim_ros::ROTOR_PWM_Params,(__gnu_cxx::_Lock_policy)2,false,false>\n            ::operator->((__shared_ptr_access<airsim_ros::ROTOR_PWM_Params,(__gnu_cxx::_Lock_policy)2,false,false>\n                          *)local_58);\n    *(float *)(lVar2 + 8) = (float)dVar1;\n    lVar2 = boost::shared_ptr<airsim_ros::RotorPWM_<std::allocator<void>>const>::operator->\n                      ((shared_ptr<airsim_ros::RotorPWM_<std::allocator<void>>const> *)param_1);\n    dVar1 = *(double *)(lVar2 + 0x48);\n    lVar2 = std::\n            __shared_ptr_access<airsim_ros::ROTOR_PWM_Params,(__gnu_cxx::_Lock_policy)2,false,false>\n            ::operator->((__shared_ptr_access<airsim_ros::ROTOR_PWM_Params,(__gnu_cxx::_Lock_policy)2,false,false>\n                          *)local_58);\n    *(float *)(lVar2 + 0xc) = (float)dVar1;\n    std::shared_ptr<airsim_ros::ROTOR_PWM_Params>::operator=\n              ((shared_ptr<airsim_ros::ROTOR_PWM_Params> *)(node_instance + 0x1b0),\n               (shared_ptr *)local_58);\n    std::shared_ptr<airsim_ros::ROTOR_PWM_Params>::~shared_ptr\n              ((shared_ptr<airsim_ros::ROTOR_PWM_Params> *)local_58);\n  }\n  if (local_20 != *(long *)(in_FS_OFFSET + 0x28)) {\n                    /* WARNING: Subroutine does not return */\n    __stack_chk_fail();\n  }\n  return;\n}\n\n"
+      }
+    ],
+    "total": 3,
+    "succeeded": 3,
+    "failed": 0
+  },
+  "confidence": "derived",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Derived by an REA composed workflow.",
+    "Ghidra (ghidra 12.1.2) address_name, procedure_address, procedure_pseudo_code: Cancelling an active Ghidra request terminates its ephemeral database and discards session annotations. The selected target remains open; the next provider query imports the original artifact again.",
+    "Ghidra (ghidra 12.1.2) address_name, procedure_address, procedure_pseudo_code: Default-space addresses use lowercase 0x-prefixed hexadecimal; other address spaces use <percent-encoded-space>:0x<hex>.",
+    "Ghidra (ghidra 12.1.2) address_name, procedure_address, procedure_pseudo_code: The imported Program and temporary project are ephemeral and deleted on close. Annotation operations edit session database metadata; original executable bytes are never written.",
+    "Ghidra (ghidra 12.1.2) address_name, procedure_address, procedure_pseudo_code: The session serves operations only after Ghidra reports default auto-analysis complete; incomplete analysis does not expose partial results.",
+    "Ghidra (ghidra 12.1.2) address_name, procedure_address, procedure_pseudo_code: This session uses Ghidra 12.1.2. The bridge is verified against 12.1.4; other 12.1.x builds are accepted and the observed version is reported.",
+    "Ghidra (ghidra 12.1.2) procedure_address: External functions and local thunks are distinct; procedure metadata identifies both and preserves a thunk target when Ghidra resolves one.",
+    "Ghidra (ghidra 12.1.2) procedure_pseudo_code: External functions and functions without an analyzable body return null; other decompiler failures remain explicit.",
+    "Ghidra (ghidra 12.1.2) procedure_pseudo_code: Ghidra Listing reports a terminal call at 0x2864e8 to 0x27a650 <EXTERNAL>::__stack_chk_fail (external=false, thunk=true, hasNoReturn=true); fallthrough is excluded by Ghidra's flow model. This records Ghidra's FunctionManager flag, not an independent verification that the callee cannot return.",
+    "Ghidra (ghidra 12.1.2) procedure_pseudo_code: Ghidra Listing reports a terminal call at 0x28b16b to 0x27a650 <EXTERNAL>::__stack_chk_fail (external=false, thunk=true, hasNoReturn=true); fallthrough is excluded by Ghidra's flow model. This records Ghidra's FunctionManager flag, not an independent verification that the callee cannot return.",
+    "Ghidra (ghidra 12.1.2) procedure_pseudo_code: Ghidra Listing reports a terminal call at 0x28cb17 to 0x27a650 <EXTERNAL>::__stack_chk_fail (external=false, thunk=true, hasNoReturn=true); fallthrough is excluded by Ghidra's flow model. This records Ghidra's FunctionManager flag, not an independent verification that the callee cannot return.",
+    "Ghidra (ghidra 12.1.2) procedure_pseudo_code: Pseudocode is Ghidra decompiler output, not original source and not text-equivalent to Hopper output."
+  ],
+  "relationship_coverage": null,
+  "locations": [
+    {
+      "kind": "address",
+      "address": "0x28acc1"
+    },
+    {
+      "kind": "address",
+      "address": "0x28c617"
+    },
+    {
+      "kind": "address",
+      "address": "0x2862f0"
+    }
+  ],
+  "evidence_links": []
+}
