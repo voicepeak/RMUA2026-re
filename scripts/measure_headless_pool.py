@@ -53,7 +53,8 @@ def summarize(rows,duration):
     return {'count':len(rows),'observed_hz':(len(rows)-1)/(rows[-1][0]-rows[0][0]),
             'sim_seconds_per_wall_second':(rows[-1][2]-rows[0][2])/(rows[-1][0]-rows[0][0]),
             'arrival_interval_median_s':statistics.median(arrival),'arrival_interval_p99_s':quant(.99),
-            'arrival_interval_max_s':max(arrival),'stamp_regressions':sum(x<=0 for x in stamp),
+            'arrival_interval_max_s':max(arrival),'stamp_regressions':sum(x<0 for x in stamp),
+            'stamp_equal_adjacent':sum(x==0 for x in stamp),
             'sequence_gap_sum':sum(max(0,x-1) for x in deltas if x>=0),
             'sequence_regressions':sum(x<0 for x in deltas),
             'note':'seq gaps are observer-side missing sequence numbers, not localized packet loss'}
@@ -64,7 +65,7 @@ def main():
     p.add_argument('--seconds',type=float,default=12.)
     p.add_argument('--output',type=Path,required=True)
     a=p.parse_args()
-    if not 2 <= a.seconds <= 60: p.error('seconds must be between 2 and 60')
+    if not 2 <= a.seconds <= 600: p.error('seconds must be between 2 and 600')
     manifest=json.loads(a.manifest.read_text())
     if not manifest.get('ready'): raise ValueError('pool not ready')
     instances=manifest['instances']

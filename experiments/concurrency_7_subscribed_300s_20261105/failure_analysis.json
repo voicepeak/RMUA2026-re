@@ -1,0 +1,32 @@
+{
+  "planned_liveness_s": 350,
+  "planned_subscription_s": 300,
+  "ready_wall_unix_s": 1793881073.6139958,
+  "first_liveness_wall_unix_s": 1793881073.6140785,
+  "last_liveness_wall_unix_s": 1793881082.2990599,
+  "liveness_monotonic_span_s": 8.684981564001646,
+  "failure": {
+    "seed": 789,
+    "container": "rmua-re-9b6736bf01b5-3",
+    "docker_state": {
+      "Status": "exited",
+      "Running": false,
+      "Paused": false,
+      "Restarting": false,
+      "OOMKilled": false,
+      "Dead": false,
+      "Pid": 0,
+      "ExitCode": 139,
+      "Error": "",
+      "StartedAt": "2026-11-05T12:17:43.961064501Z",
+      "FinishedAt": "2026-11-05T12:18:01.794710965Z"
+    }
+  },
+  "observer_launch_stderr_file_creation_wall_ns": 1793881140701056388,
+  "observer_result": "manually interrupted with SIGINT after batch cleanup because original observer waited for planned duration; no measurement JSON or message samples recovered",
+  "limitations": [
+    "subscriptions were launched near the crash but no sample or connected-state evidence was retained; subscription causation unproven",
+    "no debugger stack or crash PC; cannot attribute cause to previous crashes",
+    "single 7-instance run; not a probability or universal bound"
+  ]
+}

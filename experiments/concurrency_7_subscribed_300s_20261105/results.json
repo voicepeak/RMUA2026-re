@@ -1,0 +1,30 @@
+{
+  "kind": "idle_diagnostic_only",
+  "seconds_wall": 350.0,
+  "batches": [
+    {
+      "batch": 0,
+      "seeds": [
+        123,
+        456,
+        2026,
+        789,
+        1001,
+        1002,
+        1003
+      ],
+      "attempts": [
+        {
+          "attempt": 0,
+          "port": 12350,
+          "success": false,
+          "start_exit_code": 0,
+          "ready_wall_unix_s": 1793881073.6139958,
+          "reason": "instance exited during observation",
+          "cleanup_exit_code": 0
+        }
+      ],
+      "success": false
+    }
+  ]
+}

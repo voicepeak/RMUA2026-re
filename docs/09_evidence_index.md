@@ -195,3 +195,5 @@
 - 车辆接近和子组件几何先导：`experiments/vehicle_proximity_zminus150_pilot_20261105/`、`experiments/vehicle_child_z0_pilot_20261105/`；移动调用参数成对先导：`experiments/vehicle_move_arg0_pilot_20261105/`、`experiments/vehicle_move_arg1_pilot_20261105/`；调用汇编 `artifacts/rea/vehicle_move_call_12_0_0_5.txt` 与 `artifacts/rea/vehicle_move_callee_12_0_0_5.txt`。分析条件及未验收项见 `docs/18_acceptance_ledger.md`。
 
 - 同车辆路径的固定开环 PWM 先导：`experiments/vehicle_child_pwm_pilot_20261105/`；运行脚本 `scripts/run_vehicle_child_pwm.py`，结果边界见验收台账。
+
+七实例追加场在全部 IMU 就绪约 9 秒内失败：seed 789 退出码 139，Docker 非 OOM；其他六个由批处理清理。订阅观测器接近崩溃才启动，未保存任何消息或建立连接的证据，不能认定订阅导致崩溃；无调用栈，无法与先前故障归因。此前两次 300 秒存活只代表其具体空载窗口，不能称七实例稳定上限。`experiments/concurrency_7_subscribed_300s_20261105/failure_analysis.json` 保留时间、Docker 状态和观测器被手动中断的缺口。
