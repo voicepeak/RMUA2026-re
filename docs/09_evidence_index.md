@@ -185,3 +185,5 @@
 | stage 4 高度固定与风重播种下的受控 reset 生成重放 | `experiments/reset_wind_interpose_20261105/{reset_analysis,reseeded_wind_analysis,root_hold_analysis}.json`、`experiments/reset_wind_interpose_pilot_20261105/interposer_manifest.json`、`scripts/wind_reseed_interposer.c`、`scripts/analyze_reset_wind_reseeded.py`；`experiments/reset_rng_trace_pilot_20261105/failed_reseed_analysis.json` 是失败 GDB 跳转，不证明完整物理重放 |
 
 | stage 5 干预式 reset 单 seed 先导及事后位置 | `experiments/reset_wind_interpose_stage5_pilot_20261105/`、`scripts/analyze_reset_pose_prepost.py`；仅单场、不证明完整物理重放 |
+
+| stage 6 干预式 reset 单 seed 先导 | `experiments/reset_wind_interpose_stage6_pilot_20261105/`；前后提交与风匹配模型，完整物理重放未证 |

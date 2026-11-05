@@ -348,3 +348,5 @@ OL2 直接加载后用只读 GDB 断点捕获 12 门之后首次 `__cxa_throw`�
 失败样本：最初尝试在风生成入口通过 GDB 改 RIP 构造对 `srand` 的调用，出现 begin/rejoin 标记但风不相同；追加对可执行文件 PLT 的只读断点，在两标记之间未捕获 `srand`，前 12 次 `rand` 返回与 seed 123 连续流的第 55–66 次逐个相等。该窗口只覆盖该 PLT，不能排除其他入口的隐藏调用，但足以否定将标记当作已验证重播种；调试跳转还多执行了生成器并可能污染栈，故该场不能用于重放。证据和失败说明见 `experiments/reset_wind_reseed_pilot_20261105/`、`experiments/reset_rng_trace_pilot_20261105/failed_reseed_analysis.json`。
 
 stage 5 seed 123 单次先导使用同一 interposer 和根高度固定，并在 reset 前后分别采集仅供事后分析的姿态：服务响应 true，前后各 1118 个线障提交变换集合哈希一致，风数组各 37 项前后逐字节一致并均匹配 stage 5 独立模型。两段各约两秒采样中，前段末位置与后段首位置相距约 0.000698 m；没有验证速度、接触或同一真实物理状态，不能凭静止位置判断完整重放。结果及原始流在 `experiments/reset_wind_interpose_stage5_pilot_20261105/`。
+
+stage 6 seed 123 单次先导使用相同固定高度和 interposer：ROS reset 返回 true，前后各 1434 个线障提交变换集合哈希一致，35 项风关键帧前后逐字节相同且均与 stage 6 离线模型吻合。事后位置前段末与后段首相距约 0.0000256 m；采样为静止场且间隔非零，不证明速度、碰撞、车辆或完整场景重放。原始数据、各分析结果见 `experiments/reset_wind_interpose_stage6_pilot_20261105/`。

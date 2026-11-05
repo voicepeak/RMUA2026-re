@@ -1,0 +1,62 @@
+{
+  "seed123_repeat1": {
+    "phases": {
+      "before": {
+        "count": 171,
+        "position_first": [
+          -7.797241474690959e-05,
+          -1.0070796533909049e-05,
+          0.30561909079551697
+        ],
+        "position_last": [
+          -7.797241474690959e-05,
+          -1.0070796533909049e-05,
+          0.30561909079551697
+        ],
+        "position_min": [
+          -7.797241474690959e-05,
+          -1.0070796533909049e-05,
+          0.30561909079551697
+        ],
+        "position_max": [
+          -7.797241474690959e-05,
+          -1.0070796533909049e-05,
+          0.30561909079551697
+        ],
+        "quaternion_norm_min": 1.0,
+        "quaternion_norm_max": 1.0
+      },
+      "after": {
+        "count": 171,
+        "position_first": [
+          -7.797241474690959e-05,
+          -1.0070796533909049e-05,
+          0.305644690990448
+        ],
+        "position_last": [
+          -7.797241474690959e-05,
+          -1.0070796533909049e-05,
+          0.305644690990448
+        ],
+        "position_min": [
+          -7.797241474690959e-05,
+          -1.0070796533909049e-05,
+          0.305644690990448
+        ],
+        "position_max": [
+          -7.797241474690959e-05,
+          -1.0070796533909049e-05,
+          0.305644690990448
+        ],
+        "quaternion_norm_min": 1.0,
+        "quaternion_norm_max": 1.0
+      }
+    },
+    "sampled_position_delta_m": 2.5600194931030273e-05
+  },
+  "_limitations": [
+    "debug pose is used only posthoc; samples are separated in time",
+    "stationary pose similarity is not a reset of velocity, contacts, dynamics or entire scene",
+    "root hold, wind reseed and forced stage are development interventions"
+  ]
+}
