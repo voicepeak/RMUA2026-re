@@ -1,0 +1,37 @@
+{
+  "model_sha256": "62a4124c1a24ebcf992f23f397d8d0ba3cff7054ec8af580664305346c3ff9b6",
+  "libc": [
+    "glibc",
+    "2.35"
+  ],
+  "parameters": [
+    200,
+    350,
+    2,
+    1.5
+  ],
+  "assumption": "srand once, no intervening calls or state modification",
+  "experiment_scope": "GDB mutates stage arguments and forces root component world z=0 while reset callback executes; diagnostic only",
+  "runs": {
+    "seed123_repeat1": {
+      "reset_response_success": true,
+      "first_draws": 54,
+      "second_draws": 54,
+      "observed_counts": [
+        35,
+        35
+      ],
+      "first_exact": true,
+      "second_exact": true,
+      "model_hashes": [
+        "d2ad79ebe9b78a9c5321f627ccd0e6b35dd02aa0d694eb3aceadd5ee5eee20cf",
+        "7b61903806dfcbe14ad3a15aea2145a375ae4ca485da3ae9b6426411e3ec10cf"
+      ]
+    }
+  },
+  "limitations": [
+    "service success alone does not prove physical scene replay; see experiment_scope for interventions",
+    "matching output cannot exclude unobserved calls or modifications producing the same stream",
+    "libc algorithm and float32 behavior are platform dependent"
+  ]
+}

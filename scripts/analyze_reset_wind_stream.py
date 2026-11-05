@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Compare false-reset wind arrays to uninterrupted host-libc random stream.
+"""Compare reset wind arrays to an uninterrupted host-libc random stream.
 
 The model consumes a shared libc RNG and therefore must run single-threaded. Exact
 matches demonstrate observational agreement, not the absence of hidden writes.
@@ -14,7 +14,8 @@ a = p.parse_args()
 m = json.loads((a.directory / 'manifest.json').read_text())
 result = {'model_sha256': hashlib.sha256(Path(model.__file__).read_bytes()).hexdigest(),
           'libc': platform.libc_ver(), 'parameters': [200, 350, 2, 1.5],
-          'assumption': 'srand once, no intervening calls or state modification', 'runs': {}}
+          'assumption': 'srand once, no intervening calls or state modification',
+          'experiment_scope': m.get('stage_coverage'), 'runs': {}}
 original_randunit = model.randunit
 counter = [0]
 def counted_randunit():
@@ -42,7 +43,7 @@ for run in m['runs']:
         'first_exact': len(observed) > 0 and first == observed[0],
         'second_exact': len(observed) > 1 and second == observed[1],
         'model_hashes': [hashlib.sha256(b''.join(x)).hexdigest() for x in (first, second)]}
-result['limitations'] = ['false reset is not successful scene replay',
+result['limitations'] = ['service success alone does not prove physical scene replay; see experiment_scope for interventions',
     'matching output cannot exclude unobserved calls or modifications producing the same stream',
     'libc algorithm and float32 behavior are platform dependent']
 (a.directory / 'wind_stream_analysis.json').write_text(json.dumps(result, indent=2) + '\n')

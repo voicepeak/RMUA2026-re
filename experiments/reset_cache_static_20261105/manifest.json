@@ -1,0 +1,28 @@
+{
+  "binary_sha256": "5231addfa25ddaa9e4473ea9ac40c9c0bc685174e69cd14bb49159f443b97800",
+  "command_string_vaddr": "0xa8a911",
+  "command_string": "getpose_ue",
+  "ranges": {
+    "command_dispatch": [
+      "0x26f0750",
+      "0x26f07c0"
+    ],
+    "location_cache_writer": [
+      "0x26f2160",
+      "0x26f2175"
+    ],
+    "event_producer": [
+      "0x26302b7",
+      "0x26303b0"
+    ],
+    "event_dispatch": [
+      "0x2fce5e0",
+      "0x2fce610"
+    ]
+  },
+  "limitations": [
+    "addresses and interpretation apply only to this binary",
+    "static instructions do not establish physical reset or event timing",
+    "vptr matching uses the ABI address-point offset, not independent runtime type metadata"
+  ]
+}

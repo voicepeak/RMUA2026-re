@@ -16,7 +16,7 @@
 | 碰撞：回调与动态物理 | `experiments/collision_inject_ignore{0,1}_20261105/`、`experiments/fall_collision_pilot_20261105/` | 合成回调在忽略标志 0/1 下三 seed 两次分别返回 state 12/7；另有开环 PWM 运行时回调。粗/细线夹具场已有三 seed 两次组件和候选实例索引匹配；字段独立类型验证、车辆接触、力和自然终止未确认；逐 tick 强制状态会覆盖终止。 |
 | PWM：动作/输出/动力学，seed 重复 | `experiments/wind_pwm_step_{4,5,6}_20261105/`、`experiments/pwm_20261104/` | 三 stage、三 seed 各两次固定开环命令、PWM 输出、IMU/GPS 和事后位姿已保存；另有三 stage、三 seed 各两次的动态风与非零 PWM 近似重叠样本；扰动因果及可辨识动力学模型尚缺。header 首次匹配差不是已标定端到端延迟。 |
 | 传感器：IMU、GPS、LiDAR、相机、时间/噪声 | `experiments/wind_persistent_{4,5,6}_20261105/`、`experiments/sensor_clock_rendered_20261104/` | 三 stage/seed/重复有 IMU、GPS、LiDAR 消息时钟；IMU 分量统计与原始流已保存，变化不能单独解释为噪声。NullRHI 相机为空，有渲染单场相机有数据；动态障碍点云、多 seed 图片与准确端到端延迟未验收。 |
-| reset / 随机流重放 | `experiments/reset_semantics_20261104/`、`experiments/stage_reset_inject_retry_20261104/` | 三 seed 各两次官方 ROS reset 均返回 false；游戏 reset 入口的 FRandomStream 回到 seed，前后各 373 个线障提交变换的多重集合相同，但风数组均不同。成功 reset、各机制场景重放以及 libc 状态变化的确切原因未验证。 |
+| reset / 随机流重放 | `experiments/reset_instances_20261105/`、`experiments/reset_root_hold_20261105/` | 无高度干预的六场响应均为 false；强制根组件高度的六场响应均为 true，前后线障提交集合相同而风数组不同、符合连续随机流。无干预成功和完整物理／车辆／风重放仍未验证。 |
 | 8 实例崩溃根因或稳定并发上限 | `experiments/concurrency_gdb_20261104/`、`experiments/concurrency_frequency_overlap/`、`experiments/concurrency_followup_20261104/` | 八实例曾崩溃，单次栈指向频率统计 deque，但根因未证；7 路两次各 300 秒存活，第二轮含 60 秒订阅，部分 LiDAR/源时钟变慢。该主机有限空载观测支持七路操作边界，但不同负载或长期的稳定上限及八路根因仍未知。 |
 | 训练规格和逐类可复现脚本 | `docs/15_seed_dependency_matrix.md`、`docs/16_headless_requirements.md`、`experiments/training_host_20261105/`、`scripts/` | 硬件、镜像 ID、二进制和 settings 哈希、实际 settings 副本及已完成机制的脚本已记录；自定义训练环境完整等价和未完成类的验证尚缺。 |
 | OL1 12 门和额外地图 | `experiments/runtime_trace_20261104_v2/`、`experiments/ol2_direct_gates_20261105/` | OL1 与开发补丁直接加载的 OL2 均覆盖三 seed 两次、12 门 BeginPlay；OL2 无可用 IMU，门洞物理尺寸与可飞行跨图初始化未完成。 |
@@ -73,3 +73,5 @@ OL2 直接启动缺失接口的初始化诊断：同配置直接启动 OL1 也�
 OL2 初始化进一步诊断：节点为空时跳过首次频率统计后，先导场记录节点创建与 IMU，随后自动切至 OL1。改写 Browse 的 OL1 目标为 OL2 后，三 seed 各两次出现两次 OL2 LoadMap 入口、第二组门事件和 IMU/LiDAR 流，但没有第二次完成日志；追加的单场未命中第二组门之后的 `0x2fb8f40` 更新断点，不能确认场景或传感器来自完成切图后的世界。取消切图的先导场反复触发 264 次取消且未命中更新断点，属于失败样本。训练可用性仍未验收。见 `experiments/ol2_redirect_20261105/post_load_analysis.json`、`experiments/ol2_world_tick_pilot_20261105/`、`experiments/ol2_cancel_travel_pilot_20261105/`。
 
 经过未修改 Lobby 的单次 OL2 切图对照：晚期和 Browse 入口早期重定向各有 seed 123 先导场，均捕获 12 门和 ROS 消息，但无游戏状态更新/风播种断点；长场 GPS 全零、事后姿态四元数模 0.5。相同静止探针的 OL1 对照捕获 45 次状态更新、风播种及单位姿态四元数。差异原因未定，OL2 可用性仍未通过。见 `experiments/lobby_ol2_{long,early}_pilot_20261105/`、`experiments/lobby_ol1_control_pilot_20261105/`。
+
+受控成功响应：stage 4 三 seed 各两次，在 reset 回调期间每次将根组件世界 z 写为 0（21–23 次），官方服务均返回 `success: True`，检查块七个 float 均为 0。六场前后各 373 个线障提交变换集合相同、风数组不同且与 libc 连续随机流模型逐字节一致；干预结束后事后姿态 z 约 0.3085–0.3088 m。该成功响应依赖高度干预，不证明无干预物理 reset、车辆重放或风重放。见 `experiments/reset_root_hold_20261105/`。

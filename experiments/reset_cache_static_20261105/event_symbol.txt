@@ -1,0 +1,1 @@
+0000000000bacf28 V vtable for SyncDroneLocationEvent

@@ -1,0 +1,35 @@
+{
+  "binary_sha256": "5231addfa25ddaa9e4473ea9ac40c9c0bc685174e69cd14bb49159f443b97800",
+  "settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+  "image_id": "sha256:cd46a48cd28c2a9c6345f60227fd1bd50e78c67ef1e98dcddc0e65893771da57",
+  "gdb_script_sha256": "dbbb46f10cddb3b0edc12b44e31bf51221e9099c481e292e20f4985e0a87a13d",
+  "runner_sha256": "cd04cfad8edb9ab393faa666d92f33a5b88483a80c7d1f1b7e43443fbe5859ad",
+  "mode": "nullrhi",
+  "map": "default Lobby -> OL1",
+  "seeds": [
+    123
+  ],
+  "repeats": 1,
+  "stage_coverage": "GDB mutates stage arguments and forces root component world z=0 while reset callback executes; diagnostic only",
+  "injected_stage": 4,
+  "runs": [
+    {
+      "seed": 123,
+      "repeat": 1,
+      "port": 13602,
+      "container": "rmua-trace-18f811b732bc",
+      "start_wall": 1793867321.87365,
+      "status": "observed",
+      "id": "604b8d7e4c1a8547749c86ea5e717518dc2fd05d4a8c68b1520623c29b7c5de7",
+      "ready_wall": 1793867330.702112,
+      "before_reset_exit_code": 124,
+      "reset_exit_code": 0,
+      "reset_response_success": true,
+      "after_reset_exit_code": 124,
+      "injection_observed": true,
+      "wind_generation_observed": true,
+      "line_generation_observed": true,
+      "end_wall": 1793867341.7502837
+    }
+  ]
+}

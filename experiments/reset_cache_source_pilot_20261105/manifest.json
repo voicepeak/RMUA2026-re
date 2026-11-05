@@ -1,0 +1,35 @@
+{
+  "binary_sha256": "5231addfa25ddaa9e4473ea9ac40c9c0bc685174e69cd14bb49159f443b97800",
+  "settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+  "image_id": "sha256:cd46a48cd28c2a9c6345f60227fd1bd50e78c67ef1e98dcddc0e65893771da57",
+  "gdb_script_sha256": "fcf39ea5840363a549cd8c346082b5855258d8714477ff5de81c41e6b7b4c133",
+  "runner_sha256": "7643cbcdef176c29a879b1f63196138aa16932dfacfeb6b4ab19d93108b72984",
+  "mode": "nullrhi",
+  "map": "default Lobby -> OL1",
+  "seeds": [
+    123
+  ],
+  "repeats": 1,
+  "stage_coverage": "GDB mutates initial stage call arguments; diagnostic, not official progression",
+  "injected_stage": 4,
+  "runs": [
+    {
+      "seed": 123,
+      "repeat": 1,
+      "port": 13601,
+      "container": "rmua-trace-5dda1dc56274",
+      "start_wall": 1793867225.8804932,
+      "status": "reset_failed",
+      "id": "96a122762fd11143b69c18a8fbf14a5e51cdabd19e78f94e6f8df2d42b2fc426",
+      "ready_wall": 1793867234.6831567,
+      "before_reset_exit_code": 124,
+      "reset_exit_code": 0,
+      "reset_response_success": false,
+      "after_reset_exit_code": 124,
+      "injection_observed": true,
+      "wind_generation_observed": true,
+      "line_generation_observed": true,
+      "end_wall": 1793867245.7398286
+    }
+  ]
+}

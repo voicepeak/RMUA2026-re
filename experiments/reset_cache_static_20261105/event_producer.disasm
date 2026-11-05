@@ -1,0 +1,65 @@
+
+/home/tianbot/RUMA-by-helinjun/main/simulator/simulator_12.0.0.5/Build/LinuxNoEditor/RMUA/Binaries/Linux/RMUA-Linux-Shipping：     文件格式 elf64-x86-64
+
+
+Disassembly of section .text:
+
+00000000026302b7 <_start@@Base+0x53937>:
+ 26302b7:	49 8b 9e 30 01 00 00 	mov    0x130(%r14),%rbx
+ 26302be:	49 8b 86 1c 03 00 00 	mov    0x31c(%r14),%rax
+ 26302c5:	49 89 86 28 03 00 00 	mov    %rax,0x328(%r14)
+ 26302cc:	41 8b 86 24 03 00 00 	mov    0x324(%r14),%eax
+ 26302d3:	41 89 86 30 03 00 00 	mov    %eax,0x330(%r14)
+ 26302da:	48 85 db             	test   %rbx,%rbx
+ 26302dd:	74 12                	je     26302f1 <_start@@Base+0x53971>
+ 26302df:	66 0f 28 83 d0 01 00 	movapd 0x1d0(%rbx),%xmm0
+ 26302e6:	00 
+ 26302e7:	f3 0f 10 8b d8 01 00 	movss  0x1d8(%rbx),%xmm1
+ 26302ee:	00 
+ 26302ef:	eb 10                	jmp    2630301 <_start@@Base+0x53981>
+ 26302f1:	f2 0f 10 05 67 a5 bc 	movsd  0x4bca567(%rip),%xmm0        # 71fa860 <__bss_start@@Base+0xa10a0>
+ 26302f8:	04 
+ 26302f9:	f3 0f 10 0d 67 a5 bc 	movss  0x4bca567(%rip),%xmm1        # 71fa868 <__bss_start@@Base+0xa10a8>
+ 2630300:	04 
+ 2630301:	66 41 0f 13 86 1c 03 	movlpd %xmm0,0x31c(%r14)
+ 2630308:	00 00 
+ 263030a:	f3 41 0f 11 8e 24 03 	movss  %xmm1,0x324(%r14)
+ 2630311:	00 00 
+ 2630313:	bf 30 00 00 00       	mov    $0x30,%edi
+ 2630318:	e8 c3 42 9a 00       	call   2fd45e0 <_Znwm@@Base>
+ 263031d:	48 c7 40 08 0f 00 00 	movq   $0xf,0x8(%rax)
+ 2630324:	00 
+ 2630325:	48 c7 00 38 cf ba 00 	movq   $0xbacf38,(%rax)
+ 263032c:	66 0f 57 c0          	xorpd  %xmm0,%xmm0
+ 2630330:	66 0f 11 40 10       	movupd %xmm0,0x10(%rax)
+ 2630335:	66 0f 11 40 20       	movupd %xmm0,0x20(%rax)
+ 263033a:	48 85 db             	test   %rbx,%rbx
+ 263033d:	74 21                	je     2630360 <_start@@Base+0x539e0>
+ 263033f:	66 0f 28 83 c0 01 00 	movapd 0x1c0(%rbx),%xmm0
+ 2630346:	00 
+ 2630347:	0f 28 93 d0 01 00 00 	movaps 0x1d0(%rbx),%xmm2
+ 263034e:	f3 0f 10 8b d8 01 00 	movss  0x1d8(%rbx),%xmm1
+ 2630355:	00 
+ 2630356:	f2 0f 12 9b c8 01 00 	movddup 0x1c8(%rbx),%xmm3
+ 263035d:	00 
+ 263035e:	eb 18                	jmp    2630378 <_start@@Base+0x539f8>
+ 2630360:	f2 0f 10 15 f8 a4 bc 	movsd  0x4bca4f8(%rip),%xmm2        # 71fa860 <__bss_start@@Base+0xa10a0>
+ 2630367:	04 
+ 2630368:	66 0f 28 1d 20 4f 0a 	movapd -0x1f5b0e0(%rip),%xmm3        # 6d5290 <_IO_stdin_used@@Base+0x142ec>
+ 263036f:	fe 
+ 2630370:	f3 0f 10 0d f0 a4 bc 	movss  0x4bca4f0(%rip),%xmm1        # 71fa868 <__bss_start@@Base+0xa10a8>
+ 2630377:	04 
+ 2630378:	66 0f 14 c3          	unpcklpd %xmm3,%xmm0
+ 263037c:	f3 0f 11 50 10       	movss  %xmm2,0x10(%rax)
+ 2630381:	f3 0f 16 d2          	movshdup %xmm2,%xmm2
+ 2630385:	f3 0f 11 50 14       	movss  %xmm2,0x14(%rax)
+ 263038a:	f3 0f 11 48 18       	movss  %xmm1,0x18(%rax)
+ 263038f:	66 0f 11 40 1c       	movupd %xmm0,0x1c(%rax)
+ 2630394:	f3 0f 10 04 24       	movss  (%rsp),%xmm0
+ 2630399:	f3 0f 11 40 2c       	movss  %xmm0,0x2c(%rax)
+ 263039e:	48 8b 0d 5b 9e b2 04 	mov    0x4b29e5b(%rip),%rcx        # 715a200 <__bss_start@@Base+0xa40>
+ 26303a5:	48 85 c9             	test   %rcx,%rcx
+ 26303a8:	74 05                	je     26303af <_start@@Base+0x53a2f>
+ 26303aa:	48 89 c7             	mov    %rax,%rdi
+ 26303ad:	ff d1                	call   *%rcx
+ 26303af:	48                   	rex.W

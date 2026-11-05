@@ -1,0 +1,40 @@
+
+/home/tianbot/RUMA-by-helinjun/main/simulator/simulator_12.0.0.5/Build/LinuxNoEditor/RMUA/Binaries/Linux/RMUA-Linux-Shipping：     文件格式 elf64-x86-64
+
+
+Disassembly of section .text:
+
+00000000026f0750 <_start@@Base+0x113dd0>:
+ 26f0750:	00 7d b7             	add    %bh,-0x49(%rbp)
+ 26f0753:	00 48 89             	add    %cl,-0x77(%rax)
+ 26f0756:	de e8                	fsubrp %st,%st(0)
+ 26f0758:	d4                   	(bad)  
+ 26f0759:	90                   	nop
+ 26f075a:	9b                   	fwait
+ 26f075b:	04 85                	add    $0x85,%al
+ 26f075d:	c0 75 0b 4c          	shlb   $0x4c,0xb(%rbp)
+ 26f0761:	89 f6                	mov    %esi,%esi
+ 26f0763:	e8 f8 8c ff ff       	call   26e9460 <_start@@Base+0x10cae0>
+ 26f0768:	49 8b 1f             	mov    (%r15),%rbx
+ 26f076b:	bf 11 a9 a8 00       	mov    $0xa8a911,%edi
+ 26f0770:	48 89 de             	mov    %rbx,%rsi
+ 26f0773:	e8 b8 90 9b 04       	call   70a9830 <strcmp@plt>
+ 26f0778:	4d 85 f6             	test   %r14,%r14
+ 26f077b:	74 29                	je     26f07a6 <_start@@Base+0x113e26>
+ 26f077d:	85 c0                	test   %eax,%eax
+ 26f077f:	75 25                	jne    26f07a6 <_start@@Base+0x113e26>
+ 26f0781:	0f 57 c0             	xorps  %xmm0,%xmm0
+ 26f0784:	41 0f 11 06          	movups %xmm0,(%r14)
+ 26f0788:	8b 05 42 bc a6 04    	mov    0x4a6bc42(%rip),%eax        # 715c3d0 <__bss_start@@Base+0x2c10>
+ 26f078e:	41 89 46 10          	mov    %eax,0x10(%r14)
+ 26f0792:	8b 05 3c bc a6 04    	mov    0x4a6bc3c(%rip),%eax        # 715c3d4 <__bss_start@@Base+0x2c14>
+ 26f0798:	41 89 46 14          	mov    %eax,0x14(%r14)
+ 26f079c:	8b 05 36 bc a6 04    	mov    0x4a6bc36(%rip),%eax        # 715c3d8 <__bss_start@@Base+0x2c18>
+ 26f07a2:	41 89 46 18          	mov    %eax,0x18(%r14)
+ 26f07a6:	bf 0c 37 a0 00       	mov    $0xa0370c,%edi
+ 26f07ab:	48 89 de             	mov    %rbx,%rsi
+ 26f07ae:	e8 7d 90 9b 04       	call   70a9830 <strcmp@plt>
+ 26f07b3:	85 c0                	test   %eax,%eax
+ 26f07b5:	75 0c                	jne    26f07c3 <_start@@Base+0x113e43>
+ 26f07b7:	49 8b 7f 08          	mov    0x8(%r15),%rdi
+ 26f07bb:	e8 00 8f ff ff       	call   26e96c0 <_start@@Base+0x10cd40>

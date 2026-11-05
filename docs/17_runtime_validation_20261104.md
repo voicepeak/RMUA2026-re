@@ -330,3 +330,11 @@ OL2 直接加载后用只读 GDB 断点捕获 12 门之后首次 `__cxa_throw`�
 将改写点从 Browse 日志辅助函数提前到 Browse 入口 `0x593c900`，根据反汇编在入口读取 `RDX` 所指的候选 URL（`+0x28`）；仍然只修改精确匹配的 OL1 等长字符串。单场观察到 OL2 入口和 12 门，但没有状态更新/风播种，27 条 GPS 位置均为零，272 条事后姿态四元数模均为 0.5。该结果反驳“仅因改写发生太晚即可恢复”的简单假设，不排除其他 URL 内部状态、地图配置或初始化路径。证据见 `experiments/lobby_ol2_early_pilot_20261105/` 和 `browse_entry.disasm`。
 
 `experiments/lobby_ol2_init_return_pilot_20261105/` 的 GDB entry/finish 探针观察到一次 `InitAirSimROS` 入口及返回，故本场不能解释为该函数没有返回；这不证明后续世界初始化成功。插件函数的静态 REA Evidence `ev_1036822c48affb93d5b0ad58a01ba217a650fe0f13e4e4ea3a44db3408ec7832` 导出在 `experiments/lobby_ol2_long_pilot_20261105/rea_initialization_evidence.json`，反编译显示先 `ros::init`，再构造并设置 `node_instance`；静态结果本身不证明运行时调用顺序。GDB 修改 URL 和 all-stop 调试均限制因果解释。
+
+## reset 检查来源与受控成功响应
+
+`getpose_ue` 的原生分发将响应前 16 字节置零，再将全局 `0x715c3d0/3d4/3d8` 写至 `+0x10/+0x14/+0x18`；函数 `0x26f2160` 从事件对象 `+0x10/+0x14/+0x18` 写入这三个全局值。事件产生路径读取 actor 根组件 `+0x1d0/+0x1d4/+0x1d8`，动态记录中的事件 vptr `0xbacf38` 与导出 `SyncDroneLocationEvent` 虚表地址点对应；受控 reset 场记录该写入者的最后分量从接近 +3 降到约 −37.9，服务检查时仍为约 −37.9。静态摘录、命令字符串和版本哈希见 `experiments/reset_cache_static_20261105/`；运行日志见 `experiments/reset_cache_{trace,source}_pilot_20261105/`。静态 vptr/字段解释限该版本，不单独证明真实世界动力学。
+
+在 `experiments/reset_root_hold_20261105/` 的 stage 4 注入场，普通 IMU 就绪后调用官方 reset：仅在 ROS reset 回调运行时，在事件生产入口把根组件世界 z 写为 0，并在回调读取完成时停止写入；没有改写服务响应或其检查结果。seed 123/456/2026 各两次均记录 21–23 次高度写入、检查块七个 float 为 0、服务响应 `success: True`。该干预改变 actor 根组件，不证明无干预的物理 reset 成功；已知 reset 检查对 `+0x0c` 使用 `abs(value)-1 < 0.2`，在本实现写零时仍通过，不能由此推断有效姿态。先导场见 `experiments/reset_root_hold_pilot_20261105/`。
+
+六个成功响应场在 stage 4 前后各提交 373 个线障变换，每场前后多重集合哈希相同；风数组前后不同。离线 float32 模型按每 seed 仅播种一次连续生成两次，六场前后 12 组风数组逐字节匹配，每次消耗 54 个 `rand()`。匹配不排除产生等效状态的隐藏操作，也不能推广正常赛程。释放固定后另采普通 IMU 与仅事后评估的姿态：姿态 z 在各自采样窗口恒定，六场约 0.3085–0.3088 m；该观测不证明物理引擎内部状态或其他机制已重放。原始流、`root_hold_analysis.json`、`reset_analysis.json` 和 `wind_stream_analysis.json` 可复算；第二组风 dump 的额外副本由遗留返回断点产生，不计作第三次生成。
