@@ -141,7 +141,7 @@ GameState + 0x400
       GameConfig->score_counter += 1;   // GameConfig + 0x2fc
   ```
   这说明 `+0x2fc` 是仿真内部的 `Score` 计数器；进入 case 2 且原状态不为 2 时自增。
-- `case 12` 保存原状态到 `GameState+0xd4`，写入 `+0xd0 = 12`，记录时间；第三参数非零时还会计算一段时间并使 `Score` 自增，零时则不执行该自增。碰撞场是否执行到后续完整结算仍需动态证据，不能仅凭状态写入推断。证据：`artifacts/rea/followup_state.c` 的 `case 0xc`。
+- `case 12` 保存原状态到 `GameState+0xd4`，写入 `+0xd0 = 12`，记录时间；第三参数非零时还会计算一段时间并使 `Score` 自增，零时则不执行该自增。碰撞场是否执行到后续完整结算仍需动态证据，不能仅凭状态写入推断。该分支还将 UTF-16 `Finished` 写入状态文本，并将分配的状态对象传给 `0x2fcc520`；这些静态操作不证明本场完整结算。证据：`artifacts/rea/followup_state.c` 的 `case 0xc`、`artifacts/rea/state12_label_rodata.txt`。
 - `REA_2fba970` 重置时把 `GameConfig+0x2fc = 0`、总计时 `+0x1ac = 0`、历史段时间清零，并重置状态字符串为 `normal`/`Pending` 等。
 
 ### 4.2 GUI Score

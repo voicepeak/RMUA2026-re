@@ -1,0 +1,6 @@
+
+/home/tianbot/RUMA-by-helinjun/main/simulator/simulator_12.0.0.5/Build/LinuxNoEditor/RMUA/Binaries/Linux/RMUA-Linux-Shipping：     文件格式 elf64-x86-64
+
+Contents of section .rodata:
+ 6cc9f0 46006900 6e006900 73006800 65006400  F.i.n.i.s.h.e.d.
+ 6cca00 49006e00 64006900 76006900 64007500  I.n.d.i.v.i.d.u.
