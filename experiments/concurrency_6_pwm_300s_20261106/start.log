@@ -1,0 +1,65 @@
+{
+  "manifest": "/home/tianbot/\u684c\u9762/RMUA2026-re/experiments/concurrency_6_pwm_300s_20261106/pool/pool.json",
+  "instances": [
+    {
+      "seed": 123,
+      "port": 12920,
+      "container": "rmua-re-373e7639a36c-0",
+      "id": "37ae9c167825acac81feda661b9a1857dd8cf3bef71e356bba1c4d8f48cfcd5d",
+      "docker_start_wall": 1793905021.058205,
+      "docker_created_wall": 1793905021.4997,
+      "imu_ready_observed_wall": 1793905030.1542392,
+      "startup_observed_s": 9.096034288406372
+    },
+    {
+      "seed": 456,
+      "port": 12921,
+      "container": "rmua-re-373e7639a36c-1",
+      "id": "cdc78e57061d3261de9f7ca267a3f6aa216b878a6bb0db18c4c6c03196faaab8",
+      "docker_start_wall": 1793905021.4998548,
+      "docker_created_wall": 1793905021.9189515,
+      "imu_ready_observed_wall": 1793905030.1364367,
+      "startup_observed_s": 8.636581897735596
+    },
+    {
+      "seed": 2026,
+      "port": 12922,
+      "container": "rmua-re-373e7639a36c-2",
+      "id": "d77235e0672acbb0286add7b49f54c67b1667bb33292e1f03e27aad2232d20db",
+      "docker_start_wall": 1793905021.9191492,
+      "docker_created_wall": 1793905022.3277287,
+      "imu_ready_observed_wall": 1793905030.2831662,
+      "startup_observed_s": 8.364017009735107
+    },
+    {
+      "seed": 789,
+      "port": 12923,
+      "container": "rmua-re-373e7639a36c-3",
+      "id": "7ec40c7f263a21758effe330668ec5befac2ef90951a1e0694b7a07dc8654e76",
+      "docker_start_wall": 1793905022.32797,
+      "docker_created_wall": 1793905022.7581973,
+      "imu_ready_observed_wall": 1793905030.6317403,
+      "startup_observed_s": 8.303770303726196
+    },
+    {
+      "seed": 1001,
+      "port": 12924,
+      "container": "rmua-re-373e7639a36c-4",
+      "id": "345f5bed1be96142dffe232fb1b52d29e1acc2bad878dd78b72b0836a05df32f",
+      "docker_start_wall": 1793905022.7584774,
+      "docker_created_wall": 1793905023.1723952,
+      "imu_ready_observed_wall": 1793905031.1870186,
+      "startup_observed_s": 8.42854118347168
+    },
+    {
+      "seed": 1002,
+      "port": 12925,
+      "container": "rmua-re-373e7639a36c-5",
+      "id": "98fdcc8bb8580c74f53b31f3d7eec4968a9ed187fc733e12364e738fae09a0b5",
+      "docker_start_wall": 1793905023.1726813,
+      "docker_created_wall": 1793905023.6291769,
+      "imu_ready_observed_wall": 1793905031.5098433,
+      "startup_observed_s": 8.337162017822266
+    }
+  ]
+}

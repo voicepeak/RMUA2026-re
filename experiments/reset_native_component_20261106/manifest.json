@@ -1,0 +1,13 @@
+{
+  "binary_sha256": "5231addfa25ddaa9e4473ea9ac40c9c0bc685174e69cd14bb49159f443b97800",
+  "settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+  "gdb_script_sha256": "f4d9ca05dc50339f0178d4de8742ff84a7e230cdfacae89ff7dcd820df1e24ff",
+  "probes": [
+    "scripts/fixed_pwm_lift_reset_probe.py",
+    "scripts/fixed_lift_reset_probe.py"
+  ],
+  "seed": 123,
+  "stage_injected": 4,
+  "mode": "nullrhi",
+  "runs": 2
+}

@@ -1,0 +1,51 @@
+{
+  "fixed_pwm_move_reset": {
+    "pose_gt_posthoc_z_range_m": {
+      "count": 551,
+      "z_min": -4.823221683502197,
+      "z_max": 0.6070340275764465
+    },
+    "reset_bridge_pose_last": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      -37.9076614
+    ],
+    "reset_response": {
+      "event": "reset",
+      "mono_ns": 241582154425127,
+      "elapsed_s": 2.6001709529955406,
+      "success": false
+    },
+    "action": "fixed rotor PWM 0.3 for 2.5 s, then zero and official reset; no sensor/truth input"
+  },
+  "fixed_lift_reset": {
+    "reset_bridge_pose_last": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      -37.9100227
+    ],
+    "reset_response": {
+      "event": "reset",
+      "mono_ns": 241447608016975,
+      "elapsed_s": 1.0600839079997968,
+      "success": false
+    },
+    "action": "fixed velocity-command lift attempt, then official reset; no sensor/truth input"
+  },
+  "observation": "In the first run the physical debug pose z moved from about 0.309 m to -4.82 m while the GETPOSE_UE component returned to the reset bridge remained -37.9076614 cm. The native reset response was false. In the second run a 0.9 s velocity lift produced no detectable component change and reset was false with -37.9100227 cm. These pilots did not find a native success without the root-height intervention used in reset_wind_interpose experiments.",
+  "limitations": [
+    "fixed open-loop actions, single seed",
+    "debug pose is posthoc only",
+    "GETPOSE_UE component identity not independently typed",
+    "reset false does not prove all reset branches fail",
+    "no full physics, vehicle or natural-scene replay"
+  ]
+}

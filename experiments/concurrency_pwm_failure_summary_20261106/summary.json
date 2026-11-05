@@ -1,0 +1,74 @@
+{
+  "runs": {
+    "eight_instances_fixed_pwm": {
+      "base": "experiments/concurrency_8_pwm_180s_20261106",
+      "seeds": [
+        123,
+        456,
+        2026,
+        789,
+        1001,
+        1002,
+        1003,
+        2024
+      ],
+      "requested_workload_s": 180.0,
+      "liveness_span_s": 1.14592509,
+      "failed_container": "rmua-re-c4eff62a02fb-2",
+      "failed_seed": 2026,
+      "exit_code": 139,
+      "oom_killed": false,
+      "failure_offset_from_liveness_start_s": 1.14592509,
+      "status": "container exited",
+      "container_lifetime_s": 11.116
+    },
+    "six_instances_fixed_pwm": {
+      "base": "experiments/concurrency_6_pwm_300s_20261106",
+      "seeds": [
+        123,
+        456,
+        2026,
+        789,
+        1001,
+        1002
+      ],
+      "requested_workload_s": 300.0,
+      "liveness_span_s": 22.610877435,
+      "failed_container": "rmua-re-373e7639a36c-0",
+      "failed_seed": 123,
+      "exit_code": 139,
+      "oom_killed": false,
+      "failure_offset_from_liveness_start_s": 22.610877435,
+      "status": "container exited",
+      "container_lifetime_s": 32.195
+    },
+    "four_instances_fixed_pwm_two_repeats": {
+      "dirs": [
+        "experiments/concurrency_4_pwm_300s_20261106",
+        "experiments/concurrency_4_pwm_300s_repeat2_20261106"
+      ],
+      "status": "both completed about 300.00-300.02 s of IMU/LiDAR overlap and cleaned up",
+      "note": "see each workload_analysis.json and stream/independent_analysis.json"
+    },
+    "eight_instances_idle_prior": {
+      "dirs": [
+        "experiments/concurrency_8_frequency_guard_180s_20261106",
+        "experiments/frequency_guard_control_comparison_20261106"
+      ],
+      "status": "both guarded and unguarded 180 s idle runs survived once"
+    },
+    "seven_instances_prior_failure": {
+      "dir": "experiments/concurrency_7_subscribed_300s_20261105",
+      "status": "seed 789 exit 139 about 9 s after all IMU ready; no stack"
+    }
+  },
+  "common_crash_log": "Unhandled Exception: SIGSEGV at 0x2fbda42 reading address 0; stack 0x2fbda42, 0x2e31691, 0x2fb979e, 0x5e54336, 0x2fbd8e1; non-OOM",
+  "interpretation": "Under the stated host, image, NullRHI settings, fixed PWM publishers and IMU/LiDAR observers, four instances completed two 300 s runs, while one 6-instance and one 8-instance run each lost one process to SIGSEGV before the workload completed. This supports a conservative four-instance cap for this load; it does not prove a universal limit or a single root cause. Earlier failures reached the frequency deque path, while these failures reached a different game-state null read after ChangeState:0, so at least two failure sites are observed.",
+  "limitations": [
+    "one failed run per 6/8 condition",
+    "workload is synthetic fixed PWM, not a full training task",
+    "host state and scheduling differ between runs",
+    "GDB was not attached in these failures, so the faulting register state is inferred from engine logs",
+    "SIGSEGV site does not establish the memory corruption origin"
+  ]
+}

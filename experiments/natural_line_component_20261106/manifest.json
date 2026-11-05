@@ -1,0 +1,24 @@
+{
+  "binary_sha256": "5231addfa25ddaa9e4473ea9ac40c9c0bc685174e69cd14bb49159f443b97800",
+  "settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+  "gdb_script_sha256": "ad45c7c3d1ac08e935d2b59b4b294c0301203ef7d139b1990acc3ecf31b09226",
+  "runner_sha256": "544cdd56f80cf31fb9a8506621c63b5ac4a04634152faf79f44b353105fcd722",
+  "mode": "nullrhi",
+  "stage_injected": 4,
+  "line_selector": "thick (1)",
+  "fixture_ordinal": 0,
+  "method": "At the first thick HISM submission, capture the natural instance transform. After a spawn hit reveals the drone collision component, write that component transform along x through the captured instance. State is forced to 7 every tick after tick 12; timers +0x180/+0x1a8/+0x1ac are cleared in the same write. No truth or sensor value is used for control.",
+  "seeds": [
+    123,
+    456,
+    2026
+  ],
+  "repeats": 1,
+  "limitations": [
+    "controlled component sweep, not natural flight",
+    "stage injection and repeated state writes are development interventions",
+    "other source components are present during the sweep",
+    "GDB changes scheduling",
+    "index candidate +0x58 is runtime attribution, not independent ABI"
+  ]
+}

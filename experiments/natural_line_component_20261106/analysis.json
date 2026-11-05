@@ -1,0 +1,55 @@
+{
+  "123": {
+    "target_component": "0x7fffe57e3990",
+    "target_xyz_cm": [
+      61514.0391,
+      -2103.00732,
+      16222.084
+    ],
+    "target_hit_events": 30,
+    "target_index0_results": 30,
+    "target_hits_with_state_request_within_10ms": 21,
+    "target_hits_with_7_to_12_write_within_12ms": 21,
+    "source_components": [
+      "0x7ffe05142070",
+      "0x7ffe05cc0ba0",
+      "0x7fffe57e3990"
+    ],
+    "limitations": "controlled component sweep through a naturally generated line instance; stage injection, state forced to 7 every tick, and GDB scheduling intervene; not natural flight or a full episode"
+  },
+  "456": {
+    "target_component": "0x7fffe57e5160",
+    "target_xyz_cm": [
+      62074.6641,
+      -1822.96387,
+      16254.8867
+    ],
+    "target_hit_events": 34,
+    "target_index0_results": 31,
+    "target_hits_with_state_request_within_10ms": 22,
+    "target_hits_with_7_to_12_write_within_12ms": 22,
+    "source_components": [
+      "0x7ffe02f52070",
+      "0x7fffe57e5160"
+    ],
+    "limitations": "controlled component sweep through a naturally generated line instance; stage injection, state forced to 7 every tick, and GDB scheduling intervene; not natural flight or a full episode"
+  },
+  "2026": {
+    "target_component": "0x7fffe57ec870",
+    "target_xyz_cm": [
+      61543.332,
+      -1867.05029,
+      16215.7266
+    ],
+    "target_hit_events": 30,
+    "target_index0_results": 30,
+    "target_hits_with_state_request_within_10ms": 21,
+    "target_hits_with_7_to_12_write_within_12ms": 21,
+    "source_components": [
+      "0x7ffe02a47b30",
+      "0x7ffe02f72070",
+      "0x7fffe57ec870"
+    ],
+    "limitations": "controlled component sweep through a naturally generated line instance; stage injection, state forced to 7 every tick, and GDB scheduling intervene; not natural flight or a full episode"
+  }
+}
