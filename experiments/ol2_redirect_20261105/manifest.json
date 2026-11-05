@@ -1,0 +1,183 @@
+{
+  "binary_sha256": "5231addfa25ddaa9e4473ea9ac40c9c0bc685174e69cd14bb49159f443b97800",
+  "settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+  "image_id": "sha256:cd46a48cd28c2a9c6345f60227fd1bd50e78c67ef1e98dcddc0e65893771da57",
+  "gdb_script_sha256": "798d4fb58ea07a94f2850f2d0bb9c203c686f3a6302d9594a2ef3eb931bd3bb7",
+  "runner_sha256": "f11bf845426042486414d89a1e6f8a7e863cce852a4a4b1d8e675e2189170c85",
+  "readiness_timeout_s": 25,
+  "overlay_sha256": "481688da527179a040d1c781f26c2f44d01140e904e66f29cbb8bf205bf42785",
+  "base_pak_sha256": "2407662b224ed28c64412402af044da85aced07d78ce6fc0948e6be11ea2a0c2",
+  "mode": "nullrhi",
+  "requested_map": "/Game/Maps/RMUA2024OL/RMUA2024OL2",
+  "seeds": [
+    123,
+    456,
+    2026
+  ],
+  "repeats": 2,
+  "stage_coverage": "direct OL2; GDB skips early frequency bookkeeping and redirects OL1 travel URL to OL2; no flight",
+  "runs": [
+    {
+      "seed": 123,
+      "repeat": 1,
+      "port": 13420,
+      "container": "rmua-trace-80be44d459e8",
+      "start_wall": 1793866222.5351639,
+      "status": "observed",
+      "id": "c79ddcffd07f20560a6421f81f4dbb38fbb20b5e14e21ee9ec59a77914f61c7b",
+      "ready_wall": 1793866226.5107174,
+      "before_reset_exit_code": 124,
+      "sensor_clock_exit_code": 0,
+      "sensor_counts": {
+        "imu": 500,
+        "lidar": 50,
+        "camera_left": 100,
+        "camera_right": 100
+      },
+      "lidar_nonempty_count": 50,
+      "observed_maps": [
+        "/Game/Maps/RMUA2024OL/RMUA2024OL2?Name=Player",
+        "/Game/Maps/RMUA2024OL/RMUA2024OL2"
+      ],
+      "redirect_observed": true,
+      "early_frequency_skip_observed": true,
+      "node_ready_observed": true,
+      "end_wall": 1793866243.9116125
+    },
+    {
+      "seed": 123,
+      "repeat": 2,
+      "port": 13421,
+      "container": "rmua-trace-c1108be5e35a",
+      "start_wall": 1793866243.9118795,
+      "status": "observed",
+      "id": "0e238900da5d7d0d3b55a554a1bcce2759a11b68b0c723a56e83d536fed43afd",
+      "ready_wall": 1793866247.9712844,
+      "before_reset_exit_code": 124,
+      "sensor_clock_exit_code": 0,
+      "sensor_counts": {
+        "imu": 500,
+        "lidar": 50,
+        "camera_left": 100,
+        "camera_right": 100
+      },
+      "lidar_nonempty_count": 50,
+      "observed_maps": [
+        "/Game/Maps/RMUA2024OL/RMUA2024OL2?Name=Player",
+        "/Game/Maps/RMUA2024OL/RMUA2024OL2"
+      ],
+      "redirect_observed": true,
+      "early_frequency_skip_observed": true,
+      "node_ready_observed": true,
+      "end_wall": 1793866265.392977
+    },
+    {
+      "seed": 456,
+      "repeat": 1,
+      "port": 13422,
+      "container": "rmua-trace-852c4f357ec4",
+      "start_wall": 1793866265.3933465,
+      "status": "observed",
+      "id": "ad9a38a2b4f2e414b656b3825909f3f818dd47014e13a1efc164ce77eeb15f29",
+      "ready_wall": 1793866269.3717868,
+      "before_reset_exit_code": 124,
+      "sensor_clock_exit_code": 0,
+      "sensor_counts": {
+        "imu": 501,
+        "lidar": 51,
+        "camera_left": 100,
+        "camera_right": 100
+      },
+      "lidar_nonempty_count": 51,
+      "observed_maps": [
+        "/Game/Maps/RMUA2024OL/RMUA2024OL2?Name=Player",
+        "/Game/Maps/RMUA2024OL/RMUA2024OL2"
+      ],
+      "redirect_observed": true,
+      "early_frequency_skip_observed": true,
+      "node_ready_observed": true,
+      "end_wall": 1793866286.779054
+    },
+    {
+      "seed": 456,
+      "repeat": 2,
+      "port": 13423,
+      "container": "rmua-trace-86c4c262c353",
+      "start_wall": 1793866286.7794254,
+      "status": "observed",
+      "id": "49ba3b418fd7064eee97179d26caf8a1caef25ad4c8583795cb3c85a0224c96a",
+      "ready_wall": 1793866290.7732449,
+      "before_reset_exit_code": 124,
+      "sensor_clock_exit_code": 0,
+      "sensor_counts": {
+        "imu": 501,
+        "lidar": 50,
+        "camera_left": 100,
+        "camera_right": 100
+      },
+      "lidar_nonempty_count": 50,
+      "observed_maps": [
+        "/Game/Maps/RMUA2024OL/RMUA2024OL2?Name=Player",
+        "/Game/Maps/RMUA2024OL/RMUA2024OL2"
+      ],
+      "redirect_observed": true,
+      "early_frequency_skip_observed": true,
+      "node_ready_observed": true,
+      "end_wall": 1793866308.1910837
+    },
+    {
+      "seed": 2026,
+      "repeat": 1,
+      "port": 13424,
+      "container": "rmua-trace-cf37db3256cb",
+      "start_wall": 1793866308.1914072,
+      "status": "observed",
+      "id": "f4646acdb808888e250c49f8dff7ebdbd6f9c1657d3104dfafb2315e153258ab",
+      "ready_wall": 1793866312.2593896,
+      "before_reset_exit_code": 124,
+      "sensor_clock_exit_code": 0,
+      "sensor_counts": {
+        "imu": 500,
+        "lidar": 51,
+        "camera_left": 100,
+        "camera_right": 100
+      },
+      "lidar_nonempty_count": 51,
+      "observed_maps": [
+        "/Game/Maps/RMUA2024OL/RMUA2024OL2?Name=Player",
+        "/Game/Maps/RMUA2024OL/RMUA2024OL2"
+      ],
+      "redirect_observed": true,
+      "early_frequency_skip_observed": true,
+      "node_ready_observed": true,
+      "end_wall": 1793866329.6580791
+    },
+    {
+      "seed": 2026,
+      "repeat": 2,
+      "port": 13425,
+      "container": "rmua-trace-8965551da98e",
+      "start_wall": 1793866329.6585352,
+      "status": "observed",
+      "id": "e7cd9d66747c86e6438288483a665530330118e029936d90066009448690459e",
+      "ready_wall": 1793866333.6562357,
+      "before_reset_exit_code": 124,
+      "sensor_clock_exit_code": 0,
+      "sensor_counts": {
+        "imu": 500,
+        "lidar": 50,
+        "camera_left": 100,
+        "camera_right": 100
+      },
+      "lidar_nonempty_count": 50,
+      "observed_maps": [
+        "/Game/Maps/RMUA2024OL/RMUA2024OL2?Name=Player",
+        "/Game/Maps/RMUA2024OL/RMUA2024OL2"
+      ],
+      "redirect_observed": true,
+      "early_frequency_skip_observed": true,
+      "node_ready_observed": true,
+      "end_wall": 1793866351.0650926
+    }
+  ]
+}

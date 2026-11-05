@@ -1,0 +1,115 @@
+{
+  "clock_note": "header and arrival_ros use ROS fields; epoch equivalence and sample semantics unverified. age is apparent ROS-clock age, not independently established end-to-end latency. wall and monotonic are host clocks.",
+  "topics": {
+    "imu": {
+      "count": 500,
+      "duration_monotonic_s": 4.989983214,
+      "arrival_hz": 100.00033639391728,
+      "arrival_interval_s": {
+        "median": 0.009998696,
+        "p95": 0.010216686,
+        "p99": 0.010302137,
+        "max": 0.0103932
+      },
+      "apparent_ros_age_s": {
+        "median": 0.065289616,
+        "p95": 0.06640458,
+        "p99": 0.06700921,
+        "min": 0.064020157,
+        "max": 0.067175149
+      },
+      "sequence_gap_sum": 0,
+      "sequence_regressions": 0,
+      "stamp_regressions": 0,
+      "payload_examples": [
+        {}
+      ]
+    },
+    "camera_right": {
+      "count": 100,
+      "duration_monotonic_s": 4.949317923,
+      "arrival_hz": 20.002756246459054,
+      "arrival_interval_s": {
+        "median": 0.0499917,
+        "p95": 0.052543785,
+        "p99": 0.052740842,
+        "max": 0.052740842
+      },
+      "apparent_ros_age_s": {
+        "median": 0.06512272250000001,
+        "p95": 0.066984414,
+        "p99": 0.06711173,
+        "min": 0.063994407,
+        "max": 0.067185163
+      },
+      "sequence_gap_sum": 0,
+      "sequence_regressions": 0,
+      "stamp_regressions": 0,
+      "payload_examples": [
+        {
+          "width": 0,
+          "height": 0,
+          "encoding": "bgr8",
+          "data_bytes": 0
+        }
+      ]
+    },
+    "camera_left": {
+      "count": 100,
+      "duration_monotonic_s": 4.949073211,
+      "arrival_hz": 20.003745303253705,
+      "arrival_interval_s": {
+        "median": 0.049994339,
+        "p95": 0.05252538,
+        "p99": 0.052703391,
+        "max": 0.052703391
+      },
+      "apparent_ros_age_s": {
+        "median": 0.06506192599999999,
+        "p95": 0.066896914,
+        "p99": 0.067017078,
+        "min": 0.06391406,
+        "max": 0.067042589
+      },
+      "sequence_gap_sum": 0,
+      "sequence_regressions": 0,
+      "stamp_regressions": 0,
+      "payload_examples": [
+        {
+          "width": 0,
+          "height": 0,
+          "encoding": "bgr8",
+          "data_bytes": 0
+        }
+      ]
+    },
+    "lidar": {
+      "count": 50,
+      "duration_monotonic_s": 4.851124127,
+      "arrival_hz": 10.10075164378493,
+      "arrival_interval_s": {
+        "median": 0.09899964,
+        "p95": 0.099151824,
+        "p99": 0.099412844,
+        "max": 0.099412844
+      },
+      "apparent_ros_age_s": {
+        "median": 0.06662452199999999,
+        "p95": 0.066925764,
+        "p99": 0.066950083,
+        "min": 0.066220759,
+        "max": 0.066950083
+      },
+      "sequence_gap_sum": 0,
+      "sequence_regressions": 0,
+      "stamp_regressions": 0,
+      "payload_examples": [
+        {
+          "width": 14717,
+          "height": 1,
+          "data_bytes": 176604
+        }
+      ]
+    }
+  }
+}

@@ -310,3 +310,13 @@ python3 scripts/analyze_vehicle_contact.py /tmp/rmua-vehicle-contact
 OL2 直接加载后用只读 GDB 断点捕获 12 门之后首次 `__cxa_throw`：RTTI 为 `ros::TimeNotInitializedException`，栈依次包括未符号化的 `librostime.so` 帧、`airsim_ros::record_frequency_data`、`airsim_ros::AirSimROSLidar`、主程序 `0x26ed2d6`。见 `experiments/ol2_direct_throw_pilot_20261105/`。此异常与随后世界更新异常日志时间相近，但未独立证明日志由该次异常产生；all-stop 调试改变线程时序。
 
 进一步在开发容器中 preload 一个仅调用 `ros::Time::init()` 的构造器：该试验不修改官方文件。三场均在 IMU 就绪前 SIGSEGV；后两场取得完整栈，为 LiDAR → `record_frequency_data` → map `count/find/_M_begin`；最后一场在 `record_frequency_data` 返回地址 `0x184be6` 对应库内的静态 `node_instance` 地址读出 NULL。已保存 GDB 栈、原始日志、preload 源码、编译命令和哈希：`experiments/ol2_ros_time_init_pilot_20261105/`、`experiments/ol2_ros_time_init_crash_trace_20261105/`、`experiments/ol2_ros_time_init_node_trace_20261105/`。`artifacts/rea/frequency_rea.json` 和本机库 `0x184bc6` 反汇编显示该频率表在 `node_instance+0xb0`，与该次空指针读取相符；不证明多实例此前崩溃为同一原因。此 preload 不构成修复或时延验收。
+
+## 频率门控与地图切换诊断
+
+在开发 GDB 场中，以已核对版本的 `record_frequency_data` 入口（库偏移 `0x184b87`）读取 `node_instance`（库偏移 `0x26ad60`）；仅指针为空时将函数提前返回，节点非空时撤除断点。seed 123 先导场实际跳过一次，随后命中 `InitAirSimROS` 并观察到非空节点与普通 IMU；约五秒后实际 LoadMap 为 OL1。该实验支持早期频率统计阻断初始化的受控解释，但调试器修改了函数行为和线程调度，不是官方启动修复。见 `experiments/ol2_frequency_gate_pilot_20261105/`。
+
+只读 Browse 探针及 URL 字段检查显示，实际切图调用的候选结构 `+0x28` 为 `/Game/Maps/RMUA2024OL/RMUA2024OL1`；日志和转储见 `experiments/ol2_browse_trace_pilot_20261105/`、`experiments/ol2_url_fields_pilot_20261105/`。随后在同一开发场把该精确 UTF-16 字符串等长替换为 OL2，并保留前述频率门控。三个 seed 各两次均见初始 OL2 加载完成、重定向记录、第二次 OL2 LoadMap 入口、24 个门事件；采样时各有 500–501 条 IMU 和 50–51 条非空 LiDAR，NullRHI 相机为空。每场只出现一次 OL2 加载完成日志，不能确认第二次加载已完成或将这些 ROS 消息归属于第二个世界；旧 runner 的 `observed` 仅检查入口、注入和采样条件，不代表后者，已在后续 runner 增加完成日志检查。`experiments/ol2_redirect_20261105/post_load_analysis.json`、原始日志和 `scripts/analyze_ol2_redirect.py` 保存这一负向核验；先导结果在 `experiments/ol2_redirect_pilot_20261105/`。
+
+单 seed 调试中断快照显示采样结束时主线程位于 `usleep` 调用，而非当时停在 ROS 初始化栈；单次快照不能证明整体无死锁或切图完成。另一场在捕获第二组 12 门后未见 `0x2fb8f40` 游戏状态更新断点；日志输出可能缓冲、探针也改变调度，不能单凭该负结果认定游戏状态永不更新。见 `experiments/ol2_interrupt_stack_pilot_20261105/`、`experiments/ol2_world_tick_pilot_20261105/`。
+
+另一次在调用点取消 OL1 切图并人为返回 0，以保留初始 OL2：在采样窗口内重复拦截 264 次切图请求，未命中预期的游戏状态更新断点；尽管 IMU/LiDAR 消息仍存在，不能认定世界正常推进。保留 `experiments/ol2_cancel_travel_pilot_20261105/` 为失败样本，禁止将旧 runner 的 `observed` 解读为训练通过。更改后的取消运行器会在反复请求或无更新证据时标记未验证；模拟器官方文件未修改。

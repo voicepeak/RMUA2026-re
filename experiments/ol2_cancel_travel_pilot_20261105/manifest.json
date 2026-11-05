@@ -1,0 +1,45 @@
+{
+  "binary_sha256": "5231addfa25ddaa9e4473ea9ac40c9c0bc685174e69cd14bb49159f443b97800",
+  "settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+  "image_id": "sha256:cd46a48cd28c2a9c6345f60227fd1bd50e78c67ef1e98dcddc0e65893771da57",
+  "gdb_script_sha256": "387bc707794feff471295589933b8b06854cbbf514c12c4f254ce7a4a840cc83",
+  "runner_sha256": "fdf31a667f41b99e8d77aebf12859edd2e555811e32fba3d75e2836359f8fe9a",
+  "readiness_timeout_s": 25,
+  "overlay_sha256": "481688da527179a040d1c781f26c2f44d01140e904e66f29cbb8bf205bf42785",
+  "base_pak_sha256": "2407662b224ed28c64412402af044da85aced07d78ce6fc0948e6be11ea2a0c2",
+  "mode": "nullrhi",
+  "requested_map": "/Game/Maps/RMUA2024OL/RMUA2024OL2",
+  "seeds": [
+    123
+  ],
+  "repeats": 1,
+  "stage_coverage": "direct OL2; GDB skips early frequency bookkeeping and cancels OL1 travel using synthetic return 0; no flight",
+  "runs": [
+    {
+      "seed": 123,
+      "repeat": 1,
+      "port": 13432,
+      "container": "rmua-trace-e935827ecff4",
+      "start_wall": 1793866472.1875503,
+      "status": "observed",
+      "id": "065e443dc2d26680d3056ed51a50a1c1fbd60d99fe2dad57c371a0d139fd22d9",
+      "ready_wall": 1793866475.983262,
+      "before_reset_exit_code": 124,
+      "sensor_clock_exit_code": 0,
+      "sensor_counts": {
+        "imu": 500,
+        "lidar": 50,
+        "camera_left": 100,
+        "camera_right": 100
+      },
+      "lidar_nonempty_count": 50,
+      "observed_maps": [
+        "/Game/Maps/RMUA2024OL/RMUA2024OL2?Name=Player"
+      ],
+      "redirect_observed": true,
+      "early_frequency_skip_observed": true,
+      "node_ready_observed": true,
+      "end_wall": 1793866493.4104404
+    }
+  ]
+}

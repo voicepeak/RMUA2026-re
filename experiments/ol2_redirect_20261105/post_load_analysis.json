@@ -1,0 +1,92 @@
+{
+  "seed123_repeat1": {
+    "status": "observed",
+    "completed_ol2_loads": 1,
+    "last_load_log_wall_ns": null,
+    "sensor_samples": {
+      "imu": 500,
+      "camera_left": 100,
+      "camera_right": 100,
+      "lidar": 50
+    },
+    "post_load_samples": {},
+    "post_load_nonempty_lidar": 0,
+    "first_sensor_wall_ns": 1793866237724572971,
+    "limitations": "Log clock interpreted as UTC and compared with subscriber wall clock; this checks post-load ordering, not calibrated sensor latency or official competition progression."
+  },
+  "seed123_repeat2": {
+    "status": "observed",
+    "completed_ol2_loads": 1,
+    "last_load_log_wall_ns": null,
+    "sensor_samples": {
+      "imu": 500,
+      "camera_left": 100,
+      "camera_right": 100,
+      "lidar": 50
+    },
+    "post_load_samples": {},
+    "post_load_nonempty_lidar": 0,
+    "first_sensor_wall_ns": 1793866259181768633,
+    "limitations": "Log clock interpreted as UTC and compared with subscriber wall clock; this checks post-load ordering, not calibrated sensor latency or official competition progression."
+  },
+  "seed456_repeat1": {
+    "status": "observed",
+    "completed_ol2_loads": 1,
+    "last_load_log_wall_ns": null,
+    "sensor_samples": {
+      "imu": 501,
+      "camera_left": 100,
+      "camera_right": 100,
+      "lidar": 51
+    },
+    "post_load_samples": {},
+    "post_load_nonempty_lidar": 0,
+    "first_sensor_wall_ns": 1793866280580196721,
+    "limitations": "Log clock interpreted as UTC and compared with subscriber wall clock; this checks post-load ordering, not calibrated sensor latency or official competition progression."
+  },
+  "seed456_repeat2": {
+    "status": "observed",
+    "completed_ol2_loads": 1,
+    "last_load_log_wall_ns": null,
+    "sensor_samples": {
+      "imu": 501,
+      "camera_left": 100,
+      "camera_right": 100,
+      "lidar": 50
+    },
+    "post_load_samples": {},
+    "post_load_nonempty_lidar": 0,
+    "first_sensor_wall_ns": 1793866301979443626,
+    "limitations": "Log clock interpreted as UTC and compared with subscriber wall clock; this checks post-load ordering, not calibrated sensor latency or official competition progression."
+  },
+  "seed2026_repeat1": {
+    "status": "observed",
+    "completed_ol2_loads": 1,
+    "last_load_log_wall_ns": null,
+    "sensor_samples": {
+      "lidar": 51,
+      "imu": 500,
+      "camera_left": 100,
+      "camera_right": 100
+    },
+    "post_load_samples": {},
+    "post_load_nonempty_lidar": 0,
+    "first_sensor_wall_ns": 1793866323455561027,
+    "limitations": "Log clock interpreted as UTC and compared with subscriber wall clock; this checks post-load ordering, not calibrated sensor latency or official competition progression."
+  },
+  "seed2026_repeat2": {
+    "status": "observed",
+    "completed_ol2_loads": 1,
+    "last_load_log_wall_ns": null,
+    "sensor_samples": {
+      "imu": 500,
+      "camera_left": 100,
+      "camera_right": 100,
+      "lidar": 50
+    },
+    "post_load_samples": {},
+    "post_load_nonempty_lidar": 0,
+    "first_sensor_wall_ns": 1793866344861940949,
+    "limitations": "Log clock interpreted as UTC and compared with subscriber wall clock; this checks post-load ordering, not calibrated sensor latency or official competition progression."
+  }
+}

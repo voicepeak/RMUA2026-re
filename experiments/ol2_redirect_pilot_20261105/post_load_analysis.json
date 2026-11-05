@@ -1,0 +1,17 @@
+{
+  "seed123_repeat1": {
+    "status": "observed",
+    "completed_ol2_loads": 1,
+    "last_load_log_wall_ns": null,
+    "sensor_samples": {
+      "imu": 500,
+      "lidar": 51,
+      "camera_left": 100,
+      "camera_right": 100
+    },
+    "post_load_samples": {},
+    "post_load_nonempty_lidar": 0,
+    "first_sensor_wall_ns": 1793866194879588914,
+    "limitations": "Log clock interpreted as UTC and compared with subscriber wall clock; this checks post-load ordering, not calibrated sensor latency or official competition progression."
+  }
+}

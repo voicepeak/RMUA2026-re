@@ -1,0 +1,35 @@
+{
+  "binary_sha256": "5231addfa25ddaa9e4473ea9ac40c9c0bc685174e69cd14bb49159f443b97800",
+  "settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+  "image_id": "sha256:cd46a48cd28c2a9c6345f60227fd1bd50e78c67ef1e98dcddc0e65893771da57",
+  "gdb_script_sha256": "118b95c45cc199aa2c4c6b89d2a0fce5f01e86f49878305bab1cfe439d8349af",
+  "runner_sha256": "781bd80e2f833b8c6ca95dab2e3f33530e81cacb21437dac2227d761579a9feb",
+  "readiness_timeout_s": 35,
+  "overlay_sha256": "481688da527179a040d1c781f26c2f44d01140e904e66f29cbb8bf205bf42785",
+  "base_pak_sha256": "2407662b224ed28c64412402af044da85aced07d78ce6fc0948e6be11ea2a0c2",
+  "mode": "nullrhi",
+  "requested_map": "/Game/Maps/RMUA2024OL/RMUA2024OL2",
+  "seeds": [
+    123
+  ],
+  "repeats": 1,
+  "stage_coverage": "direct OL2; diagnostic skips frequency bookkeeping while node is null; no flight",
+  "runs": [
+    {
+      "seed": 123,
+      "repeat": 1,
+      "port": 13410,
+      "container": "rmua-trace-56b0ac4ba244",
+      "start_wall": 1793865979.6625953,
+      "status": "requested_map_not_observed",
+      "id": "1ad0ecfb73bc63a01a10b0cb9658ba8bb2e4ff8bbc5d9849b32eb4bef43095aa",
+      "ready_wall": 1793865983.7319355,
+      "before_reset_exit_code": 124,
+      "observed_maps": [
+        "/Game/Maps/RMUA2024OL/RMUA2024OL2?Name=Player",
+        "/Game/Maps/RMUA2024OL/RMUA2024OL1"
+      ],
+      "end_wall": 1793865989.6534228
+    }
+  ]
+}
