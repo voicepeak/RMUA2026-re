@@ -1,0 +1,117 @@
+{
+  "runs": {
+    "experiments/vehicle_release_state_v2_pilot_20261106": {
+      "seed": 123,
+      "status": "observed",
+      "release_state": 7,
+      "vehicle_callback_count": 12,
+      "linked_state_writes": 1,
+      "linked_write_values": [
+        [
+          7,
+          12
+        ]
+      ],
+      "terminal_samples": 63,
+      "terminal_span_s": 14.258570751,
+      "values_sampled_after_first_terminal": [
+        12
+      ]
+    },
+    "experiments/vehicle_release_state_seed123_repeat2_20261106": {
+      "seed": 123,
+      "status": "observed",
+      "release_state": 7,
+      "vehicle_callback_count": 12,
+      "linked_state_writes": 1,
+      "linked_write_values": [
+        [
+          7,
+          12
+        ]
+      ],
+      "terminal_samples": 64,
+      "terminal_span_s": 14.333045814,
+      "values_sampled_after_first_terminal": [
+        12
+      ]
+    },
+    "experiments/vehicle_release_state_seed456_repeat1_20261106": {
+      "seed": 456,
+      "status": "observed",
+      "release_state": 7,
+      "vehicle_callback_count": 12,
+      "linked_state_writes": 1,
+      "linked_write_values": [
+        [
+          7,
+          12
+        ]
+      ],
+      "terminal_samples": 64,
+      "terminal_span_s": 14.494539067,
+      "values_sampled_after_first_terminal": [
+        12
+      ]
+    },
+    "experiments/vehicle_release_state_seed456_repeat2_20261106": {
+      "seed": 456,
+      "status": "observed",
+      "release_state": 7,
+      "vehicle_callback_count": 12,
+      "linked_state_writes": 1,
+      "linked_write_values": [
+        [
+          7,
+          12
+        ]
+      ],
+      "terminal_samples": 63,
+      "terminal_span_s": 14.202221303,
+      "values_sampled_after_first_terminal": [
+        12
+      ]
+    },
+    "experiments/vehicle_release_state_seed2026_repeat1_20261106": {
+      "seed": 2026,
+      "status": "observed",
+      "release_state": 7,
+      "vehicle_callback_count": 12,
+      "linked_state_writes": 1,
+      "linked_write_values": [
+        [
+          7,
+          12
+        ]
+      ],
+      "terminal_samples": 64,
+      "terminal_span_s": 14.200713553,
+      "values_sampled_after_first_terminal": [
+        12
+      ]
+    },
+    "experiments/vehicle_release_state_seed2026_repeat2_20261106": {
+      "seed": 2026,
+      "status": "observed",
+      "release_state": 7,
+      "vehicle_callback_count": 12,
+      "linked_state_writes": 1,
+      "linked_write_values": [
+        [
+          7,
+          12
+        ]
+      ],
+      "terminal_samples": 64,
+      "terminal_span_s": 14.374698518,
+      "values_sampled_after_first_terminal": [
+        12
+      ]
+    }
+  },
+  "limitations": [
+    "state force is released after a fixed timer selected using prior posthoc observations",
+    "vehicle path and stage are injected; GDB modifies scheduling and passive samples are not continuous",
+    "state field 12 is not proof of score delivery, physical impulse or complete natural-race termination"
+  ]
+}

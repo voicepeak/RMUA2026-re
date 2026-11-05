@@ -1,0 +1,101 @@
+{
+  "mesh_sha256": "e2cf8b3debc9b1b17ec283e07ec92303871f2ab7ee3d3d6a5caf2544e1454d63",
+  "mesh": "HoverTruck convex element 0; element transform identity",
+  "runs": {
+    "seed456_repeat1": {
+      "status": "observed",
+      "drone_samples": 208,
+      "child_samples": 180,
+      "matched_within_0_03s": 51,
+      "inside_samples": 45,
+      "inside_examples": [
+        {
+          "mono_s": 235661.292247252,
+          "time_gap_s": 0.014100603002589196,
+          "drone_actor": "0x7fffe57dbd10",
+          "vehicle_actor": "0x7ffdeffd1780",
+          "vehicle_child": "0x7ffdf001e020",
+          "local_point_cm": [
+            1.2195781007761308,
+            -6.721677884657397,
+            86.07571339720235
+          ],
+          "max_hull_plane_distance_cm": -86.04724484547334
+        },
+        {
+          "mono_s": 235662.292201246,
+          "time_gap_s": 0.01626218401361257,
+          "drone_actor": "0x7fffe57dbd10",
+          "vehicle_actor": "0x7ffdeffd1780",
+          "vehicle_child": "0x7ffdf001e020",
+          "local_point_cm": [
+            1.2195781007761308,
+            -6.721677884657397,
+            86.07571339720235
+          ],
+          "max_hull_plane_distance_cm": -86.04724484547334
+        },
+        {
+          "mono_s": 235662.442748013,
+          "time_gap_s": 0.013097239978378639,
+          "drone_actor": "0x7fffe57dbd10",
+          "vehicle_actor": "0x7ffdeffd1780",
+          "vehicle_child": "0x7ffdf001e020",
+          "local_point_cm": [
+            1.2195781007761308,
+            -6.721677884657397,
+            86.07571339720235
+          ],
+          "max_hull_plane_distance_cm": -86.04724484547334
+        },
+        {
+          "mono_s": 235662.741261932,
+          "time_gap_s": 0.01726235798560083,
+          "drone_actor": "0x7fffe57dbd10",
+          "vehicle_actor": "0x7ffdeffd1780",
+          "vehicle_child": "0x7ffdf001e020",
+          "local_point_cm": [
+            1.2195781007761308,
+            -6.721677884657397,
+            86.07571339720235
+          ],
+          "max_hull_plane_distance_cm": -86.04724484547334
+        },
+        {
+          "mono_s": 235662.894296037,
+          "time_gap_s": 0.011583132989471778,
+          "drone_actor": "0x7fffe57dbd10",
+          "vehicle_actor": "0x7ffdeffd1780",
+          "vehicle_child": "0x7ffdf001e020",
+          "local_point_cm": [
+            1.2195781007761308,
+            -6.721677884657397,
+            86.07571339720235
+          ],
+          "max_hull_plane_distance_cm": -86.04724484547334
+        }
+      ],
+      "most_inside_sample": {
+        "mono_s": 235661.292247252,
+        "time_gap_s": 0.014100603002589196,
+        "drone_actor": "0x7fffe57dbd10",
+        "vehicle_actor": "0x7ffdeffd1780",
+        "vehicle_child": "0x7ffdf001e020",
+        "local_point_cm": [
+          1.2195781007761308,
+          -6.721677884657397,
+          86.07571339720235
+        ],
+        "max_hull_plane_distance_cm": -86.04724484547334
+      },
+      "hit_count": 64,
+      "hits_matching_actor_or_child": 12
+    }
+  },
+  "limitations": [
+    "candidate child is inferred from actor offset, ownership and matching transform, not independently typed",
+    "point-in-static-hull is not a runtime contact test; collision settings, actual shape and other transforms remain unverified",
+    "samples are nearest in debugger monotonic time with 0.03 s maximum gap; contacts between samples may be missed",
+    "all truth is posthoc; fixture path and forced state are diagnostic interventions"
+  ]
+}

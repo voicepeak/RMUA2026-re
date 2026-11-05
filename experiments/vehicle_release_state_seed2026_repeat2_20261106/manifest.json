@@ -1,0 +1,48 @@
+{
+  "binary_sha256": "5231addfa25ddaa9e4473ea9ac40c9c0bc685174e69cd14bb49159f443b97800",
+  "settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+  "image_id": "sha256:cd46a48cd28c2a9c6345f60227fd1bd50e78c67ef1e98dcddc0e65893771da57",
+  "gdb_script_sha256": "f93261d6b734c9b2175379d2f2e3951e30b27484bb3cf16bcc2c93779a369205",
+  "runner_sha256": "227acd47f213a8c6024454afb51266ab1f8dc28b2f45e998faff324fd7d920b7",
+  "sensor_clock_sha256": "266167fedcf8d5b3370cac5efa1321281a07981f23af60d22ce374c1e4ee059b",
+  "pwm_probe_sha256": "6b4c1571c88cec4ff937d542a5ef8e598648be4c816d306fcb82c0e568302fc5",
+  "command_probe_sha256": "038ec8cccffbf21692abfb61202afd357c46312c34e2587d1db3b4d305301d3f",
+  "command_policy": "fixed open-loop PWM begins 10 seconds after probe launch; state force released 10 seconds after wind setup; timing uses prior posthoc evidence",
+  "fixture_path_z_cm": 0.0,
+  "mode": "nullrhi",
+  "map": "default Lobby -> OL1",
+  "seeds": [
+    2026
+  ],
+  "repeats": 1,
+  "stage_coverage": "GDB mutates initial stage call arguments; diagnostic, not official progression",
+  "injected_stage": 4,
+  "vehicle_fixture": 1,
+  "runs": [
+    {
+      "seed": 2026,
+      "repeat": 1,
+      "port": 12614,
+      "container": "rmua-trace-b20bd5bd07b8",
+      "start_wall": 1793899606.1478312,
+      "status": "observed",
+      "id": "0cfcf536b08524518305cefd629fe75288b0fa32ff468eede7af2b3d1e38c0bf",
+      "ready_wall": 1793899614.8621645,
+      "before_reset_exit_code": 124,
+      "imu_exit_code": 124,
+      "gps_exit_code": 124,
+      "pose_gt_posthoc_exit_code": 124,
+      "sensor_clock_exit_code": 0,
+      "pwm_wire_exit_code": 0,
+      "fixed_pwm_command_exit_code": 0,
+      "lidar_snapshot_exit_code": 0,
+      "injection_observed": true,
+      "wind_generation_observed": true,
+      "line_generation_observed": true,
+      "drone_world_observed": true,
+      "vehicle_world_observed": true,
+      "vehicle_fixture_observed": true,
+      "end_wall": 1793899641.1038258
+    }
+  ]
+}
