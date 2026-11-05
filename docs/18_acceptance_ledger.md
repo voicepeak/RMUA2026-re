@@ -47,3 +47,5 @@ reset 后风数组已有连续随机流的可复现解释：一次播种、两�
 粗线碰撞组件已取得更强证据：`experiments/line_event_component_thick_20261105/event_component_analysis.json` 的三 seed 各两次事件源 RCX 与粗线 HISM 指针同场匹配 39–43 次；该组件共享多个实例，具体实例、碰撞力及自然赛程仍未确认。事件对象的构造分配仅 16 字节，不能从以往额外读取的字节推断对方。先导 PWM 类型缺失失败保存在 `experiments/line_event_source_pilot_20261105/`。
 
 细线组件也已覆盖三 seed 各两次：`experiments/line_event_component_thin_20261105/event_component_analysis.json` 中，每场 16–24 次事件源参数匹配细线 HISM，另有 4 次指向其他组件；同样不识别具体实例。
+
+粗线夹具实例级受控证据：`experiments/line_hit_instance_thick_20261105/hit_instance_analysis.json` 中三 seed 各两次，预选实例返回索引 7；同组件 39–46 次命中结果块 `+0x58` 均为 7，其他组件均为 -1。候选偏移尚未由独立类型元数据确认，限制为该版本和注入场；先导场返回断点持续输出的缺陷保留在 `experiments/line_hit_result_thick_pilot_20261105/`。

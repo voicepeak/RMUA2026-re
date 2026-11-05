@@ -160,3 +160,4 @@
 | false reset 前后风随机流连续性复算 | `experiments/reset_instances_20261105/wind_stream_analysis.json`、`scripts/analyze_reset_wind_stream.py`；三 seed 各两次逐字节吻合连续流模型 |
 | 命中事件构造点及粗线 HISM 组件归因 | `experiments/line_event_source_static_20261105/`、`experiments/line_event_component_thick_20261105/event_component_analysis.json`、`scripts/analyze_line_event_component.py`；组件共享实例，不能区分具体线 |
 | 细线 HISM 组件命中三 seed 两次 | `experiments/line_event_component_thin_20261105/event_component_analysis.json`；共享组件不识别具体实例 |
+| 粗线命中结果候选实例索引及失败探针 | `experiments/line_hit_instance_thick_20261105/hit_instance_analysis.json`、`experiments/line_hit_result_thick_pilot_20261105/`、`scripts/analyze_line_hit_instance.py` |

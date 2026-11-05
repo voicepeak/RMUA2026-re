@@ -250,3 +250,5 @@ python3 scripts/analyze_line_event_component.py /tmp/rmua-line-event
 ```
 
 细线组件重复对照已完成：stage 4 三 seed 各两次，固定开环 PWM 全部成功，每场有 16–24 次事件源 RCX 与该场提交细线实例的 HISM 组件匹配，另有 4 次指向不同组件。完整数据和可复算统计在 `experiments/line_event_component_thin_20261105/`。和粗线一样，HISM 指针只确认组件身份，不能单独区分该组件的实例或证明自然赛程碰撞力。
+
+进一步跟踪具体粗线实例：预先选择第 8 个粗线 HISM 提交（ordinal 7），其返回索引在三 seed 各两次均为 7；在事件源入口读取的独立 136 字节命中结果块中，同组件事件的 `+0x58` 有符号 32 位值均为 7，每场 39–46 个；每场其他组件的 4 个事件该值为 -1。另一个第 1 个提交的先导场，其首个返回索引为 0，同组件命中值也均为 0。依据相同进程中的组件指针、索引和候选字段匹配，受控场的样本支持命中该夹具实例；该偏移仍需独立类型元数据或更多索引检验，不能推广到其他版本或自然赛程。第一版探针的临时返回断点意外对后续 373 次提交持续输出，保留 `experiments/line_hit_result_thick_pilot_20261105/`，修正后每场仅记录一次返回索引。全部原始字节与统计见 `experiments/line_hit_instance_thick_20261105/`、`scripts/analyze_line_hit_instance.py`；索引是预设输入，调试真值未进入控制。
