@@ -1,0 +1,120 @@
+{
+  "batch_success": true,
+  "attempt": {
+    "attempt": 0,
+    "port": 12650,
+    "success": true,
+    "start_exit_code": 0,
+    "ready_wall_unix_s": 1793899770.2031808,
+    "cleanup_exit_code": 0
+  },
+  "requested_wall_s": 180.0,
+  "frequency_guard": "/home/tianbot/\u684c\u9762/RMUA2026-re/experiments/frequency_guard_development_20261106/guard.so",
+  "liveness_samples": 163,
+  "liveness_span_s": 179.48581464699237,
+  "instances": {
+    "rmua-re-c44650a3043e-0": {
+      "seed": 123,
+      "port": 12650,
+      "liveness_samples": 163,
+      "running_samples": 163,
+      "nonrunning_states": [],
+      "guard_snapshots": 70,
+      "last_guard_snapshot": {
+        "calls": 69000,
+        "contended": 24
+      }
+    },
+    "rmua-re-c44650a3043e-1": {
+      "seed": 456,
+      "port": 12651,
+      "liveness_samples": 163,
+      "running_samples": 163,
+      "nonrunning_states": [],
+      "guard_snapshots": 70,
+      "last_guard_snapshot": {
+        "calls": 69000,
+        "contended": 19
+      }
+    },
+    "rmua-re-c44650a3043e-2": {
+      "seed": 2026,
+      "port": 12652,
+      "liveness_samples": 163,
+      "running_samples": 163,
+      "nonrunning_states": [],
+      "guard_snapshots": 70,
+      "last_guard_snapshot": {
+        "calls": 69000,
+        "contended": 4
+      }
+    },
+    "rmua-re-c44650a3043e-3": {
+      "seed": 789,
+      "port": 12653,
+      "liveness_samples": 163,
+      "running_samples": 163,
+      "nonrunning_states": [],
+      "guard_snapshots": 70,
+      "last_guard_snapshot": {
+        "calls": 69000,
+        "contended": 9
+      }
+    },
+    "rmua-re-c44650a3043e-4": {
+      "seed": 1001,
+      "port": 12654,
+      "liveness_samples": 163,
+      "running_samples": 163,
+      "nonrunning_states": [],
+      "guard_snapshots": 70,
+      "last_guard_snapshot": {
+        "calls": 69000,
+        "contended": 6
+      }
+    },
+    "rmua-re-c44650a3043e-5": {
+      "seed": 1002,
+      "port": 12655,
+      "liveness_samples": 163,
+      "running_samples": 163,
+      "nonrunning_states": [],
+      "guard_snapshots": 70,
+      "last_guard_snapshot": {
+        "calls": 69000,
+        "contended": 3
+      }
+    },
+    "rmua-re-c44650a3043e-6": {
+      "seed": 1003,
+      "port": 12656,
+      "liveness_samples": 163,
+      "running_samples": 163,
+      "nonrunning_states": [],
+      "guard_snapshots": 70,
+      "last_guard_snapshot": {
+        "calls": 69000,
+        "contended": 1
+      }
+    },
+    "rmua-re-c44650a3043e-7": {
+      "seed": 2024,
+      "port": 12657,
+      "liveness_samples": 163,
+      "running_samples": 163,
+      "nonrunning_states": [],
+      "guard_snapshots": 70,
+      "last_guard_snapshot": {
+        "calls": 69000,
+        "contended": 20
+      }
+    }
+  },
+  "limitations": [
+    "idle NullRHI with separate ROS masters; not a full training workload",
+    "one run, finite wall-clock observation; cannot establish stability probability",
+    "guard serializes three exported frequency functions only and changes scheduling; unknown direct accesses remain unprotected",
+    "guard counters are periodic snapshots and are lower bounds, not final total calls or contention",
+    "failure stack and root cause are not established without separate crash capture"
+  ]
+}

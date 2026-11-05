@@ -1,0 +1,85 @@
+{
+  "manifest": "/home/tianbot/\u684c\u9762/RMUA2026-re/experiments/concurrency_8_frequency_guard_180s_20261106/batch00_attempt00_pool/pool.json",
+  "instances": [
+    {
+      "seed": 123,
+      "port": 12650,
+      "container": "rmua-re-c44650a3043e-0",
+      "id": "b53892b08b41b8e0a5d9d05b6c769b42efb67db338fed33646b7ef5a205a8f4d",
+      "docker_start_wall": 1793899758.732588,
+      "docker_created_wall": 1793899759.164051,
+      "imu_ready_observed_wall": 1793899768.813069,
+      "startup_observed_s": 10.080481052398682
+    },
+    {
+      "seed": 456,
+      "port": 12651,
+      "container": "rmua-re-c44650a3043e-1",
+      "id": "f188203a977470990e9630003da4dd5a730e99ae5daffba3d4a667f9eca63100",
+      "docker_start_wall": 1793899759.1642554,
+      "docker_created_wall": 1793899759.5638602,
+      "imu_ready_observed_wall": 1793899768.81084,
+      "startup_observed_s": 9.646584510803223
+    },
+    {
+      "seed": 2026,
+      "port": 12652,
+      "container": "rmua-re-c44650a3043e-2",
+      "id": "abe641193e11441ecd115ff364ae8ea042e5d98e75442a5cdf4361ec2eb5a182",
+      "docker_start_wall": 1793899759.5640402,
+      "docker_created_wall": 1793899759.9808033,
+      "imu_ready_observed_wall": 1793899768.7935412,
+      "startup_observed_s": 9.229501008987427
+    },
+    {
+      "seed": 789,
+      "port": 12653,
+      "container": "rmua-re-c44650a3043e-3",
+      "id": "9e80246d90b6b253a5b84b8f1b8672b8f639b32ea04215dbcb72c89e7608016f",
+      "docker_start_wall": 1793899759.9810326,
+      "docker_created_wall": 1793899760.396495,
+      "imu_ready_observed_wall": 1793899768.7282522,
+      "startup_observed_s": 8.747219562530518
+    },
+    {
+      "seed": 1001,
+      "port": 12654,
+      "container": "rmua-re-c44650a3043e-4",
+      "id": "e99be0517c8d398540dff263eb5e1060dd4a9452c2de2732487064be6a2e5a1c",
+      "docker_start_wall": 1793899760.396747,
+      "docker_created_wall": 1793899760.826291,
+      "imu_ready_observed_wall": 1793899769.0582805,
+      "startup_observed_s": 8.66153335571289
+    },
+    {
+      "seed": 1002,
+      "port": 12655,
+      "container": "rmua-re-c44650a3043e-5",
+      "id": "50b0a3197e6aed24b5a49f2f0b3273fee3ec5cfacfbd93bff9da2df155594e4d",
+      "docker_start_wall": 1793899760.8265834,
+      "docker_created_wall": 1793899761.2570841,
+      "imu_ready_observed_wall": 1793899769.3771963,
+      "startup_observed_s": 8.550612926483154
+    },
+    {
+      "seed": 1003,
+      "port": 12656,
+      "container": "rmua-re-c44650a3043e-6",
+      "id": "66f4a2804b58ac7b7a2d4efe1d3666a2d4f820b68616e1208a6cfca53f5abe4a",
+      "docker_start_wall": 1793899761.2573059,
+      "docker_created_wall": 1793899761.7134898,
+      "imu_ready_observed_wall": 1793899769.88819,
+      "startup_observed_s": 8.630884170532227
+    },
+    {
+      "seed": 2024,
+      "port": 12657,
+      "container": "rmua-re-c44650a3043e-7",
+      "id": "410633faf8dfa57313906bd35a01beab1641316f44ccb0f2ac9a4f2fa163d203",
+      "docker_start_wall": 1793899761.713772,
+      "docker_created_wall": 1793899762.1452615,
+      "imu_ready_observed_wall": 1793899770.1879125,
+      "startup_observed_s": 8.474140405654907
+    }
+  ]
+}
