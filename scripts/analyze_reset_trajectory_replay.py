@@ -41,6 +41,18 @@ for run in man['runs']:
   'max_absolute_position_difference':max_or_none('absolute_position_difference'),
   'max_relative_position_difference':max_or_none('relative_position_difference'),
   'max_velocity_difference':max_or_none('velocity_difference')}
+ pwm_file=p/'pwm_actual.jsonl'
+ if pwm_file.exists():
+  actual=[json.loads(x) for x in pwm_file.read_text().splitlines() if x.strip()]
+  coverage={}
+  for phase in ('before','after'):
+   nonzero=next((x for x in commands[phase] if any(x['command'])),None)
+   if not nonzero:continue
+   selected=[x for x in actual if x.get('pwm') and nonzero['mono_ns']<=x['arrival_monotonic_ns']<ends[phase]]
+   good=[x for x in selected if all(abs(x['pwm'][j]-nonzero['command'][j])<1e-4 for j in range(4))]
+   coverage[phase]={'debug_samples_after_first_nonzero':len(selected),'matching_samples':len(good),
+     'first_match_after_command_ms':(good[0]['arrival_monotonic_ns']-nonzero['mono_ns'])/1e6 if good else None}
+  out[name]['pwm_debug_coverage']=coverage
 out['_limitations']=['matching uses wall monotonic phase time with up to 75 ms sample error, not lockstep physics time',
  'command publication is observed but motor application and exact continuous input equivalence are not proven',
  'API state is not full scene, contacts, vehicle or all simulator physics state',
