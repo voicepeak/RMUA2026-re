@@ -10,7 +10,10 @@ for run in manifest['runs']:
  for m in pattern.finditer(log):
   v=[float(x) for x in m[4].split(',')]
   if len(v)==19 and all(math.isfinite(x) for x in v):rows.append({'mono_ns':int(m[1]),'ptr':m[2],'position':v[:3],'orientation_raw':v[3:7],'linear_velocity':v[7:10],'other_raw':v[10:],'raw_hex':m[3]})
- cmds=[json.loads(x) for x in (p/'pwm_commands.jsonl').read_text().splitlines() if x.strip()]
+ cmd_path=p/'pwm_commands.jsonl'
+ if not cmd_path.exists():cmd_path=p/'pwm_reset_events.jsonl'
+ events=[json.loads(x) for x in cmd_path.read_text().splitlines() if x.strip()]
+ cmds=[x for x in events if 'command' in x]
  entry=re.search(r'RESET_SERVICE_ENTRY mono_ns=(\d+)',log);bridge=re.search(r'RESET_BRIDGE_POSE mono_ns=(\d+)',log)
  if not rows or not cmds or not entry or not bridge:
   results[name]={'error':'missing kinematics, commands or reset markers','kinematics_count':len(rows),'command_count':len(cmds)};continue
@@ -20,10 +23,20 @@ for run in manifest['runs']:
   results[name]={'error':'one or more evaluation windows empty','kinematics_count':len(rows)};continue
  baseline=base[-1];pre=before[-1];post=after[0]
  speed=lambda r:math.sqrt(sum(x*x for x in r['linear_velocity']))
+ post_samples={}
+ for delay in (1,2,3,4):
+  selected=next((r for r in rows if r['mono_ns']>=done+delay*1000000000),None)
+  if selected:
+   post_samples[str(delay)]={'sample':selected,'actual_gap_ms':(selected['mono_ns']-done)/1e6,
+    'position_distance_from_baseline':math.dist(baseline['position'],selected['position']),
+    'velocity_distance_from_baseline':math.dist(baseline['linear_velocity'],selected['linear_velocity'])}
  results[name]={'status':run.get('status'),'reset_response_success':run.get('reset_response_success'),
   'sample_count':len(rows),'command_first_mono_ns':start,'command_last_mono_ns':cmds[-1]['mono_ns'],
+  'reset_service_call_event':next((x for x in events if x.get('event')=='reset_call'),None),
+  'reset_service_response_event':next((x for x in events if x.get('event')=='reset_response'),None),
   'reset_entry_mono_ns':stop,'bridge_marker_mono_ns':done,'baseline_before_action':baseline,
   'last_before_reset':pre,'first_at_least_1s_after_bridge_marker':post,
+  'post_bridge_delay_samples':post_samples,
   'baseline_post_position_distance':math.dist(baseline['position'],post['position']),
   'baseline_post_velocity_distance':math.dist(baseline['linear_velocity'],post['linear_velocity']),
   'action_max_speed':max(speed(x) for x in during),'action_position_min':[min(x['position'][i] for x in during) for i in range(3)],

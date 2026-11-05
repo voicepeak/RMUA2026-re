@@ -1,0 +1,288 @@
+{
+  "seed123_repeat1": {
+    "status": "observed",
+    "reset_response_success": true,
+    "sample_count": 233,
+    "command_first_mono_ns": 218930362252674,
+    "command_last_mono_ns": 218933855338897,
+    "reset_service_call_event": {
+      "event": "reset_call",
+      "mono_ns": 218933875526933
+    },
+    "reset_service_response_event": {
+      "event": "reset_response",
+      "mono_ns": 218935181670190,
+      "success": true
+    },
+    "reset_entry_mono_ns": 218933879452226,
+    "bridge_marker_mono_ns": 218935181019340,
+    "baseline_before_action": {
+      "mono_ns": 218930341325546,
+      "ptr": "0x7ffdec6d8c30",
+      "position": [
+        0.0,
+        0.0,
+        0.308801919
+      ],
+      "orientation_raw": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "linear_velocity": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "other_raw": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "raw_hex": "0000000000000000491b9e3e0000000000000000000000000000803f000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+    },
+    "last_before_reset": {
+      "mono_ns": 218933781452699,
+      "ptr": "0x7ffdec6d8c30",
+      "position": [
+        0.0600827038,
+        0.0019887283,
+        -4.43684912
+      ],
+      "orientation_raw": [
+        0.00411063759,
+        -0.0923603326,
+        -0.0025647576,
+        0.995713949
+      ],
+      "linear_velocity": [
+        0.882668614,
+        0.06232078,
+        -0.290776759
+      ],
+      "other_raw": [
+        -0.0714311302,
+        -0.0360059366,
+        -0.0204646941,
+        3.02564502,
+        0.130721837,
+        -6.39917755,
+        -0.00054842222,
+        0.00120885321,
+        -0.000553383725
+      ],
+      "raw_hex": "4819763d5355023babfa8dc087b2863b6a27bdbd7e1528bb1ce77e3f92f6613f13447f3db1e094be7c4a92bdf67a13bd93a5a7bc2ba44140f2db053e10c6ccc0fec30fba62729e3af41011ba"
+    },
+    "first_at_least_1s_after_bridge_marker": {
+      "mono_ns": 218936211444127,
+      "ptr": "0x7ffdec6d8c30",
+      "position": [
+        -2.06569766e-07,
+        1.99077863e-06,
+        -1.52484691
+      ],
+      "orientation_raw": [
+        1.71268624e-07,
+        2.62324988e-08,
+        2.11427742e-09,
+        1.0
+      ],
+      "linear_velocity": [
+        -1.86954182e-07,
+        1.62319952e-06,
+        4.93266726
+      ],
+      "other_raw": [
+        1.62074002e-07,
+        2.74113141e-08,
+        2.07786344e-09,
+        -1.88153138e-07,
+        1.22860979e-06,
+        6.21475983,
+        -4.2391448e-17,
+        2.78505492e-16,
+        -9.5585307e-16
+      ],
+      "raw_hex": "77cd5db4519905362f2ec3bff6e53734e055e132c34a11310000803f93bd48b4b6dcd93569d89d4090062e341e76eb3229ca0e3124074ab4b6e6a43550dfc640fd7e43a4288ca025c1c089a6"
+    },
+    "post_bridge_delay_samples": {
+      "1": {
+        "sample": {
+          "mono_ns": 218936211444127,
+          "ptr": "0x7ffdec6d8c30",
+          "position": [
+            -2.06569766e-07,
+            1.99077863e-06,
+            -1.52484691
+          ],
+          "orientation_raw": [
+            1.71268624e-07,
+            2.62324988e-08,
+            2.11427742e-09,
+            1.0
+          ],
+          "linear_velocity": [
+            -1.86954182e-07,
+            1.62319952e-06,
+            4.93266726
+          ],
+          "other_raw": [
+            1.62074002e-07,
+            2.74113141e-08,
+            2.07786344e-09,
+            -1.88153138e-07,
+            1.22860979e-06,
+            6.21475983,
+            -4.2391448e-17,
+            2.78505492e-16,
+            -9.5585307e-16
+          ],
+          "raw_hex": "77cd5db4519905362f2ec3bff6e53734e055e132c34a11310000803f93bd48b4b6dcd93569d89d4090062e341e76eb3229ca0e3124074ab4b6e6a43550dfc640fd7e43a4288ca025c1c089a6"
+        },
+        "actual_gap_ms": 1030.424787,
+        "position_distance_from_baseline": 1.8336488290010922,
+        "velocity_distance_from_baseline": 4.932667260000271
+      },
+      "2": {
+        "sample": {
+          "mono_ns": 218937270952950,
+          "ptr": "0x7ffdec6d8b40",
+          "position": [
+            -2.7864462e-07,
+            2.58877958e-06,
+            0.308897674
+          ],
+          "orientation_raw": [
+            0.0,
+            0.0,
+            2.49765497e-09,
+            1.0
+          ],
+          "linear_velocity": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "other_raw": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "raw_hex": "a09895b4e5ba2d36d6279e3e000000000000000036a32b310000803f000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        },
+        "actual_gap_ms": 2089.93361,
+        "position_distance_from_baseline": 9.579039329465119e-05,
+        "velocity_distance_from_baseline": 0.0
+      },
+      "3": {
+        "sample": {
+          "mono_ns": 218938211425542,
+          "ptr": "0x7ffdec6d8c30",
+          "position": [
+            -2.7864462e-07,
+            2.58877958e-06,
+            0.308897674
+          ],
+          "orientation_raw": [
+            0.0,
+            0.0,
+            2.49765497e-09,
+            1.0
+          ],
+          "linear_velocity": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "other_raw": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "raw_hex": "a09895b4e5ba2d36d6279e3e000000000000000036a32b310000803f000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        },
+        "actual_gap_ms": 3030.406202,
+        "position_distance_from_baseline": 9.579039329465119e-05,
+        "velocity_distance_from_baseline": 0.0
+      },
+      "4": {
+        "sample": {
+          "mono_ns": 218939270967950,
+          "ptr": "0x7ffdec6d8b40",
+          "position": [
+            -2.7864462e-07,
+            2.58877958e-06,
+            0.308897674
+          ],
+          "orientation_raw": [
+            0.0,
+            0.0,
+            2.49765497e-09,
+            1.0
+          ],
+          "linear_velocity": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "other_raw": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "raw_hex": "a09895b4e5ba2d36d6279e3e000000000000000036a32b310000803f000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        },
+        "actual_gap_ms": 4089.94861,
+        "position_distance_from_baseline": 9.579039329465119e-05,
+        "velocity_distance_from_baseline": 0.0
+      }
+    },
+    "baseline_post_position_distance": 1.8336488290010922,
+    "baseline_post_velocity_distance": 4.932667260000271,
+    "action_max_speed": 5.87853575,
+    "action_position_min": [
+      0.0,
+      -0.000492702471,
+      -4.53928804
+    ],
+    "action_position_max": [
+      0.0600827038,
+      0.0019887283,
+      0.308801919
+    ],
+    "sample_before_reset_gap_ms": 97.999527,
+    "post_bridge_gap_ms": 1030.424787
+  },
+  "_limitations": [
+    "values are the API getter snapshot, not independently all physics bodies or full environment state",
+    "position, orientation and velocity offsets supported by exported accessor disassembly; coordinate frame and units need independent verification",
+    "fixed PWM and timing are open-loop but experiment design was informed by earlier posthoc observations",
+    "GDB stage/root height interventions and explicit wind reseed are required for this test",
+    "asynchronous samples around reset cannot establish instantaneous velocity, collision manifold, vehicles, or full trajectory replay"
+  ]
+}
