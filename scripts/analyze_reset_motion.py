@@ -22,6 +22,7 @@ for run in manifest['runs']:
  if not base or not before or not after or not during:
   results[name]={'error':'one or more evaluation windows empty','kinematics_count':len(rows)};continue
  baseline=base[-1];pre=before[-1];post=after[0]
+ bridge_nearest=min(rows,key=lambda x:abs(x['mono_ns']-done))
  speed=lambda r:math.sqrt(sum(x*x for x in r['linear_velocity']))
  post_samples={}
  for delay in (1,2,3,4):
@@ -36,6 +37,8 @@ for run in manifest['runs']:
   'reset_service_response_event':next((x for x in events if x.get('event')=='reset_response'),None),
   'reset_entry_mono_ns':stop,'bridge_marker_mono_ns':done,'baseline_before_action':baseline,
   'last_before_reset':pre,'first_at_least_1s_after_bridge_marker':post,
+  'nearest_bridge_marker_sample':bridge_nearest,
+  'nearest_bridge_marker_gap_ms':abs(bridge_nearest['mono_ns']-done)/1e6,
   'post_bridge_delay_samples':post_samples,
   'baseline_post_position_distance':math.dist(baseline['position'],post['position']),
   'baseline_post_velocity_distance':math.dist(baseline['linear_velocity'],post['linear_velocity']),

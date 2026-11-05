@@ -4,14 +4,14 @@
 
 从静态分析可确认的仿真状态：
 
-- `pose_gt` / `gps` / `imu`：位姿、速度、姿态；
+- `pose_gt` / `gps` 是姿态消息，`imu` 提供惯性观测；速度不能从这些消息字段直接假定，需由估计器或已验证接口提供。调试真值仅用于事后评估；
 - 4 相机 + LiDAR：视觉/点云；
-- `/airsim_node/debug/rotor_pwm`：实际 PWM；
+- `/airsim_node/drone_1/debug/rotor_pwm`：实际 PWM 的调试输出，仅用于事后评估；
 - `GameConfig.Score`：航段计数器（每进入 case 2 自增）；
 - `GameConfig.FlightTime`：六段飞行时间累计；
 - `GameConfig.CurStateTime`：当前状态时间；
 - `GameConfig.GameState`：状态字符串；
-- `/airsim_node/debug/wind`：风；
+- `/airsim_node/drone_1/debug/wind`：风的调试输出，仅用于事后评估；
 - `/airsim_node/initial_pose`、`end_goal`；
 - `meter_report` 服务/`custom_msgs`：工厂巡检/游戏事件（以 runtime 为准）。
 
@@ -30,7 +30,7 @@ r = w_gate * gate_passed
 ```
 
 - `segment_advanced`：用 `GameState`/`Score` 变化检测；
-- `gate_passed`：用 `pose_gt` 穿过门平面/门中心距离，或运行时事件；
+- `gate_passed`：若约束禁止在线真值，仅使用允许的运行时事件或状态估计；`pose_gt` 的门平面比较只能事后评估；
 - `deviation`：用 `routes.csv` 的样条点计算最近点/横向误差；
 - 训练早期可用 `IgnoreAllHitCollision`/`IgnoreOverTime` 降低终止；正式评估恢复 false。
 
@@ -52,7 +52,7 @@ r = w_gate * gate_passed
 
 - `/airsim_node/reset` 重置 Score/计时/状态；
 - 如需改变 seed，优先重启进程/容器；
-- 重置后等待 IMU/pose_gt 稳定再开始 step，避免第一帧异常。
+- 策略侧只能使用允许的普通观测判断是否就绪，不要把 `pose_gt` 用作在线 reset 门槛；准确的稳定阈值及重放能力尚未验收。服务返回 true 不保证物理状态已稳定。
 
 ## 6. 重要合规提醒
 

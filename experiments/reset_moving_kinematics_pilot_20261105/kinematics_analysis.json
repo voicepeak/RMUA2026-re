@@ -112,6 +112,39 @@
       ],
       "raw_hex": "77cd5db4519905362f2ec3bff6e53734e055e132c34a11310000803f93bd48b4b6dcd93569d89d4090062e341e76eb3229ca0e3124074ab4b6e6a43550dfc640fd7e43a4288ca025c1c089a6"
     },
+    "nearest_bridge_marker_sample": {
+      "mono_ns": 218935171029531,
+      "ptr": "0x7ffdec6d8b40",
+      "position": [
+        -4.40920935e-08,
+        5.11804444e-07,
+        -1.98772776
+      ],
+      "orientation_raw": [
+        8.69062333e-08,
+        1.19647217e-08,
+        1.03273379e-09,
+        1.0
+      ],
+      "linear_velocity": [
+        -1.51589148e-07,
+        1.39000201e-06,
+        -4.53092861
+      ],
+      "other_raw": [
+        1.62074002e-07,
+        2.74113141e-08,
+        2.07786344e-09,
+        -3.21559327e-07,
+        2.33715696e-06,
+        -3.67749977,
+        -4.2391448e-17,
+        2.78505492e-16,
+        -9.5585307e-16
+      ],
+      "raw_hex": "c55f3db3ef620935dd6dfebf35a1ba33678d4d3217f08d300000803f82c422b41b90ba355efd90c090062e341e76eb3229ca0e31c7a2acb40dd81c36285c6bc0fd7e43a4288ca025c1c089a6"
+    },
+    "nearest_bridge_marker_gap_ms": 9.989809,
     "post_bridge_delay_samples": {
       "1": {
         "sample": {
