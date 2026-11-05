@@ -1,0 +1,44 @@
+{
+  "binary_sha256": "5231addfa25ddaa9e4473ea9ac40c9c0bc685174e69cd14bb49159f443b97800",
+  "settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+  "image_id": "sha256:cd46a48cd28c2a9c6345f60227fd1bd50e78c67ef1e98dcddc0e65893771da57",
+  "gdb_script_sha256": "98f374628a2c9fb86c460615a052311d4cc02b70b7a84e090038650fbe3a1e10",
+  "runner_sha256": "19fe46e9debcadde7b7b80c9cbe98ba349e537ef6211fd2565c0f2ebb9e4b592",
+  "sensor_clock_sha256": "266167fedcf8d5b3370cac5efa1321281a07981f23af60d22ce374c1e4ee059b",
+  "pwm_probe_sha256": "6b4c1571c88cec4ff937d542a5ef8e598648be4c816d306fcb82c0e568302fc5",
+  "command_probe_sha256": "038ec8cccffbf21692abfb61202afd357c46312c34e2587d1db3b4d305301d3f",
+  "command_policy": "fixed open-loop PWM; no sensor or truth input",
+  "mode": "nullrhi",
+  "map": "default Lobby -> OL1",
+  "seeds": [
+    123
+  ],
+  "repeats": 1,
+  "stage_coverage": "GDB mutates initial stage call arguments; diagnostic, not official progression",
+  "injected_stage": 4,
+  "vehicle_fixture": 1,
+  "runs": [
+    {
+      "seed": 123,
+      "repeat": 1,
+      "port": 12920,
+      "container": "rmua-trace-70618ac047ef",
+      "start_wall": 1793858596.6346326,
+      "status": "observed",
+      "id": "835ff8719775dde679b51d7bebe4fc578fec528415de338a7917883f0c7fe134",
+      "ready_wall": 1793858605.300444,
+      "before_reset_exit_code": 124,
+      "imu_exit_code": 124,
+      "gps_exit_code": 124,
+      "pose_gt_posthoc_exit_code": 124,
+      "sensor_clock_exit_code": 0,
+      "pwm_wire_exit_code": 0,
+      "fixed_pwm_command_exit_code": 0,
+      "lidar_snapshot_exit_code": 0,
+      "injection_observed": true,
+      "wind_generation_observed": true,
+      "line_generation_observed": true,
+      "end_wall": 1793858618.5458014
+    }
+  ]
+}

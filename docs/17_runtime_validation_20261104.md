@@ -263,3 +263,7 @@ python3 scripts/analyze_line_hit_instance.py /tmp/rmua-line-instance
 ```
 
 细线将 `--selector` 改为 0，并使用独立输出目录和端口。
+
+车辆命中来源比较先导：沿用固定五点路径和开环 PWM，事件源记录无人机碰撞组件、源 actor/组件，并与同一进程记录的车辆 actor 及采样组件指针比较。先导两场的命中来源均未匹配车辆 actor 或采样组件；有限采样、未识别子组件和强制状态意味着不能证明车辆碰撞不存在。两场使用 debug/wind 消息到达判断就绪，仅作诊断，严格约束的验收对照另用普通 IMU 就绪。
+
+纠正记录：试图以先导场读取的调试位姿选择 z=400 cm 路径，违反调试真值仅用于事后评估的约束；试运行在车辆路径、stage、风和线注入前中止，没有有效实验样本，详见 `experiments/vehicle_contact_z400_pilot_20261105/INVALID.md`。另一个旧运行器批次因发现调试风就绪依赖被中止，记录在 `experiments/vehicle_contact_fixed_20261105/INVALID.md`。此后保持既有固定路径，启动就绪改为普通 IMU 消息，不以调试位置或风值调节动作。
