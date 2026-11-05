@@ -1,0 +1,430 @@
+{
+  "seed123_repeat1": {
+    "release_mono_ns": 235541850328436,
+    "release_state": 7,
+    "state_pointer": "0x7ffdef1e4780",
+    "all_writes": [
+      {
+        "mono_ns": 235531945577008,
+        "tid": 128,
+        "released": false,
+        "state": "0x7ffdef1e4780",
+        "current": 12,
+        "previous": 7
+      },
+      {
+        "mono_ns": 235531995960709,
+        "tid": 128,
+        "released": false,
+        "state": "0x7ffdef1e4780",
+        "current": 12,
+        "previous": 7
+      },
+      {
+        "mono_ns": 235543908786372,
+        "tid": 128,
+        "released": true,
+        "state": "0x7ffdef1e4780",
+        "current": 12,
+        "previous": 7
+      }
+    ],
+    "post_release_vehicle_callback_count": 12,
+    "vehicle_callback_to_state_write_links": [
+      {
+        "event": {
+          "alloc_mono_s": 235543.867474879,
+          "callback_mono_s": 235543.907579951,
+          "elapsed_ms": 40.105071995640174,
+          "event": "0x7ffdee419e90",
+          "source_actor": "0x7ffdef656780",
+          "source_component": "0x7ffdef66c590",
+          "source_matches_vehicle_and_child": true,
+          "allocation_tid": 128,
+          "callback_tid": 128
+        },
+        "following_same_thread_state_write": {
+          "mono_ns": 235543908786372,
+          "tid": 128,
+          "released": true,
+          "state": "0x7ffdef1e4780",
+          "current": 12,
+          "previous": 7
+        }
+      }
+    ],
+    "passive_samples": [
+      {
+        "mono_ns": 235541850361541,
+        "state": "0x7ffdef1e4780",
+        "value": 7
+      },
+      {
+        "mono_ns": 235542097883099,
+        "state": "0x7ffdef1e4780",
+        "value": 7
+      },
+      {
+        "mono_ns": 235542302453328,
+        "state": "0x7ffdef1e4780",
+        "value": 7
+      },
+      {
+        "mono_ns": 235542548500018,
+        "state": "0x7ffdef1e4780",
+        "value": 7
+      },
+      {
+        "mono_ns": 235542752874867,
+        "state": "0x7ffdef1e4780",
+        "value": 7
+      },
+      {
+        "mono_ns": 235542999972360,
+        "state": "0x7ffdef1e4780",
+        "value": 7
+      },
+      {
+        "mono_ns": 235543248124070,
+        "state": "0x7ffdef1e4780",
+        "value": 7
+      },
+      {
+        "mono_ns": 235543452499108,
+        "state": "0x7ffdef1e4780",
+        "value": 7
+      },
+      {
+        "mono_ns": 235543698277913,
+        "state": "0x7ffdef1e4780",
+        "value": 7
+      },
+      {
+        "mono_ns": 235543908944241,
+        "state": "0x7ffdef1e4780",
+        "value": 12
+      },
+      {
+        "mono_ns": 235544151214438,
+        "state": "0x7ffdef1e4780",
+        "value": 12
+      },
+      {
+        "mono_ns": 235544356087127,
+        "state": "0x7ffdef1e4780",
+        "value": 12
+      },
+      {
+        "mono_ns": 235544557246199,
+        "state": "0x7ffdef1e4780",
+        "value": 12
+      },
+      {
+        "mono_ns": 235544758796900,
+        "state": "0x7ffdef1e4780",
+        "value": 12
+      },
+      {
+        "mono_ns": 235544966790178,
+        "state": "0x7ffdef1e4780",
+        "value": 12
+      },
+      {
+        "mono_ns": 235545211541691,
+        "state": "0x7ffdef1e4780",
+        "value": 12
+      },
+      {
+        "mono_ns": 235545417763444,
+        "state": "0x7ffdef1e4780",
+        "value": 12
+      },
+      {
+        "mono_ns": 235545660249482,
+        "state": "0x7ffdef1e4780",
+        "value": 12
+      },
+      {
+        "mono_ns": 235545866230569,
+        "state": "0x7ffdef1e4780",
+        "value": 12
+      },
+      {
+        "mono_ns": 235546123312737,
+        "state": "0x7ffdef1e4780",
+        "value": 12
+      },
+      {
+        "mono_ns": 235546323626706,
+        "state": "0x7ffdef1e4780",
+        "value": 12
+      },
+      {
+        "mono_ns": 235546567676935,
+        "state": "0x7ffdef1e4780",
+        "value": 12
+      },
+      {
+        "mono_ns": 235546775469735,
+        "state": "0x7ffdef1e4780",
+        "value": 12
+      },
+      {
+        "mono_ns": 235546977499543,
+        "state": "0x7ffdef1e4780",
+        "value": 12
+      },
+      {
+        "mono_ns": 235547225179721,
+        "state": "0x7ffdef1e4780",
+        "value": 12
+      },
+      {
+        "mono_ns": 235547472437242,
+        "state": "0x7ffdef1e4780",
+        "value": 12
+      },
+      {
+        "mono_ns": 235547675350255,
+        "state": "0x7ffdef1e4780",
+        "value": 12
+      },
+      {
+        "mono_ns": 235547920080834,
+        "state": "0x7ffdef1e4780",
+        "value": 12
+      },
+      {
+        "mono_ns": 235548123991750,
+        "state": "0x7ffdef1e4780",
+        "value": 12
+      },
+      {
+        "mono_ns": 235548373976579,
+        "state": "0x7ffdef1e4780",
+        "value": 12
+      },
+      {
+        "mono_ns": 235548621800607,
+        "state": "0x7ffdef1e4780",
+        "value": 12
+      },
+      {
+        "mono_ns": 235548869267016,
+        "state": "0x7ffdef1e4780",
+        "value": 12
+      },
+      {
+        "mono_ns": 235549069292708,
+        "state": "0x7ffdef1e4780",
+        "value": 12
+      },
+      {
+        "mono_ns": 235549322972754,
+        "state": "0x7ffdef1e4780",
+        "value": 12
+      },
+      {
+        "mono_ns": 235549531916343,
+        "state": "0x7ffdef1e4780",
+        "value": 12
+      },
+      {
+        "mono_ns": 235549773705498,
+        "state": "0x7ffdef1e4780",
+        "value": 12
+      },
+      {
+        "mono_ns": 235550031624818,
+        "state": "0x7ffdef1e4780",
+        "value": 12
+      },
+      {
+        "mono_ns": 235550270369857,
+        "state": "0x7ffdef1e4780",
+        "value": 12
+      },
+      {
+        "mono_ns": 235550473072981,
+        "state": "0x7ffdef1e4780",
+        "value": 12
+      },
+      {
+        "mono_ns": 235550720520732,
+        "state": "0x7ffdef1e4780",
+        "value": 12
+      },
+      {
+        "mono_ns": 235550926533539,
+        "state": "0x7ffdef1e4780",
+        "value": 12
+      },
+      {
+        "mono_ns": 235551169549529,
+        "state": "0x7ffdef1e4780",
+        "value": 12
+      },
+      {
+        "mono_ns": 235551370690258,
+        "state": "0x7ffdef1e4780",
+        "value": 12
+      },
+      {
+        "mono_ns": 235551574796957,
+        "state": "0x7ffdef1e4780",
+        "value": 12
+      },
+      {
+        "mono_ns": 235551819704690,
+        "state": "0x7ffdef1e4780",
+        "value": 12
+      },
+      {
+        "mono_ns": 235552069339836,
+        "state": "0x7ffdef1e4780",
+        "value": 12
+      },
+      {
+        "mono_ns": 235552270857089,
+        "state": "0x7ffdef1e4780",
+        "value": 12
+      },
+      {
+        "mono_ns": 235552520106932,
+        "state": "0x7ffdef1e4780",
+        "value": 12
+      },
+      {
+        "mono_ns": 235552772329697,
+        "state": "0x7ffdef1e4780",
+        "value": 12
+      },
+      {
+        "mono_ns": 235553022610883,
+        "state": "0x7ffdef1e4780",
+        "value": 12
+      },
+      {
+        "mono_ns": 235553228890222,
+        "state": "0x7ffdef1e4780",
+        "value": 12
+      },
+      {
+        "mono_ns": 235553467978256,
+        "state": "0x7ffdef1e4780",
+        "value": 12
+      },
+      {
+        "mono_ns": 235553718407469,
+        "state": "0x7ffdef1e4780",
+        "value": 12
+      },
+      {
+        "mono_ns": 235553919971764,
+        "state": "0x7ffdef1e4780",
+        "value": 12
+      },
+      {
+        "mono_ns": 235554169366551,
+        "state": "0x7ffdef1e4780",
+        "value": 12
+      },
+      {
+        "mono_ns": 235554422059159,
+        "state": "0x7ffdef1e4780",
+        "value": 12
+      },
+      {
+        "mono_ns": 235554669410746,
+        "state": "0x7ffdef1e4780",
+        "value": 12
+      },
+      {
+        "mono_ns": 235554919179827,
+        "state": "0x7ffdef1e4780",
+        "value": 12
+      },
+      {
+        "mono_ns": 235555119242884,
+        "state": "0x7ffdef1e4780",
+        "value": 12
+      },
+      {
+        "mono_ns": 235555320547705,
+        "state": "0x7ffdef1e4780",
+        "value": 12
+      },
+      {
+        "mono_ns": 235555570353413,
+        "state": "0x7ffdef1e4780",
+        "value": 12
+      },
+      {
+        "mono_ns": 235555819688208,
+        "state": "0x7ffdef1e4780",
+        "value": 12
+      },
+      {
+        "mono_ns": 235556022559971,
+        "state": "0x7ffdef1e4780",
+        "value": 12
+      },
+      {
+        "mono_ns": 235556270230157,
+        "state": "0x7ffdef1e4780",
+        "value": 12
+      },
+      {
+        "mono_ns": 235556473131231,
+        "state": "0x7ffdef1e4780",
+        "value": 12
+      },
+      {
+        "mono_ns": 235556678062606,
+        "state": "0x7ffdef1e4780",
+        "value": 12
+      },
+      {
+        "mono_ns": 235556923713029,
+        "state": "0x7ffdef1e4780",
+        "value": 12
+      },
+      {
+        "mono_ns": 235557174385024,
+        "state": "0x7ffdef1e4780",
+        "value": 12
+      },
+      {
+        "mono_ns": 235557426655309,
+        "state": "0x7ffdef1e4780",
+        "value": 12
+      },
+      {
+        "mono_ns": 235557674696070,
+        "state": "0x7ffdef1e4780",
+        "value": 12
+      },
+      {
+        "mono_ns": 235557919728559,
+        "state": "0x7ffdef1e4780",
+        "value": 12
+      },
+      {
+        "mono_ns": 235558167514992,
+        "state": "0x7ffdef1e4780",
+        "value": 12
+      }
+    ],
+    "terminal_sample_count": 63,
+    "terminal_sample_span_s": 14.258570751,
+    "sampled_values_after_first_terminal": [
+      12
+    ],
+    "limitations": [
+      "GDB mutates stage, route and initial state; force is released on fixed timer selected using earlier posthoc observations",
+      "event pointer is matched within one process; same-thread ordering is not a general proof of natural race completion",
+      "passive samples cannot rule out state changes between samples; simulator, score and episode terminal behavior not fully verified",
+      "debugger changes timing and command policy is open-loop without truth input"
+    ]
+  }
+}

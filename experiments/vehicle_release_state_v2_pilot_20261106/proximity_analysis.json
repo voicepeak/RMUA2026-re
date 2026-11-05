@@ -1,0 +1,69 @@
+{
+  "seed123_repeat1": {
+    "status": "observed",
+    "drone_samples": 207,
+    "vehicle_samples": 208,
+    "matched_within_0_2s": 206,
+    "drone_actors": [
+      "0x7fffe57ebd10"
+    ],
+    "hit_drone_actors": [
+      "0x7fffe57ebd10"
+    ],
+    "closest_sample": {
+      "drone": {
+        "mono_s": 235539.195838679,
+        "actor": "0x7fffe57ebd10",
+        "component": "0x7ffdee7b10f0",
+        "xyz_cm": [
+          9.67637334e-07,
+          -9.38232188e-05,
+          -37.9090347
+        ],
+        "quat": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "vehicle": {
+        "mono_s": 235539.195544079,
+        "actor": "0x7ffdef656780",
+        "component": "0x7ffdef649e00",
+        "xyz_cm": [
+          -8.84375,
+          0.015625,
+          -0.00048828125
+        ],
+        "quat": [
+          0.023549851,
+          -6.12344593e-07,
+          7.74860382e-07,
+          0.999722719
+        ]
+      },
+      "time_gap_s": 0.00029460000223480165,
+      "origin_distance_cm": 38.92647004085411
+    },
+    "hit_count": 65,
+    "hit_sources": [
+      {
+        "actor": "0x7fffdcfd8200",
+        "component": "0x7ffe02f82070",
+        "count": 53
+      },
+      {
+        "actor": "0x7ffdef656780",
+        "component": "0x7ffdef66c590",
+        "count": 12
+      }
+    ],
+    "hit_matching_vehicle_actor_or_sampled_component": 12,
+    "limitations": [
+      "component origins are not collision shapes or contact points; transforms and child components are not fully resolved",
+      "nearest samples permit up to 0.2 s separation; sampling may miss brief encounters",
+      "all tracks are posthoc; debugger and forced path/state alter behavior"
+    ]
+  }
+}
