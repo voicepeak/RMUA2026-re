@@ -3,8 +3,18 @@ import re
 import unittest
 from pathlib import Path
 
-from local_models.lines import LINE_STAGE_CALLS, scaled_count
-from local_models.ue_rng import line_offset_from_state
+from local_models.engine import Frame, LineComponentState
+from local_models.lines import (
+    LINE_STAGE_CALLS,
+    LineSpawnSink,
+    LineStageCall,
+    accept_candidate,
+    component_candidate,
+    place_component_candidates,
+    place_spline_candidate,
+    scaled_count,
+)
+from local_models.ue_rng import FRandomStream, f32, line_offset_from_state
 
 LINE_OFFSET_RE = re.compile(
     r"LINE_OFFSET state=(\d+) base_cm=([-0-9.]+) offset_cm=([-0-9.]+) reverse=([01])"
@@ -72,3 +82,72 @@ class LineOuterFlowTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class CountingRng:
+    def __init__(self, value=0.5):
+        self.value = value
+        self.calls = 0
+
+    def draw_fraction(self):
+        self.calls += 1
+        return self.value
+
+
+class RecordingSink(LineSpawnSink):
+    def __init__(self):
+        self.calls = []
+
+    def add_instance(self, selector, base, end):
+        self.calls.append((selector, base, end))
+        return len(self.calls) - 1
+
+
+IDENTITY_FRAME = Frame(
+    location=(0.0, 0.0, 0.0),
+    forward=(1.0, 0.0, 0.0),
+    right=(0.0, 1.0, 0.0),
+    up=(0.0, 0.0, 1.0),
+)
+
+
+class LineCandidateTests(unittest.TestCase):
+    def test_rng_draw_counts_by_mode(self):
+        expected = {0: 2, 1: 4, 2: 5, 3: 4}
+        for mode, count in expected.items():
+            rng = CountingRng()
+            component_candidate(rng, IDENTITY_FRAME, mode)
+            self.assertEqual(rng.calls, count)
+
+    def test_identity_frame_candidate_geometry(self):
+        rng = CountingRng(0.5)
+        candidate = component_candidate(rng, IDENTITY_FRAME, 0)
+        self.assertEqual(candidate.base, (500.0, 0.0, -250.0))
+        self.assertEqual(candidate.end, (500.0, 0.0, 0.0))
+
+        rng = CountingRng(0.5)
+        candidate = component_candidate(rng, IDENTITY_FRAME, 3)
+        self.assertEqual(candidate.base, (500.0, 0.0, -250.0))
+        for got, want in zip(candidate.end, (275.0, 0.0, 0.0)):
+            self.assertAlmostEqual(got, want, delta=1e-3)
+
+    def test_spacing_is_strictly_less_than_tolerance(self):
+        candidate = component_candidate(CountingRng(0.5), IDENTITY_FRAME, 0)
+        self.assertTrue(accept_candidate(candidate, [(620.0, 0.0, -250.0)], 120.0))
+        self.assertFalse(accept_candidate(candidate, [(619.9, 0.0, -250.0)], 120.0))
+
+    def test_component_placement_counts_and_selectors(self):
+        sink = RecordingSink()
+        state = LineComponentState(IDENTITY_FRAME)
+        call = LINE_STAGE_CALLS[4]
+        place_component_candidates(state, call, FRandomStream(123), sink, 120.0)
+        self.assertEqual(state.count, call.param_4 + call.param_5)
+        self.assertEqual([call[0] for call in sink.calls], [1] * call.param_4 + [0] * call.param_5)
+
+    def test_spline_candidate_submits_once(self):
+        sink = RecordingSink()
+        state = LineComponentState(IDENTITY_FRAME)
+        result = place_spline_candidate(state, FRandomStream(123), 1, sink, 120.0)
+        self.assertEqual(result, 0)
+        self.assertEqual(len(sink.calls), 1)
+        self.assertEqual(state.count, 1)

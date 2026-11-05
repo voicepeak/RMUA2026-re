@@ -11,8 +11,18 @@ default backend raises NotImplementedError.
 
 from __future__ import annotations
 
+import math
 from dataclasses import dataclass
 
+from .engine import (
+    Frame,
+    LineComponentState,
+    LineSpawnSink,
+    Vec3,
+    add,
+    distance,
+    mul,
+)
 from .ue_rng import FRandomStream, f32
 
 INITIAL_FORWARD_CM = f32(100.0)  # _DAT_006c1b34
@@ -138,3 +148,130 @@ def generate(call: LineStageCall, backend: LineBackend, rng: FRandomStream) -> N
                     break
 
         distance = f32(distance + (-STEP_CM if reverse else STEP_CM))
+
+
+@dataclass(frozen=True)
+class LineCandidate:
+    base: Vec3
+    end: Vec3
+    mode: int
+
+
+COMPONENT_OFFSET_LONG_CM = f32(1000.0)
+COMPONENT_OFFSET_SIDE_CM = f32(1000.0)
+COMPONENT_OFFSET_BIAS_CM = f32(-500.0)
+COMPONENT_VERTICAL_CM = f32(250.0)
+MODE_ANGLE_SPAN_DEG = f32(360.0)
+MODE3_LENGTH_BASE_CM = f32(150.0)
+MODE12_LENGTH_BASE_CM = f32(100.0)
+MODE12_LENGTH_BIAS_CM = f32(50.0)
+MODE2_SIDE_BIAS_CM = f32(-50.0)
+BUCKET_SCALE = f32(11.0)
+BUCKET_LIMIT = 6
+MAX_PLACEMENT_ATTEMPTS = 999
+
+
+def _unit(rng: FRandomStream) -> float:
+    return rng.draw_fraction()
+
+
+def _direction_from_frame(frame: Frame, angle_deg: float) -> Vec3:
+    radians = f32(f32(angle_deg) * f32(math.pi / 180.0))
+    return add(mul(frame.forward, f32(math.cos(radians))), mul(frame.right, f32(math.sin(radians))))
+
+
+def component_candidate(rng: FRandomStream, frame: Frame, mode: int) -> LineCandidate:
+    """Random point construction from 0x2fc4980.
+
+    RNG order is exact: two position draws, then two draws for mode 3 or three
+    draws for mode 2, or two draws for mode 1.  The component basis vectors are
+    an engine input; no substitute frame is fabricated.
+    """
+    u1 = _unit(rng)
+    u2 = _unit(rng)
+    base = frame.point(
+        f32(u1 * COMPONENT_OFFSET_LONG_CM),
+        f32(f32(u2 * COMPONENT_OFFSET_SIDE_CM) + COMPONENT_OFFSET_BIAS_CM),
+        f32(-COMPONENT_VERTICAL_CM),
+    )
+    anchor = add(base, mul(frame.up, COMPONENT_VERTICAL_CM))
+
+    if mode == 3:
+        angle = f32(_unit(rng) * MODE_ANGLE_SPAN_DEG)
+        length = f32(f32(_unit(rng) * MODE3_LENGTH_BASE_CM) + MODE3_LENGTH_BASE_CM)
+        end = add(anchor, mul(_direction_from_frame(frame, angle), length))
+    elif mode == 2:
+        sign = -1.0 if int(f32(_unit(rng) * BUCKET_SCALE)) < BUCKET_LIMIT else 1.0
+        length = f32(f32(_unit(rng) * MODE12_LENGTH_BASE_CM) + MODE12_LENGTH_BIAS_CM)
+        side = f32(f32(_unit(rng) * MODE12_LENGTH_BASE_CM) + MODE2_SIDE_BIAS_CM)
+        end = add(anchor, add(mul(frame.forward, f32(sign * length)), mul(frame.right, side)))
+    elif mode == 1:
+        sign = -1.0 if int(f32(_unit(rng) * BUCKET_SCALE)) < BUCKET_LIMIT else 1.0
+        length = f32(f32(_unit(rng) * MODE12_LENGTH_BASE_CM) + MODE12_LENGTH_BIAS_CM)
+        end = add(anchor, mul(frame.forward, f32(sign * length)))
+    else:
+        end = anchor
+    return LineCandidate(base=base, end=end, mode=mode)
+
+
+def spline_candidate(rng: FRandomStream, frame: Frame, mode: int) -> LineCandidate:
+    """Random point construction from 0x2fc3fc0 (same draw order and constants)."""
+    return component_candidate(rng, frame, mode)
+
+
+def accept_candidate(
+    candidate: LineCandidate, existing: list[Vec3], tolerance_cm: float
+) -> bool:
+    """0x2fc4980/0x2fc3fc0 spacing test: strict squared-distance comparison."""
+    limit = f32(f32(tolerance_cm) * f32(tolerance_cm))
+    for point in existing:
+        dx = f32(candidate.base[0] - point[0])
+        dy = f32(candidate.base[1] - point[1])
+        dz = f32(candidate.base[2] - point[2])
+        squared = f32(f32(f32(dx * dx) + f32(dy * dy)) + f32(dz * dz))
+        if squared < limit:
+            return False
+    return True
+
+
+def place_component_candidates(
+    state: LineComponentState,
+    call: LineStageCall,
+    rng: FRandomStream,
+    sink: LineSpawnSink,
+    tolerance_cm: float,
+) -> LineComponentState:
+    """Translate 0x2fc4980 up to its HISM submission boundary.
+
+    The target is param_3 + param_4 (call.param_4 + call.param_5 here).  The
+    first group uses selector 1 and the remainder selector 0, matching the two
+    0x2fc3db0 loops at 0x2fc54b5 and 0x2fc559c.
+    """
+    target = call.param_4 + call.param_5
+    attempts = 0
+    while state.count < target and attempts < MAX_PLACEMENT_ATTEMPTS:
+        candidate = component_candidate(rng, state.frame, call.param_8)
+        attempts += 1
+        if accept_candidate(candidate, state.base_points, tolerance_cm):
+            state.append(candidate.base, candidate.end)
+    first_group = min(call.param_4, state.count)
+    for index in range(first_group):
+        sink.add_instance(1, state.base_points[index], state.end_points[index])
+    for index in range(first_group, state.count):
+        sink.add_instance(0, state.base_points[index], state.end_points[index])
+    return state
+
+
+def place_spline_candidate(
+    state: LineComponentState,
+    rng: FRandomStream,
+    mode: int,
+    sink: LineSpawnSink,
+    tolerance_cm: float,
+) -> int:
+    """One translated 0x2fc3fc0 call including its 0x2fc3db0 submission."""
+    candidate = spline_candidate(rng, state.frame, mode)
+    if not accept_candidate(candidate, state.base_points, tolerance_cm):
+        return 0
+    state.append(candidate.base, candidate.end)
+    return sink.add_instance(1, candidate.base, candidate.end)

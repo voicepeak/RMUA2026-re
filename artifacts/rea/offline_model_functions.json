@@ -1,0 +1,25 @@
+{
+  "binary_sha256": "5231addfa25ddaa9e4473ea9ac40c9c0bc685174e69cd14bb49159f443b97800",
+  "ghidra": "12.1.4_PUBLIC",
+  "method": "analyzeHeadless -import -overwrite -noanalysis + scripts/DecompileAddresses.java",
+  "functions": {
+    "0x2fc7620": {"file": "spline_spawn_decomp.c", "scope": "spline point lookup, nearest route component, recursion at -0.5*tolerance"},
+    "0x2fc4980": {"file": "spline_spawn_decomp.c", "scope": "component candidate RNG/placement and two 0x2fc3db0 loops"},
+    "0x2fc3f70": {"file": "spline_spawn_decomp.c", "scope": "line component state reset"},
+    "0x2fc3fc0": {"file": "line_native.c", "scope": "spline candidate RNG/placement and HISM submission"},
+    "0x2fc3db0": {"file": "line_native.c", "scope": "line transform construction and HISM selection"},
+    "0x2fc93c0": {"file": "spline_spawn_decomp.c", "scope": "direct vehicle spawn: component selection, 0x2fc98c0 path, 0x2fbff60 state"},
+    "0x2fc9220": {"file": "line_native.c", "scope": "indirect vehicle descriptor allocation/copy"},
+    "0x2fc9f30": {"file": "spline_spawn_decomp.c", "scope": "vehicle descriptor constructor fields"},
+    "0x2fc96b0": {"file": "spline_spawn_decomp.c", "scope": "initial route+0x264 component vector"},
+    "0x2fc98c0": {"file": "hover_route.c", "scope": "vehicle path distance walk at +/-2100 cm and component-change dedup"},
+    "0x2fc3270": {"file": "hover_route.c", "scope": "vehicle route component attach/spawn transform"},
+    "0x2fbff60": {"file": "hover_route.c", "scope": "vehicle path state and spline rebuild"},
+    "0x2fc0180": {"file": "spline_spawn_decomp.c", "scope": "vehicle tick progress and movement target"},
+    "0x2fdc2f0": {"file": "spline_spawn_decomp.c", "scope": "four-scalar driver into 0x2fc93c0"},
+    "0x2fc6590": {"file": "hover_route.c", "scope": "input-key/distance interpolation table"},
+    "0x2fb23b0": {"file": "wind_generation_trace.c", "scope": "wind keyframe generator"},
+    "0x2fb2050": {"file": "wind_generation_trace.c", "scope": "wind keyframe index search"},
+    "0x2fb2130": {"file": "wind_generation_trace.c", "scope": "wind vector interpolation"}
+  }
+}

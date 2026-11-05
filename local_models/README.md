@@ -3,37 +3,44 @@
 Status: 2026-11-05. Target binary SHA-256
 `5231addfa25ddaa9e4473ea9ac40c9c0bc685174e69cd14bb49159f443b97800`.
 
-This directory starts a local, function-level dynamic model. It is **not**
-seed sweeping, distribution fitting, or a flight controller. Parameters and
-constants come from the decompiled routines and the local simulator ELF; the
-captured stage 4/5/6 experiments are used only as regression tests.
+This directory is a local, function-level dynamic model. It is **not** seed
+sweeping, distribution fitting, or a flight controller. Parameters and constants
+come from decompiled routines and the local simulator ELF; captured stage 4/5/6
+experiments are regression data only.
 
 ## Files
 
 | File | Scope |
 |---|---|
-| `ue_rng.py` | UE4 `FRandomStream`: LCG `state = state*0x0bb38435 + 0x3619636b (mod 2^32)` and the exact `(bits>>9)|0x3f800000` float conversion used by line/vehicle code. |
-| `glibc_rand.py` | glibc `srand()`/`rand()` TYPE_3 generator. Uses ctypes on Linux/glibc; otherwise a documented pure-Python fallback. |
-| `wind.py` | Port of generator `0x2fb23b0`, samplers `0x2fb2050`/`0x2fb2130`, and stage parameters from `0x2fbac30`. Reads constants from the ELF. |
-| `lines.py` | Outer control flow of `0x2fc77b0` with exact constants/LCG calls; inner spline/spawn helpers are explicit gaps. |
-| `vehicles.py` | Outer control flow of `0x2fc8900` including the `bucket < 6` branch; spawn helpers are explicit gaps. |
-| `tests/` | Regression tests against captured runtime data. |
+| `ue_rng.py` | UE4 `FRandomStream`: LCG `state*0x0bb38435 + 0x3619636b` and the exact `(bits>>9)|0x3f800000` float conversion. |
+| `glibc_rand.py` | glibc `srand()`/`rand()` TYPE_3 generator; ctypes on Linux/glibc, documented pure-Python fallback otherwise. |
+| `wind.py` | Byte-exact port of `0x2fb23b0`, samplers `0x2fb2050`/`0x2fb2130`, and `0x2fbac30` stage parameters; reads ELF constants. |
+| `spline.py` | Offline route splines from `artifacts/maps/maps_summary_all.json`: cubic Hermite, arc length, distance lookup, stage route mapping. |
+| `engine.py` | Explicit `EngineBoundaryError` interfaces and the engine-supplied `Frame`/line-state types. |
+| `lines.py` | `0x2fc77b0` outer loop, `0x2fc4980`/`0x2fc3fc0` RNG/placement math, spacing test, and HISM sink boundary. |
+| `vehicles.py` | `0x2fc8900` branch, `0x2fc98c0` distance walk/path dedup, `0x2fbff60`/`0x2fc0180` progress state, `0x2fc9220`/`0x2fdc2f0` descriptors. |
+| `tests/` | Byte-exact and structural regression tests. |
+
+Decompiled evidence added this milestone: `artifacts/rea/spline_spawn_decomp.c`
+and `artifacts/rea/offline_model_functions.json` (address-to-file manifest).
+Existing `line_native.c`, `hover_route.c`, `hover_callers.c`, and
+`wind_generation_trace.c` cover the other translated routines.
 
 ## Run
 
-From the repository root (`D:\RMUA2026-re\repo`):
+From the repository root:
 
 ```powershell
 python -m unittest discover -s local_models/tests -t . -v
 ```
 
-The same suite under local WSL Python (the local ELF path is auto-detected):
+Local WSL (ctypes glibc comparison included):
 
 ```bash
 wsl -d RMUA-RE -- bash -lc "cd '/mnt/d/RMUA2026-re/repo' && python3 -m unittest discover -s local_models/tests -t . -v"
 ```
 
-Generate keyframes:
+Generate wind keyframes:
 
 ```powershell
 python -m local_models.wind --stage 4 --seed 123
@@ -41,89 +48,68 @@ python -m local_models.wind --stage 6 --seed 2026 --json
 python -m local_models.wind --all
 ```
 
-Override the binary path with `--elf PATH` or the `RMUA_ELF` environment
-variable. The default Windows path is
-`D:\RMUA2026-re\sim\simulator_12.0.0.5\Build\LinuxNoEditor\RMUA\Binaries\Linux\RMUA-Linux-Shipping`.
+Override the ELF with `--elf PATH` or `RMUA_ELF`; override the map summary with
+`RMUA_MAPS_SUMMARY`.
 
-## Regression result
+## Regression results
 
-All **18** captured fresh stage-injection runs match byte-for-byte:
+Wind keyframes: all **18** captured fresh runs match byte-for-byte (stage 4:
+6 x 35, stage 5: 6 x 37, stage 6: 6 x 35). Tests compare every 16-byte
+keyframe, per-run SHA-256, and decoded time/speed/direction/transition fields.
 
-| Stage | Captured runs | Keyframes per run | Result |
-|---|---:|---:|---|
-| 4 | 6 (seeds 123/456/2026 x2) | 35 | exact |
-| 5 | 6 | 37 | exact |
-| 6 | 6 | 35 | exact |
+Line offsets: all **9,780** captured `LINE_OFFSET` state/offset pairs across
+stages 4/5/6 reconstruct within text precision.
 
-The tests compare every 16-byte keyframe, both per-run SHA-256 values, and the
-decoded time/speed/direction/transition fields in
-`experiments/stage_inject_{4,5,6}_20261104/analysis.json`. No field is missing
-in those captures. Same-seed repeats are identical; different seeds differ.
+Spline route mapping/length: stage 4/5/6 use route 12/10/7 (`2_2`, `4_2`,
+`1_2`). The offline length minus 100 cm matches the captured reverse line base
+within **0.1 cm** for all three stages:
 
-Additional checks:
+| Stage | Route | Offline base | Captured base | Difference |
+|---|---|---|---:|---:|
+| 4 | 2_2 | 65782.35 cm | 65782.34 cm | ~0.004 cm |
+| 5 | 4_2 | 64831.74 cm | 64831.65 cm | ~0.088 cm |
+| 6 | 1_2 | 69056.50 cm | 69056.58 cm | ~0.074 cm |
 
-- `ue_rng.py`: line offsets from all 9,780 captured `LINE_OFFSET` samples
-  (`experiments/line_offsets_{4,5,6}_20261105/`) and vehicle buckets from
-  `experiments/vehicle_branch_4_20261105/` are reproduced.
-- `glibc_rand.py`: the pure fallback matches the host glibc ctypes sequence
-  (verified under WSL glibc 2.39) and reproduces the captured glibc 2.35
-  keyframes.
-- Sampler: the first ROS wind vector of all 18 `wind_persistent_*` runs matches
-  within `1e-6`; sampler trigonometry uses the host libm rounded to float32 and
-  is not claimed byte-identical to glibc `sincosf`.
+Vehicle samples: the `0x2fc98c0` distance walk `10000, 7900, 5800, 3700, 1600`
+matches the five captured vehicle path points for the direct stage-4 fixture;
+branch buckets match all six `vehicle_branch_4` captures.
 
-## Evidence sources
+## Exactness matrix
 
-- `artifacts/rea/wind_generation_trace.c`: `0x2fb2040`, `0x2fb23b0`,
-  `0x2fb2050`, `0x2fb2130`.
-- `artifacts/rea/followup_callers.c`: `0x2fb8f40`, `0x2fbac30`, `0x2fc77b0`.
-- `artifacts/rea/line_callers.c`: `0x2fc4980`, `0x2fc77b0`, `0x2fc7d70`.
-- `artifacts/rea/hover_callers.c`: `0x2fc8900`, `0x2fdc2f0`;
-  `artifacts/rea/hover_route.c`: `0x2fc93c0` and descendants.
-- `artifacts/rea/followup_state.c`: state calls into `0x2fbac30` and
-  `srand`/reset sequencing at `0x2fba970`.
-- `docs/15_seed_dependency_matrix.md`, `docs/17_runtime_validation_20261104.md`,
-  `docs/18_acceptance_ledger.md`.
-- ELF constants read at `0x6c1440` (11 s), `0x6c163c` (16777215),
-  `0x6c0d20` (8), `0x6c14d4` (2), `0x6c0fdc` (-0.01), `0x6c1a40` (2.4),
-  `0x6c0c84` (-1.2), `0x6c0e50` (360), and the stage targets
-  `0x6c0924`/`0x6c17bc`/`0x6c1860`.
-- `0x2fbac30` stage parameters: 4 = `(200, 350, 2, 1.5)`,
-  5 = `(220, 660, 4, 2)`, 6 = `(200, 1800, 15, 4)`. The first value is the
-  default `GameConfig` limit at `+0x2bc/+0x2c0/+0x2c4` (docs/03), not an ELF
-  float.
+| Area | Status | Evidence / remaining limit |
+|---|---|---|
+| UE LCG state/float conversion | **exact** | `0x2fc77b0`, `0x2fc4980`, `0x2fc8900`; line offsets and vehicle buckets. |
+| glibc `rand()` | **exact** | TYPE_3 pure fallback == host glibc ctypes; captured glibc 2.35 keyframes. |
+| Wind keyframes | **exact** | 18/18 fresh captures; scope excludes prior `rand()` consumers and reset. |
+| Wind sampler | structurally exact | Interpolation/RNG order translated; trig is host libm rounded to float32, not glibc `sincosf`. |
+| Stage route selection and length | **near-exact** | Route mapping and lengths within 0.1 cm; UE `ReparamTable` sampling is approximated by a dense arc-length table. |
+| Spline point/tangent lookup | structurally modeled | Cubic Hermite from serialized points; `USplineComponent` eval and `0x2fc6590` reparam behavior are engine details. |
+| Line offset/step/retry | **exact** | `1500+7000u`, sign flip, 10000 cm step, 1999 retries, 9,780 captures. |
+| Line candidate jitter/orientation | structurally modeled | `0x2fc4980`/`0x2fc3fc0` RNG order and constants; needs component basis vectors and transform. |
+| Line HISM submission | blocked-on-engine | `0x2fc3db0`/`0x054775d0`: HISM component and AddInstance transform. |
+| Vehicle bucket/branch/dispatch | **exact** | `0x2fc8900`, `0x2fc8bb0`, captured states 997704449/2925953427/276274103. |
+| Vehicle path distance walk/dedup | structurally exact | `0x2fc98c0` step +/-2100 cm and component-change dedup; five-point fixture. |
+| Vehicle component array/transform | needs-runtime | route+0x240 component list, quaternions, translation/scale at +0x1c0/+0x1d0. |
+| Vehicle attach/indirect spawn | blocked-on-engine | `0x2fc3270`, `0x2fc9220`, `0x2fc9f30`: actor allocation and component attach. |
+| Vehicle tick progress | structurally exact | `0x2fc0180` adds `dt*speed`; spline length and movement target from UE are boundaries. |
+| Collision/event outcomes | blocked-on-engine | `0x2fb7110` and PhysX contact data are not in the offline model. |
 
-## Exactness status
+## Engine boundaries
 
-- **UE LCG / float conversion**: exact for the implemented operations.
-- **glibc rand**: exact TYPE_3 sequence; pure fallback verified against glibc.
-- **Wind keyframes**: exact for all 18 fresh captures. Scope is fresh
-  `srand(seed)` with no earlier libc `rand()` consumer. It does not cover reset
-  or any hidden pre-consumption.
-- **Wind sampler**: control flow and interpolation translated; trig differs at
-  most by float rounding. The 25 s frozen/transition behavior observed in some
-  injected runs is outside this model.
-- **Lines**: outer loop, 10000 cm step, ±100 cm initial position, 1999 retries,
-  `1500 + 7000u` cm offset, sign flip, and stage call parameters are
-  translated. Actual spline geometry, spacing-array acceptance, spawn success,
-  asset choice and collision are not.
-- **Vehicles**: `±9000` cm lookup, `2100` cm tolerance, `(1000u converted) * 11`
-  bucket, `bucket < 6` branch, and direct/indirect call argument construction
-  are translated. The spawn implementations are not.
+`engine.py` raises `EngineBoundaryError(function, required_input)` for:
 
-## Unresolved functions / blockers
+- `0x2fc7620` / `0x052f01a0` / `0x052f1190` / `0x2fc6590`: live spline
+  component location, world-location update and reparam table.
+- `0x2fc4980` / `0x2fc3fc0`: component forward/right/up vectors and transforms
+  for route+0x240 elements.
+- `0x2fc3db0` / `0x054775d0`: HISM thick/thin component and AddInstance.
+- `0x2fc98c0` / `0x2fc96b0`: route component array, quaternion transform and
+  initial component vector.
+- `0x2fc3270` / `0x2fc9220` / `0x2fc9f30`: UE actor allocation, attach and
+  descriptor copy.
+- `0x2fbff60` / `0x2fc0180`: spline rebuild, `GetSplineLength`,
+  `GetLocationAtDistance`, `GetTangentAtDistance`, movement component update.
+- `0x2fdc2f0`: the four engine accessors and +0x20 counter.
 
-- `0x2fc7620`: spline point lookup with distance repair (used by lines and
-  vehicles). Needs spline component layout and tolerance semantics.
-- `0x2fc4980`: line candidate spacing array and acceptance logic
-  (`+0x250` array, `+0x260` point array, 0x2fc3db0 submission).
-- `0x2fc3fc0`, `0x2fc3db0`, `0x2fc3f70`: line placement, component transform
-  submission, and reset.
-- `0x2fc93c0`: direct vehicle spawn; includes nearest-component search and
-  `0x2fc98c0` / `0x2fbff60` path construction.
-- `0x2fc9220`: indirect vehicle spawn / vector-field path.
-- `0x2fc3270`, `0x2fdc2f0`: vehicle component attach and the four-scalar driver.
-- `0x2fbff60` and later actor/tick/event plumbing (`0x5909b10`, `0x31d6030`).
-
-These remain explicit `NotImplementedError` boundaries in `lines.py` and
-`vehicles.py`; no inner spline or spawn behavior is fabricated.
+No inner spline or spawn behavior is fabricated; the offline spline is the only
+structural substitute, and it is validated against captured route lengths.
