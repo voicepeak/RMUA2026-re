@@ -1,0 +1,145 @@
+
+/home/tianbot/RUMA-by-helinjun/main/simulator/simulator_12.0.0.5/Build/LinuxNoEditor/RMUA/Binaries/Linux/RMUA-Linux-Shipping：     文件格式 elf64-x86-64
+
+
+Disassembly of section .text:
+
+00000000052b53b0 <src_float_to_int_array@@Base+0x4594b0>:
+ 52b53b0:	55                   	push   %rbp
+ 52b53b1:	41 57                	push   %r15
+ 52b53b3:	41 56                	push   %r14
+ 52b53b5:	53                   	push   %rbx
+ 52b53b6:	48 81 ec 88 00 00 00 	sub    $0x88,%rsp
+ 52b53bd:	41 89 cf             	mov    %ecx,%r15d
+ 52b53c0:	49 89 d6             	mov    %rdx,%r14
+ 52b53c3:	89 f5                	mov    %esi,%ebp
+ 52b53c5:	48 89 fb             	mov    %rdi,%rbx
+ 52b53c8:	0f 13 54 24 20       	movlps %xmm2,0x20(%rsp)
+ 52b53cd:	f3 0f 11 5c 24 28    	movss  %xmm3,0x28(%rsp)
+ 52b53d3:	48 83 bf c0 00 00 00 	cmpq   $0x0,0xc0(%rdi)
+ 52b53da:	00 
+ 52b53db:	0f 84 18 01 00 00    	je     52b54f9 <src_float_to_int_array@@Base+0x4595f9>
+ 52b53e1:	0f 29 0c 24          	movaps %xmm1,(%rsp)
+ 52b53e5:	0f 29 44 24 10       	movaps %xmm0,0x10(%rsp)
+ 52b53ea:	48 8d 7c 24 20       	lea    0x20(%rsp),%rdi
+ 52b53ef:	e8 dc fa e4 fd       	call   3104ed0 <LZ4_saveDictHC@@Base+0x10a940>
+ 52b53f4:	0f 16 c1             	movlhps %xmm1,%xmm0
+ 52b53f7:	0f 29 44 24 30       	movaps %xmm0,0x30(%rsp)
+ 52b53fc:	48 8b b3 c0 00 00 00 	mov    0xc0(%rbx),%rsi
+ 52b5403:	48 85 f6             	test   %rsi,%rsi
+ 52b5406:	0f 84 0d 01 00 00    	je     52b5519 <src_float_to_int_array@@Base+0x459619>
+ 52b540c:	0f 29 44 24 40       	movaps %xmm0,0x40(%rsp)
+ 52b5411:	48 8b 93 c8 00 00 00 	mov    0xc8(%rbx),%rdx
+ 52b5418:	48 8b 06             	mov    (%rsi),%rax
+ 52b541b:	48 8d 7c 24 50       	lea    0x50(%rsp),%rdi
+ 52b5420:	31 c9                	xor    %ecx,%ecx
+ 52b5422:	ff 90 50 04 00 00    	call   *0x450(%rax)
+ 52b5428:	0f b7 8b 4c 01 00 00 	movzwl 0x14c(%rbx),%ecx
+ 52b542f:	0f b6 83 4e 01 00 00 	movzbl 0x14e(%rbx),%eax
+ 52b5436:	c1 e0 10             	shl    $0x10,%eax
+ 52b5439:	09 c8                	or     %ecx,%eax
+ 52b543b:	a8 04                	test   $0x4,%al
+ 52b543d:	0f 85 e1 00 00 00    	jne    52b5524 <src_float_to_int_array@@Base+0x459624>
+ 52b5443:	0f 57 c0             	xorps  %xmm0,%xmm0
+ 52b5446:	0f 28 0c 24          	movaps (%rsp),%xmm1
+ 52b544a:	f3 0f 10 c1          	movss  %xmm1,%xmm0
+ 52b544e:	0f 28 6c 24 10       	movaps 0x10(%rsp),%xmm5
+ 52b5453:	0f 16 e8             	movlhps %xmm0,%xmm5
+ 52b5456:	0f 5c 6c 24 60       	subps  0x60(%rsp),%xmm5
+ 52b545b:	0f 54 2d be 24 16 02 	andps  0x21624be(%rip),%xmm5        # 7417920 <__bss_start@@Base+0x2be160>
+ 52b5462:	0f 28 0d 47 24 16 02 	movaps 0x2162447(%rip),%xmm1        # 74178b0 <__bss_start@@Base+0x2be0f0>
+ 52b5469:	0f 59 4c 24 50       	mulps  0x50(%rsp),%xmm1
+ 52b546e:	66 0f 70 e5 c9       	pshufd $0xc9,%xmm5,%xmm4
+ 52b5473:	0f 59 e1             	mulps  %xmm1,%xmm4
+ 52b5476:	0f 28 d1             	movaps %xmm1,%xmm2
+ 52b5479:	0f c6 d1 c9          	shufps $0xc9,%xmm1,%xmm2
+ 52b547d:	0f 28 da             	movaps %xmm2,%xmm3
+ 52b5480:	0f 59 dd             	mulps  %xmm5,%xmm3
+ 52b5483:	0f 5c e3             	subps  %xmm3,%xmm4
+ 52b5486:	0f 58 e4             	addps  %xmm4,%xmm4
+ 52b5489:	0f 28 dc             	movaps %xmm4,%xmm3
+ 52b548c:	0f c6 e4 d2          	shufps $0xd2,%xmm4,%xmm4
+ 52b5490:	0f 59 e1             	mulps  %xmm1,%xmm4
+ 52b5493:	0f c6 c9 ff          	shufps $0xff,%xmm1,%xmm1
+ 52b5497:	0f c6 db c9          	shufps $0xc9,%xmm3,%xmm3
+ 52b549b:	0f 59 cb             	mulps  %xmm3,%xmm1
+ 52b549e:	0f 58 cd             	addps  %xmm5,%xmm1
+ 52b54a1:	0f 59 da             	mulps  %xmm2,%xmm3
+ 52b54a4:	0f 5c e3             	subps  %xmm3,%xmm4
+ 52b54a7:	0f c6 e4 c9          	shufps $0xc9,%xmm4,%xmm4
+ 52b54ab:	0f 58 e1             	addps  %xmm1,%xmm4
+ 52b54ae:	0f 28 44 24 70       	movaps 0x70(%rsp),%xmm0
+ 52b54b3:	0f 53 c8             	rcpps  %xmm0,%xmm1
+ 52b54b6:	0f 28 d1             	movaps %xmm1,%xmm2
+ 52b54b9:	0f 59 d1             	mulps  %xmm1,%xmm2
+ 52b54bc:	0f 58 c9             	addps  %xmm1,%xmm1
+ 52b54bf:	0f 59 d0             	mulps  %xmm0,%xmm2
+ 52b54c2:	0f 5c ca             	subps  %xmm2,%xmm1
+ 52b54c5:	0f 28 d1             	movaps %xmm1,%xmm2
+ 52b54c8:	0f 59 d1             	mulps  %xmm1,%xmm2
+ 52b54cb:	0f 58 c9             	addps  %xmm1,%xmm1
+ 52b54ce:	0f 59 d0             	mulps  %xmm0,%xmm2
+ 52b54d1:	0f 54 05 68 24 16 02 	andps  0x2162468(%rip),%xmm0        # 7417940 <__bss_start@@Base+0x2be180>
+ 52b54d8:	0f c2 05 70 23 16 02 	cmpnleps 0x2162370(%rip),%xmm0        # 7417850 <__bss_start@@Base+0x2be090>
+ 52b54df:	06 
+ 52b54e0:	0f 5c ca             	subps  %xmm2,%xmm1
+ 52b54e3:	0f 54 c1             	andps  %xmm1,%xmm0
+ 52b54e6:	0f 59 c4             	mulps  %xmm4,%xmm0
+ 52b54e9:	0f 28 c8             	movaps %xmm0,%xmm1
+ 52b54ec:	66 0f 15 c8          	unpckhpd %xmm0,%xmm1
+ 52b54f0:	a8 08                	test   $0x8,%al
+ 52b54f2:	74 3d                	je     52b5531 <src_float_to_int_array@@Base+0x459631>
+ 52b54f4:	e9 a3 00 00 00       	jmp    52b559c <src_float_to_int_array@@Base+0x45969c>
+ 52b54f9:	40 0f b6 f5          	movzbl %bpl,%esi
+ 52b54fd:	41 0f b6 cf          	movzbl %r15b,%ecx
+ 52b5501:	48 89 df             	mov    %rbx,%rdi
+ 52b5504:	4c 89 f2             	mov    %r14,%rdx
+ 52b5507:	48 81 c4 88 00 00 00 	add    $0x88,%rsp
+ 52b550e:	5b                   	pop    %rbx
+ 52b550f:	41 5e                	pop    %r14
+ 52b5511:	41 5f                	pop    %r15
+ 52b5513:	5d                   	pop    %rbp
+ 52b5514:	e9 97 fd fe ff       	jmp    52a52b0 <src_float_to_int_array@@Base+0x4493b0>
+ 52b5519:	0f 28 44 24 10       	movaps 0x10(%rsp),%xmm0
+ 52b551e:	0f 28 0c 24          	movaps (%rsp),%xmm1
+ 52b5522:	eb 78                	jmp    52b559c <src_float_to_int_array@@Base+0x45969c>
+ 52b5524:	0f 28 44 24 10       	movaps 0x10(%rsp),%xmm0
+ 52b5529:	0f 28 0c 24          	movaps (%rsp),%xmm1
+ 52b552d:	a8 08                	test   $0x8,%al
+ 52b552f:	75 6b                	jne    52b559c <src_float_to_int_array@@Base+0x45969c>
+ 52b5531:	0f 28 64 24 50       	movaps 0x50(%rsp),%xmm4
+ 52b5536:	0f 59 25 73 23 16 02 	mulps  0x2162373(%rip),%xmm4        # 74178b0 <__bss_start@@Base+0x2be0f0>
+ 52b553d:	0f 28 f4             	movaps %xmm4,%xmm6
+ 52b5540:	0f c6 f4 ff          	shufps $0xff,%xmm4,%xmm6
+ 52b5544:	0f 28 6c 24 40       	movaps 0x40(%rsp),%xmm5
+ 52b5549:	0f 59 f5             	mulps  %xmm5,%xmm6
+ 52b554c:	0f 28 d4             	movaps %xmm4,%xmm2
+ 52b554f:	0f c6 d4 00          	shufps $0x0,%xmm4,%xmm2
+ 52b5553:	0f 28 dd             	movaps %xmm5,%xmm3
+ 52b5556:	0f c6 dd 1b          	shufps $0x1b,%xmm5,%xmm3
+ 52b555a:	0f 59 da             	mulps  %xmm2,%xmm3
+ 52b555d:	0f 59 1d 5c 23 16 02 	mulps  0x216235c(%rip),%xmm3        # 74178c0 <__bss_start@@Base+0x2be100>
+ 52b5564:	0f 58 de             	addps  %xmm6,%xmm3
+ 52b5567:	0f 28 f4             	movaps %xmm4,%xmm6
+ 52b556a:	0f c6 f4 55          	shufps $0x55,%xmm4,%xmm6
+ 52b556e:	0f 28 d5             	movaps %xmm5,%xmm2
+ 52b5571:	0f c6 d5 4e          	shufps $0x4e,%xmm5,%xmm2
+ 52b5575:	0f 59 d6             	mulps  %xmm6,%xmm2
+ 52b5578:	0f 59 15 51 23 16 02 	mulps  0x2162351(%rip),%xmm2        # 74178d0 <__bss_start@@Base+0x2be110>
+ 52b557f:	0f 58 d3             	addps  %xmm3,%xmm2
+ 52b5582:	0f c6 e4 aa          	shufps $0xaa,%xmm4,%xmm4
+ 52b5586:	0f c6 ed b1          	shufps $0xb1,%xmm5,%xmm5
+ 52b558a:	0f 59 ec             	mulps  %xmm4,%xmm5
+ 52b558d:	0f 59 2d 4c 23 16 02 	mulps  0x216234c(%rip),%xmm5        # 74178e0 <__bss_start@@Base+0x2be120>
+ 52b5594:	0f 58 ea             	addps  %xmm2,%xmm5
+ 52b5597:	0f 29 6c 24 30       	movaps %xmm5,0x30(%rsp)
+ 52b559c:	40 0f b6 d5          	movzbl %bpl,%edx
+ 52b55a0:	45 0f b6 c7          	movzbl %r15b,%r8d
+ 52b55a4:	48 8d 74 24 30       	lea    0x30(%rsp),%rsi
+ 52b55a9:	48 89 df             	mov    %rbx,%rdi
+ 52b55ac:	4c 89 f1             	mov    %r14,%rcx
+ 52b55af:	e8 6c ff fe ff       	call   52a5520 <src_float_to_int_array@@Base+0x449620>
+ 52b55b4:	48 81 c4 88 00 00 00 	add    $0x88,%rsp
+ 52b55bb:	5b                   	pop    %rbx
+ 52b55bc:	41 5e                	pop    %r14
+ 52b55be:	41 5f                	pop    %r15

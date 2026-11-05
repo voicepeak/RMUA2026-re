@@ -1,0 +1,64 @@
+{
+  "seed123_repeat1": {
+    "status": "observed",
+    "drone_samples": 105,
+    "vehicle_samples": 105,
+    "matched_within_0_2s": 104,
+    "drone_actors": [
+      "0x7fffe57dbd10"
+    ],
+    "hit_drone_actors": [
+      "0x7fffe57dbd10"
+    ],
+    "closest_sample": {
+      "drone": {
+        "mono_s": 216788.879865892,
+        "actor": "0x7fffe57dbd10",
+        "component": "0x7ffdefec1640",
+        "xyz_cm": [
+          1.54980967e-06,
+          -0.000150266991,
+          -37.9098778
+        ],
+        "quat": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "vehicle": {
+        "mono_s": 216788.879411276,
+        "actor": "0x7ffdf0d66780",
+        "component": "0x7ffdf0d59e00",
+        "xyz_cm": [
+          33.0625,
+          0.0,
+          -0.00048828125
+        ],
+        "quat": [
+          0.0235498548,
+          -6.12344593e-08,
+          0.0,
+          0.999722719
+        ]
+      },
+      "time_gap_s": 0.0004546160052996129,
+      "origin_distance_cm": 50.30159656984787
+    },
+    "hit_count": 2,
+    "hit_sources": [
+      {
+        "actor": "0x7fffdce97000",
+        "component": "0x7ffe191f2070",
+        "count": 2
+      }
+    ],
+    "hit_matching_vehicle_actor_or_sampled_component": 0,
+    "limitations": [
+      "component origins are not collision shapes or contact points; transforms and child components are not fully resolved",
+      "nearest samples permit up to 0.2 s separation; sampling may miss brief encounters",
+      "all tracks are posthoc; debugger and forced path/state alter behavior"
+    ]
+  }
+}

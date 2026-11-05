@@ -1,0 +1,62 @@
+{
+  "mesh_sha256": "e2cf8b3debc9b1b17ec283e07ec92303871f2ab7ee3d3d6a5caf2544e1454d63",
+  "mesh": "HoverTruck convex element 0; element transform identity",
+  "runs": {
+    "seed123_repeat1": {
+      "status": "observed",
+      "drone_samples": 106,
+      "child_samples": 107,
+      "matched_within_0_03s": 86,
+      "inside_samples": 2,
+      "inside_examples": [
+        {
+          "mono_s": 216979.184776655,
+          "time_gap_s": 0.0003713579790201038,
+          "drone_actor": "0x7fffe57ebd10",
+          "vehicle_actor": "0x7ffdefed6780",
+          "vehicle_child": "0x7ffdefeec590",
+          "local_point_cm": [
+            3.622774582968071,
+            171.7003513919736,
+            84.34503926833169
+          ],
+          "max_hull_plane_distance_cm": -84.04422205081201
+        },
+        {
+          "mono_s": 216979.58358248,
+          "time_gap_s": 0.00037327499012462795,
+          "drone_actor": "0x7fffe57ebd10",
+          "vehicle_actor": "0x7ffdefed6780",
+          "vehicle_child": "0x7ffdefeec590",
+          "local_point_cm": [
+            3.656961092228542,
+            -361.8622089134267,
+            84.34712139433033
+          ],
+          "max_hull_plane_distance_cm": -80.66123703329725
+        }
+      ],
+      "most_inside_sample": {
+        "mono_s": 216979.184776655,
+        "time_gap_s": 0.0003713579790201038,
+        "drone_actor": "0x7fffe57ebd10",
+        "vehicle_actor": "0x7ffdefed6780",
+        "vehicle_child": "0x7ffdefeec590",
+        "local_point_cm": [
+          3.622774582968071,
+          171.7003513919736,
+          84.34503926833169
+        ],
+        "max_hull_plane_distance_cm": -84.04422205081201
+      },
+      "hit_count": 2,
+      "hits_matching_actor_or_child": 0
+    }
+  },
+  "limitations": [
+    "candidate child is inferred from actor offset, ownership and matching transform, not independently typed",
+    "point-in-static-hull is not a runtime contact test; collision settings, actual shape and other transforms remain unverified",
+    "samples are nearest in debugger monotonic time with 0.03 s maximum gap; contacts between samples may be missed",
+    "all truth is posthoc; fixture path and forced state are diagnostic interventions"
+  ]
+}

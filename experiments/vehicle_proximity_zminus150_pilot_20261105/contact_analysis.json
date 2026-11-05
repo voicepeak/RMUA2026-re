@@ -1,0 +1,30 @@
+{
+  "seed123_repeat1": {
+    "vehicle_actors": [
+      "0x7ffdef676780"
+    ],
+    "sampled_actor_components": [
+      [
+        "0x7ffdef676780",
+        "0x7ffdef65d600"
+      ]
+    ],
+    "fixture_writes": 1,
+    "hit_source_count": 2,
+    "hit_sources": [
+      {
+        "actor": "0x7fffdce64c00",
+        "component": "0x7ffe090c2070",
+        "count": 2
+      }
+    ],
+    "same_actor_or_sampled_component_count": 0,
+    "same_actor_or_sampled_component": [],
+    "fixed_pwm_command_exit_code": null,
+    "limitations": [
+      "a nonmatching actor or sampled component does not exclude other child components or unobserved contacts",
+      "forced route, state, debugger and finite sampling differ from natural progression",
+      "positions are recorded only for posthoc evaluation"
+    ]
+  }
+}
