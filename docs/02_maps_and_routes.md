@@ -14,7 +14,7 @@ RMUA/Content/Maps/RMUA2024OL/RMUA2024OL12.umap
 12 张图都是独立地图，几何/门/工厂位置不同；不是同一张图只换 seed。
 
 - 本地默认加载 `GameDefaultMap=RMUA2024Lobby`。
-- Lobby 的 `LevelExport.URL.Map` 为 `/Game/Maps/RMUA2024OL/RMUA2024OL1`，所以本地启动默认进入 **OL1**。
+- Lobby 的 `LevelExport.URL.Map` 为 `/Game/Maps/RMUA2024OL/RMUA2024OL1`，默认运行确实进入 OL1；但仅修改该序列化 URL 的开发补丁仍进入 OL1，不能将其视为切图机制。
 - 官方评测/服务器可以通过换图或启动参数使用 OL2–OL12；客户端 Lobby 中没有 OL2–OL12 的选择表，也没有“seed 选图”的字符串/逻辑。
 
 ## 2. 每张图的结构
@@ -104,7 +104,7 @@ player_starts[]
 
 静态证据只能确认默认是 OL1。可选方案（按风险从低到高）：
 
-1. **启动参数/URL 覆盖**：UE4 支持通过 URL/`-map=`/`open` 类命令覆盖地图；需要实测当前 build 是否接受。最稳妥的是在容器里用控制台/`-ExecCmds` 打开 `/Game/Maps/RMUA2024OL/RMUA2024OLn`。
+1. **启动参数/URL 覆盖**：UE4 支持通过 URL/`-map=`/`open` 类命令覆盖地图；需要实测当前 build 是否接受。此前 `-ExecCmds` 和键盘控制台尝试均未观察到 OL2 加载，不能视为已验证方法。
 2. **改包内 Lobby 的 Level URL**：把 `RMUA2024Lobby.umap` 的 URL.Map 改为目标图；需要重新打包/替换 pak。
 3. **改 `DefaultEngine.ini` 的 `GameDefaultMap`**：直接把默认地图设为 `RMUA2024OLn`；同样需要改 pak 或使用非 UFS 覆盖。
 4. **官方服务器**：评测端可能直接为每轮指定地图；本地脚本只传 `seed`，所以不要把本地默认图当成官方轮次映射。
@@ -117,3 +117,5 @@ player_starts[]
 - `artifacts/configs/DefaultGame.ini`
 - `scripts/query_map.py`、`scripts/extract_map_summary2.py`、`scripts/export_map_tables.py`
 - `artifacts/strings/pak_files.txt`
+
+2026-11-05：包含独立 `GameDefaultMap` 配置修改的开发补丁包直接加载 OL2；三个 seed 各两次捕获的 12 门与静态表配对，跨运行变换一致。此启动路径未建立无人机 IMU 话题且报世界更新异常，仅证明门 BeginPlay，不能用于声称跨地图飞行可用。见 docs/17 和 `experiments/ol2_direct_gates_20261105/`。

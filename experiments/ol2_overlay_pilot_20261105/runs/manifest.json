@@ -1,0 +1,27 @@
+{
+  "binary_sha256": "5231addfa25ddaa9e4473ea9ac40c9c0bc685174e69cd14bb49159f443b97800",
+  "settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+  "image_id": "sha256:cd46a48cd28c2a9c6345f60227fd1bd50e78c67ef1e98dcddc0e65893771da57",
+  "gdb_script_sha256": "ed32f1cc5239f100a98bd2e547928a4ebcba532f6d4b8c35ebd8602fbadecb01",
+  "overlay_sha256": "4920aea5011c4d6c67ecb7d39f60a2a3efc24680feaf1218781c7bc8325617e2",
+  "mode": "nullrhi",
+  "requested_map": "/Game/Maps/RMUA2024OL/RMUA2024OL2",
+  "seeds": [
+    123
+  ],
+  "repeats": 1,
+  "stage_coverage": "initial stationary only; no flight and no forced state changes",
+  "runs": [
+    {
+      "seed": 123,
+      "repeat": 1,
+      "port": 13300,
+      "container": "rmua-trace-7fdade223cfa",
+      "start_wall": 1793865326.0586283,
+      "status": "failed",
+      "error": "Command '['docker', 'run', '-d', '--init', '--name', 'rmua-trace-7fdade223cfa', '--network', 'host', '--gpus', 'all', '--cap-add', 'SYS_PTRACE', '--security-opt', 'seccomp=unconfined', '--user', '1000:1000', '-e', 'HOME=/tmp', '-e', 'LD_LIBRARY_PATH=', '-e', 'NVIDIA_DRIVER_CAPABILITIES=all', '-e', 'DISPLAY=:1', '-e', 'ROS_HOSTNAME=localhost', '-e', 'ROS_MASTER_URI=http://127.0.0.1:13300', '-e', 'RMUA_PORT=13300', '-e', 'RMUA_SEED=123', '-e', 'RMUA_MAP=/Game/Maps/RMUA2024OL/RMUA2024OL2', '-v', '/home/tianbot/RUMA-by-helinjun/main/simulator/simulator_12.0.0.5:/sim:ro', '-v', '/home/tianbot/\u684c\u9762/RMUA2026-re/experiments/training_host_20261105/settings.json:/configs/settings.json:ro', '-v', '/home/tianbot/RUMA-by-helinjun/beta/rmua_ws:/workspace/rmua_ws:ro', '-v', '/tmp/RMUA-LinuxNoEditor_0_P.pak:/sim/Build/LinuxNoEditor/RMUA/Content/Paks/RMUA-LinuxNoEditor_0_P.pak:ro', '-v', '/home/tianbot/\u684c\u9762/RMUA2026-re:/analysis:ro', '-v', '/home/tianbot/\u684c\u9762/RMUA2026-re/experiments/ol2_overlay_pilot_20261105/runs/seed123_repeat1:/out', '-v', '/tmp/.X11-unix:/tmp/.X11-unix', '--entrypoint', 'bash', 'rmua/re-probe:20261104', '-c', 'set -e\\nsource /opt/ros/noetic/setup.bash\\nexport ROS_HOME=/tmp/ros\\nmkdir -p \"$ROS_HOME\"\\nroscore -p \"$RMUA_PORT\" > /out/roscore.log 2>&1 &\\nros_pid=$!\\ntrap \\'kill \"$ros_pid\" 2>/dev/null || true\\' EXIT\\nfor i in {1..120}; do rosparam list >/dev/null 2>&1 && break; sleep .25; done\\nrosparam list >/dev/null 2>&1 || exit 2\\ncd /sim/Build/LinuxNoEditor\\ngdb -nx -batch -x /analysis/scripts/runtime_trace.gdb --args ./RMUA/Binaries/Linux/RMUA-Linux-Shipping RMUA seed \"$RMUA_SEED\" -nullrhi -settings=/configs/settings.json \"-ini:Engine:[/Script/EngineSettings.GameMapsSettings]:GameDefaultMap=$RMUA_MAP\"\\n']' returned non-zero exit status 125.",
+      "observed_maps": [],
+      "end_wall": 1793865326.22691
+    }
+  ]
+}

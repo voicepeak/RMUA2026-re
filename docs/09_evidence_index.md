@@ -171,3 +171,5 @@
 | 普通 IMU 就绪的 stage 4 长 PWM 对照及未跟随样本 | `experiments/wind_pwm_imu_long_4_20261105/phase_coverage.json`、`overlap_analysis.json`、原始流；`experiments/wind_pwm_imu_long_pilot_20261105/`；`scripts/analyze_pwm_phase_coverage.py`、`scripts/run_wind_pwm_fixed_long.py`；输入设计独立性及下降沿因果未证 |
 
 | PWM 分发链与无新增断点对照 | `experiments/pwm_chain_control_20261105/phase_coverage.json`、`experiments/pwm_chain_pilot_20261105/chain_analysis.json`、`experiments/pwm_chain_trace_20261105/chain_analysis.json`；`scripts/stage_pwm_chain_probe.gdb`、`scripts/analyze_pwm_chain.py`；trace 第二场就绪前 SIGSEGV，保留原日志 |
+
+| OL2 直接加载的 12 门、三 seed 各两次 | `experiments/ol2_direct_gates_20261105/gate_comparison.json`、原始 GDB 日志；`experiments/ol2_config_overlay_pilot_20261105/`（IMU 就绪失败）和 `experiments/ol2_overlay_retry_pilot_20261105/`（只改 Lobby URL 仍加载 OL1）；`scripts/build_lobby_map_overlay.py`、`scripts/run_ol2_direct_gate_trace.py` |

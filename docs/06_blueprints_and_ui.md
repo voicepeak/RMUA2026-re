@@ -123,7 +123,7 @@ RMUA/Content/Maps/RMUA2024OL/RMUA2024Lobby.umap/.uexp
 UAssetAPI 解析出的关键点：
 
 - `DefaultEngine.ini` 的 `GameDefaultMap` 是 Lobby。
-- Lobby 的 `LevelExport.URL.Map` 为 `/Game/Maps/RMUA2024OL/RMUA2024OL1`；本地默认进入 OL1。
+- Lobby 的 `LevelExport.URL.Map` 为 `/Game/Maps/RMUA2024OL/RMUA2024OL1`；本地默认进入 OL1，但仅修改该序列化字段的补丁仍进入 OL1，不能据此认定其控制切图（见 docs/17）。
 - Blueprint 变量/名称：
   - `InitialSeed`
   - `CmdParams`

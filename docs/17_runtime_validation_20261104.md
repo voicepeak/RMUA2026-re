@@ -294,3 +294,11 @@ python3 scripts/analyze_vehicle_contact.py /tmp/rmua-vehicle-contact
 复用 stage 4 长命令、普通 IMU 就绪和持续风状态注入，对 seed 123 做两场无新增断点对照：下降的 0.2 和 0 阶段均无同阶段匹配输出，分别采到 400–401、297–298 条输出。另在原 GDB 脚本上增加 `0x26ea0f0` 分发入口和 `0x26ea000` 异步执行入口 change-only 断点：先导及另一成功场在下降阶段两入口均记录到与输入一致的四个 float，PWM 输出分别有 399/400、387/400 个 0.2 匹配及 298/299、293/298 个零匹配。原始单调时钟、各阶段计数及分析见 `experiments/pwm_chain_pilot_20261105/`、`experiments/pwm_chain_trace_20261105/`、`experiments/pwm_chain_control_20261105/` 和 `scripts/analyze_pwm_chain.py`。分发入口反编译见 `artifacts/rea/physics_pwm_native.c`，其静态代码中模式为 2 时向异步函数提交四个 float。
 
 这些断点使用 all-stop 调试并改变调度，成功组与对照组也不保证其他隐变量相同，因此结果支持实验条件敏感，不能证明停留由调度、碰撞或特定代码分支造成。两个入口也记录到其他未经独立类型/生命周期确认的内存字节；不能将其直接定性为损坏命令。断点计数仅记录值变化，并非完整调用计数。不同时间戳的首次差值不构成端到端延迟。带断点的另一场在加载 OL1 后、IMU 就绪前于 `0x331cb09` SIGSEGV，未采集命令；保留其 manifest 和 GDB 日志，不能推断八实例根因。固定时间表在既有风实验之后设计，其输入独立性未证，不计入严格受限控制验收。
+
+## OL2 直接加载与门核验
+
+构造独立开发补丁 pak，保留原包不变：第一种只将 Lobby 序列化 URL 中唯一的 OL1 等长替换为 OL2；补丁已挂载但仍加载 OL1。首个单文件嵌套挂载启动退出 125，stderr 未由旧 runner 保留，原因未确定。第二种在相同 Lobby 补丁中另将 `RMUA/Config/DefaultEngine.ini` 的 `GameDefaultMap` 设为 OL2，配合同一请求参数，日志显示直接加载 `/Game/Maps/RMUA2024OL/RMUA2024OL2?Name=Player`。不能单独由两种组合证明配置读取的全部细节。原包、补丁、内容和二进制哈希、patch 文件与生成脚本分别保存在 `experiments/ol2_overlay_pilot_20261105/`、`experiments/ol2_overlay_retry_pilot_20261105/`、`experiments/ol2_config_overlay_pilot_20261105/` 和 `scripts/build_lobby_map_overlay.py`。
+
+`experiments/ol2_direct_gates_20261105/` 的 seed 123/456/2026 各两次均有实际 OL2 LoadMap、对应 seed 初始化及 12 个门 BeginPlay。按位置与 `artifacts/tables/gates.csv` 最近邻一对一关联，每场 12/12 与 OL2 静态表匹配，最大位置差小于 0.000001 cm；首场最小第二候选距离约 2809.96 cm。以 seed 123 首场为基准的 60 个逐门比较中，位置、四元数角和缩放差均为零；FName 数值也相同。关联不独立解码 actor 名称，采样只覆盖 BeginPlay，缩放不等于门洞碰撞尺寸。原始 GDB 日志、manifest 和 `gate_comparison.json` 可复算。
+
+独立的 seed 123 长等待试场直到 90 秒就绪超时仍只有 `/rosout`、`/rosout_agg`，并在加载后报告 `Exception occurred while updating world`；无 IMU 不能宣称无人机可飞行，错误原因未定位。六个门试场按实际 LoadMap 和 12 条事件停止，不检查传感器；其 `observed` 不代表世界更新或训练接口正常。

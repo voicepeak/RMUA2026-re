@@ -19,7 +19,7 @@
 | reset / 随机流重放 | `experiments/reset_semantics_20261104/`、`experiments/stage_reset_inject_retry_20261104/` | 三 seed 各两次官方 ROS reset 均返回 false；游戏 reset 入口的 FRandomStream 回到 seed，前后各 373 个线障提交变换的多重集合相同，但风数组均不同。成功 reset、各机制场景重放以及 libc 状态变化的确切原因未验证。 |
 | 8 实例崩溃根因或稳定并发上限 | `experiments/concurrency_gdb_20261104/`、`experiments/concurrency_frequency_overlap/`、`experiments/concurrency_followup_20261104/` | 八实例曾崩溃，单次栈指向频率统计 deque，但根因未证；7 路两次各 300 秒存活，第二轮含 60 秒订阅，部分 LiDAR/源时钟变慢。该主机有限空载观测支持七路操作边界，但不同负载或长期的稳定上限及八路根因仍未知。 |
 | 训练规格和逐类可复现脚本 | `docs/15_seed_dependency_matrix.md`、`docs/16_headless_requirements.md`、`experiments/training_host_20261105/`、`scripts/` | 硬件、镜像 ID、二进制和 settings 哈希、实际 settings 副本及已完成机制的脚本已记录；自定义训练环境完整等价和未完成类的验证尚缺。 |
-| OL1 12 门和额外地图 | `experiments/runtime_trace_20261104_v2/`、`experiments/gates_ol2_20261104/` | OL1 三 seed 两次门变换一致；第二地图请求均实际加载 OL1，门洞物理尺寸与跨地图核验未完成。 |
+| OL1 12 门和额外地图 | `experiments/runtime_trace_20261104_v2/`、`experiments/ol2_direct_gates_20261105/` | OL1 与开发补丁直接加载的 OL2 均覆盖三 seed 两次、12 门 BeginPlay；OL2 无可用 IMU，门洞物理尺寸与可飞行跨图初始化未完成。 |
 | 失败样本、限制、原始数据与提交推送 | docs/09、15、16、17、Git 历史；各 `experiments/` | 各试验失败/原始流保留；逐阶段提交并推送。仍需在最终交付时重核远端 HEAD、当前文件和所有未完成项。 |
 
 重要失败样本包括：`experiments/vehicle_call_pilot_20261104/`（GDB call 未完成）、`experiments/vehicle_trampoline_v2_pilot_20261105/`（错误返回标记后 SIGSEGV）、`experiments/stage_reset_inject_pilot_20261104/`（缺 ROS 服务类型，未发出调用）、`experiments/force_wind_tick_4_20261105/`（PWM 消息类型缺失，其他流保留）、`experiments/pwm_20261104/seed456_motor_pulses_failed/`（位置限制）及上述并发和地图失败。不要把失败场次的 `observed` 状态解释为全部机制通过。
@@ -65,3 +65,5 @@ reset 后风数组已有连续随机流的可复现解释：一次播种、两�
 普通 IMU 就绪的 stage 4 长序列复验见 `experiments/wind_pwm_imu_long_4_20261105/`（三 seed 各两次）及先导场。六场的 0.2→0.3→0.4 上升阶段有匹配输出，但后续 0.2 和 0 阶段均无匹配，输出维持 0.4；因果未定，不能将后半段当成有效阶跃或已标定时延。风变化与前述非零命令阶段每场有 41 个近似重叠样本，但这不证明因果。输入时间表在既有风实验之后制定，其设计未证明独立于此前事后真值，不计入严格受限控制验收。此结果不改变 reset、车辆自然碰撞、额外地图、并发上限和最终训练规格的未完成状态。
 
 PWM 分发链对照补充：seed 123 的两场无新增分发断点对照均复现下降阶段无匹配；两场在 `0x26ea0f0`、`0x26ea000` 增加 change-only 断点的成功场则在两个入口及 PWM 输出均观察到下降值。断点改变调度，不能确认停留根因或标定延迟；一次带断点启动在就绪前 SIGSEGV，未产生动作数据。见 `experiments/pwm_chain_{control,pilot,trace}_20261105/`。
+
+额外地图门核验取得直接运行证据：独立补丁配置直接加载 OL2，seed 123/456/2026 各两次均捕获并与 OL2 静态表配对 12 门，60 个跨运行比较位置、四元数和缩放差为零。只覆盖 BeginPlay；长等待试场无 IMU 话题并报告世界更新异常，不能视为可飞行或证明门洞尺寸。Lobby URL 单独替换仍加载 OL1 的失败场也保留。见 `experiments/ol2_direct_gates_20261105/gate_comparison.json`。

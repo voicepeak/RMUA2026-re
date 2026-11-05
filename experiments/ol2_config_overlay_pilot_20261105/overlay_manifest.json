@@ -1,0 +1,27 @@
+{
+  "source_pak_sha256": "2407662b224ed28c64412402af044da85aced07d78ce6fc0948e6be11ea2a0c2",
+  "output_pak_sha256": "481688da527179a040d1c781f26c2f44d01140e904e66f29cbb8bf205bf42785",
+  "change": {
+    "old": "/Game/Maps/RMUA2024OL/RMUA2024OL1",
+    "new": "/Game/Maps/RMUA2024OL/RMUA2024OL2",
+    "default_map": true
+  },
+  "entries": {
+    "RMUA/Content/Maps/RMUA2024OL/RMUA2024Lobby.umap": {
+      "original_sha256": "76b5bf433c007842de9185e741da971a6965f48cb909ea8ee364cf595135a656",
+      "overlay_sha256": "76b5bf433c007842de9185e741da971a6965f48cb909ea8ee364cf595135a656",
+      "bytes": 6814
+    },
+    "RMUA/Content/Maps/RMUA2024OL/RMUA2024Lobby.uexp": {
+      "original_sha256": "f6dfd176eea8119b1ce912989f731751b7c9c8d1e57dbf4584fc78bada5bb8d4",
+      "overlay_sha256": "d9ef05f1960d40644fcf55e5ce952d779919ce3a540e52fdea293cd98066433f",
+      "bytes": 3090
+    },
+    "RMUA/Config/DefaultEngine.ini": {
+      "original_sha256": "0068cafc6878f70590d05674dfda8c193660dc2ea5f328a7dacdb0c31561d713",
+      "overlay_sha256": "caabe16773fb62c44d974589de58a551eefb821d6a2956f83c76fdafc7766aa9",
+      "bytes": 14653
+    }
+  },
+  "scope": "separate development overlay; original pak remains unchanged"
+}
