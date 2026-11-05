@@ -1,0 +1,23 @@
+
+/home/tianbot/RUMA-by-helinjun/main/simulator/simulator_12.0.0.5/Build/LinuxNoEditor/RMUA/Binaries/Linux/RMUA-Linux-Shipping：     文件格式 elf64-x86-64
+
+
+Disassembly of section .text:
+
+0000000002630780 <_start@@Base+0x53e00>:
+ 2630780:	50                   	push   %rax
+ 2630781:	48 81 c7 b8 02 00 00 	add    $0x2b8,%rdi
+ 2630788:	e8 73 75 ff ff       	call   2627d00 <_start@@Base+0x4b380>
+ 263078d:	bf 10 00 00 00       	mov    $0x10,%edi
+ 2630792:	e8 49 3e 9a 00       	call   2fd45e0 <operator new(unsigned long)@@Base>
+ 2630797:	48 c7 40 08 1d 00 00 	movq   $0x1d,0x8(%rax)
+ 263079e:	00 
+ 263079f:	48 c7 00 60 cf ba 00 	movq   $0xbacf60,(%rax)
+ 26307a6:	48 8b 0d 53 9a b2 04 	mov    0x4b29a53(%rip),%rcx        # 715a200 <__bss_start@@Base+0xa40>
+ 26307ad:	48 85 c9             	test   %rcx,%rcx
+ 26307b0:	74 06                	je     26307b8 <_start@@Base+0x53e38>
+ 26307b2:	48 89 c7             	mov    %rax,%rdi
+ 26307b5:	58                   	pop    %rax
+ 26307b6:	ff e1                	jmp    *%rcx
+ 26307b8:	58                   	pop    %rax
+ 26307b9:	c3                   	ret    

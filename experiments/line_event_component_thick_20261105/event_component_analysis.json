@@ -1,0 +1,98 @@
+{
+  "seed123_repeat1": {
+    "fixture_records": [
+      [
+        "1",
+        "0x7fffdcad4180"
+      ]
+    ],
+    "event_count": 47,
+    "event_rcx_counts": {
+      "0x7ffe02f62070": 4,
+      "0x7fffdcad4180": 43
+    },
+    "same_component_events": 43,
+    "fixed_pwm_command_exit_code": 0,
+    "limitation": "HISM component is shared by instances; pointer match does not identify which instance was hit."
+  },
+  "seed123_repeat2": {
+    "fixture_records": [
+      [
+        "1",
+        "0x7fffdcc13990"
+      ]
+    ],
+    "event_count": 43,
+    "event_rcx_counts": {
+      "0x7ffe19242070": 4,
+      "0x7fffdcc13990": 39
+    },
+    "same_component_events": 39,
+    "fixed_pwm_command_exit_code": 0,
+    "limitation": "HISM component is shared by instances; pointer match does not identify which instance was hit."
+  },
+  "seed456_repeat1": {
+    "fixture_records": [
+      [
+        "1",
+        "0x7fffe57e4180"
+      ]
+    ],
+    "event_count": 46,
+    "event_rcx_counts": {
+      "0x7ffe01222070": 4,
+      "0x7fffe57e4180": 42
+    },
+    "same_component_events": 42,
+    "fixed_pwm_command_exit_code": 0,
+    "limitation": "HISM component is shared by instances; pointer match does not identify which instance was hit."
+  },
+  "seed456_repeat2": {
+    "fixture_records": [
+      [
+        "1",
+        "0x7fffdcc0d060"
+      ]
+    ],
+    "event_count": 43,
+    "event_rcx_counts": {
+      "0x7ffe19232070": 4,
+      "0x7fffdcc0d060": 39
+    },
+    "same_component_events": 39,
+    "fixed_pwm_command_exit_code": 0,
+    "limitation": "HISM component is shared by instances; pointer match does not identify which instance was hit."
+  },
+  "seed2026_repeat1": {
+    "fixture_records": [
+      [
+        "1",
+        "0x7fffe55598d0"
+      ]
+    ],
+    "event_count": 47,
+    "event_rcx_counts": {
+      "0x7ffe191f2070": 4,
+      "0x7fffe55598d0": 43
+    },
+    "same_component_events": 43,
+    "fixed_pwm_command_exit_code": 0,
+    "limitation": "HISM component is shared by instances; pointer match does not identify which instance was hit."
+  },
+  "seed2026_repeat2": {
+    "fixture_records": [
+      [
+        "1",
+        "0x7fffdcc029b0"
+      ]
+    ],
+    "event_count": 45,
+    "event_rcx_counts": {
+      "0x7ffe06f82070": 4,
+      "0x7fffdcc029b0": 41
+    },
+    "same_component_events": 41,
+    "fixed_pwm_command_exit_code": 0,
+    "limitation": "HISM component is shared by instances; pointer match does not identify which instance was hit."
+  }
+}

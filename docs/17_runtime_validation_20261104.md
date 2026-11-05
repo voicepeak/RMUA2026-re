@@ -237,3 +237,14 @@ python3 scripts/analyze_vehicle_dynamics.py /tmp/rmua-vehicle-bucket
 ```
 
 对完整 false reset 矩阵追加独立离线连续流检验：每场对 glibc 2.35 仅执行一次 `srand(seed)`，调用已有 float32 模型两次，中间不播种、不额外消费。六场的前后 35 项风数组共 12 组均与观测字节完全相等，各次生成消耗 54 个 `rand()`。这为 wind reset 后变化提供可复现的连续流解释，且比仅比较哈希更强；但输出一致无法排除产生相同状态的隐藏操作，实验服务均返回 false，不能推广为成功 reset 的行为。证据与复算：`python3 scripts/analyze_reset_wind_stream.py experiments/reset_instances_20261105`，输出 `wind_stream_analysis.json`。模型允许 seed 为 None 以继续当前 libc 状态；重新核验原 stage 4/5/6 三 seed 各两次 fresh 数据仍全部逐字节吻合。
+
+碰撞组件归因补充：反汇编 `0x2630780` 在调用事件分派前分配 16 字节、写入 `DroneHitEvent` 的 vptr 和类型 29；因此旧日志对事件指针读取的 96 字节中，16 字节之后不能作为事件字段。该入口断点采集到栈顶返回地址 `0x50a2f1e`，其前一条指令 `0x50a2f18` 通过虚表间接调用，按该点之前的实参装载可核对事件来源 RCX 的组件身份。证据在 `experiments/line_event_source_static_20261105/` 和 `experiments/line_event_source_retry_20261105/`。
+
+新探针在粗线实例提交处记录 HISM 组件指针，并在事件源入口记录参数；stage 4 三 seed 各两次、固定开环 PWM 下，每场分别有 39–43 个事件源 RCX 与粗线组件相同，另有 4 个指向不同组件。指针只在同一进程内比较，粗线 HISM 在场景中承载多个实例，因而不能仅据此断言命中了固定夹具那一根，或把全部事件归因于夹具；状态注入和 GDB 也影响行为。完整日志与统计见 `experiments/line_event_component_thick_20261105/`、`scripts/analyze_line_event_component.py`。首场 `experiments/line_event_source_pilot_20261105/` 的固定 PWM 发布因 RotorPWM 类型缺失失败，保留为失败样本；发布器增加按已核对 MD5 动态生成消息的回退后，重试及六个粗线样本发布成功。
+
+复现粗线组件对照（`SIM_DIR`、`ROS_WS` 为已有目录，输出目录须不存在；细线使用 `--selector 0`）：
+
+```bash
+python3 scripts/run_line_event_source.py --selector 1 --stage 4 --simulator "$SIM_DIR" --settings experiments/training_host_20261105/settings.json --messages "$ROS_WS" --output /tmp/rmua-line-event --seeds 123,456,2026 --repeats 2 --sample-seconds 6 --port 12840
+python3 scripts/analyze_line_event_component.py /tmp/rmua-line-event
+```

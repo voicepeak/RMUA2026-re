@@ -1,0 +1,18 @@
+{
+  "seed123_repeat1": {
+    "fixture_records": [
+      [
+        "1",
+        "0x7fffdcc0e040"
+      ]
+    ],
+    "event_count": 47,
+    "event_rcx_counts": {
+      "0x7ffe06f82070": 4,
+      "0x7fffdcc0e040": 43
+    },
+    "same_component_events": 43,
+    "fixed_pwm_command_exit_code": 0,
+    "limitation": "HISM component is shared by instances; pointer match does not identify which instance was hit."
+  }
+}

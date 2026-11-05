@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/analysis/scripts/pwm_wind_step_probe.py", line 5, in <module>
+    from airsim_ros.msg import RotorPWM
+ImportError: cannot import name 'RotorPWM' from 'airsim_ros.msg' (/workspace/rmua_ws/devel/lib/python3/dist-packages/airsim_ros/msg/__init__.py)

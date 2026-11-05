@@ -158,3 +158,4 @@
 | false reset 与车辆空载对照三 seed 两次 | `experiments/reset_instances_20261105/reset_analysis.json`、`experiments/vehicle_fixture_idle_{0,1}_20261105/vehicle_fixture_analysis.json`；reset 返回 false、车辆事件对方未知 |
 | 车辆桶强制 0 的三 seed 两次对照 | `experiments/vehicle_forced_bucket_4_20261105/analysis.json`、`scripts/stage_vehicle_forced_bucket.gdb`、`scripts/run_stage_vehicle_forced_bucket.py`；仅开发注入 |
 | false reset 前后风随机流连续性复算 | `experiments/reset_instances_20261105/wind_stream_analysis.json`、`scripts/analyze_reset_wind_stream.py`；三 seed 各两次逐字节吻合连续流模型 |
+| 命中事件构造点及粗线 HISM 组件归因 | `experiments/line_event_source_static_20261105/`、`experiments/line_event_component_thick_20261105/event_component_analysis.json`、`scripts/analyze_line_event_component.py`；组件共享实例，不能区分具体线 |
