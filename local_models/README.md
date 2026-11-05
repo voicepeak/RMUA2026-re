@@ -59,7 +59,7 @@ Override the ELF with `--elf PATH` or `RMUA_ELF`; override the map summary with
 `RMUA_MAPS_SUMMARY`.
 
 `make_glibc_rand(..., backend="auto")` creates an independent pure stream.
-The explicit `backend="ctypes"` accesses libc's process-global state: another
+The explicit `backend="ctypes"` requires a glibc host and accesses libc's process-global state: another
 `srand`/`rand` user can change its sequence, so it is for isolated comparison,
 not parallel episode streams.  High-bit 32-bit seeds are converted to signed
 initialization words and use C's truncation-toward-zero division.

@@ -1,0 +1,44 @@
+test_auto_streams_are_independent_when_interleaved (local_models.tests.test_glibc_rand.GlibcRandTests) ... ok
+test_ctypes_backend_rejects_non_glibc_host (local_models.tests.test_glibc_rand.GlibcRandTests) ... ok
+test_known_glibc_sequences (local_models.tests.test_glibc_rand.GlibcRandTests) ... ok
+test_pure_fallback_matches_host_glibc (local_models.tests.test_glibc_rand.GlibcRandTests) ... ok
+test_reseed_restarts_sequence (local_models.tests.test_glibc_rand.GlibcRandTests) ... ok
+test_seed_zero_is_one (local_models.tests.test_glibc_rand.GlibcRandTests) ... ok
+test_component_placement_counts_and_selectors (local_models.tests.test_lines.LineCandidateTests) ... ok
+test_identity_frame_candidate_geometry (local_models.tests.test_lines.LineCandidateTests) ... ok
+test_rng_draw_counts_by_mode (local_models.tests.test_lines.LineCandidateTests) ... ok
+test_spacing_is_strictly_less_than_tolerance (local_models.tests.test_lines.LineCandidateTests) ... ok
+test_spline_candidate_submits_once (local_models.tests.test_lines.LineCandidateTests) ... ok
+test_all_captured_line_offsets_reconstruct (local_models.tests.test_lines.LineOuterFlowTests) ... ok
+test_scaled_count_edges (local_models.tests.test_lines.LineOuterFlowTests) ... ok
+test_stage_call_parameters (local_models.tests.test_lines.LineOuterFlowTests) ... ok
+test_arc_length_is_monotonic (local_models.tests.test_spline.SplineModelTests) ... ok
+test_decompiled_artifacts_and_manifest_exist (local_models.tests.test_spline.SplineModelTests) ... ok
+test_distance_endpoints_clamp (local_models.tests.test_spline.SplineModelTests) ... ok
+test_stage_lengths_match_captured_reverse_bases (local_models.tests.test_spline.SplineModelTests) ... ok
+test_stage_route_mapping (local_models.tests.test_spline.SplineModelTests) ... ok
+test_draw_fraction_steps_before_reading (local_models.tests.test_ue_rng.FRandomStreamTests) ... ok
+test_line_offsets_from_captured_updated_states (local_models.tests.test_ue_rng.FRandomStreamTests) ... ok
+test_reset_restores_initial_state (local_models.tests.test_ue_rng.FRandomStreamTests) ... ok
+test_reset_state_252_steps_from_seed_123 (local_models.tests.test_ue_rng.FRandomStreamTests) ... ok
+test_second_runtime_consumed_state_from_seed_123 (local_models.tests.test_ue_rng.FRandomStreamTests) ... ok
+test_vehicle_buckets_from_captured_updated_states (local_models.tests.test_ue_rng.FRandomStreamTests) ... ok
+test_four_scalar_driver_reads_advances_and_builds_call (local_models.tests.test_vehicles.VehicleDescriptorTests) ... ok
+test_indirect_descriptor_fields (local_models.tests.test_vehicles.VehicleDescriptorTests) ... ok
+test_branch_decisions_from_captured_runs (local_models.tests.test_vehicles.VehicleOuterFlowTests) ... ok
+test_entry_arguments_forward_and_reverse (local_models.tests.test_vehicles.VehicleOuterFlowTests) ... ok
+test_run_dispatches_to_the_expected_branch (local_models.tests.test_vehicles.VehicleOuterFlowTests) ... ok
+test_build_path_dedups_by_component_identity (local_models.tests.test_vehicles.VehiclePathTests) ... ok
+test_nearest_component_strict_tie_keeps_first (local_models.tests.test_vehicles.VehiclePathTests) ... ok
+test_path_sample_distances_forward_and_reverse (local_models.tests.test_vehicles.VehiclePathTests) ... ok
+test_tick_progress_and_boundary (local_models.tests.test_vehicles.VehiclePathTests) ... ok
+test_tick_requires_spline_length (local_models.tests.test_vehicles.VehiclePathTests) ... ok
+test_all_18_captured_runs_match_byte_for_byte (local_models.tests.test_wind_regression.WindKeyframeRegressionTests) ... ok
+test_same_seed_repeats_are_identical_and_seeds_differ (local_models.tests.test_wind_regression.WindKeyframeRegressionTests) ... ok
+test_sampler_first_vector_matches_captured_ros_wind (local_models.tests.test_wind_regression.WindKeyframeRegressionTests) ... ok
+test_stage_parameters_from_call_sites (local_models.tests.test_wind_regression.WindKeyframeRegressionTests) ... ok
+
+----------------------------------------------------------------------
+Ran 39 tests in 0.504s
+
+OK

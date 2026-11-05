@@ -6,9 +6,9 @@ generator with degree 31 and separation 3.
 
 Pure-Python fallback (documented algorithm):
 
-* initialise r[0] = seed (0 becomes 1), then for i = 1..30:
-  r[i] = (16807 * r[i-1]) mod 2147483647, computed with the 127773/2836
-  Schrage split used by glibc;
+* initialise r[0] = the unsigned seed (0 becomes 1), convert the working
+  value to int32, then calculate r[1..30] using glibc's 127773/2836 Schrage
+  split with C-style truncation toward zero;
 * discard 10 * 31 outputs;
 * each call returns ((r[f] += r[r]) mod 2**32) >> 1, then advances f and r
   modulo 31.
@@ -106,5 +106,7 @@ def make_glibc_rand(seed: int = 1, backend: str = "auto"):
     if backend in ("pure", "auto"):
         return GlibcRand(seed)
     if backend == "ctypes":
+        if not host_is_glibc():
+            raise RuntimeError("ctypes backend requires a glibc host")
         return CtypesGlibcRand(seed)
     raise ValueError("backend must be auto, pure, or ctypes")

@@ -1,4 +1,5 @@
 import unittest
+from unittest.mock import patch
 
 from local_models.glibc_rand import GlibcRand, host_is_glibc, make_glibc_rand
 
@@ -35,6 +36,11 @@ class GlibcRandTests(unittest.TestCase):
         for _ in range(64):
             self.assertEqual(first.rand(), expected_first.rand())
             self.assertEqual(second.rand(), expected_second.rand())
+
+    def test_ctypes_backend_rejects_non_glibc_host(self):
+        with patch("local_models.glibc_rand.host_is_glibc", return_value=False):
+            with self.assertRaisesRegex(RuntimeError, "glibc host"):
+                make_glibc_rand(123, backend="ctypes")
 
     @unittest.skipUnless(host_is_glibc(), "ctypes glibc comparison requires Linux/glibc")
     def test_pure_fallback_matches_host_glibc(self):
