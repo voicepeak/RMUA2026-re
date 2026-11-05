@@ -235,3 +235,5 @@ reset 对照已扩展为三个 seed 各两次：六场服务响应均为 false�
 python3 scripts/run_stage_vehicle_forced_bucket.py --stage 4 --simulator "$SIM_DIR" --settings experiments/training_host_20261105/settings.json --messages "$ROS_WS" --output /tmp/rmua-vehicle-bucket --seeds 123,456,2026 --repeats 2 --sample-seconds 5 --port 12770
 python3 scripts/analyze_vehicle_dynamics.py /tmp/rmua-vehicle-bucket
 ```
+
+对完整 false reset 矩阵追加独立离线连续流检验：每场对 glibc 2.35 仅执行一次 `srand(seed)`，调用已有 float32 模型两次，中间不播种、不额外消费。六场的前后 35 项风数组共 12 组均与观测字节完全相等，各次生成消耗 54 个 `rand()`。这为 wind reset 后变化提供可复现的连续流解释，且比仅比较哈希更强；但输出一致无法排除产生相同状态的隐藏操作，实验服务均返回 false，不能推广为成功 reset 的行为。证据与复算：`python3 scripts/analyze_reset_wind_stream.py experiments/reset_instances_20261105`，输出 `wind_stream_analysis.json`。模型允许 seed 为 None 以继续当前 libc 状态；重新核验原 stage 4/5/6 三 seed 各两次 fresh 数据仍全部逐字节吻合。

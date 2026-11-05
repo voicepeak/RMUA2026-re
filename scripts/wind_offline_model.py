@@ -7,7 +7,8 @@ f=np.float32
 lib=ctypes.CDLL(None);lib.rand.restype=ctypes.c_int;lib.srand.argtypes=[ctypes.c_uint]
 def randunit():return f(f(lib.rand() & 0xffffff)/f(16777215.0))
 def generate(seed,horizon,target,maximum,minimum):
- lib.srand(seed);remaining=f(horizon);duration=[]
+ if seed is not None: lib.srand(seed)
+ remaining=f(horizon);duration=[]
  while remaining>=f(11):
   u=randunit(); d=f(f(u+u)+f(8));duration.append(d);remaining=f(remaining-f(d+f(2)))
  if len(duration)<2:return []

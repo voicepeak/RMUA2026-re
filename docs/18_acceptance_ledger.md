@@ -41,3 +41,5 @@ stage 6 seed 123 采用事后选定的固定延迟补样后，两场均有动态
 完整 reset 和车辆空载对照见 `experiments/reset_instances_20261105/reset_analysis.json`、`experiments/vehicle_fixture_idle_{0,1}_20261105/vehicle_fixture_analysis.json`。车辆固定路径组六次均写入一次，记录的最近世界原点距离在约 29–344 cm；每场有两个 `DroneHitEvent`，最近原点样本前后一秒内均无事件。车辆采样位置不是无人机碰撞体位置，事件不含已识别的对方，不能将该负样本解释为碰撞通道是否工作。seed 456 两场固定路径仅有 12 个世界样本，覆盖范围不同。
 
 车辆桶受控对照已完成：`experiments/vehicle_forced_bucket_4_20261105/analysis.json` 中，三 seed 各两次将原桶 2/7/0 强制为 0，六次五点路径字节一致并有车辆运动样本；仅证明该开发注入路径可重复。原 seed 456 间接分支路径不重复仍保留，原因未证。
+
+reset 后风数组已有连续随机流的可复现解释：一次播种、两次连续生成（各 54 次 `rand()`）可逐字节复现六场前后共 12 组数组，见 `experiments/reset_instances_20261105/wind_stream_analysis.json`。这不证明成功 reset 或排除不可见的等效状态操作。
