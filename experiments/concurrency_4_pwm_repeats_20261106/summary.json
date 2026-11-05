@@ -1,0 +1,186 @@
+{
+  "runs": {
+    "experiments/concurrency_4_pwm_300s_20261106": {
+      "status": "observed",
+      "cleanup_exit_code": 0,
+      "requested_workload_s": 300.0,
+      "binary_sha256": "5231addfa25ddaa9e4473ea9ac40c9c0bc685174e69cd14bb49159f443b97800",
+      "settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+      "image_id": "sha256:cd46a48cd28c2a9c6345f60227fd1bd50e78c67ef1e98dcddc0e65893771da57",
+      "all_observers_finished": true,
+      "all_processes_observed": true,
+      "instances": [
+        {
+          "seed": 123,
+          "command_count": 14861,
+          "command_values": [
+            0.0,
+            0.2,
+            0.3,
+            0.4
+          ],
+          "imu_overlap_s": 300.006828525,
+          "lidar_overlap_s": 300.006828525,
+          "imu_hz": 100.00004459743924,
+          "lidar_hz": 9.759651171395197,
+          "imu_zero_stamps": 0,
+          "imu_nonzero_regressions": 0,
+          "imu_source_seconds_per_wall_second": 0.9697275710218586,
+          "cpu_percent_one_core": 210.05360999330063,
+          "rss_peak_mib": 770.28125
+        },
+        {
+          "seed": 456,
+          "command_count": 14854,
+          "command_values": [
+            0.0,
+            0.2,
+            0.3,
+            0.4
+          ],
+          "imu_overlap_s": 300.001629213,
+          "lidar_overlap_s": 300.001629213,
+          "imu_hz": 100.00002196832843,
+          "lidar_hz": 9.929413523168696,
+          "imu_zero_stamps": 0,
+          "imu_nonzero_regressions": 0,
+          "imu_source_seconds_per_wall_second": 0.9858668660800525,
+          "cpu_percent_one_core": 209.92752933474367,
+          "rss_peak_mib": 763.8984375
+        },
+        {
+          "seed": 2026,
+          "command_count": 14859,
+          "command_values": [
+            0.0,
+            0.2,
+            0.3,
+            0.4
+          ],
+          "imu_overlap_s": 300.007518258,
+          "lidar_overlap_s": 300.007518258,
+          "imu_hz": 100.00004805099084,
+          "lidar_hz": 9.61126568584606,
+          "imu_zero_stamps": 1,
+          "imu_nonzero_regressions": 0,
+          "imu_source_seconds_per_wall_second": 0.9567692577981779,
+          "cpu_percent_one_core": 210.01158310711497,
+          "rss_peak_mib": 764.11328125
+        },
+        {
+          "seed": 789,
+          "command_count": 14860,
+          "command_values": [
+            0.0,
+            0.2,
+            0.3,
+            0.4
+          ],
+          "imu_overlap_s": 300.016193473,
+          "lidar_overlap_s": 300.016193473,
+          "imu_hz": 100.00000004419498,
+          "lidar_hz": 9.902911126615404,
+          "imu_zero_stamps": 0,
+          "imu_nonzero_regressions": 0,
+          "imu_source_seconds_per_wall_second": 0.9835785172384601,
+          "cpu_percent_one_core": 210.50297439174724,
+          "rss_peak_mib": 765.1171875
+        }
+      ]
+    },
+    "experiments/concurrency_4_pwm_300s_repeat2_20261106": {
+      "status": "observed",
+      "cleanup_exit_code": 0,
+      "requested_workload_s": 300.0,
+      "binary_sha256": "5231addfa25ddaa9e4473ea9ac40c9c0bc685174e69cd14bb49159f443b97800",
+      "settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+      "image_id": "sha256:cd46a48cd28c2a9c6345f60227fd1bd50e78c67ef1e98dcddc0e65893771da57",
+      "all_observers_finished": true,
+      "all_processes_observed": true,
+      "instances": [
+        {
+          "seed": 123,
+          "command_count": 14855,
+          "command_values": [
+            0.0,
+            0.2,
+            0.3,
+            0.4
+          ],
+          "imu_overlap_s": 300.002960421,
+          "lidar_overlap_s": 300.002960421,
+          "imu_hz": 100.00002973678303,
+          "lidar_hz": 9.714812711260791,
+          "imu_zero_stamps": 0,
+          "imu_nonzero_regressions": 0,
+          "imu_source_seconds_per_wall_second": 0.9651886187740246,
+          "cpu_percent_one_core": 209.87994875979007,
+          "rss_peak_mib": 764.7890625
+        },
+        {
+          "seed": 456,
+          "command_count": 14856,
+          "command_values": [
+            0.0,
+            0.2,
+            0.3,
+            0.4
+          ],
+          "imu_overlap_s": 300.007644568,
+          "lidar_overlap_s": 300.007644568,
+          "imu_hz": 99.99998441681426,
+          "lidar_hz": 9.840014795719831,
+          "imu_zero_stamps": 0,
+          "imu_nonzero_regressions": 0,
+          "imu_source_seconds_per_wall_second": 0.9775027990705835,
+          "cpu_percent_one_core": 209.7247742805616,
+          "rss_peak_mib": 764.03515625
+        },
+        {
+          "seed": 2026,
+          "command_count": 14856,
+          "command_values": [
+            0.0,
+            0.2,
+            0.3,
+            0.4
+          ],
+          "imu_overlap_s": 300.007651943,
+          "lidar_overlap_s": 300.007651943,
+          "imu_hz": 99.99998536305495,
+          "lidar_hz": 9.7670568644109,
+          "imu_zero_stamps": 0,
+          "imu_nonzero_regressions": 0,
+          "imu_source_seconds_per_wall_second": 0.9701989368157576,
+          "cpu_percent_one_core": 210.6299587427276,
+          "rss_peak_mib": 763.41796875
+        },
+        {
+          "seed": 789,
+          "command_count": 14858,
+          "command_values": [
+            0.0,
+            0.2,
+            0.3,
+            0.4
+          ],
+          "imu_overlap_s": 300.008202042,
+          "lidar_overlap_s": 300.008202042,
+          "imu_hz": 100.00000101061258,
+          "lidar_hz": 9.50451813531486,
+          "imu_zero_stamps": 0,
+          "imu_nonzero_regressions": 0,
+          "imu_source_seconds_per_wall_second": 0.9438380856393173,
+          "cpu_percent_one_core": 210.28404896611417,
+          "rss_peak_mib": 767.08203125
+        }
+      ]
+    }
+  },
+  "limitations": [
+    "published PWM commands are not proof of actuator application",
+    "fixed open-loop PWM and sensor subscriptions are a synthetic load, not a full training episode",
+    "finite repeat observations do not establish a universal stable concurrency limit",
+    "source-header/wall ratio is not independently calibrated physical simulation speed"
+  ]
+}

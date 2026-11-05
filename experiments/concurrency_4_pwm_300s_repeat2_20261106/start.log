@@ -1,0 +1,45 @@
+{
+  "manifest": "/home/tianbot/\u684c\u9762/RMUA2026-re/experiments/concurrency_4_pwm_300s_repeat2_20261106/pool/pool.json",
+  "instances": [
+    {
+      "seed": 123,
+      "port": 12720,
+      "container": "rmua-re-cf966d9fe750-0",
+      "id": "e2b8c730a5fb9a04a4769e59cd8df48caddcc12b0623b9604b0766c163871de2",
+      "docker_start_wall": 1793900566.958295,
+      "docker_created_wall": 1793900567.3997622,
+      "imu_ready_observed_wall": 1793900575.176351,
+      "startup_observed_s": 8.218055963516235
+    },
+    {
+      "seed": 456,
+      "port": 12721,
+      "container": "rmua-re-cf966d9fe750-1",
+      "id": "60c76d3d61951de08d09097b8e2e182aa6d0a7399596392cb33b7a9f7004dff4",
+      "docker_start_wall": 1793900567.399967,
+      "docker_created_wall": 1793900567.8118055,
+      "imu_ready_observed_wall": 1793900575.5756524,
+      "startup_observed_s": 8.175685405731201
+    },
+    {
+      "seed": 2026,
+      "port": 12722,
+      "container": "rmua-re-cf966d9fe750-2",
+      "id": "ca5032d13c213230cb617fea4d2a14854b475c2358bd21d9b55d1daac520bd1e",
+      "docker_start_wall": 1793900567.812027,
+      "docker_created_wall": 1793900568.221453,
+      "imu_ready_observed_wall": 1793900576.0249028,
+      "startup_observed_s": 8.212875843048096
+    },
+    {
+      "seed": 789,
+      "port": 12723,
+      "container": "rmua-re-cf966d9fe750-3",
+      "id": "b651dc91a34c0b357f9ec456e8aa1b28a3cbc6654cb03aa18156e4827dd7234c",
+      "docker_start_wall": 1793900568.2216842,
+      "docker_created_wall": 1793900568.637505,
+      "imu_ready_observed_wall": 1793900576.4405894,
+      "startup_observed_s": 8.218905210494995
+    }
+  ]
+}
