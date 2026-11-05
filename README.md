@@ -36,6 +36,7 @@
 
 - 模拟器是 **UE4.27 + AirSim/ROS**；Linux Shipping 主程序 116,748,832 字节，pak 1,927,609,305 字节，pak 使用 Oodle Kraken/Zlib。
 - 官方包内含 **12 张地图** `RMUA2024OL1..12`；每张图有 **12 条 RouteConfig、12 个 Gate、12 个 Factory、12 个 CheckPort、24 条 SideTrack/Arrow**。OL1 的路线顺序与 OL2–OL12 不同。
+- 2026-11-06 静态复核：12 张图的门相对布局是同一组几何的**刚性变换**（仅 yaw+平移，门间距差 ≤0.012 cm，拟合残差 ≤0.009 cm，缩放完全一致）。不要把 OL1–OL12 当成 12 套不同门布局；环境资产/主题是否不同仍需单独验证，门洞物理尺寸未测。
 - 命令行 `seed` 由 `"seed"` 字段解析，默认 **1**；seed 初始化 `FRandomStream`，并影响**随机树、车辆、线障和室外风**。门是地图静态数据，不由 seed 改位置；**seed 不负责选择地图**。逐项证据和边界见 `docs/15_seed_dependency_matrix.md`。
 - Lobby 默认打开 `/Game/Maps/RMUA2024OL/RMUA2024OL1`；要跑 OL2–OL12 需要改地图 URL/启动参数，而不是只换 seed。
 - `Configs/GameConfig.json` 实际读取 **7 个布尔字段**：
@@ -99,6 +100,6 @@ python3 scripts/export_map_tables.py
 
 - **域随机化**：同一张图用不同 `seed` 启动，获得不同航段随机量；用 `IgnoreOverTime`/`IgnoreAllHitCollision` 只在采集/调试时关闭终止条件。
 - **多地图训练**：OL2–OL12 是不同布局，需要改 Lobby 的 Level URL 或启动参数；不要假设 seed 会切换地图。
-- **并行仿真**：模拟器 ROS 节点/话题名固定（`/airsim_node/drone_1`），同一 ROS master 下多开会导致话题冲突；建议每个实例独立容器/ROS master，或改 ROS 命名空间（需要改代码/桥接层）。
+- **并行仿真**：模拟器 ROS 节点/话题名固定（`/airsim_node/drone_1`），同一 ROS master 下多开会导致话题冲突；建议每个实例独立容器/ROS master，或改 ROS 命名空间（需要改代码/桥接层）。本机固定 PWM + IMU/LiDAR 负载下 4 实例两轮 300 秒完成，6/8 实例同一负载各出现一次 SIGSEGV；训练规格保守按 4 实例并保留失败日志，见 `docs/16`、`docs/19`。
 - **性能**：用 `run_simulator_offscreen.sh`/`-RenderOffscreen`；在 `settings.json` 删除不用的相机关闭渲染负载；Lidar 32 线/200k 点/秒是主要负载之一。
 - **重置**：优先用 `/airsim_node/reset` 服务做 episode 重置；`takeoff/land` 服务控制起飞降落。

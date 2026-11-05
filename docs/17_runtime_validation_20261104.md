@@ -438,3 +438,13 @@ ROS 传输路径取得首场函数级定时：容器内编译的 LD_PRELOAD 钩�
 2026-11-06 频率 deque 对象探针单实例先导：非加锁 preload 仅在三个频率函数内跟踪动态绑定的 `push_back`、`pop_front`、`size`，以进程内 deque 指针识别同一对象并排除同线程嵌套。合成夹具验证同对象读写重叠、不同对象对照和返回值转发；seed 123、NullRHI、固定开环 PWM 的 15 秒先导观测到三类方法，操作周期快照至少 11000 次，同对象跨线程方法区间重叠及未跟踪计数均为 0。探针改变调度并延长方法区间，且遗漏内联、迭代器与其他路径；零结果不能排除竞争，正结果也不证明内存指令并发或先前崩溃成因。原始记录和范围见 `experiments/frequency_deque_pilot_20261106/deque_overlap_analysis.json`、`experiments/frequency_deque_probe_20261106/README.md`。
 
 2026-11-06 八实例 deque 对象探针：在 `rmua/re-probe:20261104`、相同二进制/settings、八 seed 的空载场，八进程在约 89.24 秒 liveness 采样期间均存活并清理；各进程日志快照至少 78000–80000 次目标方法调用，未跟踪计数快照均为 0。seed 2026 的同一进程内 deque 地址 `0x7838a1394060` 记录两次跨线程方法区间重叠：线程 149 的 `push_back` 进入时已有其他线程写方法活跃；线程 148 的 `size` 进入时也有其他线程写方法活跃。其他线程具体身份和 topic 未记录，不能推断两个事件指向同一对线程；事件出现在首次 liveness 样本之前约 1.27 秒。合成夹具另验证同对象读写、写写及不同对象对照。探针不加目标锁，但延长测量区间、改变调度并遗漏内联/迭代器等路径；因此该观察不证明具体内存指令同时执行，亦不证明早先八实例 SIGSEGV 根因。完整来源、方法、对象地址和时间戳见 `experiments/concurrency_8_deque_overlap_90s_20261106/deque_overlap_analysis.json`。
+
+## 2026-11-06 自然线障实例、原生 reset 组件与 6/8 实例失败
+
+自然线障实例因果先导：stage 4 注入后捕获第一个粗线 HISM 提交的自然变换；GDB 将实际无人机碰撞组件沿 x 轴扫过该实例，并把状态每 tick 写为 7、清零 `+0x180/+0x1a8/+0x1ac`。seed 123/456/2026 各一场分别记录 30/34/30 次命中来源组件等于目标粗线组件、候选索引 `+0x58=0` 的事件；目标 hit 后 10 ms 内出现 state 12 请求 21/22/21 次，12 ms 内出现 `7→12` 写入 21/22/21 次。seed 123 首个目标 hit 后约 2.7 ms 请求、3.5 ms 写入 12，随后重复。这是受控组件扫掠，不是自然飞行；扫掠中另有其他来源组件命中，stage 注入、每 tick 状态强制和 GDB 调度均限制外推。见 `experiments/natural_line_component_20261106/` 与 `scripts/stage_natural_line_sweep2.gdb`。
+
+原生 reset 组件先导：seed 123 的 stage 4 注入场用固定 rotor PWM 0.3 持续 2.5 s，事后 API/`pose_gt` z 约从 0.309 m 变到 -4.82 m，但 reset 回调读取的七个 float 最后仍为 `0,0,0,0,0,0,-37.9076614`，服务返回 false；固定速度抬升场同样未改变该组件且返回 false。该结果说明当前复位检查所读组件不随这次物理运动变化；此前 `success: True` 仍依赖 root-height 写入和风随机状态干预。没有找到不干预的原生成功，也没有证明完整物理/车辆重放。见 `experiments/reset_native_component_20261106/`。
+
+6/8 实例固定 PWM 负载失败：同一 `rmua/re-probe:20261104`、相同二进制/settings，6 实例 seed 123 在容器启动约 32.2 s 退出 139，8 实例 seed 2026 在约 11.1 s 退出 139，均非 OOM；引擎日志 SIGSEGV 在 `0x2fbda42` 读取地址 0，栈含 `0x2e31691`、`0x2fb979e`、`0x5e54336`、`0x2fbd8e1`。4 实例同一负载两轮各约 300 s 完成。该差异支持当前训练规格保守取 4 实例；6/8 各只有一次失败，不能给出统计概率或单一根因，且该栈与先前频率 deque 栈不同。见 `experiments/concurrency_pwm_failure_summary_20261106/summary.json`。
+
+额外地图门静态复核：12 张图的门间距两两差 ≤0.012 cm；每图仅用 yaw+平移拟合到 OL1 的残差 ≤0.009 cm，z 平移每图内为常数、缩放完全一致；OL2 BeginPlay 运行时 6/6 场、12/12 门匹配。门赛道几何是刚性副本，未验证门洞物理尺寸、环境资产或飞行可用性。见 `experiments/ol_gate_rigid_20261106/analysis.json` 与 `scripts/verify_gate_rigid_layout.py`。
