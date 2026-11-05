@@ -1,0 +1,14 @@
+{
+  "binary_sha256": "5231addfa25ddaa9e4473ea9ac40c9c0bc685174e69cd14bb49159f443b97800",
+  "reference_c_sha256": "fa5b2cdd2ef448545218963f76048eb3fcf47dc871487b957565b1562b3ae0f1",
+  "compiler": "cc (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0",
+  "python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+  "target_instruction_excerpt": "artifacts/rea/vehicle_nearest_distance_sse.txt",
+  "old_model": 50.99039077758789,
+  "reference_float": 50.990394592285156,
+  "limitations": [
+    "single constructed numeric boundary; not validation of route component identities or full physical trajectories",
+    "native fixture uses float32 operations and host sqrtf; target SSE excerpt supports the operation ordering"
+  ]
+}

@@ -1,0 +1,46 @@
+
+/home/tianbot/RUMA-by-helinjun/main/simulator/simulator_12.0.0.5/Build/LinuxNoEditor/RMUA/Binaries/Linux/RMUA-Linux-Shipping：     文件格式 elf64-x86-64
+
+
+Disassembly of section .text:
+
+0000000002fc94b0 <SampleVectorField@@Base+0x278a40>:
+ 2fc94b0:	f2 0f 10 15 a8 13 23 	movsd  0x42313a8(%rip),%xmm2        # 71fa860 <__bss_start@@Base+0xa10a0>
+ 2fc94b7:	04 
+ 2fc94b8:	f3 0f 10 1d a8 13 23 	movss  0x42313a8(%rip),%xmm3        # 71fa868 <__bss_start@@Base+0xa10a8>
+ 2fc94bf:	04 
+ 2fc94c0:	0f 14 c8             	unpcklps %xmm0,%xmm1
+ 2fc94c3:	f3 0f 10 25 bd 80 6f 	movss  -0x2907f43(%rip),%xmm4        # 6c1588 <_IO_stdin_used@@Base+0x5e4>
+ 2fc94ca:	fd 
+ 2fc94cb:	31 d2                	xor    %edx,%edx
+ 2fc94cd:	31 db                	xor    %ebx,%ebx
+ 2fc94cf:	eb 44                	jmp    2fc9515 <SampleVectorField@@Base+0x278aa5>
+ 2fc94d1:	66 2e 0f 1f 84 00 00 	cs nopw 0x0(%rax,%rax,1)
+ 2fc94d8:	00 00 00 
+ 2fc94db:	0f 1f 44 00 00       	nopl   0x0(%rax,%rax,1)
+ 2fc94e0:	0f 14 f5             	unpcklps %xmm5,%xmm6
+ 2fc94e3:	0f 5c e8             	subps  %xmm0,%xmm5
+ 2fc94e6:	0f 5c f1             	subps  %xmm1,%xmm6
+ 2fc94e9:	0f 59 ed             	mulps  %xmm5,%xmm5
+ 2fc94ec:	0f 59 f6             	mulps  %xmm6,%xmm6
+ 2fc94ef:	0f 58 ee             	addps  %xmm6,%xmm5
+ 2fc94f2:	f3 0f 16 ed          	movshdup %xmm5,%xmm5
+ 2fc94f6:	f3 0f 58 ee          	addss  %xmm6,%xmm5
+ 2fc94fa:	f3 0f 51 ed          	sqrtss %xmm5,%xmm5
+ 2fc94fe:	0f 2e e5             	ucomiss %xmm5,%xmm4
+ 2fc9501:	48 0f 47 de          	cmova  %rsi,%rbx
+ 2fc9505:	f3 0f 5d ec          	minss  %xmm4,%xmm5
+ 2fc9509:	48 83 c2 01          	add    $0x1,%rdx
+ 2fc950d:	0f 28 e5             	movaps %xmm5,%xmm4
+ 2fc9510:	48 39 d0             	cmp    %rdx,%rax
+ 2fc9513:	74 27                	je     2fc953c <SampleVectorField@@Base+0x278acc>
+ 2fc9515:	48 8b 34 d1          	mov    (%rcx,%rdx,8),%rsi
+ 2fc9519:	48 8b be 30 01 00 00 	mov    0x130(%rsi),%rdi
+ 2fc9520:	0f 28 ea             	movaps %xmm2,%xmm5
+ 2fc9523:	0f 28 f3             	movaps %xmm3,%xmm6
+ 2fc9526:	48 85 ff             	test   %rdi,%rdi
+ 2fc9529:	74 b5                	je     2fc94e0 <SampleVectorField@@Base+0x278a70>
+ 2fc952b:	0f 28 af d0 01 00 00 	movaps 0x1d0(%rdi),%xmm5
+ 2fc9532:	f3 0f 10 b7 d8 01 00 	movss  0x1d8(%rdi),%xmm6
+ 2fc9539:	00 
+ 2fc953a:	eb a4                	jmp    2fc94e0 <SampleVectorField@@Base+0x278a70>

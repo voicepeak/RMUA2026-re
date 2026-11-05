@@ -258,3 +258,5 @@ ROS 传输路径取得首场函数级定时：容器内编译的 LD_PRELOAD 钩�
 频率统计八实例对照：加锁及未加锁各一场，八 seed、主程序/settings 哈希和镜像 ID 相同，各在 IMU 就绪后完成 180 秒空载存活，liveness 采样覆盖约 179.5 秒；两场端口和运行时间不同。未加锁场也未复现故障，因此该对照不能判断互斥是否改变间歇崩溃概率，也不能确定既有崩溃根因。两场未持续订阅传感器或执行训练动作；见 `experiments/frequency_guard_control_comparison_20261106/comparison.json`、两组原始日志及 `artifacts/rea/frequency_getters_69d5ea.txt`。
 
 四实例固定 PWM 并发短场：四路发布器均连接，在各自约 15 秒内分别记录 743 条预定动作；IMU、LiDAR 每路均与发布窗口重叠约 15 秒，IMU 约 100 Hz、LiDAR 约 9.1–9.9 Hz，所有进程正常清理。这是无在线真值的合成动作压力先导，命令被发布不证明每条被执行，也不代表完整训练或长期稳定。见 `experiments/concurrency_4_pwm_pilot_20261106/workload_analysis.json`；缺少开始/结束标记时重叠不被推定，分析单元测试已通过。
+
+车辆离线最近组件距离数值修正：目标两个选择路径使用 float32 SIMD 乘加及平方根；此前模型在乘加阶段使用 Python 双精度。构造坐标 (29.60000038,34.5,23.10000038) 的独立 C float 夹具结果为 50.9903946，旧模型为 50.9903908；现已逐次 float32 舍入，40 项离线模型测试通过。该边界样例不证明组件身份或整条车辆路径等价，见 `experiments/offline_distance_20261106/` 和 `artifacts/rea/vehicle_*nearest_distance_sse.txt`。

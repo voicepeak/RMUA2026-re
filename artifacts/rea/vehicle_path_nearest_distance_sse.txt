@@ -1,0 +1,38 @@
+
+/home/tianbot/RUMA-by-helinjun/main/simulator/simulator_12.0.0.5/Build/LinuxNoEditor/RMUA/Binaries/Linux/RMUA-Linux-Shipping：     文件格式 elf64-x86-64
+
+
+Disassembly of section .text:
+
+0000000002fc99c0 <SampleVectorField@@Base+0x278f50>:
+ 2fc99c0:	49 8b 8c 24 40 02 00 	mov    0x240(%r12),%rcx
+ 2fc99c7:	00 
+ 2fc99c8:	f2 0f 10 15 90 0e 23 	movsd  0x4230e90(%rip),%xmm2        # 71fa860 <__bss_start@@Base+0xa10a0>
+ 2fc99cf:	04 
+ 2fc99d0:	f3 0f 10 1d 90 0e 23 	movss  0x4230e90(%rip),%xmm3        # 71fa868 <__bss_start@@Base+0xa10a8>
+ 2fc99d7:	04 
+ 2fc99d8:	0f 14 c8             	unpcklps %xmm0,%xmm1
+ 2fc99db:	31 d2                	xor    %edx,%edx
+ 2fc99dd:	f3 0f 10 25 a3 7b 6f 	movss  -0x290845d(%rip),%xmm4        # 6c1588 <_IO_stdin_used@@Base+0x5e4>
+ 2fc99e4:	fd 
+ 2fc99e5:	45 31 ed             	xor    %r13d,%r13d
+ 2fc99e8:	eb 3b                	jmp    2fc9a25 <SampleVectorField@@Base+0x278fb5>
+ 2fc99ea:	66 0f 1f 44 00 00    	nopw   0x0(%rax,%rax,1)
+ 2fc99f0:	0f 14 f5             	unpcklps %xmm5,%xmm6
+ 2fc99f3:	0f 5c e8             	subps  %xmm0,%xmm5
+ 2fc99f6:	0f 5c f1             	subps  %xmm1,%xmm6
+ 2fc99f9:	0f 59 ed             	mulps  %xmm5,%xmm5
+ 2fc99fc:	0f 59 f6             	mulps  %xmm6,%xmm6
+ 2fc99ff:	0f 58 ee             	addps  %xmm6,%xmm5
+ 2fc9a02:	f3 0f 16 ed          	movshdup %xmm5,%xmm5
+ 2fc9a06:	f3 0f 58 ee          	addss  %xmm6,%xmm5
+ 2fc9a0a:	f3 0f 51 ed          	sqrtss %xmm5,%xmm5
+ 2fc9a0e:	0f 2e e5             	ucomiss %xmm5,%xmm4
+ 2fc9a11:	4c 0f 47 ee          	cmova  %rsi,%r13
+ 2fc9a15:	f3 0f 5d ec          	minss  %xmm4,%xmm5
+ 2fc9a19:	48 83 c2 01          	add    $0x1,%rdx
+ 2fc9a1d:	0f 28 e5             	movaps %xmm5,%xmm4
+ 2fc9a20:	48 39 d0             	cmp    %rdx,%rax
+ 2fc9a23:	74 2b                	je     2fc9a50 <SampleVectorField@@Base+0x278fe0>
+ 2fc9a25:	48 8b 34 d1          	mov    (%rcx,%rdx,8),%rsi
+ 2fc9a29:	48 8b be 30 01 00 00 	mov    0x130(%rsi),%rdi

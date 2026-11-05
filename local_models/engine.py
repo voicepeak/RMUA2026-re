@@ -49,7 +49,11 @@ def distance(a: Vec3, b: Vec3) -> float:
     dx = f32(a[0] - b[0])
     dy = f32(a[1] - b[1])
     dz = f32(a[2] - b[2])
-    return f32((dx * dx + dy * dy + dz * dz) ** 0.5)
+    # 0x2fc94e0..0x2fc94fa uses scalar float32 lane arithmetic:
+    # round products, add y²+x², then add z² before sqrtss.
+    xy = f32(f32(dy * dy) + f32(dx * dx))
+    squared = f32(xy + f32(dz * dz))
+    return f32(squared ** 0.5)
 
 
 @dataclass(frozen=True)

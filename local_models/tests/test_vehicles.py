@@ -4,7 +4,7 @@ import unittest
 from pathlib import Path
 
 from local_models import vehicles
-from local_models.engine import EngineBoundaryError, Frame
+from local_models.engine import EngineBoundaryError, Frame, distance
 from local_models.ue_rng import FRandomStream, vehicle_bucket_from_state
 
 DECISION_RE = re.compile(r"VEHICLE_DECISION state=(\d+) bucket=(\d+) direct=([01])")
@@ -15,6 +15,12 @@ def repo_root() -> Path:
 
 
 class VehicleOuterFlowTests(unittest.TestCase):
+    def test_distance_rounds_intermediate_float32_operations(self):
+        # Independent C fixture and target SSE instruction excerpt are retained
+        # in experiments/offline_distance_20261106/ and artifacts/rea/.
+        actual = distance((29.600000381469727, 34.5, 23.100000381469727), (0, 0, 0))
+        self.assertEqual(actual, float.fromhex('0x1.97ec54p+5'))
+
     def test_branch_decisions_from_captured_runs(self):
         directory = repo_root() / "experiments" / "vehicle_branch_4_20261105"
         total = 0

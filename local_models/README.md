@@ -126,3 +126,5 @@ branch buckets match all six `vehicle_branch_4` captures.
 
 No inner spline or spawn behavior is fabricated; the offline spline is the only
 structural substitute, and it is validated against captured route lengths.
+
+Nearest-component distance rounds float32 products and additions before the square root, following the target SSE excerpts in `artifacts/rea/vehicle_nearest_distance_sse.txt` and `vehicle_path_nearest_distance_sse.txt`. This improves a numeric boundary but does not establish component identity or full path equivalence.
