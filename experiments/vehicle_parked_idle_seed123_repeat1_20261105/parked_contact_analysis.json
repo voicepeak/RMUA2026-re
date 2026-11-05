@@ -1,0 +1,23 @@
+{
+  "seed123_repeat1": {
+    "status": "observed",
+    "vehicle_actor_ids": [
+      "0x7ffdefed6500"
+    ],
+    "candidate_child_ids": [
+      "0x7ffdefeec590"
+    ],
+    "hit_count": 2,
+    "matched_actor_or_child_count": 0,
+    "matched_both_count": 0,
+    "matched_hits": [],
+    "command_transitions": [],
+    "limitations": [
+      "stage, path and state gate are debugger interventions; not ordinary race progression",
+      "candidate child inferred from pointer ownership and matching asset transform, not independently typed",
+      "HIT_SOURCE callback argument matches attribute event source but does not establish force or complete physical contact manifold",
+      "debugger changes scheduling; continuously forced state may overwrite terminal state",
+      "path and action timing were designed using prior posthoc observations; controller does not read truth online"
+    ]
+  }
+}
