@@ -14,8 +14,9 @@ Pure-Python fallback (documented algorithm):
   modulo 31.
 
 This is not the ANSI C `rand()` example and not `random.Random`.  When running
-under Linux/glibc, `make_glibc_rand()` prefers ctypes and exposes the host
-sequence directly.  The fallback is byte-identical for every glibc version
+`make_glibc_rand()` defaults to an isolated pure-Python stream.  The opt-in
+ctypes backend uses the process-global libc state and is unsuitable for
+independent concurrent streams.  The pure implementation is byte-identical for glibc versions
 whose random.c still uses TYPE_3 (verified here against glibc 2.39 and against
 captured glibc 2.35 wind keyframes).
 """
@@ -45,10 +46,13 @@ class GlibcRand:
             seed = 1
         state = [0] * DEGREE
         state[0] = seed
-        word = seed
+        # glibc assigns the unsigned seed to int32_t before its Schrage loop.
+        # C integer division truncates toward zero, unlike Python's // for
+        # negative values.  This distinction matters for seeds >= 2**31.
+        word = seed if seed < 0x80000000 else seed - 0x100000000
         for index in range(1, DEGREE):
-            hi = word // 127773
-            lo = word % 127773
+            hi = word // 127773 if word >= 0 else -((-word) // 127773)
+            lo = word - hi * 127773
             word = 16807 * lo - 2836 * hi
             if word < 0:
                 word += SEED_MODULUS
@@ -71,7 +75,7 @@ class GlibcRand:
 
 @dataclass
 class CtypesGlibcRand:
-    """ctypes wrapper around the running host's glibc `srand`/`rand`."""
+    """Opt-in wrapper around the host's process-global `srand`/`rand` state."""
 
     seed: int = 1
     _lib: object = field(init=False, repr=False)
@@ -98,13 +102,9 @@ def host_is_glibc() -> bool:
 
 
 def make_glibc_rand(seed: int = 1, backend: str = "auto"):
-    """Return a ctypes glibc stream on glibc, otherwise the pure fallback."""
-    if backend == "pure":
+    """Return an isolated stream by default; ctypes explicitly shares libc state."""
+    if backend in ("pure", "auto"):
         return GlibcRand(seed)
     if backend == "ctypes":
         return CtypesGlibcRand(seed)
-    if backend != "auto":
-        raise ValueError("backend must be auto, pure, or ctypes")
-    if host_is_glibc():
-        return CtypesGlibcRand(seed)
-    return GlibcRand(seed)
+    raise ValueError("backend must be auto, pure, or ctypes")

@@ -1,0 +1,37 @@
+{
+  "high_seed_examples": [
+    {
+      "seed": 2147483648,
+      "pure": [
+        722473798,
+        841711538,
+        600775504
+      ],
+      "libc": [
+        1336741213,
+        1210407648,
+        1447044896
+      ]
+    },
+    {
+      "seed": 4294967295,
+      "pure": [
+        1788141860,
+        836492190,
+        1667341880
+      ],
+      "libc": [
+        254925627,
+        1205188300,
+        366127624
+      ]
+    }
+  ],
+  "interleaving": {
+    "first_stream_seed": 123,
+    "second_stream_seed": 456,
+    "first_stream_observed_after_second_seed": 1929505231,
+    "expected_first_seed_first_output": 128959393
+  },
+  "scope": "Before local fix, measured in one process on this host; explicit ctypes wrapper is process-global by design."
+}

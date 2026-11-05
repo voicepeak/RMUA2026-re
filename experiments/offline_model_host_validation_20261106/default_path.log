@@ -1,0 +1,55 @@
+test_known_glibc_sequences (local_models.tests.test_glibc_rand.GlibcRandTests) ... ok
+test_pure_fallback_matches_host_glibc (local_models.tests.test_glibc_rand.GlibcRandTests) ... ok
+test_reseed_restarts_sequence (local_models.tests.test_glibc_rand.GlibcRandTests) ... ok
+test_seed_zero_is_one (local_models.tests.test_glibc_rand.GlibcRandTests) ... ok
+test_component_placement_counts_and_selectors (local_models.tests.test_lines.LineCandidateTests) ... ok
+test_identity_frame_candidate_geometry (local_models.tests.test_lines.LineCandidateTests) ... ok
+test_rng_draw_counts_by_mode (local_models.tests.test_lines.LineCandidateTests) ... ok
+test_spacing_is_strictly_less_than_tolerance (local_models.tests.test_lines.LineCandidateTests) ... ok
+test_spline_candidate_submits_once (local_models.tests.test_lines.LineCandidateTests) ... ok
+test_all_captured_line_offsets_reconstruct (local_models.tests.test_lines.LineOuterFlowTests) ... ok
+test_scaled_count_edges (local_models.tests.test_lines.LineOuterFlowTests) ... ok
+test_stage_call_parameters (local_models.tests.test_lines.LineOuterFlowTests) ... ok
+test_arc_length_is_monotonic (local_models.tests.test_spline.SplineModelTests) ... ok
+test_decompiled_artifacts_and_manifest_exist (local_models.tests.test_spline.SplineModelTests) ... ok
+test_distance_endpoints_clamp (local_models.tests.test_spline.SplineModelTests) ... ok
+test_stage_lengths_match_captured_reverse_bases (local_models.tests.test_spline.SplineModelTests) ... ok
+test_stage_route_mapping (local_models.tests.test_spline.SplineModelTests) ... ok
+test_draw_fraction_steps_before_reading (local_models.tests.test_ue_rng.FRandomStreamTests) ... ok
+test_line_offsets_from_captured_updated_states (local_models.tests.test_ue_rng.FRandomStreamTests) ... ok
+test_reset_restores_initial_state (local_models.tests.test_ue_rng.FRandomStreamTests) ... ok
+test_reset_state_252_steps_from_seed_123 (local_models.tests.test_ue_rng.FRandomStreamTests) ... ok
+test_second_runtime_consumed_state_from_seed_123 (local_models.tests.test_ue_rng.FRandomStreamTests) ... ok
+test_vehicle_buckets_from_captured_updated_states (local_models.tests.test_ue_rng.FRandomStreamTests) ... ok
+test_four_scalar_driver_reads_advances_and_builds_call (local_models.tests.test_vehicles.VehicleDescriptorTests) ... ok
+test_indirect_descriptor_fields (local_models.tests.test_vehicles.VehicleDescriptorTests) ... ok
+test_branch_decisions_from_captured_runs (local_models.tests.test_vehicles.VehicleOuterFlowTests) ... ok
+test_entry_arguments_forward_and_reverse (local_models.tests.test_vehicles.VehicleOuterFlowTests) ... ok
+test_run_dispatches_to_the_expected_branch (local_models.tests.test_vehicles.VehicleOuterFlowTests) ... ok
+test_build_path_dedups_by_component_identity (local_models.tests.test_vehicles.VehiclePathTests) ... ok
+test_nearest_component_strict_tie_keeps_first (local_models.tests.test_vehicles.VehiclePathTests) ... ok
+test_path_sample_distances_forward_and_reverse (local_models.tests.test_vehicles.VehiclePathTests) ... ok
+test_tick_progress_and_boundary (local_models.tests.test_vehicles.VehiclePathTests) ... ok
+test_tick_requires_spline_length (local_models.tests.test_vehicles.VehiclePathTests) ... ok
+ERROR
+
+======================================================================
+ERROR: setUpClass (local_models.tests.test_wind_regression.WindKeyframeRegressionTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/tianbot/桌面/RMUA2026-re/local_models/tests/test_wind_regression.py", line 25, in setUpClass
+    cls.constants = wind.load_constants()
+  File "/home/tianbot/桌面/RMUA2026-re/local_models/wind.py", line 119, in load_constants
+    return ElfFloatReader(path, verify_sha256=verify_sha256).constants()
+  File "/home/tianbot/桌面/RMUA2026-re/local_models/wind.py", line 82, in __init__
+    self.data = self.path.read_bytes()
+  File "/usr/lib/python3.10/pathlib.py", line 1126, in read_bytes
+    with self.open(mode='rb') as f:
+  File "/usr/lib/python3.10/pathlib.py", line 1119, in open
+    return self._accessor.open(self, mode, buffering, encoding, errors,
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/d/RMUA2026-re/sim/simulator_12.0.0.5/Build/LinuxNoEditor/RMUA/Binaries/Linux/RMUA-Linux-Shipping'
+
+----------------------------------------------------------------------
+Ran 33 tests in 0.361s
+
+FAILED (errors=1)

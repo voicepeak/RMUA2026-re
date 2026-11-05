@@ -1,0 +1,38 @@
+{
+  "source_head": "0cf255584063c4f6c149d020d6cc86a63261ea21",
+  "python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+  "binary_sha256": "5231addfa25ddaa9e4473ea9ac40c9c0bc685174e69cd14bb49159f443b97800",
+  "command": [
+    "/usr/bin/python3",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "local_models/tests",
+    "-t",
+    ".",
+    "-v"
+  ],
+  "runs": [
+    {
+      "mode": "default_path",
+      "exit_code": 1,
+      "RMUA_ELF": null
+    },
+    {
+      "mode": "configured_path",
+      "exit_code": 0,
+      "RMUA_ELF": "/home/tianbot/RUMA-by-helinjun/main/simulator/simulator_12.0.0.5/Build/LinuxNoEditor/RMUA/Binaries/Linux/RMUA-Linux-Shipping"
+    }
+  ],
+  "limitations": [
+    "regression tests exercise existing captures and synthetic engine boundaries, not end-to-end physics or natural scenario behavior",
+    "default path is environment-dependent; configured path is local and SHA-checked by wind model"
+  ],
+  "post_fix": {
+    "exit_code": 0,
+    "tests": 38,
+    "note": "adds high-bit seed/glibc comparisons and interleaved independent streams"
+  }
+}

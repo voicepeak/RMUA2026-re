@@ -13,7 +13,7 @@ experiments are regression data only.
 | File | Scope |
 |---|---|
 | `ue_rng.py` | UE4 `FRandomStream`: LCG `state*0x0bb38435 + 0x3619636b` and the exact `(bits>>9)|0x3f800000` float conversion. |
-| `glibc_rand.py` | glibc `srand()`/`rand()` TYPE_3 generator; ctypes on Linux/glibc, documented pure-Python fallback otherwise. |
+| `glibc_rand.py` | glibc `srand()`/`rand()` TYPE_3 generator; isolated pure-Python streams by default, opt-in process-global ctypes comparison. |
 | `wind.py` | Byte-exact port of `0x2fb23b0`, samplers `0x2fb2050`/`0x2fb2130`, and `0x2fbac30` stage parameters; reads ELF constants. |
 | `spline.py` | Offline route splines from `artifacts/maps/maps_summary_all.json`: cubic Hermite, arc length, distance lookup, stage route mapping. |
 | `engine.py` | Explicit `EngineBoundaryError` interfaces and the engine-supplied `Frame`/line-state types. |
@@ -40,6 +40,13 @@ Local WSL (ctypes glibc comparison included):
 wsl -d RMUA-RE -- bash -lc "cd '/mnt/d/RMUA2026-re/repo' && python3 -m unittest discover -s local_models/tests -t . -v"
 ```
 
+Linux with a separately installed simulator (point to the executable, not its
+directory):
+
+```bash
+RMUA_ELF=/path/to/RMUA-Linux-Shipping python3 -m unittest discover -s local_models/tests -t . -v
+```
+
 Generate wind keyframes:
 
 ```powershell
@@ -50,6 +57,12 @@ python -m local_models.wind --all
 
 Override the ELF with `--elf PATH` or `RMUA_ELF`; override the map summary with
 `RMUA_MAPS_SUMMARY`.
+
+`make_glibc_rand(..., backend="auto")` creates an independent pure stream.
+The explicit `backend="ctypes"` accesses libc's process-global state: another
+`srand`/`rand` user can change its sequence, so it is for isolated comparison,
+not parallel episode streams.  High-bit 32-bit seeds are converted to signed
+initialization words and use C's truncation-toward-zero division.
 
 ## Regression results
 

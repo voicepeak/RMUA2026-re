@@ -12,9 +12,18 @@ for r in man['runs']:
  for phase in ('before','settle','after'):
   selected=[dict(x,elapsed_s=(x['mono_ns']-starts[phase])/1e9) for x in hits if starts.get(phase,0)<=x['mono_ns']<ends.get(phase,0)]
   phases[phase]={'count':len(selected),'actor_component_pairs':sorted({(x['source_actor'],x['source_component']) for x in selected}),'hits':selected}
+ before=phases['before']['hits'];after=phases['after']['hits']
+ ordered=[]
+ for first,second in zip(before,after):
+  ordered.append({'before_elapsed_s':first['elapsed_s'],'after_elapsed_s':second['elapsed_s'],
+   'elapsed_difference_ms':(second['elapsed_s']-first['elapsed_s'])*1000,
+   'same_actor_component':(first['source_actor'],first['source_component'])==(second['source_actor'],second['source_component'])})
  out[name]={'status':r['status'],'reset_success':r.get('reset_response_success'),'phases':phases,
    'same_actor_component_pairs':sorted(set(map(tuple,phases['before']['actor_component_pairs']))&set(map(tuple,phases['after']['actor_component_pairs']))),
+   'ordered_pair_comparison':{'count':len(ordered),'before_unpaired':len(before)-len(ordered),'after_unpaired':len(after)-len(ordered),
+    'max_absolute_elapsed_difference_ms':max((abs(x['elapsed_difference_ms']) for x in ordered),default=None),'pairs':ordered},
    'limitations':['hit-source identity is observed in one process and does not prove object type or physical impulse',
+    'pairing by event order is an observational comparison, not proof that events are physically identical',
     'breakpoints and debugger change timing, matching path does not prove same physical contact event',
     'stage, height hold and explicit RNG reseed are controlled interventions; fixed wait was selected from earlier posthoc observations']}
 (p/'collision_replay_analysis.json').write_text(json.dumps(out,indent=2)+'\n');print(json.dumps(out,indent=2))

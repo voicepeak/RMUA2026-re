@@ -27,9 +27,19 @@ class GlibcRandTests(unittest.TestCase):
         stream.srand(123)
         self.assertEqual([stream.rand() for _ in range(8)], first)
 
+    def test_auto_streams_are_independent_when_interleaved(self):
+        first = make_glibc_rand(123)
+        second = make_glibc_rand(456)
+        expected_first = GlibcRand(123)
+        expected_second = GlibcRand(456)
+        for _ in range(64):
+            self.assertEqual(first.rand(), expected_first.rand())
+            self.assertEqual(second.rand(), expected_second.rand())
+
     @unittest.skipUnless(host_is_glibc(), "ctypes glibc comparison requires Linux/glibc")
     def test_pure_fallback_matches_host_glibc(self):
-        for seed in (1, 123, 456, 2026, 42):
+        for seed in (0, 1, 123, 456, 2026, 42, 0x7fffffff, 0x80000000,
+                     0x80000001, 0xfffffffe, 0xffffffff, -1):
             pure = make_glibc_rand(seed, backend="pure")
             host = make_glibc_rand(seed, backend="ctypes")
             self.assertEqual(
