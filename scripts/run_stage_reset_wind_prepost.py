@@ -58,6 +58,7 @@ def main():
     sim=a.simulator.resolve(strict=True);settings=a.settings.resolve(strict=True);messages=a.messages.resolve(strict=True)
     binary=sim/'Build/LinuxNoEditor/RMUA/Binaries/Linux/RMUA-Linux-Shipping'
     if not binary.is_file(): p.error('simulator binary missing')
+    if sha(binary)!='5231addfa25ddaa9e4473ea9ac40c9c0bc685174e69cd14bb49159f443b97800': p.error('interposer requires the validated simulator binary')
     output=a.output.resolve();output.mkdir(parents=True,exist_ok=False)
     base=Path(__file__).resolve().parent.parent
     image=docker('image','inspect',a.image,'--format','{{.Id}}',capture_output=True,check=True).stdout.strip()

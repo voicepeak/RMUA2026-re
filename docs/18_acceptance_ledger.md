@@ -16,7 +16,7 @@
 | 碰撞：回调与动态物理 | `experiments/collision_inject_ignore{0,1}_20261105/`、`experiments/fall_collision_pilot_20261105/` | 合成回调在忽略标志 0/1 下三 seed 两次分别返回 state 12/7；另有开环 PWM 运行时回调。粗/细线夹具场已有三 seed 两次组件和候选实例索引匹配；字段独立类型验证、车辆接触、力和自然终止未确认；逐 tick 强制状态会覆盖终止。 |
 | PWM：动作/输出/动力学，seed 重复 | `experiments/wind_pwm_step_{4,5,6}_20261105/`、`experiments/pwm_20261104/` | 三 stage、三 seed 各两次固定开环命令、PWM 输出、IMU/GPS 和事后位姿已保存；另有三 stage、三 seed 各两次的动态风与非零 PWM 近似重叠样本；扰动因果及可辨识动力学模型尚缺。header 首次匹配差不是已标定端到端延迟。 |
 | 传感器：IMU、GPS、LiDAR、相机、时间/噪声 | `experiments/wind_persistent_{4,5,6}_20261105/`、`experiments/sensor_clock_rendered_20261104/` | 三 stage/seed/重复有 IMU、GPS、LiDAR 消息时钟；IMU 分量统计与原始流已保存，变化不能单独解释为噪声。NullRHI 相机为空，有渲染单场相机有数据；动态障碍点云、多 seed 图片与准确端到端延迟未验收。 |
-| reset / 随机流重放 | `experiments/reset_instances_20261105/`、`experiments/reset_root_hold_20261105/` | 无高度干预的六场响应均为 false；强制根组件高度的六场响应均为 true，前后线障提交集合相同而风数组不同、符合连续随机流。无干预成功和完整物理／车辆／风重放仍未验证。 |
+| reset / 随机流重放 | `experiments/reset_instances_20261105/`、`experiments/reset_wind_interpose_{20261105,stage5_20261105,stage6_20261105}/` | 无高度干预的六场响应均为 false；根高度固定与显式风重播种下，stage 4/5/6 各三 seed 两次均 true，线障提交及风数组前后重现。原生成功和完整物理／车辆／自然赛程重放仍未验证。 |
 | 8 实例崩溃根因或稳定并发上限 | `experiments/concurrency_gdb_20261104/`、`experiments/concurrency_frequency_overlap/`、`experiments/concurrency_followup_20261104/` | 八实例曾崩溃，单次栈指向频率统计 deque，但根因未证；7 路两次各 300 秒存活，第二轮含 60 秒订阅，部分 LiDAR/源时钟变慢。该主机有限空载观测支持七路操作边界，但不同负载或长期的稳定上限及八路根因仍未知。 |
 | 训练规格和逐类可复现脚本 | `docs/15_seed_dependency_matrix.md`、`docs/16_headless_requirements.md`、`experiments/training_host_20261105/`、`scripts/` | 硬件、镜像 ID、二进制和 settings 哈希、实际 settings 副本及已完成机制的脚本已记录；自定义训练环境完整等价和未完成类的验证尚缺。 |
 | OL1 12 门和额外地图 | `experiments/runtime_trace_20261104_v2/`、`experiments/ol2_direct_gates_20261105/` | OL1 与开发补丁直接加载的 OL2 均覆盖三 seed 两次、12 门 BeginPlay；OL2 无可用 IMU，门洞物理尺寸与可飞行跨图初始化未完成。 |
@@ -83,3 +83,5 @@ stage 5 单 seed 先导在相同高度固定和显式重播种下返回 true，�
 stage 6 seed 123 的单次高度固定与重播种先导返回 true，前后各 1434 次线障提交集合相同，35 项风数组及独立模型逐字节一致；事后静止位置采样前后相距约 0.000026 m。仍需重复、多 seed 和完整物理场景证据。
 
 stage 5 完整矩阵已扩展三 seed 各两次：六场在高度固定及第二次风生成前重播种下服务均 true；前后各 1118 个线障提交集合及 37 项风数组一致，风均与模型逐字节吻合。前段末与后段首的事后位置差约 0.00018–0.00089 m，不验证速度、接触、车辆和完整物理重放。见 `experiments/reset_wind_interpose_stage5_20261105/`。
+
+stage 6 受控重放矩阵已扩展三个 seed 各两次：六场响应 true、每场前后各 1434 个线障提交集合和 35 项风数组一致，全部风数组与独立模型逐字节一致；前段末与后段首的事后静止位置差约 0.00016–0.00052 m。仍不证明完整物理、车辆或自然赛程重放，见 `experiments/reset_wind_interpose_stage6_20261105/`。

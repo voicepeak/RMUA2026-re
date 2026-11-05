@@ -352,3 +352,7 @@ stage 5 seed 123 单次先导使用同一 interposer 和根高度固定，并在
 stage 6 seed 123 单次先导使用相同固定高度和 interposer：ROS reset 返回 true，前后各 1434 个线障提交变换集合哈希一致，35 项风关键帧前后逐字节相同且均与 stage 6 离线模型吻合。事后位置前段末与后段首相距约 0.0000256 m；采样为静止场且间隔非零，不证明速度、碰撞、车辆或完整场景重放。原始数据、各分析结果见 `experiments/reset_wind_interpose_stage6_pilot_20261105/`。
 
 stage 5 在同一根高度固定和 interposer 条件下扩展到 seed 123/456/2026 各两次：六场服务均 true，根高度固定 13–14 次；每场前后各 1118 个线障提交变换集合一致，37 项风数组前后逐字节相同，并与对应 seed 的独立 stage 5 模型逐字节一致。事后姿态前段末与后段首位置差约 0.000179–0.000884 m，采样是静止且分时进行，不能推断速度、碰撞或完整物理场景重放。见 `experiments/reset_wind_interpose_stage5_20261105/` 的 manifest、原始流、`reset_analysis.json`、`reseeded_wind_analysis.json` 和 `pose_prepost_analysis.json`。
+
+stage 6 在相同根高度固定及 interposer 条件下扩展到 seed 123/456/2026 各两次：六场 reset 响应均为 true、每场根高度写入 9–11 次；前后各 1434 个线障提交变换集合一致，35 项风数组前后逐字节相同，并均与对应 seed 的 stage 6 离线模型逐字节一致。前段末与后段首的事后静止位置差约 0.000162–0.000520 m；分时采样不能证明速度、接触或整个场景重放。原始流与分析见 `experiments/reset_wind_interpose_stage6_20261105/`。
+
+两个 interposer 运行器现对模拟器主程序 SHA-256 做前置检查，非目标文件在启动容器前被拒绝；已有 stage 4/5/6 数据目录保存执行时原版运行器，其哈希与 manifest 对应。验证只保障调用地址所依据的主程序身份，不证明镜像、共享库或所有配置与其他环境等价。
