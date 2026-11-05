@@ -1,0 +1,7 @@
+# Fixed line fixture after state-force release
+
+Each run injects stage 4 and one selected HISM fixture at ordinal 7, forces state 7 for ten seconds after wind setup, then stops forcing. Fixed PWM is sent ten seconds after ordinary IMU readiness; the fixture and delay were chosen using earlier posthoc debug observations. No online feedback from debug truth is used. This is a diagnostic scene, not an independent natural-race acceptance.
+
+`summary.json` is regenerated with `python3 scripts/summarize_line_release_matrix.py`. Each row links its full manifest, log and streams; the seed 123 repeat 1 rows use the original pilots. For a new run, `scripts/run_line_release_state.py --help` describes simulator, settings, message workspace, selector (1 thick, 0 thin), output, seed and port options. Use stage 4, fixture ordinal 7 and sample seconds 25; run `scripts/analyze_line_release_state.py OUTPUT` afterward. Internal manifest repeat numbers are 1 because the repetitions were run as separate invocations.
+
+The candidate hit index at offset 0x58 is inferred, not independently typed. Pairing uses the allocation pointer and callback; a linked state write is on the same thread after that callback and before the next paired callback. GDB changes execution timing; state samples are discrete and do not prove uninterrupted state, force, score, complete settlement, or natural race behavior. The separately recorded static state-12 path and its `Finished` label do not by themselves prove its later instructions ran in these trials.
