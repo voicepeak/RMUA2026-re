@@ -1,0 +1,151 @@
+{
+  "reason": "duration_reached",
+  "elapsed_s": 26.09497138898587,
+  "host_sample_count": 25,
+  "summary": {
+    "rmua-re-591c30fa5132-0": {
+      "pid": 927718,
+      "observer_exit_code": 0,
+      "events": {
+        "started": 1,
+        "finished": 1
+      },
+      "topics": {
+        "imu": {
+          "count": 2502,
+          "observed_hz": 99.9993759455836,
+          "sim_seconds_per_wall_second": 0.9545925767546706,
+          "arrival_interval_median_s": 0.00999994098674506,
+          "arrival_interval_p99_s": 0.010218111972790211,
+          "arrival_interval_max_s": 0.01144789601676166,
+          "stamp_regressions": 0,
+          "stamp_equal_adjacent": 0,
+          "sequence_gap_sum": 0,
+          "sequence_regressions": 0,
+          "note": "seq gaps are observer-side missing sequence numbers, not localized packet loss"
+        },
+        "lidar": {
+          "count": 241,
+          "observed_hz": 9.60663376026564,
+          "sim_seconds_per_wall_second": 0.954679601125474,
+          "arrival_interval_median_s": 0.09956261300249025,
+          "arrival_interval_p99_s": 0.11889497700030915,
+          "arrival_interval_max_s": 0.12057054799515754,
+          "stamp_regressions": 0,
+          "stamp_equal_adjacent": 0,
+          "sequence_gap_sum": 0,
+          "sequence_regressions": 0,
+          "note": "seq gaps are observer-side missing sequence numbers, not localized packet loss"
+        }
+      }
+    },
+    "rmua-re-591c30fa5132-1": {
+      "pid": 927872,
+      "observer_exit_code": 0,
+      "events": {
+        "started": 1,
+        "finished": 1
+      },
+      "topics": {
+        "imu": {
+          "count": 2503,
+          "observed_hz": 100.00034366220753,
+          "sim_seconds_per_wall_second": 0.8965449875651641,
+          "arrival_interval_median_s": 0.00999955300358124,
+          "arrival_interval_p99_s": 0.010173311980906874,
+          "arrival_interval_max_s": 0.013449522986775264,
+          "stamp_regressions": 0,
+          "stamp_equal_adjacent": 1,
+          "sequence_gap_sum": 0,
+          "sequence_regressions": 0,
+          "note": "seq gaps are observer-side missing sequence numbers, not localized packet loss"
+        },
+        "lidar": {
+          "count": 228,
+          "observed_hz": 9.125768391380081,
+          "sim_seconds_per_wall_second": 0.8963545053556161,
+          "arrival_interval_median_s": 0.10888303501997143,
+          "arrival_interval_p99_s": 0.12057466700207442,
+          "arrival_interval_max_s": 0.12266059700050391,
+          "stamp_regressions": 0,
+          "stamp_equal_adjacent": 0,
+          "sequence_gap_sum": 0,
+          "sequence_regressions": 0,
+          "note": "seq gaps are observer-side missing sequence numbers, not localized packet loss"
+        }
+      }
+    },
+    "rmua-re-591c30fa5132-2": {
+      "pid": 928422,
+      "observer_exit_code": 0,
+      "events": {
+        "started": 1,
+        "finished": 1
+      },
+      "topics": {
+        "imu": {
+          "count": 2502,
+          "observed_hz": 99.99996926430244,
+          "sim_seconds_per_wall_second": 0.9483606080665844,
+          "arrival_interval_median_s": 0.01000104402191937,
+          "arrival_interval_p99_s": 0.010197088995482773,
+          "arrival_interval_max_s": 0.013124557008268312,
+          "stamp_regressions": 0,
+          "stamp_equal_adjacent": 0,
+          "sequence_gap_sum": 0,
+          "sequence_regressions": 0,
+          "note": "seq gaps are observer-side missing sequence numbers, not localized packet loss"
+        },
+        "lidar": {
+          "count": 238,
+          "observed_hz": 9.51327806389144,
+          "sim_seconds_per_wall_second": 0.9482170847187319,
+          "arrival_interval_median_s": 0.10464734499691986,
+          "arrival_interval_p99_s": 0.12053255300270393,
+          "arrival_interval_max_s": 0.120837626978755,
+          "stamp_regressions": 0,
+          "stamp_equal_adjacent": 0,
+          "sequence_gap_sum": 0,
+          "sequence_regressions": 0,
+          "note": "seq gaps are observer-side missing sequence numbers, not localized packet loss"
+        }
+      }
+    },
+    "rmua-re-591c30fa5132-3": {
+      "pid": 928622,
+      "observer_exit_code": 0,
+      "events": {
+        "started": 1,
+        "finished": 1
+      },
+      "topics": {
+        "imu": {
+          "count": 2503,
+          "observed_hz": 100.00026394549403,
+          "sim_seconds_per_wall_second": 0.9786805382579769,
+          "arrival_interval_median_s": 0.009999439003877342,
+          "arrival_interval_p99_s": 0.010174933995585889,
+          "arrival_interval_max_s": 0.012287884979741648,
+          "stamp_regressions": 0,
+          "stamp_equal_adjacent": 0,
+          "sequence_gap_sum": 0,
+          "sequence_regressions": 0,
+          "note": "seq gaps are observer-side missing sequence numbers, not localized packet loss"
+        },
+        "lidar": {
+          "count": 247,
+          "observed_hz": 9.86702832482202,
+          "sim_seconds_per_wall_second": 0.9789022919007252,
+          "arrival_interval_median_s": 0.09907483600545675,
+          "arrival_interval_p99_s": 0.11644471500767395,
+          "arrival_interval_max_s": 0.11980897802277468,
+          "stamp_regressions": 0,
+          "stamp_equal_adjacent": 0,
+          "sequence_gap_sum": 0,
+          "sequence_regressions": 0,
+          "note": "seq gaps are observer-side missing sequence numbers, not localized packet loss"
+        }
+      }
+    }
+  }
+}

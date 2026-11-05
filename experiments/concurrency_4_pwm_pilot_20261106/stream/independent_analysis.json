@@ -1,0 +1,182 @@
+{
+  "requested_s": 25.0,
+  "observer_reason": "duration_reached",
+  "host_window_s": 24.023684568994213,
+  "limitations": [
+    "timestamps are ROS arrival and source stamps, not calibrated latency",
+    "camera and stage progression are not measured; workload label alone does not verify its execution",
+    "observer death can result from pool cleanup following one failure"
+  ],
+  "instances": {
+    "rmua-re-591c30fa5132-0": {
+      "seed": 123,
+      "observer_exit_code": 0,
+      "observer_started": true,
+      "observer_finished": true,
+      "observer_duration_s": 25.037091787,
+      "host_process_missing_samples": 0,
+      "simulator_cpu_percent_one_core": 200.26070464683175,
+      "simulator_rss_peak_mib": 762.796875,
+      "topics": {
+        "imu": {
+          "count": 2502,
+          "span_s": 25.010156077,
+          "observed_hz": 99.99937594551781,
+          "source_seconds_per_wall_second": 0.9545925767714671,
+          "median_arrival_interval_s": 0.009999941,
+          "p99_arrival_interval_s": 0.010218112,
+          "max_arrival_interval_s": 0.011447896,
+          "stamp_regressions": 0,
+          "nonzero_stamp_regressions": 0,
+          "zero_stamp_count": 0,
+          "stamp_equal_adjacent": 0,
+          "sequence_gap_sum": 0,
+          "sequence_regressions": 0
+        },
+        "lidar": {
+          "count": 241,
+          "span_s": 24.982736512,
+          "observed_hz": 9.60663376026563,
+          "source_seconds_per_wall_second": 0.9546796011135068,
+          "median_arrival_interval_s": 0.099562613,
+          "p99_arrival_interval_s": 0.118894977,
+          "max_arrival_interval_s": 0.120570548,
+          "stamp_regressions": 0,
+          "nonzero_stamp_regressions": 0,
+          "zero_stamp_count": 0,
+          "stamp_equal_adjacent": 0,
+          "sequence_gap_sum": 0,
+          "sequence_regressions": 0
+        }
+      }
+    },
+    "rmua-re-591c30fa5132-1": {
+      "seed": 456,
+      "observer_exit_code": 0,
+      "observer_started": true,
+      "observer_finished": true,
+      "observer_duration_s": 25.037506863,
+      "host_process_missing_samples": 0,
+      "simulator_cpu_percent_one_core": 199.3449417072703,
+      "simulator_rss_peak_mib": 765.29296875,
+      "topics": {
+        "imu": {
+          "count": 2503,
+          "span_s": 25.019914016,
+          "observed_hz": 100.00034366225218,
+          "source_seconds_per_wall_second": 0.8965449875509276,
+          "median_arrival_interval_s": 0.009999553000000001,
+          "p99_arrival_interval_s": 0.010173312,
+          "max_arrival_interval_s": 0.013449523,
+          "stamp_regressions": 0,
+          "nonzero_stamp_regressions": 0,
+          "zero_stamp_count": 0,
+          "stamp_equal_adjacent": 1,
+          "sequence_gap_sum": 0,
+          "sequence_regressions": 0
+        },
+        "lidar": {
+          "count": 228,
+          "span_s": 24.874617705,
+          "observed_hz": 9.125768391381998,
+          "source_seconds_per_wall_second": 0.8963545053204267,
+          "median_arrival_interval_s": 0.108883035,
+          "p99_arrival_interval_s": 0.120574667,
+          "max_arrival_interval_s": 0.122660597,
+          "stamp_regressions": 0,
+          "nonzero_stamp_regressions": 0,
+          "zero_stamp_count": 0,
+          "stamp_equal_adjacent": 0,
+          "sequence_gap_sum": 0,
+          "sequence_regressions": 0
+        }
+      }
+    },
+    "rmua-re-591c30fa5132-2": {
+      "seed": 2026,
+      "observer_exit_code": 0,
+      "observer_started": true,
+      "observer_finished": true,
+      "observer_duration_s": 25.035360449,
+      "host_process_missing_samples": 0,
+      "simulator_cpu_percent_one_core": 200.05257670602234,
+      "simulator_rss_peak_mib": 764.1015625,
+      "topics": {
+        "imu": {
+          "count": 2502,
+          "span_s": 25.010007687,
+          "observed_hz": 99.99996926430373,
+          "source_seconds_per_wall_second": 0.9483606080748502,
+          "median_arrival_interval_s": 0.010001044,
+          "p99_arrival_interval_s": 0.010197089,
+          "max_arrival_interval_s": 0.013124557,
+          "stamp_regressions": 0,
+          "nonzero_stamp_regressions": 0,
+          "zero_stamp_count": 0,
+          "stamp_equal_adjacent": 0,
+          "sequence_gap_sum": 0,
+          "sequence_regressions": 0
+        },
+        "lidar": {
+          "count": 238,
+          "span_s": 24.912548378,
+          "observed_hz": 9.513278063888965,
+          "source_seconds_per_wall_second": 0.9482170847226844,
+          "median_arrival_interval_s": 0.104647345,
+          "p99_arrival_interval_s": 0.120532553,
+          "max_arrival_interval_s": 0.120837627,
+          "stamp_regressions": 0,
+          "nonzero_stamp_regressions": 0,
+          "zero_stamp_count": 0,
+          "stamp_equal_adjacent": 0,
+          "sequence_gap_sum": 0,
+          "sequence_regressions": 0
+        }
+      }
+    },
+    "rmua-re-591c30fa5132-3": {
+      "seed": 789,
+      "observer_exit_code": 0,
+      "observer_started": true,
+      "observer_finished": true,
+      "observer_duration_s": 25.03856092,
+      "host_process_missing_samples": 0,
+      "simulator_cpu_percent_one_core": 199.67794641256538,
+      "simulator_rss_peak_mib": 764.27734375,
+      "topics": {
+        "imu": {
+          "count": 2503,
+          "span_s": 25.019933961,
+          "observed_hz": 100.0002639455408,
+          "source_seconds_per_wall_second": 0.9786805382527605,
+          "median_arrival_interval_s": 0.009999438999999999,
+          "p99_arrival_interval_s": 0.010174934,
+          "max_arrival_interval_s": 0.012287885,
+          "stamp_regressions": 0,
+          "nonzero_stamp_regressions": 0,
+          "zero_stamp_count": 0,
+          "stamp_equal_adjacent": 0,
+          "sequence_gap_sum": 0,
+          "sequence_regressions": 0
+        },
+        "lidar": {
+          "count": 247,
+          "span_s": 24.931518579,
+          "observed_hz": 9.867028324829263,
+          "source_seconds_per_wall_second": 0.9789022919188303,
+          "median_arrival_interval_s": 0.099074836,
+          "p99_arrival_interval_s": 0.116444715,
+          "max_arrival_interval_s": 0.119808978,
+          "stamp_regressions": 0,
+          "nonzero_stamp_regressions": 0,
+          "zero_stamp_count": 0,
+          "stamp_equal_adjacent": 0,
+          "sequence_gap_sum": 0,
+          "sequence_regressions": 0
+        }
+      }
+    }
+  },
+  "all_observers_finished": true,
+  "all_processes_observed": true
+}

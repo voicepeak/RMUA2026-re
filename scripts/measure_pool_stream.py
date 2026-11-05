@@ -14,6 +14,8 @@ p = argparse.ArgumentParser(description=__doc__)
 p.add_argument('manifest', type=Path)
 p.add_argument('--seconds', type=float, required=True)
 p.add_argument('--output', type=Path, required=True)
+p.add_argument('--workload', choices=('idle','fixed_pwm'), default='idle',
+               help='label for an independently launched workload; verify its separate logs')
 a = p.parse_args()
 if not 2 <= a.seconds <= 600: p.error('seconds must be 2..600')
 manifest = json.loads(a.manifest.read_text())
@@ -21,11 +23,11 @@ if not manifest.get('ready'): p.error('pool is not ready')
 out = a.output.resolve(); out.mkdir(parents=True, exist_ok=False)
 source_path = Path(__file__).with_name('pool_probe_stream.py')
 source = source_path.read_bytes()
-meta = {'duration_requested_s': a.seconds, 'started_wall_ns': time.time_ns(),
+meta = {'duration_requested_s': a.seconds, 'workload':a.workload, 'started_wall_ns': time.time_ns(),
         'started_monotonic_ns': time.monotonic_ns(), 'manifest': manifest,
         'probe_sha256': hashlib.sha256(source).hexdigest(), 'observer_sha256': hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
         'limitations': ['timestamps are ROS arrival and source stamps, not calibrated latency',
-                        'no commands, camera, stage progression, or training workload',
+                        'camera and stage progression are not measured; workload label alone does not verify its execution',
                         'observer death can result from pool cleanup following one failure']}
 (out/'meta.json').write_text(json.dumps(meta,indent=2)+'\n')
 procs = {}; streams = {}; pids = {}; samples = []
