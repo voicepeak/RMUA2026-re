@@ -1,0 +1,304 @@
+
+/home/tianbot/RUMA-by-helinjun/main/simulator/simulator_12.0.0.5/Build/LinuxNoEditor/RMUA/Plugins/AirSimROS/Binaries/Linux/libairsimros.so：     文件格式 elf64-x86-64
+
+
+Disassembly of section .text:
+
+00000000001864f4 <airsim_ros::get_topic_frequency(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)>:
+  1864f4:	f3 0f 1e fa          	endbr64 
+  1864f8:	55                   	push   %rbp
+  1864f9:	48 89 e5             	mov    %rsp,%rbp
+  1864fc:	48 81 ec 90 00 00 00 	sub    $0x90,%rsp
+  186503:	48 89 bd 78 ff ff ff 	mov    %rdi,-0x88(%rbp)
+  18650a:	64 48 8b 04 25 28 00 	mov    %fs:0x28,%rax
+  186511:	00 00 
+  186513:	48 89 45 f8          	mov    %rax,-0x8(%rbp)
+  186517:	31 c0                	xor    %eax,%eax
+  186519:	48 8b 05 40 48 0e 00 	mov    0xe4840(%rip),%rax        # 26ad60 <airsim_ros::node_instance>
+  186520:	48 8d 90 b0 00 00 00 	lea    0xb0(%rax),%rdx
+  186527:	48 8b 85 78 ff ff ff 	mov    -0x88(%rbp),%rax
+  18652e:	48 89 c6             	mov    %rax,%rsi
+  186531:	48 89 d7             	mov    %rdx,%rdi
+  186534:	e8 87 d2 ff ff       	call   1837c0 <std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::deque<unsigned long, std::allocator<unsigned long> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::deque<unsigned long, std::allocator<unsigned long> > > > >::count(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const@plt>
+  186539:	48 85 c0             	test   %rax,%rax
+  18653c:	0f 94 c0             	sete   %al
+  18653f:	84 c0                	test   %al,%al
+  186541:	74 09                	je     18654c <airsim_ros::get_topic_frequency(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x58>
+  186543:	66 0f ef c0          	pxor   %xmm0,%xmm0
+  186547:	e9 e6 01 00 00       	jmp    186732 <airsim_ros::get_topic_frequency(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x23e>
+  18654c:	e8 4f 14 ff ff       	call   1779a0 <ros::Time::now()@plt>
+  186551:	48 89 45 d0          	mov    %rax,-0x30(%rbp)
+  186555:	48 8d 45 d0          	lea    -0x30(%rbp),%rax
+  186559:	48 89 c7             	mov    %rax,%rdi
+  18655c:	e8 4f 20 ff ff       	call   1785b0 <ros::TimeBase<ros::Time, ros::Duration>::toNSec() const@plt>
+  186561:	48 89 45 a0          	mov    %rax,-0x60(%rbp)
+  186565:	48 8b 05 f4 47 0e 00 	mov    0xe47f4(%rip),%rax        # 26ad60 <airsim_ros::node_instance>
+  18656c:	48 8d 90 b0 00 00 00 	lea    0xb0(%rax),%rdx
+  186573:	48 8b 85 78 ff ff ff 	mov    -0x88(%rbp),%rax
+  18657a:	48 89 c6             	mov    %rax,%rsi
+  18657d:	48 89 d7             	mov    %rdx,%rdi
+  186580:	e8 4b e3 fe ff       	call   1748d0 <std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::deque<unsigned long, std::allocator<unsigned long> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::deque<unsigned long, std::allocator<unsigned long> > > > >::operator[](std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)@plt>
+  186585:	48 89 45 a8          	mov    %rax,-0x58(%rbp)
+  186589:	c7 45 80 00 00 00 00 	movl   $0x0,-0x80(%rbp)
+  186590:	48 c7 45 88 ff ff ff 	movq   $0xffffffffffffffff,-0x78(%rbp)
+  186597:	ff 
+  186598:	48 c7 45 90 ff ff ff 	movq   $0xffffffffffffffff,-0x70(%rbp)
+  18659f:	ff 
+  1865a0:	48 8d 45 b0          	lea    -0x50(%rbp),%rax
+  1865a4:	48 8b 55 a8          	mov    -0x58(%rbp),%rdx
+  1865a8:	48 89 d6             	mov    %rdx,%rsi
+  1865ab:	48 89 c7             	mov    %rax,%rdi
+  1865ae:	e8 7d 5c ff ff       	call   17c230 <std::deque<unsigned long, std::allocator<unsigned long> >::crbegin() const@plt>
+  1865b3:	48 8d 45 d0          	lea    -0x30(%rbp),%rax
+  1865b7:	48 8b 55 a8          	mov    -0x58(%rbp),%rdx
+  1865bb:	48 89 d6             	mov    %rdx,%rsi
+  1865be:	48 89 c7             	mov    %rax,%rdi
+  1865c1:	e8 ba 8a ff ff       	call   17f080 <std::deque<unsigned long, std::allocator<unsigned long> >::crend() const@plt>
+  1865c6:	48 8d 55 d0          	lea    -0x30(%rbp),%rdx
+  1865ca:	48 8d 45 b0          	lea    -0x50(%rbp),%rax
+  1865ce:	48 89 d6             	mov    %rdx,%rsi
+  1865d1:	48 89 c7             	mov    %rax,%rdi
+  1865d4:	e8 47 66 ff ff       	call   17cc20 <bool std::operator!=<std::_Deque_iterator<unsigned long, unsigned long const&, unsigned long const*> >(std::reverse_iterator<std::_Deque_iterator<unsigned long, unsigned long const&, unsigned long const*> > const&, std::reverse_iterator<std::_Deque_iterator<unsigned long, unsigned long const&, unsigned long const*> > const&)@plt>
+  1865d9:	84 c0                	test   %al,%al
+  1865db:	0f 84 9c 00 00 00    	je     18667d <airsim_ros::get_topic_frequency(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x189>
+  1865e1:	48 83 7d 88 ff       	cmpq   $0xffffffffffffffff,-0x78(%rbp)
+  1865e6:	75 13                	jne    1865fb <airsim_ros::get_topic_frequency(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x107>
+  1865e8:	48 8d 45 b0          	lea    -0x50(%rbp),%rax
+  1865ec:	48 89 c7             	mov    %rax,%rdi
+  1865ef:	e8 ac d7 ff ff       	call   183da0 <std::reverse_iterator<std::_Deque_iterator<unsigned long, unsigned long const&, unsigned long const*> >::operator*() const@plt>
+  1865f4:	48 8b 00             	mov    (%rax),%rax
+  1865f7:	48 89 45 88          	mov    %rax,-0x78(%rbp)
+  1865fb:	48 8d 45 b0          	lea    -0x50(%rbp),%rax
+  1865ff:	48 89 c7             	mov    %rax,%rdi
+  186602:	e8 99 d7 ff ff       	call   183da0 <std::reverse_iterator<std::_Deque_iterator<unsigned long, unsigned long const&, unsigned long const*> >::operator*() const@plt>
+  186607:	48 8b 00             	mov    (%rax),%rax
+  18660a:	48 8b 55 a0          	mov    -0x60(%rbp),%rdx
+  18660e:	48 29 c2             	sub    %rax,%rdx
+  186611:	48 89 d0             	mov    %rdx,%rax
+  186614:	48 85 c0             	test   %rax,%rax
+  186617:	78 07                	js     186620 <airsim_ros::get_topic_frequency(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x12c>
+  186619:	f2 48 0f 2a c0       	cvtsi2sd %rax,%xmm0
+  18661e:	eb 15                	jmp    186635 <airsim_ros::get_topic_frequency(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x141>
+  186620:	48 89 c2             	mov    %rax,%rdx
+  186623:	48 d1 ea             	shr    %rdx
+  186626:	83 e0 01             	and    $0x1,%eax
+  186629:	48 09 c2             	or     %rax,%rdx
+  18662c:	f2 48 0f 2a c2       	cvtsi2sd %rdx,%xmm0
+  186631:	f2 0f 58 c0          	addsd  %xmm0,%xmm0
+  186635:	f2 0f 10 0d 93 e4 08 	movsd  0x8e493(%rip),%xmm1        # 214ad0 <airsim_ros::commands_impl::(anonymous namespace)::DT+0x8610>
+  18663c:	00 
+  18663d:	66 0f 2f c8          	comisd %xmm0,%xmm1
+  186641:	0f 93 c0             	setae  %al
+  186644:	84 c0                	test   %al,%al
+  186646:	74 34                	je     18667c <airsim_ros::get_topic_frequency(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x188>
+  186648:	83 45 80 01          	addl   $0x1,-0x80(%rbp)
+  18664c:	48 8d 45 b0          	lea    -0x50(%rbp),%rax
+  186650:	48 89 c7             	mov    %rax,%rdi
+  186653:	e8 48 d7 ff ff       	call   183da0 <std::reverse_iterator<std::_Deque_iterator<unsigned long, unsigned long const&, unsigned long const*> >::operator*() const@plt>
+  186658:	48 8b 00             	mov    (%rax),%rax
+  18665b:	48 89 45 90          	mov    %rax,-0x70(%rbp)
+  18665f:	48 8d 45 d0          	lea    -0x30(%rbp),%rax
+  186663:	48 8d 4d b0          	lea    -0x50(%rbp),%rcx
+  186667:	ba 00 00 00 00       	mov    $0x0,%edx
+  18666c:	48 89 ce             	mov    %rcx,%rsi
+  18666f:	48 89 c7             	mov    %rax,%rdi
+  186672:	e8 a9 51 ff ff       	call   17b820 <std::reverse_iterator<std::_Deque_iterator<unsigned long, unsigned long const&, unsigned long const*> >::operator++(int)@plt>
+  186677:	e9 37 ff ff ff       	jmp    1865b3 <airsim_ros::get_topic_frequency(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0xbf>
+  18667c:	90                   	nop
+  18667d:	83 7d 80 01          	cmpl   $0x1,-0x80(%rbp)
+  186681:	7f 09                	jg     18668c <airsim_ros::get_topic_frequency(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x198>
+  186683:	66 0f ef c0          	pxor   %xmm0,%xmm0
+  186687:	e9 a6 00 00 00       	jmp    186732 <airsim_ros::get_topic_frequency(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x23e>
+  18668c:	83 6d 80 01          	subl   $0x1,-0x80(%rbp)
+  186690:	48 8b 45 88          	mov    -0x78(%rbp),%rax
+  186694:	48 2b 45 90          	sub    -0x70(%rbp),%rax
+  186698:	48 89 45 98          	mov    %rax,-0x68(%rbp)
+  18669c:	48 83 7d 98 00       	cmpq   $0x0,-0x68(%rbp)
+  1866a1:	75 09                	jne    1866ac <airsim_ros::get_topic_frequency(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x1b8>
+  1866a3:	66 0f ef c0          	pxor   %xmm0,%xmm0
+  1866a7:	e9 86 00 00 00       	jmp    186732 <airsim_ros::get_topic_frequency(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x23e>
+  1866ac:	48 8b 45 98          	mov    -0x68(%rbp),%rax
+  1866b0:	48 85 c0             	test   %rax,%rax
+  1866b3:	78 07                	js     1866bc <airsim_ros::get_topic_frequency(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x1c8>
+  1866b5:	f2 48 0f 2a c0       	cvtsi2sd %rax,%xmm0
+  1866ba:	eb 15                	jmp    1866d1 <airsim_ros::get_topic_frequency(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x1dd>
+  1866bc:	48 89 c2             	mov    %rax,%rdx
+  1866bf:	48 d1 ea             	shr    %rdx
+  1866c2:	83 e0 01             	and    $0x1,%eax
+  1866c5:	48 09 c2             	or     %rax,%rdx
+  1866c8:	f2 48 0f 2a c2       	cvtsi2sd %rdx,%xmm0
+  1866cd:	f2 0f 58 c0          	addsd  %xmm0,%xmm0
+  1866d1:	f2 0f 10 0d ff e3 08 	movsd  0x8e3ff(%rip),%xmm1        # 214ad8 <airsim_ros::commands_impl::(anonymous namespace)::DT+0x8618>
+  1866d8:	00 
+  1866d9:	66 0f 2f c8          	comisd %xmm0,%xmm1
+  1866dd:	76 08                	jbe    1866e7 <airsim_ros::get_topic_frequency(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x1f3>
+  1866df:	48 c7 45 98 00 ca 9a 	movq   $0x3b9aca00,-0x68(%rbp)
+  1866e6:	3b 
+  1866e7:	f3 0f 2a 4d 80       	cvtsi2ssl -0x80(%rbp),%xmm1
+  1866ec:	48 8b 45 98          	mov    -0x68(%rbp),%rax
+  1866f0:	48 85 c0             	test   %rax,%rax
+  1866f3:	78 07                	js     1866fc <airsim_ros::get_topic_frequency(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x208>
+  1866f5:	f2 48 0f 2a c0       	cvtsi2sd %rax,%xmm0
+  1866fa:	eb 15                	jmp    186711 <airsim_ros::get_topic_frequency(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x21d>
+  1866fc:	48 89 c2             	mov    %rax,%rdx
+  1866ff:	48 d1 ea             	shr    %rdx
+  186702:	83 e0 01             	and    $0x1,%eax
+  186705:	48 09 c2             	or     %rax,%rdx
+  186708:	f2 48 0f 2a c2       	cvtsi2sd %rdx,%xmm0
+  18670d:	f2 0f 58 c0          	addsd  %xmm0,%xmm0
+  186711:	f2 0f 10 15 b7 e3 08 	movsd  0x8e3b7(%rip),%xmm2        # 214ad0 <airsim_ros::commands_impl::(anonymous namespace)::DT+0x8610>
+  186718:	00 
+  186719:	f2 0f 5e c2          	divsd  %xmm2,%xmm0
+  18671d:	f2 0f 5a c0          	cvtsd2ss %xmm0,%xmm0
+  186721:	f3 0f 5e c8          	divss  %xmm0,%xmm1
+  186725:	0f 28 c1             	movaps %xmm1,%xmm0
+  186728:	f3 0f 11 45 84       	movss  %xmm0,-0x7c(%rbp)
+  18672d:	f3 0f 10 45 84       	movss  -0x7c(%rbp),%xmm0
+  186732:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+  186736:	64 48 33 04 25 28 00 	xor    %fs:0x28,%rax
+  18673d:	00 00 
+  18673f:	74 05                	je     186746 <airsim_ros::get_topic_frequency(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x252>
+  186741:	e8 0a 3f ff ff       	call   17a650 <__stack_chk_fail@plt>
+  186746:	c9                   	leave  
+  186747:	c3                   	ret    
+
+0000000000186748 <airsim_ros::get_topic_frequency_one_sec(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)>:
+  186748:	f3 0f 1e fa          	endbr64 
+  18674c:	55                   	push   %rbp
+  18674d:	48 89 e5             	mov    %rsp,%rbp
+  186750:	48 81 ec 90 00 00 00 	sub    $0x90,%rsp
+  186757:	48 89 bd 78 ff ff ff 	mov    %rdi,-0x88(%rbp)
+  18675e:	64 48 8b 04 25 28 00 	mov    %fs:0x28,%rax
+  186765:	00 00 
+  186767:	48 89 45 f8          	mov    %rax,-0x8(%rbp)
+  18676b:	31 c0                	xor    %eax,%eax
+  18676d:	48 8b 05 ec 45 0e 00 	mov    0xe45ec(%rip),%rax        # 26ad60 <airsim_ros::node_instance>
+  186774:	48 8d 90 b0 00 00 00 	lea    0xb0(%rax),%rdx
+  18677b:	48 8b 85 78 ff ff ff 	mov    -0x88(%rbp),%rax
+  186782:	48 89 c6             	mov    %rax,%rsi
+  186785:	48 89 d7             	mov    %rdx,%rdi
+  186788:	e8 33 d0 ff ff       	call   1837c0 <std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::deque<unsigned long, std::allocator<unsigned long> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::deque<unsigned long, std::allocator<unsigned long> > > > >::count(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const@plt>
+  18678d:	48 85 c0             	test   %rax,%rax
+  186790:	0f 94 c0             	sete   %al
+  186793:	84 c0                	test   %al,%al
+  186795:	74 09                	je     1867a0 <airsim_ros::get_topic_frequency_one_sec(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x58>
+  186797:	66 0f ef c0          	pxor   %xmm0,%xmm0
+  18679b:	e9 a5 01 00 00       	jmp    186945 <airsim_ros::get_topic_frequency_one_sec(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x1fd>
+  1867a0:	e8 fb 11 ff ff       	call   1779a0 <ros::Time::now()@plt>
+  1867a5:	48 89 45 d0          	mov    %rax,-0x30(%rbp)
+  1867a9:	48 8d 45 d0          	lea    -0x30(%rbp),%rax
+  1867ad:	48 89 c7             	mov    %rax,%rdi
+  1867b0:	e8 fb 1d ff ff       	call   1785b0 <ros::TimeBase<ros::Time, ros::Duration>::toNSec() const@plt>
+  1867b5:	48 89 45 98          	mov    %rax,-0x68(%rbp)
+  1867b9:	48 8b 05 a0 45 0e 00 	mov    0xe45a0(%rip),%rax        # 26ad60 <airsim_ros::node_instance>
+  1867c0:	48 8d 90 b0 00 00 00 	lea    0xb0(%rax),%rdx
+  1867c7:	48 8b 85 78 ff ff ff 	mov    -0x88(%rbp),%rax
+  1867ce:	48 89 c6             	mov    %rax,%rsi
+  1867d1:	48 89 d7             	mov    %rdx,%rdi
+  1867d4:	e8 f7 e0 fe ff       	call   1748d0 <std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::deque<unsigned long, std::allocator<unsigned long> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::deque<unsigned long, std::allocator<unsigned long> > > > >::operator[](std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)@plt>
+  1867d9:	48 89 45 a0          	mov    %rax,-0x60(%rbp)
+  1867dd:	c7 45 80 00 00 00 00 	movl   $0x0,-0x80(%rbp)
+  1867e4:	48 c7 45 88 ff ff ff 	movq   $0xffffffffffffffff,-0x78(%rbp)
+  1867eb:	ff 
+  1867ec:	48 c7 45 90 ff ff ff 	movq   $0xffffffffffffffff,-0x70(%rbp)
+  1867f3:	ff 
+  1867f4:	48 8d 45 b0          	lea    -0x50(%rbp),%rax
+  1867f8:	48 8b 55 a0          	mov    -0x60(%rbp),%rdx
+  1867fc:	48 89 d6             	mov    %rdx,%rsi
+  1867ff:	48 89 c7             	mov    %rax,%rdi
+  186802:	e8 29 5a ff ff       	call   17c230 <std::deque<unsigned long, std::allocator<unsigned long> >::crbegin() const@plt>
+  186807:	48 8d 45 d0          	lea    -0x30(%rbp),%rax
+  18680b:	48 8b 55 a0          	mov    -0x60(%rbp),%rdx
+  18680f:	48 89 d6             	mov    %rdx,%rsi
+  186812:	48 89 c7             	mov    %rax,%rdi
+  186815:	e8 66 88 ff ff       	call   17f080 <std::deque<unsigned long, std::allocator<unsigned long> >::crend() const@plt>
+  18681a:	48 8d 55 d0          	lea    -0x30(%rbp),%rdx
+  18681e:	48 8d 45 b0          	lea    -0x50(%rbp),%rax
+  186822:	48 89 d6             	mov    %rdx,%rsi
+  186825:	48 89 c7             	mov    %rax,%rdi
+  186828:	e8 f3 63 ff ff       	call   17cc20 <bool std::operator!=<std::_Deque_iterator<unsigned long, unsigned long const&, unsigned long const*> >(std::reverse_iterator<std::_Deque_iterator<unsigned long, unsigned long const&, unsigned long const*> > const&, std::reverse_iterator<std::_Deque_iterator<unsigned long, unsigned long const&, unsigned long const*> > const&)@plt>
+  18682d:	84 c0                	test   %al,%al
+  18682f:	0f 84 9c 00 00 00    	je     1868d1 <airsim_ros::get_topic_frequency_one_sec(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x189>
+  186835:	48 83 7d 88 ff       	cmpq   $0xffffffffffffffff,-0x78(%rbp)
+  18683a:	75 13                	jne    18684f <airsim_ros::get_topic_frequency_one_sec(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x107>
+  18683c:	48 8d 45 b0          	lea    -0x50(%rbp),%rax
+  186840:	48 89 c7             	mov    %rax,%rdi
+  186843:	e8 58 d5 ff ff       	call   183da0 <std::reverse_iterator<std::_Deque_iterator<unsigned long, unsigned long const&, unsigned long const*> >::operator*() const@plt>
+  186848:	48 8b 00             	mov    (%rax),%rax
+  18684b:	48 89 45 88          	mov    %rax,-0x78(%rbp)
+  18684f:	48 8d 45 b0          	lea    -0x50(%rbp),%rax
+  186853:	48 89 c7             	mov    %rax,%rdi
+  186856:	e8 45 d5 ff ff       	call   183da0 <std::reverse_iterator<std::_Deque_iterator<unsigned long, unsigned long const&, unsigned long const*> >::operator*() const@plt>
+  18685b:	48 8b 00             	mov    (%rax),%rax
+  18685e:	48 8b 55 98          	mov    -0x68(%rbp),%rdx
+  186862:	48 29 c2             	sub    %rax,%rdx
+  186865:	48 89 d0             	mov    %rdx,%rax
+  186868:	48 85 c0             	test   %rax,%rax
+  18686b:	78 07                	js     186874 <airsim_ros::get_topic_frequency_one_sec(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x12c>
+  18686d:	f2 48 0f 2a c0       	cvtsi2sd %rax,%xmm0
+  186872:	eb 15                	jmp    186889 <airsim_ros::get_topic_frequency_one_sec(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x141>
+  186874:	48 89 c2             	mov    %rax,%rdx
+  186877:	48 d1 ea             	shr    %rdx
+  18687a:	83 e0 01             	and    $0x1,%eax
+  18687d:	48 09 c2             	or     %rax,%rdx
+  186880:	f2 48 0f 2a c2       	cvtsi2sd %rdx,%xmm0
+  186885:	f2 0f 58 c0          	addsd  %xmm0,%xmm0
+  186889:	f2 0f 10 0d 3f e2 08 	movsd  0x8e23f(%rip),%xmm1        # 214ad0 <airsim_ros::commands_impl::(anonymous namespace)::DT+0x8610>
+  186890:	00 
+  186891:	66 0f 2f c8          	comisd %xmm0,%xmm1
+  186895:	0f 93 c0             	setae  %al
+  186898:	84 c0                	test   %al,%al
+  18689a:	74 34                	je     1868d0 <airsim_ros::get_topic_frequency_one_sec(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x188>
+  18689c:	83 45 80 01          	addl   $0x1,-0x80(%rbp)
+  1868a0:	48 8d 45 b0          	lea    -0x50(%rbp),%rax
+  1868a4:	48 89 c7             	mov    %rax,%rdi
+  1868a7:	e8 f4 d4 ff ff       	call   183da0 <std::reverse_iterator<std::_Deque_iterator<unsigned long, unsigned long const&, unsigned long const*> >::operator*() const@plt>
+  1868ac:	48 8b 00             	mov    (%rax),%rax
+  1868af:	48 89 45 90          	mov    %rax,-0x70(%rbp)
+  1868b3:	48 8d 45 d0          	lea    -0x30(%rbp),%rax
+  1868b7:	48 8d 4d b0          	lea    -0x50(%rbp),%rcx
+  1868bb:	ba 00 00 00 00       	mov    $0x0,%edx
+  1868c0:	48 89 ce             	mov    %rcx,%rsi
+  1868c3:	48 89 c7             	mov    %rax,%rdi
+  1868c6:	e8 55 4f ff ff       	call   17b820 <std::reverse_iterator<std::_Deque_iterator<unsigned long, unsigned long const&, unsigned long const*> >::operator++(int)@plt>
+  1868cb:	e9 37 ff ff ff       	jmp    186807 <airsim_ros::get_topic_frequency_one_sec(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0xbf>
+  1868d0:	90                   	nop
+  1868d1:	83 7d 80 01          	cmpl   $0x1,-0x80(%rbp)
+  1868d5:	7f 06                	jg     1868dd <airsim_ros::get_topic_frequency_one_sec(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x195>
+  1868d7:	66 0f ef c0          	pxor   %xmm0,%xmm0
+  1868db:	eb 68                	jmp    186945 <airsim_ros::get_topic_frequency_one_sec(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x1fd>
+  1868dd:	83 6d 80 01          	subl   $0x1,-0x80(%rbp)
+  1868e1:	48 8b 45 88          	mov    -0x78(%rbp),%rax
+  1868e5:	48 2b 45 90          	sub    -0x70(%rbp),%rax
+  1868e9:	48 89 45 a8          	mov    %rax,-0x58(%rbp)
+  1868ed:	48 83 7d a8 00       	cmpq   $0x0,-0x58(%rbp)
+  1868f2:	75 06                	jne    1868fa <airsim_ros::get_topic_frequency_one_sec(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x1b2>
+  1868f4:	66 0f ef c0          	pxor   %xmm0,%xmm0
+  1868f8:	eb 4b                	jmp    186945 <airsim_ros::get_topic_frequency_one_sec(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x1fd>
+  1868fa:	f3 0f 2a 4d 80       	cvtsi2ssl -0x80(%rbp),%xmm1
+  1868ff:	48 8b 45 a8          	mov    -0x58(%rbp),%rax
+  186903:	48 85 c0             	test   %rax,%rax
+  186906:	78 07                	js     18690f <airsim_ros::get_topic_frequency_one_sec(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x1c7>
+  186908:	f2 48 0f 2a c0       	cvtsi2sd %rax,%xmm0
+  18690d:	eb 15                	jmp    186924 <airsim_ros::get_topic_frequency_one_sec(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x1dc>
+  18690f:	48 89 c2             	mov    %rax,%rdx
+  186912:	48 d1 ea             	shr    %rdx
+  186915:	83 e0 01             	and    $0x1,%eax
+  186918:	48 09 c2             	or     %rax,%rdx
+  18691b:	f2 48 0f 2a c2       	cvtsi2sd %rdx,%xmm0
+  186920:	f2 0f 58 c0          	addsd  %xmm0,%xmm0
+  186924:	f2 0f 10 15 a4 e1 08 	movsd  0x8e1a4(%rip),%xmm2        # 214ad0 <airsim_ros::commands_impl::(anonymous namespace)::DT+0x8610>
+  18692b:	00 
+  18692c:	f2 0f 5e c2          	divsd  %xmm2,%xmm0
+  186930:	f2 0f 5a c0          	cvtsd2ss %xmm0,%xmm0
+  186934:	f3 0f 5e c8          	divss  %xmm0,%xmm1
+  186938:	0f 28 c1             	movaps %xmm1,%xmm0
+  18693b:	f3 0f 11 45 84       	movss  %xmm0,-0x7c(%rbp)
+  186940:	f3 0f 10 45 84       	movss  -0x7c(%rbp),%xmm0
+  186945:	48 8b 45 f8          	mov    -0x8(%rbp),%rax
+  186949:	64 48 33 04 25 28 00 	xor    %fs:0x28,%rax
+  186950:	00 00 
+  186952:	74 05                	je     186959 <airsim_ros::get_topic_frequency_one_sec(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x211>
+  186954:	e8 f7 3c ff ff       	call   17a650 <__stack_chk_fail@plt>
+  186959:	c9                   	leave  
+  18695a:	c3                   	ret    

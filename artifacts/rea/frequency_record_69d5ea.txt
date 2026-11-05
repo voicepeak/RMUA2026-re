@@ -1,0 +1,148 @@
+
+/home/tianbot/RUMA-by-helinjun/main/simulator/simulator_12.0.0.5/Build/LinuxNoEditor/RMUA/Plugins/AirSimROS/Binaries/Linux/libairsimros.so：     文件格式 elf64-x86-64
+
+
+Disassembly of section .text:
+
+0000000000184b87 <airsim_ros::record_frequency_data(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)>:
+  184b87:	f3 0f 1e fa          	endbr64 
+  184b8b:	55                   	push   %rbp
+  184b8c:	48 89 e5             	mov    %rsp,%rbp
+  184b8f:	53                   	push   %rbx
+  184b90:	48 81 ec 88 00 00 00 	sub    $0x88,%rsp
+  184b97:	48 89 bd 78 ff ff ff 	mov    %rdi,-0x88(%rbp)
+  184b9e:	64 48 8b 04 25 28 00 	mov    %fs:0x28,%rax
+  184ba5:	00 00 
+  184ba7:	48 89 45 e8          	mov    %rax,-0x18(%rbp)
+  184bab:	31 c0                	xor    %eax,%eax
+  184bad:	e8 ee 2d ff ff       	call   1779a0 <ros::Time::now()@plt>
+  184bb2:	48 89 45 90          	mov    %rax,-0x70(%rbp)
+  184bb6:	48 8d 45 90          	lea    -0x70(%rbp),%rax
+  184bba:	48 89 c7             	mov    %rax,%rdi
+  184bbd:	e8 ee 39 ff ff       	call   1785b0 <ros::TimeBase<ros::Time, ros::Duration>::toNSec() const@plt>
+  184bc2:	48 89 45 88          	mov    %rax,-0x78(%rbp)
+  184bc6:	48 8b 05 93 61 0e 00 	mov    0xe6193(%rip),%rax        # 26ad60 <airsim_ros::node_instance>
+  184bcd:	48 8d 90 b0 00 00 00 	lea    0xb0(%rax),%rdx
+  184bd4:	48 8b 85 78 ff ff ff 	mov    -0x88(%rbp),%rax
+  184bdb:	48 89 c6             	mov    %rax,%rsi
+  184bde:	48 89 d7             	mov    %rdx,%rdi
+  184be1:	e8 da eb ff ff       	call   1837c0 <std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::deque<unsigned long, std::allocator<unsigned long> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::deque<unsigned long, std::allocator<unsigned long> > > > >::count(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const@plt>
+  184be6:	48 85 c0             	test   %rax,%rax
+  184be9:	0f 94 c0             	sete   %al
+  184bec:	84 c0                	test   %al,%al
+  184bee:	74 4a                	je     184c3a <airsim_ros::record_frequency_data(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0xb3>
+  184bf0:	48 8d 45 90          	lea    -0x70(%rbp),%rax
+  184bf4:	48 89 c7             	mov    %rax,%rdi
+  184bf7:	e8 54 e6 ff ff       	call   183250 <std::deque<unsigned long, std::allocator<unsigned long> >::deque()@plt>
+  184bfc:	48 8b 05 5d 61 0e 00 	mov    0xe615d(%rip),%rax        # 26ad60 <airsim_ros::node_instance>
+  184c03:	48 8d 90 b0 00 00 00 	lea    0xb0(%rax),%rdx
+  184c0a:	48 8b 85 78 ff ff ff 	mov    -0x88(%rbp),%rax
+  184c11:	48 89 c6             	mov    %rax,%rsi
+  184c14:	48 89 d7             	mov    %rdx,%rdi
+  184c17:	e8 b4 fc fe ff       	call   1748d0 <std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::deque<unsigned long, std::allocator<unsigned long> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::deque<unsigned long, std::allocator<unsigned long> > > > >::operator[](std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)@plt>
+  184c1c:	48 89 c2             	mov    %rax,%rdx
+  184c1f:	48 8d 45 90          	lea    -0x70(%rbp),%rax
+  184c23:	48 89 c6             	mov    %rax,%rsi
+  184c26:	48 89 d7             	mov    %rdx,%rdi
+  184c29:	e8 c2 49 ff ff       	call   1795f0 <std::deque<unsigned long, std::allocator<unsigned long> >::operator=(std::deque<unsigned long, std::allocator<unsigned long> >&&)@plt>
+  184c2e:	48 8d 45 90          	lea    -0x70(%rbp),%rax
+  184c32:	48 89 c7             	mov    %rax,%rdi
+  184c35:	e8 d6 af ff ff       	call   17fc10 <std::deque<unsigned long, std::allocator<unsigned long> >::~deque()@plt>
+  184c3a:	48 8b 05 1f 61 0e 00 	mov    0xe611f(%rip),%rax        # 26ad60 <airsim_ros::node_instance>
+  184c41:	48 8d 90 b0 00 00 00 	lea    0xb0(%rax),%rdx
+  184c48:	48 8b 85 78 ff ff ff 	mov    -0x88(%rbp),%rax
+  184c4f:	48 89 c6             	mov    %rax,%rsi
+  184c52:	48 89 d7             	mov    %rdx,%rdi
+  184c55:	e8 76 fc fe ff       	call   1748d0 <std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::deque<unsigned long, std::allocator<unsigned long> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::deque<unsigned long, std::allocator<unsigned long> > > > >::operator[](std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)@plt>
+  184c5a:	48 89 c2             	mov    %rax,%rdx
+  184c5d:	48 8d 45 88          	lea    -0x78(%rbp),%rax
+  184c61:	48 89 c6             	mov    %rax,%rsi
+  184c64:	48 89 d7             	mov    %rdx,%rdi
+  184c67:	e8 d4 61 ff ff       	call   17ae40 <std::deque<unsigned long, std::allocator<unsigned long> >::push_back(unsigned long const&)@plt>
+  184c6c:	48 8b 05 ed 60 0e 00 	mov    0xe60ed(%rip),%rax        # 26ad60 <airsim_ros::node_instance>
+  184c73:	48 8d 90 b0 00 00 00 	lea    0xb0(%rax),%rdx
+  184c7a:	48 8b 85 78 ff ff ff 	mov    -0x88(%rbp),%rax
+  184c81:	48 89 c6             	mov    %rax,%rsi
+  184c84:	48 89 d7             	mov    %rdx,%rdi
+  184c87:	e8 44 fc fe ff       	call   1748d0 <std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::deque<unsigned long, std::allocator<unsigned long> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::deque<unsigned long, std::allocator<unsigned long> > > > >::operator[](std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)@plt>
+  184c8c:	48 89 c7             	mov    %rax,%rdi
+  184c8f:	e8 8c 0a ff ff       	call   175720 <std::deque<unsigned long, std::allocator<unsigned long> >::size() const@plt>
+  184c94:	48 3d e8 03 00 00    	cmp    $0x3e8,%rax
+  184c9a:	0f 97 c0             	seta   %al
+  184c9d:	84 c0                	test   %al,%al
+  184c9f:	74 48                	je     184ce9 <airsim_ros::record_frequency_data(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x162>
+  184ca1:	48 8b 05 b8 60 0e 00 	mov    0xe60b8(%rip),%rax        # 26ad60 <airsim_ros::node_instance>
+  184ca8:	48 8d 90 b0 00 00 00 	lea    0xb0(%rax),%rdx
+  184caf:	48 8b 85 78 ff ff ff 	mov    -0x88(%rbp),%rax
+  184cb6:	48 89 c6             	mov    %rax,%rsi
+  184cb9:	48 89 d7             	mov    %rdx,%rdi
+  184cbc:	e8 0f fc fe ff       	call   1748d0 <std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::deque<unsigned long, std::allocator<unsigned long> >, std::less<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, std::deque<unsigned long, std::allocator<unsigned long> > > > >::operator[](std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)@plt>
+  184cc1:	48 89 c7             	mov    %rax,%rdi
+  184cc4:	e8 e7 54 ff ff       	call   17a1b0 <std::deque<unsigned long, std::allocator<unsigned long> >::pop_front()@plt>
+  184cc9:	eb a1                	jmp    184c6c <airsim_ros::record_frequency_data(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0xe5>
+  184ccb:	f3 0f 1e fa          	endbr64 
+  184ccf:	48 89 c3             	mov    %rax,%rbx
+  184cd2:	48 8d 45 90          	lea    -0x70(%rbp),%rax
+  184cd6:	48 89 c7             	mov    %rax,%rdi
+  184cd9:	e8 32 af ff ff       	call   17fc10 <std::deque<unsigned long, std::allocator<unsigned long> >::~deque()@plt>
+  184cde:	48 89 d8             	mov    %rbx,%rax
+  184ce1:	48 89 c7             	mov    %rax,%rdi
+  184ce4:	e8 37 d5 ff ff       	call   182220 <_Unwind_Resume@plt>
+  184ce9:	90                   	nop
+  184cea:	48 8b 45 e8          	mov    -0x18(%rbp),%rax
+  184cee:	64 48 33 04 25 28 00 	xor    %fs:0x28,%rax
+  184cf5:	00 00 
+  184cf7:	74 05                	je     184cfe <airsim_ros::record_frequency_data(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x177>
+  184cf9:	e8 52 59 ff ff       	call   17a650 <__stack_chk_fail@plt>
+  184cfe:	48 81 c4 88 00 00 00 	add    $0x88,%rsp
+  184d05:	5b                   	pop    %rbx
+  184d06:	5d                   	pop    %rbp
+  184d07:	c3                   	ret    
+
+0000000000184d08 <airsim_ros::ue_log(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, float)>:
+  184d08:	f3 0f 1e fa          	endbr64 
+  184d0c:	55                   	push   %rbp
+  184d0d:	48 89 e5             	mov    %rsp,%rbp
+  184d10:	53                   	push   %rbx
+  184d11:	48 83 ec 58          	sub    $0x58,%rsp
+  184d15:	48 89 7d a8          	mov    %rdi,-0x58(%rbp)
+  184d19:	f3 0f 11 45 a4       	movss  %xmm0,-0x5c(%rbp)
+  184d1e:	64 48 8b 04 25 28 00 	mov    %fs:0x28,%rax
+  184d25:	00 00 
+  184d27:	48 89 45 e8          	mov    %rax,-0x18(%rbp)
+  184d2b:	31 c0                	xor    %eax,%eax
+  184d2d:	48 8b 05 2c 60 0e 00 	mov    0xe602c(%rip),%rax        # 26ad60 <airsim_ros::node_instance>
+  184d34:	48 85 c0             	test   %rax,%rax
+  184d37:	0f 84 bf 00 00 00    	je     184dfc <airsim_ros::ue_log(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, float)+0xf4>
+  184d3d:	48 8b 45 a8          	mov    -0x58(%rbp),%rax
+  184d41:	48 89 c7             	mov    %rax,%rdi
+  184d44:	e8 c7 d2 fe ff       	call   172010 <std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::c_str() const@plt>
+  184d49:	48 89 45 d0          	mov    %rax,-0x30(%rbp)
+  184d4d:	48 8d 45 c0          	lea    -0x40(%rbp),%rax
+  184d51:	48 8d 55 a4          	lea    -0x5c(%rbp),%rdx
+  184d55:	48 8d 4d d0          	lea    -0x30(%rbp),%rcx
+  184d59:	48 89 ce             	mov    %rcx,%rsi
+  184d5c:	48 89 c7             	mov    %rax,%rdi
+  184d5f:	e8 fc d0 fe ff       	call   171e60 <std::shared_ptr<airsim_ros::UE_LOG_Params> std::make_shared<airsim_ros::UE_LOG_Params, char const*, float&>(char const*&&, float&)@plt>
+  184d64:	48 8d 45 c0          	lea    -0x40(%rbp),%rax
+  184d68:	48 89 c7             	mov    %rax,%rdi
+  184d6b:	e8 a0 e4 ff ff       	call   183210 <std::__shared_ptr<airsim_ros::UE_LOG_Params, (__gnu_cxx::_Lock_policy)2>::get() const@plt>
+  184d70:	48 89 45 b8          	mov    %rax,-0x48(%rbp)
+  184d74:	48 8d 45 d0          	lea    -0x30(%rbp),%rax
+  184d78:	48 8d 55 b8          	lea    -0x48(%rbp),%rdx
+  184d7c:	48 8d 35 6d 69 0d 00 	lea    0xd696d(%rip),%rsi        # 25b6f0 <airsim_ros::CMD_UE_LOG>
+  184d83:	48 89 c7             	mov    %rax,%rdi
+  184d86:	e8 25 d4 ff ff       	call   1821b0 <std::shared_ptr<airsim_ros::Command> std::make_shared<airsim_ros::Command, char const* const&, airsim_ros::UE_LOG_Params*>(char const* const&, airsim_ros::UE_LOG_Params*&&)@plt>
+  184d8b:	48 8b 05 ce 5f 0e 00 	mov    0xe5fce(%rip),%rax        # 26ad60 <airsim_ros::node_instance>
+  184d92:	48 8b 98 40 29 00 00 	mov    0x2940(%rax),%rbx
+  184d99:	48 8d 45 d0          	lea    -0x30(%rbp),%rax
+  184d9d:	48 89 c7             	mov    %rax,%rdi
+  184da0:	e8 ab 50 ff ff       	call   179e50 <std::__shared_ptr<airsim_ros::Command, (__gnu_cxx::_Lock_policy)2>::get() const@plt>
+  184da5:	be 00 00 00 00       	mov    $0x0,%esi
+  184daa:	48 89 c7             	mov    %rax,%rdi
+  184dad:	ff d3                	call   *%rbx
+  184daf:	48 8d 45 d0          	lea    -0x30(%rbp),%rax
+  184db3:	48 89 c7             	mov    %rax,%rdi
+  184db6:	e8 55 ab ff ff       	call   17f910 <std::shared_ptr<airsim_ros::Command>::~shared_ptr()@plt>
+  184dbb:	48 8d 45 c0          	lea    -0x40(%rbp),%rax
+  184dbf:	48                   	rex.W

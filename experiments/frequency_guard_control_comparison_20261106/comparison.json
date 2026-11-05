@@ -1,0 +1,75 @@
+{
+  "guard": {
+    "success": true,
+    "requested_wall_s": 180.0,
+    "sampled_span_s": 179.48581464699237,
+    "samples": 163,
+    "seeds": [
+      123,
+      456,
+      2026,
+      789,
+      1001,
+      1002,
+      1003,
+      2024
+    ],
+    "binary_sha256": "5231addfa25ddaa9e4473ea9ac40c9c0bc685174e69cd14bb49159f443b97800",
+    "settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+    "image_id": "sha256:cd46a48cd28c2a9c6345f60227fd1bd50e78c67ef1e98dcddc0e65893771da57",
+    "guard_sha256": "4ff51140103aa1c399bb0aec08e5dd49d21d50f1ae7348dc57ab07d0e2ea6be9",
+    "running_samples": [
+      163,
+      163,
+      163,
+      163,
+      163,
+      163,
+      163,
+      163
+    ]
+  },
+  "control": {
+    "success": true,
+    "requested_wall_s": 180.0,
+    "sampled_span_s": 179.52172315999633,
+    "samples": 163,
+    "seeds": [
+      123,
+      456,
+      2026,
+      789,
+      1001,
+      1002,
+      1003,
+      2024
+    ],
+    "binary_sha256": "5231addfa25ddaa9e4473ea9ac40c9c0bc685174e69cd14bb49159f443b97800",
+    "settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+    "image_id": "sha256:cd46a48cd28c2a9c6345f60227fd1bd50e78c67ef1e98dcddc0e65893771da57",
+    "guard_sha256": null,
+    "running_samples": [
+      163,
+      163,
+      163,
+      163,
+      163,
+      163,
+      163,
+      163
+    ]
+  },
+  "comparison": {
+    "same_seeds": true,
+    "same_binary": true,
+    "same_settings": true,
+    "same_image": true,
+    "interpretation": "both finite idle runs survived; no crash in either, so effect on intermittent crash and original root cause remain undetermined",
+    "limitations": [
+      "different ports, run times and scheduling",
+      "one run per condition",
+      "no debugger stack, sustained sensor subscription, actions or training load",
+      "guard only covers three exported functions and can alter timing"
+    ]
+  }
+}

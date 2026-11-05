@@ -247,3 +247,5 @@ ROS 传输路径取得首场函数级定时：容器内编译的 LD_PRELOAD 钩�
 探针中的 `contended` 字段准确表示 `std::mutex::try_lock()` 未立即获得锁的次数；由于 C++ 允许 try_lock 偶发失败，计数本身不是未插桩版本真实竞争的证明。
 
 频率统计加锁八实例先导：固定八 seed、NullRHI、独立 ROS master，全部 IMU 就绪后观测 180 秒，八实例均存活并按 manifest 清理；逐次 liveness 记录覆盖约 179.5 秒。每实例周期性计数至少约 69000 次入口，try_lock 未立即成功累计快照为 1–24 次。仅为空载单次有限观察；探针改变调度、仅覆盖三个导出入口，try_lock 也可能偶发失败，不能因此认定数据竞争根因或修复八实例崩溃。见 `experiments/concurrency_8_frequency_guard_180s_20261106/guard_analysis.json`；同条件未加锁对照另行记录。
+
+频率统计八实例对照：加锁及未加锁各一场，八 seed、主程序/settings 哈希和镜像 ID 相同，各在 IMU 就绪后完成 180 秒空载存活，liveness 采样覆盖约 179.5 秒；两场端口和运行时间不同。未加锁场也未复现故障，因此该对照不能判断互斥是否改变间歇崩溃概率，也不能确定既有崩溃根因。两场未持续订阅传感器或执行训练动作；见 `experiments/frequency_guard_control_comparison_20261106/comparison.json`、两组原始日志及 `artifacts/rea/frequency_getters_69d5ea.txt`。

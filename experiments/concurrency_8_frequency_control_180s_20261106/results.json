@@ -1,0 +1,31 @@
+{
+  "kind": "idle_diagnostic_only",
+  "frequency_guard": null,
+  "seconds_wall": 180.0,
+  "batches": [
+    {
+      "batch": 0,
+      "seeds": [
+        123,
+        456,
+        2026,
+        789,
+        1001,
+        1002,
+        1003,
+        2024
+      ],
+      "attempts": [
+        {
+          "attempt": 0,
+          "port": 12670,
+          "success": true,
+          "start_exit_code": 0,
+          "ready_wall_unix_s": 1793899987.5072734,
+          "cleanup_exit_code": 0
+        }
+      ],
+      "success": true
+    }
+  ]
+}
