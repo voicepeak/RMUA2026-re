@@ -129,3 +129,5 @@ ROS 传输路径取得首场函数级定时：容器内编译的 LD_PRELOAD 钩�
 本机离线模型验证：使用 `RMUA_ELF` 指向已校验 SHA-256 的目标二进制后 38 项测试通过，包括已有 18 场风关键帧回归。新增检查发现并修复有符号边界以上 seed 的 glibc TYPE_3 初始化，以及默认 ctypes 多实例共享进程全局随机状态的问题；默认流现在相互独立，显式 ctypes 后端仍共享 libc 状态。默认路径在本机首次运行失败和配置后的日志均保存在 `experiments/offline_model_host_validation_20261106/`；模型的引擎边界仍不等同真实碰撞或完整环境。
 
 离线随机数 ctypes 后端现拒绝非 glibc 主机，以免把其他 libc 序列误认作目标序列；包含平台守卫的 39 项测试通过，日志见 `experiments/offline_model_host_validation_20261106/post_fix_platform_guard.log`。
+
+受控 reset 碰撞重放现覆盖 stage 4、三个 seed 各两次：六场服务均 true，前后各 373 个线障提交及风数组哈希一致；每场动作前后各有 16–18 个 `HIT_SOURCE`，同场前后均存在一个共同 actor/component 来源，但部分场次事件数不等。按事件顺序的描述性配对最大阶段时间差约 2.73–39.58 ms，不能证明对应物理事件相同。每场 18 对运动状态的两侧阶段时间最多相差约 104 ms；各场最大相对位置差约 0.092–0.499、最大速度差约 0.464–6.635。来源对象类型未独立确认；调试器、阶段注入、根高度固定、风重播种及事后选定的固定等待限制外推，不构成完整物理重放验收。见 `experiments/reset_collision_matrix_20261106/summary.json` 及各场原始记录。

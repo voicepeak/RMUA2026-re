@@ -1,0 +1,328 @@
+{
+  "runs": {
+    "experiments/reset_collision_replay_pilot_20261105": {
+      "seed": 123,
+      "status": "observed",
+      "reset_success": true,
+      "hit_counts": {
+        "before": 17,
+        "settle": 2,
+        "after": 17
+      },
+      "source_counts": {
+        "before": 1,
+        "after": 1
+      },
+      "common_source_count": 1,
+      "ordered_pairs": 17,
+      "same_source_ordered_pairs": 17,
+      "before_unpaired": 0,
+      "after_unpaired": 0,
+      "max_ordered_phase_difference_ms": 2.7301620000002025,
+      "trajectory_samples": 18,
+      "max_relative_position_difference": 0.26551207500000107,
+      "max_velocity_difference": 1.185613276266094,
+      "max_phase_time_disagreement_s": 0.076262798,
+      "pwm_debug_coverage": {
+        "before": {
+          "debug_samples_after_first_nonzero": 249,
+          "matching_samples": 248,
+          "first_match_after_command_ms": 17.263582
+        },
+        "after": {
+          "debug_samples_after_first_nonzero": 249,
+          "matching_samples": 247,
+          "first_match_after_command_ms": 25.480878
+        }
+      },
+      "line_counts": [
+        373,
+        373
+      ],
+      "line_hashes": [
+        "b43fad1829e1e37e3ec3e7495e65ac9e57c8df0824ca79e8d81fc173fa39ac76",
+        "b43fad1829e1e37e3ec3e7495e65ac9e57c8df0824ca79e8d81fc173fa39ac76"
+      ],
+      "wind_hashes": [
+        [
+          "d2ad79ebe9b78a9c5321f627ccd0e6b35dd02aa0d694eb3aceadd5ee5eee20cf"
+        ],
+        [
+          "d2ad79ebe9b78a9c5321f627ccd0e6b35dd02aa0d694eb3aceadd5ee5eee20cf",
+          "d2ad79ebe9b78a9c5321f627ccd0e6b35dd02aa0d694eb3aceadd5ee5eee20cf"
+        ]
+      ]
+    },
+    "experiments/reset_collision_seed123_repeat2_20261106": {
+      "seed": 123,
+      "status": "observed",
+      "reset_success": true,
+      "hit_counts": {
+        "before": 16,
+        "settle": 2,
+        "after": 17
+      },
+      "source_counts": {
+        "before": 1,
+        "after": 1
+      },
+      "common_source_count": 1,
+      "ordered_pairs": 16,
+      "same_source_ordered_pairs": 16,
+      "before_unpaired": 0,
+      "after_unpaired": 1,
+      "max_ordered_phase_difference_ms": 18.278549000000144,
+      "trajectory_samples": 18,
+      "max_relative_position_difference": 0.3413008150000001,
+      "max_velocity_difference": 0.46360111999999987,
+      "max_phase_time_disagreement_s": 0.076742807,
+      "pwm_debug_coverage": {
+        "before": {
+          "debug_samples_after_first_nonzero": 249,
+          "matching_samples": 244,
+          "first_match_after_command_ms": 56.557274
+        },
+        "after": {
+          "debug_samples_after_first_nonzero": 251,
+          "matching_samples": 247,
+          "first_match_after_command_ms": 40.705443
+        }
+      },
+      "line_counts": [
+        373,
+        373
+      ],
+      "line_hashes": [
+        "b43fad1829e1e37e3ec3e7495e65ac9e57c8df0824ca79e8d81fc173fa39ac76",
+        "b43fad1829e1e37e3ec3e7495e65ac9e57c8df0824ca79e8d81fc173fa39ac76"
+      ],
+      "wind_hashes": [
+        [
+          "d2ad79ebe9b78a9c5321f627ccd0e6b35dd02aa0d694eb3aceadd5ee5eee20cf"
+        ],
+        [
+          "d2ad79ebe9b78a9c5321f627ccd0e6b35dd02aa0d694eb3aceadd5ee5eee20cf",
+          "d2ad79ebe9b78a9c5321f627ccd0e6b35dd02aa0d694eb3aceadd5ee5eee20cf"
+        ]
+      ]
+    },
+    "experiments/reset_collision_seed456_repeat1_20261106": {
+      "seed": 456,
+      "status": "observed",
+      "reset_success": true,
+      "hit_counts": {
+        "before": 18,
+        "settle": 2,
+        "after": 17
+      },
+      "source_counts": {
+        "before": 1,
+        "after": 1
+      },
+      "common_source_count": 1,
+      "ordered_pairs": 17,
+      "same_source_ordered_pairs": 17,
+      "before_unpaired": 1,
+      "after_unpaired": 0,
+      "max_ordered_phase_difference_ms": 6.4467609999998565,
+      "trajectory_samples": 18,
+      "max_relative_position_difference": 0.09191450899999998,
+      "max_velocity_difference": 6.635210196121198,
+      "max_phase_time_disagreement_s": 0.100505391,
+      "pwm_debug_coverage": {
+        "before": {
+          "debug_samples_after_first_nonzero": 251,
+          "matching_samples": 245,
+          "first_match_after_command_ms": 66.237605
+        },
+        "after": {
+          "debug_samples_after_first_nonzero": 251,
+          "matching_samples": 250,
+          "first_match_after_command_ms": 13.132417
+        }
+      },
+      "line_counts": [
+        373,
+        373
+      ],
+      "line_hashes": [
+        "7d4cbb22a0f215c41b907fbf6e2f5a4efc6db327bd45857793ffe348a9504809",
+        "7d4cbb22a0f215c41b907fbf6e2f5a4efc6db327bd45857793ffe348a9504809"
+      ],
+      "wind_hashes": [
+        [
+          "7d369f0dadae9758b107a3f760bbb08fc75c21043410246c8b96543ad4ee0ef9"
+        ],
+        [
+          "7d369f0dadae9758b107a3f760bbb08fc75c21043410246c8b96543ad4ee0ef9",
+          "7d369f0dadae9758b107a3f760bbb08fc75c21043410246c8b96543ad4ee0ef9"
+        ]
+      ]
+    },
+    "experiments/reset_collision_seed456_repeat2_20261106": {
+      "seed": 456,
+      "status": "observed",
+      "reset_success": true,
+      "hit_counts": {
+        "before": 17,
+        "settle": 2,
+        "after": 17
+      },
+      "source_counts": {
+        "before": 1,
+        "after": 1
+      },
+      "common_source_count": 1,
+      "ordered_pairs": 17,
+      "same_source_ordered_pairs": 17,
+      "before_unpaired": 0,
+      "after_unpaired": 0,
+      "max_ordered_phase_difference_ms": 9.198151000000099,
+      "trajectory_samples": 18,
+      "max_relative_position_difference": 0.44247797099999975,
+      "max_velocity_difference": 0.8637248631110013,
+      "max_phase_time_disagreement_s": 0.072823293,
+      "pwm_debug_coverage": {
+        "before": {
+          "debug_samples_after_first_nonzero": 251,
+          "matching_samples": 248,
+          "first_match_after_command_ms": 36.518917
+        },
+        "after": {
+          "debug_samples_after_first_nonzero": 251,
+          "matching_samples": 247,
+          "first_match_after_command_ms": 42.646349
+        }
+      },
+      "line_counts": [
+        373,
+        373
+      ],
+      "line_hashes": [
+        "7d4cbb22a0f215c41b907fbf6e2f5a4efc6db327bd45857793ffe348a9504809",
+        "7d4cbb22a0f215c41b907fbf6e2f5a4efc6db327bd45857793ffe348a9504809"
+      ],
+      "wind_hashes": [
+        [
+          "7d369f0dadae9758b107a3f760bbb08fc75c21043410246c8b96543ad4ee0ef9"
+        ],
+        [
+          "7d369f0dadae9758b107a3f760bbb08fc75c21043410246c8b96543ad4ee0ef9",
+          "7d369f0dadae9758b107a3f760bbb08fc75c21043410246c8b96543ad4ee0ef9"
+        ]
+      ]
+    },
+    "experiments/reset_collision_seed2026_repeat1_20261106": {
+      "seed": 2026,
+      "status": "observed",
+      "reset_success": true,
+      "hit_counts": {
+        "before": 16,
+        "settle": 2,
+        "after": 17
+      },
+      "source_counts": {
+        "before": 1,
+        "after": 1
+      },
+      "common_source_count": 1,
+      "ordered_pairs": 16,
+      "same_source_ordered_pairs": 16,
+      "before_unpaired": 0,
+      "after_unpaired": 1,
+      "max_ordered_phase_difference_ms": 34.34774200000001,
+      "trajectory_samples": 18,
+      "max_relative_position_difference": 0.33507844400000053,
+      "max_velocity_difference": 0.7854728177875605,
+      "max_phase_time_disagreement_s": 0.07726136,
+      "pwm_debug_coverage": {
+        "before": {
+          "debug_samples_after_first_nonzero": 249,
+          "matching_samples": 245,
+          "first_match_after_command_ms": 49.493711
+        },
+        "after": {
+          "debug_samples_after_first_nonzero": 249,
+          "matching_samples": 248,
+          "first_match_after_command_ms": 15.534267
+        }
+      },
+      "line_counts": [
+        373,
+        373
+      ],
+      "line_hashes": [
+        "388203d03fb5e0415339b77dabbdfb55ae75a622ad2108abb0720980447009d3",
+        "388203d03fb5e0415339b77dabbdfb55ae75a622ad2108abb0720980447009d3"
+      ],
+      "wind_hashes": [
+        [
+          "b7f89c696969e3719187fe3c55acae5f9a563b91b3f40481658069aaa0e214a9"
+        ],
+        [
+          "b7f89c696969e3719187fe3c55acae5f9a563b91b3f40481658069aaa0e214a9",
+          "b7f89c696969e3719187fe3c55acae5f9a563b91b3f40481658069aaa0e214a9"
+        ]
+      ]
+    },
+    "experiments/reset_collision_seed2026_repeat2_20261106": {
+      "seed": 2026,
+      "status": "observed",
+      "reset_success": true,
+      "hit_counts": {
+        "before": 17,
+        "settle": 2,
+        "after": 16
+      },
+      "source_counts": {
+        "before": 1,
+        "after": 1
+      },
+      "common_source_count": 1,
+      "ordered_pairs": 16,
+      "same_source_ordered_pairs": 16,
+      "before_unpaired": 1,
+      "after_unpaired": 0,
+      "max_ordered_phase_difference_ms": 39.57864099999986,
+      "trajectory_samples": 18,
+      "max_relative_position_difference": 0.23921288219999998,
+      "max_velocity_difference": 0.9514587415765347,
+      "max_phase_time_disagreement_s": 0.103698914,
+      "pwm_debug_coverage": {
+        "before": {
+          "debug_samples_after_first_nonzero": 249,
+          "matching_samples": 248,
+          "first_match_after_command_ms": 13.737531
+        },
+        "after": {
+          "debug_samples_after_first_nonzero": 249,
+          "matching_samples": 244,
+          "first_match_after_command_ms": 58.793169
+        }
+      },
+      "line_counts": [
+        373,
+        373
+      ],
+      "line_hashes": [
+        "388203d03fb5e0415339b77dabbdfb55ae75a622ad2108abb0720980447009d3",
+        "388203d03fb5e0415339b77dabbdfb55ae75a622ad2108abb0720980447009d3"
+      ],
+      "wind_hashes": [
+        [
+          "b7f89c696969e3719187fe3c55acae5f9a563b91b3f40481658069aaa0e214a9"
+        ],
+        [
+          "b7f89c696969e3719187fe3c55acae5f9a563b91b3f40481658069aaa0e214a9",
+          "b7f89c696969e3719187fe3c55acae5f9a563b91b3f40481658069aaa0e214a9"
+        ]
+      ]
+    }
+  },
+  "limitations": [
+    "event pointers match only within each process and do not identify object type",
+    "ordered pairing is descriptive and cannot establish exact physical event identity",
+    "timing uses debugger and host monotonic clock rather than lockstep simulation clock",
+    "stage, root hold and RNG reseed are development interventions; fixed wait used prior posthoc observations"
+  ]
+}
