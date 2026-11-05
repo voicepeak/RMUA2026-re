@@ -164,3 +164,4 @@
 | 粗细线候选命中实例索引的完整重复矩阵 | `experiments/line_hit_instance_{thick,thin}_20261105/hit_instance_analysis.json`、`scripts/run_line_hit_result.py`；候选偏移待独立类型验证 |
 | 车辆命中来源先导及中止样本 | `experiments/vehicle_contact_pilot_20261105/`、`experiments/vehicle_contact_world_pilot_20261105/`、`experiments/vehicle_contact_z400_pilot_20261105/INVALID.md`；前两场调试流就绪，后一场注入前中止 |
 | 普通 IMU 就绪的车辆来源对照 | `experiments/vehicle_contact_imu_gate_20261105/contact_analysis.json`、`scripts/run_vehicle_contact.py`、`scripts/analyze_vehicle_contact.py`；六场未命中已知车辆 actor/采样组件 |
+| 受约束不合格的 stage 6 迟发补样 | `experiments/wind_pwm_transition_6_seed123_late_20261105/`；延迟根据调试风事后时序选择，仅保留诊断 |

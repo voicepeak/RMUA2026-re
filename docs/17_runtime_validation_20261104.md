@@ -276,3 +276,5 @@ python3 scripts/analyze_line_hit_instance.py /tmp/rmua-line-instance
 python3 scripts/run_vehicle_contact.py --fixture 1 --stage 4 --simulator "$SIM_DIR" --settings experiments/training_host_20261105/settings.json --messages "$ROS_WS" --output /tmp/rmua-vehicle-contact --seeds 123,456,2026 --repeats 2 --sample-seconds 12 --port 12950
 python3 scripts/analyze_vehicle_contact.py /tmp/rmua-vehicle-contact
 ```
+
+限制更正：此前 stage 6 seed 123 的 6.5 秒补样延迟根据调试风时序的事后分析确定，虽然命令器本身不订阅真值，但实验输入设计已使用该真值；按用户“调试真值只用于事后评估”的严格约束，该补样只能留作诊断失败记录，不能计入最终受限验收。

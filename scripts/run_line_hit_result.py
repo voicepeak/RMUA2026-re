@@ -64,7 +64,7 @@ def main():
     base=Path(__file__).resolve().parent.parent
     image=docker('image','inspect',a.image,'--format','{{.Id}}',capture_output=True,check=True).stdout.strip()
     manifest={'binary_sha256':sha(binary),'settings_sha256':sha(settings),'image_id':image,
-              'gdb_script_sha256':sha(base/'scripts/stage_line_hit_result.gdb'),'runner_sha256':sha(Path(__file__)), 'sensor_clock_sha256':sha(base/'scripts/sensor_clock_probe.py'), 'pwm_probe_sha256':sha(base/'scripts/pwm_any_probe.py'), 'command_probe_sha256':sha(base/'scripts/pwm_wind_step_probe.py'), 'command_policy':'fixed open-loop PWM; no sensor or truth input',
+              'gdb_script_sha256':sha(base/'scripts/stage_line_hit_result.gdb'),'runner_sha256':sha(Path(__file__)), 'sensor_clock_sha256':sha(base/'scripts/sensor_clock_probe.py'), 'pwm_probe_sha256':sha(base/'scripts/pwm_any_probe.py'), 'command_probe_sha256':sha(base/'scripts/pwm_wind_step_probe.py'), 'command_policy':'fixed open-loop PWM; normal IMU availability gates start; no sensor or debug values used in actions',
               'mode':'nullrhi','map':'default Lobby -> OL1','seeds':seeds,'repeats':a.repeats,
               'stage_coverage':'GDB mutates initial stage call arguments; diagnostic, not official progression','injected_stage':a.stage,'line_fixture_selector':a.selector,'fixture_ordinal':a.fixture_ordinal,'runs':[]}
     manifest_path=output/'manifest.json'
@@ -97,10 +97,10 @@ def main():
             while time.monotonic()<deadline:
                 state=docker('inspect',name,'--format','{{.State.Running}}',capture_output=True)
                 if state.stdout.strip()!='true': raise RuntimeError('simulator container exited before readiness')
-                check=inside(name,'timeout 3 rostopic echo -n 1 /airsim_node/drone_1/debug/wind >/dev/null',8)
+                check=inside(name,'timeout 3 rostopic echo -n 1 /airsim_node/drone_1/imu/imu >/dev/null',8)
                 if check.returncode==0: break
                 time.sleep(.5)
-            else: raise TimeoutError('wind topic not ready')
+            else: raise TimeoutError('IMU topic not ready')
             entry['ready_wall']=time.time();save()
             probes=[]
             topic_names={'imu':'/airsim_node/drone_1/imu/imu','gps':'/airsim_node/drone_1/gps','pose_gt_posthoc':'/airsim_node/drone_1/debug/pose_gt'}
