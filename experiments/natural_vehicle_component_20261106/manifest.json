@@ -1,0 +1,21 @@
+{
+  "binary_sha256": "5231addfa25ddaa9e4473ea9ac40c9c0bc685174e69cd14bb49159f443b97800",
+  "settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+  "gdb_script_sha256": "c1b042c6f40ad37190bfabb7f1caee30ae975c65b52686ba46b1c84dc1a58d8d",
+  "mode": "nullrhi",
+  "stage_injected": 4,
+  "seeds": [
+    123,
+    2026,
+    456
+  ],
+  "method": "Stage 4 injection, redirect an existing call to 0x2fc8900 with natural random state, force the vehicle state gate index to 0, capture the natural 5-point path and actor/child. Once the drone collision component is revealed by a hit, teleport it to the vehicle child world position +100 cm z each physics tick for 120 ticks and force state 7 each tick.",
+  "limitations": [
+    "redirect call and forced gate are interventions",
+    "drone component teleport, not flight",
+    "state forced every tick",
+    "GDB changes scheduling",
+    "seed 456 did not produce VEHICLE_INIT in this redirect setup",
+    "vehicle collision force and full episode termination not measured"
+  ]
+}

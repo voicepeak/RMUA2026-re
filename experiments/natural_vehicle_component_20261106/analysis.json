@@ -1,0 +1,141 @@
+{
+  "123": {
+    "vehicle_actor": "0x7ffdef576780",
+    "vehicle_child": "0x7ffdef58c590",
+    "natural_path": [
+      {
+        "index": 0,
+        "hex": "20594fc5f093814549e3dd44",
+        "xyz": [
+          -3317.57031,
+          4146.49219,
+          1775.10266
+        ]
+      },
+      {
+        "index": 1,
+        "hex": "80f72b45343a0b46381070c3",
+        "xyz": [
+          2751.46875,
+          8910.55078,
+          -240.063354
+        ]
+      },
+      {
+        "index": 2,
+        "hex": "50c4be4500382246be6ca7c4",
+        "xyz": [
+          6104.53906,
+          10382.0,
+          -1339.39819
+        ]
+      },
+      {
+        "index": 3,
+        "hex": "609cd145a0c41146daadccc4",
+        "xyz": [
+          6707.54688,
+          9329.15625,
+          -1637.43286
+        ]
+      },
+      {
+        "index": 4,
+        "hex": "e05c914580deba45267d95c4",
+        "xyz": [
+          4651.60938,
+          5979.8125,
+          -1195.91089
+        ]
+      }
+    ],
+    "path_bytes_equal_to_seed123": null,
+    "vehicle_source_hits": 27,
+    "state12_requests": 23,
+    "state12_writes": 23,
+    "nearest_state_request_ms_min_median_max": [
+      14.028455,
+      18.147698,
+      217.191765
+    ],
+    "vehicle_hits_with_request_within_55ms": 23,
+    "first_vehicle_hit_plus_nearest_request_ms": -18.740245,
+    "limitations": "redirect call, forced stage/gate, drone component teleport to vehicle child+100 cm, state forced to 7 every tick, GDB scheduling; not natural flight or full episode"
+  },
+  "2026": {
+    "vehicle_actor": "0x7ffdeff03800",
+    "vehicle_child": "0x7ffdeff67b30",
+    "natural_path": [
+      {
+        "index": 0,
+        "hex": "20594fc5f093814549e3dd44",
+        "xyz": [
+          -3317.57031,
+          4146.49219,
+          1775.10266
+        ]
+      },
+      {
+        "index": 1,
+        "hex": "80f72b45343a0b46381070c3",
+        "xyz": [
+          2751.46875,
+          8910.55078,
+          -240.063354
+        ]
+      },
+      {
+        "index": 2,
+        "hex": "50c4be4500382246be6ca7c4",
+        "xyz": [
+          6104.53906,
+          10382.0,
+          -1339.39819
+        ]
+      },
+      {
+        "index": 3,
+        "hex": "609cd145a0c41146daadccc4",
+        "xyz": [
+          6707.54688,
+          9329.15625,
+          -1637.43286
+        ]
+      },
+      {
+        "index": 4,
+        "hex": "e05c914580deba45267d95c4",
+        "xyz": [
+          4651.60938,
+          5979.8125,
+          -1195.91089
+        ]
+      }
+    ],
+    "path_bytes_equal_to_seed123": true,
+    "vehicle_source_hits": 27,
+    "state12_requests": 23,
+    "state12_writes": 23,
+    "nearest_state_request_ms_min_median_max": [
+      17.258217,
+      20.914564,
+      221.07073
+    ],
+    "vehicle_hits_with_request_within_55ms": 23,
+    "first_vehicle_hit_plus_nearest_request_ms": -19.39861,
+    "limitations": "redirect call, forced stage/gate, drone component teleport to vehicle child+100 cm, state forced to 7 every tick, GDB scheduling; not natural flight or full episode"
+  },
+  "456": {
+    "vehicle_actor": null,
+    "vehicle_child": null,
+    "natural_path": [],
+    "path_bytes_equal_to_seed123": false,
+    "vehicle_source_hits": 0,
+    "state12_requests": 0,
+    "state12_writes": 0,
+    "nearest_state_request_ms_min_median_max": null,
+    "vehicle_hits_with_request_within_55ms": 0,
+    "first_vehicle_hit_plus_nearest_request_ms": null,
+    "limitations": "redirect call, forced stage/gate, drone component teleport to vehicle child+100 cm, state forced to 7 every tick, GDB scheduling; not natural flight or full episode"
+  }
+}

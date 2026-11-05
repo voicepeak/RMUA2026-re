@@ -450,3 +450,5 @@ ROS 传输路径取得首场函数级定时：容器内编译的 LD_PRELOAD 钩�
 额外地图门静态复核：12 张图的门间距两两差 ≤0.012 cm；每图仅用 yaw+平移拟合到 OL1 的残差 ≤0.009 cm，z 平移每图内为常数、缩放完全一致；OL2 BeginPlay 运行时 6/6 场、12/12 门匹配。门赛道几何是刚性副本，未验证门洞物理尺寸、环境资产或飞行可用性。见 `experiments/ol_gate_rigid_20261106/analysis.json` 与 `scripts/verify_gate_rigid_layout.py`。
 
 GDB 附着的 8 实例固定 PWM 追加场：相同 8 seed、镜像、二进制/settings，固定 PWM 与 IMU/LiDAR 订阅负载下，容器寿命约 13.9–15.3 秒内有两路崩溃。seed 789 在 `0x26b6223` 执行 `cmpl $0x0,0x8(%r12,%r13,1)`，`r12=-1,r13=0`，即读取地址 7；seed 1002 在 `rip=0` 处发生空函数指针调用，`r12=0,r13=0`。前者与先前频率/记录路径现场一致，后者是新的独立现场。GDB 改变调度，两个现场各只有一次捕获，不能给出概率或共同上游原因，但支持“至少两个故障现场”的结论。见 `experiments/concurrency_8_pwm_gdb_180s_20261106/`、`experiments/concurrency_pwm_failure_summary_20261106/summary.json` 和更新后的 `scripts/crash_capture.gdb`。
+
+自然车辆路径碰撞先导：stage 4 注入后把现有调用重定向到 `0x2fc8900`，用自然随机状态产生车辆；seed 123/2026 的自然五点路径原始字节一致，seed 456 在该设置下没有 `VEHICLE_INIT`。seed 123/2026 各 27 次命中来源为本场车辆 actor 与 `actor+0x240` 子组件；各 23 次在 55 ms 内伴随 state 12 请求和 `7→12` 写入，最近请求中位约 18.1/20.9 ms。该场把无人机碰撞组件传送到车辆子组件上方 100 cm 并每 tick 强制 state 7，不是自然飞行；事件级因果仍由既有释放矩阵的指针对接和同线程顺序支持。见 `experiments/natural_vehicle_component_20261106/analysis.json`、`scripts/stage_natural_vehicle_collision.gdb`。
