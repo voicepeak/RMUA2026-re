@@ -1,0 +1,71 @@
+{
+  "duration_requested_s": 300.0,
+  "started_wall_ns": 1793881231488940745,
+  "started_monotonic_ns": 217377133902742,
+  "manifest": {
+    "schema": "rmua-headless-pool-v1",
+    "pool_id": "3880534a0224",
+    "simulator": "/home/tianbot/RUMA-by-helinjun/main/simulator/simulator_12.0.0.5",
+    "binary_sha256": "5231addfa25ddaa9e4473ea9ac40c9c0bc685174e69cd14bb49159f443b97800",
+    "settings": "/home/tianbot/\u684c\u9762/RMUA2026-re/experiments/training_host_20261105/settings.json",
+    "settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+    "image": "rmua/re-probe:20261104",
+    "image_id": "sha256:cd46a48cd28c2a9c6345f60227fd1bd50e78c67ef1e98dcddc0e65893771da57",
+    "mode": "nullrhi",
+    "instances": [
+      {
+        "seed": 123,
+        "port": 12400,
+        "container": "rmua-re-3880534a0224-0",
+        "id": "34d35c22a3439b5d45521bde16f9f91dc2f2f6c1371cd8d0810fa9dfae8201d9",
+        "docker_start_wall": 1793881202.0629494,
+        "docker_created_wall": 1793881202.487825,
+        "imu_ready_observed_wall": 1793881210.180035,
+        "startup_observed_s": 8.117085695266724
+      },
+      {
+        "seed": 456,
+        "port": 12401,
+        "container": "rmua-re-3880534a0224-1",
+        "id": "00449bf6064ee037799b890617fc791b76c02511d466a047ef4a1c720db3d24f",
+        "docker_start_wall": 1793881202.488031,
+        "docker_created_wall": 1793881202.8902144,
+        "imu_ready_observed_wall": 1793881210.6758497,
+        "startup_observed_s": 8.187818765640259
+      },
+      {
+        "seed": 2026,
+        "port": 12402,
+        "container": "rmua-re-3880534a0224-2",
+        "id": "9d13bb55dea2896319b890b0e4057c3a3ba85440b681c79f4b91afb0118a5e8a",
+        "docker_start_wall": 1793881202.8904464,
+        "docker_created_wall": 1793881203.3129997,
+        "imu_ready_observed_wall": 1793881211.0796971,
+        "startup_observed_s": 8.189250707626343
+      },
+      {
+        "seed": 789,
+        "port": 12403,
+        "container": "rmua-re-3880534a0224-3",
+        "id": "0ad27d2f3542af0cb3a5226362c1964df18c71dac797cf93c07950d10a416995",
+        "docker_start_wall": 1793881203.313182,
+        "docker_created_wall": 1793881203.7269163,
+        "imu_ready_observed_wall": 1793881211.5144193,
+        "startup_observed_s": 8.201237201690674
+      }
+    ],
+    "ready": true,
+    "limitations": [
+      "No lockstep or reset guarantee",
+      "Camera images are empty in NullRHI",
+      "Diagnostics only; dynamic equivalence not established"
+    ]
+  },
+  "probe_sha256": "7c30b855e670847bbbe0db9b5579c2d676d2ad9efded52020eb9f8d3b5f1a3d4",
+  "observer_sha256": "c686f803820570fdb99eab853c6992643a497f9842cbcc748150abd677a681c6",
+  "limitations": [
+    "timestamps are ROS arrival and source stamps, not calibrated latency",
+    "no commands, camera, stage progression, or training workload",
+    "observer death can result from pool cleanup following one failure"
+  ]
+}

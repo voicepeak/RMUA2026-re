@@ -1,0 +1,26 @@
+{
+  "kind": "idle_diagnostic_only",
+  "seconds_wall": 345.0,
+  "batches": [
+    {
+      "batch": 0,
+      "seeds": [
+        123,
+        456,
+        2026,
+        789
+      ],
+      "attempts": [
+        {
+          "attempt": 0,
+          "port": 12400,
+          "success": true,
+          "start_exit_code": 0,
+          "ready_wall_unix_s": 1793881211.529227,
+          "cleanup_exit_code": 0
+        }
+      ],
+      "success": true
+    }
+  ]
+}

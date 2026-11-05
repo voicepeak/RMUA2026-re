@@ -37,6 +37,8 @@ for instance in meta['manifest']['instances']:
                 'source_seconds_per_wall_second':(data[-1]['stamp_ns']-data[0]['stamp_ns'])/1e9/duration,
                 'median_arrival_interval_s':statistics.median(arrival),'p99_arrival_interval_s':intervals[int(.99*(len(intervals)-1))],
                 'max_arrival_interval_s':max(arrival),'stamp_regressions':sum(x<0 for x in stamp),
+                'nonzero_stamp_regressions':sum(b['stamp_ns']<a['stamp_ns'] for a,b in zip(data,data[1:]) if a['stamp_ns'] and b['stamp_ns']),
+                'zero_stamp_count':sum(x['stamp_ns']==0 for x in data),
                 'stamp_equal_adjacent':sum(x==0 for x in stamp),'sequence_gap_sum':sum(max(0,x-1) for x in seq if x>=0),
                 'sequence_regressions':sum(x<0 for x in seq)}
     start=next((x for x in rows if x.get('event')=='started'),None)
