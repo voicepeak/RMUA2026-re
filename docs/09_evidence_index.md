@@ -193,3 +193,5 @@
 | stage 6 干预式 reset 三 seed 两次 | `experiments/reset_wind_interpose_stage6_20261105/{reset_analysis,reseeded_wind_analysis,pose_prepost_analysis}.json`；只验证提交与关键帧，完整物理和自然赛程重放未证 |
 
 - 车辆接近和子组件几何先导：`experiments/vehicle_proximity_zminus150_pilot_20261105/`、`experiments/vehicle_child_z0_pilot_20261105/`；移动调用参数成对先导：`experiments/vehicle_move_arg0_pilot_20261105/`、`experiments/vehicle_move_arg1_pilot_20261105/`；调用汇编 `artifacts/rea/vehicle_move_call_12_0_0_5.txt` 与 `artifacts/rea/vehicle_move_callee_12_0_0_5.txt`。分析条件及未验收项见 `docs/18_acceptance_ledger.md`。
+
+- 同车辆路径的固定开环 PWM 先导：`experiments/vehicle_child_pwm_pilot_20261105/`；运行脚本 `scripts/run_vehicle_child_pwm.py`，结果边界见验收台账。
