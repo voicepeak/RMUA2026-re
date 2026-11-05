@@ -1,0 +1,41 @@
+{
+  "status": "observed",
+  "seeds": [
+    123,
+    456,
+    2026,
+    789
+  ],
+  "requested_workload_s": 300.0,
+  "limitations": [
+    "fixed open-loop PWM is a synthetic workload, not a complete flight or training task",
+    "observer and publisher processes add load; topic reception and applied PWM require independent validation",
+    "nullrhi camera and episode reset are not validated"
+  ],
+  "start_exit_code": 0,
+  "pool_id": "5de7caae3452",
+  "publisher_sha256": "8e391da28f396e6b3a9ed06224a5e1698b503cd80bd928a4ee86e8d6f42f985c",
+  "observer_pid": 933810,
+  "publisher_pids": {
+    "rmua-re-5de7caae3452-0": 933811,
+    "rmua-re-5de7caae3452-1": 933812,
+    "rmua-re-5de7caae3452-2": 933813,
+    "rmua-re-5de7caae3452-3": 933814
+  },
+  "reason": "all observers and publishers completed",
+  "publisher_exit_codes": {
+    "rmua-re-5de7caae3452-0": 0,
+    "rmua-re-5de7caae3452-1": 0,
+    "rmua-re-5de7caae3452-2": 0,
+    "rmua-re-5de7caae3452-3": 0
+  },
+  "observer_exit_code": 0,
+  "publisher_duration_checks": {
+    "rmua-re-5de7caae3452-0": true,
+    "rmua-re-5de7caae3452-1": true,
+    "rmua-re-5de7caae3452-2": true,
+    "rmua-re-5de7caae3452-3": true
+  },
+  "cleanup_exit_code": 0,
+  "end_wall_ns": 1793900561756103745
+}

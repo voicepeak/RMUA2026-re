@@ -267,3 +267,5 @@ ROS 传输路径取得首场函数级定时：容器内编译的 LD_PRELOAD 钩�
 四实例固定 PWM 并发短场：四路发布器均连接，在各自约 15 秒内分别记录 743 条预定动作；IMU、LiDAR 每路均与发布窗口重叠约 15 秒，IMU 约 100 Hz、LiDAR 约 9.1–9.9 Hz，所有进程正常清理。这是无在线真值的合成动作压力先导，命令被发布不证明每条被执行，也不代表完整训练或长期稳定。见 `experiments/concurrency_4_pwm_pilot_20261106/workload_analysis.json`；缺少开始/结束标记时重叠不被推定，分析单元测试已通过。
 
 车辆离线最近组件距离数值修正：目标两个选择路径使用 float32 SIMD 乘加及平方根；此前模型在乘加阶段使用 Python 双精度。构造坐标 (29.60000038,34.5,23.10000038) 的独立 C float 夹具结果为 50.9903946，旧模型为 50.9903908；现已逐次 float32 舍入，40 项离线模型测试通过。该边界样例不证明组件身份或整条车辆路径等价，见 `experiments/offline_distance_20261106/` 和 `artifacts/rea/vehicle_*nearest_distance_sse.txt`。
+
+四实例固定 PWM 负载首轮：seed 123/456/2026/789，四路发布器各记录 14854–14861 条命令，每路 IMU 和 LiDAR 接收与发布窗口重叠约 300.00–300.02 秒；四个模拟器及观测器完成并清理。IMU 接收约 100 Hz、LiDAR 约 9.61–9.93 Hz，单模拟器进程约 209.9–210.5% 单核 CPU、RSS 峰值约 763.9–770.3 MiB；seed 2026 有一条 IMU 零时间戳，相邻非零时间戳无回退。动作是无在线真值的固定序列，仅证明发布与订阅的有限压力窗口，不证明逐条执行、完整训练或长期稳定。见 `experiments/concurrency_4_pwm_300s_20261106/workload_analysis.json` 及 `stream/independent_analysis.json`。

@@ -34,7 +34,8 @@
           "overlap_with_publisher_s": 15.009363631,
           "zero_stamps": 0,
           "equal_adjacent": 0,
-          "regressions": 0
+          "regressions": 0,
+          "nonzero_stamp_regressions": 0
         },
         "lidar": {
           "samples": 241,
@@ -43,7 +44,8 @@
           "overlap_with_publisher_s": 15.009363631,
           "zero_stamps": 0,
           "equal_adjacent": 0,
-          "regressions": 0
+          "regressions": 0,
+          "nonzero_stamp_regressions": 0
         }
       }
     },
@@ -79,7 +81,8 @@
           "overlap_with_publisher_s": 15.01248679,
           "zero_stamps": 0,
           "equal_adjacent": 1,
-          "regressions": 0
+          "regressions": 0,
+          "nonzero_stamp_regressions": 0
         },
         "lidar": {
           "samples": 228,
@@ -88,7 +91,8 @@
           "overlap_with_publisher_s": 15.01248679,
           "zero_stamps": 0,
           "equal_adjacent": 0,
-          "regressions": 0
+          "regressions": 0,
+          "nonzero_stamp_regressions": 0
         }
       }
     },
@@ -124,7 +128,8 @@
           "overlap_with_publisher_s": 15.005869169,
           "zero_stamps": 0,
           "equal_adjacent": 0,
-          "regressions": 0
+          "regressions": 0,
+          "nonzero_stamp_regressions": 0
         },
         "lidar": {
           "samples": 238,
@@ -133,7 +138,8 @@
           "overlap_with_publisher_s": 15.005869169,
           "zero_stamps": 0,
           "equal_adjacent": 0,
-          "regressions": 0
+          "regressions": 0,
+          "nonzero_stamp_regressions": 0
         }
       }
     },
@@ -169,7 +175,8 @@
           "overlap_with_publisher_s": 15.00261655,
           "zero_stamps": 0,
           "equal_adjacent": 0,
-          "regressions": 0
+          "regressions": 0,
+          "nonzero_stamp_regressions": 0
         },
         "lidar": {
           "samples": 247,
@@ -178,7 +185,8 @@
           "overlap_with_publisher_s": 15.00261655,
           "zero_stamps": 0,
           "equal_adjacent": 0,
-          "regressions": 0
+          "regressions": 0,
+          "nonzero_stamp_regressions": 0
         }
       }
     }

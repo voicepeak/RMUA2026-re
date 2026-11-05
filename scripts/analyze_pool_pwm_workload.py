@@ -17,7 +17,8 @@ for item in pool['instances']:
             if started and finished else None)
    stamps=[b['stamp_ns']-a['stamp_ns'] for a,b in zip(data,data[1:])]
    topics[topic]={'samples':len(data),'span_s':span,'arrival_hz':(len(data)-1)/span,'overlap_with_publisher_s':overlap,
-    'zero_stamps':sum(x['stamp_ns']==0 for x in data),'equal_adjacent':sum(x==0 for x in stamps),'regressions':sum(x<0 for x in stamps)}
+    'zero_stamps':sum(x['stamp_ns']==0 for x in data),'equal_adjacent':sum(x==0 for x in stamps),'regressions':sum(x<0 for x in stamps),
+    'nonzero_stamp_regressions':sum(b['stamp_ns']<a['stamp_ns'] for a,b in zip(data,data[1:]) if a['stamp_ns'] and b['stamp_ns'])}
   else:topics[topic]={'samples':len(data)}
  out['instances'][name]={'seed':item['seed'],'publisher_ready':next((x for x in actions if x.get('event')=='publisher_ready'),None),
   'started':started,'finished':finished,'command_count':len(commands),'command_values':sorted({x['value'] for x in commands}),

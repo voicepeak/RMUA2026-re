@@ -1,0 +1,201 @@
+{
+  "status": "observed",
+  "requested_workload_s": 300.0,
+  "instances": {
+    "rmua-re-5de7caae3452-0": {
+      "seed": 123,
+      "publisher_ready": {
+        "event": "publisher_ready",
+        "connections": 1,
+        "mono_ns": 236393910851343
+      },
+      "started": {
+        "event": "started",
+        "mono_ns": 236393910906446
+      },
+      "finished": {
+        "event": "finished",
+        "mono_ns": 236693917734971,
+        "elapsed_s": 300.0068300770072
+      },
+      "command_count": 14861,
+      "command_values": [
+        0.0,
+        0.2,
+        0.3,
+        0.4
+      ],
+      "publisher_exit_code": 0,
+      "topics": {
+        "imu": {
+          "samples": 31001,
+          "span_s": 309.999861748,
+          "arrival_hz": 100.00004459743924,
+          "overlap_with_publisher_s": 300.006828525,
+          "zero_stamps": 0,
+          "equal_adjacent": 0,
+          "regressions": 0,
+          "nonzero_stamp_regressions": 0
+        },
+        "lidar": {
+          "samples": 3026,
+          "span_s": 309.949602386,
+          "arrival_hz": 9.759651171395197,
+          "overlap_with_publisher_s": 300.006828525,
+          "zero_stamps": 0,
+          "equal_adjacent": 0,
+          "regressions": 0,
+          "nonzero_stamp_regressions": 0
+        }
+      }
+    },
+    "rmua-re-5de7caae3452-1": {
+      "seed": 456,
+      "publisher_ready": {
+        "event": "publisher_ready",
+        "connections": 1,
+        "mono_ns": 236393986939835
+      },
+      "started": {
+        "event": "started",
+        "mono_ns": 236393987022052
+      },
+      "finished": {
+        "event": "finished",
+        "mono_ns": 236693988651265,
+        "elapsed_s": 300.0016311540094
+      },
+      "command_count": 14854,
+      "command_values": [
+        0.0,
+        0.2,
+        0.3,
+        0.4
+      ],
+      "publisher_exit_code": 0,
+      "topics": {
+        "imu": {
+          "samples": 31002,
+          "span_s": 310.009931896,
+          "arrival_hz": 100.00002196832843,
+          "overlap_with_publisher_s": 300.001629213,
+          "zero_stamps": 0,
+          "equal_adjacent": 4,
+          "regressions": 0,
+          "nonzero_stamp_regressions": 0
+        },
+        "lidar": {
+          "samples": 3079,
+          "span_s": 309.988096761,
+          "arrival_hz": 9.929413523168696,
+          "overlap_with_publisher_s": 300.001629213,
+          "zero_stamps": 0,
+          "equal_adjacent": 0,
+          "regressions": 0,
+          "nonzero_stamp_regressions": 0
+        }
+      }
+    },
+    "rmua-re-5de7caae3452-2": {
+      "seed": 2026,
+      "publisher_ready": {
+        "event": "publisher_ready",
+        "connections": 1,
+        "mono_ns": 236393857204415
+      },
+      "started": {
+        "event": "started",
+        "mono_ns": 236393857267734
+      },
+      "finished": {
+        "event": "finished",
+        "mono_ns": 236693864785992,
+        "elapsed_s": 300.00751993400627
+      },
+      "command_count": 14859,
+      "command_values": [
+        0.0,
+        0.2,
+        0.3,
+        0.4
+      ],
+      "publisher_exit_code": 0,
+      "topics": {
+        "imu": {
+          "samples": 31001,
+          "span_s": 309.999851042,
+          "arrival_hz": 100.00004805099084,
+          "overlap_with_publisher_s": 300.007518258,
+          "zero_stamps": 1,
+          "equal_adjacent": 2,
+          "regressions": 1,
+          "nonzero_stamp_regressions": 0
+        },
+        "lidar": {
+          "samples": 2980,
+          "span_s": 309.948772344,
+          "arrival_hz": 9.61126568584606,
+          "overlap_with_publisher_s": 300.007518258,
+          "zero_stamps": 0,
+          "equal_adjacent": 0,
+          "regressions": 0,
+          "nonzero_stamp_regressions": 0
+        }
+      }
+    },
+    "rmua-re-5de7caae3452-3": {
+      "seed": 789,
+      "publisher_ready": {
+        "event": "publisher_ready",
+        "connections": 1,
+        "mono_ns": 236393991978938
+      },
+      "started": {
+        "event": "started",
+        "mono_ns": 236393992030661
+      },
+      "finished": {
+        "event": "finished",
+        "mono_ns": 236694008224134,
+        "elapsed_s": 300.01619471999584
+      },
+      "command_count": 14860,
+      "command_values": [
+        0.0,
+        0.2,
+        0.3,
+        0.4
+      ],
+      "publisher_exit_code": 0,
+      "topics": {
+        "imu": {
+          "samples": 31000,
+          "span_s": 309.989999863,
+          "arrival_hz": 100.00000004419498,
+          "overlap_with_publisher_s": 300.016193473,
+          "zero_stamps": 0,
+          "equal_adjacent": 2,
+          "regressions": 0,
+          "nonzero_stamp_regressions": 0
+        },
+        "lidar": {
+          "samples": 3070,
+          "span_s": 309.908870307,
+          "arrival_hz": 9.902911126615404,
+          "overlap_with_publisher_s": 300.016193473,
+          "zero_stamps": 0,
+          "equal_adjacent": 0,
+          "regressions": 0,
+          "nonzero_stamp_regressions": 0
+        }
+      }
+    }
+  },
+  "limitations": [
+    "fixed open-loop PWM is a synthetic workload, not a complete flight or training task",
+    "observer and publisher processes add load; topic reception and applied PWM require independent validation",
+    "nullrhi camera and episode reset are not validated",
+    "published commands are not proof of actuator application",
+    "successful finite observation does not establish a universal stable concurrency limit"
+  ]
+}
