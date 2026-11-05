@@ -1,0 +1,6 @@
+Manual tool observation during the live 30-second readiness window:
+Command: docker exec -e ROS_MASTER_URI=http://127.0.0.1:13400 -e ROS_HOSTNAME=localhost rmua-trace-040b0b739a72 bash -c 'source /opt/ros/noetic/setup.bash; timeout 3 rostopic list'
+Observed stdout:
+/rosout
+/rosout_agg
+This is a single instantaneous graph listing, not proof that no other topic ever existed.

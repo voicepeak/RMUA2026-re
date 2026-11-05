@@ -67,3 +67,5 @@ reset 后风数组已有连续随机流的可复现解释：一次播种、两�
 PWM 分发链对照补充：seed 123 的两场无新增分发断点对照均复现下降阶段无匹配；两场在 `0x26ea0f0`、`0x26ea000` 增加 change-only 断点的成功场则在两个入口及 PWM 输出均观察到下降值。断点改变调度，不能确认停留根因或标定延迟；一次带断点启动在就绪前 SIGSEGV，未产生动作数据。见 `experiments/pwm_chain_{control,pilot,trace}_20261105/`。
 
 额外地图门核验取得直接运行证据：独立补丁配置直接加载 OL2，seed 123/456/2026 各两次均捕获并与 OL2 静态表配对 12 门，60 个跨运行比较位置、四元数和缩放差为零。只覆盖 BeginPlay；长等待试场无 IMU 话题并报告世界更新异常，不能视为可飞行或证明门洞尺寸。Lobby URL 单独替换仍加载 OL1 的失败场也保留。见 `experiments/ol2_direct_gates_20261105/gate_comparison.json`。
+
+OL2 直接启动缺失接口的初始化诊断：同配置直接启动 OL1 也在 30 秒内无 IMU；OL2 只读断点在 LiDAR 频率记录路径捕获 `ros::TimeNotInitializedException`。开发 preload 提前初始化时间后三次在频率表访问处 SIGSEGV，一次确认 `node_instance` 为 NULL；并未恢复接口，不能当成修复或八实例根因。见 `experiments/ol1_direct_control_pilot_20261105/`、`experiments/ol2_direct_throw_pilot_20261105/`、`experiments/ol2_ros_time_init_{crash_trace,node_trace}_20261105/`。

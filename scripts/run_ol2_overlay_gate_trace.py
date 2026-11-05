@@ -52,6 +52,7 @@ def main():
     p.add_argument('--image',default='rmua/re-probe:20261104')
     p.add_argument('--display',default=':1')
     p.add_argument('--reset',action='store_true')
+    p.add_argument('--readiness-timeout',type=int,default=90)
     p.add_argument('--overlay', type=Path, required=True)
     p.add_argument('--map-url',default='/Game/Maps/RMUA2024OL/RMUA2024OL2')
     a=p.parse_args()
@@ -67,7 +68,7 @@ def main():
     base=Path(__file__).resolve().parent.parent
     image=docker('image','inspect',a.image,'--format','{{.Id}}',capture_output=True,check=True).stdout.strip()
     manifest={'binary_sha256':sha(binary),'settings_sha256':sha(settings),'image_id':image,
-              'gdb_script_sha256':sha(base/'scripts/runtime_trace.gdb'),
+              'gdb_script_sha256':sha(base/'scripts/runtime_trace.gdb'), 'runner_sha256':sha(Path(__file__)), 'readiness_timeout_s':a.readiness_timeout,
               'overlay_sha256':sha(overlay_pak), 'base_pak_sha256':sha(overlay/'RMUA-LinuxNoEditor.pak'), 'mode':'nullrhi','requested_map':a.map_url,'seeds':seeds,'repeats':a.repeats,
               'stage_coverage':'initial stationary only; no flight and no forced state changes','runs':[]}
     manifest_path=output/'manifest.json'
@@ -97,7 +98,7 @@ def main():
                  '-v',str(base)+':/analysis:ro','-v',str(run)+':/out','-v','/tmp/.X11-unix:/tmp/.X11-unix',
                  '--entrypoint','bash',a.image,'-c',LAUNCH]
             x=docker(*cmd,capture_output=True,check=True);entry['id']=x.stdout.strip()
-            deadline=time.monotonic()+90
+            deadline=time.monotonic()+a.readiness_timeout
             while time.monotonic()<deadline:
                 state=docker('inspect',name,'--format','{{.State.Running}}',capture_output=True)
                 if state.stdout.strip()!='true': raise RuntimeError('simulator container exited before readiness')

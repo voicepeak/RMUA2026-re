@@ -11,7 +11,10 @@ parser.add_argument('source_pak', type=Path)
 parser.add_argument('output_pak', type=Path)
 parser.add_argument('--manifest', type=Path, required=True)
 parser.add_argument('--default-map', action='store_true', help='also change GameDefaultMap in the overlay config')
+parser.add_argument('--default-map-ol1', action='store_true', help='set GameDefaultMap to OL1 for a direct-start control')
 args = parser.parse_args()
+if args.default_map and args.default_map_ol1:
+    parser.error('select only one default map')
 if args.output_pak.exists() or args.manifest.exists():
     parser.error('output and manifest must not already exist')
 old = b'/Game/Maps/RMUA2024OL/RMUA2024OL1'
@@ -24,11 +27,13 @@ with repak.PakBuilder().reader(str(args.source_pak)) as reader:
         raise ValueError('expected exactly one equal-length Lobby URL')
     modified = dict(files)
     modified[prefix+'uexp'] = modified[prefix+'uexp'].replace(old, new)
-    if args.default_map:
+    if args.default_map or args.default_map_ol1:
         config = 'RMUA/Config/DefaultEngine.ini'
         files[config] = reader.get(config)
         old_setting = b'GameDefaultMap=/Game/Maps/RMUA2024OL/RMUA2024Lobby.RMUA2024Lobby'
-        new_setting = b'GameDefaultMap=/Game/Maps/RMUA2024OL/RMUA2024OL2.RMUA2024OL2'
+        new_setting = (b'GameDefaultMap=/Game/Maps/RMUA2024OL/RMUA2024OL1.RMUA2024OL1'
+                       if args.default_map_ol1 else
+                       b'GameDefaultMap=/Game/Maps/RMUA2024OL/RMUA2024OL2.RMUA2024OL2')
         if files[config].count(old_setting) != 1:
             raise ValueError('expected one GameDefaultMap setting')
         modified[config] = files[config].replace(old_setting, new_setting)
@@ -42,7 +47,8 @@ with repak.PakBuilder().reader(str(args.output_pak)) as overlay:
         raise ValueError('overlay verification failed')
 info = {'source_pak_sha256': digest(args.source_pak.read_bytes()),
         'output_pak_sha256': digest(args.output_pak.read_bytes()),
-        'change': {'old': old.decode(), 'new': new.decode(), 'default_map': args.default_map},
+        'change': {'old': old.decode(), 'new': new.decode(), 'default_map': args.default_map,
+                   'default_map_ol1': args.default_map_ol1},
         'entries': {k: {'original_sha256': digest(files[k]), 'overlay_sha256': digest(v),
                         'bytes': len(v)} for k, v in modified.items()},
         'scope': 'separate development overlay; original pak remains unchanged'}

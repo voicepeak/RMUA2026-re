@@ -302,3 +302,11 @@ python3 scripts/analyze_vehicle_contact.py /tmp/rmua-vehicle-contact
 `experiments/ol2_direct_gates_20261105/` 的 seed 123/456/2026 各两次均有实际 OL2 LoadMap、对应 seed 初始化及 12 个门 BeginPlay。按位置与 `artifacts/tables/gates.csv` 最近邻一对一关联，每场 12/12 与 OL2 静态表匹配，最大位置差小于 0.000001 cm；首场最小第二候选距离约 2809.96 cm。以 seed 123 首场为基准的 60 个逐门比较中，位置、四元数角和缩放差均为零；FName 数值也相同。关联不独立解码 actor 名称，采样只覆盖 BeginPlay，缩放不等于门洞碰撞尺寸。原始 GDB 日志、manifest 和 `gate_comparison.json` 可复算。
 
 独立的 seed 123 长等待试场直到 90 秒就绪超时仍只有 `/rosout`、`/rosout_agg`，并在加载后报告 `Exception occurred while updating world`；无 IMU 不能宣称无人机可飞行，错误原因未定位。六个门试场按实际 LoadMap 和 12 条事件停止，不检查传感器；其 `observed` 不代表世界更新或训练接口正常。
+
+## 直接启动的 ROS 初始化诊断
+
+为比较是否 OL2 特有，使用相同 overlay 机制将默认地图改为 OL1，seed 123 直接加载 OL1，观测 12 门，但普通 IMU 就绪等待 30 秒失败、引擎输出世界更新异常；其 ROS 图快照只有 `/rosout` 和 `/rosout_agg`。正常经过 Lobby 的 OL1 才已观测普通 IMU。该单场对照支持直接启动路径或初始化时序是共同因素，不能单独证明 Lobby 是唯一原因。原始记录及补丁哈希见 `experiments/ol1_direct_control_pilot_20261105/`。
+
+OL2 直接加载后用只读 GDB 断点捕获 12 门之后首次 `__cxa_throw`：RTTI 为 `ros::TimeNotInitializedException`，栈依次包括未符号化的 `librostime.so` 帧、`airsim_ros::record_frequency_data`、`airsim_ros::AirSimROSLidar`、主程序 `0x26ed2d6`。见 `experiments/ol2_direct_throw_pilot_20261105/`。此异常与随后世界更新异常日志时间相近，但未独立证明日志由该次异常产生；all-stop 调试改变线程时序。
+
+进一步在开发容器中 preload 一个仅调用 `ros::Time::init()` 的构造器：该试验不修改官方文件。三场均在 IMU 就绪前 SIGSEGV；后两场取得完整栈，为 LiDAR → `record_frequency_data` → map `count/find/_M_begin`；最后一场在 `record_frequency_data` 返回地址 `0x184be6` 对应库内的静态 `node_instance` 地址读出 NULL。已保存 GDB 栈、原始日志、preload 源码、编译命令和哈希：`experiments/ol2_ros_time_init_pilot_20261105/`、`experiments/ol2_ros_time_init_crash_trace_20261105/`、`experiments/ol2_ros_time_init_node_trace_20261105/`。`artifacts/rea/frequency_rea.json` 和本机库 `0x184bc6` 反汇编显示该频率表在 `node_instance+0xb0`，与该次空指针读取相符；不证明多实例此前崩溃为同一原因。此 preload 不构成修复或时延验收。

@@ -173,3 +173,5 @@
 | PWM 分发链与无新增断点对照 | `experiments/pwm_chain_control_20261105/phase_coverage.json`、`experiments/pwm_chain_pilot_20261105/chain_analysis.json`、`experiments/pwm_chain_trace_20261105/chain_analysis.json`；`scripts/stage_pwm_chain_probe.gdb`、`scripts/analyze_pwm_chain.py`；trace 第二场就绪前 SIGSEGV，保留原日志 |
 
 | OL2 直接加载的 12 门、三 seed 各两次 | `experiments/ol2_direct_gates_20261105/gate_comparison.json`、原始 GDB 日志；`experiments/ol2_config_overlay_pilot_20261105/`（IMU 就绪失败）和 `experiments/ol2_overlay_retry_pilot_20261105/`（只改 Lobby URL 仍加载 OL1）；`scripts/build_lobby_map_overlay.py`、`scripts/run_ol2_direct_gate_trace.py` |
+
+| OL1 直接启动对照和 OL2 ROS 初始化异常 | `experiments/ol1_direct_control_pilot_20261105/`、`experiments/ol2_direct_throw_pilot_20261105/`、`experiments/ol2_ros_time_init_pilot_20261105/`、`experiments/ol2_ros_time_init_crash_trace_20261105/`、`experiments/ol2_ros_time_init_node_trace_20261105/`；`scripts/ros_time_preinit.cpp`、`scripts/runtime_ol2_throw_trace.gdb`、`scripts/runtime_ol2_time_preinit.gdb`；均未恢复 IMU |

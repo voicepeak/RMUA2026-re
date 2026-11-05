@@ -1,0 +1,10 @@
+{
+  "purpose": "diagnostic only; constructor calls ros::Time::init before the game starts",
+  "source_sha256": "9fd2928b35ab03c493f09ddd1f02adb73521948c7579f15bc8aa67fe01ef2e3b",
+  "preload_sha256": "a670256a811010495eef5ed6f66eddcb30d025c09840461730cd86169fa4bf4e",
+  "rostime_sha256": "b2ea789daa9e06f68ebfcfe5194c6a2a03a8d400ccea5e64a094bb49b30d2223",
+  "compiler": "g++ Ubuntu 9.4.0-1ubuntu1~20.04.2",
+  "image_id": "sha256:cd46a48cd28c2a9c6345f60227fd1bd50e78c67ef1e98dcddc0e65893771da57",
+  "build_command": "g++ -shared -fPIC /analysis/scripts/ros_time_preinit.cpp -L/opt/ros/noetic/lib -Wl,--no-as-needed -lrostime -o /analysis/experiments/ol2_ros_time_init_pilot_20261105/libros_time_preinit.so",
+  "limitations": "Not a fix or training environment; changing ROS initialization order causes a reproducible pre-readiness SIGSEGV in these local diagnostic trials."
+}

@@ -1,0 +1,33 @@
+{
+  "binary_sha256": "5231addfa25ddaa9e4473ea9ac40c9c0bc685174e69cd14bb49159f443b97800",
+  "settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+  "image_id": "sha256:cd46a48cd28c2a9c6345f60227fd1bd50e78c67ef1e98dcddc0e65893771da57",
+  "gdb_script_sha256": "ed32f1cc5239f100a98bd2e547928a4ebcba532f6d4b8c35ebd8602fbadecb01",
+  "runner_sha256": "d2ece144dfff5c0f23bb3d4566e107a74a8b52d3c7fa622cc9daf2031d09907b",
+  "readiness_timeout_s": 30,
+  "overlay_sha256": "1b7c89156da3f11a2038f19abd7d164afaa47e05c39f18c857b4fdb84dff0f72",
+  "base_pak_sha256": "2407662b224ed28c64412402af044da85aced07d78ce6fc0948e6be11ea2a0c2",
+  "mode": "nullrhi",
+  "requested_map": "/Game/Maps/RMUA2024OL/RMUA2024OL1",
+  "seeds": [
+    123
+  ],
+  "repeats": 1,
+  "stage_coverage": "initial stationary only; no flight and no forced state changes",
+  "runs": [
+    {
+      "seed": 123,
+      "repeat": 1,
+      "port": 13400,
+      "container": "rmua-trace-040b0b739a72",
+      "start_wall": 1793865669.5025957,
+      "status": "failed",
+      "id": "cb195644457896542a28024301967a528278b8534ee18ba976b6298b5632374c",
+      "error": "IMU topic not ready",
+      "observed_maps": [
+        "/Game/Maps/RMUA2024OL/RMUA2024OL1?Name=Player"
+      ],
+      "end_wall": 1793865705.4325979
+    }
+  ]
+}
