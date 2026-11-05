@@ -1,0 +1,31 @@
+{
+  "binary_sha256": "5231addfa25ddaa9e4473ea9ac40c9c0bc685174e69cd14bb49159f443b97800",
+  "library_sha256": "69d5ea3302bdd5f20b842ec3d3e84bafcb50ef3649ada42c4d346c9bcd389885",
+  "settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+  "preload_sha256": "e99e4f47792ca09d9fb2e0d7bed2707fc0a6760705e3a293505feff3cbc3c8b8",
+  "runner_sha256": "324c4cafc4460f0f1792704c5888b87eb359d944b13e6b4a58a39936ffe9d73f",
+  "source_sha256": "a4540eb9ee680964dc2bbb55a313a39b878552626d310f47f8a29a499059e46d",
+  "sensor_probe_sha256": "266167fedcf8d5b3370cac5efa1321281a07981f23af60d22ce374c1e4ee059b",
+  "command_probe_sha256": "038ec8cccffbf21692abfb61202afd357c46312c34e2587d1db3b4d305301d3f",
+  "guard_scope": "tracks push_back, pop_front, size PLT calls nested within the three exported frequency functions; exact deque pointer",
+  "seed": 123,
+  "seconds": 15,
+  "port": 12860,
+  "container": "rmua-pubprobe-1d325d215588",
+  "start_wall_ns": 1793902306546408830,
+  "status": "observed",
+  "limitations": [
+    "deque method wrapper overlap does not prove simultaneous memory instructions; instrumentation changes timing and misses inline/direct/iterator accesses",
+    "open-loop command sequence; no truth used online",
+    "header ABI and source-to-subscriber pairing require verification",
+    "NullRHI single process"
+  ],
+  "image_id": "sha256:cd46a48cd28c2a9c6345f60227fd1bd50e78c67ef1e98dcddc0e65893771da57",
+  "id": "4e972a04df57f3128ddb8ce357b98efe06103085fff739fee7bc6e3ec2f07d36",
+  "ready_wall_ns": 1793902314745686343,
+  "sensor_clock_exit_code": 0,
+  "pwm_output_exit_code": 0,
+  "commands_exit_code": 0,
+  "cleanup_exit_code": 0,
+  "end_wall_ns": 1793902331052279642
+}

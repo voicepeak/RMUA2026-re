@@ -1,0 +1,12 @@
+{"operations":1,"overlaps":0,"untracked":0,"object":"0x7104505a3ca0","op":"push_back","tid":208,"mono_ns":238459564621463,"prior_readers":0,"prior_writers":0,"overlap":false}
+{"operations":1000,"overlaps":0,"untracked":0,"object":"0x7104505a41a0","op":"size","tid":404,"mono_ns":238461544926749,"prior_readers":0,"prior_writers":0,"overlap":false}
+{"operations":2000,"overlaps":0,"untracked":0,"object":"0x7104505a3de0","op":"size","tid":414,"mono_ns":238463260900194,"prior_readers":0,"prior_writers":0,"overlap":false}
+{"operations":3000,"overlaps":0,"untracked":0,"object":"0x7104505a3d40","op":"push_back","tid":414,"mono_ns":238464981042522,"prior_readers":0,"prior_writers":0,"overlap":false}
+{"operations":4000,"overlaps":0,"untracked":0,"object":"0x7104505a3d40","op":"push_back","tid":414,"mono_ns":238466861023574,"prior_readers":0,"prior_writers":0,"overlap":false}
+{"operations":5000,"overlaps":0,"untracked":0,"object":"0x7104505a3d40","op":"push_back","tid":414,"mono_ns":238468930932352,"prior_readers":0,"prior_writers":0,"overlap":false}
+{"operations":6000,"overlaps":0,"untracked":0,"object":"0x7104505a3d40","op":"size","tid":414,"mono_ns":238470350920368,"prior_readers":0,"prior_writers":0,"overlap":false}
+{"operations":7000,"overlaps":0,"untracked":0,"object":"0x7104505a3d40","op":"size","tid":414,"mono_ns":238471480966223,"prior_readers":0,"prior_writers":0,"overlap":false}
+{"operations":8000,"overlaps":0,"untracked":0,"object":"0x7104505a3d40","op":"pop_front","tid":414,"mono_ns":238472611047936,"prior_readers":0,"prior_writers":0,"overlap":false}
+{"operations":9000,"overlaps":0,"untracked":0,"object":"0x7104505a3d40","op":"pop_front","tid":414,"mono_ns":238473740959106,"prior_readers":0,"prior_writers":0,"overlap":false}
+{"operations":10000,"overlaps":0,"untracked":0,"object":"0x7104505a3de0","op":"push_back","tid":414,"mono_ns":238474871101040,"prior_readers":0,"prior_writers":0,"overlap":false}
+{"operations":11000,"overlaps":0,"untracked":0,"object":"0x7104505a3de0","op":"size","tid":414,"mono_ns":238476001014810,"prior_readers":0,"prior_writers":0,"overlap":false}
