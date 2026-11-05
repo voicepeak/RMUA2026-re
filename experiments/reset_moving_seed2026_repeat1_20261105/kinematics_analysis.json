@@ -1,0 +1,321 @@
+{
+  "seed2026_repeat1": {
+    "status": "observed",
+    "reset_response_success": true,
+    "sample_count": 233,
+    "command_first_mono_ns": 219115886048577,
+    "command_last_mono_ns": 219119368102319,
+    "reset_service_call_event": {
+      "event": "reset_call",
+      "mono_ns": 219119388206327
+    },
+    "reset_service_response_event": {
+      "event": "reset_response",
+      "mono_ns": 219120695805173,
+      "success": true
+    },
+    "reset_entry_mono_ns": 219119391912205,
+    "bridge_marker_mono_ns": 219120695069106,
+    "baseline_before_action": {
+      "mono_ns": 219115883241195,
+      "ptr": "0x7ffdebd98c30",
+      "position": [
+        0.0,
+        0.0,
+        0.308819383
+      ],
+      "orientation_raw": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "linear_velocity": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "other_raw": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "raw_hex": "0000000000000000931d9e3e0000000000000000000000000000803f000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+    },
+    "last_before_reset": {
+      "mono_ns": 219119353267645,
+      "ptr": "0x7ffdebd98c30",
+      "position": [
+        0.0586865842,
+        0.00175332802,
+        -4.43626451
+      ],
+      "orientation_raw": [
+        0.00231180899,
+        -0.0930789933,
+        -0.00322714192,
+        0.995650828
+      ],
+      "linear_velocity": [
+        0.907397151,
+        0.0595310777,
+        -0.275980622
+      ],
+      "other_raw": [
+        -0.0827934593,
+        -0.0238330271,
+        -0.0229734629,
+        3.0494132,
+        0.0701375455,
+        -6.39627647,
+        -0.00040753794,
+        0.00157293444,
+        -0.000424583326
+      ],
+      "raw_hex": "5861703dedcfe53ae1f58dc0b881173b33a0bebd757e53bbf9e27e3f2e4b683fdcd6733d554d8dbe9e8fa9bd7b3dc3bcd832bcbc9629434046a48f3d4caeccc0d1aad5b9ec2ace3a9c9adeb9"
+    },
+    "first_at_least_1s_after_bridge_marker": {
+      "mono_ns": 219121763275169,
+      "ptr": "0x7ffdebd98c30",
+      "position": [
+        0.0,
+        0.0,
+        -1.26846647
+      ],
+      "orientation_raw": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "linear_velocity": [
+        0.0,
+        0.0,
+        5.19524622
+      ],
+      "other_raw": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        5.82039833,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "raw_hex": "00000000000000001c5da2bf0000000000000000000000000000803f0000000000000000753fa6400000000000000000000000000000000000000000b440ba40000000000000000000000000"
+    },
+    "nearest_bridge_marker_sample": {
+      "mono_ns": 219120703173054,
+      "ptr": "0x7ffdebd98c30",
+      "position": [
+        0.0,
+        0.0,
+        -2.06987739
+      ],
+      "orientation_raw": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "linear_velocity": [
+        0.0,
+        0.0,
+        -4.59632587
+      ],
+      "other_raw": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -3.58887768,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "raw_hex": "0000000000000000df7804c00000000000000000000000000000803f00000000000000001a1593c000000000000000000000000000000000000000002cb065c0000000000000000000000000"
+    },
+    "nearest_bridge_marker_gap_ms": 8.103948,
+    "post_bridge_delay_samples": {
+      "1": {
+        "sample": {
+          "mono_ns": 219121763275169,
+          "ptr": "0x7ffdebd98c30",
+          "position": [
+            0.0,
+            0.0,
+            -1.26846647
+          ],
+          "orientation_raw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "linear_velocity": [
+            0.0,
+            0.0,
+            5.19524622
+          ],
+          "other_raw": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            5.82039833,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "raw_hex": "00000000000000001c5da2bf0000000000000000000000000000803f0000000000000000753fa6400000000000000000000000000000000000000000b440ba40000000000000000000000000"
+        },
+        "actual_gap_ms": 1068.206063,
+        "position_distance_from_baseline": 1.5772858529999998,
+        "velocity_distance_from_baseline": 5.19524622
+      },
+      "2": {
+        "sample": {
+          "mono_ns": 219122702677036,
+          "ptr": "0x7ffdebd98b40",
+          "position": [
+            0.0,
+            0.0,
+            0.318243861
+          ],
+          "orientation_raw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "linear_velocity": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "other_raw": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "raw_hex": "0000000000000000dcf0a23e0000000000000000000000000000803f000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        },
+        "actual_gap_ms": 2007.60793,
+        "position_distance_from_baseline": 0.009424478000000014,
+        "velocity_distance_from_baseline": 0.0
+      },
+      "3": {
+        "sample": {
+          "mono_ns": 219123753373312,
+          "ptr": "0x7ffdebd98c30",
+          "position": [
+            0.0,
+            0.0,
+            0.318243861
+          ],
+          "orientation_raw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "linear_velocity": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "other_raw": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "raw_hex": "0000000000000000dcf0a23e0000000000000000000000000000803f000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        },
+        "actual_gap_ms": 3058.304206,
+        "position_distance_from_baseline": 0.009424478000000014,
+        "velocity_distance_from_baseline": 0.0
+      },
+      "4": {
+        "sample": {
+          "mono_ns": 219124703355855,
+          "ptr": "0x7ffdebd98c30",
+          "position": [
+            0.0,
+            0.0,
+            0.318243861
+          ],
+          "orientation_raw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "linear_velocity": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "other_raw": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "raw_hex": "0000000000000000dcf0a23e0000000000000000000000000000803f000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        },
+        "actual_gap_ms": 4008.286749,
+        "position_distance_from_baseline": 0.009424478000000014,
+        "velocity_distance_from_baseline": 0.0
+      }
+    },
+    "baseline_post_position_distance": 1.5772858529999998,
+    "baseline_post_velocity_distance": 5.19524622,
+    "action_max_speed": 5.92054129,
+    "action_position_min": [
+      0.0,
+      -0.000567346986,
+      -4.69856501
+    ],
+    "action_position_max": [
+      0.0586865842,
+      0.00175332802,
+      0.308819383
+    ],
+    "sample_before_reset_gap_ms": 38.64456,
+    "post_bridge_gap_ms": 1068.206063
+  },
+  "_limitations": [
+    "values are the API getter snapshot, not independently all physics bodies or full environment state",
+    "position, orientation and velocity offsets supported by exported accessor disassembly; coordinate frame and units need independent verification",
+    "fixed PWM and timing are open-loop but experiment design was informed by earlier posthoc observations",
+    "GDB stage/root height interventions and explicit wind reseed are required for this test",
+    "asynchronous samples around reset cannot establish instantaneous velocity, collision manifold, vehicles, or full trajectory replay"
+  ]
+}

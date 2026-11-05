@@ -1,0 +1,328 @@
+{
+  "runs": {
+    "experiments/reset_moving_kinematics_pilot_20261105": {
+      "seed": 123,
+      "stage": 4,
+      "status": "observed",
+      "reset_success": true,
+      "pre_reset_velocity": [
+        0.882668614,
+        0.06232078,
+        -0.290776759
+      ],
+      "pre_reset_speed": 0.9314176750175152,
+      "pre_reset_sample_gap_ms": 97.999527,
+      "action_max_speed": 5.87853575,
+      "post_delay_samples": {
+        "1": {
+          "actual_gap_ms": 1030.424787,
+          "position_delta": 1.8336488290010922,
+          "velocity_delta": 4.932667260000271
+        },
+        "2": {
+          "actual_gap_ms": 2089.93361,
+          "position_delta": 9.579039329465119e-05,
+          "velocity_delta": 0.0
+        },
+        "3": {
+          "actual_gap_ms": 3030.406202,
+          "position_delta": 9.579039329465119e-05,
+          "velocity_delta": 0.0
+        },
+        "4": {
+          "actual_gap_ms": 4089.94861,
+          "position_delta": 9.579039329465119e-05,
+          "velocity_delta": 0.0
+        }
+      },
+      "line_counts": [
+        373,
+        373
+      ],
+      "line_hashes": [
+        "b43fad1829e1e37e3ec3e7495e65ac9e57c8df0824ca79e8d81fc173fa39ac76",
+        "b43fad1829e1e37e3ec3e7495e65ac9e57c8df0824ca79e8d81fc173fa39ac76"
+      ],
+      "wind_hashes": [
+        [
+          "d2ad79ebe9b78a9c5321f627ccd0e6b35dd02aa0d694eb3aceadd5ee5eee20cf"
+        ],
+        [
+          "d2ad79ebe9b78a9c5321f627ccd0e6b35dd02aa0d694eb3aceadd5ee5eee20cf",
+          "d2ad79ebe9b78a9c5321f627ccd0e6b35dd02aa0d694eb3aceadd5ee5eee20cf"
+        ]
+      ]
+    },
+    "experiments/reset_moving_seed123_repeat2_20261105": {
+      "seed": 123,
+      "stage": 4,
+      "status": "observed",
+      "reset_success": true,
+      "pre_reset_velocity": [
+        0.871166766,
+        0.0612420961,
+        -0.271308362
+      ],
+      "pre_reset_speed": 0.9144891228487867,
+      "pre_reset_sample_gap_ms": 107.3479,
+      "action_max_speed": 5.84940815,
+      "post_delay_samples": {
+        "1": {
+          "actual_gap_ms": 1091.387498,
+          "position_delta": 1.466897072110577,
+          "velocity_delta": 5.315505500019538
+        },
+        "2": {
+          "actual_gap_ms": 2041.246852,
+          "position_delta": 9.149903007706693e-05,
+          "velocity_delta": 0.0
+        },
+        "3": {
+          "actual_gap_ms": 3001.333208,
+          "position_delta": 9.149903007706693e-05,
+          "velocity_delta": 0.0
+        },
+        "4": {
+          "actual_gap_ms": 4031.984814,
+          "position_delta": 9.149903007706693e-05,
+          "velocity_delta": 0.0
+        }
+      },
+      "line_counts": [
+        373,
+        373
+      ],
+      "line_hashes": [
+        "b43fad1829e1e37e3ec3e7495e65ac9e57c8df0824ca79e8d81fc173fa39ac76",
+        "b43fad1829e1e37e3ec3e7495e65ac9e57c8df0824ca79e8d81fc173fa39ac76"
+      ],
+      "wind_hashes": [
+        [
+          "d2ad79ebe9b78a9c5321f627ccd0e6b35dd02aa0d694eb3aceadd5ee5eee20cf"
+        ],
+        [
+          "d2ad79ebe9b78a9c5321f627ccd0e6b35dd02aa0d694eb3aceadd5ee5eee20cf",
+          "d2ad79ebe9b78a9c5321f627ccd0e6b35dd02aa0d694eb3aceadd5ee5eee20cf"
+        ]
+      ]
+    },
+    "experiments/reset_moving_seed456_repeat1_20261105": {
+      "seed": 456,
+      "stage": 4,
+      "status": "observed",
+      "reset_success": true,
+      "pre_reset_velocity": [
+        0.921133518,
+        0.0588747039,
+        -0.314225882
+      ],
+      "pre_reset_speed": 0.9750338935960364,
+      "pre_reset_sample_gap_ms": 23.630759,
+      "action_max_speed": 5.95623827,
+      "post_delay_samples": {
+        "1": {
+          "actual_gap_ms": 1092.65558,
+          "position_delta": 1.422798629,
+          "velocity_delta": 5.32481241
+        },
+        "2": {
+          "actual_gap_ms": 2032.904081,
+          "position_delta": 0.00014147199999997584,
+          "velocity_delta": 0.0
+        },
+        "3": {
+          "actual_gap_ms": 3093.249382,
+          "position_delta": 0.00014147199999997584,
+          "velocity_delta": 0.0
+        },
+        "4": {
+          "actual_gap_ms": 4033.025129,
+          "position_delta": 0.00014147199999997584,
+          "velocity_delta": 0.0
+        }
+      },
+      "line_counts": [
+        373,
+        373
+      ],
+      "line_hashes": [
+        "7d4cbb22a0f215c41b907fbf6e2f5a4efc6db327bd45857793ffe348a9504809",
+        "7d4cbb22a0f215c41b907fbf6e2f5a4efc6db327bd45857793ffe348a9504809"
+      ],
+      "wind_hashes": [
+        [
+          "7d369f0dadae9758b107a3f760bbb08fc75c21043410246c8b96543ad4ee0ef9"
+        ],
+        [
+          "7d369f0dadae9758b107a3f760bbb08fc75c21043410246c8b96543ad4ee0ef9",
+          "7d369f0dadae9758b107a3f760bbb08fc75c21043410246c8b96543ad4ee0ef9"
+        ]
+      ]
+    },
+    "experiments/reset_moving_seed456_repeat2_20261105": {
+      "seed": 456,
+      "stage": 4,
+      "status": "observed",
+      "reset_success": true,
+      "pre_reset_velocity": [
+        0.834293544,
+        0.0596112199,
+        -0.194365069
+      ],
+      "pre_reset_speed": 0.8587065826843421,
+      "pre_reset_sample_gap_ms": 106.117357,
+      "action_max_speed": 5.80912542,
+      "post_delay_samples": {
+        "1": {
+          "actual_gap_ms": 1030.736822,
+          "position_delta": 1.797103112,
+          "velocity_delta": 4.95632076
+        },
+        "2": {
+          "actual_gap_ms": 2070.818769,
+          "position_delta": 8.833400000002323e-05,
+          "velocity_delta": 0.0
+        },
+        "3": {
+          "actual_gap_ms": 3020.774775,
+          "position_delta": 8.833400000002323e-05,
+          "velocity_delta": 0.0
+        },
+        "4": {
+          "actual_gap_ms": 4070.723613,
+          "position_delta": 8.833400000002323e-05,
+          "velocity_delta": 0.0
+        }
+      },
+      "line_counts": [
+        373,
+        373
+      ],
+      "line_hashes": [
+        "7d4cbb22a0f215c41b907fbf6e2f5a4efc6db327bd45857793ffe348a9504809",
+        "7d4cbb22a0f215c41b907fbf6e2f5a4efc6db327bd45857793ffe348a9504809"
+      ],
+      "wind_hashes": [
+        [
+          "7d369f0dadae9758b107a3f760bbb08fc75c21043410246c8b96543ad4ee0ef9"
+        ],
+        [
+          "7d369f0dadae9758b107a3f760bbb08fc75c21043410246c8b96543ad4ee0ef9",
+          "7d369f0dadae9758b107a3f760bbb08fc75c21043410246c8b96543ad4ee0ef9"
+        ]
+      ]
+    },
+    "experiments/reset_moving_seed2026_repeat1_20261105": {
+      "seed": 2026,
+      "stage": 4,
+      "status": "observed",
+      "reset_success": true,
+      "pre_reset_velocity": [
+        0.907397151,
+        0.0595310777,
+        -0.275980622
+      ],
+      "pre_reset_speed": 0.950304605152762,
+      "pre_reset_sample_gap_ms": 38.64456,
+      "action_max_speed": 5.92054129,
+      "post_delay_samples": {
+        "1": {
+          "actual_gap_ms": 1068.206063,
+          "position_delta": 1.5772858529999998,
+          "velocity_delta": 5.19524622
+        },
+        "2": {
+          "actual_gap_ms": 2007.60793,
+          "position_delta": 0.009424478000000014,
+          "velocity_delta": 0.0
+        },
+        "3": {
+          "actual_gap_ms": 3058.304206,
+          "position_delta": 0.009424478000000014,
+          "velocity_delta": 0.0
+        },
+        "4": {
+          "actual_gap_ms": 4008.286749,
+          "position_delta": 0.009424478000000014,
+          "velocity_delta": 0.0
+        }
+      },
+      "line_counts": [
+        373,
+        373
+      ],
+      "line_hashes": [
+        "388203d03fb5e0415339b77dabbdfb55ae75a622ad2108abb0720980447009d3",
+        "388203d03fb5e0415339b77dabbdfb55ae75a622ad2108abb0720980447009d3"
+      ],
+      "wind_hashes": [
+        [
+          "b7f89c696969e3719187fe3c55acae5f9a563b91b3f40481658069aaa0e214a9"
+        ],
+        [
+          "b7f89c696969e3719187fe3c55acae5f9a563b91b3f40481658069aaa0e214a9",
+          "b7f89c696969e3719187fe3c55acae5f9a563b91b3f40481658069aaa0e214a9"
+        ]
+      ]
+    },
+    "experiments/reset_moving_seed2026_repeat2_20261105": {
+      "seed": 2026,
+      "stage": 4,
+      "status": "observed",
+      "reset_success": true,
+      "pre_reset_velocity": [
+        0.883078158,
+        0.0611347333,
+        -0.307185501
+      ],
+      "pre_reset_speed": 0.93697781231839,
+      "pre_reset_sample_gap_ms": 101.96289,
+      "action_max_speed": 5.87374449,
+      "post_delay_samples": {
+        "1": {
+          "actual_gap_ms": 1106.441851,
+          "position_delta": 1.4838848743400421,
+          "velocity_delta": 5.3673644104844715
+        },
+        "2": {
+          "actual_gap_ms": 2066.45698,
+          "position_delta": 0.0001382941666133746,
+          "velocity_delta": 0.0
+        },
+        "3": {
+          "actual_gap_ms": 3096.407726,
+          "position_delta": 0.0001382941666133746,
+          "velocity_delta": 0.0
+        },
+        "4": {
+          "actual_gap_ms": 4046.372748,
+          "position_delta": 0.0001382941666133746,
+          "velocity_delta": 0.0
+        }
+      },
+      "line_counts": [
+        373,
+        373
+      ],
+      "line_hashes": [
+        "388203d03fb5e0415339b77dabbdfb55ae75a622ad2108abb0720980447009d3",
+        "388203d03fb5e0415339b77dabbdfb55ae75a622ad2108abb0720980447009d3"
+      ],
+      "wind_hashes": [
+        [
+          "b7f89c696969e3719187fe3c55acae5f9a563b91b3f40481658069aaa0e214a9"
+        ],
+        [
+          "b7f89c696969e3719187fe3c55acae5f9a563b91b3f40481658069aaa0e214a9",
+          "b7f89c696969e3719187fe3c55acae5f9a563b91b3f40481658069aaa0e214a9"
+        ]
+      ]
+    }
+  },
+  "limitations": [
+    "GDB forces stage and root z during service; LD_PRELOAD reseeds wind",
+    "post-reset zero PWM and debugger timing influence measured dynamics",
+    "samples are asynchronous and do not prove full physics, collision or vehicle replay",
+    "input sequence is fixed and uses no truth online; its design used prior diagnostic observations"
+  ]
+}
