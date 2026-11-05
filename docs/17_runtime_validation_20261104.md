@@ -320,3 +320,13 @@ OL2 直接加载后用只读 GDB 断点捕获 12 门之后首次 `__cxa_throw`�
 单 seed 调试中断快照显示采样结束时主线程位于 `usleep` 调用，而非当时停在 ROS 初始化栈；单次快照不能证明整体无死锁或切图完成。另一场在捕获第二组 12 门后未见 `0x2fb8f40` 游戏状态更新断点；日志输出可能缓冲、探针也改变调度，不能单凭该负结果认定游戏状态永不更新。见 `experiments/ol2_interrupt_stack_pilot_20261105/`、`experiments/ol2_world_tick_pilot_20261105/`。
 
 另一次在调用点取消 OL1 切图并人为返回 0，以保留初始 OL2：在采样窗口内重复拦截 264 次切图请求，未命中预期的游戏状态更新断点；尽管 IMU/LiDAR 消息仍存在，不能认定世界正常推进。保留 `experiments/ol2_cancel_travel_pilot_20261105/` 为失败样本，禁止将旧 runner 的 `observed` 解读为训练通过。更改后的取消运行器会在反复请求或无更新证据时标记未验证；模拟器官方文件未修改。
+
+## 经 Lobby 的 OL2 启动对照
+
+复用官方原包、默认 Lobby 与独立 ROS master，在 Browse 内将精确 OL1 URL 等长写为 OL2；不再使用频率门控或修改包。seed 123 短场和长场均捕获 Lobby→OL2 的 LoadMap 入口及 12 门，ROS 接收 IMU/LiDAR，但在采样期间均未命中 `0x2fb8f40` 状态更新或 `0x2fb2040` 风播种，未看到 OL2 加载完成日志。长场 25 秒调试风后，分别采样约三秒的普通 IMU（270 条）、GPS（28 条）和仅供事后评估的调试位姿（270 条）：GPS 三轴位置均为 0，调试位姿位置均为 0、四元数模恒为 0.5；零位置单独不证明错误，非单位四元数和无状态更新不能用于验收。数据、`sample_analysis.json`、时间序列及 manifest 在 `experiments/lobby_ol2_long_pilot_20261105/`；该真值不用于动作或就绪判断。
+
+同 seed、相同探针和静止采样的无重定向 Lobby→OL1 对照观察到 45 个按约一秒节流的状态更新记录、一次风播种和一次游戏 reset；GPS 三轴均有非零或变化，事后姿态四元数模为 1。控制场自身也没有目标地图 `LoadMap Took` 行，故此前仅凭该日志缺失判断地图未完成并不充分；但 OL2 未命中更新和非单位调试姿态仍使其训练就绪未证。对照见 `experiments/lobby_ol1_control_pilot_20261105/`；仅单 seed 单场，不能推断统计稳定性。
+
+将改写点从 Browse 日志辅助函数提前到 Browse 入口 `0x593c900`，根据反汇编在入口读取 `RDX` 所指的候选 URL（`+0x28`）；仍然只修改精确匹配的 OL1 等长字符串。单场观察到 OL2 入口和 12 门，但没有状态更新/风播种，27 条 GPS 位置均为零，272 条事后姿态四元数模均为 0.5。该结果反驳“仅因改写发生太晚即可恢复”的简单假设，不排除其他 URL 内部状态、地图配置或初始化路径。证据见 `experiments/lobby_ol2_early_pilot_20261105/` 和 `browse_entry.disasm`。
+
+`experiments/lobby_ol2_init_return_pilot_20261105/` 的 GDB entry/finish 探针观察到一次 `InitAirSimROS` 入口及返回，故本场不能解释为该函数没有返回；这不证明后续世界初始化成功。插件函数的静态 REA Evidence `ev_1036822c48affb93d5b0ad58a01ba217a650fe0f13e4e4ea3a44db3408ec7832` 导出在 `experiments/lobby_ol2_long_pilot_20261105/rea_initialization_evidence.json`，反编译显示先 `ros::init`，再构造并设置 `node_instance`；静态结果本身不证明运行时调用顺序。GDB 修改 URL 和 all-stop 调试均限制因果解释。

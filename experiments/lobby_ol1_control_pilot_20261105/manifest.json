@@ -1,0 +1,50 @@
+{
+  "binary_sha256": "5231addfa25ddaa9e4473ea9ac40c9c0bc685174e69cd14bb49159f443b97800",
+  "settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+  "image_id": "sha256:cd46a48cd28c2a9c6345f60227fd1bd50e78c67ef1e98dcddc0e65893771da57",
+  "gdb_script_sha256": "f9db9474f42891014b418a810a6e38ea64fe45ae4e1897e0ae459a64136c4c22",
+  "runner_sha256": "cfb594f1a5adc4276862397e5622f4d1da3023f4ccaed782eac4c559f3719181",
+  "readiness_timeout_s": 35,
+  "base_pak_sha256": "2407662b224ed28c64412402af044da85aced07d78ce6fc0948e6be11ea2a0c2",
+  "mode": "nullrhi",
+  "requested_map": "/Game/Maps/RMUA2024OL/RMUA2024OL1",
+  "seeds": [
+    123
+  ],
+  "repeats": 1,
+  "stage_coverage": "default Lobby and OL1; same diagnostic probes; no redirect or flight",
+  "runs": [
+    {
+      "seed": 123,
+      "repeat": 1,
+      "port": 13503,
+      "container": "rmua-trace-76256d50f325",
+      "start_wall": 1793866913.5792449,
+      "status": "load_completion_unverified",
+      "id": "089ededbaac7b30fa08dac699b18389e983efe301a948c7d4c8e031ba404a068",
+      "ready_wall": 1793866924.1912215,
+      "before_reset_exit_code": 124,
+      "sensor_clock_exit_code": 0,
+      "sensor_counts": {
+        "imu": 500,
+        "lidar": 51,
+        "camera_left": 100,
+        "camera_right": 100
+      },
+      "lidar_nonempty_count": 51,
+      "imu_samples_exit_code": 124,
+      "gps_samples_exit_code": 124,
+      "pose_posthoc_exit_code": 124,
+      "observed_maps": [
+        "/Game/Maps/RMUA2024OL/RMUA2024Lobby?Name=Player",
+        "/Game/Maps/RMUA2024OL/RMUA2024OL1"
+      ],
+      "target_load_completion_count": 0,
+      "redirect_observed": true,
+      "tick_observed": true,
+      "srand_observed": true,
+      "gate_count": 12,
+      "end_wall": 1793866968.1312842
+    }
+  ]
+}

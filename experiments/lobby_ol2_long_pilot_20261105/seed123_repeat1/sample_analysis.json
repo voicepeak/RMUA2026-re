@@ -1,0 +1,46 @@
+{
+  "imu_samples": {
+    "count": 270,
+    "quaternion_norm_min": 1.0,
+    "quaternion_norm_max": 1.0
+  },
+  "gps_samples": {
+    "count": 28,
+    "quaternion_norm_min": 1.0,
+    "quaternion_norm_max": 1.0,
+    "position_range": {
+      "x": [
+        0.0,
+        0.0
+      ],
+      "y": [
+        0.0,
+        0.0
+      ],
+      "z": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "pose_posthoc": {
+    "count": 270,
+    "quaternion_norm_min": 0.5,
+    "quaternion_norm_max": 0.5,
+    "position_range": {
+      "x": [
+        0.0,
+        0.0
+      ],
+      "y": [
+        0.0,
+        0.0
+      ],
+      "z": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "limitations": "Posthoc summary of one stationary diagnostic scene, not a calibration or proof of sensor origin; zero position alone is not an error."
+}

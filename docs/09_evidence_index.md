@@ -177,3 +177,5 @@
 | OL1 直接启动对照和 OL2 ROS 初始化异常 | `experiments/ol1_direct_control_pilot_20261105/`、`experiments/ol2_direct_throw_pilot_20261105/`、`experiments/ol2_ros_time_init_pilot_20261105/`、`experiments/ol2_ros_time_init_crash_trace_20261105/`、`experiments/ol2_ros_time_init_node_trace_20261105/`；`scripts/ros_time_preinit.cpp`、`scripts/runtime_ol2_throw_trace.gdb`、`scripts/runtime_ol2_time_preinit.gdb`；均未恢复 IMU |
 
 | 直接 OL2 频率门控、切图重定向及未完成场景证据 | `experiments/ol2_frequency_gate_pilot_20261105/`、`experiments/ol2_url_fields_pilot_20261105/`、`experiments/ol2_redirect_20261105/post_load_analysis.json`、`experiments/ol2_interrupt_stack_pilot_20261105/`、`experiments/ol2_world_tick_pilot_20261105/`、`experiments/ol2_cancel_travel_pilot_20261105/`；`scripts/runtime_ol2_{frequency_gate,redirect,cancel_travel}.gdb`、`scripts/analyze_ol2_redirect.py`；第二次加载完成与游戏推进未证 |
+
+| 经 Lobby 的 OL2 早／晚切图与 OL1 静止对照 | `experiments/lobby_ol2_long_pilot_20261105/seed123_repeat1/sample_analysis.json`、`experiments/lobby_ol2_early_pilot_20261105/`、`experiments/lobby_ol1_control_pilot_20261105/`、`experiments/lobby_ol2_init_return_pilot_20261105/`、`scripts/analyze_lobby_ol2_samples.py`；场景更新及 OL2 可训练性未证 |

@@ -71,3 +71,5 @@ PWM 分发链对照补充：seed 123 的两场无新增分发断点对照均复�
 OL2 直接启动缺失接口的初始化诊断：同配置直接启动 OL1 也在 30 秒内无 IMU；OL2 只读断点在 LiDAR 频率记录路径捕获 `ros::TimeNotInitializedException`。开发 preload 提前初始化时间后三次在频率表访问处 SIGSEGV，一次确认 `node_instance` 为 NULL；并未恢复接口，不能当成修复或八实例根因。见 `experiments/ol1_direct_control_pilot_20261105/`、`experiments/ol2_direct_throw_pilot_20261105/`、`experiments/ol2_ros_time_init_{crash_trace,node_trace}_20261105/`。
 
 OL2 初始化进一步诊断：节点为空时跳过首次频率统计后，先导场记录节点创建与 IMU，随后自动切至 OL1。改写 Browse 的 OL1 目标为 OL2 后，三 seed 各两次出现两次 OL2 LoadMap 入口、第二组门事件和 IMU/LiDAR 流，但没有第二次完成日志；追加的单场未命中第二组门之后的 `0x2fb8f40` 更新断点，不能确认场景或传感器来自完成切图后的世界。取消切图的先导场反复触发 264 次取消且未命中更新断点，属于失败样本。训练可用性仍未验收。见 `experiments/ol2_redirect_20261105/post_load_analysis.json`、`experiments/ol2_world_tick_pilot_20261105/`、`experiments/ol2_cancel_travel_pilot_20261105/`。
+
+经过未修改 Lobby 的单次 OL2 切图对照：晚期和 Browse 入口早期重定向各有 seed 123 先导场，均捕获 12 门和 ROS 消息，但无游戏状态更新/风播种断点；长场 GPS 全零、事后姿态四元数模 0.5。相同静止探针的 OL1 对照捕获 45 次状态更新、风播种及单位姿态四元数。差异原因未定，OL2 可用性仍未通过。见 `experiments/lobby_ol2_{long,early}_pilot_20261105/`、`experiments/lobby_ol1_control_pilot_20261105/`。
