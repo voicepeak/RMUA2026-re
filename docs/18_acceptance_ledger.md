@@ -137,3 +137,5 @@ ROS 传输路径取得首场函数级定时：容器内编译的 LD_PRELOAD 钩�
 车辆状态赋值先导：固定时间停止状态强制写入时记录 state=7；随后首个车辆 actor/推定子组件来源事件按指针进入碰撞回调，同线程在下一回调前执行 state 12 的赋值，赋值后读取 current=12、previous=7。此后 63 个被动状态采样均为 12，首末间隔约 14.26 秒；离散采样不能排除间隙变化，也不证明评分或整个 episode 终止。阶段、车辆路径和前十秒状态仍由 GDB 干预，释放及动作时序参考过往事后数据。见 `experiments/vehicle_release_state_v2_pilot_20261106/release_state_analysis.json`。
 
 车辆状态释放矩阵覆盖三个 seed 各两次：六场释放时状态均为 7，各有 12 个释放后车辆 actor/推定子组件来源事件与回调按指针匹配；每场一个车辆回调之后、同线程下一回调之前观测到状态赋值 previous=7、current=12。之后 63–64 个被动采样均为 12，首末间隔约 14.20–14.49 秒。离散采样不能排除间隔内变化，也不验证评分或整个 episode 终止；初始 stage、车辆路径及前十秒状态由 GDB 干预，计时参考过往事后观察。详见 `experiments/vehicle_release_state_matrix_20261106/summary.json`。
+
+并发根因诊断准备：针对目标 `libairsimros.so` 的三个频率统计导出函数构建开发用 LD_PRELOAD 互斥探针，独立夹具验证转发、float 返回、异常时解锁和多线程串行化。单模拟器 12 秒先导正常采到 IMU、LiDAR、PWM，探针前 5000 次入口累计至少一次 try-lock 竞争。该结果说明加锁运行中存在调用竞争，不证明原始未加锁场的实际数据竞争或八实例崩溃根因；直接内存访问和未覆盖调用仍可能存在，插桩会改变调度。构建与范围见 `experiments/frequency_guard_development_20261106/`，原始先导见 `experiments/frequency_guard_single_pilot_20261106/`。

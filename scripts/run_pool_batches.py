@@ -31,6 +31,7 @@ def main():
     p.add_argument('--startup-timeout',type=float,default=75)
     p.add_argument('--display',default=':1')
     p.add_argument('--image',default='rmua/noetic-xal:driver-recovery-20261012')
+    p.add_argument('--frequency-guard',type=Path,help='development-only frequency-entry serialization interposer')
     a=p.parse_args()
     try: seeds=[int(x) for x in a.seeds.split(',')]
     except ValueError: p.error('invalid seeds')
@@ -38,7 +39,8 @@ def main():
     groups=[seeds[i:i+a.parallelism] for i in range(0,len(seeds),a.parallelism)]
     if a.port<1 or a.port+len(groups)*(a.retries+1)*a.parallelism-1>65535: p.error('invalid port range')
     out=a.output.resolve();out.mkdir(parents=True,exist_ok=False)
-    results={'kind':'idle_diagnostic_only','seconds_wall':a.seconds,'batches':[]}
+    results={'kind':'idle_diagnostic_only','frequency_guard':str(a.frequency_guard.resolve()) if a.frequency_guard else None,
+             'seconds_wall':a.seconds,'batches':[]}
     def save(): (out/'results.json').write_text(json.dumps(results,indent=2)+'\n')
     save()
     serial=0
@@ -52,6 +54,7 @@ def main():
             start=[sys.executable,str(POOL),'start','--simulator',str(a.simulator),'--settings',str(a.settings),
                    '--seeds',','.join(map(str,group)),'--port',str(port),'--output',str(pool_dir),
                    '--display',a.display,'--image',a.image,'--timeout',str(a.startup_timeout)]
+            if a.frequency_guard: start.extend(['--frequency-guard',str(a.frequency_guard)])
             try:
                 trial['start_exit_code']=cmd_run(start,out/(prefix+'_start.log'))
                 if trial['start_exit_code']!=0:

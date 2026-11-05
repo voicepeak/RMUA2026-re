@@ -1,0 +1,9 @@
+{
+  "guard_sha256": "4ff51140103aa1c399bb0aec08e5dd49d21d50f1ae7348dc57ab07d0e2ea6be9",
+  "source_sha256": "97f86397f0a3faad9ee4ead5dc06fca583bf60e7f57e16c851f8a63073ae8c83",
+  "selftest": "forwarding, float return values, exception unlock and serialized multithread fixture: pass",
+  "limitations": [
+    "guard serializes only three exported entry points; direct accesses and non-interposable calls remain unprotected",
+    "mutex and logging alter scheduling; positive contention does not establish original crash root cause"
+  ]
+}

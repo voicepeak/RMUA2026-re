@@ -40,4 +40,22 @@ class BatchTests(unittest.TestCase):
     def test_retry_uses_fresh_port_and_cleans(self):self.run_case()
     def test_cleanup_failure_blocks_retry(self):self.run_case(cleanup_failure=True)
 
+    def test_frequency_guard_is_forwarded_to_pool_start(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            output=Path(tmp)/'out';starts=[]
+            def fake_command(command, logfile):
+                if command[2]=='start':
+                    starts.append(command)
+                    target=Path(command[command.index('--output')+1]);target.mkdir()
+                    (target/'pool.json').write_text(json.dumps({'instances':[{'id':'fake','container':'fake'}]}))
+                return 0
+            argv=['run_pool_batches.py','--simulator','/tmp/sim','--settings','/tmp/settings',
+                  '--seeds','123','--output',str(output),'--seconds','0.001','--retries','0',
+                  '--frequency-guard','/tmp/guard.so']
+            with patch.object(sys,'argv',argv), patch.object(runner,'cmd_run',fake_command), \
+                 patch.object(runner.subprocess,'run',return_value=SimpleNamespace(returncode=0,stdout='{"Running": true}',stderr='')), \
+                 contextlib.redirect_stdout(io.StringIO()):
+                self.assertEqual(runner.main(),0)
+            self.assertEqual(starts[0][starts[0].index('--frequency-guard')+1],'/tmp/guard.so')
+
 if __name__=='__main__':unittest.main()

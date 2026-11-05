@@ -40,6 +40,9 @@ wait "$sim_pid"
 GDB_LAUNCH = LAUNCH.replace(
     './RMUA/Binaries/Linux/RMUA-Linux-Shipping RMUA seed',
     'gdb -nx -batch -x /analysis/scripts/crash_capture.gdb --args ./RMUA/Binaries/Linux/RMUA-Linux-Shipping RMUA seed')
+FREQUENCY_GUARD_LAUNCH = LAUNCH.replace(
+    './RMUA/Binaries/Linux/RMUA-Linux-Shipping RMUA seed',
+    'LD_PRELOAD=/probe/frequency_guard.so RMUA_FREQ_GUARD_LOG=/out/frequency-${RMUA_PORT}.jsonl ./RMUA/Binaries/Linux/RMUA-Linux-Shipping RMUA seed')
 
 def call(args, **kwargs):
     return subprocess.run(args, text=True, check=True, **kwargs)
@@ -80,6 +83,12 @@ def start(args):
     settings=args.settings.resolve(strict=True)
     binary=sim/'Build/LinuxNoEditor/RMUA/Binaries/Linux/RMUA-Linux-Shipping'
     if not binary.is_file(): raise ValueError('invalid simulator directory')
+    guard = args.frequency_guard.resolve(strict=True) if args.frequency_guard else None
+    if guard and args.gdb_crash: raise ValueError('frequency guard and GDB crash mode cannot be combined')
+    if guard:
+        library=sim/'Build/LinuxNoEditor/RMUA/Plugins/AirSimROS/Binaries/Linux/libairsimros.so'
+        if sha256(library) != '69d5ea3302bdd5f20b842ec3d3e84bafcb50ef3649ada42c4d346c9bcd389885':
+            raise ValueError('frequency guard requires validated AirSim ROS library')
     seeds=[int(x) for x in args.seeds.split(',')]
     if not seeds or any(x<0 for x in seeds): raise ValueError('seeds must be nonnegative')
     if not (1 <= args.port <= 65535-len(seeds)+1): raise ValueError('invalid port range')
@@ -98,6 +107,9 @@ def start(args):
     if args.gdb_crash:
         data['gdb_script_sha256']=sha256(Path(__file__).resolve().parent/'crash_capture.gdb')
         data['limitations'].append('GDB changes timing; GDB exit status is not the inferior exit status')
+    if guard:
+        data['frequency_guard_sha256']=sha256(guard)
+        data['limitations'].append('frequency guard changes scheduling and covers only three exported functions')
     def save(): manifest.write_text(json.dumps(data,indent=2)+'\n')
     save()
     try:
@@ -115,7 +127,10 @@ def start(args):
             if args.gdb_crash:
                 cmd.extend(['--cap-add','SYS_PTRACE','--security-opt','seccomp=unconfined',
                             '-v',str(Path(__file__).resolve().parent.parent)+':/analysis:ro'])
-            cmd.extend(['--entrypoint','bash',args.image,'-c',GDB_LAUNCH if args.gdb_crash else LAUNCH])
+            if guard:
+                cmd.extend(['-v',str(guard)+':/probe/frequency_guard.so:ro','-v',str(output)+':/out'])
+            launch = GDB_LAUNCH if args.gdb_crash else (FREQUENCY_GUARD_LAUNCH if guard else LAUNCH)
+            cmd.extend(['--entrypoint','bash',args.image,'-c',launch])
             before=time.time()
             container_id=call(cmd,capture_output=True).stdout.strip()
             data['instances'].append({'seed':seed,'port':port,'container':name,'id':container_id,
@@ -160,6 +175,7 @@ def main():
     p.add_argument('--image',default=IMAGE)
     p.add_argument('--timeout',type=float,default=75.)
     p.add_argument('--gdb-crash',action='store_true',help='debug build image required; stop and log SIGSEGV with GDB')
+    p.add_argument('--frequency-guard',type=Path,help='development-only frequency-entry serialization interposer')
     p=sub.add_parser('stop')
     p.add_argument('manifest',type=Path)
     args=parser.parse_args()

@@ -1,0 +1,6 @@
+{"calls":1,"contended":0}
+{"calls":1000,"contended":0}
+{"calls":2000,"contended":1}
+{"calls":3000,"contended":1}
+{"calls":4000,"contended":1}
+{"calls":5000,"contended":1}
