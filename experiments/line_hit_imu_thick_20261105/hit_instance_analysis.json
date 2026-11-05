@@ -1,0 +1,164 @@
+{
+  "seed123_repeat1": {
+    "fixtures": [
+      [
+        "1",
+        "0x7fffdcc0b0a0"
+      ]
+    ],
+    "return_indices": [
+      7
+    ],
+    "total_hit_results": 46,
+    "same_component_results": 42,
+    "candidate_offset_hex": "0x58",
+    "candidate_values": {
+      "7": 42
+    },
+    "other_component_values": {
+      "-1": 4
+    },
+    "fixed_pwm_command_exit_code": 0,
+    "unique_return_index": true,
+    "all_candidate_values_match": true,
+    "limitations": [
+      "offset is a candidate inferred from controlled submissions, not independently verified type metadata",
+      "forced scene and GDB scheduling differ from natural progression"
+    ]
+  },
+  "seed123_repeat2": {
+    "fixtures": [
+      [
+        "1",
+        "0x7fffdce229b0"
+      ]
+    ],
+    "return_indices": [
+      7
+    ],
+    "total_hit_results": 46,
+    "same_component_results": 42,
+    "candidate_offset_hex": "0x58",
+    "candidate_values": {
+      "7": 42
+    },
+    "other_component_values": {
+      "-1": 4
+    },
+    "fixed_pwm_command_exit_code": 0,
+    "unique_return_index": true,
+    "all_candidate_values_match": true,
+    "limitations": [
+      "offset is a candidate inferred from controlled submissions, not independently verified type metadata",
+      "forced scene and GDB scheduling differ from natural progression"
+    ]
+  },
+  "seed456_repeat1": {
+    "fixtures": [
+      [
+        "1",
+        "0x7fffdcc0b0a0"
+      ]
+    ],
+    "return_indices": [
+      7
+    ],
+    "total_hit_results": 45,
+    "same_component_results": 41,
+    "candidate_offset_hex": "0x58",
+    "candidate_values": {
+      "7": 41
+    },
+    "other_component_values": {
+      "-1": 4
+    },
+    "fixed_pwm_command_exit_code": 0,
+    "unique_return_index": true,
+    "all_candidate_values_match": true,
+    "limitations": [
+      "offset is a candidate inferred from controlled submissions, not independently verified type metadata",
+      "forced scene and GDB scheduling differ from natural progression"
+    ]
+  },
+  "seed456_repeat2": {
+    "fixtures": [
+      [
+        "1",
+        "0x7fffe57ed060"
+      ]
+    ],
+    "return_indices": [
+      7
+    ],
+    "total_hit_results": 46,
+    "same_component_results": 42,
+    "candidate_offset_hex": "0x58",
+    "candidate_values": {
+      "7": 42
+    },
+    "other_component_values": {
+      "-1": 4
+    },
+    "fixed_pwm_command_exit_code": 0,
+    "unique_return_index": true,
+    "all_candidate_values_match": true,
+    "limitations": [
+      "offset is a candidate inferred from controlled submissions, not independently verified type metadata",
+      "forced scene and GDB scheduling differ from natural progression"
+    ]
+  },
+  "seed2026_repeat1": {
+    "fixtures": [
+      [
+        "1",
+        "0x7fffe5555950"
+      ]
+    ],
+    "return_indices": [
+      7
+    ],
+    "total_hit_results": 47,
+    "same_component_results": 43,
+    "candidate_offset_hex": "0x58",
+    "candidate_values": {
+      "7": 43
+    },
+    "other_component_values": {
+      "-1": 4
+    },
+    "fixed_pwm_command_exit_code": 0,
+    "unique_return_index": true,
+    "all_candidate_values_match": true,
+    "limitations": [
+      "offset is a candidate inferred from controlled submissions, not independently verified type metadata",
+      "forced scene and GDB scheduling differ from natural progression"
+    ]
+  },
+  "seed2026_repeat2": {
+    "fixtures": [
+      [
+        "1",
+        "0x7fffdcc1c080"
+      ]
+    ],
+    "return_indices": [
+      7
+    ],
+    "total_hit_results": 46,
+    "same_component_results": 42,
+    "candidate_offset_hex": "0x58",
+    "candidate_values": {
+      "7": 42
+    },
+    "other_component_values": {
+      "-1": 4
+    },
+    "fixed_pwm_command_exit_code": 0,
+    "unique_return_index": true,
+    "all_candidate_values_match": true,
+    "limitations": [
+      "offset is a candidate inferred from controlled submissions, not independently verified type metadata",
+      "forced scene and GDB scheduling differ from natural progression"
+    ]
+  }
+}
