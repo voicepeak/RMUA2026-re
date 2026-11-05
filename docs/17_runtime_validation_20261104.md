@@ -338,3 +338,13 @@ OL2 直接加载后用只读 GDB 断点捕获 12 门之后首次 `__cxa_throw`�
 在 `experiments/reset_root_hold_20261105/` 的 stage 4 注入场，普通 IMU 就绪后调用官方 reset：仅在 ROS reset 回调运行时，在事件生产入口把根组件世界 z 写为 0，并在回调读取完成时停止写入；没有改写服务响应或其检查结果。seed 123/456/2026 各两次均记录 21–23 次高度写入、检查块七个 float 为 0、服务响应 `success: True`。该干预改变 actor 根组件，不证明无干预的物理 reset 成功；已知 reset 检查对 `+0x0c` 使用 `abs(value)-1 < 0.2`，在本实现写零时仍通过，不能由此推断有效姿态。先导场见 `experiments/reset_root_hold_pilot_20261105/`。
 
 六个成功响应场在 stage 4 前后各提交 373 个线障变换，每场前后多重集合哈希相同；风数组前后不同。离线 float32 模型按每 seed 仅播种一次连续生成两次，六场前后 12 组风数组逐字节匹配，每次消耗 54 个 `rand()`。匹配不排除产生等效状态的隐藏操作，也不能推广正常赛程。释放固定后另采普通 IMU 与仅事后评估的姿态：姿态 z 在各自采样窗口恒定，六场约 0.3085–0.3088 m；该观测不证明物理引擎内部状态或其他机制已重放。原始流、`root_hold_analysis.json`、`reset_analysis.json` 和 `wind_stream_analysis.json` 可复算；第二组风 dump 的额外副本由遗留返回断点产生，不计作第三次生成。
+
+## 受控恢复风随机状态与失败跳转
+
+对 stage 4 成功响应场追加开发干预：预加载 `scripts/wind_reseed_interposer.c` 构建的共享对象，在识别到首次风生成已到达选择调用点后，于下一次风生成的首个 duration 随机调用点、调用真实 `rand()` 之前，恰好一次调用真实 `srand(seed)`。用户输入的 seed 来自启动参数环境；策略不读取调试真值。此 interposer 将进程内 `rand()` 调用经互斥锁串行化并修改全局 libc 状态，依赖本版本非 PIE 调用地址，可能改变调度，不能视为官方行为或直接用于其他场景。构建命令、源码/共享对象/镜像哈希及触发约束见 `experiments/reset_wind_interpose_pilot_20261105/interposer_manifest.json`。
+
+`experiments/reset_wind_interpose_20261105/` 对 seed 123/456/2026 各两次均观察到一次目标 seed 重播种、根高度固定 22 次及 reset `success: True`。每场前后各 373 个线障提交变换多重集合哈希一致，风数组各 35 项逐字节相同；12 组数组分别与独立 float32 模型按对应 seed fresh 生成的结果逐字节相同。每场干预释放后的事后位姿 z 在约 0.30858–0.30870 m；这只覆盖短时采样，不证明内部物理状态、实际 spawn、车辆、碰撞或完整场景重放。原始日志、`reset_analysis.json`、`reseeded_wind_analysis.json`、`root_hold_analysis.json` 可复算。
+
+失败样本：最初尝试在风生成入口通过 GDB 改 RIP 构造对 `srand` 的调用，出现 begin/rejoin 标记但风不相同；追加对可执行文件 PLT 的只读断点，在两标记之间未捕获 `srand`，前 12 次 `rand` 返回与 seed 123 连续流的第 55–66 次逐个相等。该窗口只覆盖该 PLT，不能排除其他入口的隐藏调用，但足以否定将标记当作已验证重播种；调试跳转还多执行了生成器并可能污染栈，故该场不能用于重放。证据和失败说明见 `experiments/reset_wind_reseed_pilot_20261105/`、`experiments/reset_rng_trace_pilot_20261105/failed_reseed_analysis.json`。
+
+stage 5 seed 123 单次先导使用同一 interposer 和根高度固定，并在 reset 前后分别采集仅供事后分析的姿态：服务响应 true，前后各 1118 个线障提交变换集合哈希一致，风数组各 37 项前后逐字节一致并均匹配 stage 5 独立模型。两段各约两秒采样中，前段末位置与后段首位置相距约 0.000698 m；没有验证速度、接触或同一真实物理状态，不能凭静止位置判断完整重放。结果及原始流在 `experiments/reset_wind_interpose_stage5_pilot_20261105/`。

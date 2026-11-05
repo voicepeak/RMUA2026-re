@@ -1,0 +1,21 @@
+{
+  "seed123_repeat1": {
+    "srand_entries_in_window": [],
+    "rand_returns_in_window": [
+      509925281,
+      1102432174,
+      595343843,
+      979498397,
+      1035283674,
+      150074451,
+      987021769,
+      1416425159,
+      1981248099,
+      539962507,
+      86168869,
+      265988082
+    ],
+    "match_fixed_positions_55_onward": true,
+    "limitations": "Only executable PLT entries are traced; debugger stops perturb scheduling. Matching output does not prove absence of hidden RNG calls."
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "seed123_repeat1": {
+    "reset_response_success": true,
+    "experiment_scope": "GDB mutates stage arguments, forces root z=0 during reset; LD_PRELOAD interposes rand and reseeds before second wind generation; diagnostic only",
+    "stream_reset_before": [
+      [
+        123,
+        123
+      ],
+      [
+        123,
+        1538549788
+      ]
+    ],
+    "game_reset_enter": [
+      [
+        123,
+        123
+      ],
+      [
+        123,
+        123
+      ]
+    ],
+    "generations": [
+      {
+        "line_count": 1118,
+        "line_multiset_sha256": "745ae353b78069dd57ffb100586e457f37d265be997aaef0be1877922b72e1e5",
+        "wind_dumps": [
+          {
+            "count": 37,
+            "sha256": "010f7f54b171d002d7ef07645438eb74348dff6d9a981b1cbe64c1ca96884730"
+          }
+        ]
+      },
+      {
+        "line_count": 1118,
+        "line_multiset_sha256": "745ae353b78069dd57ffb100586e457f37d265be997aaef0be1877922b72e1e5",
+        "wind_dumps": [
+          {
+            "count": 37,
+            "sha256": "010f7f54b171d002d7ef07645438eb74348dff6d9a981b1cbe64c1ca96884730"
+          },
+          {
+            "count": 37,
+            "sha256": "010f7f54b171d002d7ef07645438eb74348dff6d9a981b1cbe64c1ca96884730"
+          }
+        ]
+      }
+    ],
+    "line_equal": true,
+    "wind_equal": true,
+    "limitations": [
+      "service success alone does not prove physical scene replay; see experiment_scope for interventions",
+      "line transform submission is not proof of actual physical scene replay",
+      "lingering return breakpoint may duplicate second wind dump"
+    ]
+  }
+}

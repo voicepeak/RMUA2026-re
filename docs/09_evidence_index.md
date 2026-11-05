@@ -181,3 +181,7 @@
 | 经 Lobby 的 OL2 早／晚切图与 OL1 静止对照 | `experiments/lobby_ol2_long_pilot_20261105/seed123_repeat1/sample_analysis.json`、`experiments/lobby_ol2_early_pilot_20261105/`、`experiments/lobby_ol1_control_pilot_20261105/`、`experiments/lobby_ol2_init_return_pilot_20261105/`、`scripts/analyze_lobby_ol2_samples.py`；场景更新及 OL2 可训练性未证 |
 
 | reset 检查数据来源与根组件高度干预下成功响应 | `experiments/reset_cache_static_20261105/`、`experiments/reset_cache_{trace,source}_pilot_20261105/`、`experiments/reset_root_hold_20261105/{root_hold_analysis,reset_analysis,wind_stream_analysis}.json`；`scripts/stage_reset_root_hold.gdb`、`scripts/analyze_reset_root_hold.py`；成功依赖高度干预，风未重放 |
+
+| stage 4 高度固定与风重播种下的受控 reset 生成重放 | `experiments/reset_wind_interpose_20261105/{reset_analysis,reseeded_wind_analysis,root_hold_analysis}.json`、`experiments/reset_wind_interpose_pilot_20261105/interposer_manifest.json`、`scripts/wind_reseed_interposer.c`、`scripts/analyze_reset_wind_reseeded.py`；`experiments/reset_rng_trace_pilot_20261105/failed_reseed_analysis.json` 是失败 GDB 跳转，不证明完整物理重放 |
+
+| stage 5 干预式 reset 单 seed 先导及事后位置 | `experiments/reset_wind_interpose_stage5_pilot_20261105/`、`scripts/analyze_reset_pose_prepost.py`；仅单场、不证明完整物理重放 |

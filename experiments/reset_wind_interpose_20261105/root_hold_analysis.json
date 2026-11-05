@@ -1,0 +1,175 @@
+{
+  "seed123_repeat1": {
+    "status": "observed",
+    "service_success": true,
+    "hold_counts": [
+      22
+    ],
+    "bridge_poses": [
+      {
+        "mono_ns": 215827933550613,
+        "values": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "posthoc_pose_count": 171,
+    "posthoc_position_z_m": {
+      "first": 0.3086946904659271,
+      "last": 0.3086946904659271,
+      "min": 0.3086946904659271,
+      "max": 0.3086946904659271
+    }
+  },
+  "seed123_repeat2": {
+    "status": "observed",
+    "service_success": true,
+    "hold_counts": [
+      22
+    ],
+    "bridge_poses": [
+      {
+        "mono_ns": 215853361488835,
+        "values": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "posthoc_pose_count": 172,
+    "posthoc_position_z_m": {
+      "first": 0.3086946904659271,
+      "last": 0.3086946904659271,
+      "min": 0.3086946904659271,
+      "max": 0.3086946904659271
+    }
+  },
+  "seed456_repeat1": {
+    "status": "observed",
+    "service_success": true,
+    "hold_counts": [
+      22
+    ],
+    "bridge_poses": [
+      {
+        "mono_ns": 215878791568337,
+        "values": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "posthoc_pose_count": 171,
+    "posthoc_position_z_m": {
+      "first": 0.308685302734375,
+      "last": 0.308685302734375,
+      "min": 0.308685302734375,
+      "max": 0.308685302734375
+    }
+  },
+  "seed456_repeat2": {
+    "status": "observed",
+    "service_success": true,
+    "hold_counts": [
+      22
+    ],
+    "bridge_poses": [
+      {
+        "mono_ns": 215904231742808,
+        "values": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "posthoc_pose_count": 171,
+    "posthoc_position_z_m": {
+      "first": 0.3086758255958557,
+      "last": 0.3086758255958557,
+      "min": 0.3086758255958557,
+      "max": 0.3086758255958557
+    }
+  },
+  "seed2026_repeat1": {
+    "status": "observed",
+    "service_success": true,
+    "hold_counts": [
+      22
+    ],
+    "bridge_poses": [
+      {
+        "mono_ns": 215929667628081,
+        "values": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "posthoc_pose_count": 172,
+    "posthoc_position_z_m": {
+      "first": 0.30858761072158813,
+      "last": 0.30858761072158813,
+      "min": 0.30858761072158813,
+      "max": 0.30858761072158813
+    }
+  },
+  "seed2026_repeat2": {
+    "status": "observed",
+    "service_success": true,
+    "hold_counts": [
+      22
+    ],
+    "bridge_poses": [
+      {
+        "mono_ns": 215955099834661,
+        "values": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "posthoc_pose_count": 171,
+    "posthoc_position_z_m": {
+      "first": 0.3085774779319763,
+      "last": 0.3085774779319763,
+      "min": 0.3085774779319763,
+      "max": 0.3085774779319763
+    }
+  },
+  "_limitations": [
+    "root world z is overwritten during the ROS reset callback, affecting the physical scene and pose check",
+    "posthoc debug pose is not used for control and is not an independent physics validation",
+    "a true ROS response and matching spawn submissions do not establish complete scene or dynamics replay"
+  ]
+}

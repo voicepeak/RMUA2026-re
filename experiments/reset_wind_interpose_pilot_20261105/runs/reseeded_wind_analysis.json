@@ -1,0 +1,38 @@
+{
+  "experiment_scope": "GDB mutates stage arguments, forces root z=0 during reset; LD_PRELOAD interposes rand and reseeds before second wind generation; diagnostic only",
+  "model_sha256": "62a4124c1a24ebcf992f23f397d8d0ba3cff7054ec8af580664305346c3ff9b6",
+  "libc": [
+    "glibc",
+    "2.35"
+  ],
+  "parameters": [
+    200,
+    350,
+    2,
+    1.5
+  ],
+  "runs": {
+    "seed123_repeat1": {
+      "status": "observed",
+      "reset_response_success": true,
+      "reseed_markers": [
+        123
+      ],
+      "observed_counts": [
+        35,
+        35
+      ],
+      "expected_sha256": "d2ad79ebe9b78a9c5321f627ccd0e6b35dd02aa0d694eb3aceadd5ee5eee20cf",
+      "phase_exact": [
+        true,
+        true
+      ]
+    }
+  },
+  "limitations": [
+    "reseed and root hold are diagnostic interventions, not native reset semantics",
+    "wind and submission bytes do not prove physics, vehicle or full scene replay",
+    "matching outputs cannot exclude unobserved equivalent random-state operations",
+    "model uses host libc and float32 semantics"
+  ]
+}

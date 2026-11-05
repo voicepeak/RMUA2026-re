@@ -1,0 +1,3 @@
+# Failed debugger reseed attempt
+
+The begin/rejoin markers do not prove `srand` ran. The independently instrumented retry in `experiments/reset_rng_trace_pilot_20261105/` saw no executable `srand` PLT entry between these markers and its first 12 traced `rand` outputs match positions 55–66 of the uninterrupted seed-123 stream. The generator ran during the attempted debugger jump; resulting wind data and stack manipulation are not a valid reseed or replay. Keep this sample only for diagnosis. The run's `observed` status checks the runner's original narrow conditions and must not be interpreted as successful wind replay.

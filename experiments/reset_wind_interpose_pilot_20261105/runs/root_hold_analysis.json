@@ -1,0 +1,35 @@
+{
+  "seed123_repeat1": {
+    "status": "observed",
+    "service_success": true,
+    "hold_counts": [
+      22
+    ],
+    "bridge_poses": [
+      {
+        "mono_ns": 215758930923379,
+        "values": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "posthoc_pose_count": 171,
+    "posthoc_position_z_m": {
+      "first": 0.3086470663547516,
+      "last": 0.3086470663547516,
+      "min": 0.3086470663547516,
+      "max": 0.3086470663547516
+    }
+  },
+  "_limitations": [
+    "root world z is overwritten during the ROS reset callback, affecting the physical scene and pose check",
+    "posthoc debug pose is not used for control and is not an independent physics validation",
+    "a true ROS response and matching spawn submissions do not establish complete scene or dynamics replay"
+  ]
+}

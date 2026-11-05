@@ -1,0 +1,14 @@
+{
+  "source_sha256": "51577c80841d00a1a364b24b90ad980a416c73f540497e9b81687f50eb43eb25",
+  "shared_object_sha256": "8473685b180c9862221d3a3273e140ffa8015b1d0fc346a7cfef16bdb4b98277",
+  "image_id": "sha256:cd46a48cd28c2a9c6345f60227fd1bd50e78c67ef1e98dcddc0e65893771da57",
+  "compile_command": "gcc -shared -fPIC -O2 /analysis/scripts/wind_reseed_interposer.c -ldl -pthread -o /analysis/experiments/reset_wind_interpose_pilot_20261105/libwind_reseed.so",
+  "first_duration_caller": "0x2fb248f",
+  "selection_caller": "0x2fb253e",
+  "trigger": "after a selection-site draw has occurred, reseed once before the next duration-site draw",
+  "limitations": [
+    "depends on the exact non-PIE executable and glibc interposition",
+    "serializes calls through a mutex and may alter scheduling",
+    "overwrites global libc random state and is a diagnostic intervention"
+  ]
+}

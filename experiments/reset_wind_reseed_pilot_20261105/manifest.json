@@ -1,0 +1,42 @@
+{
+  "binary_sha256": "5231addfa25ddaa9e4473ea9ac40c9c0bc685174e69cd14bb49159f443b97800",
+  "settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+  "image_id": "sha256:cd46a48cd28c2a9c6345f60227fd1bd50e78c67ef1e98dcddc0e65893771da57",
+  "gdb_script_sha256": "3156dee230016366f38be64eefdc624e5568dd9df98b1e8ae89100fffee83e4b",
+  "runner_sha256": "4416bc6fd8e0a7c52e04f04aaa4443ace56349b90f6ba96c90b39a825842bed3",
+  "mode": "nullrhi",
+  "map": "default Lobby -> OL1",
+  "seeds": [
+    123
+  ],
+  "repeats": 1,
+  "stage_coverage": "GDB mutates stage arguments, forces root z=0 during reset, and invokes srand(seed) before second wind generation; diagnostic only",
+  "injected_stage": 4,
+  "runs": [
+    {
+      "seed": 123,
+      "repeat": 1,
+      "port": 13630,
+      "container": "rmua-trace-7fe4c80b11a3",
+      "start_wall": 1793879379.779539,
+      "status": "observed",
+      "id": "97400e3b451f3c3dafffac43f55a6bcb25bff3d1976945af84f6d97d84dbabbb",
+      "ready_wall": 1793879388.5871692,
+      "before_reset_exit_code": 124,
+      "reset_exit_code": 0,
+      "reset_response_success": true,
+      "after_reset_exit_code": 124,
+      "imu_after_exit_code": 124,
+      "pose_posthoc_after_exit_code": 124,
+      "injection_observed": true,
+      "wind_generation_observed": true,
+      "line_generation_observed": true,
+      "root_hold_observed": true,
+      "root_hold_ended": true,
+      "bridge_pose_observed": true,
+      "wind_reseed_begin_observed": true,
+      "wind_reseed_rejoin_observed": true,
+      "end_wall": 1793879405.2046125
+    }
+  ]
+}
