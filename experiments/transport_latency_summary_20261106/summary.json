@@ -1,0 +1,45 @@
+{
+  "source": [
+    "experiments/transport_matrix_20261105/summary.json",
+    "experiments/transport_control_comparison_20261105/summary.json",
+    "experiments/transport_probe_container_pilot_20261105/transport_analysis.json"
+  ],
+  "metrics": {
+    "imu_publish_to_subscriber": {
+      "runs": 6,
+      "p99_min_ms": 0.324471,
+      "p99_max_ms": 0.384521,
+      "median_min_ms": 0.214739,
+      "median_max_ms": 0.235434
+    },
+    "lidar_publish_to_subscriber": {
+      "runs": 6,
+      "p99_min_ms": 0.561234,
+      "p99_max_ms": 0.654951,
+      "median_min_ms": 0.444822,
+      "median_max_ms": 0.468302
+    },
+    "pwm_publish_to_subscriber": {
+      "runs": 6,
+      "p99_min_ms": 0.241006,
+      "p99_max_ms": 0.335402,
+      "median_min_ms": 0.141338,
+      "median_max_ms": 0.162168
+    },
+    "pwm_command_send_return_to_sim_callback": {
+      "runs": 6,
+      "p99_min_ms": 0.337548,
+      "p99_max_ms": 0.430503,
+      "median_min_ms": 0.229584,
+      "median_max_ms": 0.269573
+    }
+  },
+  "phase_observation": "six probe runs: first matched callback-to-debug-PWM-publish 15.63-62.20 ms over five non-initial transitions; three no-preload controls 29.22-61.34 ms from sender return to first matched output",
+  "limitations": [
+    "LD_PRELOAD hooks and observer change scheduling",
+    "header timestamps do not equal physical sampling times",
+    "no physical sensor acquisition, motor dynamics or actuator latency",
+    "command-send-return time is not full publish-to-subscribe latency",
+    "NullRHI, one host and fixed action sequence"
+  ]
+}
