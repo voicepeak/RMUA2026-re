@@ -1,0 +1,358 @@
+{
+  "seed123_repeat1": {
+    "fixture_selector": 0,
+    "fixture_component": "0x7fffdcc1e830",
+    "fixture_return_index": 7,
+    "release_state": 7,
+    "release_mono_ns": 237731471766883,
+    "all_event_pairs": 27,
+    "unmatched_callbacks": 0,
+    "post_release_fixture_pairs": 23,
+    "fixture_callback_to_state_write_links": [
+      {
+        "hit": {
+          "alloc_ns": 237734125997915,
+          "callback_ns": 237734127896523,
+          "allocation_tid": 129,
+          "callback_tid": 129,
+          "actor": "0x7fffdd44cb80",
+          "component": "0x7fffdcc1e830",
+          "candidate_index": 7,
+          "event": "0x7fffe52599b0",
+          "fixture_component_and_index_match": true
+        },
+        "following_same_thread_write": {
+          "mono_ns": 237734130413426,
+          "tid": 129,
+          "released": true,
+          "state": "0x7ffdef2f4780",
+          "current": 12,
+          "previous": 7
+        }
+      }
+    ],
+    "post_release_state_writes": [
+      {
+        "mono_ns": 237734130413426,
+        "tid": 129,
+        "released": true,
+        "state": "0x7ffdef2f4780",
+        "current": 12,
+        "previous": 7
+      }
+    ],
+    "passive_samples": [
+      {
+        "mono_ns": 237731519753415,
+        "value": 7
+      },
+      {
+        "mono_ns": 237731719849014,
+        "value": 7
+      },
+      {
+        "mono_ns": 237731921456437,
+        "value": 7
+      },
+      {
+        "mono_ns": 237732169865543,
+        "value": 7
+      },
+      {
+        "mono_ns": 237732371848123,
+        "value": 7
+      },
+      {
+        "mono_ns": 237732619839083,
+        "value": 7
+      },
+      {
+        "mono_ns": 237732821536086,
+        "value": 7
+      },
+      {
+        "mono_ns": 237733069536259,
+        "value": 7
+      },
+      {
+        "mono_ns": 237733271578515,
+        "value": 7
+      },
+      {
+        "mono_ns": 237733520246008,
+        "value": 7
+      },
+      {
+        "mono_ns": 237733721919472,
+        "value": 7
+      },
+      {
+        "mono_ns": 237733970099453,
+        "value": 7
+      },
+      {
+        "mono_ns": 237734180076195,
+        "value": 12
+      },
+      {
+        "mono_ns": 237734426225687,
+        "value": 12
+      },
+      {
+        "mono_ns": 237734627901108,
+        "value": 12
+      },
+      {
+        "mono_ns": 237734876245851,
+        "value": 12
+      },
+      {
+        "mono_ns": 237735077561053,
+        "value": 12
+      },
+      {
+        "mono_ns": 237735319956598,
+        "value": 12
+      },
+      {
+        "mono_ns": 237735522121234,
+        "value": 12
+      },
+      {
+        "mono_ns": 237735770018831,
+        "value": 12
+      },
+      {
+        "mono_ns": 237735970031787,
+        "value": 12
+      },
+      {
+        "mono_ns": 237736170202539,
+        "value": 12
+      },
+      {
+        "mono_ns": 237736376085391,
+        "value": 12
+      },
+      {
+        "mono_ns": 237736620043532,
+        "value": 12
+      },
+      {
+        "mono_ns": 237736821976341,
+        "value": 12
+      },
+      {
+        "mono_ns": 237737069765451,
+        "value": 12
+      },
+      {
+        "mono_ns": 237737272131082,
+        "value": 12
+      },
+      {
+        "mono_ns": 237737520235603,
+        "value": 12
+      },
+      {
+        "mono_ns": 237737721898931,
+        "value": 12
+      },
+      {
+        "mono_ns": 237737969995771,
+        "value": 12
+      },
+      {
+        "mono_ns": 237738172092976,
+        "value": 12
+      },
+      {
+        "mono_ns": 237738419866012,
+        "value": 12
+      },
+      {
+        "mono_ns": 237738621974997,
+        "value": 12
+      },
+      {
+        "mono_ns": 237738869805719,
+        "value": 12
+      },
+      {
+        "mono_ns": 237739072027593,
+        "value": 12
+      },
+      {
+        "mono_ns": 237739319921919,
+        "value": 12
+      },
+      {
+        "mono_ns": 237739522025612,
+        "value": 12
+      },
+      {
+        "mono_ns": 237739769737402,
+        "value": 12
+      },
+      {
+        "mono_ns": 237739972048865,
+        "value": 12
+      },
+      {
+        "mono_ns": 237740219855444,
+        "value": 12
+      },
+      {
+        "mono_ns": 237740421953520,
+        "value": 12
+      },
+      {
+        "mono_ns": 237740670067759,
+        "value": 12
+      },
+      {
+        "mono_ns": 237740872092572,
+        "value": 12
+      },
+      {
+        "mono_ns": 237741119881789,
+        "value": 12
+      },
+      {
+        "mono_ns": 237741322279903,
+        "value": 12
+      },
+      {
+        "mono_ns": 237741569829534,
+        "value": 12
+      },
+      {
+        "mono_ns": 237741771871991,
+        "value": 12
+      },
+      {
+        "mono_ns": 237742019945325,
+        "value": 12
+      },
+      {
+        "mono_ns": 237742222065046,
+        "value": 12
+      },
+      {
+        "mono_ns": 237742469845530,
+        "value": 12
+      },
+      {
+        "mono_ns": 237742671940503,
+        "value": 12
+      },
+      {
+        "mono_ns": 237742919783083,
+        "value": 12
+      },
+      {
+        "mono_ns": 237743121978620,
+        "value": 12
+      },
+      {
+        "mono_ns": 237743369978166,
+        "value": 12
+      },
+      {
+        "mono_ns": 237743571877982,
+        "value": 12
+      },
+      {
+        "mono_ns": 237743819848214,
+        "value": 12
+      },
+      {
+        "mono_ns": 237744022097036,
+        "value": 12
+      },
+      {
+        "mono_ns": 237744269930356,
+        "value": 12
+      },
+      {
+        "mono_ns": 237744472011612,
+        "value": 12
+      },
+      {
+        "mono_ns": 237744719766714,
+        "value": 12
+      },
+      {
+        "mono_ns": 237744920534941,
+        "value": 12
+      },
+      {
+        "mono_ns": 237745169802929,
+        "value": 12
+      },
+      {
+        "mono_ns": 237745370504343,
+        "value": 12
+      },
+      {
+        "mono_ns": 237745619917588,
+        "value": 12
+      },
+      {
+        "mono_ns": 237745820839110,
+        "value": 12
+      },
+      {
+        "mono_ns": 237746069845277,
+        "value": 12
+      },
+      {
+        "mono_ns": 237746270664474,
+        "value": 12
+      },
+      {
+        "mono_ns": 237746520012253,
+        "value": 12
+      },
+      {
+        "mono_ns": 237746720469800,
+        "value": 12
+      },
+      {
+        "mono_ns": 237746970400863,
+        "value": 12
+      },
+      {
+        "mono_ns": 237747170561636,
+        "value": 12
+      },
+      {
+        "mono_ns": 237747419745770,
+        "value": 12
+      },
+      {
+        "mono_ns": 237747620577016,
+        "value": 12
+      },
+      {
+        "mono_ns": 237747869944456,
+        "value": 12
+      },
+      {
+        "mono_ns": 237748071072979,
+        "value": 12
+      }
+    ],
+    "terminal_sample_span_s": 13.890996784,
+    "terminal_samples": 63,
+    "values_after_first_terminal": [
+      12
+    ],
+    "limitations": [
+      "candidate index at hit-result offset 0x58 is inferred; independent metadata unavailable",
+      "force release and action timing use prior posthoc observations; stage and fixture are injected",
+      "pointer and same-thread order are scoped observational evidence, not proof of force or full episode termination",
+      "passive sampling is discontinuous and GDB changes execution timing"
+    ]
+  }
+}

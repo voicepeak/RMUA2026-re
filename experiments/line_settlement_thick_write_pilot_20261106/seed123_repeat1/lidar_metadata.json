@@ -1,0 +1,35 @@
+{
+  "arrival_wall_ns": 1793901541759983914,
+  "arrival_monotonic_ns": 237687404942732,
+  "header_stamp_ns": 1793901541704647541,
+  "frame_id": "lidar",
+  "seq": 11,
+  "height": 1,
+  "width": 15748,
+  "is_bigendian": false,
+  "point_step": 12,
+  "row_step": 188976,
+  "is_dense": true,
+  "fields": [
+    {
+      "name": "x",
+      "offset": 0,
+      "datatype": 7,
+      "count": 1
+    },
+    {
+      "name": "y",
+      "offset": 4,
+      "datatype": 7,
+      "count": 1
+    },
+    {
+      "name": "z",
+      "offset": 8,
+      "datatype": 7,
+      "count": 1
+    }
+  ],
+  "payload_bytes": 188976,
+  "payload_sha256": "b06bcbfdbe415cd6b41e23852df3c91d7467c65009b9f3d6c4da9cadeeac3052"
+}

@@ -1,0 +1,189 @@
+{
+  "runs": [
+    {
+      "evidence": "experiments/line_settlement_thick_pilot_20261106",
+      "status": "observed",
+      "matched_fixture_links": [
+        {
+          "hit": {
+            "alloc_ns": 237633729099833,
+            "callback_ns": 237633730837014,
+            "allocation_tid": 128,
+            "callback_tid": 128,
+            "actor": "0x7fffdd47d280",
+            "component": "0x7fffdcc03990",
+            "candidate_index": 7,
+            "event": "0x7fffe525a9f0",
+            "fixture_component_and_index_match": true
+          },
+          "state_write": {
+            "mono_ns": 237633732792335,
+            "tid": 128,
+            "released": true,
+            "state": "0x7ffdeebd4780",
+            "current": 12,
+            "previous": 7
+          },
+          "entry": {
+            "mono_ns": 237633732211474,
+            "tid": 128,
+            "state": "0x7ffdeebd4780",
+            "flag": "0",
+            "config": "0x7fffdd47d280",
+            "score": "0",
+            "current": "7",
+            "previous": "7",
+            "label": "Finished",
+            "kind": "ENTRY"
+          },
+          "text_pointer_writes": [],
+          "returns": [
+            {
+              "mono_ns": 237633733148887,
+              "tid": 128,
+              "state": "0x7ffdeebd4780",
+              "flag": "0",
+              "config": "0x7fffdd47d280",
+              "score": "0",
+              "current": "12",
+              "previous": "7",
+              "label": "Finished",
+              "kind": "RETURN"
+            }
+          ]
+        }
+      ],
+      "out_of_scope_count": 0
+    },
+    {
+      "evidence": "experiments/line_settlement_thick_write_pilot_20261106",
+      "status": "observed",
+      "matched_fixture_links": [
+        {
+          "hit": {
+            "alloc_ns": 237699081725663,
+            "callback_ns": 237699083711138,
+            "allocation_tid": 128,
+            "callback_tid": 128,
+            "actor": "0x7fffdd61cb80",
+            "component": "0x7fffdcc06930",
+            "candidate_index": 7,
+            "event": "0x7fffe5239650",
+            "fixture_component_and_index_match": true
+          },
+          "state_write": {
+            "mono_ns": 237699086108980,
+            "tid": 128,
+            "released": true,
+            "state": "0x7ffdf08c4780",
+            "current": 12,
+            "previous": 7
+          },
+          "entry": {
+            "mono_ns": 237699085380287,
+            "tid": 128,
+            "state": "0x7ffdf08c4780",
+            "flag": "0",
+            "config": "0x7fffdd61cb80",
+            "score": "0",
+            "current": "7",
+            "previous": "7",
+            "label": "Finished",
+            "kind": "ENTRY"
+          },
+          "text_pointer_writes": [
+            {
+              "mono_ns": 237699086776749,
+              "tid": 128,
+              "state": "0x7ffdf08c4780",
+              "config": "0x7fffdd61cb80",
+              "ptr": "0x7fffdce738c0",
+              "label": "Finished",
+              "kind": "TEXT_POINTER_WRITTEN"
+            }
+          ],
+          "returns": [
+            {
+              "mono_ns": 237699087481197,
+              "tid": 128,
+              "state": "0x7ffdf08c4780",
+              "flag": "0",
+              "config": "0x7fffdd61cb80",
+              "score": "0",
+              "current": "12",
+              "previous": "7",
+              "label": "Finished",
+              "kind": "RETURN"
+            }
+          ]
+        }
+      ],
+      "out_of_scope_count": 0
+    },
+    {
+      "evidence": "experiments/line_settlement_thin_write_pilot_20261106",
+      "status": "observed",
+      "matched_fixture_links": [
+        {
+          "hit": {
+            "alloc_ns": 237734125997915,
+            "callback_ns": 237734127896523,
+            "allocation_tid": 129,
+            "callback_tid": 129,
+            "actor": "0x7fffdd44cb80",
+            "component": "0x7fffdcc1e830",
+            "candidate_index": 7,
+            "event": "0x7fffe52599b0",
+            "fixture_component_and_index_match": true
+          },
+          "state_write": {
+            "mono_ns": 237734130413426,
+            "tid": 129,
+            "released": true,
+            "state": "0x7ffdef2f4780",
+            "current": 12,
+            "previous": 7
+          },
+          "entry": {
+            "mono_ns": 237734129602169,
+            "tid": 129,
+            "state": "0x7ffdef2f4780",
+            "flag": "0",
+            "config": "0x7fffdd44cb80",
+            "score": "0",
+            "current": "7",
+            "previous": "7",
+            "label": "Finished",
+            "kind": "ENTRY"
+          },
+          "text_pointer_writes": [
+            {
+              "mono_ns": 237734131034651,
+              "tid": 129,
+              "state": "0x7ffdef2f4780",
+              "config": "0x7fffdd44cb80",
+              "ptr": "0x7ffdef605e80",
+              "label": "Finished",
+              "kind": "TEXT_POINTER_WRITTEN"
+            }
+          ],
+          "returns": [
+            {
+              "mono_ns": 237734131609357,
+              "tid": 129,
+              "state": "0x7ffdef2f4780",
+              "flag": "0",
+              "config": "0x7fffdd44cb80",
+              "score": "0",
+              "current": "12",
+              "previous": "7",
+              "label": "Finished",
+              "kind": "RETURN"
+            }
+          ]
+        }
+      ],
+      "out_of_scope_count": 0
+    }
+  ]
+}

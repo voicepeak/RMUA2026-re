@@ -1,0 +1,106 @@
+{
+  "seed123_repeat1": {
+    "run_status": "observed",
+    "matched_fixture_links": [
+      {
+        "hit": {
+          "alloc_ns": 237734125997915,
+          "callback_ns": 237734127896523,
+          "allocation_tid": 129,
+          "callback_tid": 129,
+          "actor": "0x7fffdd44cb80",
+          "component": "0x7fffdcc1e830",
+          "candidate_index": 7,
+          "event": "0x7fffe52599b0",
+          "fixture_component_and_index_match": true
+        },
+        "state_write": {
+          "mono_ns": 237734130413426,
+          "tid": 129,
+          "released": true,
+          "state": "0x7ffdef2f4780",
+          "current": 12,
+          "previous": 7
+        },
+        "entry": {
+          "mono_ns": 237734129602169,
+          "tid": 129,
+          "state": "0x7ffdef2f4780",
+          "flag": "0",
+          "config": "0x7fffdd44cb80",
+          "score": "0",
+          "current": "7",
+          "previous": "7",
+          "label": "Finished",
+          "kind": "ENTRY"
+        },
+        "text_pointer_writes": [
+          {
+            "mono_ns": 237734131034651,
+            "tid": 129,
+            "state": "0x7ffdef2f4780",
+            "config": "0x7fffdd44cb80",
+            "ptr": "0x7ffdef605e80",
+            "label": "Finished",
+            "kind": "TEXT_POINTER_WRITTEN"
+          }
+        ],
+        "returns": [
+          {
+            "mono_ns": 237734131609357,
+            "tid": 129,
+            "state": "0x7ffdef2f4780",
+            "flag": "0",
+            "config": "0x7fffdd44cb80",
+            "score": "0",
+            "current": "12",
+            "previous": "7",
+            "label": "Finished",
+            "kind": "RETURN"
+          }
+        ]
+      }
+    ],
+    "all_settlement_records": [
+      {
+        "mono_ns": 237734129602169,
+        "tid": 129,
+        "state": "0x7ffdef2f4780",
+        "flag": "0",
+        "config": "0x7fffdd44cb80",
+        "score": "0",
+        "current": "7",
+        "previous": "7",
+        "label": "Finished",
+        "kind": "ENTRY"
+      },
+      {
+        "mono_ns": 237734131034651,
+        "tid": 129,
+        "state": "0x7ffdef2f4780",
+        "config": "0x7fffdd44cb80",
+        "ptr": "0x7ffdef605e80",
+        "label": "Finished",
+        "kind": "TEXT_POINTER_WRITTEN"
+      },
+      {
+        "mono_ns": 237734131609357,
+        "tid": 129,
+        "state": "0x7ffdef2f4780",
+        "flag": "0",
+        "config": "0x7fffdd44cb80",
+        "score": "0",
+        "current": "12",
+        "previous": "7",
+        "label": "Finished",
+        "kind": "RETURN"
+      }
+    ],
+    "out_of_scope_count": 0,
+    "limitations": [
+      "Fixture and initial state are debugger-injected; timing uses previous posthoc truth.",
+      "The event index is inferred; same-thread ordering is not a force measurement.",
+      "The setter return and text pointer write do not prove complete score reporting or episode termination."
+    ]
+  }
+}
