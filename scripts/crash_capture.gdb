@@ -8,8 +8,14 @@ run
 printf "\nRMUA_GDB_STOP: signal or process exit; inspect reason above\n"
 info program
 info registers
-x/8i $pc-12
-bt 40
+printf "\nSTACK_POINTER_DUMP:\n"
+x/16gx $rsp
+if $pc != 0
+  x/8i $pc-12
+  bt 40
+else
+  printf "\nPC_IS_NULL: indirect call through address 0; backtrace unavailable\n"
+end
 info threads
 thread apply all bt 12
 printf "\nRMUA_26B6223_EFFECTIVE_ADDRESS_IF_THIS_IS_THE_FAULT_PC: "

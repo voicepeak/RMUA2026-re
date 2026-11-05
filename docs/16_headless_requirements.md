@@ -294,7 +294,7 @@ ROS 传输路径取得首场函数级定时：容器内编译的 LD_PRELOAD 钩�
 
 ## 2026-11-06 并发上限、reset 与地图补充
 
-固定 PWM 发布 + 每路 IMU/LiDAR 订阅的同一负载下：4 实例两轮各完成约 300.00–300.02 秒重叠并清理；6 实例（seed 123/456/2026/789/1001/1002）首场在容器启动约 32.2 秒、seed 123 退出 139；8 实例（seed 123/456/2026/789/1001/1002/1003/2024）首场在容器启动约 11.1 秒、seed 2026 退出 139。两次均非 OOM，引擎日志的 SIGSEGV 都在 `0x2fbda42` 读取空地址，栈含 `0x2e31691`、`0x2fb979e`、`0x5e54336`、`0x2fbd8e1`；这与先前频率 deque 栈不同，说明至少存在两个故障现场。由此本机当前训练规格保守取 **4 实例**；不能据此证明永久上限或单一根因，6/8 实例失败仍须按实际负载复验。见 `experiments/concurrency_pwm_failure_summary_20261106/summary.json`、`experiments/concurrency_6_pwm_300s_20261106/`、`experiments/concurrency_8_pwm_180s_20261106/`。
+固定 PWM 发布 + 每路 IMU/LiDAR 订阅的同一负载下：4 实例两轮各完成约 300.00–300.02 秒重叠并清理；6 实例（seed 123/456/2026/789/1001/1002）首场在容器启动约 32.2 秒、seed 123 退出 139；8 实例（seed 123/456/2026/789/1001/1002/1003/2024）首场在容器启动约 11.1 秒、seed 2026 退出 139。两次均非 OOM，引擎日志的 SIGSEGV 都在 `0x2fbda42` 读取空地址，栈含 `0x2e31691`、`0x2fb979e`、`0x5e54336`、`0x2fbd8e1`；这与先前频率 deque 栈不同，说明至少存在两个故障现场。GDB 附着的 8 实例同负载追加场在容器寿命约 13.9–15.3 秒内同时出现两个故障：seed 789 在 `0x26b6223` 以 `r12=-1,r13=0` 读取地址 7（先前频率/记录路径现场），seed 1002 以 `rip=0,r12=0` 空函数指针调用崩溃。由此本机当前训练规格保守取 **4 实例**；不能据此证明永久上限或单一根因，6/8 实例失败仍须按实际负载复验。见 `experiments/concurrency_pwm_failure_summary_20261106/summary.json`、`experiments/concurrency_6_pwm_300s_20261106/`、`experiments/concurrency_8_pwm_180s_20261106/`。
 
 reset 原生成功仍未建立：seed 123、stage 4 注入场用固定 rotor PWM 0.3 持续 2.5 秒使 API/事后真值 z 从约 0.309 m 变到约 -4.82 m，但 reset 检查读取的组件最后仍为 `-37.9076614 cm`，服务返回 false；另一场固定速度抬升也未改变该组件值。检查所读组件不随这次物理运动变化，而受控 root-height 写入可使其通过，因此现有成功 reset 仍是诊断干预，不能当作原生 reset 或完整物理重放。见 `experiments/reset_native_component_20261106/analysis.json`。
 

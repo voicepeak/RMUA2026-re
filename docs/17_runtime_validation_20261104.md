@@ -448,3 +448,5 @@ ROS 传输路径取得首场函数级定时：容器内编译的 LD_PRELOAD 钩�
 6/8 实例固定 PWM 负载失败：同一 `rmua/re-probe:20261104`、相同二进制/settings，6 实例 seed 123 在容器启动约 32.2 s 退出 139，8 实例 seed 2026 在约 11.1 s 退出 139，均非 OOM；引擎日志 SIGSEGV 在 `0x2fbda42` 读取地址 0，栈含 `0x2e31691`、`0x2fb979e`、`0x5e54336`、`0x2fbd8e1`。4 实例同一负载两轮各约 300 s 完成。该差异支持当前训练规格保守取 4 实例；6/8 各只有一次失败，不能给出统计概率或单一根因，且该栈与先前频率 deque 栈不同。见 `experiments/concurrency_pwm_failure_summary_20261106/summary.json`。
 
 额外地图门静态复核：12 张图的门间距两两差 ≤0.012 cm；每图仅用 yaw+平移拟合到 OL1 的残差 ≤0.009 cm，z 平移每图内为常数、缩放完全一致；OL2 BeginPlay 运行时 6/6 场、12/12 门匹配。门赛道几何是刚性副本，未验证门洞物理尺寸、环境资产或飞行可用性。见 `experiments/ol_gate_rigid_20261106/analysis.json` 与 `scripts/verify_gate_rigid_layout.py`。
+
+GDB 附着的 8 实例固定 PWM 追加场：相同 8 seed、镜像、二进制/settings，固定 PWM 与 IMU/LiDAR 订阅负载下，容器寿命约 13.9–15.3 秒内有两路崩溃。seed 789 在 `0x26b6223` 执行 `cmpl $0x0,0x8(%r12,%r13,1)`，`r12=-1,r13=0`，即读取地址 7；seed 1002 在 `rip=0` 处发生空函数指针调用，`r12=0,r13=0`。前者与先前频率/记录路径现场一致，后者是新的独立现场。GDB 改变调度，两个现场各只有一次捕获，不能给出概率或共同上游原因，但支持“至少两个故障现场”的结论。见 `experiments/concurrency_8_pwm_gdb_180s_20261106/`、`experiments/concurrency_pwm_failure_summary_20261106/summary.json` 和更新后的 `scripts/crash_capture.gdb`。

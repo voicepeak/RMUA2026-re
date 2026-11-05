@@ -1,0 +1,85 @@
+{
+  "manifest": "/home/tianbot/\u684c\u9762/RMUA2026-re/experiments/concurrency_8_pwm_gdb_180s_20261106/pool/pool.json",
+  "instances": [
+    {
+      "seed": 123,
+      "port": 12940,
+      "container": "rmua-re-7486b02ce3d0-0",
+      "id": "1bb1ebfb4056a96efd12a9603fc25f56ec5bd57d60f2f679ce215797c44ad5d5",
+      "docker_start_wall": 1793906083.690023,
+      "docker_created_wall": 1793906084.136949,
+      "imu_ready_observed_wall": 1793906093.7483814,
+      "startup_observed_s": 10.058358430862427
+    },
+    {
+      "seed": 456,
+      "port": 12941,
+      "container": "rmua-re-7486b02ce3d0-1",
+      "id": "f446339e76f00c3a432a690d5f6e6f2b4a67852ad452cb19f2c655d348e9b446",
+      "docker_start_wall": 1793906084.1372762,
+      "docker_created_wall": 1793906084.542278,
+      "imu_ready_observed_wall": 1793906093.7630215,
+      "startup_observed_s": 9.625745296478271
+    },
+    {
+      "seed": 2026,
+      "port": 12942,
+      "container": "rmua-re-7486b02ce3d0-2",
+      "id": "bcd526f994fda1c77d7d992ccf94740050a3919fa6a7a7ac473dfbeb60628dd6",
+      "docker_start_wall": 1793906084.5426276,
+      "docker_created_wall": 1793906084.9716372,
+      "imu_ready_observed_wall": 1793906093.8285291,
+      "startup_observed_s": 9.285901546478271
+    },
+    {
+      "seed": 789,
+      "port": 12943,
+      "container": "rmua-re-7486b02ce3d0-3",
+      "id": "8dd899e327981018cc50351c8c263f4a774580e8a9307936a0c5b521c1c85884",
+      "docker_start_wall": 1793906084.9719956,
+      "docker_created_wall": 1793906085.3872576,
+      "imu_ready_observed_wall": 1793906094.23768,
+      "startup_observed_s": 9.265684366226196
+    },
+    {
+      "seed": 1001,
+      "port": 12944,
+      "container": "rmua-re-7486b02ce3d0-4",
+      "id": "943b42c1d1eba064e5927cee37ec837877d84d62e04f12139c714de369a2517d",
+      "docker_start_wall": 1793906085.3876836,
+      "docker_created_wall": 1793906085.9021585,
+      "imu_ready_observed_wall": 1793906094.6107018,
+      "startup_observed_s": 9.223018169403076
+    },
+    {
+      "seed": 1002,
+      "port": 12945,
+      "container": "rmua-re-7486b02ce3d0-5",
+      "id": "a5eaab15602030ee68deeae406108f3d611422506042f7ccae1eed5a4bce17ee",
+      "docker_start_wall": 1793906085.9025507,
+      "docker_created_wall": 1793906086.3148744,
+      "imu_ready_observed_wall": 1793906095.1186533,
+      "startup_observed_s": 9.216102600097656
+    },
+    {
+      "seed": 1003,
+      "port": 12946,
+      "container": "rmua-re-7486b02ce3d0-6",
+      "id": "62da0b4cdb6d54e8b3ce3c5708ee16f71ca8373a6e722339cb19e95b77459cb9",
+      "docker_start_wall": 1793906086.315298,
+      "docker_created_wall": 1793906086.7401474,
+      "imu_ready_observed_wall": 1793906095.3772836,
+      "startup_observed_s": 9.061985492706299
+    },
+    {
+      "seed": 2024,
+      "port": 12947,
+      "container": "rmua-re-7486b02ce3d0-7",
+      "id": "d1ec89657c18f68478eee0994e3d8fd8ef92517703e5e574c45bfcdd3ad2c170",
+      "docker_start_wall": 1793906086.7406955,
+      "docker_created_wall": 1793906087.1413217,
+      "imu_ready_observed_wall": 1793906096.0812078,
+      "startup_observed_s": 9.3405122756958
+    }
+  ]
+}

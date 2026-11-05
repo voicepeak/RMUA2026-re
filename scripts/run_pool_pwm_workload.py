@@ -8,12 +8,14 @@ p.add_argument('--simulator',type=Path,required=True);p.add_argument('--settings
 p.add_argument('--seeds',required=True);p.add_argument('--output',type=Path,required=True)
 p.add_argument('--port',type=int,default=12700);p.add_argument('--seconds',type=float,default=300)
 p.add_argument('--image',default='rmua/re-probe:20261104');p.add_argument('--display',default=':1')
+p.add_argument('--gdb-crash',action='store_true',help='attach the crash-capture debugger to each simulator')
 a=p.parse_args()
 if not 6<=a.seconds<=590:p.error('duration must be 6..590 seconds')
 seeds=[int(x) for x in a.seeds.split(',')]
 if not 1<=len(seeds)<=8 or any(x<0 for x in seeds):p.error('provide one to eight nonnegative seeds')
 out=a.output.resolve();out.mkdir(parents=True,exist_ok=False)
 manifest=out/'pool'/'pool.json';state={'status':'starting','seeds':seeds,'requested_workload_s':a.seconds,
+ 'gdb_crash':a.gdb_crash,
  'limitations':['fixed open-loop PWM is a synthetic workload, not a complete flight or training task',
                 'observer and publisher processes add load; topic reception and applied PWM require independent validation',
                 'nullrhi camera and episode reset are not validated']}
@@ -22,6 +24,7 @@ save();actions=[];streams=[];observer=None;pool_started=False
 try:
  start=[sys.executable,str(ROOT/'scripts/headless_pool.py'),'start','--simulator',str(a.simulator),'--settings',str(a.settings),
   '--seeds',a.seeds,'--port',str(a.port),'--output',str(out/'pool'),'--display',a.display,'--image',a.image,'--timeout','90']
+ if a.gdb_crash: start.extend(['--gdb-crash'])
  with (out/'start.log').open('w') as f: result=subprocess.run(start,stdout=f,stderr=subprocess.STDOUT)
  state['start_exit_code']=result.returncode
  if result.returncode:raise RuntimeError('pool startup failed; inspect start.log and manifest')

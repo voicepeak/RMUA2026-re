@@ -60,10 +60,59 @@
     "seven_instances_prior_failure": {
       "dir": "experiments/concurrency_7_subscribed_300s_20261105",
       "status": "seed 789 exit 139 about 9 s after all IMU ready; no stack"
+    },
+    "eight_instances_fixed_pwm_gdb": {
+      "base": "experiments/concurrency_8_pwm_gdb_180s_20261106",
+      "seeds": [
+        123,
+        456,
+        2026,
+        789,
+        1001,
+        1002,
+        1003,
+        2024
+      ],
+      "requested_workload_s": 180.0,
+      "crashes": [
+        {
+          "container": "rmua-re-7486b02ce3d0-3",
+          "seed": 789,
+          "exit_code": 0,
+          "oom_killed": false,
+          "container_lifetime_s": 15.25
+        },
+        {
+          "container": "rmua-re-7486b02ce3d0-5",
+          "seed": 1002,
+          "exit_code": 1,
+          "oom_killed": false,
+          "container_lifetime_s": 13.94
+        }
+      ],
+      "captured_sites": [
+        {
+          "container": "rmua-re-7486b02ce3d0-3",
+          "seed": 789,
+          "pc": "0x26b6223",
+          "registers": "r12=-1 r13=0 rbp=vtable FTaskGraphImplementation+16",
+          "instruction": "cmpl $0x0,0x8(%r12,%r13,1)",
+          "reading_address": "0x7",
+          "interpretation": "same previously identified frequency/record path site; invalid iteration pointer"
+        },
+        {
+          "container": "rmua-re-7486b02ce3d0-5",
+          "seed": 1002,
+          "pc": "0x0",
+          "registers": "rip=0 r12=0 r13=0 rbx=-60",
+          "interpretation": "call through null function pointer; distinct from the 0x26b6223 site"
+        }
+      ],
+      "interpretation": "With GDB attached, the same 8-instance fixed-PWM run lost two processes early and exposed two different fault sites: the prior 0x26b6223 invalid read and a null indirect call at rip=0. This strengthens the multi-site failure conclusion; GDB changes timing and the two crashes are single observations, so probabilities and the common upstream cause remain unknown."
     }
   },
   "common_crash_log": "Unhandled Exception: SIGSEGV at 0x2fbda42 reading address 0; stack 0x2fbda42, 0x2e31691, 0x2fb979e, 0x5e54336, 0x2fbd8e1; non-OOM",
-  "interpretation": "Under the stated host, image, NullRHI settings, fixed PWM publishers and IMU/LiDAR observers, four instances completed two 300 s runs, while one 6-instance and one 8-instance run each lost one process to SIGSEGV before the workload completed. This supports a conservative four-instance cap for this load; it does not prove a universal limit or a single root cause. Earlier failures reached the frequency deque path, while these failures reached a different game-state null read after ChangeState:0, so at least two failure sites are observed.",
+  "interpretation": "Under the stated host, image, NullRHI settings, fixed PWM publishers and IMU/LiDAR observers, four instances completed two 300 s runs, while one 6-instance and one 8-instance run each lost one process to SIGSEGV before the workload completed. This supports a conservative four-instance cap for this load; it does not prove a universal limit or a single root cause. Earlier failures reached the frequency deque path, while these failures reached a different game-state null read after ChangeState:0, so at least two failure sites are observed. The GDB-attached 8-instance follow-up reproduced the 0x26b6223 site and also a null indirect call at rip=0 in the same run, so at least two distinct crash sites are now observed.",
   "limitations": [
     "one failed run per 6/8 condition",
     "workload is synthetic fixed PWM, not a full training task",
