@@ -1,0 +1,125 @@
+{
+  "seed123_repeat1": {
+    "phases": [
+      {
+        "command": 0.0,
+        "snapshots": {
+          "dispatch": 5,
+          "scheduled": 6
+        },
+        "matching_snapshots": {
+          "dispatch": 5,
+          "scheduled": 5
+        },
+        "first_matching_offset_ms": {
+          "dispatch": 246.301813,
+          "scheduled": 427.124508
+        },
+        "other_snapshots": {
+          "dispatch": 0,
+          "scheduled": 1
+        }
+      },
+      {
+        "command": 0.2,
+        "snapshots": {
+          "dispatch": 15,
+          "scheduled": 21
+        },
+        "matching_snapshots": {
+          "dispatch": 8,
+          "scheduled": 11
+        },
+        "first_matching_offset_ms": {
+          "dispatch": 4.13068,
+          "scheduled": 5.040333
+        },
+        "other_snapshots": {
+          "dispatch": 7,
+          "scheduled": 10
+        }
+      },
+      {
+        "command": 0.3,
+        "snapshots": {
+          "dispatch": 19,
+          "scheduled": 23
+        },
+        "matching_snapshots": {
+          "dispatch": 10,
+          "scheduled": 12
+        },
+        "first_matching_offset_ms": {
+          "dispatch": 5.037759,
+          "scheduled": 6.028889
+        },
+        "other_snapshots": {
+          "dispatch": 9,
+          "scheduled": 11
+        }
+      },
+      {
+        "command": 0.4,
+        "snapshots": {
+          "dispatch": 31,
+          "scheduled": 37
+        },
+        "matching_snapshots": {
+          "dispatch": 16,
+          "scheduled": 19
+        },
+        "first_matching_offset_ms": {
+          "dispatch": 3.303729,
+          "scheduled": 4.216491
+        },
+        "other_snapshots": {
+          "dispatch": 15,
+          "scheduled": 18
+        }
+      },
+      {
+        "command": 0.2,
+        "snapshots": {
+          "dispatch": 19,
+          "scheduled": 33
+        },
+        "matching_snapshots": {
+          "dispatch": 10,
+          "scheduled": 17
+        },
+        "first_matching_offset_ms": {
+          "dispatch": 3.384763,
+          "scheduled": 14.859622
+        },
+        "other_snapshots": {
+          "dispatch": 9,
+          "scheduled": 16
+        }
+      },
+      {
+        "command": 0.0,
+        "snapshots": {
+          "dispatch": 9,
+          "scheduled": 15
+        },
+        "matching_snapshots": {
+          "dispatch": 9,
+          "scheduled": 14
+        },
+        "first_matching_offset_ms": {
+          "dispatch": 2.954244,
+          "scheduled": 3.943157
+        },
+        "other_snapshots": {
+          "dispatch": 0,
+          "scheduled": 1
+        }
+      }
+    ],
+    "limitations": "Change-only snapshots, not call counts; source and target may run on different threads. All-stop GDB perturbs scheduling. Monotonic timestamps are sampled inside the debugger and publisher, not at hardware/physical actuation. Other snapshots are raw observed words, not independently typed or attributed."
+  },
+  "seed123_repeat2": {
+    "error": "no command stream",
+    "run_status": "incomplete"
+  }
+}

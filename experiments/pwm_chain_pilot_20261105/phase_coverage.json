@@ -1,0 +1,109 @@
+{
+  "seed123_repeat1": {
+    "phases": [
+      {
+        "command": 0.0,
+        "start_header_ns": 1793865004642424583,
+        "end_header_ns": 1793865005652945518,
+        "output_samples": 101,
+        "matching_samples": 68,
+        "most_common_outputs": [
+          [
+            0.0,
+            68
+          ],
+          [
+            0.0073,
+            33
+          ]
+        ]
+      },
+      {
+        "command": 0.2,
+        "start_header_ns": 1793865005652945518,
+        "end_header_ns": 1793865009658181428,
+        "output_samples": 402,
+        "matching_samples": 395,
+        "most_common_outputs": [
+          [
+            0.2,
+            395
+          ],
+          [
+            0.0,
+            7
+          ]
+        ]
+      },
+      {
+        "command": 0.3,
+        "start_header_ns": 1793865009658181428,
+        "end_header_ns": 1793865013661965131,
+        "output_samples": 400,
+        "matching_samples": 385,
+        "most_common_outputs": [
+          [
+            0.3,
+            385
+          ],
+          [
+            0.0,
+            15
+          ]
+        ]
+      },
+      {
+        "command": 0.4,
+        "start_header_ns": 1793865013661965131,
+        "end_header_ns": 1793865017647337675,
+        "output_samples": 399,
+        "matching_samples": 389,
+        "most_common_outputs": [
+          [
+            0.4,
+            389
+          ],
+          [
+            0.0,
+            10
+          ]
+        ]
+      },
+      {
+        "command": 0.2,
+        "start_header_ns": 1793865017647337675,
+        "end_header_ns": 1793865021651803970,
+        "output_samples": 400,
+        "matching_samples": 399,
+        "most_common_outputs": [
+          [
+            0.2,
+            399
+          ],
+          [
+            0.4,
+            1
+          ]
+        ]
+      },
+      {
+        "command": 0.0,
+        "start_header_ns": 1793865021651803970,
+        "end_header_ns": 1793865024641949176,
+        "output_samples": 299,
+        "matching_samples": 298,
+        "most_common_outputs": [
+          [
+            0.0,
+            298
+          ],
+          [
+            0.2,
+            1
+          ]
+        ]
+      }
+    ],
+    "limitations": "Header timestamps provide approximate phase alignment only. Output values do not establish physical motor response, causal failure, or calibrated latency; the final phase ends at the last recorded command."
+  }
+}
