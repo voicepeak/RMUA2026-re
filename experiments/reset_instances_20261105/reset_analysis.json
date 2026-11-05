@@ -1,0 +1,338 @@
+{
+  "seed123_repeat1": {
+    "reset_response_success": false,
+    "stream_reset_before": [
+      [
+        123,
+        123
+      ],
+      [
+        123,
+        2071961785
+      ]
+    ],
+    "game_reset_enter": [
+      [
+        123,
+        123
+      ],
+      [
+        123,
+        123
+      ]
+    ],
+    "generations": [
+      {
+        "line_count": 373,
+        "line_multiset_sha256": "b43fad1829e1e37e3ec3e7495e65ac9e57c8df0824ca79e8d81fc173fa39ac76",
+        "wind_dumps": [
+          {
+            "count": 35,
+            "sha256": "d2ad79ebe9b78a9c5321f627ccd0e6b35dd02aa0d694eb3aceadd5ee5eee20cf"
+          }
+        ]
+      },
+      {
+        "line_count": 373,
+        "line_multiset_sha256": "b43fad1829e1e37e3ec3e7495e65ac9e57c8df0824ca79e8d81fc173fa39ac76",
+        "wind_dumps": [
+          {
+            "count": 35,
+            "sha256": "7b61903806dfcbe14ad3a15aea2145a375ae4ca485da3ae9b6426411e3ec10cf"
+          },
+          {
+            "count": 35,
+            "sha256": "7b61903806dfcbe14ad3a15aea2145a375ae4ca485da3ae9b6426411e3ec10cf"
+          }
+        ]
+      }
+    ],
+    "line_equal": true,
+    "wind_equal": false,
+    "limitations": [
+      "ROS reset response false is not success",
+      "line transform submission is not proof of actual physical scene replay",
+      "lingering return breakpoint may duplicate second wind dump"
+    ]
+  },
+  "seed123_repeat2": {
+    "reset_response_success": false,
+    "stream_reset_before": [
+      [
+        123,
+        123
+      ],
+      [
+        123,
+        2071961785
+      ]
+    ],
+    "game_reset_enter": [
+      [
+        123,
+        123
+      ],
+      [
+        123,
+        123
+      ]
+    ],
+    "generations": [
+      {
+        "line_count": 373,
+        "line_multiset_sha256": "b43fad1829e1e37e3ec3e7495e65ac9e57c8df0824ca79e8d81fc173fa39ac76",
+        "wind_dumps": [
+          {
+            "count": 35,
+            "sha256": "d2ad79ebe9b78a9c5321f627ccd0e6b35dd02aa0d694eb3aceadd5ee5eee20cf"
+          }
+        ]
+      },
+      {
+        "line_count": 373,
+        "line_multiset_sha256": "b43fad1829e1e37e3ec3e7495e65ac9e57c8df0824ca79e8d81fc173fa39ac76",
+        "wind_dumps": [
+          {
+            "count": 35,
+            "sha256": "7b61903806dfcbe14ad3a15aea2145a375ae4ca485da3ae9b6426411e3ec10cf"
+          },
+          {
+            "count": 35,
+            "sha256": "7b61903806dfcbe14ad3a15aea2145a375ae4ca485da3ae9b6426411e3ec10cf"
+          }
+        ]
+      }
+    ],
+    "line_equal": true,
+    "wind_equal": false,
+    "limitations": [
+      "ROS reset response false is not success",
+      "line transform submission is not proof of actual physical scene replay",
+      "lingering return breakpoint may duplicate second wind dump"
+    ]
+  },
+  "seed456_repeat1": {
+    "reset_response_success": false,
+    "stream_reset_before": [
+      [
+        456,
+        456
+      ],
+      [
+        456,
+        319931390
+      ]
+    ],
+    "game_reset_enter": [
+      [
+        456,
+        456
+      ],
+      [
+        456,
+        456
+      ]
+    ],
+    "generations": [
+      {
+        "line_count": 373,
+        "line_multiset_sha256": "7d4cbb22a0f215c41b907fbf6e2f5a4efc6db327bd45857793ffe348a9504809",
+        "wind_dumps": [
+          {
+            "count": 35,
+            "sha256": "7d369f0dadae9758b107a3f760bbb08fc75c21043410246c8b96543ad4ee0ef9"
+          }
+        ]
+      },
+      {
+        "line_count": 373,
+        "line_multiset_sha256": "7d4cbb22a0f215c41b907fbf6e2f5a4efc6db327bd45857793ffe348a9504809",
+        "wind_dumps": [
+          {
+            "count": 35,
+            "sha256": "ce92e1b52e139dbb6be26af3526efb600f11aab50d23c2e31fc85bc657377654"
+          },
+          {
+            "count": 35,
+            "sha256": "ce92e1b52e139dbb6be26af3526efb600f11aab50d23c2e31fc85bc657377654"
+          }
+        ]
+      }
+    ],
+    "line_equal": true,
+    "wind_equal": false,
+    "limitations": [
+      "ROS reset response false is not success",
+      "line transform submission is not proof of actual physical scene replay",
+      "lingering return breakpoint may duplicate second wind dump"
+    ]
+  },
+  "seed456_repeat2": {
+    "reset_response_success": false,
+    "stream_reset_before": [
+      [
+        456,
+        456
+      ],
+      [
+        456,
+        319931390
+      ]
+    ],
+    "game_reset_enter": [
+      [
+        456,
+        456
+      ],
+      [
+        456,
+        456
+      ]
+    ],
+    "generations": [
+      {
+        "line_count": 373,
+        "line_multiset_sha256": "7d4cbb22a0f215c41b907fbf6e2f5a4efc6db327bd45857793ffe348a9504809",
+        "wind_dumps": [
+          {
+            "count": 35,
+            "sha256": "7d369f0dadae9758b107a3f760bbb08fc75c21043410246c8b96543ad4ee0ef9"
+          }
+        ]
+      },
+      {
+        "line_count": 373,
+        "line_multiset_sha256": "7d4cbb22a0f215c41b907fbf6e2f5a4efc6db327bd45857793ffe348a9504809",
+        "wind_dumps": [
+          {
+            "count": 35,
+            "sha256": "ce92e1b52e139dbb6be26af3526efb600f11aab50d23c2e31fc85bc657377654"
+          },
+          {
+            "count": 35,
+            "sha256": "ce92e1b52e139dbb6be26af3526efb600f11aab50d23c2e31fc85bc657377654"
+          }
+        ]
+      }
+    ],
+    "line_equal": true,
+    "wind_equal": false,
+    "limitations": [
+      "ROS reset response false is not success",
+      "line transform submission is not proof of actual physical scene replay",
+      "lingering return breakpoint may duplicate second wind dump"
+    ]
+  },
+  "seed2026_repeat1": {
+    "reset_response_success": false,
+    "stream_reset_before": [
+      [
+        2026,
+        2026
+      ],
+      [
+        2026,
+        744969164
+      ]
+    ],
+    "game_reset_enter": [
+      [
+        2026,
+        2026
+      ],
+      [
+        2026,
+        2026
+      ]
+    ],
+    "generations": [
+      {
+        "line_count": 373,
+        "line_multiset_sha256": "388203d03fb5e0415339b77dabbdfb55ae75a622ad2108abb0720980447009d3",
+        "wind_dumps": [
+          {
+            "count": 35,
+            "sha256": "b7f89c696969e3719187fe3c55acae5f9a563b91b3f40481658069aaa0e214a9"
+          }
+        ]
+      },
+      {
+        "line_count": 373,
+        "line_multiset_sha256": "388203d03fb5e0415339b77dabbdfb55ae75a622ad2108abb0720980447009d3",
+        "wind_dumps": [
+          {
+            "count": 35,
+            "sha256": "6f91d20ef309fc6e4a3077e060d52a279e9f6d909159a5b45e9bd72c97d80aa8"
+          },
+          {
+            "count": 35,
+            "sha256": "6f91d20ef309fc6e4a3077e060d52a279e9f6d909159a5b45e9bd72c97d80aa8"
+          }
+        ]
+      }
+    ],
+    "line_equal": true,
+    "wind_equal": false,
+    "limitations": [
+      "ROS reset response false is not success",
+      "line transform submission is not proof of actual physical scene replay",
+      "lingering return breakpoint may duplicate second wind dump"
+    ]
+  },
+  "seed2026_repeat2": {
+    "reset_response_success": false,
+    "stream_reset_before": [
+      [
+        2026,
+        2026
+      ],
+      [
+        2026,
+        744969164
+      ]
+    ],
+    "game_reset_enter": [
+      [
+        2026,
+        2026
+      ],
+      [
+        2026,
+        2026
+      ]
+    ],
+    "generations": [
+      {
+        "line_count": 373,
+        "line_multiset_sha256": "388203d03fb5e0415339b77dabbdfb55ae75a622ad2108abb0720980447009d3",
+        "wind_dumps": [
+          {
+            "count": 35,
+            "sha256": "b7f89c696969e3719187fe3c55acae5f9a563b91b3f40481658069aaa0e214a9"
+          }
+        ]
+      },
+      {
+        "line_count": 373,
+        "line_multiset_sha256": "388203d03fb5e0415339b77dabbdfb55ae75a622ad2108abb0720980447009d3",
+        "wind_dumps": [
+          {
+            "count": 35,
+            "sha256": "6f91d20ef309fc6e4a3077e060d52a279e9f6d909159a5b45e9bd72c97d80aa8"
+          },
+          {
+            "count": 35,
+            "sha256": "6f91d20ef309fc6e4a3077e060d52a279e9f6d909159a5b45e9bd72c97d80aa8"
+          }
+        ]
+      }
+    ],
+    "line_equal": true,
+    "wind_equal": false,
+    "limitations": [
+      "ROS reset response false is not success",
+      "line transform submission is not proof of actual physical scene replay",
+      "lingering return breakpoint may duplicate second wind dump"
+    ]
+  }
+}

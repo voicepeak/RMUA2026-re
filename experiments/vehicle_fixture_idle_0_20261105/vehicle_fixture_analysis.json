@@ -1,0 +1,116 @@
+{
+  "seed123_repeat1": {
+    "vehicle_fixture": 0,
+    "fixture_writes": 0,
+    "world_samples": 26,
+    "closest_sample_to_fixed_world_origin": [
+      147596.092848665,
+      -3317.53906,
+      4146.4375,
+      1775.10095
+    ],
+    "hit_events": 2,
+    "identified_drone_hit_events": 2,
+    "events_within_one_second_of_closest": 2,
+    "limitations": [
+      "Closest fixed-world origin is not measured drone position",
+      "Event type does not identify contact actor",
+      "Fixed test path, forced state and GDB alter behavior"
+    ]
+  },
+  "seed123_repeat2": {
+    "vehicle_fixture": 0,
+    "fixture_writes": 0,
+    "world_samples": 26,
+    "closest_sample_to_fixed_world_origin": [
+      147617.878987297,
+      -3317.53906,
+      4146.4375,
+      1775.10095
+    ],
+    "hit_events": 2,
+    "identified_drone_hit_events": 2,
+    "events_within_one_second_of_closest": 2,
+    "limitations": [
+      "Closest fixed-world origin is not measured drone position",
+      "Event type does not identify contact actor",
+      "Fixed test path, forced state and GDB alter behavior"
+    ]
+  },
+  "seed456_repeat1": {
+    "vehicle_fixture": 0,
+    "fixture_writes": 0,
+    "world_samples": 19,
+    "closest_sample_to_fixed_world_origin": [
+      147643.6061678,
+      0.0390625,
+      -0.03125,
+      -37.9106445
+    ],
+    "hit_events": 2,
+    "identified_drone_hit_events": 2,
+    "events_within_one_second_of_closest": 0,
+    "limitations": [
+      "Closest fixed-world origin is not measured drone position",
+      "Event type does not identify contact actor",
+      "Fixed test path, forced state and GDB alter behavior"
+    ]
+  },
+  "seed456_repeat2": {
+    "vehicle_fixture": 0,
+    "fixture_writes": 0,
+    "world_samples": 19,
+    "closest_sample_to_fixed_world_origin": [
+      147665.434603923,
+      0.0078125,
+      -0.015625,
+      -38.8129883
+    ],
+    "hit_events": 2,
+    "identified_drone_hit_events": 2,
+    "events_within_one_second_of_closest": 0,
+    "limitations": [
+      "Closest fixed-world origin is not measured drone position",
+      "Event type does not identify contact actor",
+      "Fixed test path, forced state and GDB alter behavior"
+    ]
+  },
+  "seed2026_repeat1": {
+    "vehicle_fixture": 0,
+    "fixture_writes": 0,
+    "world_samples": 27,
+    "closest_sample_to_fixed_world_origin": [
+      147683.490446884,
+      -3317.53906,
+      4146.4375,
+      1775.10095
+    ],
+    "hit_events": 2,
+    "identified_drone_hit_events": 2,
+    "events_within_one_second_of_closest": 2,
+    "limitations": [
+      "Closest fixed-world origin is not measured drone position",
+      "Event type does not identify contact actor",
+      "Fixed test path, forced state and GDB alter behavior"
+    ]
+  },
+  "seed2026_repeat2": {
+    "vehicle_fixture": 0,
+    "fixture_writes": 0,
+    "world_samples": 26,
+    "closest_sample_to_fixed_world_origin": [
+      147705.524911789,
+      -3317.53906,
+      4146.4375,
+      1775.10095
+    ],
+    "hit_events": 2,
+    "identified_drone_hit_events": 2,
+    "events_within_one_second_of_closest": 2,
+    "limitations": [
+      "Closest fixed-world origin is not measured drone position",
+      "Event type does not identify contact actor",
+      "Fixed test path, forced state and GDB alter behavior"
+    ]
+  }
+}

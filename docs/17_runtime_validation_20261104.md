@@ -222,3 +222,7 @@ stage 6 seed 123 的补样改用预定的 6.5 秒延迟（依据前次事后时�
 reset 与不同随机流的直接对照首场：seed 123 的 ROS reset 返回 false，reset helper 入口的 FRandomStream current 从 2071961785，至随后游戏 reset 入口为 123；前后各 373 个粗/细组件提交变换的多重集合字节一致，而风关键帧数组不同。该现象与两类随机流重置方式不同相符，但不能证明 libc 状态变化的具体原因，或已成功重置物理场景。第三次风 dump 是断点遗留导致的第二数组重复输出。见 `experiments/reset_instances_pilot_20261105/reset_analysis.json`、`scripts/analyze_reset_instances.py`；三 seed 两次正在采集。
 
 车辆固定路径夹具首场将强制初始化的五点路线改为预设世界坐标 x `[-5000,-2500,0,2500,5000]` cm、y=z=0，速度字段 667；输入不依赖调试真值。seed 123 记录到车辆组件世界 x 从约 -4999.94 到 3955.20 cm，期间有无人机碰撞回调，同时固定 PWM 飞行的事后 z 范围约 -5.03 至 1.03 m。回调对方未识别，且无人机和车辆未做同步碰撞体配准，不能将这些回调归因于车辆接触；见 `experiments/vehicle_fixture_pilot_20261105/`。正在追加无人机空载与车辆原路线对照。
+
+reset 对照已扩展为三个 seed 各两次：六场服务响应均为 false；各场游戏 reset 入口 FRandomStream current 回到对应 seed，前后各 373 个线障组件提交变换多重集合哈希一致，而风数组哈希均不同。同 seed 的这两种结果重复一致；第二组风 dump 的重复是遗留断点输出，不能当成第三次生成。未证明物理场景成功重置或风随机状态改变的原因。完整数据和复算见 `experiments/reset_instances_20261105/`。
+
+车辆空载对照在原路线及预设固定路线下各做三个 seed 两次，不发送 PWM。固定路径每场均写入一次，世界位置最近原点距离约 29–344 cm，最近样本前后一秒均无 DroneHitEvent；每场仍有两个其他时间的事件。seed 456 固定路线两次仅采到 12 个世界样本，其他 seed 为 26 个；原路线 seed 456 的轨迹也不同于其他 seed。世界原点不是已配准的无人机碰撞体位置，采样有限且事件对方未知，因此该负样本不证明车辆碰撞或其缺失。完整日志与分析见 `experiments/vehicle_fixture_idle_{0,1}_20261105/`。
