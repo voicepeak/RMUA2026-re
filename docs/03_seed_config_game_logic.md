@@ -140,7 +140,8 @@ GameState + 0x400
   if (GameState->state != 2)
       GameConfig->score_counter += 1;   // GameConfig + 0x2fc
   ```
-  这说明 `+0x2fc` 是仿真内部的 `Score` 计数器（每完成一段/进入 case 2 自增一次）。
+  这说明 `+0x2fc` 是仿真内部的 `Score` 计数器；进入 case 2 且原状态不为 2 时自增。
+- `case 12` 保存原状态到 `GameState+0xd4`，写入 `+0xd0 = 12`，记录时间；第三参数非零时还会计算一段时间并使 `Score` 自增，零时则不执行该自增。碰撞场是否执行到后续完整结算仍需动态证据，不能仅凭状态写入推断。证据：`artifacts/rea/followup_state.c` 的 `case 0xc`。
 - `REA_2fba970` 重置时把 `GameConfig+0x2fc = 0`、总计时 `+0x1ac = 0`、历史段时间清零，并重置状态字符串为 `normal`/`Pending` 等。
 
 ### 4.2 GUI Score
@@ -168,7 +169,7 @@ GameState
 - `FlightTime` = `GameConfig+0x2f8`
 - `CurStateTime` = `GameConfig+0x300`
 - `OutTime` = `GameConfig+0x2cc`（默认 2.0）
-- `Score` = `GameConfig+0x2fc` 的计数器（case 2 自增）
+- `Score` = `GameConfig+0x2fc` 的计数器（case 2 有条件自增，case 12 的第三参数非零时也自增）
 - `GameState` = `GameConfig+0x308` 的状态字符串
 
 ### 4.3 重要边界
@@ -181,7 +182,7 @@ GameState
 
 - ROS 服务：`/airsim_node/reset`（见 `docs/04_ros_interface.md`）。
 - 游戏状态重置逻辑：`REA_2fba970`（`0x2fba970..0x2fbac29`）。
-- 重置会清零 `+0x2fc`、`+0x1ac`、六段历史时间、状态字符串等；用 reset 做 episode 边界比重启进程更轻。
+- 静态重置路径会清零 `+0x2fc`、`+0x1ac`、六段历史时间、状态字符串等；服务成功不代表完整物理状态或随机流已重放，当前不能据此把 reset 作为已验收的 episode 边界，见 `docs/18_acceptance_ledger.md`。
 - 重置是否保留 seed 的随机流状态需要运行时验证；若要每 episode 改变 seed，建议重启进程/容器。
 
 ## 6. 证据
