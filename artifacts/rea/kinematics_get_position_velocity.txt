@@ -1,0 +1,46 @@
+
+/home/tianbot/RUMA-by-helinjun/main/simulator/simulator_12.0.0.5/Build/LinuxNoEditor/RMUA/Binaries/Linux/RMUA-Linux-Shipping：     文件格式 elf64-x86-64
+
+
+Disassembly of section .text:
+
+0000000006137410 <msr::airlib::MultirotorApiBase::getPosition() const@@Base>:
+ 6137410:	53                   	push   %rbx
+ 6137411:	48 83 ec 50          	sub    $0x50,%rsp
+ 6137415:	48 89 fb             	mov    %rdi,%rbx
+ 6137418:	48 8b 06             	mov    (%rsi),%rax
+ 613741b:	48 89 e7             	mov    %rsp,%rdi
+ 613741e:	ff 90 40 01 00 00    	call   *0x140(%rax)
+ 6137424:	8b 44 24 08          	mov    0x8(%rsp),%eax
+ 6137428:	89 43 08             	mov    %eax,0x8(%rbx)
+ 613742b:	48 8b 04 24          	mov    (%rsp),%rax
+ 613742f:	48 89 03             	mov    %rax,(%rbx)
+ 6137432:	48 89 d8             	mov    %rbx,%rax
+ 6137435:	48 83 c4 50          	add    $0x50,%rsp
+ 6137439:	5b                   	pop    %rbx
+ 613743a:	c3                   	ret    
+ 613743b:	cc                   	int3   
+ 613743c:	cc                   	int3   
+ 613743d:	cc                   	int3   
+ 613743e:	cc                   	int3   
+ 613743f:	cc                   	int3   
+
+0000000006137440 <msr::airlib::MultirotorApiBase::getVelocity() const@@Base>:
+ 6137440:	53                   	push   %rbx
+ 6137441:	48 83 ec 50          	sub    $0x50,%rsp
+ 6137445:	48 89 fb             	mov    %rdi,%rbx
+ 6137448:	48 8b 06             	mov    (%rsi),%rax
+ 613744b:	48 89 e7             	mov    %rsp,%rdi
+ 613744e:	ff 90 40 01 00 00    	call   *0x140(%rax)
+ 6137454:	8b 44 24 24          	mov    0x24(%rsp),%eax
+ 6137458:	89 43 08             	mov    %eax,0x8(%rbx)
+ 613745b:	48 8b 44 24 1c       	mov    0x1c(%rsp),%rax
+ 6137460:	48 89 03             	mov    %rax,(%rbx)
+ 6137463:	48 89 d8             	mov    %rbx,%rax
+ 6137466:	48 83 c4 50          	add    $0x50,%rsp
+ 613746a:	5b                   	pop    %rbx
+ 613746b:	c3                   	ret    
+ 613746c:	cc                   	int3   
+ 613746d:	cc                   	int3   
+ 613746e:	cc                   	int3   
+ 613746f:	cc                   	int3   

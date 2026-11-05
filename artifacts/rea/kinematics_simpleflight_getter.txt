@@ -1,0 +1,56 @@
+
+/home/tianbot/RUMA-by-helinjun/main/simulator/simulator_12.0.0.5/Build/LinuxNoEditor/RMUA/Binaries/Linux/RMUA-Linux-Shipping：     文件格式 elf64-x86-64
+
+
+Disassembly of section .text:
+
+000000000268f110 <_start@@Base+0xb2790>:
+ 268f110:	53                   	push   %rbx
+ 268f111:	48 81 ec 90 00 00 00 	sub    $0x90,%rsp
+ 268f118:	48 89 fb             	mov    %rdi,%rbx
+ 268f11b:	48 8b be c8 03 00 00 	mov    0x3c8(%rsi),%rdi
+ 268f122:	48 8b 07             	mov    (%rdi),%rax
+ 268f125:	ff 50 20             	call   *0x20(%rax)
+ 268f128:	48 8b 08             	mov    (%rax),%rcx
+ 268f12b:	48 89 c7             	mov    %rax,%rdi
+ 268f12e:	ff 51 68             	call   *0x68(%rcx)
+ 268f131:	48 8b 08             	mov    (%rax),%rcx
+ 268f134:	48 89 e7             	mov    %rsp,%rdi
+ 268f137:	48 89 c6             	mov    %rax,%rsi
+ 268f13a:	ff 51 30             	call   *0x30(%rcx)
+ 268f13d:	48 8b 44 24 08       	mov    0x8(%rsp),%rax
+ 268f142:	8b 4c 24 10          	mov    0x10(%rsp),%ecx
+ 268f146:	48 89 03             	mov    %rax,(%rbx)
+ 268f149:	89 4b 08             	mov    %ecx,0x8(%rbx)
+ 268f14c:	0f 10 44 24 20       	movups 0x20(%rsp),%xmm0
+ 268f151:	0f 11 43 0c          	movups %xmm0,0xc(%rbx)
+ 268f155:	48 8b 44 24 38       	mov    0x38(%rsp),%rax
+ 268f15a:	8b 4c 24 40          	mov    0x40(%rsp),%ecx
+ 268f15e:	48 89 43 1c          	mov    %rax,0x1c(%rbx)
+ 268f162:	89 4b 24             	mov    %ecx,0x24(%rbx)
+ 268f165:	48 8b 44 24 50       	mov    0x50(%rsp),%rax
+ 268f16a:	8b 4c 24 58          	mov    0x58(%rsp),%ecx
+ 268f16e:	48 89 43 28          	mov    %rax,0x28(%rbx)
+ 268f172:	89 4b 30             	mov    %ecx,0x30(%rbx)
+ 268f175:	48 8b 44 24 68       	mov    0x68(%rsp),%rax
+ 268f17a:	8b 4c 24 70          	mov    0x70(%rsp),%ecx
+ 268f17e:	48 89 43 34          	mov    %rax,0x34(%rbx)
+ 268f182:	89 4b 3c             	mov    %ecx,0x3c(%rbx)
+ 268f185:	48 8b 84 24 80 00 00 	mov    0x80(%rsp),%rax
+ 268f18c:	00 
+ 268f18d:	8b 8c 24 88 00 00 00 	mov    0x88(%rsp),%ecx
+ 268f194:	48 89 43 40          	mov    %rax,0x40(%rbx)
+ 268f198:	89 4b 48             	mov    %ecx,0x48(%rbx)
+ 268f19b:	48 89 d8             	mov    %rbx,%rax
+ 268f19e:	48 81 c4 90 00 00 00 	add    $0x90,%rsp
+ 268f1a5:	5b                   	pop    %rbx
+ 268f1a6:	c3                   	ret    
+ 268f1a7:	cc                   	int3   
+ 268f1a8:	cc                   	int3   
+ 268f1a9:	cc                   	int3   
+ 268f1aa:	cc                   	int3   
+ 268f1ab:	cc                   	int3   
+ 268f1ac:	cc                   	int3   
+ 268f1ad:	cc                   	int3   
+ 268f1ae:	cc                   	int3   
+ 268f1af:	cc                   	int3   

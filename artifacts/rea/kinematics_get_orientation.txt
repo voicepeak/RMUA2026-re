@@ -1,0 +1,19 @@
+
+/home/tianbot/RUMA-by-helinjun/main/simulator/simulator_12.0.0.5/Build/LinuxNoEditor/RMUA/Binaries/Linux/RMUA-Linux-Shipping：     文件格式 elf64-x86-64
+
+
+Disassembly of section .text:
+
+0000000006137470 <msr::airlib::MultirotorApiBase::getOrientation() const@@Base>:
+ 6137470:	53                   	push   %rbx
+ 6137471:	48 83 ec 50          	sub    $0x50,%rsp
+ 6137475:	48 89 fb             	mov    %rdi,%rbx
+ 6137478:	48 8b 06             	mov    (%rsi),%rax
+ 613747b:	48 89 e7             	mov    %rsp,%rdi
+ 613747e:	ff 90 40 01 00 00    	call   *0x140(%rax)
+ 6137484:	0f 10 44 24 0c       	movups 0xc(%rsp),%xmm0
+ 6137489:	0f 11 03             	movups %xmm0,(%rbx)
+ 613748c:	48 89 d8             	mov    %rbx,%rax
+ 613748f:	48 83 c4 50          	add    $0x50,%rsp
+ 6137493:	5b                   	pop    %rbx
+ 6137494:	c3                   	ret    

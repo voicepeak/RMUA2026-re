@@ -1,0 +1,129 @@
+{
+  "seed123_repeat1": {
+    "status": "observed",
+    "reset_response_success": true,
+    "sample_count": 257,
+    "command_first_mono_ns": 218778871717054,
+    "command_last_mono_ns": 218783869616861,
+    "reset_entry_mono_ns": 218784928621986,
+    "bridge_marker_mono_ns": 218786230052353,
+    "baseline_before_action": {
+      "mono_ns": 218778805845498,
+      "ptr": "0x7ffdec4b8c30",
+      "position": [
+        0.0,
+        0.0,
+        0.308777958
+      ],
+      "orientation_raw": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "linear_velocity": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "other_raw": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "raw_hex": "000000000000000025189e3e0000000000000000000000000000803f000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+    },
+    "last_before_reset": {
+      "mono_ns": 218784905535035,
+      "ptr": "0x7ffdec4b8b40",
+      "position": [
+        1.11594737,
+        0.169660598,
+        0.298031956
+      ],
+      "orientation_raw": [
+        0.0,
+        0.0,
+        -0.0256842133,
+        0.999670088
+      ],
+      "linear_velocity": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "other_raw": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "raw_hex": "5dd78e3f82bb2d3ea597983e0000000000000000b367d2bc61ea7f3f000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+    },
+    "first_at_least_1s_after_bridge_marker": {
+      "mono_ns": 218787315715771,
+      "ptr": "0x7ffdec4b8c30",
+      "position": [
+        0.0,
+        0.0,
+        0.308617711
+      ],
+      "orientation_raw": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "linear_velocity": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "other_raw": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "raw_hex": "000000000000000024039e3e0000000000000000000000000000803f000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+    },
+    "baseline_post_position_distance": 0.00016024700000000225,
+    "baseline_post_velocity_distance": 0.0,
+    "action_max_speed": 7.3857049739582665,
+    "action_position_min": [
+      0.0,
+      -0.000335973862,
+      -4.52783918
+    ],
+    "action_position_max": [
+      1.11594737,
+      0.169660598,
+      0.308777958
+    ],
+    "sample_before_reset_gap_ms": 23.086951,
+    "post_bridge_gap_ms": 1085.663418
+  },
+  "_limitations": [
+    "values are the API getter snapshot, not independently all physics bodies or full environment state",
+    "position, orientation and velocity offsets supported by exported accessor disassembly; coordinate frame and units need independent verification",
+    "fixed PWM and timing are open-loop but experiment design was informed by earlier posthoc observations",
+    "GDB stage/root height interventions and explicit wind reseed are required for this test",
+    "asynchronous samples around reset cannot establish instantaneous velocity, collision manifold, vehicles, or full trajectory replay"
+  ]
+}
