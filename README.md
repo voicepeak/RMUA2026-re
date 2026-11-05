@@ -31,6 +31,7 @@
 | [docs/16_headless_requirements.md](docs/16_headless_requirements.md) | 官方 NullRHI 实测边界与高并发训练环境要求 |
 | [docs/17_runtime_validation_20261104.md](docs/17_runtime_validation_20261104.md) | 动态实验、开发注入和证据边界 |
 | [docs/18_acceptance_ledger.md](docs/18_acceptance_ledger.md) | 动态验收进度、失败样本与未完成项 |
+| [docs/20_final_acceptance.md](docs/20_final_acceptance.md) | 最终验收：Done/Partial/Blocked、可训练交付与已知限制 |
 
 ## 核心结论（TL;DR）
 

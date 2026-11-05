@@ -1,6 +1,6 @@
 # 训练环境规格草案与验收门槛
 
-状态：未最终验收。本文是基于 12.0.0.5 的训练环境设计约束，不声明任何现有 episode 管理器或自定义环境已经实现这些约束。已知结果及未完成项以 [验收台账](18_acceptance_ledger.md) 为准；复现环境和原始证据见 [无头要求](16_headless_requirements.md)、[运行记录](17_runtime_validation_20261104.md) 和 [证据索引](09_evidence_index.md)。
+状态：本地开发训练为 **Conditional Go**（有条件可用），正式等价性未通过。最终 Done/Partial/Blocked 结论见 [最终验收报告](20_final_acceptance.md)。本文是基于 12.0.0.5 的训练环境设计约束，不声明任何现有 episode 管理器或自定义环境已经实现这些约束。已知结果及未完成项以 [验收台账](18_acceptance_ledger.md) 为准；复现环境和原始证据见 [无头要求](16_headless_requirements.md)、[运行记录](17_runtime_validation_20261104.md) 和 [证据索引](09_evidence_index.md)。
 
 ## 版本与隔离
 

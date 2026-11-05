@@ -3,7 +3,7 @@
 | 结论 | 证据 |
 |---|---|
 | 模拟器版本/大小/哈希 | `README.md`、`docs/01_target_and_toolchain.md`、`repro/download_simulator.ps1` |
-| 引擎 UE4.27 / pak V11 / Oodle | `artifacts/configs/DefaultGame.ini`、`repak info`、`docs/01` |
+| 引擎 UE4.27 / pak V11 / Oodle | `artifacts/configs/DefaultGame.ini`、`repak info`、`docs/01_target_and_toolchain.md` |
 | 12 张地图/地图默认 OL1 | `artifacts/configs/DefaultEngine.ini`、`artifacts/blueprints/RMUA2024Lobby.json`、`artifacts/maps/maps_summary_all.json` |
 | 每图 12 段/12 门/12 工厂/12 端口 | `artifacts/maps/maps_summary_all.json`、`artifacts/tables/*.csv` |
 | 门/工厂/端口坐标 | `artifacts/tables/gates.csv`、`factories.csv`、`ports.csv`、`check_ports.csv` |
@@ -41,7 +41,7 @@
 | 风由 seed 初始化 | `0x2fb8f40` → `0x2fb2040`（`srand(seed)`）→ `0x2fb23b0`（`rand()`）；`artifacts/rea/followup_callers.c`、`wind_generation_trace.c` |
 | 线障由 seed 生成 | `0x2fbac30` 调 `0x2fc77b0`；后者使用单例 `+0x1a0` LCG；`artifacts/rea/followup_callers.c`、`line_callers.c` |
 | 车辆由 seed 分支 | `0x2fc8900` 使用 `+0x1a0` LCG，`<6/11` 进入 `0x2fc93c0`；`artifacts/rea/hover_callers.c` |
-| 随机树由 seed 生成 | `0x2fa3dd0` / `0x2fa65b0` / `0x2faafa0`；`docs/13` |
+| 随机树由 seed 生成 | `0x2fa3dd0` / `0x2fa65b0` / `0x2faafa0`；`docs/13_seed_randomtree_trace.md` |
 | 总表 | `docs/15_seed_dependency_matrix.md` |
 
 ## 2026-11-04 运行时补充
@@ -289,3 +289,5 @@ ROS 传输路径取得首场函数级定时：容器内编译的 LD_PRELOAD 钩�
 | 固定 PWM + 订阅负载下 6/8 实例失败与 4 实例上限 | `experiments/concurrency_pwm_failure_summary_20261106/summary.json`、`experiments/concurrency_6_pwm_300s_20261106/`、`experiments/concurrency_8_pwm_180s_20261106/`、`experiments/concurrency_8_pwm_gdb_180s_20261106/`；6 实例 seed 123 容器寿命约 32.2 s、8 实例 seed 2026 约 11.1 s，均 139 非 OOM，栈在 `0x2fbda42` 空读取；GDB 8 实例场另捕获 seed 789 `0x26b6223` r12=-1 读取地址 7、seed 1002 `rip=0` 空函数指针调用 |
 | ROS 传输时延汇总 | `experiments/transport_latency_summary_20261106/summary.json`、`experiments/transport_matrix_20261105/summary.json`、`experiments/transport_control_comparison_20261105/summary.json`；六场 p99：IMU 0.324–0.385 ms、LiDAR 0.561–0.655 ms、PWM 输出 0.241–0.335 ms、命令回传 0.338–0.431 ms；不含物理采样/执行器 |
 | 最终训练环境约束更新 | `docs/19_training_environment_spec.md`、`docs/15_seed_dependency_matrix.md`、`docs/16_headless_requirements.md`、`docs/17_runtime_validation_20261104.md`、本页与 `docs/18_acceptance_ledger.md` |
+
+| 最终验收结论 | `docs/20_final_acceptance.md`；Done/Partial/Blocked 分类、4 实例上限、原生 reset/8 实例/OL2+ 阻塞与下一步 |
