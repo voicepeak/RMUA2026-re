@@ -22,11 +22,12 @@
       "FinishedAt": "2026-11-05T12:18:01.794710965Z"
     }
   },
-  "observer_launch_stderr_file_creation_wall_ns": 1793881140701056388,
   "observer_result": "manually interrupted with SIGINT after batch cleanup because original observer waited for planned duration; no measurement JSON or message samples recovered",
   "limitations": [
     "subscriptions were launched near the crash but no sample or connected-state evidence was retained; subscription causation unproven",
     "no debugger stack or crash PC; cannot attribute cause to previous crashes",
     "single 7-instance run; not a probability or universal bound"
-  ]
+  ],
+  "observer_stderr_file_birth_local": "2026-11-05 20:18:01.342450812 +0800",
+  "observer_timestamp_note": "filesystem birth of stderr redirection, a proxy for shell launch, not proof ROS subscriptions connected"
 }
