@@ -1,0 +1,155 @@
+{
+  "type": "pool",
+  "image": "rmua/re-probe:20261104",
+  "image_id": "sha256:cd46a48cd28c2a9c6345f60227fd1bd50e78c67ef1e98dcddc0e65893771da57",
+  "binary_sha256": "5231addfa25ddaa9e4473ea9ac40c9c0bc685174e69cd14bb49159f443b97800",
+  "settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+  "probe_sha256": "e99e4f47792ca09d9fb2e0d7bed2707fc0a6760705e3a293505feff3cbc3c8b8",
+  "results": {
+    "kind": "idle_diagnostic_only",
+    "frequency_guard": "/home/tianbot/\u684c\u9762/RMUA2026-re/experiments/frequency_deque_probe_20261106/probe.so",
+    "seconds_wall": 90.0,
+    "batches": [
+      {
+        "batch": 0,
+        "seeds": [
+          123,
+          456,
+          2026,
+          789,
+          1001,
+          1002,
+          1003,
+          2024
+        ],
+        "attempts": [
+          {
+            "attempt": 0,
+            "port": 12870,
+            "success": true,
+            "start_exit_code": 0,
+            "ready_wall_unix_s": 1793902350.2326922,
+            "cleanup_exit_code": 0
+          }
+        ],
+        "success": true
+      }
+    ]
+  },
+  "liveness_samples": 82,
+  "liveness_span_s": 89.23630060101277,
+  "instances": [
+    {
+      "seed": 123,
+      "port": 12870,
+      "file_exists": true,
+      "samples": 81,
+      "operations_lower_bound": 80000,
+      "overlaps_lower_bound": 0,
+      "untracked_lower_bound": 0,
+      "events": []
+    },
+    {
+      "seed": 456,
+      "port": 12871,
+      "file_exists": true,
+      "samples": 81,
+      "operations_lower_bound": 80000,
+      "overlaps_lower_bound": 0,
+      "untracked_lower_bound": 0,
+      "events": []
+    },
+    {
+      "seed": 2026,
+      "port": 12872,
+      "file_exists": true,
+      "samples": 83,
+      "operations_lower_bound": 80000,
+      "overlaps_lower_bound": 2,
+      "untracked_lower_bound": 0,
+      "events": [
+        {
+          "operations": 889,
+          "overlaps": 2,
+          "untracked": 0,
+          "object": "0x7838a1394060",
+          "op": "size",
+          "tid": 148,
+          "mono_ns": 238494607326284,
+          "prior_readers": 0,
+          "prior_writers": 1,
+          "overlap": true
+        },
+        {
+          "operations": 887,
+          "overlaps": 1,
+          "untracked": 0,
+          "object": "0x7838a1394060",
+          "op": "push_back",
+          "tid": 149,
+          "mono_ns": 238494607325577,
+          "prior_readers": 0,
+          "prior_writers": 1,
+          "overlap": true
+        }
+      ]
+    },
+    {
+      "seed": 789,
+      "port": 12873,
+      "file_exists": true,
+      "samples": 81,
+      "operations_lower_bound": 80000,
+      "overlaps_lower_bound": 0,
+      "untracked_lower_bound": 0,
+      "events": []
+    },
+    {
+      "seed": 1001,
+      "port": 12874,
+      "file_exists": true,
+      "samples": 80,
+      "operations_lower_bound": 79000,
+      "overlaps_lower_bound": 0,
+      "untracked_lower_bound": 0,
+      "events": []
+    },
+    {
+      "seed": 1002,
+      "port": 12875,
+      "file_exists": true,
+      "samples": 80,
+      "operations_lower_bound": 79000,
+      "overlaps_lower_bound": 0,
+      "untracked_lower_bound": 0,
+      "events": []
+    },
+    {
+      "seed": 1003,
+      "port": 12876,
+      "file_exists": true,
+      "samples": 80,
+      "operations_lower_bound": 79000,
+      "overlaps_lower_bound": 0,
+      "untracked_lower_bound": 0,
+      "events": []
+    },
+    {
+      "seed": 2024,
+      "port": 12877,
+      "file_exists": true,
+      "samples": 79,
+      "operations_lower_bound": 78000,
+      "overlaps_lower_bound": 0,
+      "untracked_lower_bound": 0,
+      "events": []
+    }
+  ],
+  "limitations": [
+    "Only push_back, pop_front and size calls dynamically bound through the probe inside three frequency functions are counted.",
+    "Exact object address identifies the same object in one process, not topic identity or cross-process equivalence.",
+    "Instrumentation extends wrapper intervals and changes scheduling; overlapping wrappers do not prove overlapping memory instructions.",
+    "Inline operations, iterator dereferences and other call paths are not covered; snapshots are lower bounds and short conflicts can be missed.",
+    "The option called frequency-guard loads this non-serializing development probe; it is not a fix."
+  ]
+}

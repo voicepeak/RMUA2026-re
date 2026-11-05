@@ -1,1 +1,1 @@
-same-object read/write, distinct-object control, forwarding and float/size returns: pass
+same-object read/write and write/write, distinct-object control, forwarding and float/size returns: pass

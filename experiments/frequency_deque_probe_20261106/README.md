@@ -10,4 +10,4 @@ Build and test against a synthetic dynamically linked fixture in the same contai
 docker run --rm --user "$(id -u):$(id -g)" -v "$PWD:/work" -w /work --entrypoint bash rmua/re-probe:20261104 -c 'g++ -shared -fPIC -O2 -Wall -Wextra -Werror scripts/frequency_deque_overlap.cpp -ldl -pthread -o experiments/frequency_deque_probe_20261106/probe.so && python3 scripts/test_frequency_deque_overlap.py'
 ```
 
-The generated `probe.so` is ignored by Git. Manifests record its SHA-256, source, target library, image, binary and settings; the fake test checks same-object read/write, a distinct-object control, forwarding and return values. The real simulator pilot validates that the three selected wrappers are actually entered, not complete coverage of the frequency data structure.
+The generated `probe.so` is ignored by Git. Manifests record its SHA-256, source, target library, image, binary and settings; the fake test checks same-object read/write and write/write, a distinct-object control, forwarding and return values. The real simulator pilot validates that the three selected wrappers are actually entered, not complete coverage of the frequency data structure.
