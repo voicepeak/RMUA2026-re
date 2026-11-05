@@ -166,3 +166,4 @@
 | 普通 IMU 就绪的车辆来源对照 | `experiments/vehicle_contact_imu_gate_20261105/contact_analysis.json`、`scripts/run_vehicle_contact.py`、`scripts/analyze_vehicle_contact.py`；六场未命中已知车辆 actor/采样组件 |
 | 受约束不合格的 stage 6 迟发补样 | `experiments/wind_pwm_transition_6_seed123_late_20261105/`；延迟根据调试风事后时序选择，仅保留诊断 |
 | 粗线实例碰撞普通 IMU 就绪复验 | `experiments/line_hit_imu_thick_20261105/hit_instance_analysis.json`；三 seed 两次，固定开环 PWM |
+| 细线实例碰撞普通 IMU 就绪复验 | `experiments/line_hit_imu_thin_20261105/hit_instance_analysis.json`；三 seed 两次，固定开环 PWM |
