@@ -53,3 +53,5 @@ reset 后风数组已有连续随机流的可复现解释：一次播种、两�
 粗线夹具实例级受控证据：`experiments/line_hit_instance_thick_20261105/hit_instance_analysis.json` 中三 seed 各两次，预选实例返回索引 7；同组件 39–46 次命中结果块 `+0x58` 均为 7，其他组件均为 -1。候选偏移尚未由独立类型元数据确认，限制为该版本和注入场；先导场返回断点持续输出的缺陷保留在 `experiments/line_hit_result_thick_pilot_20261105/`。
 
 粗细线的第 8 个夹具提交实例均有三 seed 各两次的索引对照，细线每场 16–29 次命中候选值与返回索引 7 相同，见 `experiments/line_hit_instance_thin_20261105/hit_instance_analysis.json`。此为本二进制受控实验的实例归因；独立类型元数据、自然赛程和碰撞力仍待验证。
+
+车辆正向接触仍未取得：普通 IMU 就绪的 `experiments/vehicle_contact_imu_gate_20261105/contact_analysis.json` 中，三 seed 各两次共六场的事件来源均不匹配本场车辆 actor 或所采样组件，样本数分别 18、20、22、21、21、21。仅表示该固定路径及动作窗口内的比较结果，不能排除其他子组件或未观察到的碰撞。

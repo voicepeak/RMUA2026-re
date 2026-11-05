@@ -1,0 +1,200 @@
+{
+  "seed123_repeat1": {
+    "vehicle_actors": [
+      "0x7ffdefe76780"
+    ],
+    "sampled_actor_components": [
+      [
+        "0x7ffdefe76780",
+        "0x7ffdefe69e00"
+      ]
+    ],
+    "fixture_writes": 1,
+    "hit_source_count": 18,
+    "hit_sources": [
+      {
+        "actor": "0x7fffdcfc6400",
+        "component": "0x7ffe09112070",
+        "count": 2
+      },
+      {
+        "actor": "0x7fffdcfc6400",
+        "component": "0x7ffe09255b50",
+        "count": 16
+      }
+    ],
+    "same_actor_or_sampled_component_count": 0,
+    "same_actor_or_sampled_component": [],
+    "fixed_pwm_command_exit_code": 0,
+    "limitations": [
+      "a nonmatching actor or sampled component does not exclude other child components or unobserved contacts",
+      "forced route, state, debugger and finite sampling differ from natural progression",
+      "positions are recorded only for posthoc evaluation"
+    ]
+  },
+  "seed123_repeat2": {
+    "vehicle_actors": [
+      "0x7ffdefea6500"
+    ],
+    "sampled_actor_components": [
+      [
+        "0x7ffdefea6500",
+        "0x7ffdefe99e00"
+      ]
+    ],
+    "fixture_writes": 1,
+    "hit_source_count": 20,
+    "hit_sources": [
+      {
+        "actor": "0x7fffdcfb7600",
+        "component": "0x7ffe09162070",
+        "count": 2
+      },
+      {
+        "actor": "0x7fffdcfb7600",
+        "component": "0x7ffe08b47b30",
+        "count": 18
+      }
+    ],
+    "same_actor_or_sampled_component_count": 0,
+    "same_actor_or_sampled_component": [],
+    "fixed_pwm_command_exit_code": 0,
+    "limitations": [
+      "a nonmatching actor or sampled component does not exclude other child components or unobserved contacts",
+      "forced route, state, debugger and finite sampling differ from natural progression",
+      "positions are recorded only for posthoc evaluation"
+    ]
+  },
+  "seed456_repeat1": {
+    "vehicle_actors": [
+      "0x7ffdf0083580"
+    ],
+    "sampled_actor_components": [
+      [
+        "0x7ffdf0083580",
+        "0x7ffdf0096400"
+      ]
+    ],
+    "fixture_writes": 1,
+    "hit_source_count": 22,
+    "hit_sources": [
+      {
+        "actor": "0x7fffdcff5200",
+        "component": "0x7ffe19262070",
+        "count": 2
+      },
+      {
+        "actor": "0x7fffdcff5200",
+        "component": "0x7ffe18c67b30",
+        "count": 20
+      }
+    ],
+    "same_actor_or_sampled_component_count": 0,
+    "same_actor_or_sampled_component": [],
+    "fixed_pwm_command_exit_code": 0,
+    "limitations": [
+      "a nonmatching actor or sampled component does not exclude other child components or unobserved contacts",
+      "forced route, state, debugger and finite sampling differ from natural progression",
+      "positions are recorded only for posthoc evaluation"
+    ]
+  },
+  "seed456_repeat2": {
+    "vehicle_actors": [
+      "0x7ffdede63580"
+    ],
+    "sampled_actor_components": [
+      [
+        "0x7ffdede63580",
+        "0x7ffdef302400"
+      ]
+    ],
+    "fixture_writes": 1,
+    "hit_source_count": 21,
+    "hit_sources": [
+      {
+        "actor": "0x7fffdcc47c00",
+        "component": "0x7ffe02f12070",
+        "count": 2
+      },
+      {
+        "actor": "0x7fffdcc47c00",
+        "component": "0x7ffe029a7b30",
+        "count": 19
+      }
+    ],
+    "same_actor_or_sampled_component_count": 0,
+    "same_actor_or_sampled_component": [],
+    "fixed_pwm_command_exit_code": 0,
+    "limitations": [
+      "a nonmatching actor or sampled component does not exclude other child components or unobserved contacts",
+      "forced route, state, debugger and finite sampling differ from natural progression",
+      "positions are recorded only for posthoc evaluation"
+    ]
+  },
+  "seed2026_repeat1": {
+    "vehicle_actors": [
+      "0x7ffdf0293580"
+    ],
+    "sampled_actor_components": [
+      [
+        "0x7ffdf0293580",
+        "0x7ffdf021c400"
+      ]
+    ],
+    "fixture_writes": 1,
+    "hit_source_count": 21,
+    "hit_sources": [
+      {
+        "actor": "0x7fffdcdd7000",
+        "component": "0x7ffe05112070",
+        "count": 2
+      },
+      {
+        "actor": "0x7fffdcdd7000",
+        "component": "0x7ffe04b77b30",
+        "count": 19
+      }
+    ],
+    "same_actor_or_sampled_component_count": 0,
+    "same_actor_or_sampled_component": [],
+    "fixed_pwm_command_exit_code": 0,
+    "limitations": [
+      "a nonmatching actor or sampled component does not exclude other child components or unobserved contacts",
+      "forced route, state, debugger and finite sampling differ from natural progression",
+      "positions are recorded only for posthoc evaluation"
+    ]
+  },
+  "seed2026_repeat2": {
+    "vehicle_actors": [
+      "0x7ffdef233300"
+    ],
+    "sampled_actor_components": [
+      [
+        "0x7ffdef233300",
+        "0x7ffdef1bc400"
+      ]
+    ],
+    "fixture_writes": 1,
+    "hit_source_count": 21,
+    "hit_sources": [
+      {
+        "actor": "0x7fffdcfd7000",
+        "component": "0x7ffe01202070",
+        "count": 2
+      },
+      {
+        "actor": "0x7fffdcfd7000",
+        "component": "0x7ffe00c67b30",
+        "count": 19
+      }
+    ],
+    "same_actor_or_sampled_component_count": 0,
+    "same_actor_or_sampled_component": [],
+    "fixed_pwm_command_exit_code": 0,
+    "limitations": [
+      "a nonmatching actor or sampled component does not exclude other child components or unobserved contacts",
+      "forced route, state, debugger and finite sampling differ from natural progression",
+      "positions are recorded only for posthoc evaluation"
+    ]
+  }
+}
