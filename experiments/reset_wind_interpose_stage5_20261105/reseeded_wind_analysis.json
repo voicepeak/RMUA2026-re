@@ -1,0 +1,118 @@
+{
+  "experiment_scope": "GDB mutates stage arguments, forces root z=0 during reset; LD_PRELOAD interposes rand and reseeds before second wind generation; diagnostic only",
+  "model_sha256": "62a4124c1a24ebcf992f23f397d8d0ba3cff7054ec8af580664305346c3ff9b6",
+  "libc": [
+    "glibc",
+    "2.35"
+  ],
+  "parameters": [
+    220,
+    660,
+    4,
+    2
+  ],
+  "runs": {
+    "seed123_repeat1": {
+      "status": "observed",
+      "reset_response_success": true,
+      "reseed_markers": [
+        123
+      ],
+      "observed_counts": [
+        37,
+        37
+      ],
+      "expected_sha256": "010f7f54b171d002d7ef07645438eb74348dff6d9a981b1cbe64c1ca96884730",
+      "phase_exact": [
+        true,
+        true
+      ]
+    },
+    "seed123_repeat2": {
+      "status": "observed",
+      "reset_response_success": true,
+      "reseed_markers": [
+        123
+      ],
+      "observed_counts": [
+        37,
+        37
+      ],
+      "expected_sha256": "010f7f54b171d002d7ef07645438eb74348dff6d9a981b1cbe64c1ca96884730",
+      "phase_exact": [
+        true,
+        true
+      ]
+    },
+    "seed456_repeat1": {
+      "status": "observed",
+      "reset_response_success": true,
+      "reseed_markers": [
+        456
+      ],
+      "observed_counts": [
+        37,
+        37
+      ],
+      "expected_sha256": "65ef01f4ce56f961c1885cfe1f3e0011263d961f9f5805cfa7ebf6b24c6d3877",
+      "phase_exact": [
+        true,
+        true
+      ]
+    },
+    "seed456_repeat2": {
+      "status": "observed",
+      "reset_response_success": true,
+      "reseed_markers": [
+        456
+      ],
+      "observed_counts": [
+        37,
+        37
+      ],
+      "expected_sha256": "65ef01f4ce56f961c1885cfe1f3e0011263d961f9f5805cfa7ebf6b24c6d3877",
+      "phase_exact": [
+        true,
+        true
+      ]
+    },
+    "seed2026_repeat1": {
+      "status": "observed",
+      "reset_response_success": true,
+      "reseed_markers": [
+        2026
+      ],
+      "observed_counts": [
+        37,
+        37
+      ],
+      "expected_sha256": "c1bca9ba33fc6335155436de6ddc990c9325c74deb3a440c347e3b96275f9c91",
+      "phase_exact": [
+        true,
+        true
+      ]
+    },
+    "seed2026_repeat2": {
+      "status": "observed",
+      "reset_response_success": true,
+      "reseed_markers": [
+        2026
+      ],
+      "observed_counts": [
+        37,
+        37
+      ],
+      "expected_sha256": "c1bca9ba33fc6335155436de6ddc990c9325c74deb3a440c347e3b96275f9c91",
+      "phase_exact": [
+        true,
+        true
+      ]
+    }
+  },
+  "limitations": [
+    "reseed and root hold are diagnostic interventions, not native reset semantics",
+    "wind and submission bytes do not prove physics, vehicle or full scene replay",
+    "matching outputs cannot exclude unobserved equivalent random-state operations",
+    "model uses host libc and float32 semantics"
+  ]
+}

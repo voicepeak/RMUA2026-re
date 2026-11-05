@@ -350,3 +350,5 @@ OL2 直接加载后用只读 GDB 断点捕获 12 门之后首次 `__cxa_throw`�
 stage 5 seed 123 单次先导使用同一 interposer 和根高度固定，并在 reset 前后分别采集仅供事后分析的姿态：服务响应 true，前后各 1118 个线障提交变换集合哈希一致，风数组各 37 项前后逐字节一致并均匹配 stage 5 独立模型。两段各约两秒采样中，前段末位置与后段首位置相距约 0.000698 m；没有验证速度、接触或同一真实物理状态，不能凭静止位置判断完整重放。结果及原始流在 `experiments/reset_wind_interpose_stage5_pilot_20261105/`。
 
 stage 6 seed 123 单次先导使用相同固定高度和 interposer：ROS reset 返回 true，前后各 1434 个线障提交变换集合哈希一致，35 项风关键帧前后逐字节相同且均与 stage 6 离线模型吻合。事后位置前段末与后段首相距约 0.0000256 m；采样为静止场且间隔非零，不证明速度、碰撞、车辆或完整场景重放。原始数据、各分析结果见 `experiments/reset_wind_interpose_stage6_pilot_20261105/`。
+
+stage 5 在同一根高度固定和 interposer 条件下扩展到 seed 123/456/2026 各两次：六场服务均 true，根高度固定 13–14 次；每场前后各 1118 个线障提交变换集合一致，37 项风数组前后逐字节相同，并与对应 seed 的独立 stage 5 模型逐字节一致。事后姿态前段末与后段首位置差约 0.000179–0.000884 m，采样是静止且分时进行，不能推断速度、碰撞或完整物理场景重放。见 `experiments/reset_wind_interpose_stage5_20261105/` 的 manifest、原始流、`reset_analysis.json`、`reseeded_wind_analysis.json` 和 `pose_prepost_analysis.json`。

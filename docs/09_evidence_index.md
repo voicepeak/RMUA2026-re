@@ -187,3 +187,5 @@
 | stage 5 干预式 reset 单 seed 先导及事后位置 | `experiments/reset_wind_interpose_stage5_pilot_20261105/`、`scripts/analyze_reset_pose_prepost.py`；仅单场、不证明完整物理重放 |
 
 | stage 6 干预式 reset 单 seed 先导 | `experiments/reset_wind_interpose_stage6_pilot_20261105/`；前后提交与风匹配模型，完整物理重放未证 |
+
+| stage 5 干预式 reset 三 seed 两次 | `experiments/reset_wind_interpose_stage5_20261105/{reset_analysis,reseeded_wind_analysis,pose_prepost_analysis}.json`；实际 spawn、车辆及物理状态未完整验证 |
