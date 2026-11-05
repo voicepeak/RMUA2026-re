@@ -1,0 +1,433 @@
+{
+  "image": "rmua/re-probe:20261104",
+  "image_id": "sha256:cd46a48cd28c2a9c6345f60227fd1bd50e78c67ef1e98dcddc0e65893771da57",
+  "binary_sha256": "5231addfa25ddaa9e4473ea9ac40c9c0bc685174e69cd14bb49159f443b97800",
+  "settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+  "preload_sha256": "18652576162a668c9839a66610d947c94c4ba02dd724e45b043d4896ab170fa2",
+  "run_results": {
+    "kind": "idle_diagnostic_only",
+    "frequency_guard": "/home/tianbot/\u684c\u9762/RMUA2026-re/experiments/frequency_overlap_interposer_20261106/probe.so",
+    "seconds_wall": 90.0,
+    "batches": [
+      {
+        "batch": 0,
+        "seeds": [
+          123,
+          456,
+          2026,
+          789,
+          1001,
+          1002,
+          1003,
+          2024
+        ],
+        "attempts": [
+          {
+            "attempt": 0,
+            "port": 12840,
+            "success": true,
+            "start_exit_code": 0,
+            "ready_wall_unix_s": 1793902084.4052436,
+            "cleanup_exit_code": 0
+          }
+        ],
+        "success": true
+      }
+    ]
+  },
+  "liveness_samples": 82,
+  "liveness_span_s": 89.60140378400683,
+  "instances": [
+    {
+      "seed": 123,
+      "port": 12840,
+      "container": "rmua-re-b3b20d2b0f42-0",
+      "file_exists": true,
+      "logged_calls_lower_bound": 35000,
+      "overlap_counter_lower_bound": 1,
+      "untracked_counter_lower_bound": 0,
+      "events": [
+        {
+          "calls": 632,
+          "overlaps": 1,
+          "untracked": 0,
+          "key_hash": "d8d4335628b35226",
+          "key_length": 5,
+          "writer": 1,
+          "prior_readers": 0,
+          "prior_writers": 1,
+          "overlap": true,
+          "candidate_topic": "frame"
+        }
+      ]
+    },
+    {
+      "seed": 456,
+      "port": 12841,
+      "container": "rmua-re-b3b20d2b0f42-1",
+      "file_exists": true,
+      "logged_calls_lower_bound": 35000,
+      "overlap_counter_lower_bound": 20,
+      "untracked_counter_lower_bound": 0,
+      "events": [
+        {
+          "calls": 540,
+          "overlaps": 1,
+          "untracked": 0,
+          "key_hash": "d8d4335628b35226",
+          "key_length": 5,
+          "writer": 1,
+          "prior_readers": 0,
+          "prior_writers": 1,
+          "overlap": true,
+          "candidate_topic": "frame"
+        },
+        {
+          "calls": 6349,
+          "overlaps": 2,
+          "untracked": 0,
+          "key_hash": "2b9d00192bd2941a",
+          "key_length": 3,
+          "writer": 1,
+          "prior_readers": 1,
+          "prior_writers": 0,
+          "overlap": true,
+          "candidate_topic": "imu"
+        },
+        {
+          "calls": 6501,
+          "overlaps": 3,
+          "untracked": 0,
+          "key_hash": "d5235018fae1f0a3",
+          "key_length": 3,
+          "writer": 0,
+          "prior_readers": 0,
+          "prior_writers": 1,
+          "overlap": true,
+          "candidate_topic": "gps"
+        },
+        {
+          "calls": 6538,
+          "overlaps": 4,
+          "untracked": 0,
+          "key_hash": "d5235018fae1f0a3",
+          "key_length": 3,
+          "writer": 0,
+          "prior_readers": 0,
+          "prior_writers": 1,
+          "overlap": true,
+          "candidate_topic": "gps"
+        },
+        {
+          "calls": 6615,
+          "overlaps": 5,
+          "untracked": 0,
+          "key_hash": "2b9d00192bd2941a",
+          "key_length": 3,
+          "writer": 1,
+          "prior_readers": 1,
+          "prior_writers": 0,
+          "overlap": true,
+          "candidate_topic": "imu"
+        },
+        {
+          "calls": 6766,
+          "overlaps": 6,
+          "untracked": 0,
+          "key_hash": "d5235018fae1f0a3",
+          "key_length": 3,
+          "writer": 0,
+          "prior_readers": 0,
+          "prior_writers": 1,
+          "overlap": true,
+          "candidate_topic": "gps"
+        },
+        {
+          "calls": 7277,
+          "overlaps": 7,
+          "untracked": 0,
+          "key_hash": "2b9d00192bd2941a",
+          "key_length": 3,
+          "writer": 0,
+          "prior_readers": 0,
+          "prior_writers": 1,
+          "overlap": true,
+          "candidate_topic": "imu"
+        },
+        {
+          "calls": 7411,
+          "overlaps": 8,
+          "untracked": 0,
+          "key_hash": "2b9d00192bd2941a",
+          "key_length": 3,
+          "writer": 1,
+          "prior_readers": 1,
+          "prior_writers": 0,
+          "overlap": true,
+          "candidate_topic": "imu"
+        },
+        {
+          "calls": 7506,
+          "overlaps": 9,
+          "untracked": 0,
+          "key_hash": "2b9d00192bd2941a",
+          "key_length": 3,
+          "writer": 1,
+          "prior_readers": 1,
+          "prior_writers": 0,
+          "overlap": true,
+          "candidate_topic": "imu"
+        },
+        {
+          "calls": 7715,
+          "overlaps": 10,
+          "untracked": 0,
+          "key_hash": "d5235018fae1f0a3",
+          "key_length": 3,
+          "writer": 0,
+          "prior_readers": 0,
+          "prior_writers": 1,
+          "overlap": true,
+          "candidate_topic": "gps"
+        },
+        {
+          "calls": 8094,
+          "overlaps": 11,
+          "untracked": 0,
+          "key_hash": "d5235018fae1f0a3",
+          "key_length": 3,
+          "writer": 0,
+          "prior_readers": 0,
+          "prior_writers": 1,
+          "overlap": true,
+          "candidate_topic": "gps"
+        },
+        {
+          "calls": 8227,
+          "overlaps": 12,
+          "untracked": 0,
+          "key_hash": "2b9d00192bd2941a",
+          "key_length": 3,
+          "writer": 1,
+          "prior_readers": 1,
+          "prior_writers": 0,
+          "overlap": true,
+          "candidate_topic": "imu"
+        },
+        {
+          "calls": 8284,
+          "overlaps": 13,
+          "untracked": 0,
+          "key_hash": "2b9d00192bd2941a",
+          "key_length": 3,
+          "writer": 1,
+          "prior_readers": 1,
+          "prior_writers": 0,
+          "overlap": true,
+          "candidate_topic": "imu"
+        },
+        {
+          "calls": 8401,
+          "overlaps": 14,
+          "untracked": 0,
+          "key_hash": "acffe79470fa10d4",
+          "key_length": 9,
+          "writer": 1,
+          "prior_readers": 1,
+          "prior_writers": 0,
+          "overlap": true,
+          "candidate_topic": "rotor_pwm"
+        },
+        {
+          "calls": 8683,
+          "overlaps": 15,
+          "untracked": 0,
+          "key_hash": "2b9d00192bd2941a",
+          "key_length": 3,
+          "writer": 1,
+          "prior_readers": 1,
+          "prior_writers": 0,
+          "overlap": true,
+          "candidate_topic": "imu"
+        },
+        {
+          "calls": 8759,
+          "overlaps": 16,
+          "untracked": 0,
+          "key_hash": "2b9d00192bd2941a",
+          "key_length": 3,
+          "writer": 1,
+          "prior_readers": 1,
+          "prior_writers": 0,
+          "overlap": true,
+          "candidate_topic": "imu"
+        },
+        {
+          "calls": 8933,
+          "overlaps": 17,
+          "untracked": 0,
+          "key_hash": "acffe79470fa10d4",
+          "key_length": 9,
+          "writer": 1,
+          "prior_readers": 1,
+          "prior_writers": 0,
+          "overlap": true,
+          "candidate_topic": "rotor_pwm"
+        },
+        {
+          "calls": 8987,
+          "overlaps": 18,
+          "untracked": 0,
+          "key_hash": "2b9d00192bd2941a",
+          "key_length": 3,
+          "writer": 0,
+          "prior_readers": 0,
+          "prior_writers": 1,
+          "overlap": true,
+          "candidate_topic": "imu"
+        },
+        {
+          "calls": 9006,
+          "overlaps": 19,
+          "untracked": 0,
+          "key_hash": "2b9d00192bd2941a",
+          "key_length": 3,
+          "writer": 1,
+          "prior_readers": 1,
+          "prior_writers": 0,
+          "overlap": true,
+          "candidate_topic": "imu"
+        },
+        {
+          "calls": 9025,
+          "overlaps": 20,
+          "untracked": 0,
+          "key_hash": "2b9d00192bd2941a",
+          "key_length": 3,
+          "writer": 1,
+          "prior_readers": 1,
+          "prior_writers": 0,
+          "overlap": true,
+          "candidate_topic": "imu"
+        }
+      ]
+    },
+    {
+      "seed": 2026,
+      "port": 12842,
+      "container": "rmua-re-b3b20d2b0f42-2",
+      "file_exists": true,
+      "logged_calls_lower_bound": 35000,
+      "overlap_counter_lower_bound": 2,
+      "untracked_counter_lower_bound": 0,
+      "events": [
+        {
+          "calls": 27158,
+          "overlaps": 1,
+          "untracked": 0,
+          "key_hash": "2b9d00192bd2941a",
+          "key_length": 3,
+          "writer": 1,
+          "prior_readers": 1,
+          "prior_writers": 0,
+          "overlap": true,
+          "candidate_topic": "imu"
+        },
+        {
+          "calls": 30875,
+          "overlaps": 2,
+          "untracked": 0,
+          "key_hash": "acffe79470fa10d4",
+          "key_length": 9,
+          "writer": 1,
+          "prior_readers": 1,
+          "prior_writers": 0,
+          "overlap": true,
+          "candidate_topic": "rotor_pwm"
+        }
+      ]
+    },
+    {
+      "seed": 789,
+      "port": 12843,
+      "container": "rmua-re-b3b20d2b0f42-3",
+      "file_exists": true,
+      "logged_calls_lower_bound": 35000,
+      "overlap_counter_lower_bound": 0,
+      "untracked_counter_lower_bound": 0,
+      "events": []
+    },
+    {
+      "seed": 1001,
+      "port": 12844,
+      "container": "rmua-re-b3b20d2b0f42-4",
+      "file_exists": true,
+      "logged_calls_lower_bound": 35000,
+      "overlap_counter_lower_bound": 0,
+      "untracked_counter_lower_bound": 0,
+      "events": []
+    },
+    {
+      "seed": 1002,
+      "port": 12845,
+      "container": "rmua-re-b3b20d2b0f42-5",
+      "file_exists": true,
+      "logged_calls_lower_bound": 35000,
+      "overlap_counter_lower_bound": 2,
+      "untracked_counter_lower_bound": 0,
+      "events": [
+        {
+          "calls": 10532,
+          "overlaps": 1,
+          "untracked": 0,
+          "key_hash": "2b9d00192bd2941a",
+          "key_length": 3,
+          "writer": 1,
+          "prior_readers": 1,
+          "prior_writers": 0,
+          "overlap": true,
+          "candidate_topic": "imu"
+        },
+        {
+          "calls": 34030,
+          "overlaps": 2,
+          "untracked": 0,
+          "key_hash": "2b9d00192bd2941a",
+          "key_length": 3,
+          "writer": 0,
+          "prior_readers": 0,
+          "prior_writers": 1,
+          "overlap": true,
+          "candidate_topic": "imu"
+        }
+      ]
+    },
+    {
+      "seed": 1003,
+      "port": 12846,
+      "container": "rmua-re-b3b20d2b0f42-6",
+      "file_exists": true,
+      "logged_calls_lower_bound": 35000,
+      "overlap_counter_lower_bound": 0,
+      "untracked_counter_lower_bound": 0,
+      "events": []
+    },
+    {
+      "seed": 2024,
+      "port": 12847,
+      "container": "rmua-re-b3b20d2b0f42-7",
+      "file_exists": true,
+      "logged_calls_lower_bound": 34000,
+      "overlap_counter_lower_bound": 0,
+      "untracked_counter_lower_bound": 0,
+      "events": []
+    }
+  ],
+  "limitations": [
+    "The runner option is called frequency-guard, but this specific preload does not serialize calls.",
+    "Candidate topic is inferred solely from a 64-bit hash and length; collisions are possible.",
+    "A wrapper overlap does not prove simultaneous deque accesses or explain the earlier crash.",
+    "Counter snapshots are lower bounds; brief overlap may be missed and direct accesses are not covered.",
+    "This was an idle, instrumented, finite-duration run, not a training stability test."
+  ]
+}
