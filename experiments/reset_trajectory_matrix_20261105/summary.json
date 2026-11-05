@@ -1,0 +1,262 @@
+{
+  "runs": {
+    "experiments/reset_trajectory_pwm_pilot_20261105": {
+      "seed": 123,
+      "status": "observed",
+      "reset_success": true,
+      "matched_samples": 18,
+      "max_relative_position_difference": 0.41288396527585014,
+      "max_velocity_difference": 6.7678440559563136,
+      "max_phase_time_disagreement_s": 0.088933228,
+      "pwm_debug_coverage": {
+        "before": {
+          "debug_samples_after_first_nonzero": 249,
+          "matching_samples": 244,
+          "first_match_after_command_ms": 55.958842
+        },
+        "after": {
+          "debug_samples_after_first_nonzero": 250,
+          "matching_samples": 245,
+          "first_match_after_command_ms": 56.124134
+        }
+      },
+      "command_counts": {
+        "before": 173,
+        "after": 174
+      },
+      "line_counts": [
+        373,
+        373
+      ],
+      "line_hashes": [
+        "b43fad1829e1e37e3ec3e7495e65ac9e57c8df0824ca79e8d81fc173fa39ac76",
+        "b43fad1829e1e37e3ec3e7495e65ac9e57c8df0824ca79e8d81fc173fa39ac76"
+      ],
+      "wind_hashes": [
+        [
+          "d2ad79ebe9b78a9c5321f627ccd0e6b35dd02aa0d694eb3aceadd5ee5eee20cf"
+        ],
+        [
+          "d2ad79ebe9b78a9c5321f627ccd0e6b35dd02aa0d694eb3aceadd5ee5eee20cf",
+          "d2ad79ebe9b78a9c5321f627ccd0e6b35dd02aa0d694eb3aceadd5ee5eee20cf"
+        ]
+      ]
+    },
+    "experiments/reset_trajectory_pwm_seed123_repeat2_20261105": {
+      "seed": 123,
+      "status": "observed",
+      "reset_success": true,
+      "matched_samples": 18,
+      "max_relative_position_difference": 0.3481778539999998,
+      "max_velocity_difference": 0.34604909975657816,
+      "max_phase_time_disagreement_s": 0.075112716,
+      "pwm_debug_coverage": {
+        "before": {
+          "debug_samples_after_first_nonzero": 249,
+          "matching_samples": 247,
+          "first_match_after_command_ms": 21.764586
+        },
+        "after": {
+          "debug_samples_after_first_nonzero": 249,
+          "matching_samples": 246,
+          "first_match_after_command_ms": 35.47086
+        }
+      },
+      "command_counts": {
+        "before": 173,
+        "after": 173
+      },
+      "line_counts": [
+        373,
+        373
+      ],
+      "line_hashes": [
+        "b43fad1829e1e37e3ec3e7495e65ac9e57c8df0824ca79e8d81fc173fa39ac76",
+        "b43fad1829e1e37e3ec3e7495e65ac9e57c8df0824ca79e8d81fc173fa39ac76"
+      ],
+      "wind_hashes": [
+        [
+          "d2ad79ebe9b78a9c5321f627ccd0e6b35dd02aa0d694eb3aceadd5ee5eee20cf"
+        ],
+        [
+          "d2ad79ebe9b78a9c5321f627ccd0e6b35dd02aa0d694eb3aceadd5ee5eee20cf",
+          "d2ad79ebe9b78a9c5321f627ccd0e6b35dd02aa0d694eb3aceadd5ee5eee20cf"
+        ]
+      ]
+    },
+    "experiments/reset_trajectory_pwm_seed456_repeat1_20261105": {
+      "seed": 456,
+      "status": "observed",
+      "reset_success": true,
+      "matched_samples": 18,
+      "max_relative_position_difference": 0.4985051469999999,
+      "max_velocity_difference": 6.67454811021437,
+      "max_phase_time_disagreement_s": 0.098393752,
+      "pwm_debug_coverage": {
+        "before": {
+          "debug_samples_after_first_nonzero": 251,
+          "matching_samples": 246,
+          "first_match_after_command_ms": 53.206057
+        },
+        "after": {
+          "debug_samples_after_first_nonzero": 250,
+          "matching_samples": 246,
+          "first_match_after_command_ms": 45.472785
+        }
+      },
+      "command_counts": {
+        "before": 174,
+        "after": 174
+      },
+      "line_counts": [
+        373,
+        373
+      ],
+      "line_hashes": [
+        "7d4cbb22a0f215c41b907fbf6e2f5a4efc6db327bd45857793ffe348a9504809",
+        "7d4cbb22a0f215c41b907fbf6e2f5a4efc6db327bd45857793ffe348a9504809"
+      ],
+      "wind_hashes": [
+        [
+          "7d369f0dadae9758b107a3f760bbb08fc75c21043410246c8b96543ad4ee0ef9"
+        ],
+        [
+          "7d369f0dadae9758b107a3f760bbb08fc75c21043410246c8b96543ad4ee0ef9",
+          "7d369f0dadae9758b107a3f760bbb08fc75c21043410246c8b96543ad4ee0ef9"
+        ]
+      ]
+    },
+    "experiments/reset_trajectory_pwm_seed456_repeat2_20261105": {
+      "seed": 456,
+      "status": "observed",
+      "reset_success": true,
+      "matched_samples": 18,
+      "max_relative_position_difference": 0.4300510289999999,
+      "max_velocity_difference": 1.0807024320341863,
+      "max_phase_time_disagreement_s": 0.075486588,
+      "pwm_debug_coverage": {
+        "before": {
+          "debug_samples_after_first_nonzero": 249,
+          "matching_samples": 246,
+          "first_match_after_command_ms": 32.021928
+        },
+        "after": {
+          "debug_samples_after_first_nonzero": 249,
+          "matching_samples": 246,
+          "first_match_after_command_ms": 38.999988
+        }
+      },
+      "command_counts": {
+        "before": 173,
+        "after": 173
+      },
+      "line_counts": [
+        373,
+        373
+      ],
+      "line_hashes": [
+        "7d4cbb22a0f215c41b907fbf6e2f5a4efc6db327bd45857793ffe348a9504809",
+        "7d4cbb22a0f215c41b907fbf6e2f5a4efc6db327bd45857793ffe348a9504809"
+      ],
+      "wind_hashes": [
+        [
+          "7d369f0dadae9758b107a3f760bbb08fc75c21043410246c8b96543ad4ee0ef9"
+        ],
+        [
+          "7d369f0dadae9758b107a3f760bbb08fc75c21043410246c8b96543ad4ee0ef9",
+          "7d369f0dadae9758b107a3f760bbb08fc75c21043410246c8b96543ad4ee0ef9"
+        ]
+      ]
+    },
+    "experiments/reset_trajectory_pwm_seed2026_repeat1_20261105": {
+      "seed": 2026,
+      "status": "observed",
+      "reset_success": true,
+      "matched_samples": 18,
+      "max_relative_position_difference": 0.26233035299999996,
+      "max_velocity_difference": 0.49716424000000004,
+      "max_phase_time_disagreement_s": 0.08436984,
+      "pwm_debug_coverage": {
+        "before": {
+          "debug_samples_after_first_nonzero": 251,
+          "matching_samples": 250,
+          "first_match_after_command_ms": 17.700234
+        },
+        "after": {
+          "debug_samples_after_first_nonzero": 249,
+          "matching_samples": 244,
+          "first_match_after_command_ms": 50.55445
+        }
+      },
+      "command_counts": {
+        "before": 174,
+        "after": 173
+      },
+      "line_counts": [
+        373,
+        373
+      ],
+      "line_hashes": [
+        "388203d03fb5e0415339b77dabbdfb55ae75a622ad2108abb0720980447009d3",
+        "388203d03fb5e0415339b77dabbdfb55ae75a622ad2108abb0720980447009d3"
+      ],
+      "wind_hashes": [
+        [
+          "b7f89c696969e3719187fe3c55acae5f9a563b91b3f40481658069aaa0e214a9"
+        ],
+        [
+          "b7f89c696969e3719187fe3c55acae5f9a563b91b3f40481658069aaa0e214a9",
+          "b7f89c696969e3719187fe3c55acae5f9a563b91b3f40481658069aaa0e214a9"
+        ]
+      ]
+    },
+    "experiments/reset_trajectory_pwm_seed2026_repeat2_20261105": {
+      "seed": 2026,
+      "status": "observed",
+      "reset_success": true,
+      "matched_samples": 18,
+      "max_relative_position_difference": 0.3977518619999998,
+      "max_velocity_difference": 6.742862271365756,
+      "max_phase_time_disagreement_s": 0.084391815,
+      "pwm_debug_coverage": {
+        "before": {
+          "debug_samples_after_first_nonzero": 249,
+          "matching_samples": 243,
+          "first_match_after_command_ms": 60.53091
+        },
+        "after": {
+          "debug_samples_after_first_nonzero": 250,
+          "matching_samples": 239,
+          "first_match_after_command_ms": 63.958128
+        }
+      },
+      "command_counts": {
+        "before": 173,
+        "after": 173
+      },
+      "line_counts": [
+        373,
+        373
+      ],
+      "line_hashes": [
+        "388203d03fb5e0415339b77dabbdfb55ae75a622ad2108abb0720980447009d3",
+        "388203d03fb5e0415339b77dabbdfb55ae75a622ad2108abb0720980447009d3"
+      ],
+      "wind_hashes": [
+        [
+          "b7f89c696969e3719187fe3c55acae5f9a563b91b3f40481658069aaa0e214a9"
+        ],
+        [
+          "b7f89c696969e3719187fe3c55acae5f9a563b91b3f40481658069aaa0e214a9",
+          "b7f89c696969e3719187fe3c55acae5f9a563b91b3f40481658069aaa0e214a9"
+        ]
+      ]
+    }
+  },
+  "limitations": [
+    "asynchronous nearest samples are matched in host time, not lockstep simulation time",
+    "recorded PWM samples do not prove continuous actuator input; debug truth is posthoc only",
+    "fixed wait was informed by prior diagnostics; no truth used for online policy or reset trigger",
+    "development root hold, stage injection and wind reseed change execution; no full scene replay claim"
+  ]
+}

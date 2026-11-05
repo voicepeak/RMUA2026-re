@@ -132,6 +132,7 @@
             0.0
           ]
         },
+        "phase_time_disagreement_s": 0.017631663,
         "absolute_position_difference": 0.0001256170000000223,
         "relative_position_difference": 0.0,
         "velocity_difference": 0.0
@@ -180,6 +181,7 @@
             0.0
           ]
         },
+        "phase_time_disagreement_s": 0.002069556,
         "absolute_position_difference": 0.0001256170000000223,
         "relative_position_difference": 0.0,
         "velocity_difference": 0.0
@@ -228,6 +230,7 @@
             0.0
           ]
         },
+        "phase_time_disagreement_s": 0.017100685,
         "absolute_position_difference": 0.0001256170000000223,
         "relative_position_difference": 0.0,
         "velocity_difference": 0.0
@@ -276,6 +279,7 @@
             0.0
           ]
         },
+        "phase_time_disagreement_s": 0.017553343,
         "absolute_position_difference": 0.0001256170000000223,
         "relative_position_difference": 0.0,
         "velocity_difference": 0.0
@@ -324,6 +328,7 @@
             0.0
           ]
         },
+        "phase_time_disagreement_s": 0.017304506,
         "absolute_position_difference": 0.0001256170000000223,
         "relative_position_difference": 0.0,
         "velocity_difference": 0.0
@@ -372,6 +377,7 @@
             0.0
           ]
         },
+        "phase_time_disagreement_s": 0.027484088,
         "absolute_position_difference": 0.0015096669999999923,
         "relative_position_difference": 0.00138404999999997,
         "velocity_difference": 0.133589387
@@ -420,6 +426,7 @@
             -1.40200818
           ]
         },
+        "phase_time_disagreement_s": 0.092271928,
         "absolute_position_difference": 0.102092936,
         "relative_position_difference": 0.10221855300000002,
         "velocity_difference": 0.6073267499999999
@@ -468,6 +475,7 @@
             -2.62679458
           ]
         },
+        "phase_time_disagreement_s": 0.072645403,
         "absolute_position_difference": 0.1738230738,
         "relative_position_difference": 0.17394869079999997,
         "velocity_difference": 0.42100190999999976
@@ -516,6 +524,7 @@
             -3.2152884
           ]
         },
+        "phase_time_disagreement_s": 0.017506265,
         "absolute_position_difference": 0.05905580599999993,
         "relative_position_difference": 0.05893018900000002,
         "velocity_difference": 0.09294963000000012
@@ -564,6 +573,7 @@
             -4.24199486
           ]
         },
+        "phase_time_disagreement_s": 0.002336428,
         "absolute_position_difference": 0.01230406999999989,
         "relative_position_difference": 0.0124296869999998,
         "velocity_difference": 0.011915690000000367
@@ -612,6 +622,7 @@
             -4.98433065
           ]
         },
+        "phase_time_disagreement_s": 0.002351253,
         "absolute_position_difference": 0.014486549999999987,
         "relative_position_difference": 0.01461216700000012,
         "velocity_difference": 0.008928770000000696
@@ -660,6 +671,7 @@
             -5.52935839
           ]
         },
+        "phase_time_disagreement_s": 0.007388394,
         "absolute_position_difference": 0.033707380000000065,
         "relative_position_difference": 0.03358176299999993,
         "velocity_difference": 0.013193600000000139
@@ -708,6 +720,7 @@
             -5.91586828
           ]
         },
+        "phase_time_disagreement_s": 0.002294941,
         "absolute_position_difference": 0.017226699999999262,
         "relative_position_difference": 0.017352316999999395,
         "velocity_difference": 0.0044898999999993805
@@ -756,6 +769,7 @@
             -0.0180538408
           ]
         },
+        "phase_time_disagreement_s": 0.002371496,
         "absolute_position_difference": 0.0054158465824521345,
         "relative_position_difference": 0.005298882735155228,
         "velocity_difference": 0.20977576831594913
@@ -804,6 +818,7 @@
             -1.39612913
           ]
         },
+        "phase_time_disagreement_s": 0.012277545,
         "absolute_position_difference": 0.03438910342684204,
         "relative_position_difference": 0.03426573657278505,
         "velocity_difference": 0.14371710434041005
@@ -852,6 +867,7 @@
             -0.229495049
           ]
         },
+        "phase_time_disagreement_s": 0.0124457,
         "absolute_position_difference": 0.012029101541931446,
         "relative_position_difference": 0.011964326760519579,
         "velocity_difference": 0.14445154137302726
@@ -900,6 +916,7 @@
             -0.281048
           ]
         },
+        "phase_time_disagreement_s": 0.002716315,
         "absolute_position_difference": 0.015329476287790666,
         "relative_position_difference": 0.015367112282981033,
         "velocity_difference": 0.13546746199934553
@@ -948,6 +965,7 @@
             -0.339456856
           ]
         },
+        "phase_time_disagreement_s": 0.087620789,
         "absolute_position_difference": 0.021177767842246547,
         "relative_position_difference": 0.021216285748429264,
         "velocity_difference": 0.1643465776469068
@@ -955,7 +973,8 @@
     ],
     "max_absolute_position_difference": 0.1738230738,
     "max_relative_position_difference": 0.17394869079999997,
-    "max_velocity_difference": 0.6073267499999999
+    "max_velocity_difference": 0.6073267499999999,
+    "max_phase_time_disagreement_s": 0.092271928
   },
   "_limitations": [
     "matching uses wall monotonic phase time with up to 75 ms sample error, not lockstep physics time",

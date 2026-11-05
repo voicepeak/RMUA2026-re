@@ -31,6 +31,7 @@ for run in man['runs']:
   if not ar or not br:continue
   apos=[x-y for x,y in zip(a['position'],ar['position'])];bpos=[x-y for x,y in zip(b['position'],br['position'])]
   matches.append({'elapsed_s':elapsed,'sample_time_error_s':errors,'before':a,'after':b,
+    'phase_time_disagreement_s':abs((a['t']-starts['before'])-(b['t']-starts['after']))/1e9,
     'absolute_position_difference':math.dist(a['position'],b['position']),
     'relative_position_difference':math.dist(apos,bpos),'velocity_difference':math.dist(a['velocity'],b['velocity'])})
  def max_or_none(field):return max((x[field] for x in matches),default=None)
@@ -40,7 +41,8 @@ for run in man['runs']:
   'reference_samples':reference,'matched_samples':len(matches),'matches':matches,
   'max_absolute_position_difference':max_or_none('absolute_position_difference'),
   'max_relative_position_difference':max_or_none('relative_position_difference'),
-  'max_velocity_difference':max_or_none('velocity_difference')}
+  'max_velocity_difference':max_or_none('velocity_difference'),
+  'max_phase_time_disagreement_s':max_or_none('phase_time_disagreement_s')}
  pwm_file=p/'pwm_actual.jsonl'
  if pwm_file.exists():
   actual=[json.loads(x) for x in pwm_file.read_text().splitlines() if x.strip()]

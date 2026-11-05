@@ -1,0 +1,48 @@
+{
+  "binary_sha256": "5231addfa25ddaa9e4473ea9ac40c9c0bc685174e69cd14bb49159f443b97800",
+  "settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+  "image_id": "sha256:cd46a48cd28c2a9c6345f60227fd1bd50e78c67ef1e98dcddc0e65893771da57",
+  "pwm_observer_sha256": "6b4c1571c88cec4ff937d542a5ef8e598648be4c816d306fcb82c0e568302fc5",
+  "pwm_command_sha256": "029de00c35a7d0f2b55342d7c98c5ebb7232ec8bb15c576d0074f20bd7d0a85e",
+  "action_policy": "fixed identical open-loop sequences around reset with a fixed 3-second zero-command interval; timing informed by prior posthoc observations; no truth or sensors read online",
+  "interposer_sha256": "8473685b180c9862221d3a3273e140ffa8015b1d0fc346a7cfef16bdb4b98277",
+  "gdb_script_sha256": "9d8ee8617ac581959a282c97a4d0be15bd3ede3d8f4a6ea1eac702af8ea1ddae",
+  "runner_sha256": "a9f8d055de22fc90147a49bc8a90c23a8d3c5b9f30d46b4bcfaac45fb4b6e99a",
+  "mode": "nullrhi",
+  "map": "default Lobby -> OL1",
+  "seeds": [
+    456
+  ],
+  "repeats": 1,
+  "stage_coverage": "GDB mutates stage arguments, forces root z=0 during reset; LD_PRELOAD interposes rand and reseeds before second wind generation; diagnostic only",
+  "injected_stage": 4,
+  "runs": [
+    {
+      "seed": 456,
+      "repeat": 1,
+      "port": 12562,
+      "container": "rmua-trace-90f450f4533d",
+      "start_wall": 1793883340.2308366,
+      "status": "observed",
+      "id": "3aba48da90051a96ad93ce0e21504ce88801dd7f584c97cc071b45f857642126",
+      "ready_wall": 1793883349.012435,
+      "before_reset_exit_code": 124,
+      "pose_posthoc_before_exit_code": 124,
+      "gps_before_exit_code": 124,
+      "pwm_actual_exit_code": 0,
+      "reset_exit_code": 0,
+      "reset_response_success": true,
+      "after_reset_exit_code": 124,
+      "imu_after_exit_code": 124,
+      "pose_posthoc_after_exit_code": 124,
+      "injection_observed": true,
+      "wind_generation_observed": true,
+      "line_generation_observed": true,
+      "root_hold_observed": true,
+      "root_hold_ended": true,
+      "bridge_pose_observed": true,
+      "interpose_reseed_count": 1,
+      "end_wall": 1793883381.936936
+    }
+  ]
+}

@@ -1,0 +1,998 @@
+{
+  "seed456_repeat1": {
+    "status": "observed",
+    "reset_success": true,
+    "phase_start_ns": {
+      "before": 219503418547054,
+      "settle": 219508228051301,
+      "after": 219511243036754
+    },
+    "phase_end_ns": {
+      "before": 219506920360884,
+      "settle": 219511242997345,
+      "after": 219514746108107
+    },
+    "command_counts": {
+      "before": 173,
+      "after": 173
+    },
+    "command_values": {
+      "before": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.3,
+          0.3,
+          0.3,
+          0.3
+        ]
+      ],
+      "after": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.3,
+          0.3,
+          0.3,
+          0.3
+        ]
+      ]
+    },
+    "reference_samples": {
+      "before": {
+        "t": 219503443470546,
+        "position": [
+          0.0,
+          0.0,
+          0.308786392
+        ],
+        "orientation_raw": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "velocity": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "after": {
+        "t": 219511283673819,
+        "position": [
+          0.0,
+          0.0,
+          0.308896363
+        ],
+        "orientation_raw": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "velocity": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "matched_samples": 18,
+    "matches": [
+      {
+        "elapsed_s": 0.0,
+        "sample_time_error_s": {
+          "before": 0.024923492,
+          "after": 0.040637065
+        },
+        "before": {
+          "t": 219503443470546,
+          "position": [
+            0.0,
+            0.0,
+            0.308786392
+          ],
+          "orientation_raw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "velocity": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "after": {
+          "t": 219511283673819,
+          "position": [
+            0.0,
+            0.0,
+            0.308896363
+          ],
+          "orientation_raw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "velocity": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "phase_time_disagreement_s": 0.015713573,
+        "absolute_position_difference": 0.0001099709999999865,
+        "relative_position_difference": 0.0,
+        "velocity_difference": 0.0
+      },
+      {
+        "elapsed_s": 0.2,
+        "sample_time_error_s": {
+          "before": 0.035005125,
+          "after": 0.050557773
+        },
+        "before": {
+          "t": 219503653552179,
+          "position": [
+            0.0,
+            0.0,
+            0.308786392
+          ],
+          "orientation_raw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "velocity": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "after": {
+          "t": 219511493594527,
+          "position": [
+            0.0,
+            0.0,
+            0.308896363
+          ],
+          "orientation_raw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "velocity": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "phase_time_disagreement_s": 0.015552648,
+        "absolute_position_difference": 0.0001099709999999865,
+        "relative_position_difference": 0.0,
+        "velocity_difference": 0.0
+      },
+      {
+        "elapsed_s": 0.4,
+        "sample_time_error_s": {
+          "before": 0.035099832,
+          "after": 0.039502436
+        },
+        "before": {
+          "t": 219503853646886,
+          "position": [
+            0.0,
+            0.0,
+            0.308786392
+          ],
+          "orientation_raw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "velocity": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "after": {
+          "t": 219511603534318,
+          "position": [
+            0.0,
+            0.0,
+            0.308896363
+          ],
+          "orientation_raw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "velocity": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "phase_time_disagreement_s": 0.074602268,
+        "absolute_position_difference": 0.0001099709999999865,
+        "relative_position_difference": 0.0,
+        "velocity_difference": 0.0
+      },
+      {
+        "elapsed_s": 0.6000000000000001,
+        "sample_time_error_s": {
+          "before": 0.054877009,
+          "after": 0.029446584
+        },
+        "before": {
+          "t": 219503963670045,
+          "position": [
+            0.0,
+            0.0,
+            0.308786392
+          ],
+          "orientation_raw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "velocity": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "after": {
+          "t": 219511813590170,
+          "position": [
+            0.0,
+            0.0,
+            0.308896363
+          ],
+          "orientation_raw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "velocity": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "phase_time_disagreement_s": 0.025430425,
+        "absolute_position_difference": 0.0001099709999999865,
+        "relative_position_difference": 0.0,
+        "velocity_difference": 0.0
+      },
+      {
+        "elapsed_s": 0.8,
+        "sample_time_error_s": {
+          "before": 0.035537558,
+          "after": 0.019537393
+        },
+        "before": {
+          "t": 219504183009496,
+          "position": [
+            0.0,
+            0.0,
+            0.308786392
+          ],
+          "orientation_raw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "velocity": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "after": {
+          "t": 219512023499361,
+          "position": [
+            0.0,
+            0.0,
+            0.308896363
+          ],
+          "orientation_raw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "velocity": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "phase_time_disagreement_s": 0.016000165,
+        "absolute_position_difference": 0.0001099709999999865,
+        "relative_position_difference": 0.0,
+        "velocity_difference": 0.0
+      },
+      {
+        "elapsed_s": 1.0,
+        "sample_time_error_s": {
+          "before": 0.034841654,
+          "after": 0.009361139
+        },
+        "before": {
+          "t": 219504383705400,
+          "position": [
+            0.0,
+            0.0,
+            0.308786392
+          ],
+          "orientation_raw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "velocity": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "after": {
+          "t": 219512233675615,
+          "position": [
+            0.0,
+            0.0,
+            0.308896363
+          ],
+          "orientation_raw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "velocity": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "phase_time_disagreement_s": 0.025480515,
+        "absolute_position_difference": 0.0001099709999999865,
+        "relative_position_difference": 0.0,
+        "velocity_difference": 0.0
+      },
+      {
+        "elapsed_s": 1.2000000000000002,
+        "sample_time_error_s": {
+          "before": 0.014997422,
+          "after": 0.010466047
+        },
+        "before": {
+          "t": 219504603549632,
+          "position": [
+            0.0,
+            0.0,
+            0.22849907
+          ],
+          "orientation_raw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "velocity": [
+            0.0,
+            0.0,
+            -1.0320667
+          ]
+        },
+        "after": {
+          "t": 219512453502801,
+          "position": [
+            0.0,
+            0.0,
+            0.205567613
+          ],
+          "orientation_raw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "velocity": [
+            0.0,
+            0.0,
+            -1.16895628
+          ]
+        },
+        "phase_time_disagreement_s": 0.025463469,
+        "absolute_position_difference": 0.02293145699999999,
+        "relative_position_difference": 0.023041427999999975,
+        "velocity_difference": 0.13688958000000007
+      },
+      {
+        "elapsed_s": 1.4000000000000001,
+        "sample_time_error_s": {
+          "before": 0.014898495,
+          "after": 0.020532794
+        },
+        "before": {
+          "t": 219504803648559,
+          "position": [
+            0.0,
+            0.0,
+            -0.101153977
+          ],
+          "orientation_raw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "velocity": [
+            0.0,
+            0.0,
+            -2.27750897
+          ]
+        },
+        "after": {
+          "t": 219512663569548,
+          "position": [
+            0.0,
+            0.0,
+            -0.179258168
+          ],
+          "orientation_raw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "velocity": [
+            0.0,
+            0.0,
+            -2.47132707
+          ]
+        },
+        "phase_time_disagreement_s": 0.035431289,
+        "absolute_position_difference": 0.07810419099999999,
+        "relative_position_difference": 0.07821416199999998,
+        "velocity_difference": 0.1938181000000001
+      },
+      {
+        "elapsed_s": 1.6,
+        "sample_time_error_s": {
+          "before": 0.005130269,
+          "after": 0.030513712
+        },
+        "before": {
+          "t": 219505013416785,
+          "position": [
+            0.0,
+            0.0,
+            -0.703964055
+          ],
+          "orientation_raw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "velocity": [
+            0.0,
+            0.0,
+            -3.42918944
+          ]
+        },
+        "after": {
+          "t": 219512873550466,
+          "position": [
+            0.0,
+            0.0,
+            -0.819464386
+          ],
+          "orientation_raw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "velocity": [
+            0.0,
+            0.0,
+            -3.59041333
+          ]
+        },
+        "phase_time_disagreement_s": 0.035643981,
+        "absolute_position_difference": 0.11550033100000001,
+        "relative_position_difference": 0.11561030199999989,
+        "velocity_difference": 0.16122389000000004
+      },
+      {
+        "elapsed_s": 1.8,
+        "sample_time_error_s": {
+          "before": 0.004963595,
+          "after": 0.040312842
+        },
+        "before": {
+          "t": 219505223510649,
+          "position": [
+            0.0,
+            0.0,
+            -1.52598679
+          ],
+          "orientation_raw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "velocity": [
+            0.0,
+            0.0,
+            -4.36158991
+          ]
+        },
+        "after": {
+          "t": 219513083349596,
+          "position": [
+            0.0,
+            0.0,
+            -1.67161143
+          ],
+          "orientation_raw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "velocity": [
+            0.0,
+            0.0,
+            -4.48735237
+          ]
+        },
+        "phase_time_disagreement_s": 0.035349247,
+        "absolute_position_difference": 0.14562464000000008,
+        "relative_position_difference": 0.14573461100000018,
+        "velocity_difference": 0.1257624599999998
+      },
+      {
+        "elapsed_s": 2.0,
+        "sample_time_error_s": {
+          "before": 0.014915202,
+          "after": 0.040939537
+        },
+        "before": {
+          "t": 219505433462256,
+          "position": [
+            0.0,
+            0.0,
+            -2.52038026
+          ],
+          "orientation_raw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "velocity": [
+            0.0,
+            0.0,
+            -5.07363224
+          ]
+        },
+        "after": {
+          "t": 219513283976291,
+          "position": [
+            0.0,
+            0.0,
+            -2.64252758
+          ],
+          "orientation_raw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "velocity": [
+            0.0,
+            0.0,
+            -5.1418829
+          ]
+        },
+        "phase_time_disagreement_s": 0.026024335,
+        "absolute_position_difference": 0.12214731999999984,
+        "relative_position_difference": 0.12225729099999993,
+        "velocity_difference": 0.06825065999999946
+      },
+      {
+        "elapsed_s": 2.2,
+        "sample_time_error_s": {
+          "before": 0.024907133,
+          "after": 0.049436078
+        },
+        "before": {
+          "t": 219505643454187,
+          "position": [
+            0.0,
+            0.0,
+            -3.64348078
+          ],
+          "orientation_raw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "velocity": [
+            0.0,
+            0.0,
+            -5.5934639
+          ]
+        },
+        "after": {
+          "t": 219513393600676,
+          "position": [
+            0.0,
+            0.0,
+            -3.21331978
+          ],
+          "orientation_raw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "velocity": [
+            0.0,
+            0.0,
+            -5.42023659
+          ]
+        },
+        "phase_time_disagreement_s": 0.074343211,
+        "absolute_position_difference": 0.430161,
+        "relative_position_difference": 0.4300510289999999,
+        "velocity_difference": 0.1732273099999997
+      },
+      {
+        "elapsed_s": 2.4000000000000004,
+        "sample_time_error_s": {
+          "before": 0.025012628,
+          "after": 0.029606256
+        },
+        "before": {
+          "t": 219505843559682,
+          "position": [
+            0.0,
+            0.0,
+            -4.80541325
+          ],
+          "orientation_raw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "velocity": [
+            0.0,
+            0.0,
+            -5.94745541
+          ]
+        },
+        "after": {
+          "t": 219513613430498,
+          "position": [
+            0.0,
+            0.0,
+            -4.45080853
+          ],
+          "orientation_raw": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "velocity": [
+            0.0,
+            0.0,
+            -5.8542161
+          ]
+        },
+        "phase_time_disagreement_s": 0.054618884,
+        "absolute_position_difference": 0.3546047200000002,
+        "relative_position_difference": 0.35449474900000055,
+        "velocity_difference": 0.09323930999999952
+      },
+      {
+        "elapsed_s": 2.6,
+        "sample_time_error_s": {
+          "before": 0.034920262,
+          "after": 0.019489862
+        },
+        "before": {
+          "t": 219506053467316,
+          "position": [
+            0.00526406849,
+            -6.50205475e-05,
+            -4.34638834
+          ],
+          "orientation_raw": [
+            -0.000335311575,
+            -0.0271480363,
+            -1.92857601e-06,
+            0.999631405
+          ],
+          "velocity": [
+            0.0834805593,
+            -0.00103115744,
+            -0.262262434
+          ]
+        },
+        "after": {
+          "t": 219513823546892,
+          "position": [
+            0.00179383578,
+            -2.21568262e-05,
+            -4.34240341
+          ],
+          "orientation_raw": [
+            -0.00023560453,
+            -0.0190756358,
+            -9.45637339e-07,
+            0.999818027
+          ],
+          "velocity": [
+            0.0407386571,
+            -0.000503186719,
+            0.118299522
+          ]
+        },
+        "phase_time_disagreement_s": 0.054410124,
+        "absolute_position_difference": 0.005284318259251136,
+        "relative_position_difference": 0.005201890003819642,
+        "velocity_difference": 0.3829550251808984
+      },
+      {
+        "elapsed_s": 2.8000000000000003,
+        "sample_time_error_s": {
+          "before": 0.04508325,
+          "after": 0.000322017
+        },
+        "before": {
+          "t": 219506263630304,
+          "position": [
+            0.0240079239,
+            -0.000296570535,
+            -4.42669535
+          ],
+          "orientation_raw": [
+            -0.000696592382,
+            -0.0563940071,
+            -8.40000575e-06,
+            0.998408377
+          ],
+          "velocity": [
+            0.320407152,
+            -0.00395917613,
+            -0.262921721
+          ]
+        },
+        "after": {
+          "t": 219514043358771,
+          "position": [
+            0.0344411507,
+            -0.000425466773,
+            -4.4797802
+          ],
+          "orientation_raw": [
+            -0.000622861844,
+            -0.0504261367,
+            -6.70824511e-06,
+            0.99872762
+          ],
+          "velocity": [
+            0.290691376,
+            -0.00359157193,
+            -1.34321547
+          ]
+        },
+        "phase_time_disagreement_s": 0.044761233,
+        "absolute_position_difference": 0.05410055577554578,
+        "relative_position_difference": 0.05420846628454308,
+        "velocity_difference": 1.0807024320341863
+      },
+      {
+        "elapsed_s": 3.0,
+        "sample_time_error_s": {
+          "before": 0.044985452,
+          "after": 0.010540796
+        },
+        "before": {
+          "t": 219506373561602,
+          "position": [
+            0.0324901119,
+            -0.000357158686,
+            -4.43109369
+          ],
+          "orientation_raw": [
+            0.0036061923,
+            -0.0686869621,
+            2.44290422e-05,
+            0.997631788
+          ],
+          "velocity": [
+            0.426689267,
+            -0.00158238201,
+            -0.151747063
+          ]
+        },
+        "after": {
+          "t": 219514253577550,
+          "position": [
+            0.0364055447,
+            -0.000284473557,
+            -4.43220234
+          ],
+          "orientation_raw": [
+            0.0059071579,
+            -0.0734893382,
+            0.000103850296,
+            0.997278512
+          ],
+          "velocity": [
+            0.482033968,
+            0.00446229568,
+            -0.154406771
+          ]
+        },
+        "phase_time_disagreement_s": 0.055526248,
+        "absolute_position_difference": 0.004070012525999575,
+        "relative_position_difference": 0.0041013332321250835,
+        "velocity_difference": 0.05573731338879412
+      },
+      {
+        "elapsed_s": 3.2,
+        "sample_time_error_s": {
+          "before": 0.035518118,
+          "after": 0.030505236
+        },
+        "before": {
+          "t": 219506583028936,
+          "position": [
+            0.0427470878,
+            0.000363814092,
+            -4.43304157
+          ],
+          "orientation_raw": [
+            0.00864724349,
+            -0.0840507001,
+            -0.000204408308,
+            0.99642396
+          ],
+          "velocity": [
+            0.639532685,
+            0.032507889,
+            -0.184443027
+          ]
+        },
+        "after": {
+          "t": 219514473541990,
+          "position": [
+            0.0540974438,
+            0.00120345689,
+            -4.43631983
+          ],
+          "orientation_raw": [
+            0.00845019612,
+            -0.087000154,
+            -0.00056077796,
+            0.996172369
+          ],
+          "velocity": [
+            0.721303821,
+            0.044879932,
+            -0.278601944
+          ]
+        },
+        "phase_time_disagreement_s": 0.066023354,
+        "absolute_position_difference": 0.01184409430824366,
+        "relative_position_difference": 0.01187500276481351,
+        "velocity_difference": 0.12532153757968828
+      },
+      {
+        "elapsed_s": 3.4000000000000004,
+        "sample_time_error_s": {
+          "before": 0.035477565,
+          "after": 0.040009023
+        },
+        "before": {
+          "t": 219506783069489,
+          "position": [
+            0.046528466,
+            0.000989911496,
+            -4.43298101
+          ],
+          "orientation_raw": [
+            0.00604814291,
+            -0.0914048031,
+            -0.00175114395,
+            0.995793939
+          ],
+          "velocity": [
+            0.799979687,
+            0.057667885,
+            -0.188412279
+          ]
+        },
+        "after": {
+          "t": 219514683045777,
+          "position": [
+            0.068317309,
+            0.00250961259,
+            -4.43974066
+          ],
+          "orientation_raw": [
+            0.00372786517,
+            -0.0927856266,
+            -0.00268466794,
+            0.995675504
+          ],
+          "velocity": [
+            0.910130382,
+            0.0625377521,
+            -0.348224819
+          ]
+        },
+        "phase_time_disagreement_s": 0.075486588,
+        "absolute_position_difference": 0.022863858791032133,
+        "relative_position_difference": 0.022896612486946483,
+        "velocity_difference": 0.1941569961546745
+      }
+    ],
+    "max_absolute_position_difference": 0.430161,
+    "max_relative_position_difference": 0.4300510289999999,
+    "max_velocity_difference": 1.0807024320341863,
+    "max_phase_time_disagreement_s": 0.075486588,
+    "pwm_debug_coverage": {
+      "before": {
+        "debug_samples_after_first_nonzero": 249,
+        "matching_samples": 246,
+        "first_match_after_command_ms": 32.021928
+      },
+      "after": {
+        "debug_samples_after_first_nonzero": 249,
+        "matching_samples": 246,
+        "first_match_after_command_ms": 38.999988
+      }
+    }
+  },
+  "_limitations": [
+    "matching uses wall monotonic phase time with up to 75 ms sample error, not lockstep physics time",
+    "command publication is observed but motor application and exact continuous input equivalence are not proven",
+    "API state is not full scene, contacts, vehicle or all simulator physics state",
+    "fixed 3-second wait chosen using prior posthoc observations; no debug truth used online",
+    "stage, height hold and wind reseed are diagnostic interventions"
+  ]
+}
