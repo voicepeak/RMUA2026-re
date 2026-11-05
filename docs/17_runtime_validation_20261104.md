@@ -226,3 +226,12 @@ reset 与不同随机流的直接对照首场：seed 123 的 ROS reset 返回 fa
 reset 对照已扩展为三个 seed 各两次：六场服务响应均为 false；各场游戏 reset 入口 FRandomStream current 回到对应 seed，前后各 373 个线障组件提交变换多重集合哈希一致，而风数组哈希均不同。同 seed 的这两种结果重复一致；第二组风 dump 的重复是遗留断点输出，不能当成第三次生成。未证明物理场景成功重置或风随机状态改变的原因。完整数据和复算见 `experiments/reset_instances_20261105/`。
 
 车辆空载对照在原路线及预设固定路线下各做三个 seed 两次，不发送 PWM。固定路径每场均写入一次，世界位置最近原点距离约 29–344 cm，最近样本前后一秒均无 DroneHitEvent；每场仍有两个其他时间的事件。seed 456 固定路线两次仅采到 12 个世界样本，其他 seed 为 26 个；原路线 seed 456 的轨迹也不同于其他 seed。世界原点不是已配准的无人机碰撞体位置，采样有限且事件对方未知，因此该负样本不证明车辆碰撞或其缺失。完整日志与分析见 `experiments/vehicle_fixture_idle_{0,1}_20261105/`。
+
+车辆直接分支受控对照：在已记录的 stage 4 入口重定向和状态门强制基础上，首次运行至 `0x2fc89de` 时记录原 EAX 桶并临时置零，三 seed 各两次的原桶为 2、7、0，六次均初始化五点路径，路径字节 SHA-256 均为 `d055667cc723c7a55d2bdcbb5d4fa9e84098d43dadf36818229a68e2f8cd2cc0`，速度字段 667，并各有 12–13 个世界位置样本。覆盖桶、状态和代码调用为开发容器内注入，输入不使用调试真值；原二进制挂载只读。该对照说明 seed 456 在强制直接分支下路径可重复，不能确定自然间接分支路径不重复的原因。完整日志、脚本与复算见 `experiments/vehicle_forced_bucket_4_20261105/`、`scripts/run_stage_vehicle_forced_bucket.py` 和 `scripts/analyze_vehicle_dynamics.py`。运行器的 `observed` 基于原采集版本的风/线条件，车辆桶及路径应以 analysis 和 GDB 日志另行核查；脚本已加入后续运行的显式检查。
+
+复现车辆桶固定对照（`SIM_DIR` 指向只读官方模拟器目录，`ROS_WS` 指向消息工作区；输出目录须不存在）：
+
+```bash
+python3 scripts/run_stage_vehicle_forced_bucket.py --stage 4 --simulator "$SIM_DIR" --settings experiments/training_host_20261105/settings.json --messages "$ROS_WS" --output /tmp/rmua-vehicle-bucket --seeds 123,456,2026 --repeats 2 --sample-seconds 5 --port 12770
+python3 scripts/analyze_vehicle_dynamics.py /tmp/rmua-vehicle-bucket
+```

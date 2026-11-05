@@ -156,3 +156,5 @@ seed 123 一次 false reset 的直接对照中，线障组件提交变换前后�
 车辆强制五点固定路线的首场已记录组件穿越预设世界原点附近的运动与无人机命中回调；事件对方未识别，不能证明车辆接触，见 docs/17。
 
 三 seed 各两次 false reset 均在游戏 reset 入口恢复 FRandomStream 到 seed；线障提交的 373 个变换多重集合前后相同，风数组前后不同，每个 seed 的两次结果一致。此证据不表明场景成功重放，也未确认 libc 随机状态变化的原因。详见 `experiments/reset_instances_20261105/reset_analysis.json`。
+
+车辆入口将观测桶强制为 0，并强制状态门后，三 seed 各两次均生成相同的五点路径哈希；原桶分别为 2、7、0。seed 456 在受控直接分支可重复，不证明自然间接分支的路径或随机流确定性，详见 `experiments/vehicle_forced_bucket_4_20261105/analysis.json`。

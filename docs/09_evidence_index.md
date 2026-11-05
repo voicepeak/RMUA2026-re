@@ -156,3 +156,4 @@
 | false reset 前后线障提交与风数组对照 | `experiments/reset_instances_pilot_20261105/reset_analysis.json`、`scripts/stage_reset_instances.gdb`；单 seed 首场 |
 | 固定车辆路径、世界轨迹及回调首场 | `experiments/vehicle_fixture_pilot_20261105/`、`scripts/stage_vehicle_fixture.gdb`；未证明车辆接触 |
 | false reset 与车辆空载对照三 seed 两次 | `experiments/reset_instances_20261105/reset_analysis.json`、`experiments/vehicle_fixture_idle_{0,1}_20261105/vehicle_fixture_analysis.json`；reset 返回 false、车辆事件对方未知 |
+| 车辆桶强制 0 的三 seed 两次对照 | `experiments/vehicle_forced_bucket_4_20261105/analysis.json`、`scripts/stage_vehicle_forced_bucket.gdb`、`scripts/run_stage_vehicle_forced_bucket.py`；仅开发注入 |
