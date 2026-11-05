@@ -1,0 +1,42 @@
+{
+  "binary_sha256": "5231addfa25ddaa9e4473ea9ac40c9c0bc685174e69cd14bb49159f443b97800",
+  "settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+  "image_id": "sha256:cd46a48cd28c2a9c6345f60227fd1bd50e78c67ef1e98dcddc0e65893771da57",
+  "gdb_script_sha256": "95f9bd00a5d7382c6e9f9981579e68acb6a4495358ce8c7067405706913503a8",
+  "runner_sha256": "77980025aa05b232eaea1c19ddfb1737f42bbdd7d262a9f81633b36a6a2d212d",
+  "sensor_clock_sha256": "266167fedcf8d5b3370cac5efa1321281a07981f23af60d22ce374c1e4ee059b",
+  "pwm_probe_sha256": "6b4c1571c88cec4ff937d542a5ef8e598648be4c816d306fcb82c0e568302fc5",
+  "command_probe_sha256": "0cf446e0d525b6286cc86188e39bd78458c64c5ba454f4637cca7475082133a1",
+  "command_policy": "fixed 20-second open-loop PWM, ordinary IMU availability gates startup; no debug values used in actions",
+  "mode": "nullrhi",
+  "map": "default Lobby -> OL1",
+  "seeds": [
+    123
+  ],
+  "repeats": 1,
+  "stage_coverage": "GDB mutates initial stage call arguments; diagnostic, not official progression",
+  "injected_stage": 4,
+  "runs": [
+    {
+      "seed": 123,
+      "repeat": 1,
+      "port": 13000,
+      "container": "rmua-trace-2f6ec2dc90ee",
+      "start_wall": 1793859162.1654508,
+      "status": "observed",
+      "id": "1fa35d3d10f27f59cfdfed45c0320e8b78e7d782c4a4d04b3ad7e2cc07500a7f",
+      "ready_wall": 1793859170.892062,
+      "before_reset_exit_code": 124,
+      "imu_exit_code": 124,
+      "gps_exit_code": 124,
+      "pose_gt_posthoc_exit_code": 124,
+      "sensor_clock_exit_code": 0,
+      "pwm_wire_exit_code": 0,
+      "fixed_pwm_command_exit_code": 0,
+      "injection_observed": true,
+      "wind_generation_observed": true,
+      "line_generation_observed": true,
+      "end_wall": 1793859197.0926225
+    }
+  ]
+}

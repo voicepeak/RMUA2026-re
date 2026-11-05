@@ -16,8 +16,8 @@ for run in m['runs']:
    changes+=1
    if first is None:first=t
    last=t
-   if i>=0:
+   if i>=0 and t<=times[-1]:
     phase=str(commands[i]['command'][0]);overlap[phase]=overlap.get(phase,0)+1
   previous=v
- out[key]={'command_samples':len(commands),'wind_samples':len(wind),'wind_change_samples':changes,'change_samples_by_latest_command':overlap,'first_change_header_ns':first,'last_change_header_ns':last,'limitations':'Header-domain nearest previous command is an approximate alignment; wind change is thresholded and observations are under repeated state injection, not a causal or calibrated delay measurement.'}
+ out[key]={'command_samples':len(commands),'wind_samples':len(wind),'wind_change_samples':changes,'change_samples_by_latest_command':overlap,'first_change_header_ns':first,'last_change_header_ns':last,'limitations':'Header-domain nearest previous command is an approximate alignment, bounded by the last recorded command; wind change is thresholded and observations are under repeated state injection, not a causal or calibrated delay measurement.'}
 (a.directory/'overlap_analysis.json').write_text(json.dumps(out,indent=2)+'\n');print(json.dumps(out,indent=2))

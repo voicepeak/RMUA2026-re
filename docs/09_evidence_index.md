@@ -167,3 +167,5 @@
 | 受约束不合格的 stage 6 迟发补样 | `experiments/wind_pwm_transition_6_seed123_late_20261105/`；延迟根据调试风事后时序选择，仅保留诊断 |
 | 粗线实例碰撞普通 IMU 就绪复验 | `experiments/line_hit_imu_thick_20261105/hit_instance_analysis.json`；三 seed 两次，固定开环 PWM |
 | 细线实例碰撞普通 IMU 就绪复验 | `experiments/line_hit_imu_thin_20261105/hit_instance_analysis.json`；三 seed 两次，固定开环 PWM |
+
+| 普通 IMU 就绪的 stage 4 长 PWM 对照及未跟随样本 | `experiments/wind_pwm_imu_long_4_20261105/phase_coverage.json`、`overlap_analysis.json`、原始流；`experiments/wind_pwm_imu_long_pilot_20261105/`；`scripts/analyze_pwm_phase_coverage.py`、`scripts/run_wind_pwm_fixed_long.py`；输入设计独立性及下降沿因果未证 |

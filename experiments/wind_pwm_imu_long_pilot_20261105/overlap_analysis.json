@@ -1,0 +1,14 @@
+{
+  "seed123_repeat1": {
+    "command_samples": 990,
+    "wind_samples": 1232,
+    "wind_change_samples": 82,
+    "change_samples_by_latest_command": {
+      "0.3": 13,
+      "0.4": 28
+    },
+    "first_change_header_ns": 1793859179716712952,
+    "last_change_header_ns": 1793859193514007330,
+    "limitations": "Header-domain nearest previous command is an approximate alignment, bounded by the last recorded command; wind change is thresholded and observations are under repeated state injection, not a causal or calibrated delay measurement."
+  }
+}

@@ -282,3 +282,9 @@ python3 scripts/analyze_vehicle_contact.py /tmp/rmua-vehicle-contact
 修复调试风就绪依赖后，粗线第 8 个提交的固定夹具和开环 PWM 对照以普通 IMU 消息判断就绪重跑：三个 seed 各两次，返回索引均为 7，各场 41–43 次同组件命中块 `+0x58` 均为 7，固定 PWM 发布均成功。调试风和位姿只采集供事后分析，命令时间表和夹具输入未读取其值。`experiments/line_hit_imu_thick_20261105/` 保存完整数据及 `hit_instance_analysis.json`；该偏移仍是当前版本受控推断，非已确认的跨版本 ABI。
 
 细线第 8 个提交的普通 IMU 就绪复验同样完成三个 seed 各两次：每场返回索引为 7，16–20 次同组件命中块 `+0x58` 均为 7，固定 PWM 均成功。完整原始数据及分析在 `experiments/line_hit_imu_thin_20261105/`，复现命令同粗线，将 `--selector` 设置为 0，且使用独立输出目录与端口。
+
+## 普通 IMU 就绪的长 PWM 复验与失败边界
+
+`experiments/wind_pwm_imu_long_4_20261105/` 在 stage 4 持续状态注入下，对 seed 123/456/2026 各两次执行固定 20 秒对称 PWM：0（1 s）、0.2、0.3、0.4、0.2（各 4 s）、0（3 s）。命令器无订阅；运行器以普通 IMU 首条消息就绪，再并行采集风、PWM、IMU/GPS、LiDAR 和事后位姿。六场上升的三个非零阶段分别有 397–402 个同阶段匹配输出；后续 0.2 和 0 阶段均为零匹配，所有对应输出均为 0.4（各约 398–401、297–301 条）；初始零也没有匹配。调试日志中存在 old=12 被逐 tick 写回 7 的记录，尚不能由此确定输出不跟随的原因、接收端处理或物理电机状态。该实验不能支持下降沿时延、动力学或成功结束的声明。
+
+每场风变化有 41 个样本按近似 header 对齐到前述 0.3/0.4 命令阶段；风与 PWM 的关联不是因果证明。六场 IMU 分别约 2300 条、LiDAR 各 232 条，单调钟到达间隔 p99 分别约 10.22–10.35 ms、99.39–104.52 ms；这些是订阅端间隔而非端到端时延。NullRHI 相机没有有效图像。输入时间表是在先前风采样之后制定，虽不在线读取真值，其设计来源无法证明独立于事后真值，故不能计入严格受限控制验收。先导场及失败输出在 `experiments/wind_pwm_imu_long_pilot_20261105/`；`phase_coverage.json`、`pwm_analysis.json`、`overlap_analysis.json`、各 `sensor_clock_summary.json` 和原始流可复算。`scripts/analyze_wind_pwm_overlap.py` 已限制到最后一条已记录命令，避免把命令结束后的风变化无限归属于最后阶段；旧分析文件仍保留其当时结果。

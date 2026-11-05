@@ -1,0 +1,76 @@
+{
+  "seed123_repeat1": {
+    "command_samples": 990,
+    "wind_samples": 1135,
+    "wind_change_samples": 82,
+    "change_samples_by_latest_command": {
+      "0.3": 11,
+      "0.4": 30
+    },
+    "first_change_header_ns": 1793864693484402418,
+    "last_change_header_ns": 1793864707269696474,
+    "limitations": "Header-domain nearest previous command is an approximate alignment, bounded by the last recorded command; wind change is thresholded and observations are under repeated state injection, not a causal or calibrated delay measurement."
+  },
+  "seed123_repeat2": {
+    "command_samples": 990,
+    "wind_samples": 1132,
+    "wind_change_samples": 82,
+    "change_samples_by_latest_command": {
+      "0.3": 14,
+      "0.4": 27
+    },
+    "first_change_header_ns": 1793864726398266792,
+    "last_change_header_ns": 1793864740198561192,
+    "limitations": "Header-domain nearest previous command is an approximate alignment, bounded by the last recorded command; wind change is thresholded and observations are under repeated state injection, not a causal or calibrated delay measurement."
+  },
+  "seed456_repeat1": {
+    "command_samples": 990,
+    "wind_samples": 1135,
+    "wind_change_samples": 82,
+    "change_samples_by_latest_command": {
+      "0.3": 41,
+      "0.0": 41
+    },
+    "first_change_header_ns": 1793864757908892632,
+    "last_change_header_ns": 1793864770566162586,
+    "limitations": "Header-domain nearest previous command is an approximate alignment, bounded by the last recorded command; wind change is thresholded and observations are under repeated state injection, not a causal or calibrated delay measurement."
+  },
+  "seed456_repeat2": {
+    "command_samples": 990,
+    "wind_samples": 1134,
+    "wind_change_samples": 82,
+    "change_samples_by_latest_command": {
+      "0.3": 41,
+      "0.0": 41
+    },
+    "first_change_header_ns": 1793864790915705204,
+    "last_change_header_ns": 1793864803554974794,
+    "limitations": "Header-domain nearest previous command is an approximate alignment, bounded by the last recorded command; wind change is thresholded and observations are under repeated state injection, not a causal or calibrated delay measurement."
+  },
+  "seed2026_repeat1": {
+    "command_samples": 990,
+    "wind_samples": 1134,
+    "wind_change_samples": 82,
+    "change_samples_by_latest_command": {
+      "0.3": 20,
+      "0.4": 21,
+      "0.0": 16
+    },
+    "first_change_header_ns": 1793864824785681009,
+    "last_change_header_ns": 1793864837985962391,
+    "limitations": "Header-domain nearest previous command is an approximate alignment, bounded by the last recorded command; wind change is thresholded and observations are under repeated state injection, not a causal or calibrated delay measurement."
+  },
+  "seed2026_repeat2": {
+    "command_samples": 990,
+    "wind_samples": 1135,
+    "wind_change_samples": 82,
+    "change_samples_by_latest_command": {
+      "0.3": 22,
+      "0.4": 19,
+      "0.0": 18
+    },
+    "first_change_header_ns": 1793864857706242561,
+    "last_change_header_ns": 1793864870894523859,
+    "limitations": "Header-domain nearest previous command is an approximate alignment, bounded by the last recorded command; wind change is thresholded and observations are under repeated state injection, not a causal or calibrated delay measurement."
+  }
+}
