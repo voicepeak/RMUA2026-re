@@ -1,0 +1,205 @@
+{
+  "image": "rmua/noetic-xal:driver-recovery-20261012",
+  "image_id": "sha256:a1bfe1df3d0f0b57c406fc7873803c07a812f291e42c1a7eba13d2f9328fc106",
+  "binary_sha256": "5231addfa25ddaa9e4473ea9ac40c9c0bc685174e69cd14bb49159f443b97800",
+  "settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+  "preload_sha256": "18652576162a668c9839a66610d947c94c4ba02dd724e45b043d4896ab170fa2",
+  "run_results": {
+    "kind": "idle_diagnostic_only",
+    "frequency_guard": "/home/tianbot/\u684c\u9762/RMUA2026-re/experiments/frequency_overlap_interposer_20261106/probe.so",
+    "seconds_wall": 90.0,
+    "batches": [
+      {
+        "batch": 0,
+        "seeds": [
+          123,
+          456,
+          2026,
+          789,
+          1001,
+          1002,
+          1003,
+          2024
+        ],
+        "attempts": [
+          {
+            "attempt": 0,
+            "port": 12820,
+            "success": true,
+            "start_exit_code": 0,
+            "ready_wall_unix_s": 1793901976.8174376,
+            "cleanup_exit_code": 0
+          }
+        ],
+        "success": true
+      }
+    ]
+  },
+  "liveness_samples": 82,
+  "liveness_span_s": 89.42359239800135,
+  "instances": [
+    {
+      "seed": 123,
+      "port": 12820,
+      "container": "rmua-re-8145c0967272-0",
+      "file_exists": true,
+      "logged_calls_lower_bound": 35000,
+      "overlap_counter_lower_bound": 2,
+      "untracked_counter_lower_bound": 0,
+      "events": [
+        {
+          "calls": 577,
+          "overlaps": 1,
+          "untracked": 0,
+          "key_hash": "d8d4335628b35226",
+          "key_length": 5,
+          "writer": 1,
+          "prior_readers": 0,
+          "prior_writers": 1,
+          "overlap": true,
+          "candidate_topic": "frame"
+        },
+        {
+          "calls": 28765,
+          "overlaps": 2,
+          "untracked": 0,
+          "key_hash": "d8d4335628b35226",
+          "key_length": 5,
+          "writer": 1,
+          "prior_readers": 0,
+          "prior_writers": 1,
+          "overlap": true,
+          "candidate_topic": "frame"
+        }
+      ]
+    },
+    {
+      "seed": 456,
+      "port": 12821,
+      "container": "rmua-re-8145c0967272-1",
+      "file_exists": true,
+      "logged_calls_lower_bound": 35000,
+      "overlap_counter_lower_bound": 1,
+      "untracked_counter_lower_bound": 0,
+      "events": [
+        {
+          "calls": 174,
+          "overlaps": 1,
+          "untracked": 0,
+          "key_hash": "2b9d00192bd2941a",
+          "key_length": 3,
+          "writer": 0,
+          "prior_readers": 0,
+          "prior_writers": 1,
+          "overlap": true,
+          "candidate_topic": "imu"
+        }
+      ]
+    },
+    {
+      "seed": 2026,
+      "port": 12822,
+      "container": "rmua-re-8145c0967272-2",
+      "file_exists": true,
+      "logged_calls_lower_bound": 35000,
+      "overlap_counter_lower_bound": 1,
+      "untracked_counter_lower_bound": 0,
+      "events": [
+        {
+          "calls": 33326,
+          "overlaps": 1,
+          "untracked": 0,
+          "key_hash": "d8d4335628b35226",
+          "key_length": 5,
+          "writer": 1,
+          "prior_readers": 0,
+          "prior_writers": 1,
+          "overlap": true,
+          "candidate_topic": "frame"
+        }
+      ]
+    },
+    {
+      "seed": 789,
+      "port": 12823,
+      "container": "rmua-re-8145c0967272-3",
+      "file_exists": true,
+      "logged_calls_lower_bound": 35000,
+      "overlap_counter_lower_bound": 0,
+      "untracked_counter_lower_bound": 0,
+      "events": []
+    },
+    {
+      "seed": 1001,
+      "port": 12824,
+      "container": "rmua-re-8145c0967272-4",
+      "file_exists": true,
+      "logged_calls_lower_bound": 35000,
+      "overlap_counter_lower_bound": 0,
+      "untracked_counter_lower_bound": 0,
+      "events": []
+    },
+    {
+      "seed": 1002,
+      "port": 12825,
+      "container": "rmua-re-8145c0967272-5",
+      "file_exists": true,
+      "logged_calls_lower_bound": 35000,
+      "overlap_counter_lower_bound": 0,
+      "untracked_counter_lower_bound": 0,
+      "events": []
+    },
+    {
+      "seed": 1003,
+      "port": 12826,
+      "container": "rmua-re-8145c0967272-6",
+      "file_exists": true,
+      "logged_calls_lower_bound": 34000,
+      "overlap_counter_lower_bound": 2,
+      "untracked_counter_lower_bound": 0,
+      "events": [
+        {
+          "calls": 15564,
+          "overlaps": 1,
+          "untracked": 0,
+          "key_hash": "d8d4335628b35226",
+          "key_length": 5,
+          "writer": 1,
+          "prior_readers": 0,
+          "prior_writers": 1,
+          "overlap": true,
+          "candidate_topic": "frame"
+        },
+        {
+          "calls": 20734,
+          "overlaps": 2,
+          "untracked": 0,
+          "key_hash": "d8d4335628b35226",
+          "key_length": 5,
+          "writer": 1,
+          "prior_readers": 0,
+          "prior_writers": 1,
+          "overlap": true,
+          "candidate_topic": "frame"
+        }
+      ]
+    },
+    {
+      "seed": 2024,
+      "port": 12827,
+      "container": "rmua-re-8145c0967272-7",
+      "file_exists": true,
+      "logged_calls_lower_bound": 34000,
+      "overlap_counter_lower_bound": 0,
+      "untracked_counter_lower_bound": 0,
+      "events": []
+    }
+  ],
+  "limitations": [
+    "The runner option is called frequency-guard, but this specific preload does not serialize calls.",
+    "Candidate topic is inferred solely from a 64-bit hash and length; collisions are possible.",
+    "A wrapper overlap does not prove simultaneous deque accesses or explain the earlier crash.",
+    "Counter snapshots are lower bounds; brief overlap may be missed and direct accesses are not covered.",
+    "This was an idle, instrumented, finite-duration run, not a training stability test."
+  ]
+}
