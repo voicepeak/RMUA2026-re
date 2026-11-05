@@ -162,3 +162,5 @@ seed 123 一次 false reset 的直接对照中，线障组件提交变换前后�
 对 stage 4 三 seed 各两次 false reset 的前后风数组，使用 glibc 2.35 的 `srand(seed)` 一次并连续运行两次 float32 风模型，12 个数组全部逐字节吻合；每次风生成消耗 54 个 `rand()` 结果。观测与两次风生成间 libc 随机流连续、未重新播种且无其他消费的模型一致；不能从输出反证所有隐藏状态操作，也不能推广至成功 reset 或其他运行时序。复算见 `scripts/analyze_reset_wind_stream.py` 和 `experiments/reset_instances_20261105/wind_stream_analysis.json`。
 
 粗线组件命中：stage 4 三 seed 各两次中，开发夹具使用的 HISM 组件指针与无人机命中事件创建入口 RCX 同场匹配 39–43 次；不能从共享组件指针确定命中某个实例，也不能推广自然赛程。详见 docs/17。
+
+细线 HISM 组件在相同注入与固定开环 PWM 条件下，三 seed 各两次的事件源 RCX 同场匹配 16–24 次；粗线为 39–43 次。指针匹配不区分同组件的实例，详见 docs/17。

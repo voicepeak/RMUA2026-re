@@ -248,3 +248,5 @@ python3 scripts/analyze_vehicle_dynamics.py /tmp/rmua-vehicle-bucket
 python3 scripts/run_line_event_source.py --selector 1 --stage 4 --simulator "$SIM_DIR" --settings experiments/training_host_20261105/settings.json --messages "$ROS_WS" --output /tmp/rmua-line-event --seeds 123,456,2026 --repeats 2 --sample-seconds 6 --port 12840
 python3 scripts/analyze_line_event_component.py /tmp/rmua-line-event
 ```
+
+细线组件重复对照已完成：stage 4 三 seed 各两次，固定开环 PWM 全部成功，每场有 16–24 次事件源 RCX 与该场提交细线实例的 HISM 组件匹配，另有 4 次指向不同组件。完整数据和可复算统计在 `experiments/line_event_component_thin_20261105/`。和粗线一样，HISM 指针只确认组件身份，不能单独区分该组件的实例或证明自然赛程碰撞力。
