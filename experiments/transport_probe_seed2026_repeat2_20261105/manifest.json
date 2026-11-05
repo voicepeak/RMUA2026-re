@@ -1,0 +1,30 @@
+{
+  "binary_sha256": "5231addfa25ddaa9e4473ea9ac40c9c0bc685174e69cd14bb49159f443b97800",
+  "library_sha256": "69d5ea3302bdd5f20b842ec3d3e84bafcb50ef3649ada42c4d346c9bcd389885",
+  "settings_sha256": "0d72886f92b091cbc5ba2ae58d25b4b4bc589045d4e725f483603efdc26c6c17",
+  "preload_sha256": "2080b17d1c7161eb8d21625da65626551e85e62feb6684f2b100cffca5952617",
+  "runner_sha256": "859a240b49b00d7d2bf1bf4d7b0a0164ea7f5f3e3ecddbfd02e99697fdd68609",
+  "source_sha256": "4c216e9e40aaf8963947b2b04b015ec4ed383106ef44377a8ab47518258b4047",
+  "sensor_probe_sha256": "266167fedcf8d5b3370cac5efa1321281a07981f23af60d22ce374c1e4ee059b",
+  "command_probe_sha256": "038ec8cccffbf21692abfb61202afd357c46312c34e2587d1db3b4d305301d3f",
+  "seed": 2026,
+  "seconds": 12,
+  "port": 12434,
+  "container": "rmua-pubprobe-9b571ac8e196",
+  "start_wall_ns": 1793881774055363647,
+  "status": "observed",
+  "limitations": [
+    "LD_PRELOAD alters call timing; not physical sensor acquisition latency",
+    "open-loop command sequence; no truth used online",
+    "header ABI and source-to-subscriber pairing require verification",
+    "NullRHI single process"
+  ],
+  "image_id": "sha256:cd46a48cd28c2a9c6345f60227fd1bd50e78c67ef1e98dcddc0e65893771da57",
+  "id": "38ba40edeefcc83e22e192d0038aec34a098bd020ec9afcffbf48b64332ab84d",
+  "ready_wall_ns": 1793881782227214253,
+  "sensor_clock_exit_code": 0,
+  "pwm_output_exit_code": 0,
+  "commands_exit_code": 0,
+  "cleanup_exit_code": 0,
+  "end_wall_ns": 1793881795522461895
+}

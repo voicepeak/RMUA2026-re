@@ -1,0 +1,708 @@
+{
+  "runs": {
+    "experiments/transport_probe_container_pilot_20261105": {
+      "seed": 123,
+      "comparisons": {
+        "imu_publish_to_subscriber": {
+          "source_rows": 1396,
+          "receiver_rows": 1201,
+          "unique_matched_stamps": 1201,
+          "ambiguous_shared_stamps": 0,
+          "source_only_stamps": 195,
+          "receiver_only_stamps": 0,
+          "negative_delays": 0,
+          "min_ms": 0.113086,
+          "median_ms": 0.235434,
+          "p95_ms": 0.341885,
+          "p99_ms": 0.384521,
+          "max_ms": 3.076243
+        },
+        "lidar_publish_to_subscriber": {
+          "source_rows": 141,
+          "receiver_rows": 121,
+          "unique_matched_stamps": 121,
+          "ambiguous_shared_stamps": 0,
+          "source_only_stamps": 20,
+          "receiver_only_stamps": 0,
+          "negative_delays": 0,
+          "min_ms": 0.243018,
+          "median_ms": 0.454582,
+          "p95_ms": 0.538435,
+          "p99_ms": 0.563672,
+          "max_ms": 0.74381
+        },
+        "pwm_publish_to_subscriber": {
+          "source_rows": 1396,
+          "receiver_rows": 1202,
+          "unique_matched_stamps": 1202,
+          "ambiguous_shared_stamps": 0,
+          "source_only_stamps": 194,
+          "receiver_only_stamps": 0,
+          "negative_delays": 0,
+          "min_ms": 0.063625,
+          "median_ms": 0.1563235,
+          "p95_ms": 0.288538,
+          "p99_ms": 0.328168,
+          "max_ms": 3.006758
+        },
+        "pwm_command_send_return_to_sim_callback": {
+          "source_rows": 248,
+          "receiver_rows": 238,
+          "unique_matched_stamps": 237,
+          "ambiguous_shared_stamps": 0,
+          "source_only_stamps": 11,
+          "receiver_only_stamps": 1,
+          "negative_delays": 0,
+          "min_ms": 0.129442,
+          "median_ms": 0.269573,
+          "p95_ms": 0.383708,
+          "p99_ms": 0.426896,
+          "max_ms": 1.235476
+        }
+      },
+      "clock_offset_check": {
+        "pairs": 1201,
+        "min": -0.003998,
+        "median": -0.000383,
+        "max": -0.000283,
+        "note": "independent wall/monotonic reads include scheduling skew; this checks clock consistency, not acquisition latency"
+      },
+      "phases": [
+        {
+          "command": 0.0,
+          "matching_output_count": 0,
+          "callback_to_debug_publish_ms": null,
+          "previous_output_already_matched": null
+        },
+        {
+          "command": 0.2,
+          "matching_output_count": 72,
+          "callback_to_debug_publish_ms": 31.580015,
+          "previous_output_already_matched": false
+        },
+        {
+          "command": 0.3,
+          "matching_output_count": 72,
+          "callback_to_debug_publish_ms": 34.493333,
+          "previous_output_already_matched": false
+        },
+        {
+          "command": 0.4,
+          "matching_output_count": 72,
+          "callback_to_debug_publish_ms": 36.638653,
+          "previous_output_already_matched": false
+        },
+        {
+          "command": 0.2,
+          "matching_output_count": 71,
+          "callback_to_debug_publish_ms": 38.906534,
+          "previous_output_already_matched": false
+        },
+        {
+          "command": 0.0,
+          "matching_output_count": 96,
+          "callback_to_debug_publish_ms": 40.450718,
+          "previous_output_already_matched": false
+        }
+      ]
+    },
+    "experiments/transport_probe_seed123_repeat2_20261105": {
+      "seed": 123,
+      "comparisons": {
+        "imu_publish_to_subscriber": {
+          "source_rows": 1395,
+          "receiver_rows": 1202,
+          "unique_matched_stamps": 1202,
+          "ambiguous_shared_stamps": 0,
+          "source_only_stamps": 193,
+          "receiver_only_stamps": 0,
+          "negative_delays": 0,
+          "min_ms": 0.119166,
+          "median_ms": 0.214739,
+          "p95_ms": 0.29288,
+          "p99_ms": 0.342902,
+          "max_ms": 1.085828
+        },
+        "lidar_publish_to_subscriber": {
+          "source_rows": 141,
+          "receiver_rows": 121,
+          "unique_matched_stamps": 121,
+          "ambiguous_shared_stamps": 0,
+          "source_only_stamps": 20,
+          "receiver_only_stamps": 0,
+          "negative_delays": 0,
+          "min_ms": 0.328724,
+          "median_ms": 0.445225,
+          "p95_ms": 0.52931,
+          "p99_ms": 0.561234,
+          "max_ms": 0.724416
+        },
+        "pwm_publish_to_subscriber": {
+          "source_rows": 1395,
+          "receiver_rows": 1203,
+          "unique_matched_stamps": 1203,
+          "ambiguous_shared_stamps": 0,
+          "source_only_stamps": 192,
+          "receiver_only_stamps": 0,
+          "negative_delays": 0,
+          "min_ms": 0.061202,
+          "median_ms": 0.141338,
+          "p95_ms": 0.186596,
+          "p99_ms": 0.288407,
+          "max_ms": 0.355455
+        },
+        "pwm_command_send_return_to_sim_callback": {
+          "source_rows": 248,
+          "receiver_rows": 234,
+          "unique_matched_stamps": 233,
+          "ambiguous_shared_stamps": 0,
+          "source_only_stamps": 15,
+          "receiver_only_stamps": 1,
+          "negative_delays": 0,
+          "min_ms": 0.040524,
+          "median_ms": 0.229584,
+          "p95_ms": 0.304214,
+          "p99_ms": 0.337548,
+          "max_ms": 0.357142
+        }
+      },
+      "clock_offset_check": {
+        "pairs": 1202,
+        "min": -0.000838,
+        "median": -0.000397,
+        "max": -0.000272,
+        "note": "independent wall/monotonic reads include scheduling skew; this checks clock consistency, not acquisition latency"
+      },
+      "phases": [
+        {
+          "command": 0.0,
+          "matching_output_count": 0,
+          "callback_to_debug_publish_ms": null,
+          "previous_output_already_matched": null
+        },
+        {
+          "command": 0.2,
+          "matching_output_count": 71,
+          "callback_to_debug_publish_ms": 44.734287,
+          "previous_output_already_matched": false
+        },
+        {
+          "command": 0.3,
+          "matching_output_count": 71,
+          "callback_to_debug_publish_ms": 46.839086,
+          "previous_output_already_matched": false
+        },
+        {
+          "command": 0.4,
+          "matching_output_count": 71,
+          "callback_to_debug_publish_ms": 48.080275,
+          "previous_output_already_matched": false
+        },
+        {
+          "command": 0.2,
+          "matching_output_count": 71,
+          "callback_to_debug_publish_ms": 48.426664,
+          "previous_output_already_matched": false
+        },
+        {
+          "command": 0.0,
+          "matching_output_count": 95,
+          "callback_to_debug_publish_ms": 49.619838,
+          "previous_output_already_matched": false
+        }
+      ]
+    },
+    "experiments/transport_probe_seed456_repeat1_20261105": {
+      "seed": 456,
+      "comparisons": {
+        "imu_publish_to_subscriber": {
+          "source_rows": 1395,
+          "receiver_rows": 1202,
+          "unique_matched_stamps": 1202,
+          "ambiguous_shared_stamps": 0,
+          "source_only_stamps": 193,
+          "receiver_only_stamps": 0,
+          "negative_delays": 0,
+          "min_ms": 0.098487,
+          "median_ms": 0.2349305,
+          "p95_ms": 0.325236,
+          "p99_ms": 0.357553,
+          "max_ms": 1.422188
+        },
+        "lidar_publish_to_subscriber": {
+          "source_rows": 141,
+          "receiver_rows": 122,
+          "unique_matched_stamps": 122,
+          "ambiguous_shared_stamps": 0,
+          "source_only_stamps": 19,
+          "receiver_only_stamps": 0,
+          "negative_delays": 0,
+          "min_ms": 0.251496,
+          "median_ms": 0.4535275,
+          "p95_ms": 0.52433,
+          "p99_ms": 0.565773,
+          "max_ms": 1.150268
+        },
+        "pwm_publish_to_subscriber": {
+          "source_rows": 1395,
+          "receiver_rows": 1203,
+          "unique_matched_stamps": 1203,
+          "ambiguous_shared_stamps": 0,
+          "source_only_stamps": 192,
+          "receiver_only_stamps": 0,
+          "negative_delays": 0,
+          "min_ms": 0.05908,
+          "median_ms": 0.162168,
+          "p95_ms": 0.281646,
+          "p99_ms": 0.335402,
+          "max_ms": 0.631737
+        },
+        "pwm_command_send_return_to_sim_callback": {
+          "source_rows": 248,
+          "receiver_rows": 235,
+          "unique_matched_stamps": 234,
+          "ambiguous_shared_stamps": 0,
+          "source_only_stamps": 14,
+          "receiver_only_stamps": 1,
+          "negative_delays": 0,
+          "min_ms": 0.110355,
+          "median_ms": 0.26703049999999995,
+          "p95_ms": 0.387813,
+          "p99_ms": 0.430503,
+          "max_ms": 0.549669
+        }
+      },
+      "clock_offset_check": {
+        "pairs": 1202,
+        "min": -0.003952,
+        "median": -0.000373,
+        "max": -0.000279,
+        "note": "independent wall/monotonic reads include scheduling skew; this checks clock consistency, not acquisition latency"
+      },
+      "phases": [
+        {
+          "command": 0.0,
+          "matching_output_count": 0,
+          "callback_to_debug_publish_ms": null,
+          "previous_output_already_matched": null
+        },
+        {
+          "command": 0.2,
+          "matching_output_count": 69,
+          "callback_to_debug_publish_ms": 60.291349,
+          "previous_output_already_matched": false
+        },
+        {
+          "command": 0.3,
+          "matching_output_count": 69,
+          "callback_to_debug_publish_ms": 62.193814,
+          "previous_output_already_matched": false
+        },
+        {
+          "command": 0.4,
+          "matching_output_count": 74,
+          "callback_to_debug_publish_ms": 15.628455,
+          "previous_output_already_matched": false
+        },
+        {
+          "command": 0.2,
+          "matching_output_count": 75,
+          "callback_to_debug_publish_ms": 19.659816,
+          "previous_output_already_matched": false
+        },
+        {
+          "command": 0.0,
+          "matching_output_count": 92,
+          "callback_to_debug_publish_ms": 52.512301,
+          "previous_output_already_matched": false
+        }
+      ]
+    },
+    "experiments/transport_probe_seed456_repeat2_20261105": {
+      "seed": 456,
+      "comparisons": {
+        "imu_publish_to_subscriber": {
+          "source_rows": 1398,
+          "receiver_rows": 1203,
+          "unique_matched_stamps": 1203,
+          "ambiguous_shared_stamps": 0,
+          "source_only_stamps": 195,
+          "receiver_only_stamps": 0,
+          "negative_delays": 0,
+          "min_ms": 0.127793,
+          "median_ms": 0.21799,
+          "p95_ms": 0.27772,
+          "p99_ms": 0.324471,
+          "max_ms": 0.59624
+        },
+        "lidar_publish_to_subscriber": {
+          "source_rows": 141,
+          "receiver_rows": 122,
+          "unique_matched_stamps": 122,
+          "ambiguous_shared_stamps": 0,
+          "source_only_stamps": 19,
+          "receiver_only_stamps": 0,
+          "negative_delays": 0,
+          "min_ms": 0.327369,
+          "median_ms": 0.468302,
+          "p95_ms": 0.546816,
+          "p99_ms": 0.565277,
+          "max_ms": 0.805006
+        },
+        "pwm_publish_to_subscriber": {
+          "source_rows": 1398,
+          "receiver_rows": 1202,
+          "unique_matched_stamps": 1202,
+          "ambiguous_shared_stamps": 0,
+          "source_only_stamps": 195,
+          "receiver_only_stamps": 0,
+          "negative_delays": 0,
+          "min_ms": 0.057861,
+          "median_ms": 0.1433685,
+          "p95_ms": 0.213918,
+          "p99_ms": 0.241006,
+          "max_ms": 0.268355
+        },
+        "pwm_command_send_return_to_sim_callback": {
+          "source_rows": 248,
+          "receiver_rows": 234,
+          "unique_matched_stamps": 233,
+          "ambiguous_shared_stamps": 0,
+          "source_only_stamps": 15,
+          "receiver_only_stamps": 1,
+          "negative_delays": 0,
+          "min_ms": 0.072706,
+          "median_ms": 0.25955,
+          "p95_ms": 0.374032,
+          "p99_ms": 0.387594,
+          "max_ms": 0.403374
+        }
+      },
+      "clock_offset_check": {
+        "pairs": 1203,
+        "min": -0.000967,
+        "median": -0.000401,
+        "max": -0.000288,
+        "note": "independent wall/monotonic reads include scheduling skew; this checks clock consistency, not acquisition latency"
+      },
+      "phases": [
+        {
+          "command": 0.0,
+          "matching_output_count": 0,
+          "callback_to_debug_publish_ms": null,
+          "previous_output_already_matched": null
+        },
+        {
+          "command": 0.2,
+          "matching_output_count": 70,
+          "callback_to_debug_publish_ms": 51.170306,
+          "previous_output_already_matched": false
+        },
+        {
+          "command": 0.3,
+          "matching_output_count": 70,
+          "callback_to_debug_publish_ms": 53.823349,
+          "previous_output_already_matched": false
+        },
+        {
+          "command": 0.4,
+          "matching_output_count": 70,
+          "callback_to_debug_publish_ms": 55.462447,
+          "previous_output_already_matched": false
+        },
+        {
+          "command": 0.2,
+          "matching_output_count": 70,
+          "callback_to_debug_publish_ms": 57.272936,
+          "previous_output_already_matched": false
+        },
+        {
+          "command": 0.0,
+          "matching_output_count": 94,
+          "callback_to_debug_publish_ms": 57.68362,
+          "previous_output_already_matched": false
+        }
+      ]
+    },
+    "experiments/transport_probe_seed2026_repeat1_20261105": {
+      "seed": 2026,
+      "comparisons": {
+        "imu_publish_to_subscriber": {
+          "source_rows": 1400,
+          "receiver_rows": 1203,
+          "unique_matched_stamps": 1203,
+          "ambiguous_shared_stamps": 0,
+          "source_only_stamps": 197,
+          "receiver_only_stamps": 0,
+          "negative_delays": 0,
+          "min_ms": 0.11223,
+          "median_ms": 0.233744,
+          "p95_ms": 0.31503,
+          "p99_ms": 0.366989,
+          "max_ms": 0.953648
+        },
+        "lidar_publish_to_subscriber": {
+          "source_rows": 141,
+          "receiver_rows": 121,
+          "unique_matched_stamps": 121,
+          "ambiguous_shared_stamps": 0,
+          "source_only_stamps": 20,
+          "receiver_only_stamps": 0,
+          "negative_delays": 0,
+          "min_ms": 0.243235,
+          "median_ms": 0.444822,
+          "p95_ms": 0.530921,
+          "p99_ms": 0.570242,
+          "max_ms": 0.753509
+        },
+        "pwm_publish_to_subscriber": {
+          "source_rows": 1400,
+          "receiver_rows": 1203,
+          "unique_matched_stamps": 1203,
+          "ambiguous_shared_stamps": 0,
+          "source_only_stamps": 197,
+          "receiver_only_stamps": 0,
+          "negative_delays": 0,
+          "min_ms": 0.062302,
+          "median_ms": 0.156716,
+          "p95_ms": 0.272591,
+          "p99_ms": 0.306653,
+          "max_ms": 2.259225
+        },
+        "pwm_command_send_return_to_sim_callback": {
+          "source_rows": 248,
+          "receiver_rows": 235,
+          "unique_matched_stamps": 234,
+          "ambiguous_shared_stamps": 0,
+          "source_only_stamps": 14,
+          "receiver_only_stamps": 1,
+          "negative_delays": 0,
+          "min_ms": 0.081725,
+          "median_ms": 0.268382,
+          "p95_ms": 0.382448,
+          "p99_ms": 0.416181,
+          "max_ms": 0.427891
+        }
+      },
+      "clock_offset_check": {
+        "pairs": 1203,
+        "min": -0.005927,
+        "median": -0.000368,
+        "max": -0.0002,
+        "note": "independent wall/monotonic reads include scheduling skew; this checks clock consistency, not acquisition latency"
+      },
+      "phases": [
+        {
+          "command": 0.0,
+          "matching_output_count": 0,
+          "callback_to_debug_publish_ms": null,
+          "previous_output_already_matched": null
+        },
+        {
+          "command": 0.2,
+          "matching_output_count": 70,
+          "callback_to_debug_publish_ms": 49.064304,
+          "previous_output_already_matched": false
+        },
+        {
+          "command": 0.3,
+          "matching_output_count": 70,
+          "callback_to_debug_publish_ms": 50.468663,
+          "previous_output_already_matched": false
+        },
+        {
+          "command": 0.4,
+          "matching_output_count": 70,
+          "callback_to_debug_publish_ms": 51.543026,
+          "previous_output_already_matched": false
+        },
+        {
+          "command": 0.2,
+          "matching_output_count": 70,
+          "callback_to_debug_publish_ms": 53.509415,
+          "previous_output_already_matched": false
+        },
+        {
+          "command": 0.0,
+          "matching_output_count": 94,
+          "callback_to_debug_publish_ms": 56.379612,
+          "previous_output_already_matched": false
+        }
+      ]
+    },
+    "experiments/transport_probe_seed2026_repeat2_20261105": {
+      "seed": 2026,
+      "comparisons": {
+        "imu_publish_to_subscriber": {
+          "source_rows": 1397,
+          "receiver_rows": 1202,
+          "unique_matched_stamps": 1202,
+          "ambiguous_shared_stamps": 0,
+          "source_only_stamps": 194,
+          "receiver_only_stamps": 0,
+          "negative_delays": 0,
+          "min_ms": 0.109732,
+          "median_ms": 0.23146,
+          "p95_ms": 0.327956,
+          "p99_ms": 0.374965,
+          "max_ms": 0.433681
+        },
+        "lidar_publish_to_subscriber": {
+          "source_rows": 141,
+          "receiver_rows": 122,
+          "unique_matched_stamps": 122,
+          "ambiguous_shared_stamps": 0,
+          "source_only_stamps": 19,
+          "receiver_only_stamps": 0,
+          "negative_delays": 0,
+          "min_ms": 0.268619,
+          "median_ms": 0.45779000000000003,
+          "p95_ms": 0.544013,
+          "p99_ms": 0.654951,
+          "max_ms": 0.960319
+        },
+        "pwm_publish_to_subscriber": {
+          "source_rows": 1397,
+          "receiver_rows": 1203,
+          "unique_matched_stamps": 1203,
+          "ambiguous_shared_stamps": 0,
+          "source_only_stamps": 193,
+          "receiver_only_stamps": 0,
+          "negative_delays": 0,
+          "min_ms": 0.05245,
+          "median_ms": 0.150315,
+          "p95_ms": 0.234794,
+          "p99_ms": 0.289218,
+          "max_ms": 0.360533
+        },
+        "pwm_command_send_return_to_sim_callback": {
+          "source_rows": 248,
+          "receiver_rows": 237,
+          "unique_matched_stamps": 236,
+          "ambiguous_shared_stamps": 0,
+          "source_only_stamps": 12,
+          "receiver_only_stamps": 1,
+          "negative_delays": 0,
+          "min_ms": 0.132454,
+          "median_ms": 0.2617625,
+          "p95_ms": 0.365129,
+          "p99_ms": 0.401397,
+          "max_ms": 0.453091
+        }
+      },
+      "clock_offset_check": {
+        "pairs": 1202,
+        "min": -0.004216,
+        "median": -0.000397,
+        "max": -0.000225,
+        "note": "independent wall/monotonic reads include scheduling skew; this checks clock consistency, not acquisition latency"
+      },
+      "phases": [
+        {
+          "command": 0.0,
+          "matching_output_count": 0,
+          "callback_to_debug_publish_ms": null,
+          "previous_output_already_matched": null
+        },
+        {
+          "command": 0.2,
+          "matching_output_count": 72,
+          "callback_to_debug_publish_ms": 33.877398,
+          "previous_output_already_matched": false
+        },
+        {
+          "command": 0.3,
+          "matching_output_count": 72,
+          "callback_to_debug_publish_ms": 36.058152,
+          "previous_output_already_matched": false
+        },
+        {
+          "command": 0.4,
+          "matching_output_count": 72,
+          "callback_to_debug_publish_ms": 38.259898,
+          "previous_output_already_matched": false
+        },
+        {
+          "command": 0.2,
+          "matching_output_count": 71,
+          "callback_to_debug_publish_ms": 39.103607,
+          "previous_output_already_matched": false
+        },
+        {
+          "command": 0.0,
+          "matching_output_count": 95,
+          "callback_to_debug_publish_ms": 41.325157,
+          "previous_output_already_matched": false
+        }
+      ]
+    }
+  },
+  "comparisons": {
+    "imu_publish_to_subscriber": {
+      "runs": 6,
+      "matched_min": 1201,
+      "matched_max": 1203,
+      "median_ms_range": [
+        0.214739,
+        0.235434
+      ],
+      "p99_ms_range": [
+        0.324471,
+        0.384521
+      ],
+      "negative_delays_total": 0
+    },
+    "lidar_publish_to_subscriber": {
+      "runs": 6,
+      "matched_min": 121,
+      "matched_max": 122,
+      "median_ms_range": [
+        0.444822,
+        0.468302
+      ],
+      "p99_ms_range": [
+        0.561234,
+        0.654951
+      ],
+      "negative_delays_total": 0
+    },
+    "pwm_publish_to_subscriber": {
+      "runs": 6,
+      "matched_min": 1202,
+      "matched_max": 1203,
+      "median_ms_range": [
+        0.141338,
+        0.162168
+      ],
+      "p99_ms_range": [
+        0.241006,
+        0.335402
+      ],
+      "negative_delays_total": 0
+    },
+    "pwm_command_send_return_to_sim_callback": {
+      "runs": 6,
+      "matched_min": 233,
+      "matched_max": 237,
+      "median_ms_range": [
+        0.229584,
+        0.269573
+      ],
+      "p99_ms_range": [
+        0.337548,
+        0.430503
+      ],
+      "negative_delays_total": 0
+    }
+  },
+  "limitations": [
+    "per-run quantiles are summarized as ranges, not pooled quantiles",
+    "hook instrumentation changes timing; ROS path is not full physical sensor or actuator latency",
+    "PWM phase matches are correlational and the initial zero phase is kept even if unmatched"
+  ],
+  "phase_callback_to_output_ms": {
+    "matched_phases": 30,
+    "min": 15.628455,
+    "max": 62.193814
+  }
+}

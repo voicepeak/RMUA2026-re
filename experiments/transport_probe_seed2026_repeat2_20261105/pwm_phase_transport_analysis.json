@@ -1,0 +1,221 @@
+{
+  "phases": [
+    {
+      "command": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "sent_commands": 50,
+      "phase_start_mono_ns": 217928314178861,
+      "phase_end_mono_ns": 217929324752402,
+      "matched_command_callbacks": 38,
+      "first_command_send_return_ns": 217928556720779,
+      "first_command_callback_ns": 217928557173870,
+      "previous_debug_pwm": {
+        "t": 217928548907546,
+        "pwm": [
+          0.007333333604037762,
+          0.007333333604037762,
+          0.007333333604037762,
+          0.007333333604037762
+        ],
+        "stamp_ns": 1793881782875076532
+      },
+      "matching_output_count": 0
+    },
+    {
+      "command": [
+        0.2,
+        0.2,
+        0.2,
+        0.2
+      ],
+      "sent_commands": 37,
+      "phase_start_mono_ns": 217929324752402,
+      "phase_end_mono_ns": 217930072698325,
+      "matched_command_callbacks": 37,
+      "first_command_send_return_ns": 217929324752402,
+      "first_command_callback_ns": 217929325029818,
+      "previous_debug_pwm": {
+        "t": 217929318978619,
+        "pwm": [
+          0.007333333604037762,
+          0.007333333604037762,
+          0.007333333604037762,
+          0.007333333604037762
+        ],
+        "stamp_ns": 1793881783646093130
+      },
+      "matching_output_count": 72,
+      "first_matching_output": {
+        "t": 217929358907216,
+        "pwm": [
+          0.20000000298023224,
+          0.20000000298023224,
+          0.20000000298023224,
+          0.20000000298023224
+        ],
+        "stamp_ns": 1793881783685093880
+      },
+      "callback_to_debug_publish_ms": 33.877398,
+      "previous_output_already_matched": false
+    },
+    {
+      "command": [
+        0.3,
+        0.3,
+        0.3,
+        0.3
+      ],
+      "sent_commands": 37,
+      "phase_start_mono_ns": 217930072698325,
+      "phase_end_mono_ns": 217930820446830,
+      "matched_command_callbacks": 37,
+      "first_command_send_return_ns": 217930072698325,
+      "first_command_callback_ns": 217930072939163,
+      "previous_debug_pwm": {
+        "t": 217930068901014,
+        "pwm": [
+          0.20000000298023224,
+          0.20000000298023224,
+          0.20000000298023224,
+          0.20000000298023224
+        ],
+        "stamp_ns": 1793881784396109104
+      },
+      "matching_output_count": 72,
+      "first_matching_output": {
+        "t": 217930108997315,
+        "pwm": [
+          0.30000001192092896,
+          0.30000001192092896,
+          0.30000001192092896,
+          0.30000001192092896
+        ],
+        "stamp_ns": 1793881784435109854
+      },
+      "callback_to_debug_publish_ms": 36.058152,
+      "previous_output_already_matched": false
+    },
+    {
+      "command": [
+        0.4,
+        0.4,
+        0.4,
+        0.4
+      ],
+      "sent_commands": 37,
+      "phase_start_mono_ns": 217930820446830,
+      "phase_end_mono_ns": 217931569436626,
+      "matched_command_callbacks": 37,
+      "first_command_send_return_ns": 217930820446830,
+      "first_command_callback_ns": 217930820730467,
+      "previous_debug_pwm": {
+        "t": 217930818997394,
+        "pwm": [
+          0.30000001192092896,
+          0.30000001192092896,
+          0.30000001192092896,
+          0.30000001192092896
+        ],
+        "stamp_ns": 1793881785146125078
+      },
+      "matching_output_count": 72,
+      "first_matching_output": {
+        "t": 217930858990365,
+        "pwm": [
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645
+        ],
+        "stamp_ns": 1793881785185125828
+      },
+      "callback_to_debug_publish_ms": 38.259898,
+      "previous_output_already_matched": false
+    },
+    {
+      "command": [
+        0.2,
+        0.2,
+        0.2,
+        0.2
+      ],
+      "sent_commands": 37,
+      "phase_start_mono_ns": 217931569436626,
+      "phase_end_mono_ns": 217932317271217,
+      "matched_command_callbacks": 37,
+      "first_command_send_return_ns": 217931569436626,
+      "first_command_callback_ns": 217931569759556,
+      "previous_debug_pwm": {
+        "t": 217931568833868,
+        "pwm": [
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645,
+          0.4000000059604645
+        ],
+        "stamp_ns": 1793881785896141052
+      },
+      "matching_output_count": 71,
+      "first_matching_output": {
+        "t": 217931608863163,
+        "pwm": [
+          0.20000000298023224,
+          0.20000000298023224,
+          0.20000000298023224,
+          0.20000000298023224
+        ],
+        "stamp_ns": 1793881785935141802
+      },
+      "callback_to_debug_publish_ms": 39.103607,
+      "previous_output_already_matched": false
+    },
+    {
+      "command": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "sent_commands": 50,
+      "phase_start_mono_ns": 217932317271217,
+      "phase_end_mono_ns": 217933306401112,
+      "matched_command_callbacks": 50,
+      "first_command_send_return_ns": 217932317271217,
+      "first_command_callback_ns": 217932317556117,
+      "previous_debug_pwm": {
+        "t": 217932308888177,
+        "pwm": [
+          0.20000000298023224,
+          0.20000000298023224,
+          0.20000000298023224,
+          0.20000000298023224
+        ],
+        "stamp_ns": 1793881786637156963
+      },
+      "matching_output_count": 95,
+      "first_matching_output": {
+        "t": 217932358881274,
+        "pwm": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "stamp_ns": 1793881786685157776
+      },
+      "callback_to_debug_publish_ms": 41.325157,
+      "previous_output_already_matched": false
+    }
+  ],
+  "limitations": [
+    "one fixed open-loop sequence; correlation does not prove causality",
+    "source/observer records are paired by unique nonzero header stamp; first command may have been missed",
+    "callback entry to first matching ROS debug publication is not motor or vehicle physical response",
+    "first matching output is restricted to phase and prior output is shown to detect already-matched values",
+    "LD_PRELOAD and ROS observers change timing; no universal latency claim"
+  ]
+}
